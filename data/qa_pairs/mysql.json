@@ -1,0 +1,705 @@
+{
+  "corpus_id": "mysql",
+  "qa_pairs": [
+    {
+      "question": "What does the 'M' parameter indicate for integer types versus string types in MySQL data type definitions?",
+      "answer": "For integer types, M indicates the maximum display width. For floating-point and fixed-point types, M is the total number of digits that can be stored (the precision). For string types, M is the maximum length. The maximum permissible value of M depends on the data type.",
+      "evidence": "* For integer types, *`M`* indicates the\n  maximum display width. For floating-point and fixed-point types,\n  *`M`* is the total number of digits that\n  can be stored (the precision). For string types,\n  *`M`* is the maximum length. The maximum\n  permissible value of *`M`* depends on the\n  data type.",
+      "question_type": "comparative",
+      "qa_id": "mysql_002"
+    },
+    {
+      "question": "What is the purpose of the SELECT statement in MySQL?",
+      "answer": "SELECT is used to retrieve rows selected from one or more tables, and can include UNION operations and subqueries. Beginning with MySQL 8.0.31, INTERSECT and EXCEPT operations are also supported. A SELECT statement can also start with a WITH clause to define common table expressions.",
+      "evidence": "`SELECT` is used to retrieve rows\nselected from one or more tables, and can include\n`UNION` operations and subqueries.\nBeginning with MySQL 8.0.31,\n`INTERSECT` and\n`EXCEPT` operations are also\nsupported. The `UNION`,",
+      "question_type": "definitional",
+      "qa_id": "mysql_004"
+    },
+    {
+      "question": "What is the purpose of the DUAL table name in MySQL SELECT statements?",
+      "answer": "DUAL is purely for the convenience of people who require that all SELECT statements should have FROM and possibly other clauses. MySQL may ignore the clauses and does not require FROM DUAL if no tables are referenced. It serves as a dummy table name in situations where no tables are referenced.",
+      "evidence": "`DUAL` is purely for the convenience of people\nwho require that all `SELECT`\nstatements should have `FROM` and possibly other\nclauses. MySQL may ignore the clauses. MySQL does not require\n`FROM DUAL` if no tables are referenced.",
+      "question_type": "definitional",
+      "qa_id": "mysql_005"
+    },
+    {
+      "question": "What happens when you use SELECT without a WHERE clause?",
+      "answer": "The statement selects all rows if there is no WHERE clause. The WHERE clause, if given, indicates the condition or conditions that rows must satisfy to be selected, where the where_condition is an expression that evaluates to true for each row to be selected.",
+      "evidence": "* The `WHERE` clause, if given, indicates the\n  condition or conditions that rows must satisfy to be selected.\n  *`where_condition`* is an expression\n  that evaluates to true for each row to be selected. The\n  statement selects all rows if there is no\n  `WHERE` clause.",
+      "question_type": "factual",
+      "qa_id": "mysql_006"
+    },
+    {
+      "question": "How do you give an alias to a select expression in MySQL, and why is using AS explicitly recommended?",
+      "answer": "A select_expr can be given an alias using AS alias_name. The AS keyword is optional when aliasing a select_expr with an identifier. However, because AS is optional, if you forget the comma between two select_expr expressions, MySQL interprets the second as an alias name. For this reason, it is good practice to use AS explicitly when specifying column aliases.",
+      "evidence": "FROM mytable ORDER BY full_name;\n```\nHowever, because the `AS` is optional, a\nsubtle problem can occur if you forget the comma between two\n*`select_expr`* expressions: MySQL\ninterprets the second as an alias name. For example, in the\nfollowing statement, `columnb` is treated as\nan alias name:\n```\nSELECT columna columnb FROM mytable;\n```\nFor this reason, it is good practice to be in the habit of\nusing `AS` explicitly when specifying column\naliases.",
+      "question_type": "procedural",
+      "qa_id": "mysql_007"
+    },
+    {
+      "question": "Why is it not permissible to refer to a column alias in a WHERE clause in MySQL?",
+      "answer": "It is not permissible to refer to a column alias in a WHERE clause because the column value might not yet be determined when the WHERE clause is executed. This is a fundamental limitation related to the order of SQL clause evaluation.",
+      "evidence": "  It is not permissible to refer to a column alias in a\n  `WHERE` clause, because the column value\n  might not yet be determined when the `WHERE`\n  clause is executed. See Section\u00a0B.3.4.4, \u201cProblems with Column Aliases\u201d.",
+      "question_type": "causal",
+      "qa_id": "mysql_008"
+    },
+    {
+      "question": "What is the offset of the initial row when using the LIMIT clause with two arguments in MySQL?",
+      "answer": "With two arguments, the first argument specifies the offset of the first row to return, and the second specifies the maximum number of rows to return. The offset of the initial row is 0 (not 1). For example, LIMIT 5,10 retrieves rows 6-15.",
+      "evidence": "With two arguments, the first argument specifies the offset of the first row to return, and the second specifies the maximum number of rows to return. The offset of the initial row is 0 (not 1)",
+      "question_type": "factual",
+      "qa_id": "mysql_010"
+    },
+    {
+      "question": "What is the difference between HAVING and WHERE clauses in MySQL?",
+      "answer": "The WHERE clause specifies conditions on columns in the select list but cannot refer to aggregate functions. The HAVING clause specifies conditions on groups, typically formed by the GROUP BY clause. The HAVING clause can refer to aggregate functions, which the WHERE clause cannot. HAVING is applied nearly last, just before items are sent to the client.",
+      "evidence": "* The `HAVING` clause, like the\n  `WHERE` clause, specifies selection\n  conditions. The `WHERE` clause specifies\n  conditions on columns in the select list, but cannot refer to\n  aggregate functions. The `HAVING` clause\n  specifies conditions on groups, typically formed by the\n  `GROUP BY` clause. The query result includes",
+      "question_type": "comparative",
+      "qa_id": "mysql_011"
+    },
+    {
+      "question": "What does the DISTINCT modifier do in a SELECT statement?",
+      "answer": "DISTINCT specifies removal of duplicate rows from the result set. ALL (the default) specifies that all matching rows should be returned, including duplicates. DISTINCTROW is a synonym for DISTINCT. It is an error to specify both ALL and DISTINCT modifiers.",
+      "evidence": "* The `ALL` and `DISTINCT`\nmodifiers specify whether duplicate rows should be returned.\n`ALL` (the default) specifies that all\nmatching rows should be returned, including duplicates.\n`DISTINCT` specifies removal of duplicate\nrows from the result set. It is an error to specify both\nmodifiers. `DISTINCTROW` is a synonym for",
+      "question_type": "definitional",
+      "qa_id": "mysql_012"
+    },
+    {
+      "question": "What does the HIGH_PRIORITY modifier do for a SELECT statement?",
+      "answer": "HIGH_PRIORITY gives the SELECT higher priority than a statement that updates a table. A SELECT HIGH_PRIORITY query that is issued while the table is locked for reading runs even if there is an update statement waiting for the table to be free. This affects only storage engines that use only table-level locking such as MyISAM, MEMORY, and MERGE.",
+      "evidence": "* `HIGH_PRIORITY` gives the\n`SELECT` higher priority than a\nstatement that updates a table. You should use this only for\nqueries that are very fast and must be done at once. A\n`SELECT HIGH_PRIORITY` query that is issued\nwhile the table is locked for reading runs even if there is an\nupdate statement waiting for the table to be free. This",
+      "question_type": "definitional",
+      "qa_id": "mysql_013"
+    },
+    {
+      "question": "What is the difference between FOR UPDATE and FOR SHARE locking in MySQL SELECT?",
+      "answer": "If you use FOR UPDATE with a storage engine that uses page or row locks, rows examined by the query are write-locked until the end of the current transaction. FOR SHARE and LOCK IN SHARE MODE set shared locks that permit other transactions to read the examined rows but not to update or delete them. FOR SHARE is a replacement for LOCK IN SHARE MODE.",
+      "evidence": "MODE` set shared locks that permit other transactions\nto read the examined rows but not to update or delete them.\n`FOR SHARE` and `LOCK IN SHARE\nMODE` are equivalent. However, `FOR\nSHARE`, like `FOR UPDATE`, supports\n`NOWAIT`, `SKIP LOCKED`, and\n`OF tbl_name`\noptions. `FOR SHARE` is a replacement for",
+      "question_type": "comparative",
+      "qa_id": "mysql_015"
+    },
+    {
+      "question": "What does the NOWAIT option do with FOR UPDATE or FOR SHARE queries?",
+      "answer": "NOWAIT causes a FOR UPDATE or FOR SHARE query to execute immediately, returning an error if a row lock cannot be obtained due to a lock held by another transaction. It provides a way to avoid waiting for locks and instead fail fast.",
+      "evidence": "  `NOWAIT` causes a `FOR\n  UPDATE` or `FOR SHARE` query to\n  execute immediately, returning an error if a row lock cannot\n  be obtained due to a lock held by another transaction.",
+      "question_type": "factual",
+      "qa_id": "mysql_016"
+    },
+    {
+      "question": "What does the SKIP LOCKED option do in MySQL?",
+      "answer": "SKIP LOCKED causes a FOR UPDATE or FOR SHARE query to execute immediately, excluding rows from the result set that are locked by another transaction. However, SKIP LOCKED is not suitable for general transactional work because queries that skip locked rows return an inconsistent view of the data. It may be used to avoid lock contention when multiple sessions access the same queue-like table.",
+      "evidence": "  `SKIP LOCKED` causes a `FOR\n  UPDATE` or `FOR SHARE` query to\n  execute immediately, excluding rows from the result set that\n  are locked by another transaction.",
+      "question_type": "definitional",
+      "qa_id": "mysql_017"
+    },
+    {
+      "question": "What happened to the query cache and SQL_CACHE modifier in MySQL 8.0?",
+      "answer": "The query cache was removed in MySQL 8.0. The SQL_CACHE modifier was removed as well. SQL_NO_CACHE is deprecated and has no effect; it is expected to be removed in a future MySQL release.",
+      "evidence": "`SQL_NO_CACHE` modifiers were used with the\nquery cache prior to MySQL 8.0. The query cache\nwas removed in MySQL 8.0. The\n`SQL_CACHE` modifier was removed as well.\n`SQL_NO_CACHE` is deprecated, and has no\neffect; expect it to be removed in a future MySQL release.",
+      "question_type": "factual",
+      "qa_id": "mysql_018"
+    },
+    {
+      "question": "What are the different forms of the INSERT statement in MySQL?",
+      "answer": "The INSERT statement has several forms: INSERT ... VALUES and INSERT ... VALUES ROW() insert rows based on explicitly specified values. INSERT ... SET also inserts rows based on explicitly specified values. INSERT ... SELECT inserts rows selected from another table or tables. INSERT ... TABLE (available in MySQL 8.0.19 and later) inserts rows from a single table.",
+      "evidence": "existing table. The `INSERT\n... VALUES`,\n`INSERT ... VALUES\nROW()`, and\n`INSERT ... SET`\nforms of the statement insert rows based on explicitly specified\nvalues. The `INSERT\n... SELECT` form inserts rows selected from another table\nor tables. You can also use\n`INSERT ... TABLE`\nin MySQL 8.0.19 and later to insert rows from a single table.",
+      "question_type": "factual",
+      "qa_id": "mysql_019"
+    },
+    {
+      "question": "What privileges are required to use INSERT with ON DUPLICATE KEY UPDATE?",
+      "answer": "Inserting into a table requires the INSERT privilege for the table. If the ON DUPLICATE KEY UPDATE clause is used and a duplicate key causes an UPDATE to be performed instead, the statement requires the UPDATE privilege for the columns to be updated. For columns that are read but not modified, you need only the SELECT privilege.",
+      "evidence": "Inserting into a table requires the\n`INSERT` privilege for the table. If\nthe `ON DUPLICATE KEY UPDATE` clause is used and\na duplicate key causes an `UPDATE` to\nbe performed instead, the statement requires the\n`UPDATE` privilege for the columns to\nbe updated. For columns that are read but not modified you need\nonly the `SELECT` privilege (such as\nfor a column referenced only on the right hand side of an\n*`col_name`*=*`expr`*",
+      "question_type": "factual",
+      "qa_id": "mysql_020"
+    },
+    {
+      "question": "What happens to the DELAYED keyword in MySQL 8.0 INSERT statements?",
+      "answer": "In MySQL 8.0, the DELAYED keyword is accepted but ignored by the server. INSERT DELAYED was deprecated in MySQL 5.6 and is scheduled for eventual removal. Users should use INSERT without DELAYED instead.",
+      "evidence": "In MySQL 8.0, the `DELAYED` keyword\nis accepted but ignored by the server. For the reasons for this,",
+      "question_type": "factual",
+      "qa_id": "mysql_021"
+    },
+    {
+      "question": "What happens when you insert NULL into a NOT NULL column in a multiple-row INSERT statement?",
+      "answer": "For multiple-row INSERT statements or INSERT INTO ... SELECT statements, the column is set to the implicit default value for the column data type. This is 0 for numeric types, the empty string ('') for string types, and the \"zero\" value for date and time types. For a single-row INSERT, no warning occurs; instead, the statement fails with an error.",
+      "evidence": "* Inserting `NULL` into a column that has been\n  declared `NOT NULL`. For multiple-row\n  `INSERT` statements or\n  `INSERT INTO ...\n  SELECT` statements, the column is set to the implicit\n  default value for the column data type. This is\n  `0` for numeric types, the empty string\n  (`''`) for string types, and the\n  \u201czero\u201d value for date and time types.",
+      "question_type": "causal",
+      "qa_id": "mysql_022"
+    },
+    {
+      "question": "How does the IGNORE modifier affect INSERT statements in MySQL?",
+      "answer": "With the IGNORE modifier, ignorable errors that occur while executing the INSERT statement are ignored. For example, without IGNORE, a row that duplicates an existing UNIQUE index or PRIMARY KEY value causes a duplicate-key error and the statement is aborted. With IGNORE, the row is discarded and no error occurs. Ignored errors generate warnings instead.",
+      "evidence": "* If you use the `IGNORE` modifier, ignorable\nerrors that occur while executing the\n`INSERT` statement are ignored.\nFor example, without `IGNORE`, a row that\nduplicates an existing `UNIQUE` index or\n`PRIMARY KEY` value in the table causes a\nduplicate-key error and the statement is aborted. With\n`IGNORE`, the row is discarded and no error\noccurs. Ignored errors generate warnings instead.",
+      "question_type": "procedural",
+      "qa_id": "mysql_023"
+    },
+    {
+      "question": "What is the difference between VALUE and VALUES in MySQL INSERT statements?",
+      "answer": "VALUE is a synonym for VALUES in the context of INSERT statements. Neither implies anything about the number of values lists, nor about the number of values per list. Either may be used whether there is a single values list or multiple lists.",
+      "evidence": "`VALUE` is a synonym for\n`VALUES` in this context. Neither implies\nanything about the number of values lists, nor about the number of\nvalues per list. Either may be used whether there is a single\nvalues list or multiple lists, and regardless of the number of",
+      "question_type": "comparative",
+      "qa_id": "mysql_024"
+    },
+    {
+      "question": "What are the affected-rows values for INSERT ... ON DUPLICATE KEY UPDATE?",
+      "answer": "The affected-rows value per row is 1 if the row is inserted as a new row, 2 if an existing row is updated, and 0 if an existing row is set to its current values. If you specify the CLIENT_FOUND_ROWS flag to the mysql_real_connect() C API function, the affected-rows value is 1 (not 0) if an existing row is set to its current values.",
+      "evidence": "* If you specify `ON DUPLICATE KEY UPDATE`, and\na row is inserted that would cause a duplicate value in a\n`UNIQUE` index or `PRIMARY\nKEY`, an `UPDATE` of the\nold row occurs. The affected-rows value per row is 1 if the\nrow is inserted as a new row, 2 if an existing row is updated,\nand 0 if an existing row is set to its current values. If you",
+      "question_type": "factual",
+      "qa_id": "mysql_025"
+    },
+    {
+      "question": "How does the LOW_PRIORITY modifier work with INSERT statements?",
+      "answer": "If you use the LOW_PRIORITY modifier, execution of the INSERT is delayed until no other clients are reading from the table. This includes other clients that began reading while the INSERT LOW_PRIORITY statement is waiting. It is possible for a client that issues an INSERT LOW_PRIORITY statement to wait for a very long time. LOW_PRIORITY affects only storage engines that use only table-level locking such as MyISAM, MEMORY, and MERGE.",
+      "evidence": "* If you use the `LOW_PRIORITY` modifier,\n  execution of the `INSERT` is\n  delayed until no other clients are reading from the table.\n  This includes other clients that began reading while existing\n  clients are reading, and while the `INSERT\n  LOW_PRIORITY` statement is waiting. It is possible,\n  therefore, for a client that issues an `INSERT\n  LOW_PRIORITY` statement to wait for a very long time.",
+      "question_type": "procedural",
+      "qa_id": "mysql_026"
+    },
+    {
+      "question": "What is the UPDATE statement in MySQL?",
+      "answer": "UPDATE is a DML statement that modifies rows in a table. It supports both single-table and multiple-table syntax. For single-table syntax, it updates columns of existing rows with new values. The SET clause indicates which columns to modify and the values they should be given.",
+      "evidence": "`UPDATE` is a DML statement that\nmodifies rows in a table.",
+      "question_type": "definitional",
+      "qa_id": "mysql_027"
+    },
+    {
+      "question": "How can you avoid duplicate-key errors when using UPDATE to increment an ID column?",
+      "answer": "You can add an ORDER BY clause to cause the rows with larger id values to be updated before those with smaller values. For example, 'UPDATE t SET id = id + 1 ORDER BY id DESC' avoids the issue where updating 1 to 2 before 2 is updated to 3 would cause a duplicate-key error.",
+      "evidence": "For example, if the table contains 1 and 2 in the\n`id` column and 1 is updated to 2 before 2 is\nupdated to 3, an error occurs. To avoid this problem, add an\n`ORDER BY` clause to cause the rows with larger\n`id` values to be updated before those with\nsmaller values:",
+      "question_type": "procedural",
+      "qa_id": "mysql_030"
+    },
+    {
+      "question": "What does UPDATE return and what happens when a column is set to its current value?",
+      "answer": "UPDATE returns the number of rows that were actually changed. If you set a column to the value it currently has, MySQL notices this and does not update it. The mysql_info() C API function returns the number of rows that were matched and updated and the number of warnings that occurred during the UPDATE.",
+      "evidence": "`UPDATE` returns the number of rows\nthat were actually changed. The\n`mysql_info()` C API function\nreturns the number of rows that were matched and updated and the\nnumber of warnings that occurred during the\n`UPDATE`.",
+      "question_type": "factual",
+      "qa_id": "mysql_031"
+    },
+    {
+      "question": "What is the NO_MERGE optimizer hint and how is it used with UPDATE?",
+      "answer": "The NO_MERGE optimizer hint can be used to force materialization of a derived table in a multi-table UPDATE statement. The advantage is that it applies only within the query block where it is used, so it is not necessary to change the value of optimizer_switch again after executing the UPDATE.",
+      "evidence": "The advantage of using the optimizer hint in such a case is that\nit applies only within the query block where it is used, so that\nit is not necessary to change the value of\n`optimizer_switch` again after executing the\n`UPDATE`.",
+      "question_type": "procedural",
+      "qa_id": "mysql_032"
+    },
+    {
+      "question": "Why is TRUNCATE TABLE faster than DELETE for emptying a table?",
+      "answer": "When you do not need to know the number of deleted rows, the TRUNCATE TABLE statement is a faster way to empty a table than a DELETE statement with no WHERE clause. However, unlike DELETE, TRUNCATE TABLE cannot be used within a transaction or if you have a lock on the table.",
+      "evidence": "When you do not need to know the number of deleted rows, the\n`TRUNCATE TABLE` statement is a\nfaster way to empty a table than a\n`DELETE` statement with no\n`WHERE` clause. Unlike\n`DELETE`,\n`TRUNCATE TABLE` cannot be used\nwithin a transaction or if you have a lock on the table. See\nSection\u00a015.1.37, \u201cTRUNCATE TABLE Statement\u201d and\nSection\u00a015.3.6, \u201cLOCK TABLES and UNLOCK TABLES Statements\u201d.",
+      "question_type": "causal",
+      "qa_id": "mysql_034"
+    },
+    {
+      "question": "What privileges are needed to delete rows from a table in MySQL?",
+      "answer": "You need the DELETE privilege on a table to delete rows from it. You need only the SELECT privilege for any columns that are only read, such as those named in the WHERE clause.",
+      "evidence": "You need the `DELETE` privilege on a\ntable to delete rows from it. You need only the\n`SELECT` privilege for any columns\nthat are only read, such as those named in the\n`WHERE` clause.",
+      "question_type": "factual",
+      "qa_id": "mysql_035"
+    },
+    {
+      "question": "What happens to AUTO_INCREMENT values when you delete the row containing the maximum value?",
+      "answer": "If you delete the row containing the maximum value for an AUTO_INCREMENT column, the value is not reused for a MyISAM or InnoDB table. If you delete all rows in the table with DELETE FROM tbl_name in autocommit mode, the sequence starts over for all storage engines except InnoDB and MyISAM.",
+      "evidence": "If you delete the row containing the maximum value for an\n`AUTO_INCREMENT` column, the value is not reused\nfor a `MyISAM` or `InnoDB`\ntable. If you delete all rows in the table with `DELETE\nFROM tbl_name` (without a\n`WHERE` clause) in\n`autocommit` mode, the sequence\nstarts over for all storage engines except\n`InnoDB` and `MyISAM`. There are",
+      "question_type": "factual",
+      "qa_id": "mysql_036"
+    },
+    {
+      "question": "What is the recommended strategy for deleting many rows from a large InnoDB table?",
+      "answer": "To avoid exceeding the lock table size or minimize lock time, select the rows not to be deleted into an empty table with the same structure, use RENAME TABLE to atomically move the original table out and rename the copy to the original name, then drop the original table. No other sessions can access the tables involved while RENAME TABLE executes.",
+      "evidence": "1. Select the rows *not* to be deleted into an\nempty table that has the same structure as the original table:",
+      "question_type": "procedural",
+      "qa_id": "mysql_037"
+    },
+    {
+      "question": "What does the QUICK modifier do in a DELETE statement for MyISAM tables?",
+      "answer": "For MyISAM tables, if you use the QUICK modifier, the storage engine does not merge index leaves during delete, which may speed up some kinds of delete operations. DELETE QUICK is most useful for applications where index values for deleted rows are replaced by similar index values from rows inserted later.",
+      "evidence": "* For `MyISAM` tables, if you use the\n  `QUICK` modifier, the storage engine does not\n  merge index leaves during delete, which may speed up some\n  kinds of delete operations.",
+      "question_type": "factual",
+      "qa_id": "mysql_038"
+    },
+    {
+      "question": "How do you delete rows from one table that have no match in another table?",
+      "answer": "You can use a LEFT JOIN with a DELETE statement. For example, to delete rows that exist in t1 that have no match in t2, use: DELETE t1 FROM t1 LEFT JOIN t2 ON t1.id=t2.id WHERE t2.id IS NULL. This deletes from t1 all rows that have no corresponding row in t2.",
+      "evidence": "exist in `t1` that have no match in\n`t2`, use a `LEFT JOIN`:\n```\nDELETE t1 FROM t1 LEFT JOIN t2 ON t1.id=t2.id WHERE t2.id IS NULL;",
+      "question_type": "procedural",
+      "qa_id": "mysql_040"
+    },
+    {
+      "question": "When were table aliases first supported in single-table DELETE statements?",
+      "answer": "Table aliases are supported for single-table DELETE statements beginning with MySQL 8.0.16. Previously, this feature was available only for multiple-table DELETE statements.",
+      "evidence": "Table aliases are also supported for single-table\n`DELETE` statements beginning with MySQL 8.0.16.",
+      "question_type": "factual",
+      "qa_id": "mysql_041"
+    },
+    {
+      "question": "How do you reclaim unused space in MyISAM tables after deleting rows?",
+      "answer": "In MyISAM tables, deleted rows are maintained in a linked list and subsequent INSERT operations reuse old row positions. To reclaim unused space and reduce file sizes, use the OPTIMIZE TABLE statement or the myisamchk utility. OPTIMIZE TABLE is easier to use, but myisamchk is faster.",
+      "evidence": "In `MyISAM` tables, deleted rows are maintained\nin a linked list and subsequent\n`INSERT` operations reuse old row\npositions. To reclaim unused space and reduce file sizes, use the\n`OPTIMIZE TABLE` statement or the\n**myisamchk** utility to reorganize tables.",
+      "question_type": "procedural",
+      "qa_id": "mysql_042"
+    },
+    {
+      "question": "What is the default storage engine for new tables in MySQL 8.0?",
+      "answer": "By default, tables are created in the default database using the InnoDB storage engine. InnoDB is the default storage engine for new tables, providing transaction-safe tables with row locking and foreign keys.",
+      "evidence": "By default, tables are created in the default database, using the\n`InnoDB` storage engine. An error\noccurs if the table exists, if there is no default database, or if\nthe database does not exist.",
+      "question_type": "factual",
+      "qa_id": "mysql_043"
+    },
+    {
+      "question": "What is the hard limit on the number of columns per table in MySQL?",
+      "answer": "There is a hard limit of 4096 columns per table, but the effective maximum may be less for a given table and depends on various factors discussed in the MySQL documentation regarding limits on table column count and row size.",
+      "evidence": "There is a hard limit of 4096 columns per table, but the effective\nmaximum may be less for a given table and depends on the factors\ndiscussed in Section\u00a010.4.7, \u201cLimits on Table Column Count and Row Size\u201d.",
+      "question_type": "factual",
+      "qa_id": "mysql_046"
+    },
+    {
+      "question": "What is the TEMPORARY keyword used for in CREATE TABLE?",
+      "answer": "You can use the TEMPORARY keyword when creating a table. A TEMPORARY table is visible only within the current session, and is dropped automatically when the session is closed. This is useful for intermediate results that are only needed within the current connection.",
+      "evidence": "You can use the `TEMPORARY` keyword when creating\na table. A `TEMPORARY` table is visible only\nwithin the current session, and is dropped automatically when the\nsession is closed. For more information, see\nSection\u00a015.1.20.2, \u201cCREATE TEMPORARY TABLE Statement\u201d.",
+      "question_type": "definitional",
+      "qa_id": "mysql_047"
+    },
+    {
+      "question": "What are the rules for PRIMARY KEY columns in MySQL?",
+      "answer": "A PRIMARY KEY is a unique index where all key columns must be defined as NOT NULL. If they are not explicitly declared as NOT NULL, MySQL declares them so implicitly and silently. A table can have only one PRIMARY KEY. The name of a PRIMARY KEY is always PRIMARY, which cannot be used as the name for any other kind of index.",
+      "evidence": "  A unique index where all key columns must be defined as\n  `NOT NULL`. If they are not explicitly\n  declared as `NOT NULL`, MySQL declares them\n  so implicitly (and silently). A table can have only one\n  `PRIMARY KEY`. The name of a `PRIMARY\n  KEY` is always `PRIMARY`, which thus\n  cannot be used as the name for any other kind of index.",
+      "question_type": "factual",
+      "qa_id": "mysql_049"
+    },
+    {
+      "question": "Why should the PRIMARY KEY be kept short in InnoDB tables?",
+      "answer": "In InnoDB tables, you should keep the PRIMARY KEY short to minimize storage overhead for secondary indexes. Each secondary index entry contains a copy of the primary key columns for the corresponding row, so a shorter primary key means less duplicated data across all secondary indexes.",
+      "evidence": "In `InnoDB` tables, keep the `PRIMARY\nKEY` short to minimize storage overhead for secondary\nindexes. Each secondary index entry contains a copy of the\nprimary key columns for the corresponding row. (See",
+      "question_type": "causal",
+      "qa_id": "mysql_050"
+    },
+    {
+      "question": "How does MySQL handle UNIQUE indexes with NULL values?",
+      "answer": "A UNIQUE index creates a constraint such that all values in the index must be distinct. For all engines, a UNIQUE index permits multiple NULL values for columns that can contain NULL. This means that NULL is not treated as equal to NULL for the purposes of uniqueness enforcement.",
+      "evidence": "A `UNIQUE` index creates a constraint such\nthat all values in the index must be distinct. An error occurs\nif you try to add a new row with a key value that matches an\nexisting row. For all engines, a `UNIQUE`\nindex permits multiple `NULL` values for\ncolumns that can contain `NULL`. If you",
+      "question_type": "factual",
+      "qa_id": "mysql_051"
+    },
+    {
+      "question": "What is a FULLTEXT index and what storage engines support it?",
+      "answer": "A FULLTEXT index is a special type of index used for full-text searches. Only the InnoDB and MyISAM storage engines support FULLTEXT indexes. They can be created only from CHAR, VARCHAR, and TEXT columns. Indexing always happens over the entire column; column prefix indexing is not supported.",
+      "evidence": "A `FULLTEXT` index is a special type of index\nused for full-text searches. Only the\n`InnoDB` and\n`MyISAM` storage engines support\n`FULLTEXT` indexes. They can be created only\nfrom `CHAR`,\n`VARCHAR`, and\n`TEXT` columns. Indexing always\nhappens over the entire column; column prefix indexing is not\nsupported and any prefix length is ignored if specified. See",
+      "question_type": "definitional",
+      "qa_id": "mysql_052"
+    },
+    {
+      "question": "What are the index prefix length limits for InnoDB tables with different row formats?",
+      "answer": "Prefixes can be up to 767 bytes long for InnoDB tables that use the REDUNDANT or COMPACT row format. The prefix length limit is 3072 bytes for InnoDB tables that use the DYNAMIC or COMPRESSED row format. For MyISAM tables, the prefix length limit is 1000 bytes.",
+      "evidence": "  + Prefixes, defined by the *`length`*\n    attribute, can be up to 767 bytes long for\n    `InnoDB` tables that use the\n    `REDUNDANT`\n    or\n    `COMPACT`\n    row format. The prefix length limit is 3072 bytes for\n    `InnoDB` tables that use the\n    `DYNAMIC`\n    or\n    `COMPRESSED`\n    row format. For `MyISAM` tables, the\n    prefix length limit is 1000 bytes.",
+      "question_type": "factual",
+      "qa_id": "mysql_053"
+    },
+    {
+      "question": "Can JSON columns be directly indexed in MySQL?",
+      "answer": "No, JSON columns cannot be indexed directly. You can work around this restriction by creating an index on a generated column that extracts a scalar value from the JSON column. Beginning with MySQL 8.0.17, you can also create a multi-valued index on a JSON column using the CAST expression.",
+      "evidence": "  + `JSON` columns cannot be\n    indexed. You can work around this restriction by creating\n    an index on a generated column that extracts a scalar\n    value from the `JSON` column. See\n    Indexing a Generated Column to Provide a JSON Column Index, for a\n    detailed example.",
+      "question_type": "factual",
+      "qa_id": "mysql_054"
+    },
+    {
+      "question": "What are the available reference_option values for foreign keys in MySQL?",
+      "answer": "The available reference_option values for foreign keys are RESTRICT, CASCADE, SET NULL, NO ACTION, and SET DEFAULT. These options control what happens to child table rows when the referenced parent table rows are deleted or updated.",
+      "evidence": "reference_option: RESTRICT | CASCADE | SET NULL | NO ACTION | SET DEFAULT",
+      "question_type": "factual",
+      "qa_id": "mysql_055"
+    },
+    {
+      "question": "What storage engines are listed in the MySQL 8.0 CREATE TABLE ENGINE option?",
+      "answer": "The storage engines listed are InnoDB (transaction-safe with row locking and foreign keys), MyISAM (for read-only or read-mostly workloads), MEMORY (data stored only in memory), CSV, ARCHIVE, EXAMPLE, FEDERATED (accesses remote tables), HEAP (synonym for MEMORY), MERGE (collection of MyISAM tables), and NDB (clustered, fault-tolerant).",
+      "evidence": "| `MyISAM` | The binary portable storage engine that is primarily used for read-only or read-mostly workloads. See Section\u00a018.2, \u201cThe MyISAM Storage Engine\u201d. |\n| `MEMORY` | The data for this storage engine is stored only in memory. See Section\u00a018.3, \u201cThe MEMORY Storage Engine\u201d. |\n| `CSV` | Tables that store rows in comma-separated values format. See Section\u00a018.4, \u201cThe CSV Storage Engine\u201d. |\n| `ARCHIVE` | The archiving storage engine. See Section\u00a018.5, \u201cThe ARCHIVE Storage Engine\u201d. |\n| `EXAMPLE` | An example engine. See Section\u00a018.9, \u201cThe EXAMPLE Storage Engine\u201d. |\n| `FEDERATED` | Storage engine that accesses remote tables. See Section\u00a018.8, \u201cThe FEDERATED Storage Engine\u201d. |\n| `HEAP` | This is a synonym for `MEMORY`. |\n| `MERGE` | A collection of `MyISAM` tables used as one table. Also known as `MRG_MyISAM`. See Section\u00a018.7, \u201cThe MERGE Storage Engine\u201d. |\n| `NDB` | Clustered, fault-tolerant, memory-based tables, supporting transactions and foreign keys. Also known as `NDBCLUSTER`. See Chapter\u00a025, *MySQL NDB Cluster 8.0*. |",
+      "question_type": "factual",
+      "qa_id": "mysql_056"
+    },
+    {
+      "question": "What is the ENCRYPTION table option and when can it be used?",
+      "answer": "The ENCRYPTION clause enables or disables page-level data encryption for an InnoDB table. A keyring plugin must be installed and configured before encryption can be enabled. As of MySQL 8.0.16, the ENCRYPTION clause can be specified when creating a table in a general tablespace, not just file-per-table tablespaces.",
+      "evidence": "The `ENCRYPTION` clause enables or disables\npage-level data encryption for an `InnoDB`\ntable. A keyring plugin must be installed and configured\nbefore encryption can be enabled. Prior to MySQL 8.0.16, the\n`ENCRYPTION` clause can only be specified\nwhen creating a table in an a file-per-table tablespace. As of\nMySQL 8.0.16, the `ENCRYPTION` clause can\nalso be specified when creating a table in a general",
+      "question_type": "procedural",
+      "qa_id": "mysql_058"
+    },
+    {
+      "question": "What happens when ROW_FORMAT=FIXED is specified for an InnoDB table?",
+      "answer": "ROW_FORMAT=FIXED is not supported for InnoDB. If specified while innodb_strict_mode is disabled, InnoDB issues a warning and assumes ROW_FORMAT=DYNAMIC. If specified while innodb_strict_mode is enabled (which is the default), InnoDB returns an error.",
+      "evidence": "  + `ROW_FORMAT=FIXED` is not supported. If\n    `ROW_FORMAT=FIXED` is specified while\n    `innodb_strict_mode` is\n    disabled, `InnoDB` issues a warning and\n    assumes `ROW_FORMAT=DYNAMIC`. If\n    `ROW_FORMAT=FIXED` is specified while\n    `innodb_strict_mode` is\n    enabled, which is the default, `InnoDB`\n    returns an error.",
+      "question_type": "causal",
+      "qa_id": "mysql_060"
+    },
+    {
+      "question": "How does PARTITION BY HASH work in MySQL?",
+      "answer": "PARTITION BY HASH hashes one or more columns to create a key for placing and locating rows. The expression must be a valid MySQL expression that yields a single integer value. It uses the remainder of the expression divided by the number of partitions (the modulus). You may not use VALUES LESS THAN or VALUES IN clauses with PARTITION BY HASH.",
+      "evidence": "Hashes one or more columns to create a key for placing and\nlocating rows. *`expr`* is an\nexpression using one or more table columns. This can be any\nvalid MySQL expression (including MySQL functions) that yields\na single integer value. For example, these are both valid\n`CREATE TABLE` statements using\n`PARTITION BY HASH`:",
+      "question_type": "procedural",
+      "qa_id": "mysql_062"
+    },
+    {
+      "question": "How does KEY partitioning differ from HASH partitioning?",
+      "answer": "KEY partitioning is similar to HASH, except that MySQL supplies the hashing function so as to guarantee an even data distribution. With HASH, you provide the expression, whereas with KEY, MySQL uses its own internal hashing function. The column_list argument for KEY is a list of 1 or more table columns with a maximum of 16.",
+      "evidence": "  This is similar to `HASH`, except that MySQL\n  supplies the hashing function so as to guarantee an even data\n  distribution. The *`column_list`*\n  argument is simply a list of 1 or more table columns (maximum:\n  16). This example shows a simple table partitioned by key,",
+      "question_type": "comparative",
+      "qa_id": "mysql_063"
+    },
+    {
+      "question": "What is the purpose of VALUES LESS THAN MAXVALUE in RANGE partitioning?",
+      "answer": "VALUES LESS THAN MAXVALUE works to specify leftover values that are greater than the maximum value otherwise specified. VALUES LESS THAN clauses must be arranged so that the upper limit in each successive clause is greater than the previous one, with the one referencing MAXVALUE coming last of all in the list.",
+      "evidence": "  `PARTITION ... VALUES LESS THAN ...`\n  statements work in a consecutive fashion. `VALUES LESS\n  THAN MAXVALUE` works to specify\n  \u201cleftover\u201d values that are greater than the\n  maximum value otherwise specified.",
+      "question_type": "definitional",
+      "qa_id": "mysql_064"
+    },
+    {
+      "question": "What data types are not permitted in RANGE COLUMNS and LIST COLUMNS partitioning?",
+      "answer": "Columns using BLOB, TEXT, SET, ENUM, BIT, or spatial data types are not permitted in the COLUMNS clause for RANGE COLUMNS and LIST COLUMNS partitioning. Columns that use floating-point number types are also not permitted. You also may not use functions or arithmetic expressions in the COLUMNS clause.",
+      "evidence": "  time or date column types. Columns using\n  `BLOB`, `TEXT`,\n  `SET`, `ENUM`,\n  `BIT`, or spatial data types are not\n  permitted; columns that use floating-point number types are\n  also not permitted. You also may not use functions or\n  arithmetic expressions in the `COLUMNS`",
+      "question_type": "factual",
+      "qa_id": "mysql_065"
+    },
+    {
+      "question": "How does subpartitioning work in MySQL?",
+      "answer": "A partition may optionally be divided into a number of subpartitions using the SUBPARTITION BY clause. Subpartitioning may be done by HASH or KEY, either of which may be LINEAR. It is not possible to subpartition by LIST or RANGE. Subpartitioning can be done only on RANGE or LIST partitions.",
+      "evidence": "A partition may optionally be divided into a number of\nsubpartitions. This can be indicated by using the optional\n`SUBPARTITION BY` clause. Subpartitioning may\nbe done by `HASH` or `KEY`.\nEither of these may be `LINEAR`. These work\nin the same way as previously described for the equivalent\npartitioning types. (It is not possible to subpartition by\n`LIST` or `RANGE`.)",
+      "question_type": "procedural",
+      "qa_id": "mysql_066"
+    },
+    {
+      "question": "Can generated columns be used for partitioning in MySQL?",
+      "answer": "Yes, partitioning by generated columns is permitted. Partitioning sees a generated column as a regular column, which enables workarounds for limitations on functions that are not permitted for partitioning. For example, EXP() cannot be used directly in a PARTITION BY clause, but a generated column defined using EXP() is permitted.",
+      "evidence": "Partitioning sees a generated column as a regular column, which\nenables workarounds for limitations on functions that are not\npermitted for partitioning (see",
+      "question_type": "factual",
+      "qa_id": "mysql_067"
+    },
+    {
+      "question": "What does the ALTER TABLE statement do in MySQL?",
+      "answer": "ALTER TABLE changes the structure of a table. For example, you can add or delete columns, create or destroy indexes, change the type of existing columns, or rename columns or the table itself. You can also change characteristics such as the storage engine used for the table or the table comment.",
+      "evidence": "`ALTER TABLE` changes the structure\nof a table. For example, you can add or delete columns, create or\ndestroy indexes, change the type of existing columns, or rename\ncolumns or the table itself. You can also change characteristics\nsuch as the storage engine used for the table or the table\ncomment.",
+      "question_type": "definitional",
+      "qa_id": "mysql_068"
+    },
+    {
+      "question": "What privileges are required to use ALTER TABLE?",
+      "answer": "To use ALTER TABLE, you need ALTER, CREATE, and INSERT privileges for the table. Renaming a table requires ALTER and DROP on the old table, and ALTER, CREATE, and INSERT on the new table.",
+      "evidence": "* To use `ALTER TABLE`, you need\n  `ALTER`,\n  `CREATE`, and\n  `INSERT` privileges for the\n  table. Renaming a table requires\n  `ALTER` and\n  `DROP` on the old table,\n  `ALTER`,\n  `CREATE`, and\n  `INSERT` on the new table.",
+      "question_type": "factual",
+      "qa_id": "mysql_069"
+    },
+    {
+      "question": "Can you perform multiple alterations in a single ALTER TABLE statement?",
+      "answer": "Yes, multiple ADD, ALTER, DROP, and CHANGE clauses are permitted in a single ALTER TABLE statement, separated by commas. This is a MySQL extension to standard SQL, which permits only one of each clause per ALTER TABLE statement. For example, you can drop multiple columns in a single statement: ALTER TABLE t2 DROP COLUMN c, DROP COLUMN d.",
+      "evidence": "* Multiple `ADD`, `ALTER`,\n  `DROP`, and `CHANGE` clauses\n  are permitted in a single `ALTER\n  TABLE` statement, separated by commas. This is a\n  MySQL extension to standard SQL, which permits only one of\n  each clause per `ALTER TABLE`\n  statement. For example, to drop multiple columns in a single",
+      "question_type": "factual",
+      "qa_id": "mysql_070"
+    },
+    {
+      "question": "What LOCK clause options are available for ALTER TABLE?",
+      "answer": "The LOCK clause parameters are: LOCK=DEFAULT (maximum concurrency for the given algorithm), LOCK=NONE (permit concurrent reads and writes or error), LOCK=SHARED (permit concurrent reads but block writes), and LOCK=EXCLUSIVE (enforce exclusive access). Only LOCK=DEFAULT is permitted for operations that use ALGORITHM=INSTANT.",
+      "evidence": "* `LOCK = DEFAULT`\nMaximum level of concurrency for the given\n`ALGORITHM` clause (if any) and\n`ALTER TABLE` operation: Permit concurrent\nreads and writes if supported. If not, permit concurrent reads\nif supported. If not, enforce exclusive access.\n* `LOCK = NONE`",
+      "question_type": "factual",
+      "qa_id": "mysql_073"
+    },
+    {
+      "question": "How do you change both a column's name and definition using ALTER TABLE?",
+      "answer": "To alter a column to change both its name and definition, use CHANGE, specifying the old and new names and the new definition. For example, to rename an INT NOT NULL column from 'a' to 'b' and change it to BIGINT: ALTER TABLE t1 CHANGE a b BIGINT NOT NULL.",
+      "evidence": "To alter a column to change both its name and definition, use\n`CHANGE`, specifying the old and new names and\nthe new definition. For example, to rename an `INT NOT\nNULL` column from `a` to\n`b` and change its definition to use the\n`BIGINT` data type while retaining the\n`NOT NULL` attribute, do this:\n```\nALTER TABLE t1 CHANGE a b BIGINT NOT NULL;",
+      "question_type": "procedural",
+      "qa_id": "mysql_075"
+    },
+    {
+      "question": "What happens to column attributes when using CHANGE or MODIFY to alter a column definition?",
+      "answer": "The definition must include the data type and all attributes that should apply to the new column. Attributes present in the original definition but not specified for the new definition are not carried forward. For example, if you modify a column defined as INT UNSIGNED DEFAULT 1 COMMENT 'my column' using only MODIFY col1 BIGINT, the UNSIGNED, DEFAULT, and COMMENT attributes are dropped.",
+      "evidence": "`UNIQUE`. Attributes present in the original\ndefinition but not specified for the new definition are not\ncarried forward. Suppose that a column `col1` is\ndefined as `INT UNSIGNED DEFAULT 1 COMMENT 'my\ncolumn'` and you modify the column as follows, intending\nto change only `INT` to\n`BIGINT`:\n```\nALTER TABLE t1 MODIFY col1 BIGINT;\n```\nThat statement changes the data type from `INT`\nto `BIGINT`, but it also drops the",
+      "question_type": "causal",
+      "qa_id": "mysql_076"
+    },
+    {
+      "question": "How do you swap column names in MySQL using ALTER TABLE?",
+      "answer": "You can swap column names in a single ALTER TABLE statement. If a table has columns named a and b, you can swap them using: ALTER TABLE t1 RENAME COLUMN a TO b, RENAME COLUMN b TO a. You can also rotate columns through a cycle, such as a to b, b to c, c to a.",
+      "evidence": "-- swap a and b ALTER TABLE t1 RENAME COLUMN a TO b, RENAME COLUMN b TO a; -- \"rotate\" a, b, c through a cycle ALTER TABLE t1 RENAME COLUMN a TO b, RENAME COLUMN b TO c, RENAME COLUMN c TO a;",
+      "question_type": "procedural",
+      "qa_id": "mysql_077"
+    },
+    {
+      "question": "How do you convert a table's storage engine to InnoDB using ALTER TABLE?",
+      "answer": "Use ALTER TABLE t1 ENGINE = InnoDB. When you specify an ENGINE clause, ALTER TABLE rebuilds the table, even if the table already has the specified storage engine. Running ALTER TABLE tbl_name ENGINE=INNODB on an existing InnoDB table performs a 'null' ALTER TABLE operation, which can be used to defragment an InnoDB table.",
+      "evidence": "* If `t1` is currently not an\n`InnoDB` table, this statement changes its\nstorage engine to `InnoDB`:",
+      "question_type": "procedural",
+      "qa_id": "mysql_078"
+    },
+    {
+      "question": "How does ALTER TABLE handle column drops in relation to indexes?",
+      "answer": "If columns are dropped from a table, the columns are also removed from any index of which they are a part. If all columns that make up an index are dropped, the index is dropped as well. If you use CHANGE or MODIFY to shorten a column for which an index exists on the column, and the resulting column length is less than the index length, MySQL shortens the index automatically.",
+      "evidence": "If columns are dropped from a table, the columns are also removed\nfrom any index of which they are a part. If all columns that make\nup an index are dropped, the index is dropped as well. If you use\n`CHANGE` or `MODIFY` to shorten\na column for which an index exists on the column, and the\nresulting column length is less than the index length, MySQL\nshortens the index automatically.",
+      "question_type": "causal",
+      "qa_id": "mysql_079"
+    },
+    {
+      "question": "What does the RENAME INDEX clause do in ALTER TABLE?",
+      "answer": "RENAME INDEX old_index_name TO new_index_name renames an index. This is a MySQL extension to standard SQL. The content of the table remains unchanged. The old_index_name must be the name of an existing index, and the new_index_name cannot duplicate the name of another index. Neither index name can be PRIMARY.",
+      "evidence": "`RENAME INDEX old_index_name TO\nnew_index_name` renames an\nindex. This is a MySQL extension to standard SQL. The content of\nthe table remains unchanged.",
+      "question_type": "definitional",
+      "qa_id": "mysql_080"
+    },
+    {
+      "question": "How does ALTER TABLE handle CHECK constraints since MySQL 8.0.16?",
+      "answer": "As of MySQL 8.0.16, ALTER TABLE permits CHECK constraints for existing tables to be added, dropped, or altered. You can add a new CHECK constraint, drop an existing one by name, or alter whether an existing CHECK constraint is enforced. Prior to 8.0.16, only a limited parsing-and-ignoring syntax was supported.",
+      "evidence": "As of MySQL 8.0.16, `ALTER TABLE`\npermits `CHECK` constraints for existing tables\nto be added, dropped, or altered:",
+      "question_type": "factual",
+      "qa_id": "mysql_082"
+    },
+    {
+      "question": "What happens when you convert a table's character set and it has VARCHAR or TEXT columns?",
+      "answer": "CONVERT TO CHARACTER SET changes the data type as necessary to ensure that the new column is long enough to store as many characters as the original column. For example, a latin1 TEXT column converted to utf8mb4 might require up to 4 bytes per character, causing MySQL to convert the data type to MEDIUMTEXT. Similarly, a VARCHAR column might be converted to MEDIUMTEXT.",
+      "evidence": "For a column that has a data type of\n`VARCHAR` or one of the\n`TEXT` types, `CONVERT TO\nCHARACTER SET` changes the data type as necessary to\nensure that the new column is long enough to store as many\ncharacters as the original column. For example, a",
+      "question_type": "causal",
+      "qa_id": "mysql_083"
+    },
+    {
+      "question": "How do you import an InnoDB table from a backup or another server instance?",
+      "answer": "An InnoDB table created in its own file-per-table tablespace can be imported from a backup or from another MySQL server instance using DISCARD TABLESPACE and IMPORT TABLESPACE clauses of ALTER TABLE.",
+      "evidence": "An `InnoDB` table created in its own\nfile-per-table\ntablespace can be imported from a backup or from another MySQL\nserver instance using `DISCARD TABLEPACE` and\n`IMPORT TABLESPACE` clauses. See",
+      "question_type": "procedural",
+      "qa_id": "mysql_084"
+    },
+    {
+      "question": "How does MySQL resolve unqualified column references in ORDER BY versus GROUP BY/HAVING?",
+      "answer": "MySQL resolves unqualified column or alias references in ORDER BY clauses by searching in the select_expr values first, then in the columns of the tables in the FROM clause. For GROUP BY or HAVING clauses, it searches the FROM clause before searching in the select_expr values. This differs from the pre-MySQL 5.0 behavior.",
+      "evidence": "* MySQL resolves unqualified column or alias references in\n  `ORDER BY` clauses by searching in the\n  *`select_expr`* values, then in the\n  columns of the tables in the `FROM` clause.",
+      "question_type": "comparative",
+      "qa_id": "mysql_086"
+    },
+    {
+      "question": "What is the best way to improve the performance of SELECT operations in MySQL?",
+      "answer": "The best way to improve the performance of SELECT operations is to create indexes on one or more of the columns that are tested in the query. The index entries act like pointers to the table rows, allowing the query to quickly determine which rows match a condition in the WHERE clause. All MySQL data types can be indexed.",
+      "evidence": "The best way to improve the performance of\n`SELECT` operations is to create\nindexes on one or more of the columns that are tested in the\nquery. The index entries act like pointers to the table rows,\nallowing the query to quickly determine which rows match a\ncondition in the `WHERE` clause, and retrieve the\nother column values for those rows. All MySQL data types can be\nindexed.",
+      "question_type": "factual",
+      "qa_id": "mysql_087"
+    },
+    {
+      "question": "What does the STATS_AUTO_RECALC table option do for InnoDB tables?",
+      "answer": "STATS_AUTO_RECALC specifies whether to automatically recalculate persistent statistics for an InnoDB table. The value 1 causes statistics to be recalculated when 10% of the data in the table has changed. The value 0 prevents automatic recalculation, requiring an ANALYZE TABLE statement for updates. DEFAULT causes the setting to be determined by the innodb_stats_auto_recalc configuration option.",
+      "evidence": "  Specifies whether to automatically recalculate\n  persistent\n  statistics for an `InnoDB` table. The\n  value `DEFAULT` causes the persistent\n  statistics setting for the table to be determined by the\n  `innodb_stats_auto_recalc`\n  configuration option. The value `1` causes\n  statistics to be recalculated when 10% of the data in the\n  table has changed. The value `0` prevents\n  automatic recalculation for this table; with this setting,",
+      "question_type": "definitional",
+      "qa_id": "mysql_093"
+    },
+    {
+      "question": "What is the SQL_CALC_FOUND_ROWS modifier and what is its deprecation status?",
+      "answer": "SQL_CALC_FOUND_ROWS tells MySQL to calculate how many rows there would be in the result set, disregarding any LIMIT clause. The number of rows can then be retrieved with SELECT FOUND_ROWS(). However, the SQL_CALC_FOUND_ROWS query modifier and accompanying FOUND_ROWS() function are deprecated as of MySQL 8.0.17 and expected to be removed in a future version.",
+      "evidence": "* `SQL_CALC_FOUND_ROWS` tells MySQL to\ncalculate how many rows there would be in the result set,\ndisregarding any `LIMIT` clause. The number\nof rows can then be retrieved with `SELECT",
+      "question_type": "factual",
+      "qa_id": "mysql_094"
+    },
+    {
+      "question": "How does MySQL handle constraint namespaces compared to the SQL standard?",
+      "answer": "The SQL standard specifies that all types of constraints (primary key, unique index, foreign key, check) belong to the same namespace. In MySQL, each constraint type has its own namespace per schema. Consequently, names for each type of constraint must be unique per schema, but constraints of different types can have the same name.",
+      "evidence": "The SQL standard specifies that all types of constraints (primary key, unique index, foreign key, check) belong to the same namespace. In MySQL, each constraint type has its own namespace per schema. Consequently, names for each type of constraint must be unique per schema, but constraints of different types can have the same name.",
+      "question_type": "comparative",
+      "qa_id": "mysql_095"
+    },
+    {
+      "question": "How do you use the LIMIT clause with prepared statements in MySQL?",
+      "answer": "Within prepared statements, LIMIT parameters can be specified using ? placeholder markers. For example: SET @a=1; PREPARE STMT FROM 'SELECT * FROM tbl LIMIT ?'; EXECUTE STMT USING @a. You can also use two placeholders for offset and row count: SET @skip=1; SET @numrows=5; PREPARE STMT FROM 'SELECT * FROM tbl LIMIT ?, ?'; EXECUTE STMT USING @skip, @numrows.",
+      "evidence": "  + Within prepared statements, `LIMIT`\n    parameters can be specified using `?`\n    placeholder markers.",
+      "question_type": "procedural",
+      "qa_id": "mysql_097"
+    },
+    {
+      "question": "What is the purpose of invisible indexes in MySQL?",
+      "answer": "An invisible index is not used by the optimizer. Specification of index visibility applies to indexes other than primary keys (either explicit or implicit). The ALTER INDEX operation permits an index to be made visible or invisible. This feature is storage engine neutral, supported for any engine, and can be useful for testing the impact of dropping an index without actually removing it.",
+      "evidence": "An invisible index is not used by the optimizer.\nSpecification of index visibility applies to indexes other\nthan primary keys (either explicit or implicit). For more\ninformation, see Section\u00a010.3.12, \u201cInvisible Indexes\u201d.",
+      "question_type": "definitional",
+      "qa_id": "mysql_098"
+    },
+    {
+      "question": "How does MySQL handle foreign key constraints when using multiple-table UPDATE with InnoDB tables?",
+      "answer": "If you use a multiple-table UPDATE statement involving InnoDB tables for which there are foreign key constraints, the MySQL optimizer might process tables in an order that differs from that of their parent/child relationship. In this case, the statement fails and rolls back. Instead, you should update a single table and rely on the ON UPDATE capabilities that InnoDB provides.",
+      "evidence": "If you use a multiple-table `UPDATE`\nstatement involving `InnoDB` tables for which\nthere are foreign key constraints, the MySQL optimizer might\nprocess tables in an order that differs from that of their\nparent/child relationship. In this case, the statement fails and\nrolls back. Instead, update a single table and rely on the\n`ON UPDATE` capabilities that\n`InnoDB` provides to cause the other tables to be\nmodified accordingly. See",
+      "question_type": "causal",
+      "qa_id": "mysql_099"
+    },
+    {
+      "question": "What does the D parameter represent in MySQL data type definitions, and what is its maximum possible value?",
+      "answer": "D applies to floating-point and fixed-point types and indicates the number of digits following the decimal point (the scale). The maximum possible value is 30, but should be no greater than M minus 2, where M is the total number of digits that can be stored.",
+      "evidence": "* *`D`* applies to floating-point and\n  fixed-point types and indicates the number of digits following\n  the decimal point (the scale). The maximum possible value is 30,\n  but should be no greater than\n  *`M`*\u22122.",
+      "question_type": "factual",
+      "qa_id": "mysql_100"
+    },
+    {
+      "question": "Which MySQL data types does the fsp (fractional seconds precision) parameter apply to?",
+      "answer": "The fsp parameter applies to the TIME, DATETIME, and TIMESTAMP types and represents fractional seconds precision, meaning the number of digits following the decimal point in the fractional part of the seconds value.",
+      "evidence": "* *`fsp`* applies to the\n  `TIME`,\n  `DATETIME`, and\n  `TIMESTAMP` types and represents\n  fractional seconds precision; that is, the number of digits\n  following the decimal point for fractional parts of seconds. The\n  *`fsp`* value, if given, must be in the\n  range 0 to 6. A value of 0 signifies that there is no fractional\n  part.",
+      "question_type": "procedural",
+      "qa_id": "mysql_101"
+    },
+    {
+      "question": "What is the valid range for the fsp (fractional seconds precision) value in MySQL, and what does a value of 0 signify?",
+      "answer": "The fsp value must be in the range 0 to 6. A value of 0 signifies that there is no fractional part.",
+      "evidence": "*`fsp`* value, if given, must be in the\n  range 0 to 6. A value of 0 signifies that there is no fractional\n  part.",
+      "question_type": "procedural",
+      "qa_id": "mysql_102"
+    },
+    {
+      "question": "How does the WHERE clause determine which rows are selected in a MySQL SELECT statement?",
+      "answer": "The where_condition is an expression that evaluates to true for each row to be selected. Rows must satisfy the condition or conditions specified in the WHERE clause to be included in the result.",
+      "evidence": "condition or conditions that rows must satisfy to be selected.\n  *`where_condition`* is an expression\n  that evaluates to true for each row to be selected.",
+      "question_type": "procedural",
+      "qa_id": "mysql_103"
+    },
+    {
+      "question": "Does MySQL require the FROM DUAL clause when no tables are referenced in a SELECT statement?",
+      "answer": "No, MySQL does not require FROM DUAL if no tables are referenced. While SQL standard statements should have FROM and possibly other clauses, MySQL may ignore the clauses.",
+      "evidence": "statements should have `FROM` and possibly other\nclauses. MySQL may ignore the clauses. MySQL does not require\n`FROM DUAL` if no tables are referenced.",
+      "question_type": "procedural",
+      "qa_id": "mysql_104"
+    },
+    {
+      "question": "What requirement applies to the number of columns when using INSERT without specifying a column list?",
+      "answer": "If you do not specify a list of column names for INSERT, the number of columns in the source table must match the number of columns to be inserted.",
+      "evidence": "For\n  the `INSERT TABLE` form, the number of\n  columns in the source table must match the number of columns\n  to be inserted.\n* If you do not specify a list of column names for\n  `INSERT ...\n  VALUES` or\n  `INSERT ...\n  SELECT`, values for every column in the table must be\n  provided by the `VALUES` list,\n  `SELECT` statement, or\n  `TABLE` statement.",
+      "question_type": "procedural",
+      "qa_id": "mysql_105"
+    },
+    {
+      "question": "What options does MySQL provide for specifying column values in an UPDATE statement's SET clause?",
+      "answer": "In an UPDATE statement, each value can be given as an expression, or the keyword DEFAULT can be used to set a column to its default value.",
+      "evidence": "and the values they should be given. Each value can be given as an\nexpression, or the keyword `DEFAULT` to set a\ncolumn explicitly to its default value.",
+      "question_type": "procedural",
+      "qa_id": "mysql_106"
+    },
+    {
+      "question": "How does the behavior of the PARTITION clause in an UPDATE statement differ from its use in INSERT or REPLACE statements?",
+      "answer": "Unlike the case when using PARTITION with an INSERT or REPLACE statement, an otherwise valid UPDATE ... PARTITION statement behaves differently. The distinction relates to how each statement type handles partition-related validation.",
+      "evidence": "Unlike the case when using `PARTITION` with an\n`INSERT` or\n`REPLACE` statement, an otherwise\nvalid `UPDATE ... PARTITION` statement is\nconsidered successful even if no rows in the listed partitions\n(or subpartitions) match the\n*`where_condition`*.",
+      "question_type": "comparative",
+      "qa_id": "mysql_107"
+    },
+    {
+      "question": "What restrictions apply to ORDER BY and LIMIT when used with a multiple-table UPDATE statement in MySQL?",
+      "answer": "You cannot use ORDER BY or LIMIT with a multiple-table UPDATE. The table_references clause lists the tables involved in the join for the multi-table UPDATE.",
+      "evidence": "However, you cannot use\n`ORDER BY` or `LIMIT` with a\nmultiple-table `UPDATE`. The\n*`table_references`* clause lists the\ntables involved in the join.",
+      "question_type": "comparative",
+      "qa_id": "mysql_108"
+    },
+    {
+      "question": "What are the transactional limitations of TRUNCATE TABLE compared to DELETE in MySQL?",
+      "answer": "Unlike DELETE, TRUNCATE TABLE cannot be used within a transaction or if you have a lock on the table. This is a key behavioral difference between the two operations.",
+      "evidence": "Unlike\n`DELETE`,\n`TRUNCATE TABLE` cannot be used\nwithin a transaction or if you have a lock on the table. See",
+      "question_type": "comparative",
+      "qa_id": "mysql_109"
+    },
+    {
+      "question": "How should you use the DELETE statement with LIMIT to delete a large number of rows in MySQL?",
+      "answer": "If the number of rows to delete is larger than the limit, you should repeat the DELETE statement until the number of affected rows is less than the LIMIT value.",
+      "evidence": "If the number of rows to\ndelete is larger than the limit, repeat the\n`DELETE` statement until the number of affected\nrows is less than the `LIMIT` value.",
+      "question_type": "comparative",
+      "qa_id": "mysql_110"
+    },
+    {
+      "question": "What happens to errors that are ignored due to the use of the IGNORE modifier in MySQL DELETE statements?",
+      "answer": "Errors that are ignored due to the use of IGNORE are returned as warnings. For more information, the documentation refers to the section on The Effect of IGNORE on Statement Execution.",
+      "evidence": ") Errors that are ignored due to the use of\n  `IGNORE` are returned as warnings. For more\n  information, see The Effect of IGNORE on Statement Execution.",
+      "question_type": "causal",
+      "qa_id": "mysql_111"
+    },
+    {
+      "question": "What effect does the LOW_PRIORITY modifier have on the execution of a DELETE statement in MySQL?",
+      "answer": "If you specify the LOW_PRIORITY modifier, the server delays execution of the DELETE until no other clients are reading from the table.",
+      "evidence": "* If you specify the `LOW_PRIORITY` modifier,\n  the server delays execution of the\n  `DELETE` until no other clients\n  are reading from the table.",
+      "question_type": "causal",
+      "qa_id": "mysql_112"
+    },
+    {
+      "question": "What is the rule for using table aliases in multi-table DELETE statements in MySQL?",
+      "answer": "If you declare an alias for a table, you must use the alias when referring to the table. For example, DELETE t1 FROM test AS t1, test2 WHERE ... uses the alias t1 instead of the original table name.",
+      "evidence": "If you declare an alias for a table, you must use the alias when\nreferring to the table:\n\n```\nDELETE t1 FROM test AS t1, test2 WHERE ...\n```",
+      "question_type": "procedural",
+      "qa_id": "mysql_113"
+    },
+    {
+      "question": "Where should table aliases for a multi-table DELETE statement be declared in MySQL?",
+      "answer": "Table aliases for a DELETE should be declared only in the table_references part of the statement. Elsewhere, alias references are permitted but not alias declarations.",
+      "evidence": "`DELETE` should be declared only in\nthe *`table_references`* part of the\nstatement. Elsewhere, alias references are permitted but not alias\ndeclarations.",
+      "question_type": "procedural",
+      "qa_id": "mysql_114"
+    },
+    {
+      "question": "Where are tables created by default when using the CREATE TABLE statement in MySQL?",
+      "answer": "By default, tables are created in the default database using the CREATE TABLE statement. You must have the CREATE privilege for the table in order to create it.",
+      "evidence": "`CREATE TABLE` creates a table with\nthe given name. You must have the\n`CREATE` privilege for the table.\n\nBy default, tables are created in the default database, using the\n`InnoDB` storage engine.",
+      "question_type": "procedural",
+      "qa_id": "mysql_115"
+    },
+    {
+      "question": "What does the IF NOT EXISTS clause do in a CREATE TABLE statement, and does it verify the existing table's structure?",
+      "answer": "IF NOT EXISTS prevents an error from occurring if the table already exists. However, there is no verification that the existing table has a structure identical to that indicated by the CREATE TABLE statement.",
+      "evidence": "Prevents an error from occurring if the table exists. However,\n  there is no verification that the existing table has a\n  structure identical to that indicated by the\n  `CREATE TABLE` statement.",
+      "question_type": "causal",
+      "qa_id": "mysql_116"
+    },
+    {
+      "question": "Why can reducing the index length be problematic for unique indexes in MySQL?",
+      "answer": "Reducing the index length might enable insertion of nonunique entries that do not meet the specified uniqueness requirement, which is why it can be problematic in strict mode.",
+      "evidence": "For a unique index, an error occurs regardless of SQL\n      mode because reducing the index length might enable\n      insertion of nonunique entries that do not meet the\n      specified uniqueness requirement.",
+      "question_type": "causal",
+      "qa_id": "mysql_117"
+    },
+    {
+      "question": "What do the STORAGE DISK and STORAGE MEMORY column attributes control in MySQL CREATE TABLE statements?",
+      "answer": "STORAGE DISK causes the column to be stored on disk, while STORAGE MEMORY causes in-memory storage to be used. These attributes are specified in the CREATE TABLE statement.",
+      "evidence": "`STORAGE\n  DISK` causes the column to be stored on disk, and\n  `STORAGE MEMORY` causes in-memory storage to\n  be used. The `CREATE TABLE`\n  statement used must still include a\n  `TABLESPACE` clause:",
+      "question_type": "causal",
+      "qa_id": "mysql_118"
+    },
+    {
+      "question": "Can you create a multiple-column index using the PRIMARY KEY key attribute in a column specification?",
+      "answer": "No, you cannot create a multiple-column index using the PRIMARY KEY key attribute in a column specification. Doing so only marks that single column as the primary key.",
+      "evidence": "However, you cannot create a multiple-column index\n  using the `PRIMARY KEY` key attribute in a\n  column specification. Doing so only marks that single column\n  as primary.",
+      "question_type": "comparative",
+      "qa_id": "mysql_119"
+    },
+    {
+      "question": "Does InnoDB enforce a requirement that foreign key referenced columns be declared UNIQUE or NOT NULL?",
+      "answer": "No, InnoDB does not enforce any requirement that the referenced columns be declared UNIQUE or NOT NULL. The handling of foreign key references to nonunique or nullable columns differs from the standard.",
+      "evidence": "However, `InnoDB`\n  does not enforce any requirement that the referenced columns\n  be declared `UNIQUE` or `NOT\n  NULL`. The handling of foreign key references to\n  nonunique keys or keys that contain `NULL`\n  values is not well defined for operations such as\n  `UPDATE` or `DELETE\n  CASCADE`.",
+      "question_type": "comparative",
+      "qa_id": "mysql_120"
+    },
+    {
+      "question": "How does MyISAM differ from InnoDB regarding subdirectory creation when using a DATA DIRECTORY option?",
+      "answer": "Unlike InnoDB tables, MySQL does not create subdirectories that correspond to the database name when creating a MyISAM table with a DATA DIRECTORY option.",
+      "evidence": "Unlike `InnoDB` tables, MySQL\n  does not create subdirectories that correspond to the database\n  name when creating a `MyISAM` table with a\n  `DATA DIRECTORY` or `INDEX\n  DIRECTORY` option.",
+      "question_type": "comparative",
+      "qa_id": "mysql_121"
+    },
+    {
+      "question": "How does ALTER TABLE handle DATA DIRECTORY and INDEX DIRECTORY when specified as table options?",
+      "answer": "ALTER TABLE ignores DATA DIRECTORY and INDEX DIRECTORY when given as table options. ALTER TABLE permits them only as partitioning options, and requires specific conditions for their use.",
+      "evidence": "However,\n`ALTER TABLE` ignores `DATA\nDIRECTORY` and `INDEX DIRECTORY` when\ngiven as table options. `ALTER TABLE`\npermits them only as partitioning options, and requires that you\nhave the `FILE` privilege.",
+      "question_type": "comparative",
+      "qa_id": "mysql_122"
+    },
+    {
+      "question": "Can other sessions read from a table while an ALTER TABLE operation is executing on it?",
+      "answer": "While the ALTER TABLE operation executes, the original table is readable by other sessions, with certain exceptions noted in the documentation. However, updates and writes to the table are affected.",
+      "evidence": "While the `ALTER TABLE`\noperation executes, the original table is readable by other\nsessions (with the exception noted shortly). Updates and writes to\nthe table started after the `ALTER\nTABLE` operation begins are stalled until the new table\nis ready, then are automatically redirected to the new table.",
+      "question_type": "comparative",
+      "qa_id": "mysql_123"
+    },
+    {
+      "question": "Why are metadata-only ALTER TABLE operations immediate in MySQL?",
+      "answer": "Metadata-only operations are immediate because the server does not touch table contents. Such metadata-only operations include renaming a column, among others.",
+      "evidence": "are immediate because the server does not touch table\n  contents. Metadata-only operations include:\n\n  + Renaming a column. In NDB Cluster 8.",
+      "question_type": "causal",
+      "qa_id": "mysql_124"
+    },
+    {
+      "question": "What is the recommended approach for deleting related rows across multiple InnoDB tables instead of using multi-table DELETE?",
+      "answer": "Instead of using multi-table DELETE, you should delete from a single table and rely on the ON DELETE capabilities that InnoDB provides to cause the other tables to be modified accordingly.",
+      "evidence": "Instead, you should delete from a single table and\nrely on the `ON DELETE` capabilities that\n`InnoDB` provides to cause the other tables to be\nmodified accordingly.",
+      "question_type": "procedural",
+      "qa_id": "mysql_125"
+    }
+  ]
+}

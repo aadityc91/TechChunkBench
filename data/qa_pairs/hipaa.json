@@ -1,0 +1,775 @@
+{
+  "corpus_id": "hipaa",
+  "qa_pairs": [
+    {
+      "question": "What must a health care clearinghouse comply with when it creates or receives protected health information as a business associate of another covered entity?",
+      "answer": "When acting as a business associate, a health care clearinghouse must comply with sections on applicability (164.500), definitions (164.501), uses and disclosures of PHI (164.502), organizational requirements (164.504), uses and disclosures not requiring authorization (164.512), transition requirements (164.532), and compliance dates (164.534). Importantly, the clearinghouse is prohibited from using or disclosing PHI other than as permitted in the business associate contract.",
+      "evidence": "(1) When a health care clearinghouse creates or receives protected health information as a business associate of another covered entity, the clearinghouse must comply with:\n\n(i) Section 164.500 relating to applicability;\n\n(ii) Section 164.501 relating to definitions;\n\n(iii) Section 164.502 relating to uses and disclosures of protected health information, except that a clearinghouse is prohibited from using or disclosing protected health information other than as permitted in the business associate contract under which it created or received the protected health information;\n\n(iv) Section 164.504 relating to the organizational requirements for covered entities;\n\n(v) Section 164.512 relating to uses and disclosures for which individual authorization or an opportunity to agree or object is not required, except that a clearinghouse is prohibited from using or disclosing protected health information other than as permitted in the business associate contract under which it created or received the protected health information;\n\n(vi) Section 164.532 relating to transition requirements; and\n\n(vii) Section 164.534 relating to compliance dates for initial implementation of the privacy standards.",
+      "question_type": "factual",
+      "qa_id": "hipaa_002"
+    },
+    {
+      "question": "Are the HIPAA Privacy Rule standards applicable to the Department of Defense when providing health care to overseas foreign national beneficiaries?",
+      "answer": "No. The standards, requirements, and implementation specifications of Subpart E do not apply to the Department of Defense or to any other federal agency, or non-governmental organization acting on its behalf, when providing health care to overseas foreign national beneficiaries.",
+      "evidence": "The standards, requirements, and implementation specifications of this subpart do not apply to the Department of Defense or to any other federal agency, or non-governmental organization acting on its behalf, when providing health care to overseas foreign national beneficiaries.",
+      "question_type": "factual",
+      "qa_id": "hipaa_003"
+    },
+    {
+      "question": "How is 'data aggregation' defined in the HIPAA Privacy Rule?",
+      "answer": "Data aggregation means the combining of protected health information created or received by a business associate in its capacity as the business associate of a covered entity with PHI received by the business associate in its capacity as a business associate of another covered entity. The purpose is to permit data analyses that relate to the health care operations of the respective covered entities.",
+      "evidence": "*Data aggregation* means, with respect to protected health information created or received by a business associate in its capacity as the business associate of a covered entity, the combining of such protected health information by the business associate with the protected health information received by the business associate in its capacity as a business associate of another covered entity, to permit data analyses that relate to the health care operations of the respective covered entities.",
+      "question_type": "definitional",
+      "qa_id": "hipaa_005"
+    },
+    {
+      "question": "What activities are included in the definition of 'health care operations'?",
+      "answer": "Health care operations include quality assessment and improvement activities, reviewing competence or qualifications of health care professionals, underwriting and enrollment activities, conducting medical review and auditing functions including fraud and abuse detection, business planning and development, and general administrative activities. These activities must be related to the covered functions of the covered entity.",
+      "evidence": "*Health care operations* means any of the following activities of the covered entity to the extent that the activities are related to covered functions:\n\n(1) Conducting quality assessment and improvement activities, including outcomes evaluation and development of clinical guidelines, provided that the obtaining of generalizable knowledge is not the primary purpose of any studies resulting from such activities; patient safety activities (as defined in 42 CFR 3.20); population-based activities relating to improving health or reducing health care costs, protocol development, case management and care coordination, contacting of health care providers and patients with information about treatment alternatives; and related functions that do not include treatment;\n\n(2) Reviewing the competence or qualifications of health care professionals, evaluating practitioner and provider performance, health plan performance, conducting training programs in which students, trainees, or practitioners in areas of health care learn under supervision to practice or improve their skills as health care providers, training of non-health care professionals, accreditation, certification, licensing, or credentialing activities;\n\n(3) Except as prohibited under \u00a7 164.502(a)(5)(i), underwriting, enrollment, premium rating, and other activities related to the creation, renewal, or replacement of a contract of health insurance or health benefits, and ceding, securing, or placing a contract for reinsurance of risk relating to claims for health care (including stop-loss insurance and excess of loss insurance), provided that the requirements of \u00a7 164.514(g) are met, if applicable;\n\n(4) Conducting or arranging for medical review, legal services, and auditing functions, including fraud and abuse detection and compliance programs;\n\n(5) Business planning and development, such as conducting cost-management and planning-related analyses related to managing and operating the entity, including formulary development and administration, development or improvement of methods of payment or coverage policies; and\n\n(6) Business management and general administrative activities of the entity, including, but not limited to:\n\n(i) Management activities relating to implementation of and compliance with the requirements of this subchapter;\n\n(ii) Customer service, including the provision of data analyses for policy holders, plan sponsors, or other customers, provided that protected health information is not disclosed to such policy holder, plan sponsor, or customer.\n\n(iii) Resolution of internal grievances;\n\n(iv) The sale, transfer, merger, or consolidation of all or part of the covered entity with another covered entity, or an entity that following such activity will become a covered entity and due diligence related to such activity; and\n\n(v) Consistent with the applicable requirements of \u00a7 164.514, creating de-identified health information or a limited data set, and fundraising for the benefit of the covered entity.",
+      "question_type": "definitional",
+      "qa_id": "hipaa_007"
+    },
+    {
+      "question": "How does the HIPAA Privacy Rule define 'psychotherapy notes'?",
+      "answer": "Psychotherapy notes are notes recorded in any medium by a health care provider who is a mental health professional, documenting or analyzing the contents of conversation during a private counseling session or a group, joint, or family counseling session, and that are separated from the rest of the individual's medical record. They specifically exclude medication prescription and monitoring, session start and stop times, modalities and frequencies of treatment, results of clinical tests, and summaries of diagnosis, functional status, treatment plan, symptoms, prognosis, and progress to date.",
+      "evidence": "*Psychotherapy notes* means notes recorded (in any medium) by a health care provider who is a mental health professional documenting or analyzing the contents of conversation during a private counseling session or a group, joint, or family counseling session and that are separated from the rest of the individual's medical record. *Psychotherapy notes* excludes medication prescription and monitoring, counseling session start and stop times, the modalities and frequencies of treatment furnished, results of clinical tests, and any summary of the following items: Diagnosis, functional status, the treatment plan, symptoms, prognosis, and progress to date.",
+      "question_type": "definitional",
+      "qa_id": "hipaa_008"
+    },
+    {
+      "question": "What is the HIPAA definition of 'research'?",
+      "answer": "Research is defined as a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge. This definition is broad and encompasses the full spectrum of research activities from development through evaluation.",
+      "evidence": "*Research* means a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.",
+      "question_type": "definitional",
+      "qa_id": "hipaa_009"
+    },
+    {
+      "question": "How does HIPAA define 'treatment'?",
+      "answer": "Treatment is defined as the provision, coordination, or management of health care and related services by one or more health care providers, including the coordination or management of health care by a provider with a third party, consultation between providers relating to a patient, or the referral of a patient from one provider to another.",
+      "evidence": "*Treatment* means the provision, coordination, or management of health care and related services by one or more health care providers, including the coordination or management of health care by a health care provider with a third party; consultation between health care providers relating to a patient; or the referral of a patient for health care from one health care provider to another.",
+      "question_type": "definitional",
+      "qa_id": "hipaa_010"
+    },
+    {
+      "question": "Under what circumstances is a covered entity required to disclose protected health information?",
+      "answer": "A covered entity is required to disclose PHI in two specific circumstances: first, to an individual when requested under and required by Section 164.524 (individual access rights) or Section 164.528 (accounting of disclosures); and second, when required by the Secretary under subpart C of part 160 to investigate or determine the covered entity's compliance.",
+      "evidence": "A covered entity is required to disclose protected health information:\n\n(i) To an individual, when requested under, and required by \u00a7 164.524 or \u00a7 164.528; and\n\n(ii) When required by the Secretary under subpart C of part 160 of this subchapter to investigate or determine the covered entity's compliance with this subchapter.",
+      "question_type": "factual",
+      "qa_id": "hipaa_012"
+    },
+    {
+      "question": "What is the prohibition on using genetic information for underwriting purposes?",
+      "answer": "A health plan (excluding issuers of long-term care policies) shall not use or disclose protected health information that is genetic information for underwriting purposes. Underwriting purposes includes rules for eligibility, computation of premium amounts, application of pre-existing condition exclusions, and other activities related to the creation, renewal, or replacement of a health insurance contract. However, it does not include determinations of medical appropriateness when an individual seeks a benefit under the plan.",
+      "evidence": "a health plan, excluding an issuer of a long-term care policy falling within paragraph (1)(viii) of the definition of *health plan,* shall not use or disclose protected health information that is genetic information for underwriting purposes. For purposes of paragraph (a)(5)(i) of this section, underwriting purposes means, with respect to a health plan:\n\n(A) Except as provided in paragraph (a)(5)(i)(B) of this section:\n\n(*1*) Rules for, or determination of, eligibility (including enrollment and continued eligibility) for, or determination of, benefits under the plan, coverage, or policy (including changes in deductibles or other cost-sharing mechanisms in return for activities such as completing a health risk assessment or participating in a wellness program);\n\n(*2*) The computation of premium or contribution amounts under the plan, coverage, or policy (including discounts, rebates, payments in kind, or other premium differential mechanisms in return for activities such as completing a health risk assessment or participating in a wellness program);\n\n(*3*) The application of any pre-existing condition exclusion under the plan, coverage, or policy; and\n\n(*4*) Other activities related to the creation, renewal, or replacement of a contract of health insurance or health benefits.\n\n(B) Underwriting purposes does not include determinations of medical appropriateness where an individual seeks a benefit under the plan, coverage, or policy.",
+      "question_type": "factual",
+      "qa_id": "hipaa_013"
+    },
+    {
+      "question": "What constitutes a 'sale of protected health information' under HIPAA, and what are the exceptions?",
+      "answer": "A sale of PHI is a disclosure where the covered entity or business associate directly or indirectly receives remuneration from or on behalf of the recipient in exchange for the PHI. Exceptions include disclosures for public health purposes, research purposes where only a reasonable cost-based fee is received, treatment and payment purposes, sale or merger of the covered entity, disclosures to business associates performing activities on behalf of the covered entity, disclosures to individuals, disclosures required by law, and any other permitted purpose where only a reasonable cost-based fee is received.",
+      "evidence": "(B) For purposes of this paragraph, sale of protected health information means:\n\n(*1*) Except as provided in paragraph (a)(5)(ii)(B)(*2*) of this section, a disclosure of protected health information by a covered entity or business associate, if applicable, where the covered entity or business associate directly or indirectly receives remuneration from or on behalf of the recipient of the protected health information in exchange for the protected health information.\n\n(*2*) Sale of protected health information does not include a disclosure of protected health information:\n\n(*i*) For public health purposes pursuant to \u00a7 164.512(b) or \u00a7 164.514(e);\n\n(*ii*) For research purposes pursuant to \u00a7 164.512(i) or \u00a7 164.514(e), where the only remuneration received by the covered entity or business associate is a reasonable cost-based fee to cover the cost to prepare and transmit the protected health information for such purposes;\n\n(*iii*) For treatment and payment purposes pursuant to \u00a7 164.506(a);\n\n(*iv*) For the sale, transfer, merger, or consolidation of all or part of the covered entity and for related due diligence as described in paragraph (6)(iv) of the definition of health care operations and pursuant to \u00a7 164.506(a);\n\n(*v*) To or by a business associate for activities that the business associate undertakes on behalf of a covered entity, or on behalf of a business associate in the case of a subcontractor, pursuant to \u00a7\u00a7 164.502(e) and 164.504(e), and the only remuneration provided is by the covered entity to the business associate, or by the business associate to the subcontractor, if applicable, for the performance of such activities;\n\n(*vi*) To an individual, when requested under \u00a7 164.524 or \u00a7 164.528;\n\n(*vii*) Required by law as permitted under \u00a7 164.512(a); and\n\n(*viii*) For any other purpose permitted by and in accordance with the applicable requirements of this subpart, where the only remuneration received by the covered entity or business associate is a reasonable, cost-based fee to cover the cost to prepare and transmit the protected health information for such purpose or a fee otherwise expressly permitted by other law.",
+      "question_type": "definitional",
+      "qa_id": "hipaa_014"
+    },
+    {
+      "question": "What are the prohibitions related to reproductive health care under the HIPAA Privacy Rule?",
+      "answer": "A covered entity or business associate may not use or disclose PHI to conduct a criminal, civil, or administrative investigation into any person for the mere act of seeking, obtaining, providing, or facilitating reproductive health care; to impose liability on any person for such acts; or to identify any person for these purposes. This prohibition applies only where the reproductive health care is lawful under state law, or is protected, required, or authorized by Federal law.",
+      "evidence": "a covered entity or business associate may not use or disclose protected health information for any of the following activities:\n\n(*1*) To conduct a criminal, civil, or administrative investigation into any person for the mere act of seeking, obtaining, providing, or facilitating reproductive health care.\n\n(*2*) To impose criminal, civil, or administrative liability on any person for the mere act of seeking, obtaining, providing, or facilitating reproductive health care.\n\n(*3*) To identify any person for any purpose described in paragraphs (a)(5)(iii)(A)(*1*) or (*2*) of this section.",
+      "question_type": "factual",
+      "qa_id": "hipaa_015"
+    },
+    {
+      "question": "What is the 'minimum necessary' standard under HIPAA?",
+      "answer": "The minimum necessary standard requires that when using or disclosing PHI, or when requesting PHI from another covered entity or business associate, the entity must make reasonable efforts to limit the information to the minimum necessary to accomplish the intended purpose of the use, disclosure, or request. This is a core principle that limits unnecessary exposure of health information.",
+      "evidence": "When using or disclosing protected health information or when requesting protected health information from another covered entity or business associate, a covered entity or business associate must make reasonable efforts to limit protected health information to the minimum necessary to accomplish the intended purpose of the use, disclosure, or request.",
+      "question_type": "definitional",
+      "qa_id": "hipaa_016"
+    },
+    {
+      "question": "To which uses and disclosures does the minimum necessary standard NOT apply?",
+      "answer": "The minimum necessary requirement does not apply to: disclosures to or requests by a health care provider for treatment; uses or disclosures made to the individual; uses or disclosures made pursuant to an authorization under Section 164.508; disclosures made to the Secretary for compliance investigations; uses or disclosures required by law; and uses or disclosures required for compliance with the subchapter.",
+      "evidence": "This requirement does not apply to:\n\n(i) Disclosures to or requests by a health care provider for treatment;\n\n(ii) Uses or disclosures made to the individual, as permitted under paragraph (a)(1)(i) of this section or as required by paragraph (a)(2)(i) of this section;\n\n(iii) Uses or disclosures made pursuant to an authorization under \u00a7 164.508;\n\n(iv) Disclosures made to the Secretary in accordance with subpart C of part 160 of this subchapter;\n\n(v) Uses or disclosures that are required by law, as described by \u00a7 164.512(a); and\n\n(vi) Uses or disclosures that are required for compliance with applicable requirements of this subchapter.",
+      "question_type": "factual",
+      "qa_id": "hipaa_017"
+    },
+    {
+      "question": "How long must a covered entity comply with the HIPAA Privacy Rule for a deceased individual?",
+      "answer": "A covered entity must comply with the requirements of the Privacy Rule with respect to the protected health information of a deceased individual for a period of 50 years following the death of the individual.",
+      "evidence": "A covered entity must comply with the requirements of this subpart with respect to the protected health information of a deceased individual for a period of 50 years following the death of the individual.",
+      "question_type": "factual",
+      "qa_id": "hipaa_018"
+    },
+    {
+      "question": "How should a covered entity treat a personal representative of an adult or emancipated minor?",
+      "answer": "If under applicable law a person has authority to act on behalf of an individual who is an adult or an emancipated minor in making decisions related to health care, a covered entity must treat such person as a personal representative under the subchapter, with respect to protected health information relevant to such personal representation.",
+      "evidence": "If under applicable law a person has authority to act on behalf of an individual who is an adult or an emancipated minor in making decisions related to health care, a covered entity must treat such person as a personal representative under this subchapter, with respect to protected health information relevant to such personal representation.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_019"
+    },
+    {
+      "question": "Under what circumstances may a covered entity elect not to treat a person as the personal representative due to abuse or neglect situations?",
+      "answer": "A covered entity may elect not to treat a person as the personal representative if two conditions are met: first, the covered entity has a reasonable belief that the individual has been or may be subjected to domestic violence, abuse, or neglect by such person, or that treating such person as the personal representative could endanger the individual; and second, the covered entity, in the exercise of professional judgment, decides it is not in the best interest of the individual to treat the person as the personal representative.",
+      "evidence": "The covered entity has a reasonable belief that any of the following is true:\n\n(*1*) The individual has been or may be subjected to domestic violence, abuse, or neglect by such person.\n\n(*2*) Treating such person as the personal representative could endanger the individual.\n\n(B) The covered entity, in the exercise of professional judgment, decides that it is not in the best interest of the individual to treat the person as the individual's personal representative.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_020"
+    },
+    {
+      "question": "What protections exist for whistleblowers under the HIPAA Privacy Rule?",
+      "answer": "A covered entity is not considered to have violated the Privacy Rule if a member of its workforce or a business associate discloses PHI, provided that the person believes in good faith that the entity has engaged in unlawful conduct, violated professional or clinical standards, or potentially endangered patients, workers, or the public. The disclosure must be to a health oversight agency, public health authority, appropriate accreditation organization, or to an attorney retained by the workforce member or business associate.",
+      "evidence": "A covered entity is not considered to have violated the requirements of this subpart if a member of its workforce or a business associate discloses protected health information, provided that:\n\n(i) The workforce member or business associate believes in good faith that the covered entity has engaged in conduct that is unlawful or otherwise violates professional or clinical standards, or that the care, services, or conditions provided by the covered entity potentially endangers one or more patients, workers, or the public; and\n\n(ii) The disclosure is to:\n\n(A) A health oversight agency or public health authority authorized by law to investigate or otherwise oversee the relevant conduct or conditions of the covered entity or to an appropriate health care accreditation organization for the purpose of reporting the allegation of failure to meet professional standards or misconduct by the covered entity; or\n\n(B) An attorney retained by or on behalf of the workforce member or business associate for the purpose of determining the legal options of the workforce member or business associate with regard to the conduct described in paragraph (j)(1)(i) of this section.",
+      "question_type": "factual",
+      "qa_id": "hipaa_021"
+    },
+    {
+      "question": "What must happen to PHI at the termination of a business associate contract?",
+      "answer": "At termination of the contract, if feasible, the business associate must return or destroy all protected health information received from, or created or received on behalf of, the covered entity and retain no copies. If return or destruction is not feasible, the business associate must extend the protections of the contract to the information and limit further uses and disclosures to those purposes that make the return or destruction infeasible.",
+      "evidence": "At termination of the contract, if feasible, return or destroy all protected health information received from, or created or received by the business associate on behalf of, the covered entity that the business associate still maintains in any form and retain no copies of such information or, if such return or destruction is not feasible, extend the protections of the contract to the information and limit further uses and disclosures to those purposes that make the return or destruction of the information infeasible.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_025"
+    },
+    {
+      "question": "Under what conditions can a group health plan disclose summary health information to the plan sponsor?",
+      "answer": "The group health plan, or a health insurance issuer or HMO with respect to the group health plan, may disclose summary health information to the plan sponsor if the plan sponsor requests it for the purposes of obtaining premium bids from health plans for providing health insurance coverage under the group health plan, or for modifying, amending, or terminating the group health plan. This is subject to the prohibition on using genetic information for underwriting purposes.",
+      "evidence": "the group health plan, or a health insurance issuer or HMO with respect to the group health plan, may disclose summary health information to the plan sponsor, if the plan sponsor requests the summary health information for purposes of:\n\n(A) Obtaining premium bids from health plans for providing health insurance coverage under the group health plan; or\n\n(B) Modifying, amending, or terminating the group health plan.",
+      "question_type": "factual",
+      "qa_id": "hipaa_026"
+    },
+    {
+      "question": "What restrictions exist on plan sponsors regarding use of PHI received from a group health plan?",
+      "answer": "Plan sponsors must agree not to use or disclose the information other than as permitted by plan documents or as required by law, ensure agents agree to the same restrictions, not use or disclose the information for employment-related actions or decisions, report inconsistent uses or disclosures, make information available for access and amendment, provide accounting of disclosures, make records available to the Secretary, and return or destroy information when no longer needed.",
+      "evidence": "the plan sponsor agrees to:\n\n(A) Not use or further disclose the information other than as permitted or required by the plan documents or as required by law;\n\n(B) Ensure that any agents to whom it provides protected health information received from the group health plan agree to the same restrictions and conditions that apply to the plan sponsor with respect to such information;\n\n(C) Not use or disclose the information for employment-related actions and decisions or in connection with any other benefit or employee benefit plan of the plan sponsor;\n\n(D) Report to the group health plan any use or disclosure of the information that is inconsistent with the uses or disclosures provided for of which it becomes aware;\n\n(E) Make available protected health information in accordance with \u00a7 164.524;\n\n(F) Make available protected health information for amendment and incorporate any amendments to protected health information in accordance with \u00a7 164.526;\n\n(G) Make available the information required to provide an accounting of disclosures in accordance with \u00a7 164.528;\n\n(H) Make its internal practices, books, and records relating to the use and disclosure of protected health information received from the group health plan available to the Secretary for purposes of determining compliance by the group health plan with this subpart;\n\n(I) If feasible, return or destroy all protected health information received from the group health plan that the sponsor still maintains in any form and retain no copies of such information when no longer needed for the purpose for which disclosure was made, except that, if such return or destruction is not feasible, limit further uses and disclosures to those purposes that make the return or destruction of the information infeasible; and\n\n(J) Ensure that the adequate separation required in paragraph (f)(2)(iii) of this section is established.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_027"
+    },
+    {
+      "question": "What is the standard for uses and disclosures to carry out treatment, payment, or health care operations under Section 164.506?",
+      "answer": "A covered entity may use or disclose PHI for treatment, payment, or health care operations as set forth in Section 164.506(c), provided that such use or disclosure is consistent with other applicable requirements of the subpart. This excludes uses or disclosures that require an authorization under Section 164.508(a)(2) through (4) or that are prohibited under Section 164.502(a)(5)(i) regarding genetic information for underwriting.",
+      "evidence": "Except with respect to uses or disclosures that require an authorization under \u00a7 164.508(a)(2) through (4) or that are prohibited under \u00a7 164.502(a)(5)(i), a covered entity may use or disclose protected health information for treatment, payment, or health care operations as set forth in paragraph (c) of this section, provided that such use or disclosure is consistent with other applicable requirements of this subpart.",
+      "question_type": "factual",
+      "qa_id": "hipaa_028"
+    },
+    {
+      "question": "Under what conditions can a covered entity disclose PHI to another covered entity for health care operations?",
+      "answer": "A covered entity may disclose PHI to another covered entity for health care operations if each entity either has or had a relationship with the individual who is the subject of the PHI, the PHI pertains to such relationship, and the disclosure is for quality assessment, improvement, competence review, or health care fraud and abuse detection or compliance purposes.",
+      "evidence": "A covered entity may disclose protected health information to another covered entity for health care operations activities of the entity that receives the information, if each entity either has or had a relationship with the individual who is the subject of the protected health information being requested, the protected health information pertains to such relationship, and the disclosure is:\n\n(i) For a purpose listed in paragraph (1) or (2) of the definition of health care operations; or\n\n(ii) For the purpose of health care fraud and abuse detection or compliance.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_030"
+    },
+    {
+      "question": "What is the general rule regarding authorizations for uses and disclosures of PHI under Section 164.508?",
+      "answer": "A covered entity may not use or disclose protected health information without a valid authorization, except as otherwise permitted or required by the subchapter. When a valid authorization is obtained, the use or disclosure must be consistent with the authorization. This establishes authorization as the default requirement for PHI use and disclosure unless a specific exception applies.",
+      "evidence": "Except as otherwise permitted or required by this subchapter, a covered entity may not use or disclose protected health information without an authorization that is valid under this section. When a covered entity obtains or receives a valid authorization for its use or disclosure of protected health information, such use or disclosure must be consistent with such authorization.",
+      "question_type": "factual",
+      "qa_id": "hipaa_031"
+    },
+    {
+      "question": "When is an authorization required for the use or disclosure of psychotherapy notes?",
+      "answer": "An authorization is required for any use or disclosure of psychotherapy notes, except for: use by the originator for treatment; use or disclosure by the covered entity for its own training programs where mental health practitioners learn under supervision; use or disclosure to defend the entity in a legal action brought by the individual; uses or disclosures required by the Secretary for compliance; those required by law; oversight of the originator; and those to avert a serious threat to health or safety.",
+      "evidence": "a covered entity must obtain an authorization for any use or disclosure of psychotherapy notes, except:\n\n(i) To carry out the following treatment, payment, or health care operations:\n\n(A) Use by the originator of the psychotherapy notes for treatment;\n\n(B) Use or disclosure by the covered entity for its own training programs in which students, trainees, or practitioners in mental health learn under supervision to practice or improve their skills in group, joint, family, or individual counseling; or\n\n(C) Use or disclosure by the covered entity to defend itself in a legal action or other proceeding brought by the individual; and\n\n(ii) A use or disclosure that is required by \u00a7 164.502(a)(2)(ii) or permitted by \u00a7 164.512(a); \u00a7 164.512(d) with respect to the oversight of the originator of the psychotherapy notes; \u00a7 164.512(g)(1); or \u00a7 164.512(j)(1)(i).",
+      "question_type": "procedural",
+      "qa_id": "hipaa_032"
+    },
+    {
+      "question": "What are the requirements for an authorization when marketing involves financial remuneration?",
+      "answer": "If marketing involves financial remuneration from a third party to the covered entity, the authorization must state that such remuneration is involved. A covered entity must obtain authorization for any use or disclosure of PHI for marketing, except for face-to-face communications and promotional gifts of nominal value.",
+      "evidence": "a covered entity must obtain an authorization for any use or disclosure of protected health information for marketing, except if the communication is in the form of:\n\n(A) A face-to-face communication made by a covered entity to an individual; or\n\n(B) A promotional gift of nominal value provided by the covered entity.\n\n(ii) If the marketing involves financial remuneration, as defined in paragraph (3) of the definition of marketing at \u00a7 164.501, to the covered entity from a third party, the authorization must state that such remuneration is involved.",
+      "question_type": "factual",
+      "qa_id": "hipaa_033"
+    },
+    {
+      "question": "What makes an authorization 'defective' under the HIPAA Privacy Rule?",
+      "answer": "An authorization is not valid if: the expiration date has passed or the expiration event is known to have occurred; the authorization has not been completely filled out regarding required elements; the authorization is known to have been revoked; the authorization violates compound authorization or conditioning rules; or any material information in the authorization is known to be false.",
+      "evidence": "An authorization is not valid, if the document submitted has any of the following defects:\n\n(i) The expiration date has passed or the expiration event is known by the covered entity to have occurred;\n\n(ii) The authorization has not been filled out completely, with respect to an element described by paragraph (c) of this section, if applicable;\n\n(iii) The authorization is known by the covered entity to have been revoked;\n\n(iv) The authorization violates paragraph (b)(3) or (4) of this section, if applicable;\n\n(v) Any material information in the authorization is known by the covered entity to be false.",
+      "question_type": "factual",
+      "qa_id": "hipaa_034"
+    },
+    {
+      "question": "What are the rules for compound authorizations under HIPAA?",
+      "answer": "An authorization generally may not be combined with any other document. However, exceptions exist: an authorization for research may be combined with other research permissions; an authorization for psychotherapy notes may only be combined with another authorization for psychotherapy notes; and other authorizations may be combined with each other, except when one authorization conditions treatment, payment, enrollment, or eligibility for benefits.",
+      "evidence": "An authorization for use or disclosure of protected health information may not be combined with any other document to create a compound authorization, except as follows:\n\n(i) An authorization for the use or disclosure of protected health information for a research study may be combined with any other type of written permission for the same or another research study. This exception includes combining an authorization for the use or disclosure of protected health information for a research study with another authorization for the same research study, with an authorization for the creation or maintenance of a research database or repository, or with a consent to participate in research. Where a covered health care provider has conditioned the provision of research-related treatment on the provision of one of the authorizations, as permitted under paragraph (b)(4)(i) of this section, any compound authorization created under this paragraph must clearly differentiate between the conditioned and unconditioned components and provide the individual with an opportunity to opt in to the research activities described in the unconditioned authorization.\n\n(ii) An authorization for a use or disclosure of psychotherapy notes may only be combined with another authorization for a use or disclosure of psychotherapy notes.",
+      "question_type": "factual",
+      "qa_id": "hipaa_035"
+    },
+    {
+      "question": "What are the core elements that a valid authorization must contain?",
+      "answer": "A valid authorization must contain: a description of the information to be used or disclosed; the name or identification of person(s) authorized to make the use or disclosure; the name or identification of person(s) to whom disclosure may be made; a description of each purpose of the use or disclosure; an expiration date or event; and the signature of the individual and date. If signed by a personal representative, the representative's authority must also be described.",
+      "evidence": "(1) *Core elements.* A valid authorization under this section must contain at least the following elements:\n\n(i) A description of the information to be used or disclosed that identifies the information in a specific and meaningful fashion.\n\n(ii) The name or other specific identification of the person(s), or class of persons, authorized to make the requested use or disclosure.\n\n(iii) The name or other specific identification of the person(s), or class of persons, to whom the covered entity may make the requested use or disclosure.",
+      "question_type": "factual",
+      "qa_id": "hipaa_037"
+    },
+    {
+      "question": "How may an individual revoke an authorization for PHI use or disclosure?",
+      "answer": "An individual may revoke an authorization at any time, provided that the revocation is in writing. However, there are two exceptions: the revocation does not apply to the extent that the covered entity has already taken action in reliance on the authorization, and if the authorization was obtained as a condition of insurance coverage, other law may provide the insurer with the right to contest a claim under the policy.",
+      "evidence": "An individual may revoke an authorization provided under this section at any time, provided that the revocation is in writing, except to the extent that:\n\n(i) The covered entity has taken action in reliance thereon; or\n\n(ii) If the authorization was obtained as a condition of obtaining insurance coverage, other law provides the insurer with the right to contest a claim under the policy or the policy itself.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_038"
+    },
+    {
+      "question": "What is the purpose of attestations under Section 164.509?",
+      "answer": "Attestations are required for certain uses and disclosures of PHI potentially related to reproductive health care to persons other than covered entities or business associates. A covered entity or business associate may not use or disclose PHI potentially related to reproductive health care for health oversight, judicial proceedings, law enforcement, or coroner/medical examiner purposes without obtaining a valid attestation verifying that the use or disclosure is not prohibited under the reproductive health care protections.",
+      "evidence": "A covered entity or business associate may not use or disclose protected health information potentially related to reproductive health care for purposes specified in \u00a7 164.512(d), (e), (f), or (g)(1), without obtaining an attestation that is valid under paragraph (b)(1) of this section from the person requesting the use or disclosure and complying with all applicable conditions of this part.",
+      "question_type": "causal",
+      "qa_id": "hipaa_039"
+    },
+    {
+      "question": "What are the required elements of a valid attestation under Section 164.509?",
+      "answer": "A valid attestation must contain: a description of the information requested with the name of individual(s) if practicable; the name or identification of person(s) requested to make the use or disclosure; the name or identification of person(s) to whom disclosure is to be made; a clear statement that the use or disclosure is not for a prohibited purpose; a statement about criminal penalties for knowingly obtaining health information in violation of HIPAA; and the signature (which may be electronic) and date of the person requesting the PHI.",
+      "evidence": "A valid attestation under this section must contain the following elements:\n\n(i) A description of the information requested that identifies the information in a specific fashion, including one of the following:\n\n(A) The name of any individual(s) whose protected health information is sought, if practicable.\n\n(B) If including the name(s) of any individual(s) whose protected health information is sought is not practicable, a description of the class of individuals whose protected health information is sought.\n\n(ii) The name or other specific identification of the person(s), or class of persons, who are requested to make the use or disclosure.\n\n(iii) The name or other specific identification of the person(s), or class of persons, to whom the covered entity is to make the requested use or disclosure.\n\n(iv) A clear statement that the use or disclosure is not for a purpose prohibited under \u00a7 164.502(a)(5)(iii).\n\n(v) A statement that a person may be subject to criminal penalties pursuant to 42 U.S.C. 1320d-6 if that person knowingly and in violation of HIPAA obtains individually identifiable health information relating to an individual or discloses individually identifiable health information to another person.\n\n(vi) Signature of the person requesting the protected health information, which may be an electronic signature, and date.",
+      "question_type": "factual",
+      "qa_id": "hipaa_040"
+    },
+    {
+      "question": "What makes an attestation defective under Section 164.509?",
+      "answer": "An attestation is defective if it lacks a required element or statement, contains an element or statement not required by the section, violates the compound attestation prohibition, the covered entity has actual knowledge that material information is false, or a reasonable covered entity in the same position would not believe the attestation is true regarding the statement that the use or disclosure is not for a prohibited purpose.",
+      "evidence": "An attestation is not valid if the document submitted has any of the following defects:\n\n(i) The attestation lacks an element or statement required by paragraph (c) of this section.\n\n(ii) The attestation contains an element or statement not required by paragraph (c) of this section\n\n(iii) The attestation violates paragraph (b)(3) of this section.\n\n(iv) The covered entity or business associate has actual knowledge that material information in the attestation is false.\n\n(v) A reasonable covered entity or business associate in the same position would not believe that the attestation is true with respect to the requirement at paragraph (c)(1)(iv) of this section.",
+      "question_type": "factual",
+      "qa_id": "hipaa_041"
+    },
+    {
+      "question": "What information may a covered health care provider use in a facility directory?",
+      "answer": "A covered health care provider may use the following PHI to maintain a facility directory: the individual's name, the individual's location in the facility, the individual's condition described in general terms that does not communicate specific medical information, and the individual's religious affiliation. This information may be disclosed to clergy, while all information except religious affiliation may be disclosed to other persons who ask for the individual by name.",
+      "evidence": "a covered health care provider may:\n\n(i) Use the following protected health information to maintain a directory of individuals in its facility:\n\n(A) The individual's name;\n\n(B) The individual's location in the covered health care provider's facility;\n\n(C) The individual's condition described in general terms that does not communicate specific medical information about the individual; and\n\n(D) The individual's religious affiliation; and\n\n(ii) Use or disclose for directory purposes such information:\n\n(A) To members of the clergy; or\n\n(B) Except for religious affiliation, to other persons who ask for the individual by name.",
+      "question_type": "factual",
+      "qa_id": "hipaa_042"
+    },
+    {
+      "question": "How does the HIPAA Privacy Rule handle facility directory disclosures during emergency circumstances compared to normal circumstances?",
+      "answer": "In normal circumstances, a covered health care provider must inform the individual about directory uses and provide the opportunity to restrict or prohibit them. In emergency circumstances where the individual is incapacitated, the provider may use or disclose directory information without prior agreement, but only if the disclosure is consistent with any known prior preference of the individual and is in the individual's best interest as determined by the provider. The provider must inform the individual and provide an opportunity to object when it becomes practicable.",
+      "evidence": "If the opportunity to object to uses or disclosures required by paragraph (a)(2) of this section cannot practicably be provided because of the individual's incapacity or an emergency treatment circumstance, a covered health care provider may use or disclose some or all of the protected health information permitted by paragraph (a)(1) of this section for the facility's directory, if such disclosure is:\n\n(A) Consistent with a prior expressed preference of the individual, if any, that is known to the covered health care provider; and\n\n(B) In the individual's best interest as determined by the covered health care provider, in the exercise of professional judgment.",
+      "question_type": "comparative",
+      "qa_id": "hipaa_043"
+    },
+    {
+      "question": "How do the rules differ for disclosing PHI to family members when the individual is present versus when the individual is not present?",
+      "answer": "When the individual is present and has capacity, the covered entity may disclose PHI if it obtains the individual's agreement, provides the opportunity to object and the individual does not object, or reasonably infers no objection based on professional judgment. When the individual is not present or incapacitated, the entity may use professional judgment to determine if disclosure is in the individual's best interests, and may disclose only the PHI directly relevant to the person's involvement in care or needed for notification purposes.",
+      "evidence": "(2) *Uses and disclosures with the individual present.* If the individual is present for, or otherwise available prior to, a use or disclosure permitted by paragraph (b)(1) of this section and has the capacity to make health care decisions, the covered entity may use or disclose the protected health information if it:\n\n(i) Obtains the individual's agreement;\n\n(ii) Provides the individual with the opportunity to object to the disclosure, and the individual does not express an objection; or\n\n(iii) Reasonably infers from the circumstances, based on the exercise of professional judgment, that the individual does not object to the disclosure.\n\n(3) *Limited uses and disclosures when the individual is not present.* If the individual is not present, or the opportunity to agree or object to the use or disclosure cannot practicably be provided because of the individual's incapacity or an emergency circumstance, the covered entity may, in the exercise of professional judgment, determine whether the disclosure is in the best interests of the individual and, if so, disclose only the protected health information that is directly relevant to the person's involvement with the individual's care or payment related to the individual's health care or needed for notification purposes. A covered entity may use professional judgment and its experience with common practice to make reasonable inferences of the individual's best interest in allowing a person to act on behalf of the individual to pick up filled prescriptions, medical supplies, X-rays, or other similar forms of protected health information.",
+      "question_type": "comparative",
+      "qa_id": "hipaa_044"
+    },
+    {
+      "question": "How does HIPAA address disclosures for disaster relief purposes?",
+      "answer": "A covered entity may use or disclose PHI to a public or private entity authorized by law or by its charter to assist in disaster relief efforts, for the purpose of coordinating notifications such as identifying or locating family members and notifying them of the individual's location, general condition, or death. The usual requirements for individual agreement or professional judgment apply to the extent they do not interfere with the ability to respond to emergency circumstances.",
+      "evidence": "A covered entity may use or disclose protected health information to a public or private entity authorized by law or by its charter to assist in disaster relief efforts, for the purpose of coordinating with such entities the uses or disclosures permitted by paragraph (b)(1)(ii) of this section. The requirements in paragraphs (b)(2), (b)(3), or (b)(5) of this section apply to such uses and disclosures to the extent that the covered entity, in the exercise of professional judgment, determines that the requirements do not interfere with the ability to respond to the emergency circumstances.",
+      "question_type": "factual",
+      "qa_id": "hipaa_045"
+    },
+    {
+      "question": "What types of uses and disclosures does Section 164.512 cover?",
+      "answer": "Section 164.512 covers uses and disclosures that do not require the individual's authorization or an opportunity to agree or object. These include disclosures required by law, for public health activities, about victims of abuse or neglect, for health oversight activities, for judicial and administrative proceedings, for law enforcement purposes, about decedents, for organ donation, for research, to avert serious threats, for specialized government functions, and for workers' compensation.",
+      "evidence": "Except as provided by \u00a7 164.502(a)(5)(iii), a covered entity may use or disclose protected health information without the written authorization of the individual, as described in \u00a7 164.508, or the opportunity for the individual to agree or object as described in \u00a7 164.510, in the situations covered by this section, subject to the applicable requirements of this section and \u00a7 164.509. When the covered entity is required by this section to inform the individual of, or when the individual may agree to, a use or disclosure permitted by this section, the covered entity's information and the individual's agreement may be given verbally.\n\n(a) *Standard: Uses and disclosures required by law.*\n\n(1) A covered entity may use or disclose protected health information to the extent that such use or disclosure is required by law and the use or disclosure complies with and is limited to the relevant requirements of such law.\n\n(2) A covered entity must meet the requirements described in paragraph (c), (e), or (f) of this section for uses or disclosures required by law.\n\n(b) *Standard: Uses and disclosures for public health activities* \u2014\n\n(1) *Permitted uses and disclosures.* A covered entity may use or disclose protected health information for the public health activities and purposes described in this paragraph to:",
+      "question_type": "factual",
+      "qa_id": "hipaa_046"
+    },
+    {
+      "question": "What are the requirements for disclosing PHI about victims of abuse, neglect, or domestic violence?",
+      "answer": "A covered entity may disclose PHI about a person it reasonably believes to be a victim of abuse, neglect, or domestic violence to an authorized government authority if the disclosure is required by law, the individual agrees, or the disclosure is expressly authorized by statute and the entity believes it necessary to prevent serious harm or an immediate enforcement activity depends on it. The entity must promptly inform the individual, unless doing so would place the individual at risk of serious harm.",
+      "evidence": "a covered entity may disclose protected health information about an individual whom the covered entity reasonably believes to be a victim of abuse, neglect, or domestic violence to a government authority, including a social service or protective services agency, authorized by law to receive reports of such abuse, neglect, or domestic violence:\n\n(i) To the extent the disclosure is required by law and the disclosure complies with and is limited to the relevant requirements of such law;\n\n(ii) If the individual agrees to the disclosure; or\n\n(iii) To the extent the disclosure is expressly authorized by statute or regulation and:",
+      "question_type": "causal",
+      "qa_id": "hipaa_048"
+    },
+    {
+      "question": "What is the exception to health oversight activities regarding individual investigations?",
+      "answer": "A health oversight activity does not include an investigation or other activity in which the individual is the subject if such investigation does not arise out of and is not directly related to the receipt of health care, a claim for public benefits related to health, or qualification for or receipt of public benefits or services when the patient's health is integral to the claim. However, if a health oversight investigation is conducted jointly with a non-health public benefits investigation, the joint activity is considered a health oversight activity.",
+      "evidence": "a health oversight activity does not include an investigation or other activity in which the individual is the subject of the investigation or activity and such investigation or other activity does not arise out of and is not directly related to:\n\n(i) The receipt of health care;\n\n(ii) A claim for public benefits related to health; or\n\n(iii) Qualification for, or receipt of, public benefits or services when a patient's health is integral to the claim for public benefits or services.",
+      "question_type": "comparative",
+      "qa_id": "hipaa_050"
+    },
+    {
+      "question": "What is a 'qualified protective order' under the HIPAA Privacy Rule?",
+      "answer": "A qualified protective order is an order of a court or administrative tribunal, or a stipulation by the parties to litigation or administrative proceedings, that prohibits the parties from using or disclosing the PHI for any purpose other than the litigation or proceeding for which it was requested, and requires the return to the covered entity or destruction of the PHI (including all copies) at the end of the litigation or proceeding.",
+      "evidence": "a qualified protective order means, with respect to protected health information requested under paragraph (e)(1)(ii) of this section, an order of a court or of an administrative tribunal or a stipulation by the parties to the litigation or administrative proceeding that:\n\n(A) Prohibits the parties from using or disclosing the protected health information for any purpose other than the litigation or proceeding for which such information was requested; and\n\n(B) Requires the return to the covered entity or destruction of the protected health information (including all copies made) at the end of the litigation or proceeding.",
+      "question_type": "definitional",
+      "qa_id": "hipaa_052"
+    },
+    {
+      "question": "What information can a covered entity disclose to law enforcement for identification and location purposes?",
+      "answer": "For identifying or locating a suspect, fugitive, material witness, or missing person, a covered entity may disclose only: name and address; date and place of birth; social security number; ABO blood type and rh factor; type of injury; date and time of treatment; date and time of death if applicable; and a description of distinguishing physical characteristics including height, weight, gender, race, hair and eye color, facial hair, scars, and tattoos. DNA, dental records, and body fluid analysis may not be disclosed for this purpose.",
+      "evidence": "(i) The covered entity may disclose only the following information:\n\n(A) Name and address;\n\n(B) Date and place of birth;\n\n(C) Social security number;\n\n(D) ABO blood type and rh factor;\n\n(E) Type of injury;\n\n(F) Date and time of treatment;\n\n(G) Date and time of death, if applicable; and\n\n(H) A description of distinguishing physical characteristics, including height, weight, gender, race, hair and eye color, presence or absence of facial hair (beard or moustache), scars, and tattoos.\n\n(ii) Except as permitted by paragraph (f)(2)(i) of this section, the covered entity may not disclose for the purposes of identification or location under paragraph (f)(2) of this section any protected health information related to the individual's DNA or DNA analysis, dental records, or typing, samples or analysis of body fluids or tissue.",
+      "question_type": "factual",
+      "qa_id": "hipaa_053"
+    },
+    {
+      "question": "What are the conditions for using PHI for research purposes without individual authorization?",
+      "answer": "PHI may be used for research without individual authorization in three scenarios: when an IRB or privacy board has approved a waiver of authorization; for reviews preparatory to research where no PHI is removed from the entity and the information is necessary for research purposes; or for research on decedent's information where the researcher represents the use is solely for research on deceased individuals' PHI.",
+      "evidence": "A covered entity may use or disclose protected health information for research, regardless of the source of funding of the research, provided that:\n\n(i) *Board approval of a waiver of authorization.* The covered entity obtains documentation that an alteration to or waiver, in whole or in part, of the individual authorization required by \u00a7 164.508 for use or disclosure of protected health information has been approved by either:\n\n(A) An Institutional Review Board (IRB), established in accordance with 7 CFR lc.107, 10 CFR 745.107, 14 CFR 1230.107, 15 CFR 27.107, 16 CFR 1028.107, 21 CFR 56.107, 22 CFR 225.107, 24 CFR 60.107, 28 CFR 46.107, 32 CFR 219.107, 34 CFR 97.107, 38 CFR 16.107, 40 CFR 26.107, 45 CFR 46.107, 45 CFR 690.107, or 49 CFR 11.107; or\n\n(B) A privacy board that:\n\n(*1*) Has members with varying backgrounds and appropriate professional competency as necessary to review the effect of the research protocol on the individual's privacy rights and related interests;\n\n(*2*) Includes at least one member who is not affiliated with the covered entity, not affiliated with any entity conducting or sponsoring the research, and not related to any person who is affiliated with any of such entities; and\n\n(*3*) Does not have any member participating in a review of any project in which the member has a conflict of interest.\n\n(ii) *Reviews preparatory to research.* The covered entity obtains from the researcher representations that:\n\n(A) Use or disclosure is sought solely to review protected health information as necessary to prepare a research protocol or for similar purposes preparatory to research;\n\n(B) No protected health information is to be removed from the covered entity by the researcher in the course of the review; and\n\n(C) The protected health information for which use or access is sought is necessary for the research purposes.\n\n(iii) *Research on decedent's information.* The covered entity obtains from the researcher:\n\n(A) Representation that the use or disclosure sought is solely for research on the protected health information of decedents;",
+      "question_type": "procedural",
+      "qa_id": "hipaa_057"
+    },
+    {
+      "question": "What must the documentation of a waiver of authorization for research include?",
+      "answer": "The documentation must include: identification of the IRB or privacy board and the date of approval; a statement that the waiver satisfies minimal risk criteria including plans to protect identifiers and destroy them at the earliest opportunity; a brief description of the PHI needed; a statement about whether normal or expedited review was used; and the signature of the chair or designated member of the IRB or privacy board.",
+      "evidence": "the documentation must include all of the following:\n\n(i) *Identification and date of action.* A statement identifying the IRB or privacy board and the date on which the alteration or waiver of authorization was approved;\n\n(ii) *Waiver criteria.* A statement that the IRB or privacy board has determined that the alteration or waiver, in whole or in part, of authorization satisfies the following criteria:\n\n(A) The use or disclosure of protected health information involves no more than a minimal risk to the privacy of individuals, based on, at least, the presence of the following elements;\n\n(*1*) An adequate plan to protect the identifiers from improper use and disclosure;\n\n(*2*) An adequate plan to destroy the identifiers at the earliest opportunity consistent with conduct of the research, unless there is a health or research justification for retaining the identifiers or such retention is otherwise required by law; and\n\n(*3*) Adequate written assurances that the protected health information will not be reused or disclosed to any other person or entity, except as required by law, for authorized oversight of the research study, or for other research for which the use or disclosure of protected health information would be permitted by this subpart;\n\n(B) The research could not practicably be conducted without the waiver or alteration; and\n\n(C) The research could not practicably be conducted without access to and use of the protected health information.\n\n(iii) *Protected health information needed.* A brief description of the protected health information for which use or access has been determined to be necessary by the institutional review board or privacy board, pursuant to paragraph (i)(2)(ii)(C) of this section;\n\n(iv) *Review and approval procedures.* A statement that the alteration or waiver of authorization has been reviewed and approved under either normal or expedited review procedures, as follows:\n\n(A) An IRB must follow the requirements of the Common Rule, including the normal review procedures (7 CFR 1c.108(b), 10 CFR 745.108(b), 14 CFR 1230.108(b), 15 CFR 27.108(b), 16 CFR 1028.108(b), 21 CFR 56.108(b), 22 CFR 225.108(b), 24 CFR 60.108(b), 28 CFR 46.108(b), 32 CFR 219.108(b), 34 CFR 97.108(b), 38 CFR 16.108(b), 40 CFR 26.108(b), 45 CFR 46.108(b), 45 CFR 690.108(b), or 49 CFR 11.108(b)) or the expedited review procedures (7 CFR 1c.110, 10 CFR 745.110, 14 CFR 1230.110, 15 CFR 27.110, 16 CFR 1028.110, 21 CFR 56.110, 22 CFR 225.110, 24 CFR 60.110, 28 CFR 46.110, 32 CFR 219.110, 34 CFR 97.110, 38 CFR 16.110, 40 CFR 26.110, 45 CFR 46.110, 45 CFR 690.110, or 49 CFR 11.110);\n\n(B) A privacy board must review the proposed research at convened meetings at which a majority of the privacy board members are present, including at least one member who satisfies the criterion stated in paragraph (i)(1)(i)(B)(2) of this section, and the alteration or waiver of authorization must be approved by the majority of the privacy board members present at the meeting, unless the privacy board elects to use an expedited review procedure in accordance with paragraph (i)(2)(iv)(C) of this section;\n\n(C) A privacy board may use an expedited review procedure if the research involves no more than minimal risk to the privacy of the individuals who are the subject of the protected health information for which use or disclosure is being sought. If the privacy board elects to use an expedited review procedure, the review and approval of the alteration or waiver of authorization may be carried out by the chair of the privacy board, or by one or more members of the privacy board as designated by the chair; and\n\n(v) *Required signature.* The documentation of the alteration or waiver of authorization must be signed by the chair or other member, as designated by the chair, of the IRB or the privacy board, as applicable.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_058"
+    },
+    {
+      "question": "When can PHI be disclosed to avert a serious threat to health or safety?",
+      "answer": "A covered entity may use or disclose PHI if it believes in good faith that the use or disclosure is necessary to prevent or lessen a serious and imminent threat to the health or safety of a person or the public, and is directed to a person reasonably able to prevent or lessen the threat. PHI may also be disclosed to law enforcement to identify or apprehend an individual who has admitted participation in a violent crime or who has escaped from lawful custody.",
+      "evidence": "A covered entity may, consistent with applicable law and standards of ethical conduct, use or disclose protected health information, if the covered entity, in good faith, believes the use or disclosure:\n\n(i)\n\n(A) Is necessary to prevent or lessen a serious and imminent threat to the health or safety of a person or the public; and\n\n(B) Is to a person or persons reasonably able to prevent or lessen the threat, including the target of the threat; or\n\n(ii) Is necessary for law enforcement authorities to identify or apprehend an individual:\n\n(A) Because of a statement by an individual admitting participation in a violent crime that the covered entity reasonably believes may have caused serious physical harm to the victim; or\n\n(B) Where it appears from all the circumstances that the individual has escaped from a correctional institution or from lawful custody, as those terms are defined in \u00a7 164.501.",
+      "question_type": "factual",
+      "qa_id": "hipaa_059"
+    },
+    {
+      "question": "What limitation exists on disclosures to prevent threats when the information was learned during treatment?",
+      "answer": "A disclosure to law enforcement based on a statement admitting participation in a violent crime may not be made if the information was learned in the course of treatment to affect the propensity to commit the criminal conduct or during counseling or therapy, or through a request by the individual to initiate or be referred for such treatment, counseling, or therapy. This protects the therapeutic relationship.",
+      "evidence": "A use or disclosure pursuant to paragraph (j)(1)(ii)(A) of this section may not be made if the information described in paragraph (j)(1)(ii)(A) of this section is learned by the covered entity:\n\n(i) In the course of treatment to affect the propensity to commit the criminal conduct that is the basis for the disclosure under paragraph (j)(1)(ii)(A) of this section, or counseling or therapy; or\n\n(ii) Through a request by the individual to initiate or to be referred for the treatment, counseling, or therapy described in paragraph (j)(2)(i) of this section.",
+      "question_type": "causal",
+      "qa_id": "hipaa_060"
+    },
+    {
+      "question": "How does HIPAA address disclosures for military and veterans activities?",
+      "answer": "A covered entity may use and disclose PHI of Armed Forces personnel for activities deemed necessary by military command authorities for the proper execution of the military mission, if the military authority has published notice in the Federal Register. A component of the Department of Defense or Homeland Security may disclose PHI to the DVA upon separation or discharge for benefits determination. The Department of Veterans Affairs may use and disclose PHI among its components for eligibility and benefits purposes.",
+      "evidence": "(i) *Armed Forces personnel.* A covered entity may use and disclose the protected health information of individuals who are Armed Forces personnel for activities deemed necessary by appropriate military command authorities to assure the proper execution of the military mission, if the appropriate military authority has published by notice in the Federal Register the following information:\n\n(A) Appropriate military command authorities; and\n\n(B) The purposes for which the protected health information may be used or disclosed.\n\n(ii) *Separation or discharge from military service.* A covered entity that is a component of the Departments of Defense or Homeland Security may disclose to the Department of Veterans Affairs (DVA) the protected health information of an individual who is a member of the Armed Forces upon the separation or discharge of the individual from military service for the purpose of a determination by DVA of the individual's eligibility for or entitlement to benefits under laws administered by the Secretary of Veterans Affairs.\n\n(iii) *Veterans.* A covered entity that is a component of the Department of Veterans Affairs may use and disclose protected health information to components of the Department that determine eligibility for or entitlement to, or that provide, benefits under the laws administered by the Secretary of Veterans Affairs.",
+      "question_type": "factual",
+      "qa_id": "hipaa_061"
+    },
+    {
+      "question": "What PHI disclosures are permitted to correctional institutions?",
+      "answer": "A covered entity may disclose PHI about an inmate to a correctional institution or law enforcement official with lawful custody if the information is necessary for: the provision of health care; the health and safety of the inmate or other inmates; the health and safety of officers, employees, or others at the institution; health and safety during transport or transfer; law enforcement on premises; or administration and maintenance of safety, security, and good order of the institution.",
+      "evidence": "A covered entity may disclose to a correctional institution or a law enforcement official having lawful custody of an inmate or other individual protected health information about such inmate or individual, if the correctional institution or such law enforcement official represents that such protected health information is necessary for:\n\n(A) The provision of health care to such individuals;\n\n(B) The health and safety of such individual or other inmates;\n\n(C) The health and safety of the officers or employees of or others at the correctional institution;\n\n(D) The health and safety of such individuals and officers or other persons responsible for the transporting of inmates or their transfer from one institution, facility, or setting to another;\n\n(E) Law enforcement on the premises of the correctional institution; or\n\n(F) The administration and maintenance of the safety, security, and good order of the correctional institution.",
+      "question_type": "factual",
+      "qa_id": "hipaa_063"
+    },
+    {
+      "question": "When does inmate status end for purposes of correctional institution disclosures under HIPAA?",
+      "answer": "An individual is no longer considered an inmate when released on parole, probation, supervised release, or otherwise is no longer in lawful custody. After release, the special disclosure permissions for correctional institutions no longer apply.",
+      "evidence": "For the purposes of this provision, an individual is no longer an inmate when released on parole, probation, supervised release, or otherwise is no longer in lawful custody.",
+      "question_type": "factual",
+      "qa_id": "hipaa_064"
+    },
+    {
+      "question": "What are the two methods for de-identifying health information under HIPAA?",
+      "answer": "The two methods are the Expert Determination method and the Safe Harbor method. Under Expert Determination, a person with appropriate knowledge of statistical and scientific principles determines that the risk is very small that the information could be used to identify an individual, and documents the methods and results. Under Safe Harbor, 18 specific types of identifiers must be removed, and the covered entity must have no actual knowledge that the remaining information could identify an individual.",
+      "evidence": "A covered entity may determine that health information is not individually identifiable health information only if:\n\n(1) A person with appropriate knowledge of and experience with generally accepted statistical and scientific principles and methods for rendering information not individually identifiable:\n\n(i) Applying such principles and methods, determines that the risk is very small that the information could be used, alone or in combination with other reasonably available information, by an anticipated recipient to identify an individual who is a subject of the information; and\n\n(ii) Documents the methods and results of the analysis that justify such determination; or\n\n(2)\n\n(i) The following identifiers of the individual or of relatives, employers, or household members of the individual, are removed:\n\n(A) Names;\n\n(B) All geographic subdivisions smaller than a State, including street address, city, county, precinct, zip code, and their equivalent geocodes, except for the initial three digits of a zip code if, according to the current publicly available data from the Bureau of the Census:\n\n(*1*) The geographic unit formed by combining all zip codes with the same three initial digits contains more than 20,000 people; and\n\n(*2*) The initial three digits of a zip code for all such geographic units containing 20,000 or fewer people is changed to 000.\n\n(C) All elements of dates (except year) for dates directly related to an individual, including birth date, admission date, discharge date, date of death; and all ages over 89 and all elements of dates (including year) indicative of such age, except that such ages and elements may be aggregated into a single category of age 90 or older;\n\n(D) Telephone numbers;\n\n(E) Fax numbers;\n\n(F) Electronic mail addresses;\n\n(G) Social security numbers;\n\n(H) Medical record numbers;\n\n(I) Health plan beneficiary numbers;\n\n(J) Account numbers;\n\n(K) Certificate/license numbers;\n\n(L) Vehicle identifiers and serial numbers, including license plate numbers;\n\n(M) Device identifiers and serial numbers;\n\n(N) Web Universal Resource Locators (URLs);\n\n(O) Internet Protocol (IP) address numbers;\n\n(P) Biometric identifiers, including finger and voice prints;\n\n(Q) Full face photographic images and any comparable images; and\n\n(R) Any other unique identifying number, characteristic, or code, except as permitted by paragraph (c) of this section; and\n\n(ii) The covered entity does not have actual knowledge that the information could be used alone or in combination with other information to identify an individual who is a subject of the information.",
+      "question_type": "comparative",
+      "qa_id": "hipaa_067"
+    },
+    {
+      "question": "How must a covered entity implement the minimum necessary standard for routine disclosures?",
+      "answer": "For routine and recurring disclosures, a covered entity must implement policies and procedures (which may be standard protocols) that limit the PHI disclosed to the amount reasonably necessary to achieve the purpose. For all other disclosures, the entity must develop criteria to limit the information and review requests on an individual basis in accordance with those criteria.",
+      "evidence": "For any type of disclosure that it makes on a routine and recurring basis, a covered entity must implement policies and procedures (which may be standard protocols) that limit the protected health information disclosed to the amount reasonably necessary to achieve the purpose of the disclosure.\n\n(ii) For all other disclosures, a covered entity must:\n\n(A) Develop criteria designed to limit the protected health information disclosed to the information reasonably necessary to accomplish the purpose for which disclosure is sought; and\n\n(B) Review requests for disclosure on an individual basis in accordance with such criteria.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_070"
+    },
+    {
+      "question": "What is a 'limited data set' under HIPAA and for what purposes can it be used?",
+      "answer": "A limited data set is PHI that excludes 16 types of direct identifiers (names, postal address information other than town/city/State/zip, telephone numbers, fax numbers, email addresses, SSN, medical record numbers, health plan beneficiary numbers, account numbers, certificate/license numbers, vehicle identifiers, device identifiers, URLs, IP addresses, biometric identifiers, and full face photographic images). It may be used or disclosed only for research, public health, or health care operations purposes, and requires a data use agreement.",
+      "evidence": "A limited data set is protected health information that excludes the following direct identifiers of the individual or of relatives, employers, or household members of the individual:\n\n(i) Names;\n\n(ii) Postal address information, other than town or city, State, and zip code;\n\n(iii) Telephone numbers;\n\n(iv) Fax numbers;\n\n(v) Electronic mail addresses;\n\n(vi) Social security numbers;\n\n(vii) Medical record numbers;\n\n(viii) Health plan beneficiary numbers;\n\n(ix) Account numbers;\n\n(x) Certificate/license numbers;\n\n(xi) Vehicle identifiers and serial numbers, including license plate numbers;\n\n(xii) Device identifiers and serial numbers;\n\n(xiii) Web Universal Resource Locators (URLs);\n\n(xiv) Internet Protocol (IP) address numbers;\n\n(xv) Biometric identifiers, including finger and voice prints; and\n\n(xvi) Full face photographic images and any comparable images.\n\n(3) *Implementation specification: Permitted purposes for uses and disclosures.*\n\n(i) A covered entity may use or disclose a limited data set under paragraph (e)(1) of this section only for the purposes of research, public health, or health care operations.",
+      "question_type": "definitional",
+      "qa_id": "hipaa_072"
+    },
+    {
+      "question": "How does a limited data set differ from fully de-identified information under HIPAA?",
+      "answer": "A limited data set retains more information than fully de-identified data. Unlike fully de-identified data, a limited data set may include town or city, state, zip code, dates (including birth date, admission date, discharge date), and ages over 89. However, it still excludes direct identifiers like names and social security numbers. A limited data set requires a data use agreement and can only be used for research, public health, or health care operations, while de-identified data has no such restrictions.",
+      "evidence": "(iv) Fax numbers;\n\n(v) Electronic mail addresses;\n\n(vi) Social security numbers;\n\n(vii) Medical record numbers;\n\n(viii) Health plan beneficiary numbers;\n\n(ix) Account numbers;\n\n(x) Certificate/license numbers;\n\n(xi) Vehicle identifiers and serial numbers, including license plate numbers;\n\n(xii) Device identifiers and serial numbers;\n\n(xiii) Web Universal Resource Locators (URLs);\n\n(xiv) Internet Protocol (IP) address numbers;\n\n(xv) Biometric identifiers, including finger and voice prints; and\n\n(xvi) Full face photographic images and any comparable images.\n\n(3) *Implementation specification: Permitted purposes for uses and disclosures.*\n\n(i) A covered entity may use or disclose a limited data set under paragraph (e)(1) of this section only for the purposes of research, public health, or health care operations.",
+      "question_type": "comparative",
+      "qa_id": "hipaa_073"
+    },
+    {
+      "question": "What information can be used for fundraising purposes without authorization under HIPAA?",
+      "answer": "A covered entity may use or disclose the following PHI for fundraising: demographic information including name, address, contact information, age, gender, and date of birth; dates of health care provided; department of service information; treating physician; outcome information; and health insurance status. Each communication must include a clear and conspicuous opportunity to opt out of further fundraising communications.",
+      "evidence": "a covered entity may use, or disclose to a business associate or to an institutionally related foundation, the following protected health information for the purpose of raising funds for its own benefit, without an authorization meeting the requirements of \u00a7 164.508:\n\n(i) Demographic information relating to an individual, including name, address, other contact information, age, gender, and date of birth;\n\n(ii) Dates of health care provided to an individual;\n\n(iii) Department of service information;\n\n(iv) Treating physician;\n\n(v) Outcome information; and\n\n(vi) Health insurance status.",
+      "question_type": "factual",
+      "qa_id": "hipaa_075"
+    },
+    {
+      "question": "What are the requirements for fundraising communications under HIPAA?",
+      "answer": "Fundraising communications are not permitted unless the covered entity's notice of privacy practices includes the appropriate statement about fundraising. Each communication must provide a clear and conspicuous opportunity to opt out, and the opt-out method may not cause undue burden or more than nominal cost. Treatment or payment may not be conditioned on the individual's choice regarding fundraising. An individual who opted out may be given the option to opt back in.",
+      "evidence": "(i) A covered entity may not use or disclose protected health information for fundraising purposes as otherwise permitted by paragraph (f)(1) of this section unless a statement required by \u00a7 164.520(b)(1)(iii)(A) is included in the covered entity's notice of privacy practices.\n\n(ii) With each fundraising communication made to an individual under this paragraph, a covered entity must provide the individual with a clear and conspicuous opportunity to elect not to receive any further fundraising communications. The method for an individual to elect not to receive further fundraising communications may not cause the individual to incur an undue burden or more than a nominal cost.\n\n(iii) A covered entity may not condition treatment or payment on the individual's choice with respect to the receipt of fundraising communications.\n\n(iv) A covered entity may not make fundraising communications to an individual under this paragraph where the individual has elected not to receive such communications under paragraph (f)(2)(ii) of this section.\n\n(v) A covered entity may provide an individual who has elected not to receive further fundraising communications with a method to opt back in to receive such communications.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_076"
+    },
+    {
+      "question": "What must be included in the header of a HIPAA notice of privacy practices?",
+      "answer": "The notice must contain the following statement as a header or otherwise prominently displayed: 'THIS NOTICE DESCRIBES HOW MEDICAL INFORMATION ABOUT YOU MAY BE USED AND DISCLOSED AND HOW YOU CAN GET ACCESS TO THIS INFORMATION. PLEASE REVIEW IT CAREFULLY.'",
+      "evidence": "(i) *Header.* The notice must contain the following statement as a header or otherwise prominently displayed:\n\n\u201cTHIS NOTICE DESCRIBES HOW MEDICAL INFORMATION ABOUT YOU MAY BE USED AND DISCLOSED AND HOW YOU CAN GET ACCESS TO THIS INFORMATION. PLEASE REVIEW IT CAREFULLY.\u201d",
+      "question_type": "factual",
+      "qa_id": "hipaa_078"
+    },
+    {
+      "question": "What individual rights must be described in the notice of privacy practices?",
+      "answer": "The notice must describe the individual's rights to: request restrictions on certain uses and disclosures (noting the entity is generally not required to agree); receive confidential communications; inspect and copy PHI; amend PHI; receive an accounting of disclosures; and obtain a paper copy of the notice upon request, even for those who agreed to electronic notice.",
+      "evidence": "The notice must contain a statement of the individual's rights with respect to protected health information and a brief description of how the individual may exercise these rights, as follows:\n\n(A) The right to request restrictions on certain uses and disclosures of protected health information as provided by \u00a7 164.522(a), including a statement that the covered entity is not required to agree to a requested restriction, except in case of a disclosure restricted under \u00a7 164.522(a)(1)(vi);\n\n(B) The right to receive confidential communications of protected health information as provided by \u00a7 164.522(b), as applicable;\n\n(C) The right to inspect and copy protected health information as provided by \u00a7 164.524;\n\n(D) The right to amend protected health information as provided by \u00a7 164.526;\n\n(E) The right to receive an accounting of disclosures of protected health information as provided by \u00a7 164.528; and\n\n(F) The right of an individual, including an individual who has agreed to receive the notice electronically in accordance with paragraph (c)(3) of this section, to obtain a paper copy of the notice from the covered entity upon request.",
+      "question_type": "factual",
+      "qa_id": "hipaa_079"
+    },
+    {
+      "question": "What covered entity duties must be stated in the notice of privacy practices?",
+      "answer": "The notice must state that the entity is required by law to maintain the privacy of PHI, to provide individuals with notice of its legal duties and privacy practices, and to notify affected individuals following a breach of unsecured PHI. It must also state that the entity is required to abide by the terms of the notice currently in effect, and may include a statement reserving the right to change its notice terms with a description of how revised notices will be provided.",
+      "evidence": "(v) *Covered entity's duties.* The notice must contain:\n\n(A) A statement that the covered entity is required by law to maintain the privacy of protected health information, to provide individuals with notice of its legal duties and privacy practices, and to notify affected individuals following a breach of unsecured protected health information;\n\n(B) A statement that the covered entity is required to abide by the terms of the notice currently in effect; and",
+      "question_type": "factual",
+      "qa_id": "hipaa_080"
+    },
+    {
+      "question": "How often must a health plan notify individuals about the availability of its privacy notice?",
+      "answer": "No less frequently than once every three years, the health plan must notify individuals then covered by the plan of the availability of the notice and how to obtain the notice. The health plan must also provide the notice at the time of enrollment to new enrollees.",
+      "evidence": "(i) A health plan must provide the notice:\n\n(A) No later than the compliance date for the health plan, to individuals then covered by the plan;\n\n(B) Thereafter, at the time of enrollment, to individuals who are new enrollees.\n\n(ii) No less frequently than once every three years, the health plan must notify individuals then covered by the plan of the availability of the notice and how to obtain the notice.",
+      "question_type": "factual",
+      "qa_id": "hipaa_081"
+    },
+    {
+      "question": "When must a covered health care provider with a direct treatment relationship provide the notice of privacy practices?",
+      "answer": "The provider must provide the notice no later than the date of the first service delivery, including service delivered electronically, after the compliance date. In an emergency treatment situation, the notice must be provided as soon as reasonably practicable after the emergency. The provider must also make a good faith effort to obtain written acknowledgment of receipt and document efforts if acknowledgment is not obtained.",
+      "evidence": "A covered health care provider that has a direct treatment relationship with an individual must:\n\n(i) Provide the notice:\n\n(A) No later than the date of the first service delivery, including service delivered electronically, to such individual after the compliance date for the covered health care provider; or\n\n(B) In an emergency treatment situation, as soon as reasonably practicable after the emergency treatment situation.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_082"
+    },
+    {
+      "question": "What are the requirements for electronic notice of privacy practices?",
+      "answer": "A covered entity with a website providing information about customer services or benefits must prominently post its notice on the website and make it available electronically. The entity may provide notice by email if the individual agrees to electronic notice and the agreement has not been withdrawn. If the email transmission fails, a paper copy must be provided. Individuals always retain the right to obtain a paper copy upon request.",
+      "evidence": "A covered entity that maintains a web site that provides information about the covered entity's customer services or benefits must prominently post its notice on the web site and make the notice available electronically through the web site.\n\n(ii) A covered entity may provide the notice required by this section to an individual by e-mail, if the individual agrees to electronic notice and such agreement has not been withdrawn. If the covered entity knows that the e-mail transmission has failed, a paper copy of the notice must be provided to the individual. Provision of electronic notice by the covered entity will satisfy the provision requirements of paragraph (c) of this section when timely made in accordance with paragraph (c)(1) or (2) of this section.\n\n(iii) For purposes of paragraph (c)(2)(i) of this section, if the first service delivery to an individual is delivered electronically, the covered health care provider must provide electronic notice automatically and contemporaneously in response to the individual's first request for service. The requirements in paragraph (c)(2)(ii) of this section apply to electronic notice.\n\n(iv) The individual who is the recipient of electronic notice retains the right to obtain a paper copy of the notice from a covered entity upon request.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_083"
+    },
+    {
+      "question": "Do inmates have a right to a notice of privacy practices under HIPAA?",
+      "answer": "No. An inmate does not have a right to notice under Section 164.520, and the requirements of that section do not apply to a correctional institution that is a covered entity. This is a specific exception to the general right to notice.",
+      "evidence": "An inmate does not have a right to notice under this section, and the requirements of this section do not apply to a correctional institution that is a covered entity.",
+      "question_type": "factual",
+      "qa_id": "hipaa_084"
+    },
+    {
+      "question": "What is the right of an individual to request restrictions on uses and disclosures of PHI?",
+      "answer": "A covered entity must permit an individual to request restrictions on uses and disclosures for treatment, payment, or health care operations, and on disclosures for involvement in care. Generally, the entity is not required to agree to a restriction. However, the entity must agree if the disclosure is for payment or health care operations purposes (not required by law) and the PHI pertains solely to a health care item or service for which the individual or someone on their behalf has paid the entity in full.",
+      "evidence": "A covered entity must permit an individual to request that the covered entity restrict:\n\n(A) Uses or disclosures of protected health information about the individual to carry out treatment, payment, or health care operations; and\n\n(B) Disclosures permitted under \u00a7 164.510(b).\n\n(ii) Except as provided in paragraph (a)(1)(vi) of this section, a covered entity is not required to agree to a restriction.\n\n(iii) A covered entity that agrees to a restriction under paragraph (a)(1)(i) of this section may not use or disclose protected health information in violation of such restriction, except that, if the individual who requested the restriction is in need of emergency treatment and the restricted protected health information is needed to provide the emergency treatment, the covered entity may use the restricted protected health information, or may disclose such information to a health care provider, to provide such treatment to the individual.\n\n(iv) If restricted protected health information is disclosed to a health care provider for emergency treatment under paragraph (a)(1)(iii) of this section, the covered entity must request that such health care provider not further use or disclose the information.\n\n(v) A restriction agreed to by a covered entity under paragraph (a) of this section, is not effective under this subpart to prevent uses or disclosures permitted or required under \u00a7 164.502(a)(2)(ii), \u00a7 164.510(a) or \u00a7 164.512.\n\n(vi) A covered entity must agree to the request of an individual to restrict disclosure of protected health information about the individual to a health plan if:\n\n(A) The disclosure is for the purpose of carrying out payment or health care operations and is not otherwise required by law; and\n\n(B) The protected health information pertains solely to a health care item or service for which the individual, or person other than the health plan on behalf of the individual, has paid the covered entity in full.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_085"
+    },
+    {
+      "question": "When must a covered entity agree to a restriction on disclosure to a health plan?",
+      "answer": "A covered entity must agree to restrict disclosure to a health plan if the disclosure is for the purpose of carrying out payment or health care operations and is not otherwise required by law, and the PHI pertains solely to a health care item or service for which the individual, or a person other than the health plan on behalf of the individual, has paid the covered entity in full. This gives individuals the right to keep information from their health plan when they pay out of pocket.",
+      "evidence": "A covered entity must agree to the request of an individual to restrict disclosure of protected health information about the individual to a health plan if:\n\n(A) The disclosure is for the purpose of carrying out payment or health care operations and is not otherwise required by law; and\n\n(B) The protected health information pertains solely to a health care item or service for which the individual, or person other than the health plan on behalf of the individual, has paid the covered entity in full.",
+      "question_type": "causal",
+      "qa_id": "hipaa_086"
+    },
+    {
+      "question": "Can restricted PHI be used in an emergency situation?",
+      "answer": "Yes. If the individual who requested the restriction is in need of emergency treatment and the restricted PHI is needed to provide the emergency treatment, the covered entity may use the restricted PHI or disclose it to a health care provider for emergency treatment. However, the entity must then request that the health care provider not further use or disclose the information.",
+      "evidence": "(iii) A covered entity that agrees to a restriction under paragraph (a)(1)(i) of this section may not use or disclose protected health information in violation of such restriction, except that, if the individual who requested the restriction is in need of emergency treatment and the restricted protected health information is needed to provide the emergency treatment, the covered entity may use the restricted protected health information, or may disclose such information to a health care provider, to provide such treatment to the individual.\n\n(iv) If restricted protected health information is disclosed to a health care provider for emergency treatment under paragraph (a)(1)(iii) of this section, the covered entity must request that such health care provider not further use or disclose the information.",
+      "question_type": "factual",
+      "qa_id": "hipaa_087"
+    },
+    {
+      "question": "What are the confidential communications requirements under HIPAA?",
+      "answer": "A covered health care provider must permit and accommodate reasonable requests by individuals to receive communications of PHI by alternative means or at alternative locations. A health plan must do the same if the individual clearly states that disclosure could endanger the individual. A provider may not require an explanation for the request, while a health plan may require a statement that disclosure could endanger the individual.",
+      "evidence": "A covered health care provider must permit individuals to request and must accommodate reasonable requests by individuals to receive communications of protected health information from the covered health care provider by alternative means or at alternative locations.\n\n(ii) A health plan must permit individuals to request and must accommodate reasonable requests by individuals to receive communications of protected health information from the health plan by alternative means or at alternative locations, if the individual clearly states that the disclosure of all or part of that information could endanger the individual.",
+      "question_type": "comparative",
+      "qa_id": "hipaa_088"
+    },
+    {
+      "question": "What are the unreviewable grounds for denying individual access to PHI?",
+      "answer": "A covered entity may deny access without providing an opportunity for review if: the information is psychotherapy notes or litigation-related information; the entity is a correctional institution and access could jeopardize health, safety, security, custody, or rehabilitation; the individual agreed to temporary suspension of access during research; the information is subject to the Privacy Act and denial would meet that law's requirements; or the information was obtained under a promise of confidentiality and access would likely reveal the source.",
+      "evidence": "A covered entity may deny an individual access without providing the individual an opportunity for review, in the following circumstances.\n\n(i) The protected health information is excepted from the right of access by paragraph (a)(1) of this section.\n\n(ii) A covered entity that is a correctional institution or a covered health care provider acting under the direction of the correctional institution may deny, in whole or in part, an inmate's request to obtain a copy of protected health information, if obtaining such copy would jeopardize the health, safety, security, custody, or rehabilitation of the individual or of other inmates, or the safety of any officer, employee, or other person at the correctional institution or responsible for the transporting of the inmate.\n\n(iii) An individual's access to protected health information created or obtained by a covered health care provider in the course of research that includes treatment may be temporarily suspended for as long as the research is in progress, provided that the individual has agreed to the denial of access when consenting to participate in the research that includes treatment, and the covered health care provider has informed the individual that the right of access will be reinstated upon completion of the research.\n\n(iv) An individual's access to protected health information that is contained in records that are subject to the Privacy Act, 5 U.S.C. 552a, may be denied, if the denial of access under the Privacy Act would meet the requirements of that law.\n\n(v) An individual's access may be denied if the protected health information was obtained from someone other than a health care provider under a promise of confidentiality and the access requested would be reasonably likely to reveal the source of the information.",
+      "question_type": "factual",
+      "qa_id": "hipaa_090"
+    },
+    {
+      "question": "What are the reviewable grounds for denying individual access to PHI, and how is the review process handled?",
+      "answer": "A covered entity may deny access on reviewable grounds if: a licensed professional determines access is reasonably likely to endanger the life or physical safety of the individual or another person; the PHI references another person and access could cause substantial harm to that person; or the request is by a personal representative and access could cause substantial harm. The individual has the right to have the denial reviewed by a licensed health care professional who did not participate in the original denial decision.",
+      "evidence": "A covered entity may deny an individual access, provided that the individual is given a right to have such denials reviewed, as required by paragraph (a)(4) of this section, in the following circumstances:\n\n(i) A licensed health care professional has determined, in the exercise of professional judgment, that the access requested is reasonably likely to endanger the life or physical safety of the individual or another person;\n\n(ii) The protected health information makes reference to another person (unless such other person is a health care provider) and a licensed health care professional has determined, in the exercise of professional judgment, that the access requested is reasonably likely to cause substantial harm to such other person; or\n\n(iii) The request for access is made by the individual's personal representative and a licensed health care professional has determined, in the exercise of professional judgment, that the provision of access to such personal representative is reasonably likely to cause substantial harm to the individual or another person.\n\n(4) *Review of a denial of access.* If access is denied on a ground permitted under paragraph (a)(3) of this section, the individual has the right to have the denial reviewed by a licensed health care professional who is designated by the covered entity to act as a reviewing official and who did not participate in the original decision to deny.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_091"
+    },
+    {
+      "question": "What fees may a covered entity charge for providing access to PHI?",
+      "answer": "If an individual requests a copy of PHI or agrees to a summary or explanation, the covered entity may impose a reasonable, cost-based fee that includes only: the cost of labor for copying (whether paper or electronic); supplies for creating the paper copy or electronic media if requested on portable media; postage if mailed; and the cost of preparing an explanation or summary if agreed to by the individual.",
+      "evidence": "If the individual requests a copy of the protected health information or agrees to a summary or explanation of such information, the covered entity may impose a reasonable, cost-based fee, provided that the fee includes only the cost of:\n\n(i) Labor for copying the protected health information requested by the individual, whether in paper or electronic form;\n\n(ii) Supplies for creating the paper copy or electronic media if the individual requests that the electronic copy be provided on portable media;\n\n(iii) Postage, when the individual has requested the copy, or the summary or explanation, be mailed; and\n\n(iv) Preparing an explanation or summary of the protected health information, if agreed to by the individual as required by paragraph (c)(2)(iii) of this section.",
+      "question_type": "factual",
+      "qa_id": "hipaa_092"
+    },
+    {
+      "question": "What is an individual's right to amend their protected health information?",
+      "answer": "An individual has the right to request that a covered entity amend PHI or a record in a designated record set for as long as it is maintained. The covered entity must act on the request within 60 days, with one possible 30-day extension. The entity may deny an amendment if the information was not created by it, is not part of the designated record set, would not be available for inspection, or is accurate and complete.",
+      "evidence": "(1) *Right to amend.* An individual has the right to have a covered entity amend protected health information or a record about the individual in a designated record set for as long as the protected health information is maintained in the designated record set.\n\n(2) *Denial of amendment.* A covered entity may deny an individual's request for amendment, if it determines that the protected health information or record that is the subject of the request:\n\n(i) Was not created by the covered entity, unless the individual provides a reasonable basis to believe that the originator of protected health information is no longer available to act on the requested amendment;\n\n(ii) Is not part of the designated record set;\n\n(iii) Would not be available for inspection under \u00a7 164.524; or\n\n(iv) Is accurate and complete.",
+      "question_type": "factual",
+      "qa_id": "hipaa_093"
+    },
+    {
+      "question": "What are the grounds for denying an amendment request and what must the denial contain?",
+      "answer": "A covered entity may deny an amendment request if the information was not created by the entity (unless the originator is unavailable), is not part of the designated record set, would not be available for inspection, or is accurate and complete. The written denial must contain the basis for the denial, the individual's right to submit a statement of disagreement, a statement about requesting the denial be appended to future disclosures, and information about how to file a complaint.",
+      "evidence": "A covered entity may deny an individual's request for amendment, if it determines that the protected health information or record that is the subject of the request:\n\n(i) Was not created by the covered entity, unless the individual provides a reasonable basis to believe that the originator of protected health information is no longer available to act on the requested amendment;\n\n(ii) Is not part of the designated record set;\n\n(iii) Would not be available for inspection under \u00a7 164.524; or\n\n(iv) Is accurate and complete.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_094"
+    },
+    {
+      "question": "What is an individual's right to an accounting of disclosures under HIPAA?",
+      "answer": "An individual has a right to receive an accounting of disclosures of PHI made in the six years prior to the request. The accounting excludes disclosures for treatment, payment, and health care operations; to the individual; incident to permitted uses; pursuant to authorization; for facility directories or care involvement; for national security purposes; to correctional institutions; as part of a limited data set; and those occurring before the compliance date. The first accounting in any 12-month period must be provided free of charge.",
+      "evidence": "An individual has a right to receive an accounting of disclosures of protected health information made by a covered entity in the six years prior to the date on which the accounting is requested, except for disclosures:\n\n(i) To carry out treatment, payment and health care operations as provided in \u00a7 164.506;\n\n(ii) To individuals of protected health information about them as provided in \u00a7 164.502;\n\n(iii) Incident to a use or disclosure otherwise permitted or required by this subpart, as provided in \u00a7 164.502;\n\n(iv) Pursuant to an authorization as provided in \u00a7 164.508;\n\n(v) For the facility's directory or to persons involved in the individual's care or other notification purposes as provided in \u00a7 164.510;\n\n(vi) For national security or intelligence purposes as provided in \u00a7 164.512(k)(2);\n\n(vii) To correctional institutions or law enforcement officials as provided in \u00a7 164.512(k)(5);\n\n(viii) As part of a limited data set in accordance with \u00a7 164.514(e); or",
+      "question_type": "factual",
+      "qa_id": "hipaa_095"
+    },
+    {
+      "question": "What information must be included in each entry of an accounting of disclosures?",
+      "answer": "For each disclosure, the accounting must include: the date of the disclosure; the name of the entity or person who received the PHI and, if known, the address; a brief description of the PHI disclosed; and a brief statement of the purpose of the disclosure that reasonably informs the individual of the basis, or a copy of a written request for disclosure. For multiple disclosures to the same person for a single purpose, the entity may provide this information for the first disclosure plus the frequency and date of the last disclosure.",
+      "evidence": "the accounting must include for each disclosure:\n\n(i) The date of the disclosure;\n\n(ii) The name of the entity or person who received the protected health information and, if known, the address of such entity or person;\n\n(iii) A brief description of the protected health information disclosed; and\n\n(iv) A brief statement of the purpose of the disclosure that reasonably informs the individual of the basis for the disclosure or, in lieu of such statement, a copy of a written request for a disclosure under \u00a7 164.502(a)(2)(ii) or \u00a7 164.512, if any.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_096"
+    },
+    {
+      "question": "What are the administrative requirements for a covered entity's privacy official and contact person?",
+      "answer": "A covered entity must designate a privacy official who is responsible for the development and implementation of the entity's privacy policies and procedures. The entity must also designate a contact person or office responsible for receiving complaints and providing further information about matters covered by the notice of privacy practices. These personnel designations must be documented.",
+      "evidence": "A covered entity must designate a privacy official who is responsible for the development and implementation of the policies and procedures of the entity.\n\n(ii) A covered entity must designate a contact person or office who is responsible for receiving complaints under this section and who is able to provide further information about matters covered by the notice required by \u00a7 164.520.",
+      "question_type": "procedural",
+      "qa_id": "hipaa_097"
+    },
+    {
+      "question": "What is the documentation retention period under HIPAA?",
+      "answer": "A covered entity must retain documentation required by the Privacy Rule for six years from the date of its creation or the date when it last was in effect, whichever is later. This includes policies and procedures maintained in written or electronic form, required written communications, and records of required actions, activities, or designations.",
+      "evidence": "A covered entity must retain the documentation required by paragraph (j)(1) of this section for six years from the date of its creation or the date when it last was in effect, whichever is later.",
+      "question_type": "factual",
+      "qa_id": "hipaa_099"
+    },
+    {
+      "question": "What is the purpose of the severability provision in Section 164.535?",
+      "answer": "The severability provision states that if any provision of the HIPAA Privacy Rule to Support Reproductive Health Care Privacy is held to be invalid or unenforceable, it shall be construed to give maximum effect permitted by law. If the holding is one of utter invalidity, the provision shall be severable from the rest of the part and shall not affect the remainder or the application to other persons or circumstances. This ensures the rest of the rule survives legal challenges to individual provisions.",
+      "evidence": "If any provision of the HIPAA Privacy Rule to Support Reproductive Health Care Privacy is held to be invalid or unenforceable facially, or as applied to any person, plaintiff, or circumstance, it shall be construed to give maximum effect to the provision permitted by law, unless such holding shall be one of utter invalidity or unenforceability, in which case the provision shall be severable from this part and shall not affect the remainder thereof or the application of the provision to other persons not similarly situated or to other dissimilar circumstances.",
+      "question_type": "causal",
+      "qa_id": "hipaa_100"
+    },
+    {
+      "qa_id": "hipaa_101",
+      "question": "Under what title and subtitle of the Code of Federal Regulations is the HIPAA Privacy Rule codified?",
+      "answer": "The HIPAA Privacy Rule is codified under Title 45 (Public Welfare), Subtitle A (Department of Health and Human Services), Subchapter C (Administrative Data Standards and Related Requirements).",
+      "evidence": "1. Title 45 \u2014Public Welfare\n2. Subtitle A \u2014Department of Health and Human Services\n3. Subchapter C \u2014Administrative Data Standards and Related Requirements",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "hipaa_102",
+      "question": "How do the HIPAA compliance requirements differ for health care clearinghouses compared to other covered entities?",
+      "answer": "Health care clearinghouses must comply with the standards, requirements, and implementation specifications in a specific manner: when a clearinghouse creates or receives protected health information as a business associate of another covered entity, it must comply with designated sections of the regulation.",
+      "evidence": "(b) Health care clearinghouses must comply with the standards, requirements, and implementation specifications as follows:\n\n(1) When a health care clearinghouse creates or receives protected health information as a business associate of another covered entity, the clearinghouse must comply with:",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "hipaa_103",
+      "question": "How does HIPAA distinguish between the definitions of 'research' and 'treatment' in terms of their scope and purpose?",
+      "answer": "Research is defined as a systematic investigation, including development, testing, and evaluation, designed to develop or contribute to generalizable knowledge. Treatment, by contrast, encompasses the provision, coordination, or management of health care and related services, including coordination with third parties, consultation between providers, and patient referrals.",
+      "evidence": "*Research* means a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.\n\n*Treatment* means the provision, coordination, or management of health care and related services by one or more health care providers, including the coordination or management of health care by a health care provider with a third party; consultation between health care providers relating to a patient; or the referral of a patient for health care from one health care provider to another.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_104",
+      "question": "What obligation applies to both covered entities and business associates when using, disclosing, or requesting protected health information?",
+      "answer": "When using or disclosing protected health information, or when requesting it from another covered entity or business associate, both covered entities and business associates must make reasonable efforts to limit the information to the minimum necessary to accomplish the intended purpose of the use, disclosure, or request.",
+      "evidence": "* When using or disclosing protected health information or when requesting protected health information from another covered entity or business associate, a covered entity or business associate must make reasonable efforts to limit protected health information to the minimum necessary to accomplish the intended purpose of the use, disclosure, or request.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "hipaa_105",
+      "question": "How must satisfactory assurances from a business associate be documented under the HIPAA Privacy Rule?",
+      "answer": "The satisfactory assurances must be documented through a written contract or other written agreement or arrangement with the business associate that meets the applicable requirements of Section 164.",
+      "evidence": "* The satisfactory assurances required by paragraph (e)(1) of this section must be documented through a written contract or other written agreement or arrangement with the business associate that meets the applicable requirements of \u00a7 164.504(e).",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "hipaa_106",
+      "question": "What must a group health plan do to its plan documents before disclosing protected health information to the plan sponsor?",
+      "answer": "The plan documents of the group health plan must be amended to incorporate provisions that establish the permitted and required uses and disclosures of such information by the plan sponsor, provided that such permitted and required uses and disclosures may not be inconsistent with the subpart.",
+      "evidence": "* The plan documents of the group health plan must be amended to incorporate provisions to:\n\n(i) Establish the permitted and required uses and disclosures of such information by the plan sponsor, provided that such permitted and required uses and disclosures may not be inconsistent with this subpart.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "hipaa_107",
+      "question": "When is consent under Section 164.506(b) not effective to permit a use or disclosure of protected health information?",
+      "answer": "Consent is not effective to permit a use or disclosure of protected health information when an authorization under Section 164.508 is required, or when another condition must be met for such use or disclosure to be permissible under the subpart.",
+      "evidence": "(2) Consent, under paragraph (b) of this section, shall not be effective to permit a use or disclosure of protected health information when an authorization, under \u00a7 164.508, is required or when another condition must be met for such use or disclosure to be permissible under this subpart.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "hipaa_108",
+      "question": "What constraint does a valid authorization impose on a covered entity's use or disclosure of protected health information?",
+      "answer": "When a covered entity obtains or receives a valid authorization for its use or disclosure of protected health information, the use or disclosure must be consistent with such authorization. The entity cannot use the information in ways beyond what the authorization permits.",
+      "evidence": "When a covered entity obtains or receives a valid authorization for its use or disclosure of protected health information, such use or disclosure must be consistent with such authorization.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "hipaa_109",
+      "question": "Is authorization generally required for the use or disclosure of protected health information for marketing purposes under HIPAA?",
+      "answer": "Yes, a covered entity must obtain an authorization for any use or disclosure of protected health information for marketing, except if the communication is in the form of certain specified exemptions.",
+      "evidence": "Notwithstanding any provision of this subpart, other than the transition provisions in \u00a7 164.532, a covered entity must obtain an authorization for any use or disclosure of protected health information for marketing, except if the communication is in the form of:\n\n(A) A face-to-face communication made by a covered entity to an individual; or\n\n(B) A promotional gift of nominal value provided by the covered entity.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "hipaa_110",
+      "question": "What must a valid attestation under Section 164.509 contain regarding the description of information requested?",
+      "answer": "A valid attestation must contain a description of the information requested that identifies the information in a specific fashion, including one of the specified identifying formats outlined in the regulation.",
+      "evidence": "* A valid attestation under this section must contain the following elements:\n\n(i) A description of the information requested that identifies the information in a specific fashion, including one of the following:",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "hipaa_111",
+      "question": "What additional information must be provided when an attestation is signed by a representative rather than the person requesting the information?",
+      "answer": "If the attestation is signed by a representative of the person requesting the information, a description of such representative's authority to act for the person must also be provided.",
+      "evidence": "If the attestation is signed by a representative of the person requesting the information, a description of such representative's authority to act for the person must also be provided.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "hipaa_112",
+      "question": "What happens when a covered entity discovers material misrepresentations in a facially valid attestation during the course of using or disclosing PHI?",
+      "answer": "If a covered entity or business associate discovers information reasonably showing that any representation made in the attestation was materially false during the course of relying on a facially valid attestation, leading to a use or disclosure for a prohibited purpose, the entity must take corrective action as specified under Section 164.",
+      "evidence": "The attestation must be written in plain language.\n\n(d) *Material misrepresentations.* If, during the course of using or disclosing protected health information in reasonable reliance on a facially valid attestation, a covered entity or business associate discovers information reasonably showing that any representation made in the attestation was materially false, leading to a use or disclosure for a purpose prohibited under \u00a7 164.502(a)(5)(iii), the covered entity or business associate must cease such use or disclosure.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "hipaa_113",
+      "question": "What must a covered health care provider tell an individual regarding the facility directory, and what opportunity must the individual be given?",
+      "answer": "A covered health care provider must inform the individual of the protected health information that it may include in a directory, the persons to whom it may disclose such information (including disclosures to clergy regarding religious affiliation), and provide the individual with the opportunity to restrict or prohibit some or all of the permitted uses or disclosures.",
+      "evidence": "* A covered health care provider must inform an individual of the protected health information that it may include in a directory and the persons to whom it may disclose such information (including disclosures to clergy of information regarding religious affiliation) and provide the individual with the opportunity to restrict or prohibit some or all of the uses or disclosures permitted by paragraph (a)(1) of this section.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "hipaa_114",
+      "question": "When must a covered health care provider inform an individual about directory disclosures if the individual was unable to be informed at the time of admission?",
+      "answer": "The covered health care provider must inform the individual and provide an opportunity to object to uses or disclosures for directory purposes when it becomes practicable to do so.",
+      "evidence": "(ii) The covered health care provider must inform the individual and provide an opportunity to object to uses or disclosures for directory purposes as required by paragraph (a)(2) of this section when it becomes practicable to do so.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "hipaa_115",
+      "question": "Under what conditions may PHI be disclosed to law enforcement when the individual is incapacitated and unable to agree?",
+      "answer": "If the individual is unable to agree because of incapacity, disclosure is permitted when a law enforcement or other public official authorized to receive the report represents that the PHI is not intended to be used against the individual and that an immediate enforcement activity depending upon the disclosure would be materially and adversely affected by waiting until the individual is able to agree.",
+      "evidence": "(B) If the individual is unable to agree because of incapacity, a law enforcement or other public official authorized to receive the report represents that the protected health information for which disclosure is sought is not intended to be used against the individual and that an immediate enforcement activity that depends upon the disclosure would be materially and adversely affected by waiting until the individual is able to agree to the disclosure.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_116",
+      "question": "Under what circumstances may a covered entity disclose PHI without an individual's agreement due to emergency or incapacity?",
+      "answer": "A covered entity may disclose PHI when it is unable to obtain the individual's agreement because of incapacity or other emergency circumstance, provided that additional specified conditions are met.",
+      "evidence": "(ii) The covered entity is unable to obtain the individual's agreement because of incapacity or other emergency circumstance, provided that:",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_117",
+      "question": "When may a covered entity disclose PHI to law enforcement based on an individual's admission of participation in a violent crime?",
+      "answer": "A covered entity may disclose PHI to law enforcement because of a statement by an individual admitting participation in a violent crime that the covered entity reasonably believes may have caused serious physical harm to the victim.",
+      "evidence": "(A) Because of a statement by an individual admitting participation in a violent crime that the covered entity reasonably believes may have caused serious physical harm to the victim; or",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_118",
+      "question": "Which geographic identifiers must be removed for de-identification under HIPAA's Safe Harbor method, and what is the exception for zip codes?",
+      "answer": "All geographic subdivisions smaller than a State must be removed, including street address, city, county, precinct, zip code, and their equivalent geocodes. However, the initial three digits of a zip code may be retained if certain conditions based on publicly available data from the Bureau of the Census are met.",
+      "evidence": "(B) All geographic subdivisions smaller than a State, including street address, city, county, precinct, zip code, and their equivalent geocodes, except for the initial three digits of a zip code if, according to the current publicly available data from the Bureau of the Census:\n\n(*1*) The geographic unit formed by combining all zip codes with the same three initial digits contains more than 20,000 people; and\n\n(*2*) The initial three digits of a zip code for all such geographic units containing 20,000 or fewer people is changed to 000.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "hipaa_119",
+      "question": "What constraint does HIPAA impose on the method for opting out of fundraising communications?",
+      "answer": "The method for an individual to elect not to receive further fundraising communications may not cause the individual to incur an undue burden or more than a nominal cost.",
+      "evidence": "The method for an individual to elect not to receive further fundraising communications may not cause the individual to incur an undue burden or more than a nominal cost.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_120",
+      "question": "What standard must an expert apply when determining whether health information has been de-identified under the expert determination method?",
+      "answer": "The expert must determine that the risk is very small that the information could be used, alone or in combination with other reasonably available information, by an anticipated recipient to identify an individual who is a subject of the information.",
+      "evidence": "(i) Applying such principles and methods, determines that the risk is very small that the information could be used, alone or in combination with other reasonably available information, by an anticipated recipient to identify an individual who is a subject of the information; and",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_121",
+      "question": "How must the notice of privacy practices address uses or disclosures that are further restricted by other applicable law such as 42 CFR part 2?",
+      "answer": "If a use or disclosure is prohibited or materially limited by other applicable law, such as 42 CFR part 2, the description of such use or disclosure in the notice must reflect the more stringent law as defined in Section 160.",
+      "evidence": "(C) If a use or disclosure for any purpose described in paragraphs (b)(1)(ii)(A) or (B) of this section is prohibited or materially limited by other applicable law, such as 42 CFR part 2, the description of such use or disclosure must reflect the more stringent law as defined in \u00a7 160.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_122",
+      "question": "What special notice requirement applies to covered entities that maintain records subject to 42 CFR part 2 and intend to use them for fundraising?",
+      "answer": "If a covered entity that creates or maintains records subject to 42 CFR part 2 intends to use or disclose such records for fundraising for the benefit of the covered entity, the individual must first be provided with a clear and conspicuous opportunity to elect not to receive any fundraising communications.",
+      "evidence": "(E) If a covered entity that creates or maintains records subject to 42 CFR part 2 intends to use or disclose such records for fundraising for the benefit of the covered entity, the individual must first be provided with a clear and conspicuous opportunity to elect not to receive any fundraising communications.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_123",
+      "question": "Under what exception may a covered entity use restricted protected health information despite having agreed to a restriction?",
+      "answer": "A covered entity that agreed to a restriction may use the restricted PHI if the individual who requested the restriction is in need of emergency treatment and the restricted information is needed to provide that emergency treatment. The entity may use the information itself or disclose it to a health care provider to provide treatment to the individual.",
+      "evidence": "(iii) A covered entity that agrees to a restriction under paragraph (a)(1)(i) of this section may not use or disclose protected health information in violation of such restriction, except that, if the individual who requested the restriction is in need of emergency treatment and the restricted protected health information is needed to provide the emergency treatment, the covered entity may use the restricted protected health information, or may disclose such information to a health care provider, to provide such treatment to the individual.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_124",
+      "question": "When may access to PHI be denied because the information references another person who is not a health care provider?",
+      "answer": "Access may be denied when the protected health information makes reference to another person (unless that person is a health care provider) and a licensed health care professional has determined, in the exercise of professional judgment, that providing the requested access is reasonably likely to cause substantial harm to such other person.",
+      "evidence": "(ii) The protected health information makes reference to another person (unless such other person is a health care provider) and a licensed health care professional has determined, in the exercise of professional judgment, that the access requested is reasonably likely to cause substantial harm to such other person; or",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_125",
+      "question": "Under what circumstances may a covered entity deny a personal representative access to an individual's PHI?",
+      "answer": "Access may be denied when the request is made by the individual's personal representative and a licensed health care professional has determined, in the exercise of professional judgment, that providing access to such personal representative is reasonably likely to cause substantial harm to the individual or another person.",
+      "evidence": "(iii) The request for access is made by the individual's personal representative and a licensed health care professional has determined, in the exercise of professional judgment, that the provision of access to such personal representative is reasonably likely to cause substantial harm to the individual or another person.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_126",
+      "question": "What must a covered entity do when it grants an individual's request for access to protected health information?",
+      "answer": "If the covered entity grants the request, in whole or in part, it must inform the individual of the acceptance of the request and provide the access requested in accordance with the applicable provisions of the regulation.",
+      "evidence": "(A) If the covered entity grants the request, in whole or in part, it must inform the individual of the acceptance of the request and provide the access requested, in accordance with paragraph (c) of this section.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_127",
+      "question": "What are a covered entity's obligations when it grants versus denies a requested amendment to protected health information?",
+      "answer": "If the covered entity grants the requested amendment, in whole or in part, it must take certain specified actions. If it denies the amendment, in whole or in part, it must provide the individual with a written denial in accordance with the regulation's requirements.",
+      "evidence": "(A) If the covered entity grants the requested amendment, in whole or in part, it must take the actions required by paragraphs (c)(1) and (2) of this section.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_128",
+      "question": "How much additional time may a covered entity take to act on an amendment request if it cannot meet the original deadline?",
+      "answer": "If the covered entity is unable to act on the amendment within the required time period, it may extend the time for such action by no more than 30 days, provided that certain conditions are met.",
+      "evidence": "(ii) If the covered entity is unable to act on the amendment within the time required by paragraph (b)(2)(i) of this section, the covered entity may extend the time for such action by no more than 30 days, provided that:",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_129",
+      "question": "What obligation does a covered entity have to assist an individual in contacting research sponsors when research disclosures appear in an accounting?",
+      "answer": "If the covered entity provides an accounting for research disclosures and it is reasonably likely that the individual's PHI was disclosed for a given research protocol or activity, the covered entity shall, at the request of the individual, assist in contacting the entity that sponsored the research and the researcher.",
+      "evidence": "(ii) If the covered entity provides an accounting for research disclosures, in accordance with paragraph (b)(4) of this section, and if it is reasonably likely that the protected health information of the individual was disclosed for such research protocol or activity, the covered entity shall, at the request of the individual, assist in contacting the entity that sponsored the research and the researcher.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_130",
+      "question": "What happens when a covered entity fails to reserve the right to change a privacy practice stated in its notice?",
+      "answer": "If the covered entity does not reserve the right under Section 164.520(b)(1)(v)(C) to change a privacy practice stated in the notice, it is bound by the privacy practices as stated in the notice with respect to protected health information created or received while such notice is in effect.",
+      "evidence": "If a covered entity has not reserved its right under \u00a7 164.520(b)(1)(v)(C) to change a privacy practice that is stated in the notice, the covered entity is bound by the privacy practices as stated in the notice with respect to protected health information created or received while such notice is in effect.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "hipaa_131",
+      "question": "What must a covered entity do when a change in law materially affects the content of its privacy practices notice?",
+      "answer": "If the change in law materially affects the content of the notice required by Section 164.520, the covered entity must promptly make the appropriate revisions to the notice in accordance with the regulation.",
+      "evidence": "If the change in law materially affects the content of the notice required by \u00a7 164.520, the covered entity must promptly make the appropriate revisions to the notice in accordance with \u00a7 164.520(b)(3).",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_132",
+      "question": "What types of prior permissions allow a covered entity to use or disclose PHI under the transition provisions of Section 164.532?",
+      "answer": "Under the transition provisions, a covered entity may use or disclose PHI pursuant to an authorization or other express legal permission obtained from an individual, informed consent to participate in research, a waiver of informed consent by an IRB, or a waiver of authorization in accordance with Section 164.",
+      "evidence": "(a) *Standard: Effect of prior authorizations.* Notwithstanding \u00a7\u00a7 164.508 and 164.512(i), a covered entity may use or disclose protected health information, consistent with paragraphs (b) and (c) of this section, pursuant to an authorization or other express legal permission obtained from an individual permitting the use or disclosure of protected health information, informed consent of the individual to participate in research, a waiver of informed consent by an IRB, or a waiver of authorization in accordance with \u00a7 164.512(i)(1)(i).",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "hipaa_133",
+      "question": "What does the HIPAA Security Rule require regarding business continuity during emergency mode operations?",
+      "answer": "Covered entities must establish and implement as needed procedures to enable continuation of critical business processes for protection of the security of electronic protected health information while operating in emergency mode.",
+      "evidence": "* Establish (and implement as needed) procedures to enable continuation of critical business processes for protection of the security of electronic protected health information while operating in emergency mode.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "hipaa_134",
+      "question": "What dual objective must physical safeguard policies achieve under the HIPAA Security Rule?",
+      "answer": "The policies and procedures must limit physical access to electronic information systems and the facilities in which they are housed, while simultaneously ensuring that properly authorized access is allowed.",
+      "evidence": "* Implement policies and procedures to limit physical access to its electronic information systems and the facility or facilities in which they are housed, while ensuring that properly authorized access is allowed.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "hipaa_135",
+      "question": "What are the rules governing the use of the Federal Rules of Evidence and exclusion of evidence in HIPAA administrative hearings?",
+      "answer": "The ALJ may apply the Federal Rules of Evidence where appropriate, for example to exclude unreliable evidence, but this is discretionary. However, the ALJ must exclude irrelevant or immaterial evidence as a mandatory requirement.",
+      "evidence": "However, the ALJ may apply the Federal Rules of Evidence where appropriate, for example, to exclude unreliable evidence.\n\n(c) The ALJ must exclude irrelevant or immaterial evidence.",
+      "question_type": "comparative"
+    }
+  ]
+}

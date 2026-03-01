@@ -1,0 +1,705 @@
+{
+  "corpus_id": "gdpr",
+  "qa_pairs": [
+    {
+      "question": "How does the GDPR define 'personal data'?",
+      "answer": "Personal data means any information relating to an identified or identifiable natural person (the 'data subject'). An identifiable natural person is one who can be identified directly or indirectly by reference to identifiers such as a name, identification number, location data, online identifier, or factors specific to their physical, physiological, genetic, mental, economic, cultural or social identity.",
+      "evidence": "'personal data' means any information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;",
+      "question_type": "definitional",
+      "qa_id": "gdpr_001"
+    },
+    {
+      "question": "What is the GDPR's definition of 'processing' of personal data?",
+      "answer": "Processing means any operation or set of operations performed on personal data, whether or not by automated means, including collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.",
+      "evidence": "'processing' means any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction;",
+      "question_type": "definitional",
+      "qa_id": "gdpr_002"
+    },
+    {
+      "question": "What does 'pseudonymisation' mean under the GDPR?",
+      "answer": "Pseudonymisation means processing personal data so it can no longer be attributed to a specific data subject without using additional information, provided that such additional information is kept separately and is subject to technical and organisational measures ensuring the data are not attributed to an identified or identifiable person.",
+      "evidence": "'pseudonymisation' means the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is kept separately and is subject to technical and organisational measures to ensure that the personal data are not attributed to an identified or identifiable natural person;",
+      "question_type": "definitional",
+      "qa_id": "gdpr_003"
+    },
+    {
+      "question": "How does the GDPR define 'consent' of the data subject?",
+      "answer": "Consent of the data subject means any freely given, specific, informed and unambiguous indication of the data subject's wishes, by which he or she signifies agreement to the processing of personal data relating to him or her through a statement or clear affirmative action.",
+      "evidence": "'consent' of the data subject means any freely given, specific, informed and unambiguous indication of the data subject's wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her;",
+      "question_type": "definitional",
+      "qa_id": "gdpr_004"
+    },
+    {
+      "question": "What is the definition of a 'personal data breach' under the GDPR?",
+      "answer": "A personal data breach is a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, personal data that has been transmitted, stored or otherwise processed.",
+      "evidence": "'personal data breach' means a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, personal data transmitted, stored or otherwise processed;",
+      "question_type": "definitional",
+      "qa_id": "gdpr_005"
+    },
+    {
+      "question": "What does the GDPR define as a 'controller'?",
+      "answer": "A controller is the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data. Where the purposes and means are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by that law.",
+      "evidence": "'controller' means the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law;",
+      "question_type": "definitional",
+      "qa_id": "gdpr_008"
+    },
+    {
+      "question": "What is the definition of 'binding corporate rules' under the GDPR?",
+      "answer": "Binding corporate rules are personal data protection policies adhered to by a controller or processor established in a Member State for transfers of personal data to a controller or processor in one or more third countries within a group of undertakings, or group of enterprises engaged in a joint economic activity.",
+      "evidence": "'binding corporate rules' means personal data protection policies which are adhered to by a controller or processor established on the territory of a Member State for transfers or a set of transfers of personal data to a controller or processor in one or more third countries within a group of undertakings, or group of enterprises engaged in a joint economic activity;",
+      "question_type": "definitional",
+      "qa_id": "gdpr_009"
+    },
+    {
+      "question": "What is the definition of 'restriction of processing' under the GDPR?",
+      "answer": "Restriction of processing means the marking of stored personal data with the aim of limiting their processing in the future.",
+      "evidence": "'restriction of processing' means the marking of stored personal data with the aim of limiting their processing in the future;",
+      "question_type": "definitional",
+      "qa_id": "gdpr_010"
+    },
+    {
+      "question": "What is the material scope of the GDPR according to Article 2?",
+      "answer": "The GDPR applies to the processing of personal data wholly or partly by automated means, and to the processing other than by automated means of personal data which form part of a filing system or are intended to form part of a filing system.",
+      "evidence": "This Regulation applies to the processing of personal data wholly or partly by automated means and to the processing other than by automated means of personal data which form part of a filing system or are intended to form part of a filing system.",
+      "question_type": "factual",
+      "qa_id": "gdpr_011"
+    },
+    {
+      "question": "What is the territorial scope of the GDPR as described in Article 3(1)?",
+      "answer": "The GDPR applies to the processing of personal data in the context of the activities of an establishment of a controller or a processor in the Union, regardless of whether the processing takes place in the Union or not.",
+      "evidence": "This Regulation applies to the processing of personal data in the context of the activities of an establishment of a controller or a processor in the Union, regardless of whether the processing takes place in the Union or not.",
+      "question_type": "factual",
+      "qa_id": "gdpr_012"
+    },
+    {
+      "question": "What does the 'accountability' principle require of the controller under Article 5(2)?",
+      "answer": "The accountability principle requires the controller to be responsible for, and be able to demonstrate compliance with, the data processing principles set out in Article 5(1), which include lawfulness, fairness and transparency, purpose limitation, data minimisation, accuracy, storage limitation, and integrity and confidentiality.",
+      "evidence": "The controller shall be responsible for, and be able to demonstrate compliance with, paragraph 1 ('accountability').",
+      "question_type": "factual",
+      "qa_id": "gdpr_013"
+    },
+    {
+      "question": "Under what condition does the legitimate interests legal basis not apply, according to Article 6(1)?",
+      "answer": "The legitimate interests legal basis (point (f) of Article 6(1)) does not apply to processing carried out by public authorities in the performance of their tasks.",
+      "evidence": "Point (f) of the first subparagraph shall not apply to processing carried out by public authorities in the performance of their tasks.",
+      "question_type": "factual",
+      "qa_id": "gdpr_014"
+    },
+    {
+      "question": "What is the minimum age for a child to give consent for information society services, and can Member States lower it?",
+      "answer": "The minimum age is 16 years old. Below that age, consent must be given or authorised by the holder of parental responsibility. Member States may provide by law for a lower age, but it cannot be below 13 years.",
+      "evidence": "Where point (a) of Article 6(1) applies, in relation to the offer of information society services directly to a child, the processing of the personal data of a child shall be lawful where the child is at least 16 years old. Where the child is below the age of 16 years, such processing shall be lawful only if and to the extent that consent is given or authorised by the holder of parental responsibility over the child.\n\nMember States may provide by law for a lower age for those purposes provided that such lower age is not below 13 years.",
+      "question_type": "factual",
+      "qa_id": "gdpr_015"
+    },
+    {
+      "question": "What categories of personal data are prohibited from processing under Article 9(1)?",
+      "answer": "Processing is prohibited for data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and for genetic data, biometric data for uniquely identifying a natural person, data concerning health, or data concerning a natural person's sex life or sexual orientation.",
+      "evidence": "Processing of personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person's sex life or sexual orientation shall be prohibited.",
+      "question_type": "factual",
+      "qa_id": "gdpr_016"
+    },
+    {
+      "question": "What is the right to data portability as described in Article 20?",
+      "answer": "The data subject has the right to receive their personal data in a structured, commonly used and machine-readable format and transmit it to another controller without hindrance, where the processing is based on consent or a contract and carried out by automated means. They also have the right to have the data transmitted directly from one controller to another, where technically feasible.",
+      "evidence": "The data subject shall have the right to receive the personal data concerning him or her, which he or she has provided to a controller, in a structured, commonly used and machine-readable format and have the right to transmit those data to another controller without hindrance from the controller to which the personal data have been provided, where:",
+      "question_type": "factual",
+      "qa_id": "gdpr_017"
+    },
+    {
+      "question": "What does Article 22 say about automated individual decision-making?",
+      "answer": "The data subject has the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects or similarly significantly affects them. Exceptions exist for contractual necessity, authorisation by law, or explicit consent.",
+      "evidence": "The data subject shall have the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning him or her or similarly significantly affects him or her.",
+      "question_type": "factual",
+      "qa_id": "gdpr_018"
+    },
+    {
+      "question": "What is the time limit for the controller to respond to a data subject's request under Article 12(3)?",
+      "answer": "The controller must provide information on action taken without undue delay and in any event within one month of receipt of the request. That period may be extended by two further months where necessary, taking into account the complexity and number of requests.",
+      "evidence": "The controller shall provide information on action taken on a request under Articles 15 to 22 to the data subject without undue delay and in any event within one month of receipt of the request. That period may be extended by two further months where necessary, taking into account the complexity and number of the requests.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_019"
+    },
+    {
+      "question": "What are the data subject's rights regarding the withdrawal of consent under Article 7?",
+      "answer": "The data subject has the right to withdraw consent at any time. The withdrawal does not affect the lawfulness of processing based on consent before the withdrawal. The data subject must be informed of this right prior to giving consent, and it must be as easy to withdraw as to give consent.",
+      "evidence": "The data subject shall have the right to withdraw his or her consent at any time. The withdrawal of consent shall not affect the lawfulness of processing based on consent before its withdrawal. Prior to giving consent, the data subject shall be informed thereof. It shall be as easy to withdraw as to give consent.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_020"
+    },
+    {
+      "question": "What is the timeframe for notifying a personal data breach to the supervisory authority under Article 33?",
+      "answer": "The controller must notify the supervisory authority without undue delay and, where feasible, not later than 72 hours after becoming aware of the breach, unless the breach is unlikely to result in a risk to the rights and freedoms of natural persons. If the notification is not made within 72 hours, it must be accompanied by reasons for the delay.",
+      "evidence": "In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_021"
+    },
+    {
+      "question": "When must a controller communicate a personal data breach to the data subject under Article 34?",
+      "answer": "The controller must communicate the breach to the data subject without undue delay when it is likely to result in a high risk to the rights and freedoms of natural persons. This communication is not required if protective measures like encryption were applied, subsequent measures eliminated the high risk, or it would involve disproportionate effort.",
+      "evidence": "When the personal data breach is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall communicate the personal data breach to the data subject without undue delay.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_022"
+    },
+    {
+      "question": "What documentation must the controller maintain regarding personal data breaches under Article 33(5)?",
+      "answer": "The controller must document any personal data breaches, comprising the facts relating to the breach, its effects, and the remedial action taken. This documentation must enable the supervisory authority to verify compliance with Article 33.",
+      "evidence": "The controller shall document any personal data breaches, comprising the facts relating to the personal data breach, its effects and the remedial action taken. That documentation shall enable the supervisory authority to verify compliance with this Article.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_023"
+    },
+    {
+      "question": "When is a data protection impact assessment required under Article 35?",
+      "answer": "A DPIA is required when a type of processing, particularly using new technologies, is likely to result in a high risk to the rights and freedoms of natural persons. It is specifically required for systematic and extensive automated evaluation of personal aspects (including profiling), processing on a large scale of special categories of data, or systematic monitoring of a publicly accessible area on a large scale.",
+      "evidence": "Where a type of processing in particular using new technologies, and taking into account the nature, scope, context and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall, prior to the processing, carry out an assessment of the impact of the envisaged processing operations on the protection of personal data. A single assessment may address a set of similar processing operations that present similar high risks.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_024"
+    },
+    {
+      "question": "What steps must a controller take when engaging a processor under Article 28?",
+      "answer": "The controller must use only processors providing sufficient guarantees to implement appropriate technical and organisational measures. The processor cannot engage another processor without prior specific or general written authorisation of the controller, and must inform the controller of any intended changes concerning other processors.",
+      "evidence": "Where processing is to be carried out on behalf of a controller, the controller shall use only processors providing sufficient guarantees to implement appropriate technical and organisational measures in such a manner that processing will meet the requirements of this Regulation and ensure the protection of the rights of the data subject.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_025"
+    },
+    {
+      "question": "What procedure must the controller follow when further processing data for a new purpose under Article 6(4)?",
+      "answer": "When further processing is not based on consent or Union/Member State law, the controller must assess compatibility by considering: any link between original and new purposes, the context of collection, the nature of the data, possible consequences for data subjects, and the existence of appropriate safeguards such as encryption or pseudonymisation.",
+      "evidence": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia:",
+      "question_type": "procedural",
+      "qa_id": "gdpr_027"
+    },
+    {
+      "question": "What procedure must the controller follow for prior consultation with the supervisory authority under Article 36?",
+      "answer": "The controller must consult the supervisory authority prior to processing where a data protection impact assessment indicates high risk. The supervisory authority has up to eight weeks to provide written advice, extendable by six weeks for complex cases.",
+      "evidence": "The controller shall consult the supervisory authority prior to processing where a data protection impact assessment under Article 35 indicates that the processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_028"
+    },
+    {
+      "question": "What are the maximum administrative fines for infringements of basic processing principles under Article 83(5)?",
+      "answer": "Infringements of basic principles for processing, data subjects' rights, and rules on international transfers are subject to fines up to 20,000,000 EUR, or in the case of an undertaking, up to 4% of the total worldwide annual turnover of the preceding financial year, whichever is higher.",
+      "evidence": "Infringements of the following provisions shall, in accordance with paragraph 2, be subject to administrative fines up to 20 000 000 EUR, or in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher:",
+      "question_type": "factual",
+      "qa_id": "gdpr_029"
+    },
+    {
+      "question": "What are the maximum administrative fines for infringements of controller and processor obligations under Article 83(4)?",
+      "answer": "Infringements of obligations of the controller and processor (e.g., under Articles 8, 11, 25-39, 42-43), certification body obligations, and monitoring body obligations are subject to fines up to 10,000,000 EUR, or in the case of an undertaking, up to 2% of the total worldwide annual turnover of the preceding financial year, whichever is higher.",
+      "evidence": "Infringements of the following provisions shall, in accordance with paragraph 2, be subject to administrative fines up to 10 000 000 EUR, or in the case of an undertaking, up to 2 % of the total worldwide annual turnover of the preceding financial year, whichever is higher:",
+      "question_type": "factual",
+      "qa_id": "gdpr_030"
+    },
+    {
+      "question": "How do the fines under Article 83(4) compare to those under Article 83(5)?",
+      "answer": "Article 83(4) fines for controller/processor obligations go up to 10,000,000 EUR or 2% of worldwide annual turnover. Article 83(5) fines for basic principles, data subject rights, and international transfers are double: up to 20,000,000 EUR or 4% of worldwide annual turnover. This reflects that violations of fundamental principles and rights are considered more serious.",
+      "evidence": "Infringements of the following provisions shall, in accordance with paragraph 2, be subject to administrative fines up to 10 000 000 EUR, or in the case of an undertaking, up to 2 % of the total worldwide annual turnover of the preceding financial year, whichever is higher:",
+      "question_type": "comparative",
+      "qa_id": "gdpr_031"
+    },
+    {
+      "question": "How does the right to object to direct marketing (Article 21(2)) compare to the general right to object (Article 21(1))?",
+      "answer": "For direct marketing, the data subject has an absolute right to object at any time, and the personal data shall no longer be processed for such purposes. For the general right to object, the controller may continue processing if it demonstrates compelling legitimate grounds that override the data subject's interests, rights and freedoms.",
+      "evidence": "Where personal data are processed for direct marketing purposes, the data subject shall have the right to object at any time to processing of personal data concerning him or her for such marketing, which includes profiling to the extent that it is related to such direct marketing.",
+      "question_type": "comparative",
+      "qa_id": "gdpr_033"
+    },
+    {
+      "question": "When must a data protection officer be designated according to Article 37?",
+      "answer": "A DPO must be designated when: (a) the processing is carried out by a public authority or body (except courts in judicial capacity); (b) core activities require regular and systematic monitoring of data subjects on a large scale; or (c) core activities consist of processing special categories of data or data relating to criminal convictions on a large scale.",
+      "evidence": "the core activities of the controller or the processor consist of processing operations which, by virtue of their nature, their scope and/or their purposes, require regular and systematic monitoring of data subjects on a large scale; or",
+      "question_type": "factual",
+      "qa_id": "gdpr_035"
+    },
+    {
+      "question": "What is the position and independence of the data protection officer under Article 38?",
+      "answer": "The DPO must be involved properly and in a timely manner in all data protection issues. They must not receive any instructions regarding the exercise of their tasks and cannot be dismissed or penalised for performing their tasks. The DPO reports directly to the highest management level of the controller or processor.",
+      "evidence": "The controller and processor shall ensure that the data protection officer does not receive any instructions regarding the exercise of those tasks. He or she shall not be dismissed or penalised by the controller or the processor for performing his tasks. The data protection officer shall directly report to the highest management level of the controller or the processor.",
+      "question_type": "factual",
+      "qa_id": "gdpr_036"
+    },
+    {
+      "question": "What qualifications are required for a data protection officer under Article 37(5)?",
+      "answer": "The data protection officer must be designated on the basis of professional qualities and, in particular, expert knowledge of data protection law and practices and the ability to fulfil the tasks referred to in Article 39.",
+      "evidence": "The data protection officer shall be designated on the basis of professional qualities and, in particular, expert knowledge of data protection law and practices and the ability to fulfil the tasks referred to in Article 39.",
+      "question_type": "factual",
+      "qa_id": "gdpr_037"
+    },
+    {
+      "question": "What is the general principle for transfers of personal data to third countries under Article 44?",
+      "answer": "Any transfer of personal data to a third country or international organisation shall take place only if the conditions in Chapter V are complied with, including for onward transfers. All provisions must be applied to ensure that the level of protection of natural persons guaranteed by the Regulation is not undermined.",
+      "evidence": "Any transfer of personal data which are undergoing processing or are intended for processing after transfer to a third country or to an international organisation shall take place only if, subject to the other provisions of this Regulation, the conditions laid down in this Chapter are complied with by the controller and processor, including for onward transfers of personal data from the third country or an international organisation to another third country or to another international organisation. All provisions in this Chapter shall be applied in order to ensure that the level of protection of natural persons guaranteed by this Regulation is not undermined.",
+      "question_type": "factual",
+      "qa_id": "gdpr_038"
+    },
+    {
+      "question": "What does Article 25 require regarding data protection by design and by default?",
+      "answer": "The controller must implement appropriate technical and organisational measures, such as pseudonymisation, both at the time of determining the means for processing and at the time of processing itself. By default, only personal data necessary for each specific purpose must be processed, applying to the amount collected, extent of processing, storage period, and accessibility.",
+      "evidence": "The controller shall implement appropriate technical and organisational measures for ensuring that, by default, only personal data which are necessary for each specific purpose of the processing are processed. That obligation applies to the amount of personal data collected, the extent of their processing, the period of their storage and their accessibility. In particular, such measures shall ensure that by default personal data are not made accessible without the individual's intervention to an indefinite number of natural persons.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_039"
+    },
+    {
+      "question": "What right does a data subject have to compensation for GDPR infringement under Article 82?",
+      "answer": "Any person who has suffered material or non-material damage as a result of an infringement of the GDPR has the right to receive compensation from the controller or processor. The controller or processor can be exempt from liability only if it proves it is not in any way responsible for the event giving rise to the damage.",
+      "evidence": "Any person who has suffered material or non-material damage as a result of an infringement of this Regulation shall have the right to receive compensation from the controller or processor for the damage suffered.",
+      "question_type": "comparative",
+      "qa_id": "gdpr_040"
+    },
+    {
+      "question": "What is the GDPR's definition of 'genetic data'?",
+      "answer": "Genetic data means personal data relating to the inherited or acquired genetic characteristics of a natural person which give unique information about the physiology or the health of that natural person and which result, in particular, from an analysis of a biological sample from the natural person in question.",
+      "evidence": "'genetic data' means personal data relating to the inherited or acquired genetic characteristics of a natural person which give unique information about the physiology or the health of that natural person and which result, in particular, from an analysis of a biological sample from the natural person in question;",
+      "question_type": "definitional",
+      "qa_id": "gdpr_041"
+    },
+    {
+      "question": "How does the GDPR define 'data concerning health'?",
+      "answer": "Data concerning health means personal data related to the physical or mental health of a natural person, including the provision of health care services, which reveal information about his or her health status.",
+      "evidence": "'data concerning health' means personal data related to the physical or mental health of a natural person, including the provision of health care services, which reveal information about his or her health status;",
+      "question_type": "definitional",
+      "qa_id": "gdpr_042"
+    },
+    {
+      "question": "What is the GDPR's definition of a 'processor'?",
+      "answer": "A processor is a natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller.",
+      "evidence": "'processor' means a natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller;",
+      "question_type": "definitional",
+      "qa_id": "gdpr_043"
+    },
+    {
+      "question": "How does the GDPR define a 'recipient' of personal data?",
+      "answer": "A recipient is a natural or legal person, public authority, agency or another body to which the personal data are disclosed, whether a third party or not. However, public authorities that may receive personal data in the framework of a particular inquiry in accordance with Union or Member State law are not regarded as recipients.",
+      "evidence": "| (9) | \u2018recipient\u2019 means a natural or legal person, public authority, agency or another body, to which the personal data are disclosed, whether a third party or not. However, public authorities which may receive personal data in the framework of a particular inquiry in accordance with Union or Member State law\u00a0shall not be regarded as recipients; the processing of those data by those public authorities shall be in compliance with the applicable data protection rules according to the purposes of the processing; |",
+      "question_type": "definitional",
+      "qa_id": "gdpr_044"
+    },
+    {
+      "question": "What is the GDPR's definition of a 'filing system'?",
+      "answer": "A filing system means any structured set of personal data which are accessible according to specific criteria, whether centralised, decentralised or dispersed on a functional or geographical basis.",
+      "evidence": "'filing system' means any structured set of personal data which are accessible according to specific criteria, whether centralised, decentralised or dispersed on a functional or geographical basis;",
+      "question_type": "definitional",
+      "qa_id": "gdpr_045"
+    },
+    {
+      "question": "What is the GDPR's definition of a 'supervisory authority'?",
+      "answer": "A supervisory authority means an independent public authority which is established by a Member State pursuant to Article 51.",
+      "evidence": "'supervisory authority' means an independent public authority which is established by a Member State pursuant to Article 51;",
+      "question_type": "definitional",
+      "qa_id": "gdpr_046"
+    },
+    {
+      "question": "What are the six lawful bases for processing personal data under Article 6(1)?",
+      "answer": "Processing is lawful only if at least one of the following applies: (a) the data subject has given consent; (b) processing is necessary for a contract with the data subject; (c) processing is necessary for compliance with a legal obligation; (d) processing is necessary to protect the vital interests of the data subject or another person; (e) processing is necessary for a task in the public interest or official authority; (f) processing is necessary for the legitimate interests of the controller or a third party, unless overridden by the data subject's interests.",
+      "evidence": "processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data, in particular where the data subject is a child.",
+      "question_type": "factual",
+      "qa_id": "gdpr_047"
+    },
+    {
+      "question": "What does the 'purpose limitation' principle require under Article 5(1)(b)?",
+      "answer": "Personal data must be collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes. Further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes is not considered incompatible with the initial purposes.",
+      "evidence": "collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes shall, in accordance with Article 89(1), not be considered to be incompatible with the initial purposes ('purpose limitation');",
+      "question_type": "factual",
+      "qa_id": "gdpr_048"
+    },
+    {
+      "question": "What does the 'integrity and confidentiality' principle require under Article 5(1)(f)?",
+      "answer": "Personal data must be processed in a manner that ensures appropriate security, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures.",
+      "evidence": "processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures ('integrity and confidentiality').",
+      "question_type": "factual",
+      "qa_id": "gdpr_051"
+    },
+    {
+      "question": "What must a controller do when consent is given in a written declaration that also concerns other matters under Article 7(2)?",
+      "answer": "The request for consent must be presented in a manner which is clearly distinguishable from the other matters, in an intelligible and easily accessible form, using clear and plain language. Any part of such a declaration which constitutes an infringement of the GDPR shall not be binding.",
+      "evidence": "If the data subject's consent is given in the context of a written declaration which also concerns other matters, the request for consent shall be presented in a manner which is clearly distinguishable from the other matters, in an intelligible and easily accessible form, using clear and plain language. Any part of such a declaration which constitutes an infringement of this Regulation shall not be binding.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_054"
+    },
+    {
+      "question": "What factor must be considered when assessing whether consent is freely given under Article 7(4)?",
+      "answer": "When assessing whether consent is freely given, utmost account must be taken of whether the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract.",
+      "evidence": "When assessing whether consent is freely given, utmost account shall be taken of whether, inter alia, the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract.",
+      "question_type": "causal",
+      "qa_id": "gdpr_055"
+    },
+    {
+      "question": "Under what conditions may processing of personal data relating to criminal convictions and offences be carried out under Article 10?",
+      "answer": "Processing of personal data relating to criminal convictions and offences shall be carried out only under the control of official authority or when the processing is authorised by Union or Member State law providing for appropriate safeguards for the rights and freedoms of data subjects. Any comprehensive register of criminal convictions shall be kept only under the control of official authority.",
+      "evidence": "Processing of personal data relating to criminal convictions and offences or related security measures based on Article 6(1) shall be carried out only under the control of official authority or when the processing is authorised by Union or Member State law providing for appropriate safeguards for the rights and freedoms of data subjects. Any comprehensive register of criminal convictions shall be kept only under the control of official authority.",
+      "question_type": "factual",
+      "qa_id": "gdpr_056"
+    },
+    {
+      "question": "When is a controller not obliged to identify a data subject under Article 11?",
+      "answer": "If the purposes for which a controller processes personal data do not or no longer require identification of a data subject, the controller is not obliged to maintain, acquire or process additional information to identify the data subject solely for the purpose of complying with the GDPR. In such cases, Articles 15 to 20 do not apply unless the data subject provides additional information enabling identification.",
+      "evidence": "If the purposes for which a controller processes personal data do not or do no longer require the identification of a data subject by the controller, the controller shall not be obliged to maintain, acquire or process additional information in order to identify the data subject for the sole purpose of complying with this Regulation.",
+      "question_type": "factual",
+      "qa_id": "gdpr_057"
+    },
+    {
+      "question": "What information must a controller provide when personal data are collected directly from the data subject under Article 13(1)?",
+      "answer": "The controller must provide: the identity and contact details of the controller and representative; contact details of the DPO; the purposes and legal basis of processing; legitimate interests pursued (if applicable); recipients of the data; and information about any intended transfer to a third country including the existence or absence of an adequacy decision.",
+      "evidence": "Where personal data relating to a data subject are collected from the data subject, the controller shall, at the time when personal data are obtained, provide the data subject with all of the following information:",
+      "question_type": "procedural",
+      "qa_id": "gdpr_058"
+    },
+    {
+      "question": "What is the right to rectification under Article 16?",
+      "answer": "The data subject has the right to obtain from the controller without undue delay the rectification of inaccurate personal data. Taking into account the purposes of the processing, the data subject also has the right to have incomplete personal data completed, including by means of providing a supplementary statement.",
+      "evidence": "The data subject shall have the right to obtain from the controller without undue delay the rectification of inaccurate personal data concerning him or her. Taking into account the purposes of the processing, the data subject shall have the right to have incomplete personal data completed, including by means of providing a supplementary statement.",
+      "question_type": "factual",
+      "qa_id": "gdpr_061"
+    },
+    {
+      "question": "What is the notification obligation regarding rectification, erasure or restriction of processing under Article 19?",
+      "answer": "The controller must communicate any rectification or erasure of personal data or restriction of processing to each recipient to whom the personal data have been disclosed, unless this proves impossible or involves disproportionate effort. The controller must inform the data subject about those recipients if the data subject requests it.",
+      "evidence": "The controller shall communicate any rectification or erasure of personal data or restriction of processing carried out in accordance with Article 16, Article 17(1) and Article 18 to each recipient to whom the personal data have been disclosed, unless this proves impossible or involves disproportionate effort. The controller shall inform the data subject about those recipients if the data subject requests it.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_063"
+    },
+    {
+      "question": "What exceptions exist to the right to erasure under Article 17(3)?",
+      "answer": "The right to erasure does not apply to the extent that processing is necessary: for exercising the right of freedom of expression and information; for compliance with a legal obligation or performance of a task in the public interest; for reasons of public interest in public health; for archiving, scientific, historical research or statistical purposes where erasure would seriously impair those objectives; or for the establishment, exercise or defence of legal claims.",
+      "evidence": "| (a) | for exercising the right of freedom of expression and information; |\n|  |  |\n| --- | --- |\n| (b) | for compliance with a legal obligation which requires processing by Union or Member\u00a0State law to which the controller is subject or for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller; |\n|  |  |\n| --- | --- |\n| (c) | for reasons of public interest in the area of public health in accordance with points\u00a0(h) and (i) of Article 9(2) as well as Article 9(3); |\n|  |  |\n| --- | --- |\n| (d) | for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) in so far as the right referred to in paragraph\u00a01 is likely to render impossible or seriously impair the achievement of the objectives of that processing; or |\n|  |  |\n| --- | --- |\n| (e) | for the establishment, exercise or defence of legal claims. |",
+      "question_type": "factual",
+      "qa_id": "gdpr_064"
+    },
+    {
+      "question": "What safeguards must be in place when automated decisions are based on explicit consent or contract under Article 22(3)?",
+      "answer": "The data controller must implement suitable measures to safeguard the data subject's rights, freedoms and legitimate interests, including at least the right to obtain human intervention on the part of the controller, the right to express his or her point of view, and the right to contest the decision.",
+      "evidence": "In the cases referred to in points (a) and (c) of paragraph 2, the data controller shall implement suitable measures to safeguard the data subject's rights and freedoms and legitimate interests, at least the right to obtain human intervention on the part of the controller, to express his or her point of view and to contest the decision.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_065"
+    },
+    {
+      "question": "Under what circumstances may Union or Member State law restrict data subject rights under Article 23?",
+      "answer": "Restrictions are permitted when they respect the essence of fundamental rights and freedoms and are necessary and proportionate measures in a democratic society to safeguard national security, defence, public security, prevention of criminal offences, important public interest objectives, judicial independence, breaches of ethics for regulated professions, regulatory functions, protection of the data subject or others, or enforcement of civil law claims.",
+      "evidence": "Union or Member State law to which the data controller or processor is subject may restrict by way of a legislative measure the scope of the obligations and rights provided for in Articles 12 to 22 and Article 34, as well as Article 5 in so far as its provisions correspond to the rights and obligations provided for in Articles 12 to 22, when such a restriction respects the essence of the fundamental rights and freedoms and is a necessary and proportionate measure in a democratic society to safeguard:",
+      "question_type": "factual",
+      "qa_id": "gdpr_066"
+    },
+    {
+      "question": "Can a data subject exercise rights against each joint controller regardless of the arrangement between them under Article 26(3)?",
+      "answer": "Yes, irrespective of the terms of the arrangement between joint controllers, the data subject may exercise his or her rights under the GDPR in respect of and against each of the controllers.",
+      "evidence": "Irrespective of the terms of the arrangement referred to in paragraph 1, the data subject may exercise his or her rights under this Regulation in respect of and against each of the controllers.",
+      "question_type": "factual",
+      "qa_id": "gdpr_068"
+    },
+    {
+      "question": "What happens if a processor infringes the GDPR by determining the purposes and means of processing under Article 28(10)?",
+      "answer": "If a processor infringes the GDPR by determining the purposes and means of processing, the processor shall be considered to be a controller in respect of that processing.",
+      "evidence": "Without prejudice to Articles 82, 83 and 84, if a processor infringes this Regulation by determining the purposes and means of processing, the processor shall be considered to be a controller in respect of that processing.",
+      "question_type": "causal",
+      "qa_id": "gdpr_070"
+    },
+    {
+      "question": "What must a processor do when it becomes aware of a personal data breach under Article 33(2)?",
+      "answer": "The processor must notify the controller without undue delay after becoming aware of a personal data breach.",
+      "evidence": "The processor shall notify the controller without undue delay after becoming aware of a personal data breach.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_071"
+    },
+    {
+      "question": "Which organisations are exempt from the obligation to maintain records of processing activities under Article 30(5)?",
+      "answer": "Enterprises or organisations employing fewer than 250 persons are exempt, unless the processing is likely to result in a risk to data subjects' rights and freedoms, the processing is not occasional, or the processing includes special categories of data under Article 9(1) or personal data relating to criminal convictions under Article 10.",
+      "evidence": "The obligations referred to in paragraphs 1 and 2 shall not apply to an enterprise or an organisation employing fewer than 250 persons unless the processing it carries out is likely to result in a risk to the rights and freedoms of data subjects, the processing is not occasional, or the processing includes special categories of data as referred to in Article 9(1) or personal data relating to criminal convictions and offences referred to in Article 10.",
+      "question_type": "factual",
+      "qa_id": "gdpr_075"
+    },
+    {
+      "question": "What specific security measures does Article 32(1) mention as examples for ensuring appropriate security?",
+      "answer": "Article 32(1) lists four specific measures: (a) the pseudonymisation and encryption of personal data; (b) the ability to ensure ongoing confidentiality, integrity, availability and resilience of processing systems and services; (c) the ability to restore availability and access to personal data in a timely manner in the event of a physical or technical incident; and (d) a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures.",
+      "evidence": "| (a) | the pseudonymisation and encryption of personal data; |\n|  |  |\n| --- | --- |\n| (b) | the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services; |\n|  |  |\n| --- | --- |\n| (c) | the ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident; |\n|  |  |\n| --- | --- |\n| (d) | a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing. |",
+      "question_type": "factual",
+      "qa_id": "gdpr_076"
+    },
+    {
+      "question": "Can a group of undertakings appoint a single data protection officer under Article 37(2)?",
+      "answer": "Yes, a group of undertakings may appoint a single data protection officer provided that a data protection officer is easily accessible from each establishment.",
+      "evidence": "A group of undertakings may appoint a single data protection officer provided that a data protection officer is easily accessible from each establishment.",
+      "question_type": "factual",
+      "qa_id": "gdpr_079"
+    },
+    {
+      "question": "What must the DPO take into account when performing his or her tasks under Article 39(2)?",
+      "answer": "The data protection officer must have due regard to the risk associated with processing operations, taking into account the nature, scope, context and purposes of processing.",
+      "evidence": "The data protection officer shall in the performance of his or her tasks have due regard to the risk associated with processing operations, taking into account the nature, scope, context and purposes of processing.",
+      "question_type": "factual",
+      "qa_id": "gdpr_080"
+    },
+    {
+      "question": "What is the maximum period for which a certification can be issued under Article 42(7)?",
+      "answer": "Certification shall be issued to a controller or processor for a maximum period of three years and may be renewed under the same conditions, provided that the relevant requirements continue to be met. Certification shall be withdrawn where the requirements are not or are no longer met.",
+      "evidence": "Certification shall be issued to a controller or processor for a maximum period of three years and may be renewed, under the same conditions, provided that the relevant requirements continue to be met. Certification shall be withdrawn, as applicable, by the certification bodies referred to in Article 43 or by the competent supervisory authority where the requirements for the certification are not or are no longer met.",
+      "question_type": "factual",
+      "qa_id": "gdpr_081"
+    },
+    {
+      "question": "What factors must the Commission consider when assessing the adequacy of a third country's level of protection under Article 45(2)?",
+      "answer": "The Commission must consider: the rule of law, human rights, relevant legislation, access of public authorities to personal data, effective data subject rights and judicial redress; the existence and effective functioning of independent supervisory authorities in that country; and the international commitments the third country has entered into regarding the protection of personal data.",
+      "evidence": "the rule of law, respect for human rights and fundamental freedoms, relevant legislation, both general and sectoral, including concerning public security, defence, national security and criminal law and the access of public authorities to personal data, as well as the implementation of such legislation, data protection rules, professional rules and security measures, including rules for the onward transfer of personal data to another third country or international organisation which are complied with in that country or international organisation, case-law, as well as effective and enforceable data subject rights and effective administrative and judicial redress for the data subjects whose personal data are being transferred;",
+      "question_type": "factual",
+      "qa_id": "gdpr_082"
+    },
+    {
+      "question": "How often must adequacy decisions be reviewed under Article 45(3)?",
+      "answer": "The implementing act for an adequacy decision must provide for a mechanism for periodic review, at least every four years, which shall take into account all relevant developments in the third country or international organisation.",
+      "evidence": "The implementing act shall provide for a mechanism for a periodic review, at least every four years, which shall take into account all relevant developments in the third country or international organisation.",
+      "question_type": "factual",
+      "qa_id": "gdpr_083"
+    },
+    {
+      "question": "What does Article 48 state about transfers or disclosures required by third-country court or administrative authority decisions?",
+      "answer": "Any judgment of a court or tribunal and any decision of an administrative authority of a third country requiring a controller or processor to transfer or disclose personal data may only be recognised or enforceable if based on an international agreement, such as a mutual legal assistance treaty, in force between the requesting third country and the Union or a Member State.",
+      "evidence": "Any judgment of a court or tribunal and any decision of an administrative authority of a third country requiring a controller or processor to transfer or disclose personal data may only be recognised or enforceable in any manner if based on an international agreement, such as a mutual legal assistance treaty, in force between the requesting third country and the Union or a Member State, without prejudice to other grounds for transfer pursuant to this Chapter.",
+      "question_type": "factual",
+      "qa_id": "gdpr_086"
+    },
+    {
+      "question": "What must each Member State provide for regarding supervisory authorities under Article 51(1)?",
+      "answer": "Each Member State must provide for one or more independent public authorities to be responsible for monitoring the application of the GDPR, in order to protect the fundamental rights and freedoms of natural persons in relation to processing and to facilitate the free flow of personal data within the Union.",
+      "evidence": "Each Member State shall provide for one or more independent public authorities to be responsible for monitoring the application of this Regulation, in order to protect the fundamental rights and freedoms of natural persons in relation to processing and to facilitate the free flow of personal data within the Union ('supervisory authority').",
+      "question_type": "factual",
+      "qa_id": "gdpr_087"
+    },
+    {
+      "question": "What does Article 52(1) require regarding the independence of supervisory authorities?",
+      "answer": "Each supervisory authority must act with complete independence in performing its tasks and exercising its powers in accordance with the GDPR. The members must remain free from external influence, whether direct or indirect, and shall neither seek nor take instructions from anybody.",
+      "evidence": "Each supervisory authority shall act with complete independence in performing its tasks and exercising its powers in accordance with this Regulation.",
+      "question_type": "factual",
+      "qa_id": "gdpr_088"
+    },
+    {
+      "question": "What is the minimum term of office for members of a supervisory authority under Article 54(1)(d)?",
+      "answer": "The duration of the term of the member or members of each supervisory authority shall be no less than four years, except for the first appointment after 24 May 2016, part of which may take place for a shorter period where necessary to protect the independence of the supervisory authority by means of a staggered appointment procedure.",
+      "evidence": "the duration of the term of the member or members of each supervisory authority of no less than four years, except for the first appointment after 24 May 2016, part of which may take place for a shorter period where that is necessary to protect the independence of the supervisory authority by means of a staggered appointment procedure;",
+      "question_type": "factual",
+      "qa_id": "gdpr_089"
+    },
+    {
+      "question": "What must occur when a supervisory authority concerned raises a relevant and reasoned objection to a draft decision by the lead supervisory authority under Article 60(4)?",
+      "answer": "If the lead supervisory authority does not follow the relevant and reasoned objection or considers it not relevant or reasoned, it must submit the matter to the consistency mechanism referred to in Article 63. If the lead supervisory authority intends to follow the objection, it must submit a revised draft decision for opinion from the other supervisory authorities concerned.",
+      "evidence": "Where any of the other supervisory authorities concerned within a period of four weeks after having been consulted in accordance with paragraph 3 of this Article, expresses a relevant and reasoned objection to the draft decision, the lead supervisory authority shall, if it does not follow the relevant and reasoned objection or is of the opinion that the objection is not relevant or reasoned, submit the matter to the consistency mechanism referred to in Article 63.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_093"
+    },
+    {
+      "question": "What is the timeframe for a requested supervisory authority to respond to a mutual assistance request under Article 61(2)?",
+      "answer": "Each supervisory authority must take all appropriate measures required to reply to a request of another supervisory authority without undue delay and no later than one month after receiving the request.",
+      "evidence": "Each supervisory authority shall take all appropriate measures required to reply to a request of another supervisory authority without undue delay and no later than one month after receiving the request. Such measures may include, in particular, the transmission of relevant information on the conduct of an investigation.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_094"
+    },
+    {
+      "question": "How does the Board adopt binding decisions in dispute resolution cases under Article 65?",
+      "answer": "The binding decision must be adopted within one month from referral by a two-thirds majority of Board members, extendable by one further month for complex matters. If the Board cannot decide within those periods, it must adopt its decision within two further weeks by a simple majority, with the Chair casting the deciding vote in case of a split.",
+      "evidence": "The decision referred to in paragraph 1 shall be adopted within one month from the referral of the subject-matter by a two-thirds majority of the members of the Board. That period may be extended by a further month on account of the complexity of the subject-matter. The decision referred to in paragraph 1 shall be reasoned and addressed to the lead supervisory authority and all the supervisory authorities concerned and binding on them.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_096"
+    },
+    {
+      "question": "What is the urgency procedure under Article 66 and what are its limitations?",
+      "answer": "In exceptional circumstances, where a supervisory authority considers there is an urgent need to act to protect data subjects' rights and freedoms, it may immediately adopt provisional measures on its own territory with a specified period of validity that shall not exceed three months. The supervisory authority must communicate those measures and reasons to the other supervisory authorities concerned, the Board and the Commission.",
+      "evidence": "In exceptional circumstances, where a supervisory authority concerned considers that there is an urgent need to act in order to protect the rights and freedoms of data subjects, it may, by way of derogation from the consistency mechanism referred to in Articles 63, 64 and 65 or the procedure referred to in Article 60, immediately adopt provisional measures intended to produce legal effects on its own territory with a specified period of validity which shall not exceed three months.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_097"
+    },
+    {
+      "question": "Where can a data subject lodge a complaint with a supervisory authority under Article 77?",
+      "answer": "Every data subject has the right to lodge a complaint with a supervisory authority, in particular in the Member State of his or her habitual residence, place of work or place of the alleged infringement, if the data subject considers that the processing of personal data relating to him or her infringes the GDPR.",
+      "evidence": "Without prejudice to any other administrative or judicial remedy, every data subject shall have the right to lodge a complaint with a supervisory authority, in particular in the Member State of his or her habitual residence, place of work or place of the alleged infringement if the data subject considers that the processing of personal data relating to him or her infringes this Regulation.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_098"
+    },
+    {
+      "question": "Where can proceedings against a controller or processor be brought under Article 79(2)?",
+      "answer": "Proceedings against a controller or processor must be brought before the courts of the Member State where the controller or processor has an establishment. Alternatively, proceedings may be brought before the courts of the Member State where the data subject has his or her habitual residence, unless the controller or processor is a public authority of a Member State acting in the exercise of its public powers.",
+      "evidence": "Proceedings against a controller or a processor shall be brought before the courts of the Member State where the controller or processor has an establishment. Alternatively, such proceedings may be brought before the courts of the Member State where the data subject has his or her habitual residence, unless the controller or processor is a public authority of a Member State acting in the exercise of its public powers.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_099"
+    },
+    {
+      "question": "What is the right of data subjects to be represented by not-for-profit organisations under Article 80?",
+      "answer": "The data subject has the right to mandate a not-for-profit body, organisation or association which is properly constituted, has statutory objectives in the public interest, and is active in the field of data protection to lodge complaints on their behalf, exercise rights under Articles 77, 78 and 79, and exercise the right to compensation under Article 82 where provided for by Member State law. Member States may also allow such bodies to act independently of a data subject's mandate.",
+      "evidence": "The data subject shall have the right to mandate a not-for-profit body, organisation or association which has been properly constituted in accordance with the law of a Member State, has statutory objectives which are in the public interest, and is active in the field of the protection of data subjects' rights and freedoms with regard to the protection of their personal data to lodge the complaint on his or her behalf, to exercise the rights referred to in Articles 77, 78 and 79 on his or her behalf, and to exercise the right to receive compensation referred to in Article 82 on his or her behalf where provided for by Member State law.",
+      "question_type": "factual",
+      "qa_id": "gdpr_100"
+    },
+    {
+      "question": "What broader objectives is the GDPR intended to contribute to beyond data protection?",
+      "answer": "The GDPR is intended to contribute to the accomplishment of an area of freedom, security and justice and of an economic union, to economic and social progress, to the strengthening and the convergence of the economies within the internal market, and to the well-being of natural persons.",
+      "evidence": "This Regulation is intended to contribute to the accomplishment of an area of freedom, security and justice and of an economic union, to economic and social progress, to the strengthening and the convergence of the economies within the internal market, and to the well-being of natural persons.",
+      "question_type": "causal",
+      "qa_id": "gdpr_101"
+    },
+    {
+      "question": "Why is the right to the protection of personal data not considered absolute under the GDPR?",
+      "answer": "The right to the protection of personal data is not absolute because it must be considered in relation to its function in society and be balanced against other fundamental rights, in accordance with the principle of proportionality.",
+      "evidence": "| (4) | The processing of personal data should be designed to serve mankind. The right to the protection of personal data is not an absolute right; it must be considered in relation to its function in society and be balanced against other fundamental rights, in accordance with the principle of proportionality.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_102"
+    },
+    {
+      "question": "Does the GDPR's protection depend on the nationality or place of residence of a natural person?",
+      "answer": "No, the protection afforded by the GDPR applies to natural persons whatever their nationality or place of residence, in relation to the processing of their personal data.",
+      "evidence": "| (14) | The protection afforded by this Regulation should apply to natural persons, whatever their nationality or place of residence, in relation to the processing of their personal data.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_103"
+    },
+    {
+      "question": "Why must the protection of natural persons under the GDPR be technologically neutral?",
+      "answer": "The protection must be technologically neutral in order to prevent creating a serious risk of circumvention, meaning the protection should not depend on the specific techniques used for processing.",
+      "evidence": "| (15) | In order to prevent creating a serious risk of circumvention, the protection of natural persons should be technologically neutral and should not depend on the techniques used.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_104"
+    },
+    {
+      "question": "Under what condition does the GDPR apply to manual processing of personal data?",
+      "answer": "The GDPR applies to manual processing if the personal data are contained or are intended to be contained in a filing system.",
+      "evidence": "The protection of natural persons should apply to the processing of personal data by automated means, as well as to manual processing, if the personal data are contained or are intended to be contained in a filing system.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_105"
+    },
+    {
+      "question": "Under what conditions may Member States restrict GDPR obligations when personal data is processed by private bodies?",
+      "answer": "Member States may restrict certain obligations and rights by law when such a restriction constitutes a necessary and proportionate measure in a democratic society to safeguard specific important interests, including public security and the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties.",
+      "evidence": "When the processing of personal data by private bodies falls within the scope of this Regulation, this Regulation should provide for the possibility for Member\u00a0States under specific conditions to restrict by law certain obligations and rights when such a restriction constitutes a necessary and proportionate measure in a democratic society to safeguard specific important interests including public security and the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_106"
+    },
+    {
+      "question": "Why are supervisory authorities excluded from overseeing courts when they process personal data in their judicial capacity?",
+      "answer": "Supervisory authorities are excluded from covering the processing of personal data by courts acting in their judicial capacity in order to safeguard the independence of the judiciary in the performance of its judicial tasks, including decision-making.",
+      "evidence": "The competence of the supervisory authorities should not cover the processing of personal data when courts are acting in their judicial capacity, in order to safeguard the independence of the judiciary in the performance of its judicial tasks, including decision-making.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_107"
+    },
+    {
+      "question": "Does the GDPR apply to processing activities of a controller established in the Union even if the processing itself takes place outside the Union?",
+      "answer": "Yes, any processing of personal data in the context of the activities of an establishment of a controller or processor in the Union should be carried out in accordance with the GDPR, regardless of whether the processing itself takes place within the Union.",
+      "evidence": "| (22) | Any processing of personal data in the context of the activities of an establishment of a controller or a processor in the Union should be carried out in accordance with this Regulation, regardless of whether the processing itself takes place within the Union.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_108"
+    },
+    {
+      "question": "When does the GDPR apply to a controller or processor not established in the Union who processes data of data subjects in the Union?",
+      "answer": "The GDPR applies when the processing by a controller or processor not established in the Union is related to the monitoring of the behaviour of data subjects who are in the Union, in so far as their behaviour takes place within the Union.",
+      "evidence": "| (24) | The processing of personal data of data subjects who are in the Union by a controller or processor not established in the Union should also be subject to this Regulation when it is related to the monitoring of the behaviour of such data subjects in so far as their behaviour takes place within the Union.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_109"
+    },
+    {
+      "question": "How is 'monitoring the behaviour of data subjects' determined under the GDPR?",
+      "answer": "To determine whether a processing activity monitors behaviour, it should be ascertained whether natural persons are tracked on the internet, including potential subsequent use of profiling techniques, particularly in order to take decisions concerning the person or for analysing or predicting their personal preferences, behaviours and attitudes.",
+      "evidence": "In order to determine whether a processing activity can be considered to monitor the behaviour of data subjects, it should be ascertained whether natural persons are tracked on the internet including potential subsequent use of personal data processing techniques which consist of profiling a natural person, particularly in order to take decisions concerning her or him or for analysing or predicting her or his personal preferences, behaviours and attitudes.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_110"
+    },
+    {
+      "question": "Under what conditions should public authorities receiving personal data not be regarded as recipients under the GDPR?",
+      "answer": "Public authorities should not be regarded as recipients if they receive personal data that are necessary to carry out a particular inquiry in the general interest, in accordance with Union or Member State law, when the data are disclosed to them in accordance with a legal obligation for the exercise of their official mission.",
+      "evidence": "| (31) | Public authorities to which personal data are disclosed in accordance with a legal obligation for the exercise of their official mission, such as tax and customs authorities, financial investigation units, independent administrative authorities, or financial market authorities responsible for the regulation and supervision of securities markets should not be regarded as recipients if they receive personal data which are necessary to carry out a particular inquiry in the general interest, in accordance with Union or Member State law.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_111"
+    },
+    {
+      "question": "What requirements apply to public authorities' requests for disclosure of personal data?",
+      "answer": "The requests for disclosure sent by public authorities should always be in writing, reasoned and occasional, and should not concern the entirety of a filing system or lead to the interconnection of filing systems.",
+      "evidence": "The requests\u00a0for disclosure sent by the public authorities should always be in writing, reasoned and occasional and should not concern the entirety of a filing system or lead to the interconnection of filing systems.",
+      "question_type": "procedural",
+      "qa_id": "gdpr_112"
+    },
+    {
+      "question": "Why do silence, pre-ticked boxes, or inactivity fail to constitute valid consent under the GDPR?",
+      "answer": "Silence, pre-ticked boxes or inactivity do not constitute consent because consent requires an active, affirmative indication of agreement. Furthermore, consent should cover all processing activities carried out for the same purpose or purposes.",
+      "evidence": "Silence, pre-ticked boxes or inactivity should not therefore constitute consent. Consent should cover all processing activities carried out for the same purpose or purposes.",
+      "question_type": "causal",
+      "qa_id": "gdpr_113"
+    },
+    {
+      "question": "What requirements must an electronic consent request meet under the GDPR?",
+      "answer": "If the data subject's consent is to be given following a request by electronic means, the request must be clear, concise and not unnecessarily disruptive to the use of the service for which it is provided.",
+      "evidence": "If the data subject's consent is to be given following a request by electronic means, the request must be clear, concise and not unnecessarily disruptive to the use of the service for which it is provided.",
+      "question_type": "causal",
+      "qa_id": "gdpr_114"
+    },
+    {
+      "question": "Why may consent not provide a valid legal ground when there is a clear imbalance between the data subject and the controller?",
+      "answer": "Consent should not provide a valid legal ground in cases of clear imbalance, particularly where the controller is a public authority, because it is unlikely that consent was freely given in all the circumstances of that specific situation.",
+      "evidence": "| (43) | In order to ensure that consent is freely given, consent should not provide a valid legal ground for the processing of personal data in a specific case where there is a clear imbalance between the data subject and the controller, in particular where the controller is a public authority and it is therefore unlikely that consent was freely given in all the circumstances of that specific situation.",
+      "question_type": "causal",
+      "qa_id": "gdpr_115"
+    },
+    {
+      "question": "What elements does the GDPR include in the definition of 'public health' for the purposes of processing health data?",
+      "answer": "Public health includes all elements related to health, namely health status (including morbidity and disability), the determinants having an effect on that health status, health care needs, resources allocated to health care, the provision of and universal access to health care, as well as health care expenditure and financing, and the causes of mortality.",
+      "evidence": "In that context, \u2018public health\u2019 should be interpreted as defined in Regulation (EC) No 1338/2008 of the European Parliament and of the Council\u00a0(11), namely all elements related to health, namely health status, including morbidity and disability, the determinants having an effect on that health status, health care needs, resources allocated to health care, the provision of, and universal access to, health care as well as health care expenditure and financing, and the causes of mortality.",
+      "question_type": "causal",
+      "qa_id": "gdpr_116"
+    },
+    {
+      "question": "When are exceptions to the obligation to provide information to the data subject permitted under Recital 62?",
+      "answer": "It is not necessary to impose the obligation to provide information where the data subject already possesses the information, where the recording or disclosure of the personal data is expressly laid down by law, or where the provision of information proves to be impossible or would involve a disproportionate effort.",
+      "evidence": "| (62) | However, it is not necessary to impose the obligation to provide information where the data subject already possesses the information, where the recording or disclosure of the personal data is expressly laid down by law or where the provision of information to the data subject proves to be impossible or would involve a disproportionate effort.",
+      "question_type": "comparative",
+      "qa_id": "gdpr_117"
+    },
+    {
+      "question": "What information is a data subject entitled to know regarding the processing of their personal data?",
+      "answer": "Every data subject has the right to know the purposes for which the personal data are processed, where possible the period of processing, the recipients of the personal data, the logic involved in any automatic processing and, at least when based on profiling, the consequences of such processing.",
+      "evidence": "Every data subject should therefore have the right to know and obtain communication in particular with regard to the purposes for which the personal data are processed, where possible the period for which the personal data are processed, the recipients of the personal data, the logic involved in any automatic personal data processing and, at least when based on profiling, the consequences of such processing.",
+      "question_type": "causal",
+      "qa_id": "gdpr_118"
+    },
+    {
+      "question": "Under what circumstances is the further retention of personal data lawful even after a data subject requests erasure?",
+      "answer": "Further retention is lawful where it is necessary for exercising the right of freedom of expression and information, for compliance with a legal obligation, for the performance of a task in the public interest, on grounds of public health, for archiving purposes in the public interest, for scientific or historical research or statistical purposes, or for the establishment, exercise or defence of legal claims.",
+      "evidence": "However, the further retention of the personal data should be lawful where it is necessary, for exercising the right of freedom of expression and information, for compliance with a legal obligation, for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller, on the grounds of public interest in the area of public health, for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes, or for the establishment, exercise or defence of legal claims.",
+      "question_type": "comparative",
+      "qa_id": "gdpr_119"
+    },
+    {
+      "question": "Under what conditions is decision-making based on profiling permitted despite the general restriction on automated decisions?",
+      "answer": "Decision-making based on profiling is allowed where expressly authorised by Union or Member State law (including for fraud and tax-evasion monitoring), where necessary for entering or performing a contract between the data subject and controller, or when the data subject has given explicit consent.",
+      "evidence": "However, decision-making based on such processing, including profiling, should be allowed where expressly authorised by Union or Member\u00a0State law to which the controller is subject, including for fraud and tax-evasion monitoring and prevention purposes conducted in accordance with the regulations, standards and recommendations of Union institutions or national oversight bodies and to ensure the security and reliability of a service provided by the controller, or necessary for the entering or performance of a contract between the data subject and a controller, or when the data subject has given his or her explicit consent.",
+      "question_type": "comparative",
+      "qa_id": "gdpr_120"
+    },
+    {
+      "question": "What procedural safeguards must a controller implement when using profiling to ensure fair and transparent processing?",
+      "answer": "The controller should use appropriate mathematical or statistical procedures, implement technical and organisational measures to ensure that factors resulting in inaccuracies are corrected and the risk of errors is minimised, and secure personal data in a manner that prevents discriminatory effects based on characteristics such as racial or ethnic origin, political opinion, religion, trade union membership, genetic or health status, or sexual orientation.",
+      "evidence": "In order to ensure fair and transparent processing in respect of the data subject, taking into account the specific circumstances and context in which the personal data are processed, the controller should use appropriate mathematical or statistical procedures for the profiling, implement technical and organisational measures appropriate to ensure, in particular, that factors which result in inaccuracies in personal data are corrected and the risk of errors is minimised, secure personal data in a manner that takes account of the potential risks involved for the interests and rights of the data subject and that prevents, inter alia, discriminatory effects on natural persons on the basis of racial or ethnic origin, political opinion, religion or beliefs, trade union membership, genetic or health status or sexual orientation, or that result in measures having such an effect.",
+      "question_type": "causal",
+      "qa_id": "gdpr_121"
+    },
+    {
+      "question": "What types of risks should be considered when assessing data security under the GDPR?",
+      "answer": "Consideration should be given to risks presented by personal data processing, such as accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to personal data transmitted, stored or otherwise processed, which may lead to physical, material or non-material damage.",
+      "evidence": "In assessing data security risk, consideration should be given to the risks that are presented by personal data processing, such as accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, personal data transmitted, stored or otherwise processed which may in particular lead to physical, material or non-material damage.",
+      "question_type": "causal",
+      "qa_id": "gdpr_122"
+    },
+    {
+      "question": "What is the purpose of a data protection impact assessment and when should it be carried out?",
+      "answer": "A data protection impact assessment should be carried out when processing operations are likely to result in a high risk to the rights and freedoms of natural persons. Its purpose is to evaluate the origin, nature, particularity and severity of that risk, in order to enhance compliance with the Regulation.",
+      "evidence": "| (84) | In order to enhance compliance with this Regulation where processing operations are likely to result in a high risk to the rights and freedoms of natural persons, the controller should be responsible for the carrying-out of a data protection impact assessment to evaluate, in particular, the origin, nature, particularity and severity of that risk.",
+      "question_type": "causal",
+      "qa_id": "gdpr_123"
+    },
+    {
+      "question": "How does the urgency of communicating a data breach affect the timing requirements for notification?",
+      "answer": "The need to mitigate an immediate risk of damage calls for prompt communication with data subjects, whereas the need to implement appropriate measures against continuing or similar breaches may justify more time for communication.",
+      "evidence": "For example, the need to mitigate an immediate risk of damage would call for prompt communication with data subjects whereas the need to implement appropriate measures against continuing or similar personal data breaches may justify more time for communication.",
+      "question_type": "comparative",
+      "qa_id": "gdpr_124"
+    },
+    {
+      "question": "What types of harm can result from a personal data breach that is not addressed in a timely manner?",
+      "answer": "A personal data breach may result in physical, material or non-material damage including loss of control over personal data, limitation of rights, discrimination, identity theft or fraud, financial loss, unauthorised reversal of pseudonymisation, damage to reputation, loss of confidentiality of professionally secret data, or any other significant economic or social disadvantage.",
+      "evidence": "| (85) | A personal data breach may, if not addressed in an appropriate and timely manner, result in physical, material or non-material damage to natural persons such as loss of control over their personal data or limitation of their rights, discrimination, identity theft or fraud, financial loss, unauthorised reversal of pseudonymisation, damage to reputation, loss of confidentiality of personal data protected by professional secrecy or any other significant economic or social disadvantage to the natural person concerned.",
+      "question_type": "causal",
+      "qa_id": "gdpr_125"
+    }
+  ]
+}

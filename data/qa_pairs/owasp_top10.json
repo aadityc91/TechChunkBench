@@ -1,0 +1,698 @@
+{
+  "corpus_id": "owasp_top10",
+  "qa_pairs": [
+    {
+      "question": "What is the OWASP Top 10 2021 and what does it represent?",
+      "answer": "The OWASP Top 10 2021 is the latest installment of the OWASP Top 10, which identifies the most serious web application security risks. It features a new graphic design, an available one-page infographic, three new categories, four categories with naming and scoping changes, and some consolidation compared to the previous edition.",
+      "evidence": "Welcome to the latest installment of the OWASP Top 10! The OWASP Top 10 2021 is all-new, with a new graphic design and an available one-page infographic you can print or obtain from our home page.",
+      "question_type": "definitional",
+      "qa_id": "owasp_top10_001"
+    },
+    {
+      "question": "How many new categories were introduced in the OWASP Top 10 for 2021?",
+      "answer": "Three new categories were introduced in the OWASP Top 10 for 2021. Additionally, four categories had naming and scoping changes, and some consolidation occurred. The naming changes were made to focus on the root cause over the symptom.",
+      "evidence": "There are three new categories, four categories with naming and scoping changes, and some consolidation in the Top 10 for 2021. We've changed names when necessary to focus on the root cause over the symptom.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_002"
+    },
+    {
+      "question": "What position did Broken Access Control move to in the 2021 edition and what data supported this?",
+      "answer": "Broken Access Control moved up from the fifth position to become the category with the most serious web application security risk (position #1). The contributed data showed that on average 3.81% of applications tested had one or more CWEs, with more than 318k occurrences. The 34 CWEs mapped to Broken Access Control had more occurrences than any other category.",
+      "evidence": "- **[A01:2021-Broken Access Control](A01_2021-Broken_Access_Control.md)** moves up from the fifth position to the category with the most serious web application security risk; the contributed data indicates that on average, 3.81% of applications tested had one or more Common Weakness Enumerations (CWEs) with more than 318k occurrences of CWEs in this risk category. The 34 CWEs mapped to Broken Access Control had more occurrences in applications than any other category.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_003"
+    },
+    {
+      "question": "How did the former XML External Entities (XXE) category change in the 2021 edition?",
+      "answer": "The former A4:2017-XML External Entities (XXE) category was consolidated into the A05:2021-Security Misconfiguration risk category. Security Misconfiguration moved up from #6 in the previous edition, with 90% of applications tested for some form of misconfiguration, an average incidence rate of 4.5%, and over 208k occurrences of CWEs mapped to this category.",
+      "evidence": "- **[A05:2021-Security Misconfiguration](A05_2021-Security_Misconfiguration.md)** moves up from #6 in the previous edition; 90% of applications were tested for some form of misconfiguration, with an average incidence rate of 4.5%, and over 208k occurrences of CWEs mapped to this risk category. With more shifts into highly configurable software, it's not surprising to see this category move up. The former category for **A4:2017-XML External Entities (XXE)** is now part of this risk category.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_006"
+    },
+    {
+      "question": "Why is the Vulnerable and Outdated Components category unique among all Top 10 categories?",
+      "answer": "Vulnerable and Outdated Components is the only category in the Top 10 that does not have any Common Vulnerability and Exposures (CVEs) mapped to the included CWEs. Because of this, a default exploit and impact weight of 5.0 are factored into their scores. It moved up from #9 in 2017 and is a known issue that organizations struggle to test and assess risk for.",
+      "evidence": "It is the only category not to have any Common Vulnerability and Exposures (CVEs) mapped to the included CWEs, so a default exploit and impact weights of 5.0 are factored into their scores.",
+      "question_type": "comparative",
+      "qa_id": "owasp_top10_007"
+    },
+    {
+      "question": "What does the Software and Data Integrity Failures category focus on?",
+      "answer": "Software and Data Integrity Failures is a new category for 2021 that focuses on making assumptions related to software updates, critical data, and CI/CD pipelines without verifying integrity. It has one of the highest weighted impacts from CVE/CVSS data. The former A8:2017-Insecure Deserialization is now a part of this larger category.",
+      "evidence": "- **[A08:2021-Software and Data Integrity Failures](A08_2021-Software_and_Data_Integrity_Failures.md)** is a new category for 2021, focusing on making assumptions related to software updates, critical data, and CI/CD pipelines without verifying integrity. One of the highest weighted impacts from Common Vulnerability and Exposures/Common Vulnerability Scoring System (CVE/CVSS) data mapped to the 10 CWEs in this category. **A8:2017-Insecure Deserialization** is now a part of this larger category.",
+      "question_type": "definitional",
+      "qa_id": "owasp_top10_009"
+    },
+    {
+      "question": "How was Server-Side Request Forgery (SSRF) selected for inclusion in the 2021 Top 10?",
+      "answer": "Server-Side Request Forgery (SSRF) was added from the Top 10 community survey, where it was ranked #1. Although the data shows a relatively low incidence rate, it has above average testing coverage and above-average ratings for Exploit and Impact potential. This represents a scenario where the security community identified it as important even though the data alone did not fully support its inclusion.",
+      "evidence": "- **[A10:2021-Server-Side Request Forgery](A10_2021-Server-Side_Request_Forgery_(SSRF).md)** is added from the Top 10 community survey (#1). The data shows a relatively low incidence rate with above average testing coverage, along with above-average ratings for Exploit and Impact potential. This category represents the scenario where the security community members are telling us this is important, even though it's not illustrated in the data at this time.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_010"
+    },
+    {
+      "question": "How were the ten categories selected for the OWASP Top 10 2021?",
+      "answer": "Eight of the ten categories were selected from contributed data, and two categories were selected from the Top 10 community survey. This approach was used because contributed data reflects past trends, while the community survey captures what application security and development experts on the front lines see as essential weaknesses that the data may not yet show.",
+      "evidence": "We selected eight of the ten categories from contributed data and two categories from the Top 10 community survey at a high level. We do this for a fundamental reason, looking at the contributed data is looking into the past. AppSec researchers take time to find new vulnerabilities and new ways to test for them. It takes time to integrate these tests into tools and processes. By the time we can reliably test a weakness at scale, years have likely passed. To balance that view, we use a community survey to ask application security and development experts on the front lines what they see as essential weaknesses that the data may not show yet.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_011"
+    },
+    {
+      "question": "Why did the OWASP Top 10 2021 focus on root cause rather than symptom when categorizing CWEs?",
+      "answer": "The OWASP Top 10 2021 focused on root cause over symptom because it provides more logical identification and remediation guidance. Root cause types like 'Cryptographic Failure' and 'Misconfiguration' are contrasted with symptom types like 'Sensitive Data Exposure' and 'Denial of Service.' This approach helps organizations better address the underlying issues rather than just the visible effects.",
+      "evidence": "There are both root cause and symptom types of CWEs, where root cause types are like \"Cryptographic Failure\" and \"Misconfiguration\" contrasted to symptom types like \"Sensitive Data Exposure\" and \"Denial of Service.\" We decided to focus on the root cause whenever possible as it's more logical for providing identification and remediation guidance.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_012"
+    },
+    {
+      "question": "How did the scoring methodology change between CVSSv2 and CVSSv3 for the OWASP Top 10?",
+      "answer": "In CVSSv2, both Exploit and Impact could be up to 10.0, but the formula knocked them down to 60% for Exploit and 40% for Impact. In CVSSv3, the theoretical max was limited to 6.0 for Exploit and 4.0 for Impact. With the weighting considered, Impact scoring shifted higher by almost a point and a half on average in CVSSv3, and exploitability moved nearly half a point lower on average.",
+      "evidence": "In CVSSv2, both Exploit and (Technical) Impact could be up to 10.0, but the formula would knock them down to 60% for Exploit and 40% for Impact. In CVSSv3, the theoretical max was limited to 6.0 for Exploit and 4.0 for Impact. With the weighting considered, the Impact scoring shifted higher, almost a point and a half on average in CVSSv3, and exploitability moved nearly half a point lower on average.",
+      "question_type": "comparative",
+      "qa_id": "owasp_top10_014"
+    },
+    {
+      "question": "How many CVE records were mapped to CWEs in the NVD data extracted from OWASP Dependency Check?",
+      "answer": "There are 125k records of a CVE mapped to a CWE in the National Vulnerability Database (NVD) data extracted from OWASP Dependency Check. There are 241 unique CWEs mapped to a CVE, and 62k CWE maps have a CVSSv3 score, which represents approximately half of the population in the data set.",
+      "evidence": "There are 125k records of a CVE mapped to a CWE in the National Vulnerability Database (NVD) data extracted from OWASP Dependency Check, and there are 241 unique CWEs mapped to a CVE. 62k CWE maps have a CVSSv3 score, which is approximately half of the population in the data set.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_015"
+    },
+    {
+      "question": "Why does the OWASP Top 10 use incidence rate instead of frequency?",
+      "answer": "The OWASP Top 10 uses incidence rate instead of frequency because frequency-based data from Tooling and HaT would drown out the more accurate but broader TaH data. The incidence rate measures what percentage of the application population had at least one instance of a vulnerability type, regardless of whether it was one-off or systemic, providing a clearer risk-related view since an attacker needs only one instance to attack successfully.",
+      "evidence": "The incidence rate asks what percentage of the application population had at least one instance of a vulnerability type. We don't care if it was one-off or systemic. That's irrelevant for our purposes; we just need to know how many applications had at least one instance, which helps provide a clearer view of the testing is findings across multiple testing types without drowning the data in high-frequency results. This corresponds to a risk related view as an attacker needs only one instance to attack an application successfully via the category.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_017"
+    },
+    {
+      "question": "What are the three primary sources of data identified for the OWASP Top 10?",
+      "answer": "The three primary sources of data are Human-assisted Tooling (HaT), Tool-assisted Human (TaH), and raw Tooling. Tooling and HaT are high-frequency finding generators, while TaH finds a broader range of vulnerability types but at a much lower frequency due to time constraints.",
+      "evidence": "There are three primary sources of data. We identify them as Human-assisted Tooling (HaT), Tool-assisted Human (TaH), and raw Tooling.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_018"
+    },
+    {
+      "question": "What does the Incidence Rate data factor mean in the OWASP Top 10?",
+      "answer": "The Incidence Rate is the percentage of applications vulnerable to a given CWE from the population tested by an organization for a given year. It measures how prevalent each CWE is within the population of applications, regardless of how many instances of that CWE exist in each application.",
+      "evidence": "Incidence Rate: Incidence rate is the percentage of applications vulnerable to that CWE from the population tested by that org for that year.",
+      "question_type": "definitional",
+      "qa_id": "owasp_top10_019"
+    },
+    {
+      "question": "What does the Weighted Exploit data factor represent?",
+      "answer": "The Weighted Exploit is the Exploit sub-score from CVSSv2 and CVSSv3 scores assigned to CVEs mapped to CWEs, normalized and placed on a 10-point scale. It represents the exploitability of vulnerabilities within each OWASP Top 10 category.",
+      "evidence": "Weighted Exploit: The Exploit sub-score from CVSSv2 and CVSSv3 scores assigned to CVEs mapped to CWEs, normalized, and placed on a 10pt scale.",
+      "question_type": "definitional",
+      "qa_id": "owasp_top10_020"
+    },
+    {
+      "question": "What is the definition of access control as described in the Broken Access Control category?",
+      "answer": "Access control enforces policy such that users cannot act outside of their intended permissions. Failures in access control typically lead to unauthorized information disclosure, modification, or destruction of all data, or performing a business function outside the user's limits.",
+      "evidence": "Access control enforces policy such that users cannot act outside of their intended permissions. Failures typically lead to unauthorized information disclosure, modification, or destruction of all data or performing a business function outside the user's limits.",
+      "question_type": "definitional",
+      "qa_id": "owasp_top10_022"
+    },
+    {
+      "question": "What are the common access control vulnerabilities listed in the A01:2021 Broken Access Control category?",
+      "answer": "Common access control vulnerabilities include: violation of the principle of least privilege or deny by default; bypassing access control checks by modifying URLs, internal application state, or HTML pages; permitting viewing or editing of someone else's account via insecure direct object references; accessing API with missing access controls for POST, PUT and DELETE; elevation of privilege; metadata manipulation such as tampering with JWT tokens; CORS misconfiguration; and force browsing to authenticated or privileged pages.",
+      "evidence": "Violation of the principle of least privilege or deny by default, where access should only be granted for particular capabilities, roles, or users, but is available to anyone. Bypassing access control checks by modifying the URL (parameter tampering or force browsing), internal application state, or the HTML page, or by using an attack tool modifying API requests. Permitting viewing or editing someone else's account, by providing its unique identifier (insecure direct object references)",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_023"
+    },
+    {
+      "question": "How should access control mechanisms be implemented to prevent broken access control?",
+      "answer": "Access control is only effective in trusted server-side code or server-less API, where the attacker cannot modify the access control check or metadata. Key prevention measures include denying by default except for public resources, implementing access control mechanisms once and reusing them throughout the application, enforcing record ownership, disabling web server directory listing, logging access control failures, rate limiting API access, and invalidating stateful session identifiers after logout.",
+      "evidence": "Access control is only effective in trusted server-side code or server-less API, where the attacker cannot modify the access control check or metadata. Except for public resources, deny by default. Implement access control mechanisms once and re-use them throughout the application, including minimizing Cross-Origin Resource Sharing (CORS) usage.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_024"
+    },
+    {
+      "question": "In the Broken Access Control attack scenario, how does an attacker exploit unverified data in a SQL call?",
+      "answer": "In the attack scenario, an application uses unverified data in a SQL call that accesses account information. An attacker simply modifies the browser's 'acct' parameter to send whatever account number they want. If not correctly verified, the attacker can access any user's account by navigating to a URL like https://example.com/app/accountInfo?acct=notmyacct.",
+      "evidence": "**Scenario #1:** The application uses unverified data in a SQL call that\nis accessing account information:\n```\npstmt.setString(1, request.getParameter(\"acct\"));\nResultSet results = pstmt.executeQuery( );\n```\nAn attacker simply modifies the browser's 'acct' parameter to send\nwhatever account number they want. If not correctly verified, the\nattacker can access any user's account.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_026"
+    },
+    {
+      "question": "How many CWEs are mapped to the Broken Access Control category, and what are some notable ones?",
+      "answer": "There are 34 CWEs mapped to the Broken Access Control category. Notable Common Weakness Enumerations included are CWE-200: Exposure of Sensitive Information to an Unauthorized Actor, CWE-201: Insertion of Sensitive Information Into Sent Data, and CWE-352: Cross-Site Request Forgery.",
+      "evidence": "Notable Common Weakness Enumerations (CWEs) included are CWE-200: Exposure of Sensitive Information to an Unauthorized Actor, CWE-201: Insertion of Sensitive Information Into Sent Data, and CWE-352: Cross-Site Request Forgery.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_027"
+    },
+    {
+      "question": "What types of data require extra protection according to the Cryptographic Failures category?",
+      "answer": "Data that requires extra protection includes passwords, credit card numbers, health records, personal information, and business secrets, especially if that data falls under privacy laws such as EU's General Data Protection Regulation (GDPR) or financial data protection regulations like PCI Data Security Standard (PCI DSS).",
+      "evidence": "For example, passwords, credit card numbers, health records, personal information, and business secrets require extra protection, mainly if that data falls under privacy laws, e.g., EU's General Data Protection Regulation (GDPR), or regulations, e.g., financial data protection such as PCI Data Security Standard (PCI DSS).",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_028"
+    },
+    {
+      "question": "What cryptographic weaknesses should be checked for according to the Cryptographic Failures description?",
+      "answer": "Organizations should check for: data transmitted in clear text over protocols like HTTP, SMTP, FTP; old or weak cryptographic algorithms or protocols; default crypto keys or weak key management; missing encryption enforcement including HTTP headers; improperly validated server certificates; ignored or reused initialization vectors; passwords used as cryptographic keys without a key derivation function; insufficient randomness for cryptographic purposes; deprecated hash functions like MD5 or SHA1; and deprecated padding methods like PKCS number 1 v1.5.",
+      "evidence": "-   Is any data transmitted in clear text? This concerns protocols such\nas HTTP, SMTP, FTP also using TLS upgrades like STARTTLS. External\ninternet traffic is hazardous. Verify all internal traffic, e.g.,\nbetween load balancers, web servers, or back-end systems.\n-   Are any old or weak cryptographic algorithms or protocols used either\nby default or in older code?\n-   Are default crypto keys in use, weak crypto keys generated or\nre-used, or is proper key management or rotation missing?",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_029"
+    },
+    {
+      "question": "What hashing functions are recommended for storing passwords according to the Cryptographic Failures prevention guidelines?",
+      "answer": "Passwords should be stored using strong adaptive and salted hashing functions with a work factor (delay factor), such as Argon2, scrypt, bcrypt, or PBKDF2. These functions are designed to be computationally expensive, making it harder for attackers to crack passwords even if the hash database is compromised.",
+      "evidence": "Store passwords using strong adaptive and salted hashing functions with a work factor (delay factor), such as Argon2, scrypt, bcrypt or PBKDF2.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_030"
+    },
+    {
+      "question": "What happens in the Cryptographic Failures attack scenario involving automatic database encryption?",
+      "answer": "In Scenario #1, an application encrypts credit card numbers in a database using automatic database encryption. However, the data is automatically decrypted when retrieved, allowing a SQL injection flaw to retrieve credit card numbers in clear text. This demonstrates that encryption at rest alone is insufficient if data can be exposed through application-level vulnerabilities.",
+      "evidence": "An application encrypts credit card numbers in a database using automatic database encryption. However, this data is automatically decrypted when retrieved, allowing a SQL injection flaw to retrieve credit card numbers in clear text.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_032"
+    },
+    {
+      "question": "How can an attacker exploit a site that doesn't enforce TLS?",
+      "answer": "An attacker can monitor network traffic (e.g., at an insecure wireless network), downgrade connections from HTTPS to HTTP, intercept requests, and steal the user's session cookie. The attacker then replays this cookie to hijack the user's authenticated session, allowing them to access or modify private data, or alter all transported data such as the recipient of a money transfer.",
+      "evidence": "A site doesn't use or enforce TLS for all pages or supports weak encryption. An attacker monitors network traffic (e.g., at an insecure wireless network), downgrades connections from HTTPS to HTTP, intercepts requests, and steals the user's session cookie. The attacker then replays this cookie and hijacks the user's (authenticated) session, accessing or modifying the user's private data.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_033"
+    },
+    {
+      "question": "What initialization vector (IV) requirements must be followed to prevent cryptographic failures?",
+      "answer": "Initialization vectors must be chosen appropriate for the mode of operation. For many modes, this means using a CSPRNG (cryptographically secure pseudo random number generator). For modes that require a nonce, the IV does not need a CSPRNG. In all cases, the IV should never be used twice for a fixed key. Additionally, authenticated encryption should always be used instead of just encryption.",
+      "evidence": "Initialization vectors must be chosen appropriate for the mode of operation. For many modes, this means using a CSPRNG (cryptographically secure pseudo random number generator). For modes that require a nonce, then the initialization vector (IV) does not need a CSPRNG. In all cases, the IV should never be used twice for a fixed key.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_034"
+    },
+    {
+      "question": "What percentage of applications were tested for injection and what was the incidence rate in the 2021 data?",
+      "answer": "94% of applications were tested for some form of injection with a max incidence rate of 19%, an average incidence rate of 3.37%, and 274k occurrences. Injection slid down from its previous position to third place. Notable CWEs included are CWE-79: Cross-site Scripting, CWE-89: SQL Injection, and CWE-73: External Control of File Name or Path.",
+      "evidence": "A03:2021-Injection slides down to the third position. 94% of the applications were tested for some form of injection with a max incidence rate of 19%, an average incidence rate of 3.37%, and the 33 CWEs mapped into this category have the second most occurrences in applications with 274k occurrences. Cross-site Scripting is now part of this category in this edition. Notable Common Weakness Enumerations (CWEs) included are CWE-79: Cross-site Scripting, CWE-89: SQL Injection, and CWE-73: External Control of File Name or Path.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_035"
+    },
+    {
+      "question": "When is an application vulnerable to injection attacks?",
+      "answer": "An application is vulnerable to injection when: user-supplied data is not validated, filtered, or sanitized; dynamic queries or non-parameterized calls without context-aware escaping are used directly in the interpreter; hostile data is used within ORM search parameters to extract additional sensitive records; or hostile data is directly used or concatenated in dynamic queries, commands, or stored procedures.",
+      "evidence": "An application is vulnerable to attack when:\n-   User-supplied data is not validated, filtered, or sanitized by the\napplication.\n-   Dynamic queries or non-parameterized calls without context-aware\nescaping are used directly in the interpreter.\n-   Hostile data is used within object-relational mapping (ORM) search\nparameters to extract additional, sensitive records.",
+      "question_type": "definitional",
+      "qa_id": "owasp_top10_036"
+    },
+    {
+      "question": "What are the common types of injection attacks mentioned in the OWASP Top 10?",
+      "answer": "The more common injections mentioned are SQL, NoSQL, OS command, Object Relational Mapping (ORM), LDAP, and Expression Language (EL) or Object Graph Navigation Library (OGNL) injection. The concept is identical among all interpreters, and source code review is considered the best method of detecting if applications are vulnerable to injections.",
+      "evidence": "Some of the more common injections are SQL, NoSQL, OS command, Object Relational Mapping (ORM), LDAP, and Expression Language (EL) or Object Graph Navigation Library (OGNL) injection. The concept is identical among all interpreters. Source code review is the best method of detecting if applications are vulnerable to injections.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_037"
+    },
+    {
+      "question": "What is the preferred approach to prevent injection vulnerabilities?",
+      "answer": "The preferred option is to use a safe API, which avoids using the interpreter entirely, provides a parameterized interface, or migrates to Object Relational Mapping Tools (ORMs). However, even when parameterized, stored procedures can still introduce SQL injection if PL/SQL or T-SQL concatenates queries and data or executes hostile data with EXECUTE IMMEDIATE or exec().",
+      "evidence": "-   The preferred option is to use a safe API, which avoids using the\ninterpreter entirely, provides a parameterized interface, or\nmigrates to Object Relational Mapping Tools (ORMs).<br/>\n**Note:** Even when parameterized, stored procedures can still introduce\nSQL injection if PL/SQL or T-SQL concatenates queries and data or\nexecutes hostile data with EXECUTE IMMEDIATE or exec().",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_038"
+    },
+    {
+      "question": "What types of application security testing tools should be included in the CI/CD pipeline to identify injection flaws?",
+      "answer": "Organizations should include static (SAST), dynamic (DAST), and interactive (IAST) application security testing tools into the CI/CD pipeline to identify introduced injection flaws before production deployment. Automated testing of all parameters, headers, URLs, cookies, JSON, SOAP, and XML data inputs is strongly encouraged.",
+      "evidence": "Organizations can include static (SAST), dynamic (DAST), and interactive (IAST) application security testing tools into the CI/CD pipeline to identify introduced injection flaws before production deployment.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_039"
+    },
+    {
+      "question": "How does the injection attack scenario using Hibernate Query Language (HQL) work?",
+      "answer": "In the attack scenario, an application's blind trust in the Hibernate framework results in queries that are still vulnerable. The attacker modifies the 'id' parameter value in their browser to send: ' UNION SLEEP(10);--. This changes the meaning of the query to return all records from the accounts table. More dangerous attacks could modify or delete data or even invoke stored procedures.",
+      "evidence": "**Scenario #2:** Similarly, an application's blind trust in frameworks\nmay result in queries that are still vulnerable, (e.g., Hibernate Query\nLanguage (HQL)):\n```\n Query HQLQuery = session.createQuery(\"FROM accounts WHERE custID='\" + request.getParameter(\"id\") + \"'\");\n```\nIn both cases, the attacker modifies the 'id' parameter value in their\nbrowser to send: ' UNION SLEEP(10);--. For example:\n```\n http://example.com/app/accountView?id=' UNION SELECT SLEEP(10);--\n```\n\nThis changes the meaning of both queries to return all the records from the accounts table. More dangerous attacks could modify or delete data or even invoke stored procedures.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_040"
+    },
+    {
+      "question": "What is the difference between insecure design and insecure implementation?",
+      "answer": "Insecure design and insecure implementation have different root causes and remediation approaches. A secure design can still have implementation defects leading to exploitable vulnerabilities. However, an insecure design cannot be fixed by a perfect implementation because by definition, needed security controls were never created to defend against specific attacks. Insecure design represents missing or ineffective control design.",
+      "evidence": "We differentiate between design flaws and implementation defects for a reason, they have different root causes and remediation. A secure design can still have implementation defects leading to vulnerabilities that may be exploited. An insecure design cannot be fixed by a perfect implementation as by definition, needed security controls were never created to defend against specific attacks.",
+      "question_type": "comparative",
+      "qa_id": "owasp_top10_041"
+    },
+    {
+      "question": "What is secure design according to the OWASP Top 10 2021?",
+      "answer": "Secure design is a culture and methodology that constantly evaluates threats and ensures that code is robustly designed and tested to prevent known attack methods. Threat modeling should be integrated into refinement sessions, and it involves determining correct flow and failure states, analyzing assumptions and conditions, and documenting results in user stories. Secure design is neither an add-on nor a tool that can be added to software.",
+      "evidence": "Secure design is a culture and methodology that constantly evaluates threats and ensures that code is robustly designed and tested to prevent known attack methods. Threat modeling should be integrated into refinement sessions (or similar activities); look for changes in data flows and access control or other security controls. In the user story development determine the correct flow and failure states, ensure they are well understood and agreed upon by responsible and impacted parties. Analyze assumptions and conditions for expected and failure flows, ensure they are still accurate and desirable. Determine how to validate the assumptions and enforce conditions needed for proper behaviors. Ensure the results are documented in the user story. Learn from mistakes and offer positive incentives to promote improvements. Secure design is neither an add-on nor a tool that you can add to software.",
+      "question_type": "definitional",
+      "qa_id": "owasp_top10_042"
+    },
+    {
+      "question": "What does a secure development lifecycle require according to the Insecure Design category?",
+      "answer": "Secure software requires a secure development lifecycle, some form of secure design pattern, paved road methodology, secured component library, tooling, and threat modeling. Security specialists should be reached out to at the beginning of a software project throughout the whole project and maintenance. The OWASP Software Assurance Maturity Model (SAMM) is recommended to help structure secure software development efforts.",
+      "evidence": "Secure software requires a secure development lifecycle, some form of secure design pattern, paved road methodology, secured component library, tooling, and threat modeling. Reach out for your security specialists at the beginning of a software project throughout the whole project and maintenance of your software. Consider leveraging the [OWASP Software Assurance Maturity Model (SAMM)](https://owaspsamm.org) to help structure your secure software development efforts.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_043"
+    },
+    {
+      "question": "What is the cinema chain attack scenario described in the Insecure Design category?",
+      "answer": "A cinema chain allows group booking discounts and has a maximum of fifteen attendees before requiring a deposit. Attackers could threat model this flow and test if they could book six hundred seats and all cinemas at once in a few requests, causing a massive loss of income. This illustrates how business logic flaws stemming from insecure design can be exploited.",
+      "evidence": "A cinema chain allows group booking discounts and has a maximum of fifteen attendees before requiring a deposit. Attackers could threat model this flow and test if they could book six hundred seats and all cinemas at once in a few requests, causing a massive loss of income.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_045"
+    },
+    {
+      "question": "Why are questions and answers prohibited as a credential recovery mechanism?",
+      "answer": "Questions and answers are prohibited by NIST 800-63b, the OWASP ASVS, and the OWASP Top 10 because they cannot be trusted as evidence of identity since more than one person can know the answers. Such code should be removed and replaced with a more secure design, highlighting the need for proper security controls in credential recovery workflows.",
+      "evidence": "**Scenario #1:** A credential recovery workflow might include \u201cquestions\nand answers,\u201d which is prohibited by NIST 800-63b, the OWASP ASVS, and\nthe OWASP Top 10. Questions and answers cannot be trusted as evidence of\nidentity as more than one person can know the answers, which is why they\nare prohibited. Such code should be removed and replaced with a more\nsecure design.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_046"
+    },
+    {
+      "question": "What are the conditions that make an application vulnerable to security misconfiguration?",
+      "answer": "An application is vulnerable to security misconfiguration if: it is missing appropriate security hardening or has improperly configured cloud permissions; unnecessary features are enabled; default accounts and passwords are unchanged; error handling reveals stack traces; latest security features are disabled in upgraded systems; security settings are not set to secure values; the server does not send security headers; or the software is out of date or vulnerable.",
+      "evidence": "The application might be vulnerable if the application is:\n-   Missing appropriate security hardening across any part of the\napplication stack or improperly configured permissions on cloud\nservices.\n-   Unnecessary features are enabled or installed (e.g., unnecessary\nports, services, pages, accounts, or privileges).\n-   Default accounts and their passwords are still enabled and\nunchanged.\n-   Error handling reveals stack traces or other overly informative\nerror messages to users.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_047"
+    },
+    {
+      "question": "How should secure installation processes be implemented to prevent security misconfiguration?",
+      "answer": "Secure installation processes should include: a repeatable hardening process that makes it fast to deploy locked-down environments with different credentials for development, QA, and production; a minimal platform without unnecessary features; reviewing and updating configurations with security patches; a segmented application architecture with containerization or cloud security groups; sending security directives to clients; and automated processes to verify configurations.",
+      "evidence": "A repeatable hardening process makes it fast and easy to deploy another environment that is appropriately locked down. Development, QA, and production environments should all be configured identically, with different credentials used in each environment. This process should be automated to minimize the effort required to set up a new secure environment.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_048"
+    },
+    {
+      "question": "What is the attack scenario involving sample applications in the Security Misconfiguration category?",
+      "answer": "The application server comes with sample applications that are not removed from the production server. These sample applications have known security flaws that attackers use to compromise the server. If one of these applications is the admin console and default accounts were not changed, the attacker logs in with default passwords and takes over the system.",
+      "evidence": "The application server comes with sample applications not removed from the production server. These sample applications have known security flaws attackers use to compromise the server. Suppose one of these applications is the admin console, and default accounts weren't changed. In that case, the attacker logs in with default passwords and takes over.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_049"
+    },
+    {
+      "question": "What is the Security Misconfiguration attack scenario involving directory listing?",
+      "answer": "When directory listing is not disabled on the server, an attacker discovers they can simply list directories. The attacker finds and downloads the compiled Java classes, which they decompile and reverse engineer to view the code. The attacker then finds a severe access control flaw in the application, demonstrating how misconfiguration can lead to further exploits.",
+      "evidence": "Directory listing is not disabled on the server. An attacker discovers they can simply list directories. The attacker finds and downloads the compiled Java classes, which they decompile and reverse engineer to view the code. The attacker then finds a severe access control flaw in the application.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_050"
+    },
+    {
+      "question": "What conditions indicate that you are vulnerable to using outdated components?",
+      "answer": "You are likely vulnerable if: you do not know the versions of all components you use (both client-side and server-side) including nested dependencies; if the software is vulnerable, unsupported, or out of date (including OS, web/application server, DBMS, APIs, runtime environments, and libraries); if you do not scan for vulnerabilities regularly; if you do not fix or upgrade platforms in a risk-based, timely fashion; or if developers do not test compatibility of updated libraries.",
+      "evidence": "If you do not know the versions of all components you use (both client-side and server-side). This includes components you directly use as well as nested dependencies. If the software is vulnerable, unsupported, or out of date. This includes the OS, web/application server, database management system (DBMS), applications, APIs and all components, runtime environments, and libraries.",
+      "question_type": "definitional",
+      "qa_id": "owasp_top10_052"
+    },
+    {
+      "question": "What patch management process should be in place to prevent vulnerable and outdated components?",
+      "answer": "Organizations should remove unused dependencies, unnecessary features, components, files, and documentation. They should continuously inventory the versions of both client-side and server-side components using tools like OWASP Dependency Check and retire.js. Components should only be obtained from official sources over secure links, preferring signed packages. Organizations must monitor for unmaintained libraries and consider deploying virtual patches when direct patching is not possible.",
+      "evidence": "-   Remove unused dependencies, unnecessary features, components, files,\nand documentation.\n-   Continuously inventory the versions of both client-side and\nserver-side components (e.g., frameworks, libraries) and their\ndependencies using tools like versions, OWASP Dependency Check,\nretire.js, etc. Continuously monitor sources like Common Vulnerability and Exposures (CVE) and National Vulnerability Database (NVD) for vulnerabilities in the components. Use software composition analysis tools to automate the process. Subscribe to email alerts for security vulnerabilities related to components you use.\n-   Only obtain components from official sources over secure links.\n    Prefer signed packages to reduce the chance of including a modified,\n    malicious component.\n-   Monitor for libraries and components that are unmaintained or do not\n    create security patches for older versions. If patching is not\n    possible, consider deploying a virtual patch to monitor, detect, or\n    protect against the discovered issue.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_053"
+    },
+    {
+      "question": "What automated tools can help attackers find unpatched or misconfigured systems?",
+      "answer": "There are automated tools to help attackers find unpatched or misconfigured systems. For example, the Shodan IoT search engine can help find devices that still suffer from the Heartbleed vulnerability patched in April 2014. This highlights the importance of timely patching, especially for Internet of Things (IoT) devices that are frequently difficult or impossible to patch.",
+      "evidence": "There are automated tools to help attackers find unpatched or misconfigured systems. For example, the Shodan IoT search engine can help you find devices that still suffer from Heartbleed vulnerability patched in April 2014.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_055"
+    },
+    {
+      "question": "What authentication weaknesses are described in the Identification and Authentication Failures category?",
+      "answer": "Authentication weaknesses include: permitting automated attacks like credential stuffing and brute force; permitting default, weak, or well-known passwords; using weak credential recovery processes like knowledge-based answers; using plain text, encrypted, or weakly hashed passwords; missing or ineffective multi-factor authentication; exposing session identifiers in URLs; reusing session identifiers after login; and not properly invalidating session IDs during logout or inactivity.",
+      "evidence": "Permits automated attacks such as credential stuffing, where the attacker has a list of valid usernames and passwords. Permits brute force or other automated attacks. Permits default, weak, or well-known passwords, such as \"Password1\" or \"admin/admin\". Uses weak or ineffective credential recovery and forgot-password processes, such as \"knowledge-based answers,\" which cannot be made safe.",
+      "question_type": "definitional",
+      "qa_id": "owasp_top10_056"
+    },
+    {
+      "question": "How should multi-factor authentication be implemented to prevent identification and authentication failures?",
+      "answer": "Where possible, multi-factor authentication should be implemented to prevent automated credential stuffing, brute force, and stolen credential reuse attacks. Applications should not ship or deploy with any default credentials, particularly for admin users. Failed login attempts should be limited or increasingly delayed, but care must be taken not to create a denial of service scenario.",
+      "evidence": "Where possible, implement multi-factor authentication to prevent automated credential stuffing, brute force, and stolen credential reuse attacks.\n-   Do not ship or deploy with any default credentials, particularly for admin users.\n-   Limit or increasingly delay failed login attempts, but be careful not to create a denial of service scenario. Log all failures and alert administrators when credential stuffing, brute force, or other attacks are detected.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_057"
+    },
+    {
+      "question": "What password policies should align with NIST 800-63b guidelines?",
+      "answer": "Password length, complexity, and rotation policies should align with National Institute of Standards and Technology (NIST) 800-63b's guidelines in section 5.1.1 for Memorized Secrets or other modern, evidence-based password policies. Weak password checks should also be implemented, such as testing new or changed passwords against the top 10,000 worst passwords list.",
+      "evidence": "-   Implement weak password checks, such as testing new or changed\n    passwords against the top 10,000 worst passwords list.\n-   Align password length, complexity, and rotation policies with\n    National Institute of Standards and Technology (NIST)\n    800-63b's guidelines in section 5.1.1 for Memorized Secrets or other\n    modern, evidence-based password policies.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_058"
+    },
+    {
+      "question": "How should session management be handled to prevent authentication failures?",
+      "answer": "A server-side, secure, built-in session manager should be used that generates a new random session ID with high entropy after login. The session identifier should not be in the URL, should be securely stored, and should be invalidated after logout, idle timeouts, and absolute timeouts. Registration, credential recovery, and API pathways should be hardened against account enumeration attacks.",
+      "evidence": "-   Ensure registration, credential recovery, and API pathways are\n    hardened against account enumeration attacks by using the same\n    messages for all outcomes.\n-   Limit or increasingly delay failed login attempts, but be careful not to create a denial of service scenario. Log all failures\n    and alert administrators when credential stuffing, brute force, or\n    other attacks are detected.\n-   Use a server-side, secure, built-in session manager that generates a\n    new random session ID with high entropy after login. Session identifier\n    should not be in the URL, be securely stored, and invalidated after\n    logout, idle, and absolute timeouts.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_059"
+    },
+    {
+      "question": "What is the credential stuffing attack scenario described in the OWASP Top 10?",
+      "answer": "Credential stuffing is the use of lists of known passwords as a common attack method. If an application does not implement automated threat or credential stuffing protection, the application can be used as a password oracle to determine if the credentials are valid. Most authentication attacks occur due to the continued use of passwords as a sole factor.",
+      "evidence": "Credential stuffing, the use of lists of known passwords, is a common attack. Suppose an application does not implement automated threat or credential stuffing protection. In that case, the application can be used as a password oracle to determine if the credentials are valid.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_060"
+    },
+    {
+      "question": "What is the session timeout attack scenario described in the Identification and Authentication Failures category?",
+      "answer": "When application session timeouts are not set correctly, a user who uses a public computer and simply closes the browser tab instead of selecting logout can leave their session active. An attacker who uses the same browser an hour later finds the user still authenticated, gaining unauthorized access to the application.",
+      "evidence": "Application session timeouts aren't set correctly. A user uses a public computer to access an application. Instead of selecting \"logout,\" the user simply closes the browser tab and walks away. An attacker uses the same browser an hour later, and the user is still authenticated.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_061"
+    },
+    {
+      "question": "What is Software and Data Integrity Failures and what does it relate to?",
+      "answer": "Software and data integrity failures relate to code and infrastructure that does not protect against integrity violations. Examples include applications relying on plugins, libraries, or modules from untrusted sources, repositories, and content delivery networks (CDNs). An insecure CI/CD pipeline can also introduce the potential for unauthorized access, malicious code, or system compromise.",
+      "evidence": "Software and data integrity failures relate to code and infrastructure that does not protect against integrity violations. An example of this is where an application relies upon plugins, libraries, or modules from untrusted sources, repositories, and content delivery networks (CDNs). An insecure CI/CD pipeline can introduce the potential for unauthorized access, malicious code, or system compromise.",
+      "question_type": "definitional",
+      "qa_id": "owasp_top10_062"
+    },
+    {
+      "question": "How should software supply chain integrity be ensured according to the Software and Data Integrity Failures category?",
+      "answer": "Digital signatures or similar mechanisms should be used to verify that software or data is from the expected source and has not been altered. Libraries and dependencies from npm or Maven should consume trusted repositories, with higher risk profiles considering hosting an internal known-good repository. Software supply chain security tools like OWASP Dependency Check or OWASP CycloneDX should be used to verify components do not contain known vulnerabilities.",
+      "evidence": "Use digital signatures or similar mechanisms to verify the software or data is from the expected source and has not been altered. Ensure libraries and dependencies, such as npm or Maven, are consuming trusted repositories. If you have a higher risk profile, consider hosting an internal known-good repository that's vetted.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_063"
+    },
+    {
+      "question": "How should CI/CD pipelines be secured to prevent software and data integrity failures?",
+      "answer": "CI/CD pipelines should have proper segregation, configuration, and access control to ensure the integrity of the code flowing through the build and deploy processes. There should be a review process for code and configuration changes to minimize the chance that malicious code or configuration could be introduced into the software pipeline. Unsigned or unencrypted serialized data should not be sent to untrusted clients without integrity checks.",
+      "evidence": "-   Ensure that there is a review process for code and configuration changes to minimize the chance that malicious code or configuration could be introduced into your software pipeline.\n-   Ensure that your CI/CD pipeline has proper segregation, configuration, and access\ncontrol to ensure the integrity of the code flowing through the\nbuild and deploy processes.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_064"
+    },
+    {
+      "question": "What was the SolarWinds Orion attack and why is it significant?",
+      "answer": "The SolarWinds Orion attack was a nation-state attack where update mechanisms were compromised. Despite the company having secure build and update integrity processes, these were subverted, and for several months the firm distributed a highly targeted malicious update to more than 18,000 organizations, of which around 100 were affected. It is described as one of the most far-reaching and significant breaches of this nature in history.",
+      "evidence": "Nation-states have been known to attack update mechanisms, with a recent notable attack being the SolarWinds Orion attack. The company that develops the software had secure build and update integrity processes. Still, these were able to be subverted, and for several months, the firm distributed a highly targeted malicious update to more than 18,000 organizations, of which around 100 or so were affected. This is one of the most far-reaching and most significant breaches of this nature in history.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_065"
+    },
+    {
+      "question": "Why is unsigned firmware a growing concern according to the Software and Data Integrity Failures category?",
+      "answer": "Many home routers, set-top boxes, device firmware, and other devices do not verify updates via signed firmware. Unsigned firmware is a growing target for attackers and is expected to only get worse. This is a major concern because many times there is no mechanism to remediate other than to fix in a future version and wait for previous versions to age out.",
+      "evidence": "Many home routers, set-top boxes, device firmware, and others do not verify updates via signed firmware. Unsigned firmware is a growing target for attackers and is expected to only get worse. This is a major concern as many times there is no mechanism to remediate other than to fix in a future version and wait for previous versions to age out.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_067"
+    },
+    {
+      "question": "What conditions indicate insufficient logging, detection, monitoring, and active response?",
+      "answer": "Insufficient logging occurs when: auditable events like logins and high-value transactions are not logged; warnings and errors generate unclear log messages; application and API logs are not monitored for suspicious activity; logs are only stored locally; alerting thresholds and escalation processes are not in place; penetration testing tools do not trigger alerts; or the application cannot detect or alert for active attacks in real-time.",
+      "evidence": "Auditable events, such as logins, failed logins, and high-value transactions, are not logged. Warnings and errors generate no, inadequate, or unclear log messages. Logs of applications and APIs are not monitored for suspicious activity. Logs are only stored locally. Appropriate alerting thresholds and response escalation processes are not in place or effective.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_069"
+    },
+    {
+      "question": "What was the outcome of the major European airline breach described in the Security Logging and Monitoring Failures section?",
+      "answer": "A major European airline suffered a GDPR reportable breach caused by payment application security vulnerabilities exploited by attackers, who harvested more than 400,000 customer payment records. The airline was fined 20 million pounds as a result by the privacy regulator, demonstrating the financial consequences of inadequate security monitoring.",
+      "evidence": "A major European airline suffered a GDPR reportable breach. The breach was reportedly caused by payment application security vulnerabilities exploited by attackers, who harvested more than 400,000 customer payment records. The airline was fined 20 million pounds as a result by the privacy regulator.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_073"
+    },
+    {
+      "question": "What is Server-Side Request Forgery (SSRF) and how does it occur?",
+      "answer": "SSRF flaws occur whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination, even when protected by a firewall, VPN, or another type of network access control list (ACL). The severity of SSRF is becoming higher due to cloud services and the complexity of architectures.",
+      "evidence": "SSRF flaws occur whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination, even when protected by a firewall, VPN, or another type of network access control list (ACL).",
+      "question_type": "definitional",
+      "qa_id": "owasp_top10_074"
+    },
+    {
+      "question": "What network layer defenses can prevent SSRF attacks?",
+      "answer": "Network layer defenses against SSRF include segmenting remote resource access functionality in separate networks to reduce the impact, and enforcing 'deny by default' firewall policies or network access control rules to block all but essential intranet traffic. Organizations should establish ownership and a lifecycle for firewall rules based on applications and log all accepted and blocked network flows on firewalls.",
+      "evidence": "-   Segment remote resource access functionality in separate networks to\nreduce the impact of SSRF\n-   Enforce \u201cdeny by default\u201d firewall policies or network access\ncontrol rules to block all but essential intranet traffic.<br/>\n*Hints:*<br>\n~ Establish an ownership and a lifecycle for firewall rules based on applications.<br/>\n~ Log all accepted *and* blocked network flows on firewalls",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_075"
+    },
+    {
+      "question": "What application layer defenses can prevent SSRF attacks?",
+      "answer": "Application layer defenses against SSRF include sanitizing and validating all client-supplied input data, enforcing the URL schema, port, and destination with a positive allow list, not sending raw responses to clients, and disabling HTTP redirections. Developers should also be aware of URL consistency to avoid attacks such as DNS rebinding and 'time of check, time of use' (TOCTOU) race conditions.",
+      "evidence": "-   Sanitize and validate all client-supplied input data\n-   Enforce the URL schema, port, and destination with a positive allow\nlist\n-   Do not send raw responses to clients\n-   Disable HTTP redirections\n-   Be aware of the URL consistency to avoid attacks such as DNS\nrebinding and \u201ctime of check, time of use\u201d (TOCTOU) race conditions",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_076"
+    },
+    {
+      "question": "Why should deny lists not be used to mitigate SSRF?",
+      "answer": "Deny lists or regular expressions should not be used to mitigate SSRF because attackers have payload lists, tools, and skills to bypass deny lists. Instead, a positive allow list approach should be used to enforce the URL schema, port, and destination. Defense in depth controls from both network and application layers should be implemented.",
+      "evidence": "Do not mitigate SSRF via the use of a deny list or regular expression. Attackers have payload lists, tools, and skills to bypass deny lists.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_077"
+    },
+    {
+      "question": "How can attackers use SSRF to access cloud service metadata?",
+      "answer": "Most cloud providers have metadata storage such as http://169.254.169.254/. An attacker can use SSRF to read the metadata to gain sensitive information. SSRF can also be used to access local files or internal services to gain sensitive information, port scan internal servers, or compromise internal services to conduct further attacks such as Remote Code Execution (RCE) or Denial of Service (DoS).",
+      "evidence": "**Scenario #1:** Port scan internal servers \u2013 If the network architecture is unsegmented, attackers can map out internal networks and determine if ports are open or closed on internal servers from connection results or elapsed time to connect or reject SSRF payload connections.\n\n**Scenario #2:** Sensitive data exposure \u2013 Attackers can access local files or internal services to gain sensitive information such as `file:///etc/passwd` and `http://localhost:28017/`.\n\n**Scenario #3:** Access metadata storage of cloud services \u2013 Most cloud providers have metadata storage such as `http://169.254.169.254/`. An attacker can read the metadata to gain sensitive information.\n\n**Scenario #4:** Compromise internal services \u2013 The attacker can abuse internal services to conduct further attacks such as Remote Code Execution (RCE) or Denial of Service (DoS).",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_078"
+    },
+    {
+      "question": "What was the OWASP Top 10 data collection process and when was it formalized?",
+      "answer": "The OWASP Top 10 data collection process was formalized at the Open Security Summit in 2017. OWASP Top 10 leaders and the community spent two days working out a transparent data collection process. A call for data is published through social media channels, and the OWASP Project page lists the data elements, structure, and how to submit them, with example files on GitHub serving as templates.",
+      "evidence": "We formalized the OWASP Top 10 data collection process at the Open Security Summit in 2017. OWASP Top 10 leaders and the community spent two days working out formalizing a transparent data collection process. The 2021 edition is the second time we have used this methodology.\n\nWe publish a call for data through social media channels available to us, both project and OWASP. On the OWASP Project page, we list the data elements and structure we are looking for and how to submit them. In the GitHub project, we have example files that serve as templates.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_080"
+    },
+    {
+      "question": "How does Cross-Site Scripting exemplify the problem with frequency-based data?",
+      "answer": "Cross-Site Scripting is typically one of two flavors: a minor isolated mistake or a systemic issue. When systemic, finding counts can be in the thousands for a single application. This high frequency drowns out most other vulnerabilities found in reports or data. If frequency-based Tooling/HaT data is merged with broader TaH data, XSS appears highly ranked despite its generally low to moderate impact.",
+      "evidence": "Look at Cross-Site Scripting, which is typically one of two flavors: it's either a more minor, isolated mistake or a systemic issue. When it's a systemic issue, the finding counts can be in the thousands for a single application. This high frequency drowns out most other vulnerabilities found in reports or data.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_081"
+    },
+    {
+      "question": "How did the number of CWEs analyzed change between the previous and 2021 editions of the OWASP Top 10?",
+      "answer": "The number of CWEs analyzed went from approximately 30 CWEs to almost 400 CWEs in the 2021 dataset. Previous data collection efforts focused on a prescribed subset of approximately 30 CWEs, but in the 2021 iteration, the collection was opened up with no restriction on CWEs. This significant increase necessitated changes to how the categories were structured.",
+      "evidence": "We went from approximately 30 CWEs to almost 400 CWEs to analyze in the dataset. We plan to do additional data analysis as a supplement in the future. This significant increase in the number of CWEs necessitates changes to how the categories are structured.",
+      "question_type": "comparative",
+      "qa_id": "owasp_top10_082"
+    },
+    {
+      "question": "What is the Testing Coverage data factor in the OWASP Top 10?",
+      "answer": "Testing Coverage is the percentage of applications tested by all organizations for a given CWE. It measures how broadly a particular CWE is being tested across the population of applications, indicating the comprehensiveness of testing efforts for that weakness.",
+      "evidence": "(Testing) Coverage: The percentage of applications tested by all organizations for a given CWE.",
+      "question_type": "definitional",
+      "qa_id": "owasp_top10_084"
+    },
+    {
+      "question": "How does Identification and Authentication Failures compare to its 2017 predecessor in terms of ranking?",
+      "answer": "Identification and Authentication Failures (A07:2021) slid down from the second position where it was ranked as Broken Authentication in 2017. It now includes CWEs related to identification failures in addition to authentication. The category is still integral to the Top 10, but the increased availability of standardized frameworks appears to be helping reduce its impact.",
+      "evidence": "- **[A07:2021-Identification and Authentication Failures](A07_2021-Identification_and_Authentication_Failures.md)** was previously Broken Authentication and is sliding down from the second position, and now includes CWEs that are more related to identification failures. This category is still an integral part of the Top 10, but the increased availability of standardized frameworks seems to be helping.",
+      "question_type": "comparative",
+      "qa_id": "owasp_top10_088"
+    },
+    {
+      "question": "Why is the severity of SSRF increasing according to the OWASP Top 10?",
+      "answer": "The severity of SSRF is becoming higher due to cloud services and the complexity of architectures. As modern web applications provide end-users with convenient features, fetching a URL becomes a common scenario, increasing the incidence of SSRF. Cloud providers typically have metadata storage that can be accessed via SSRF, exposing sensitive information.",
+      "evidence": "As modern web applications provide end-users with convenient features, fetching a URL becomes a common scenario. As a result, the incidence of SSRF is increasing. Also, the severity of SSRF is becoming higher due to cloud services and the complexity of architectures.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_090"
+    },
+    {
+      "question": "What role does the Top 10 community survey play in the selection process?",
+      "answer": "The Top 10 community survey allows practitioners on the front lines to vote for what they see as the highest risks that might not be in the data and may never be expressed in data. The top two votes that are not already present in the data are selected for the remaining two places in the Top 10, complementing the eight categories chosen from contributed data.",
+      "evidence": "Therefore, we only pick eight of ten categories from the data because it's incomplete. The other two categories are from the Top 10 community survey. It allows the practitioners on the front lines to vote for what they see as the highest risks that might not be in the data (and may never be expressed in data).\n\nWe look at the eight categories with the highest incidence rates for inclusion in the Top 10. We also look at the Top 10 community survey results to see which ones may already be present in the data. The top two votes that aren't already present in the data will be selected for the other two places in the Top 10.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_091"
+    },
+    {
+      "question": "How does the Tool-assisted Human (TaH) approach differ from the Human-assisted Tooling (HaT) approach?",
+      "answer": "TaH finds a broader range of vulnerability types but at a much lower frequency due to time constraints, while HaT and Tooling are high-frequency finding generators. When humans test an application, they typically find three or four instances and stop, determining a systemic finding and writing it up with a recommendation. In contrast, tools tirelessly attempt to find every instance and generate high finding counts.",
+      "evidence": "Tooling and HaT are high-frequency finding generators. Tools will look for specific vulnerabilities and tirelessly attempt to find every instance of that vulnerability and will generate high finding counts for some vulnerability types.\n\nTaH, on the other hand, will find a broader range of vulnerability types but at a much lower frequency due to time constraints. When humans test an application and see something like Cross-Site Scripting, they will typically find three or four instances and stop. They can determine a systemic finding and write it up with a recommendation to fix on an application-wide scale.",
+      "question_type": "comparative",
+      "qa_id": "owasp_top10_092"
+    },
+    {
+      "question": "How should sensitive data be classified and protected according to the Cryptographic Failures prevention guidelines?",
+      "answer": "Data processed, stored, or transmitted by an application should be classified to identify which data is sensitive according to privacy laws, regulatory requirements, or business needs. Sensitive data should not be stored unnecessarily and should be discarded as soon as possible or use PCI DSS compliant tokenization or even truncation. All sensitive data at rest should be encrypted with up-to-date strong standard algorithms.",
+      "evidence": "Classify data processed, stored, or transmitted by an application. Identify which data is sensitive according to privacy laws, regulatory requirements, or business needs. Don't store sensitive data unnecessarily. Discard it as soon as possible or use PCI DSS compliant tokenization or even truncation. Data that is not retained cannot be stolen. Make sure to encrypt all sensitive data at rest.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_094"
+    },
+    {
+      "question": "What is the significance of CORS misconfiguration in the Broken Access Control category?",
+      "answer": "CORS misconfiguration allows API access from unauthorized or untrusted origins and is listed as a common access control vulnerability. To prevent this, access control mechanisms should be implemented once and reused throughout the application, including minimizing Cross-Origin Resource Sharing (CORS) usage. This is part of the broader set of vulnerabilities where attackers can bypass access controls.",
+      "evidence": "CORS misconfiguration allows API access from unauthorized/untrusted origins.",
+      "question_type": "factual",
+      "qa_id": "owasp_top10_095"
+    },
+    {
+      "question": "What requirements and resource management practices are needed for secure design?",
+      "answer": "Organizations should collect and negotiate business requirements including protection requirements concerning confidentiality, integrity, availability, and authenticity of all data assets and expected business logic. They need to consider application exposure and tenant segregation needs, compile technical requirements including functional and non-functional security requirements, and plan and negotiate budget covering all design, build, testing, and operation including security activities.",
+      "evidence": "Collect and negotiate the business requirements for an application with the business, including the protection requirements concerning confidentiality, integrity, availability, and authenticity of all data assets and the expected business logic. Take into account how exposed your application will be and if you need segregation of tenants (additionally to access control). Compile the technical requirements, including functional and non-functional security requirements. Plan and negotiate the budget covering all design, build, testing, and operation, including security activities.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_097"
+    },
+    {
+      "question": "What additional SSRF measures should be considered for systems with very high protection needs?",
+      "answer": "For additional protection against SSRF, organizations should not deploy other security-relevant services on front systems (e.g., OpenID) and should control local traffic on these systems (e.g., localhost). For frontends with dedicated and manageable user groups, network encryption (e.g., VPNs) on independent systems should be used to address very high protection needs.",
+      "evidence": "-   Don't deploy other security relevant services on front systems (e.g. OpenID).\nControl local traffic on these systems (e.g. localhost)\n-   For frontends with dedicated and manageable user groups use network encryption (e.g. VPNs)\non independent systems to consider very high protection needs",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_099"
+    },
+    {
+      "question": "What is the role of positive server-side input validation in preventing injection attacks, and what are its limitations?",
+      "answer": "Positive server-side input validation is recommended as a defense against injection attacks, but it is not a complete defense since many applications require special characters, such as text areas or APIs for mobile applications. For any residual dynamic queries, special characters should be escaped using the specific escape syntax for that interpreter. However, SQL structures such as table names and column names cannot be escaped.",
+      "evidence": "-   Use positive server-side input validation. This is\n    not a complete defense as many applications require special\n    characters, such as text areas or APIs for mobile applications.\n\n-   For any residual dynamic queries, escape special characters using\n    the specific escape syntax for that interpreter.<br/>\n    **Note:** SQL structures such as table names, column names, and so on\n    cannot be escaped, and thus user-supplied structure names are\n    dangerous. This is a common issue in report-writing software.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_100"
+    },
+    {
+      "question": "How was Server-Side Request Forgery (SSRF) ranked in the Top 10 community survey when it was added to the 2021 list?",
+      "answer": "Server-Side Request Forgery (SSRF) was ranked #1 in the Top 10 community survey. It was added to the OWASP Top 10 2021 as A10:2021 based on this community input.",
+      "evidence": "However, failures in this category can directly impact visibility, incident alerting, and forensics.\n- **[A10:2021-Server-Side Request Forgery](A10_2021-Server-Side_Request_Forgery_(SSRF).md)** is added from the Top 10 community survey (#1).",
+      "question_type": "comparative",
+      "qa_id": "owasp_top10_101"
+    },
+    {
+      "question": "What was A02:2021-Cryptographic Failures previously known as, and why was the name changed?",
+      "answer": "A02:2021-Cryptographic Failures was previously known as A3:2017-Sensitive Data Exposure. The name was changed because Sensitive Data Exposure was a broad symptom rather than a root cause, and the OWASP Top 10 shifted focus to root causes.",
+      "evidence": "md)** shifts up one position to #2, previously known as **A3:2017-Sensitive Data Exposure**, which was broad symptom rather than a root cause.",
+      "question_type": "comparative",
+      "qa_id": "owasp_top10_102"
+    },
+    {
+      "question": "Why does the OWASP Top 10 methodology ignore frequency when structuring categories?",
+      "answer": "The OWASP Top 10 ignores frequency because it only hides the actual prevalence in the application population. While frequency may be necessary for other situations, it does not provide a clear picture of how widespread vulnerabilities are across applications.",
+      "evidence": "We ignore frequency for our purposes; while it may be necessary for other situations, it only hides the actual prevalence in the application population.",
+      "question_type": "comparative",
+      "qa_id": "owasp_top10_103"
+    },
+    {
+      "question": "What are examples of root cause versus symptom types of CWEs in the OWASP Top 10 classification?",
+      "answer": "Root cause types of CWEs include \"Cryptographic Failure\" and \"Misconfiguration,\" while symptom types include \"Sensitive Data Exposure\" and \"Denial of Service.\" The OWASP Top 10 distinguishes between these two types to focus on underlying causes rather than observable effects.",
+      "evidence": "There are both *root cause* and *symptom* types of CWEs, where *root cause* types are like \"Cryptographic Failure\" and \"Misconfiguration\" contrasted to *symptom* types like \"Sensitive Data Exposure\" and \"Denial of Service.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_104"
+    },
+    {
+      "question": "Why are only eight of the ten OWASP Top 10 categories selected from statistical data?",
+      "answer": "Only eight of ten categories are selected from statistical data because the data is incomplete. The remaining two categories are chosen from the Top 10 community survey to account for vulnerabilities that automated testing may not capture.",
+      "evidence": "Therefore, we only pick eight of ten categories from the data because it's incomplete. The other two categories are from the Top 10 community survey.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_105"
+    },
+    {
+      "question": "What limitation of statistical data does the OWASP Top 10 acknowledge regarding automated testing?",
+      "answer": "The OWASP Top 10 acknowledges that the results in the data are primarily limited to what can be tested for in an automated fashion. Seasoned AppSec professionals find and observe trends in vulnerabilities that are not yet captured in the automated testing data.",
+      "evidence": "The results in the data are primarily limited to what we can test for in an automated fashion. Talk to a seasoned AppSec professional, and they will tell you about stuff they find and trends they see that aren't yet in the data.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_106"
+    },
+    {
+      "question": "How does incidence rate provide a clearer view than frequency when analyzing vulnerability data across testing types?",
+      "answer": "Incidence rate focuses on how many applications had at least one instance of a vulnerability, which provides a clearer view of testing findings across multiple testing types without drowning the data in high-frequency results. This approach prevents commonly-tested vulnerabilities from dominating the statistics.",
+      "evidence": "That's irrelevant for our purposes; we just need to know how many applications had at least one instance, which helps provide a clearer view of the testing is findings across multiple testing types without drowning the data in high-frequency results.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_107"
+    },
+    {
+      "question": "How does Tool-assisted Human (TaH) testing compare to other approaches in terms of vulnerability range and frequency?",
+      "answer": "Tool-assisted Human (TaH) testing finds a broader range of vulnerability types compared to other approaches, but at a much lower frequency due to time constraints. This trade-off means TaH discovers more diverse issues but produces fewer individual findings per vulnerability type.",
+      "evidence": "TaH, on the other hand, will find a broader range of vulnerability types but at a much lower frequency due to time constraints.",
+      "question_type": "comparative",
+      "qa_id": "owasp_top10_108"
+    },
+    {
+      "question": "What consequences can result from broken access control failures according to the OWASP Top 10?",
+      "answer": "Broken access control failures typically lead to unauthorized information disclosure, modification, or destruction of all data, or performing a business function outside the user's limits. These consequences can affect the confidentiality, integrity, and availability of the application's data.",
+      "evidence": "Failures typically lead to unauthorized\ninformation disclosure, modification, or destruction of all data or\nperforming a business function outside the user's limits.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_109"
+    },
+    {
+      "question": "Why should model access controls enforce record ownership in the context of preventing broken access control?",
+      "answer": "Model access controls should enforce record ownership rather than accepting that the user can create, read, update, or delete any record. This ensures users can only access their own data rather than assuming all users have equal access to all records.",
+      "evidence": "-   Model access controls should enforce record ownership rather than\n    accepting that the user can create, read, update, or delete any\n    record.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_110"
+    },
+    {
+      "question": "What should be done with web server directory listings and file metadata to prevent broken access control?",
+      "answer": "Web server directory listing should be disabled and file metadata should be protected. Additionally, unique application business limit requirements should be enforced by domain models to prevent unauthorized access to resources.",
+      "evidence": "-   Unique application business limit requirements should be enforced by\n    domain models.\n\n-   Disable web server directory listing and ensure file metadata (e.g.,\n    .git) and backup files are not present within web roots.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_111"
+    },
+    {
+      "question": "How should session identifiers and JWT tokens be managed after user logout to prevent access control issues?",
+      "answer": "Stateful session identifiers should be invalidated on the server after logout, while stateless JWT tokens should be short-lived so that the window of opportunity for misuse is minimized. This dual approach addresses both session-based and token-based authentication mechanisms.",
+      "evidence": "-   Stateful session identifiers should be invalidated on the server after logout.\n    Stateless JWT tokens should rather be short-lived so that the window of \n    opportunity for an attacker is minimized. For longer lived JWTs it's highly recommended to\n    follow the OAuth standards to revoke access.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_112"
+    },
+    {
+      "question": "What constitutes an access control flaw when unauthenticated or non-admin users access restricted pages?",
+      "answer": "If an unauthenticated user can access a restricted page, it is a flaw. Similarly, if a non-admin user can access the admin page, this is also a flaw. Both scenarios represent broken access control where authorization checks are insufficient or missing.",
+      "evidence": "If an unauthenticated user can access either page, it's a flaw. If a\nnon-admin can access the admin page, this is a flaw.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_113"
+    },
+    {
+      "question": "What is the status of CWE-264 in relation to the Broken Access Control mapped CWEs?",
+      "answer": "CWE-264 (Permissions, Privileges, and Access Controls) is listed among the mapped CWEs for Broken Access Control but is noted as one that should no longer be used. Other related CWEs include CWE-275 (Permission Issues), CWE-276 (Incorrect Default Permissions), and CWE-284 (Improper Access Control).",
+      "evidence": "[CWE-264 Permissions, Privileges, and Access Controls (should no longer be used)](https://cwe.mitre.org/data/definitions/264.html)\n\n[CWE-275 Permission Issues](https://cwe.mitre.org/data/definitions/275.html)\n\n[CWE-276 Incorrect Default Permissions](https://cwe.mitre.org/data/definitions/276.html)\n\n[CWE-284 Improper Access Control](https://cwe.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_114"
+    },
+    {
+      "question": "How does the focus of A02:2021-Cryptographic Failures differ from its predecessor in terms of root cause versus symptom?",
+      "answer": "Unlike its predecessor which focused on the broad symptom of data exposure, A02:2021-Cryptographic Failures focuses on failures related to cryptography (or lack thereof) as the root cause. This shift allows practitioners to address the underlying cryptographic issues rather than just observing the resulting data exposure.",
+      "evidence": "Exposure*, which is more of a broad symptom rather than a root cause,\nthe focus is on failures related to cryptography (or lack thereof).",
+      "question_type": "comparative",
+      "qa_id": "owasp_top10_115"
+    },
+    {
+      "question": "Which notable CWEs are included under the Cryptographic Failures category and what do they address?",
+      "answer": "Notable CWEs included under Cryptographic Failures are CWE-259 (Use of Hard-coded Password) and CWE-327 (Broken or Risky cryptographic algorithms). These cryptographic weaknesses often lead to exposure of sensitive data.",
+      "evidence": "Which often lead to exposure of sensitive data. Notable Common Weakness Enumerations (CWEs) included\nare *CWE-259: Use of Hard-coded Password*, *CWE-327: Broken or Risky\nCrypto Algorithm*, and *CWE-331 Insufficient Entropy*.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_116"
+    },
+    {
+      "question": "Why should authenticated encryption always be used instead of just encryption according to the OWASP cryptographic guidance?",
+      "answer": "The OWASP guidance states that authenticated encryption should always be used instead of just encryption. Additionally, keys should be generated cryptographically randomly and stored in memory, and initialization vectors should never be used twice for a fixed key.",
+      "evidence": "    should never be used twice for a fixed key.\n\n-   Always use authenticated encryption instead of just encryption.\n\n-   Keys should be generated cryptographically randomly and stored in\n    memory as byte arrays. If a password is used, then it must be converted\n    to a key via an appropriate password base key derivation function.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_117"
+    },
+    {
+      "question": "How should cryptographic keys be generated and stored according to the OWASP Top 10 prevention guidelines?",
+      "answer": "Keys should be generated cryptographically randomly and stored in memory as byte arrays. If a password is used instead of a generated key, then it must be converted to a key using an appropriate key derivation function.",
+      "evidence": "-   Keys should be generated cryptographically randomly and stored in\n    memory as byte arrays. If a password is used, then it must be converted\n    to a key via an appropriate password base key derivation function.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_118"
+    },
+    {
+      "question": "How can automatic database decryption be exploited via SQL injection in the cryptographic failures attack scenario?",
+      "answer": "In the attack scenario, data is automatically decrypted when retrieved from the database. This means that a SQL injection flaw can allow an attacker to retrieve credit card numbers in clear text, because the database performs the decryption before returning the data.",
+      "evidence": "However, this data is\nautomatically decrypted when retrieved, allowing a SQL injection flaw to\nretrieve credit card numbers in clear text.",
+      "question_type": "comparative",
+      "qa_id": "owasp_top10_119"
+    },
+    {
+      "question": "What factor contributes to insecure design according to the OWASP Top 10 description of the category?",
+      "answer": "One of the factors that contribute to insecure design is the lack of business risk profiling inherent in the software or system being developed. This leads to a failure to determine what level of security design is required for the application.",
+      "evidence": "One of the factors that contribute to insecure design is the lack of business risk profiling inherent in the software or system being developed, and thus the failure to determine what level of security design is required.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_120"
+    },
+    {
+      "question": "Can a secure design still contain exploitable vulnerabilities, and if so, how?",
+      "answer": "Yes, a secure design can still have implementation defects leading to vulnerabilities that may be exploited. Design flaws and implementation defects have different root causes and remediation approaches, which is why the OWASP Top 10 differentiates between them.",
+      "evidence": "We differentiate between design flaws and implementation defects for a reason, they have different root causes and remediation. A secure design can still have implementation defects leading to vulnerabilities that may be exploited.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_121"
+    },
+    {
+      "question": "When should threat modeling be integrated into the development process according to the Secure Design guidance?",
+      "answer": "Threat modeling should be integrated into refinement sessions or similar activities. During these sessions, teams should look for changes in data flows and access control or other security controls that could introduce new risks.",
+      "evidence": "Threat modeling should be integrated into refinement sessions (or similar activities); look for changes in data flows and access control or other security controls.",
+      "question_type": "procedural",
+      "qa_id": "owasp_top10_122"
+    },
+    {
+      "question": "Why is patching IoT devices particularly challenging compared to other systems according to the OWASP Top 10?",
+      "answer": "The internet of things (IoT) is frequently difficult or impossible to patch, yet the importance of patching them can be great. This creates a significant security challenge where known vulnerabilities may persist in IoT devices due to the inherent difficulty of applying updates.",
+      "evidence": "-   While the internet of things (IoT) is frequently difficult or\n    impossible to patch, the importance of patching them can be great",
+      "question_type": "comparative",
+      "qa_id": "owasp_top10_123"
+    },
+    {
+      "question": "What is the root cause of most authentication attacks according to the OWASP Top 10 attack scenarios?",
+      "answer": "Most authentication attacks occur due to the continued use of passwords as a sole factor. Password-only authentication, once considered a best practice, is now recognized as insufficient and a primary driver of authentication-related attacks.",
+      "evidence": "**Scenario #2:** Most authentication attacks occur due to the continued\nuse of passwords as a sole factor. Once considered best practices,\npassword rotation and complexity requirements encourage users to use\nand reuse weak passwords. Organizations are recommended to stop these\npractices per NIST 800-63 and use multi-factor authentication.",
+      "question_type": "causal",
+      "qa_id": "owasp_top10_124"
+    }
+  ]
+}

@@ -1,0 +1,712 @@
+{
+  "corpus_id": "gcs",
+  "qa_pairs": [
+    {
+      "question": "What tools does Google Cloud provide for interacting with Cloud Storage?",
+      "answer": "Google Cloud provides several tools for interacting with Cloud Storage: the Google Cloud console (web-based UI), the Google Cloud CLI (gcloud storage commands), client libraries for C++, C#, Go, Java, Node.js, PHP, Python, and Ruby, REST APIs (JSON API and XML API), Terraform for infrastructure-as-code, and additional options like gRPC API, Cloud Storage FUSE, and the S3-compatible API.",
+      "evidence": "You can interact with Cloud Storage by using the following tools:\n* **Console**: The Google Cloud console provides a visual interface for\nyou to manage your data in a browser.\n* **Google Cloud CLI**: The gcloud CLI allows you to interact\nwith Cloud Storage through a terminal using\n`gcloud storage` commands.\n* **Client libraries**: The Cloud Storage client libraries allow\nyou to manage your data using one of your preferred languages, including C++,\nC#, Go, Java, Node.js, PHP, Python, and Ruby.",
+      "question_type": "factual",
+      "qa_id": "gcs_005"
+    },
+    {
+      "question": "What are the two REST APIs available for Cloud Storage?",
+      "answer": "Cloud Storage offers two REST APIs: the JSON API and the XML API. The JSON API is the primary API and provides full access to Cloud Storage features. The XML API provides interoperability with Amazon S3 and is useful for migrating data between cloud providers.",
+      "evidence": "REST APIs: Manage your data using the JSON or XML API.",
+      "question_type": "factual",
+      "qa_id": "gcs_006"
+    },
+    {
+      "question": "What IAM role is needed to create a Cloud Storage bucket?",
+      "answer": "To create a bucket, you need the Storage Admin role (roles/storage.admin). This role grants the storage.buckets.create permission, which is required for bucket creation. Alternatively, you can use a custom role that includes the storage.buckets.create permission.",
+      "evidence": "ask your administrator to grant you the Storage Admin (roles/storage.admin) IAM role for the project.",
+      "question_type": "factual",
+      "qa_id": "gcs_008"
+    },
+    {
+      "question": "How do you create a bucket using the gcloud CLI?",
+      "answer": "To create a bucket using the gcloud CLI, you use the 'gcloud storage buckets create' command followed by the bucket URI in the format gs://BUCKET_NAME. You can optionally specify a location with the --location flag. For example: gcloud storage buckets create gs://BUCKET_NAME --location=BUCKET_LOCATION.",
+      "evidence": "`gcloud storage buckets create` command:\n```\ngcloud storage buckets create gs://BUCKET_NAME --location=BUCKET_LOCATION",
+      "question_type": "procedural",
+      "qa_id": "gcs_009"
+    },
+    {
+      "question": "What permissions are required to upload objects to a Cloud Storage bucket?",
+      "answer": "To upload objects to a Cloud Storage bucket, you need the storage.objects.create permission. This permission is included in the Storage Object User role (roles/storage.objectUser). If using the Google Cloud console, you also need the storage.buckets.list permission (available in the Viewer basic role or the Storage Object User role combined with the Viewer role).",
+      "evidence": "To get the permissions that you need to upload objects to a bucket, ask your\nadministrator to grant you the Storage Object User\n(`roles/storage.objectUser`) IAM role on the bucket. This",
+      "question_type": "factual",
+      "qa_id": "gcs_010"
+    },
+    {
+      "question": "How do you upload an object to Cloud Storage using the gcloud CLI?",
+      "answer": "To upload an object using the gcloud CLI, use the 'gcloud storage cp' command with the local file path as the source and the bucket URI as the destination. The format is: gcloud storage cp OBJECT_LOCATION gs://DESTINATION_BUCKET_NAME/. You can optionally specify a new name for the object by appending it to the destination path.",
+      "evidence": "Use the `gcloud storage cp` command:\n```\ngcloud storage cp OBJECT_LOCATION gs://DESTINATION_BUCKET_NAME",
+      "question_type": "procedural",
+      "qa_id": "gcs_011"
+    },
+    {
+      "question": "What IAM role is required to download objects from a Cloud Storage bucket?",
+      "answer": "To download objects from a Cloud Storage bucket, you need the Storage Object User role (roles/storage.objectUser), which includes the storage.objects.get permission. If using the Google Cloud console, you also need storage.buckets.list and storage.objects.list permissions.",
+      "evidence": "To get the permissions that you need to delete objects, ask your administrator\nto grant you the Storage Object User (`roles/storage.objectUser`)\nIAM role for the bucket that contains the objects you want to",
+      "question_type": "factual",
+      "qa_id": "gcs_013"
+    },
+    {
+      "question": "How do you list objects in a Cloud Storage bucket using the gcloud CLI?",
+      "answer": "To list objects in a Cloud Storage bucket using the gcloud CLI, use the 'gcloud storage ls' command followed by the bucket URI: gcloud storage ls gs://BUCKET_NAME. This will display all objects in the specified bucket.",
+      "evidence": "Use the `gcloud storage ls` command:\n\n```\ngcloud storage ls gs://BUCKET_NAME\n```",
+      "question_type": "procedural",
+      "qa_id": "gcs_014"
+    },
+    {
+      "question": "How can you list objects in a specific folder within a Cloud Storage bucket?",
+      "answer": "To list objects in a specific folder within a Cloud Storage bucket, use the 'gcloud storage ls' command with the bucket name and folder path: gcloud storage ls gs://BUCKET_NAME/FOLDER_NAME. This returns only the objects within the specified folder.",
+      "evidence": "Use the `gcloud storage ls` command to list the objects in a folder:\n\n```\ngcloud storage ls gs://BUCKET_NAME/FOLDER_NAME\n```",
+      "question_type": "procedural",
+      "qa_id": "gcs_015"
+    },
+    {
+      "question": "How does the prefix parameter work when listing objects in the JSON API?",
+      "answer": "When the prefix parameter is set in a list objects request, the operation is scoped to only return objects and folders under that prefix. When combined with the delimiter parameter, the prefixes[] list in the response is populated with the names of folders under the specified prefix. Without the delimiter, the entire tree under the prefix is returned.",
+      "evidence": "When the `prefix` parameter is set, the list operation is scoped to only return objects and folders under the prefix. When the `delimiter` parameter is set, the `prefixes[]` list in the response populates with the names of folders under the specified prefix.",
+      "question_type": "factual",
+      "qa_id": "gcs_016"
+    },
+    {
+      "question": "What is the matchGlob parameter used for when listing objects?",
+      "answer": "The matchGlob parameter is used to filter objects by glob expression in a list objects request. For example, matchGlob=**.jpeg matches all objects that end in .jpeg. When using matchGlob, you must set the delimiter to '/'.",
+      "evidence": "To use wildcards in your list objects request and match objects by glob expression, use the `matchGlob` parameter. For example, `matchGlob=**.jpeg` matches all objects that end in `.jpeg`. When you use `matchGlob`, you must set `delimiter` to `/`.",
+      "question_type": "factual",
+      "qa_id": "gcs_017"
+    },
+    {
+      "question": "How do you filter objects by prefix and suffix using wildcards in the gcloud CLI?",
+      "answer": "You can use wildcards in the gcloud storage ls command to filter objects. For example, 'gcloud storage ls gs://my-bucket/image*.png' lists objects beginning with 'image' and ending with '.png'. Double-star wildcards (**) match zero or more folder levels, like 'gcloud storage ls gs://my-bucket/**/*.jpeg' which lists all .jpeg files in any folder or subfolder.",
+      "evidence": "You can use wildcards in your `gcloud storage ls` command to filter objects by prefix or suffix. For example, the following command only lists objects in the bucket `my-bucket` whose name begins with `image` and ends with `.png`:\n\n```\ngcloud storage ls gs://my-bucket/image*.png\n```",
+      "question_type": "procedural",
+      "qa_id": "gcs_018"
+    },
+    {
+      "question": "How do you delete an object from Cloud Storage using the gcloud CLI?",
+      "answer": "To delete an object from Cloud Storage using the gcloud CLI, use the 'gcloud storage rm' command followed by the full URI of the object: gcloud storage rm gs://BUCKET_NAME/OBJECT_NAME. A successful deletion shows a confirmation message indicating the object was removed.",
+      "evidence": "Use the Google Cloud CLI command `gcloud storage rm`:\n\n```\ngcloud storage rm gs://BUCKET_NAME/OBJECT_NAME\n```",
+      "question_type": "procedural",
+      "qa_id": "gcs_019"
+    },
+    {
+      "question": "What IAM role is needed to delete objects from a Cloud Storage bucket?",
+      "answer": "To delete objects from a Cloud Storage bucket, you need the Storage Object User role (roles/storage.objectUser), which includes the storage.objects.delete permission. For the Google Cloud console, you additionally need the Storage Admin role (roles/storage.admin) or the Viewer basic role along with the Storage Object User role.",
+      "evidence": "To get the permissions that you need to delete objects, ask your administrator to grant you the Storage Object User (roles/storage.objectUser) IAM role for the bucket that contains the objects you want to delete.",
+      "question_type": "factual",
+      "qa_id": "gcs_020"
+    },
+    {
+      "question": "What is the difference between uniform and fine-grained access control in Cloud Storage?",
+      "answer": "Uniform access control uses IAM alone to manage permissions and applies them to all objects in a bucket or groups of objects with common name prefixes. Fine-grained access control uses both IAM and Access Control Lists (ACLs) together, allowing per-object permissions. Uniform is recommended because fine-grained access requires coordinating two access control systems, increasing the chance of unintentional data exposure and making auditing more complicated.",
+      "evidence": "permissions using *uniform* or *fine-grained* access.\n* **Uniform (recommended)**: Uniform bucket-level access allows you to use\nIdentity and Access Management (IAM) alone to manage permissions. IAM\napplies permissions to all the objects contained inside the bucket or groups of\nobjects with common name prefixes. IAM also allows you to use",
+      "question_type": "comparative",
+      "qa_id": "gcs_022"
+    },
+    {
+      "question": "How do IAM and ACLs interact in Cloud Storage?",
+      "answer": "IAM and ACLs act in parallel \u2014 in order for a user to access a Cloud Storage resource, only one of the systems needs to grant that user permission. This means if a bucket's IAM policy restricts access to a few users but an object has an ACL making it publicly readable, that specific object is still exposed to the public. This is why uniform bucket-level access is recommended.",
+      "evidence": "Cloud Storage offers two systems for granting users access your buckets and objects: IAM and Access Control Lists (ACLs). These systems act in parallel - in order for a user to access a Cloud Storage resource, only one of the systems needs to grant that user permission.",
+      "question_type": "factual",
+      "qa_id": "gcs_023"
+    },
+    {
+      "question": "What are signed URLs in Cloud Storage?",
+      "answer": "Signed URLs provide time-limited read or write access to an object through a URL that you generate. Anyone with the URL can access the object for the specified duration, regardless of whether they have a user account. Signed URLs can be used alongside IAM and ACLs \u2014 for example, you can use IAM to limit bucket access to a few people, then create a signed URL to let others access a specific resource.",
+      "evidence": "Use signed URLs to give time-limited read or write access to an object through a URL you generate. Anyone with whom you share the URL can access the object for the duration of time you specify, regardless of whether or not they have a user account.",
+      "question_type": "definitional",
+      "qa_id": "gcs_024"
+    },
+    {
+      "question": "What is public access prevention in Cloud Storage?",
+      "answer": "Public access prevention restricts public access to your buckets and objects. When enabled, users who gain access through allUsers and allAuthenticatedUsers are disallowed access to data, effectively preventing any public exposure of the bucket's contents.",
+      "evidence": "Use public access prevention to restrict public access to your buckets and objects. When you enable public access prevention, users who gain access through `allUsers` and `allAuthenticatedUsers` are disallowed access to data.",
+      "question_type": "definitional",
+      "qa_id": "gcs_026"
+    },
+    {
+      "question": "What is Bucket IP Filtering in Cloud Storage?",
+      "answer": "Bucket IP filtering restricts access to a bucket based on the source IP address of the request. You configure a list of permitted IP address ranges, including public IP addresses and IP addresses within your Virtual Private Cloud. Any requests originating from an IP address not on your list are blocked, ensuring only authorized users can access your bucket.",
+      "evidence": "Use Bucket IP filtering to restrict access on your bucket based on the source IP address of the request. Bucket IP filtering adds a layer of security by preventing unauthorized networks from accessing your bucket and its data. You can configure a list of permitted IP address ranges, including public IP addresses, ranges of public IP addresses and IP addresses within your Virtual Private Cloud.",
+      "question_type": "definitional",
+      "qa_id": "gcs_027"
+    },
+    {
+      "question": "What are Credential Access Boundaries in Cloud Storage?",
+      "answer": "Credential Access Boundaries allow you to downscope the permissions available to an OAuth 2.0 access token. You define a boundary specifying which buckets the token can access and an upper bound on the permissions available. You then create an OAuth 2.0 access token and exchange it for a new token that respects the boundary.",
+      "evidence": "Use Credential Access Boundaries to downscope the permissions that are available to an OAuth 2.0 access token. First, you define a Credential Access Boundary that specifies which buckets the token can access, as well as an upper bound on the permissions that are available on that bucket.",
+      "question_type": "definitional",
+      "qa_id": "gcs_028"
+    },
+    {
+      "question": "What are the four encryption options available in Cloud Storage?",
+      "answer": "Cloud Storage offers four encryption options: (1) Standard/Default encryption where Google manages the keys, (2) Customer-managed encryption keys (CMEK) where you manage keys through Cloud Key Management Service, (3) Customer-supplied encryption keys (CSEK) where you provide your own keys with each request, and (4) Client-side encryption where you encrypt data before sending it to Cloud Storage.",
+      "evidence": "*Server-side encryption*: Encryption that occurs after Cloud Storage\nreceives your data, but before the data is written to disk and stored.\n* *Customer-managed encryption keys* (CMEK): You can create and manage\nyour encryption keys through Cloud Key Management Service. CMEK can be stored as",
+      "question_type": "factual",
+      "qa_id": "gcs_029"
+    },
+    {
+      "question": "How does default encryption work in Cloud Storage?",
+      "answer": "Cloud Storage always encrypts your data on the server side before it is written to disk, at no additional charge. This is the standard behavior and uses Google-managed encryption keys. It is ideal for most users who need their data encrypted at rest without wanting to manage encryption keys, and it satisfies many compliance requirements automatically.",
+      "evidence": "Cloud Storage always encrypts your data on the server side, before it is written to disk, at no additional charge. Besides this standard, Cloud Storage behavior, there are additional ways to encrypt your data when using Cloud Storage.",
+      "question_type": "factual",
+      "qa_id": "gcs_030"
+    },
+    {
+      "question": "What is the difference between CMEK and CSEK encryption in Cloud Storage?",
+      "answer": "CMEK (Customer-managed encryption keys) allows you to manage encryption keys through Cloud Key Management Service, stored as software keys, in an HSM cluster, or externally, providing compliance and control for standards like PCI-DSS or HIPAA. CSEK (Customer-supplied encryption keys) requires you to provide your own keys with each request to Cloud Storage \u2014 the key is not stored by Google and is best for scenarios with an existing external key management system.",
+      "evidence": "Customer-managed encryption keys (CMEK): You can create and manage your encryption keys through Cloud Key Management Service. CMEK can be stored as software keys, in an HSM cluster, or externally. Customer-supplied encryption keys (CSEK): You can create and manage your own encryption keys. These keys act as an additional encryption layer on top of the standard Cloud Storage encryption.",
+      "question_type": "comparative",
+      "qa_id": "gcs_031"
+    },
+    {
+      "question": "What is Object Versioning in Cloud Storage?",
+      "answer": "Object Versioning preserves deleted objects as versioned, noncurrent objects that remain accessible in your bucket until explicitly removed. When enabled on a bucket, Cloud Storage retains a noncurrent object version each time you replace or delete a live object version. Noncurrent versions retain the name of the object but are uniquely identified by their generation number.",
+      "evidence": "Object Versioning preserves deleted objects as versioned, noncurrent objects that remain accessible in your bucket until explicitly removed. This feature is used to track changes to objects and to enable recovery of specific versions of an object.",
+      "question_type": "definitional",
+      "qa_id": "gcs_032"
+    },
+    {
+      "question": "What happens when you delete a live object in a bucket with Object Versioning enabled?",
+      "answer": "When you delete a live object without specifying its generation number in a bucket with Object Versioning enabled, the live version becomes a noncurrent version and keeps the same generation number. The bucket then has no live version of that object. If you specify the generation number in the deletion request, the live version is either permanently deleted (if soft delete is disabled) or soft-deleted (if soft delete is enabled).",
+      "evidence": "Delete the live version of `dog.png` without specifying its generation number. | The live version becomes a noncurrent version and keeps the same generation number.",
+      "question_type": "causal",
+      "qa_id": "gcs_033"
+    },
+    {
+      "question": "What happens when you disable Object Versioning on a bucket?",
+      "answer": "When you disable Object Versioning, the bucket no longer accumulates new noncurrent versions of objects. However, object versions that already exist in the bucket are unaffected \u2014 the existing noncurrent versions remain stored until you explicitly delete them.",
+      "evidence": "If you disable Object Versioning: The bucket no longer accumulates new noncurrent versions of objects. Object versions that already exist in the bucket are unaffected.",
+      "question_type": "causal",
+      "qa_id": "gcs_034"
+    },
+    {
+      "question": "How are noncurrent objects charged in Cloud Storage?",
+      "answer": "There is no default limit on the number of object versions you can have. Each noncurrent version of an object is charged at the same rate it was when it was live. Early deletion charges apply only when an object version is removed from the bucket, not when the version becomes noncurrent.",
+      "evidence": "There is no default limit on the number of object versions you can have. Each noncurrent version of an object is charged at the same rate it was when it was live. Early deletion charges apply only when an object version is removed from the bucket, not when the version becomes noncurrent.",
+      "question_type": "factual",
+      "qa_id": "gcs_036"
+    },
+    {
+      "question": "What is the difference between noncurrent objects and soft-deleted objects in terms of accessibility?",
+      "answer": "Noncurrent objects are accessible and readable \u2014 they can be listed, viewed, and restored. Soft-deleted objects are retained offline and are non-readable; restoring them requires specific IAM permissions available to the Storage Admin (roles/storage.admin) IAM role.",
+      "evidence": "Noncurrent objects are accessible and readable, while soft-deleted objects are retained offline and are non-readable. Restoring soft-deleted objects requires specific IAM permissions that are available to the Storage Admin (`roles/storage.admin`) IAM role.",
+      "question_type": "comparative",
+      "qa_id": "gcs_037"
+    },
+    {
+      "question": "What happens to noncurrent object metadata in Cloud Storage?",
+      "answer": "Noncurrent versions of objects have their own metadata, which may differ from the metadata of the live version. A noncurrent version retains its ACLs and does not necessarily have the same permissions as the live version. Each version has one set of metadata, and only the latest metageneration number refers to current metadata.",
+      "evidence": "Noncurrent versions of objects have their own metadata, which may differ from the metadata of the live version. Most importantly, a noncurrent version retains its ACLs and does not necessarily have the same permissions as the live version.",
+      "question_type": "factual",
+      "qa_id": "gcs_038"
+    },
+    {
+      "question": "What is Object Lifecycle Management in Cloud Storage?",
+      "answer": "Object Lifecycle Management is a feature that supports common use cases like setting a Time to Live (TTL) for objects, retaining noncurrent versions, or downgrading storage classes to help manage costs. You define a lifecycle configuration on a bucket containing a set of rules, and Cloud Storage automatically performs specified actions on objects when they meet the criteria of the rules.",
+      "evidence": "To support common use cases like setting a Time to Live (TTL) for objects, retaining noncurrent versions of objects, or \"downgrading\" storage classes of objects to help manage costs, Cloud Storage offers the Object Lifecycle Management feature.",
+      "question_type": "definitional",
+      "qa_id": "gcs_039"
+    },
+    {
+      "question": "What are the three lifecycle actions available in Cloud Storage?",
+      "answer": "Cloud Storage provides three lifecycle actions: (1) Delete, which deletes an object when it meets all conditions; (2) SetStorageClass, which changes the storage class of an object; and (3) AbortIncompleteMultipartUpload, which aborts an incomplete multipart upload and deletes associated parts.",
+      "evidence": "A lifecycle rule specifies exactly one of the following actions:\n* `Delete`\n* `SetStorageClass`\n* `AbortIncompleteMultipartUpload`",
+      "question_type": "factual",
+      "qa_id": "gcs_040"
+    },
+    {
+      "question": "How do multiple lifecycle rules interact when they are simultaneously satisfied for the same object?",
+      "answer": "When multiple rules have their conditions satisfied simultaneously for a single object, Cloud Storage performs only one action based on priority: the Delete action takes precedence over any SetStorageClass action, and among SetStorageClass actions, the one that switches to the storage class with the lowest at-rest storage pricing takes precedence.",
+      "evidence": "+ The `Delete` action takes precedence over any `SetStorageClass` action.\n+ The `SetStorageClass` action that switches the object to the storage class\nwith the lowest at-rest storage pricing takes precedence.",
+      "question_type": "factual",
+      "qa_id": "gcs_041"
+    },
+    {
+      "question": "How long can it take for changes to a bucket's lifecycle configuration to take effect?",
+      "answer": "Changes to a bucket's lifecycle configuration can take up to 24 hours to go into effect. During this time, Object Lifecycle Management might still perform actions based on the old configuration. For example, if you change an age condition from 10 days to 20 days, an object that is 11 days old could still be deleted up to 24 hours later based on the old criteria.",
+      "evidence": "Changes to a bucket's lifecycle configuration can take up to 24 hours to go into effect, and Object Lifecycle Management might still perform actions based on the old configuration during this time.",
+      "question_type": "factual",
+      "qa_id": "gcs_042"
+    },
+    {
+      "question": "What lifecycle conditions can be used with the AbortIncompleteMultipartUpload action?",
+      "answer": "Only three lifecycle conditions can be used with the AbortIncompleteMultipartUpload action: age, matchesPrefix, and matchesSuffix. Attempting to create a rule that uses this action in combination with other conditions results in an error.",
+      "evidence": "Only the following lifecycle conditions can be used with this action:\n* `age`\n* `matchesPrefix`\n* `matchesSuffix`\nAttempting to create a rule that uses the `AbortIncompleteMultipartUpload`\naction in combination with other conditions results in an error.",
+      "question_type": "factual",
+      "qa_id": "gcs_043"
+    },
+    {
+      "question": "How does the 'age' lifecycle condition work?",
+      "answer": "The age condition is satisfied when a resource reaches the specified age in days, measured from the resource's creation time. For objects, the creation time is when the upload completes. The age of an object is unaffected by the object becoming noncurrent. If age is set to 0, the condition is satisfied at midnight UTC after the object is created.",
+      "evidence": "The `age` condition is satisfied when a resource reaches the specified age (in days). Age is measured from the resource's creation time. For objects, the creation time is the time when the object is successfully written to the bucket, such as when an upload completes.",
+      "question_type": "factual",
+      "qa_id": "gcs_044"
+    },
+    {
+      "question": "What is the 'isLive' lifecycle condition used for?",
+      "answer": "The isLive condition is typically used in conjunction with Object Versioning. When set to false, it is satisfied for any noncurrent version of an object. When set to true, it is satisfied for the live version. If versioning is not used, all objects are considered live and match when isLive is true.",
+      "evidence": "The `isLive` condition is typically only used in conjunction with Object Versioning. When set to `false`, this condition is satisfied for any noncurrent version of an object. When set to `true`, this condition is satisfied for the live version of an object. If you don't use versioning, all your objects are considered live and match when `isLive` is `true`.",
+      "question_type": "factual",
+      "qa_id": "gcs_045"
+    },
+    {
+      "question": "How does the numNewerVersions lifecycle condition work?",
+      "answer": "The numNewerVersions condition is used with Object Versioning. If set to N, an object version satisfies the condition when there are at least N versions (including the live version) newer than it. For a live object version, the number of newer versions is 0. For the most recent noncurrent version, the number is 1 (or 0 if there is no live version).",
+      "evidence": "The `numNewerVersions` condition is typically only used in conjunction with Object Versioning. If the value of this condition is set to *N*, an object version satisfies the condition when there are at least *N* versions (including the live version) newer than it. For a live object version, the number of newer versions is considered to be 0.",
+      "question_type": "factual",
+      "qa_id": "gcs_046"
+    },
+    {
+      "question": "What are the pricing advantages of using SetStorageClass via Object Lifecycle Management compared to manually rewriting an object?",
+      "answer": "Using SetStorageClass through Object Lifecycle Management does not rewrite an object, providing pricing advantages: there are never inter-region replication charges, retrieval fees, or early deletion fees associated with the storage class change. Additionally, the object's time spent in the original storage class counts towards any minimum storage duration for the new storage class.",
+      "evidence": "Unlike changing an object's storage class manually, using `SetStorageClass` does not rewrite an object. This gives Object Lifecycle Management certain pricing advantages: There are never inter-region replication charges, retrieval fees, or early deletion fees associated with the storage class change.",
+      "question_type": "comparative",
+      "qa_id": "gcs_048"
+    },
+    {
+      "question": "What happens to lifecycle-managed objects that are eligible for deletion but not yet deleted?",
+      "answer": "Cloud Storage performs lifecycle actions asynchronously, so there can be a lag between when conditions are satisfied and when the action is taken. However, at-rest storage costs are waived for objects meeting specific criteria: they are in a bucket with soft delete disabled, subject to a Delete rule where the only conditions are age (or age + matchesStorageClass), those conditions are satisfied, and the objects have no holds.",
+      "evidence": "Applicable charges still apply while the object remains in its original state, with the exception of at-rest storage costs, which are waived if the object meets all of the following criteria: The object is in a bucket with soft delete disabled. The object is subject to a rule with a `Delete` action.",
+      "question_type": "factual",
+      "qa_id": "gcs_049"
+    },
+    {
+      "question": "What are the four storage classes available in Cloud Storage?",
+      "answer": "Cloud Storage offers four primary storage classes: Standard storage (for frequently accessed 'hot' data, no minimum storage duration), Nearline storage (for data accessed about once per month, 30-day minimum), Coldline storage (for data accessed at most once a quarter, 90-day minimum), and Archive storage (for data accessed less than once a year, 365-day minimum).",
+      "evidence": "| Standard storage | `STANDARD` | None | None | * >99.99% in multi-regions and dual-regions * 99.99% in regions |\n| Nearline storage | `NEARLINE` | 30 days | Yes | * 99.95% in multi-regions and dual-regions * 99.9% in regions |\n| Coldline storage | `COLDLINE` | 90 days | Yes | * 99.95% in multi-regions and dual-regions * 99.9% in regions |\n| Archive storage | `ARCHIVE` | 365 days | Yes | * 99.95% in multi-regions and dual-regions * 99.9% in regions |",
+      "question_type": "factual",
+      "qa_id": "gcs_050"
+    },
+    {
+      "question": "What is Nearline storage ideal for?",
+      "answer": "Nearline storage is ideal for data you plan to read or modify on average once per month or less. It's appropriate for data backup, long-tail multimedia content, and data archiving. For example, continuously adding files and accessing them once a month for analysis is a good Nearline use case. However, for data accessed less frequently than once a quarter, Coldline or Archive storage are more cost-effective.",
+      "evidence": "Nearline storage is ideal for data you plan to read or modify on average once per month or less. For example, if you want to continuously add files to Cloud Storage and plan to access those files once a month for analysis, Nearline storage is a great choice.",
+      "question_type": "factual",
+      "qa_id": "gcs_053"
+    },
+    {
+      "question": "How does Archive storage differ from other cloud providers' coldest storage services?",
+      "answer": "Unlike the coldest storage services offered by other cloud providers, data in Archive storage is available within milliseconds, not hours or days. Archive storage has the lowest cost but with higher costs for data access and operations, and a 365-day minimum storage duration. It's best for data accessed less than once a year, such as archived regulatory data and disaster recovery.",
+      "evidence": "Archive storage is the lowest-cost, highly durable storage service for data archiving, online backup, and disaster recovery. Unlike the \"coldest\" storage services offered by other Cloud providers, your data is available within milliseconds, not hours or days.",
+      "question_type": "comparative",
+      "qa_id": "gcs_054"
+    },
+    {
+      "question": "What are the legacy storage classes in Cloud Storage?",
+      "answer": "Cloud Storage supports three legacy storage classes: Multi-Regional storage (equivalent to Standard but only for multi-regions or dual-regions), Regional storage (equivalent to Standard but only for regions), and Durable Reduced Availability (DRA) storage (similar to Standard but with higher operation pricing and lower availability at 99% SLA). These classes cannot be set using the Google Cloud console.",
+      "evidence": "Multi-Regional storage can only be used for objects stored in\nmulti-regions or dual-regions.\n* **Regional storage**: Equivalent to Standard storage, except\nRegional storage can only be used for objects stored in regions.\n* **Durable Reduced Availability (DRA) storage**: Similar to Standard storage except:\n+ DRA has higher pricing for operations.\n+ DRA has lower performance, particularly in terms of\navailability (DRA has a 99% availability SLA).",
+      "question_type": "factual",
+      "qa_id": "gcs_056"
+    },
+    {
+      "question": "What happens when the default storage class of a bucket is changed?",
+      "answer": "When you change the default storage class of a bucket, it only affects new objects added to the bucket going forward. Objects that already exist in the bucket retain their existing storage class and are unaffected by the change. If no default storage class is specified when creating a bucket, it is set to Standard storage.",
+      "evidence": "+ If you don't specify a default storage class when you create a bucket,\nthat bucket's default storage class is set to Standard storage.\n+ Changing the default storage class of a bucket does not affect any\nof the objects that already exist in the bucket.",
+      "question_type": "causal",
+      "qa_id": "gcs_057"
+    },
+    {
+      "question": "What is Bucket Lock in Cloud Storage?",
+      "answer": "Bucket Lock lets you configure a retention policy on a Cloud Storage bucket, governing how long objects must be retained. The retention policy prevents objects from being deleted or replaced until their age is greater than the retention period. You can also lock the retention policy, permanently preventing it from being reduced or removed. This feature provides immutable storage and can help meet regulatory compliance requirements.",
+      "evidence": "This page discusses the Bucket Lock feature, which lets you configure a Cloud Storage bucket's retention policy. This policy governs how long objects in the bucket must be retained. The feature also lets you lock the bucket's retention policy, permanently preventing the policy from being reduced or removed.",
+      "question_type": "definitional",
+      "qa_id": "gcs_058"
+    },
+    {
+      "question": "What regulatory frameworks can Bucket Lock help comply with?",
+      "answer": "In conjunction with Detailed audit logging mode, Bucket Lock can help with regulatory and compliance requirements associated with FINRA, SEC, and CFTC. It can also help address certain health care industry retention regulations. The feature provides immutable storage on Cloud Storage.",
+      "evidence": "In conjunction with Detailed audit logging mode, which logs Cloud Storage request and response details, Bucket Lock can help with regulatory and compliance requirements, such as those associated with FINRA, SEC, and CFTC. Bucket Lock can also help you address certain health care industry retention regulations.",
+      "question_type": "factual",
+      "qa_id": "gcs_059"
+    },
+    {
+      "question": "How are retention periods measured in Cloud Storage?",
+      "answer": "Retention periods are measured in seconds. A day is 86,400 seconds, a week is 604,800 seconds (7 days), a month is 2,678,400 seconds (31 days), and a year is 31,557,600 seconds (365.25 days). The maximum retention period is 3,155,760,000 seconds (100 years).",
+      "evidence": "Retention periods are measured in seconds; however, some tools, like the Google Cloud console and the Google Cloud CLI allow you to set and view retention periods with other units of time for convenience. The following conversions apply in such cases: A day is considered to be 86,400 seconds. A week is considered to be 7 days, which is 604,800 seconds. A month is considered to be 31 days, which is 2,678,400 seconds. A year is considered to be 365.25 days, which is 31,557,600 seconds.",
+      "question_type": "factual",
+      "qa_id": "gcs_062"
+    },
+    {
+      "question": "What is the gcloud CLI format for specifying a retention period?",
+      "answer": "The format is P#Y#M#W#DT#H#M#S, where # represents an integer followed by a unit of time. Y=years, W=weeks, D=days, H=hours, S=seconds. M means months when after P, and minutes when after T. At least one integer-unit pair is required, and unneeded pairs can be omitted. For example, P1DT720M sets a retention period of 1 day and 720 minutes.",
+      "evidence": "For the gcloud CLI, you should specify the retention period using the following format:\n\n```\nP#Y#M#W#DT#H#M#S\n```\n\nIn this format, each # represents an integer you specify, which should be followed by a unit of time. The units `Y`, `W`, `D`, `H`, and `S` signify years, weeks, days, hours, and seconds, respectively. `M` signifies months when it comes after `P`, while `M` signifies minutes when it comes after `T`.",
+      "question_type": "factual",
+      "qa_id": "gcs_063"
+    },
+    {
+      "question": "What happens when a project lien is applied after locking a retention policy?",
+      "answer": "When you lock a retention policy, Cloud Storage automatically applies a lien to the projects.delete permission for the project containing the bucket. This lien prevents the project from being deleted. To delete the project, you must first remove all such liens, which requires the resourcemanager.projects.updateLiens permission (part of the roles/owner and roles/resourcemanager.lienModifier roles).",
+      "evidence": "Additionally, when you lock a retention policy, Cloud Storage automatically applies a lien to the `projects.delete` permission for the project that contains the bucket. While in place, the lien prevents the project from being deleted. To delete the project, you must first remove all such liens. Note that removing a lien requires the `resourcemanager.projects.updateLiens` permission, which is part of the `roles/owner` and `roles/resourcemanager.lienModifier` roles.",
+      "question_type": "causal",
+      "qa_id": "gcs_064"
+    },
+    {
+      "question": "What is Requester Pays in Cloud Storage?",
+      "answer": "Requester Pays is a feature that requires requesters to include a billing project in their requests, causing the requester's project to be billed for data processing and network usage charges instead of the bucket owner's project. This is useful when you have a lot of data you want to make available but don't want to be charged for others' access to it. Data storage and early deletion charges are always applied to the bucket owner's project.",
+      "evidence": "With Requester Pays enabled on your bucket, you can *require* requesters to include a billing project in their requests, thus billing the requester's project. Enabling Requester Pays is useful, for example, if you have a lot of data you want to make available to users, but you don't want to be charged for their access to that data.",
+      "question_type": "definitional",
+      "qa_id": "gcs_065"
+    },
+    {
+      "question": "What charges are NOT covered by Requester Pays?",
+      "answer": "Data storage charges, including early deletion charges, are always applied to the project that contains the bucket, even when Requester Pays is enabled. Only data processing charges for operations, replication, data retrieval, and network usage charges are billed to the requester's project.",
+      "evidence": "Data storage charges, including early deletion charges, are always applied to the project that contains the bucket, even if Requester Pays is enabled.",
+      "question_type": "factual",
+      "qa_id": "gcs_066"
+    },
+    {
+      "question": "What error occurs when accessing a Requester Pays bucket without including a billing project?",
+      "answer": "When a user who doesn't have the resourcemanager.projects.createBillingAssignment permission tries to access a Requester Pays bucket without including a billing project in their request, the request fails with a 400 UserProjectMissing error.",
+      "evidence": "All other requests to the bucket fail with a `400 UserProjectMissing` error.",
+      "question_type": "factual",
+      "qa_id": "gcs_067"
+    },
+    {
+      "question": "How does billing work for source-billed operations like copies between Requester Pays buckets?",
+      "answer": "Operations that have both a source and destination bucket (like copy or rewrite) charge to the project that contains the source bucket. In most cases with direct API calls, you only need to include a billing project if the source bucket has Requester Pays enabled. However, some operations like 'gcloud storage cp --no-clobber' require a billing project if either bucket has Requester Pays enabled.",
+      "evidence": "Operations that have both a source bucket and a destination bucket, such as a copy or rewrite, charge to the project that contains the source bucket. In most cases, such as direct calls using the JSON and XML APIs, you only need to include a billing project if the **source** bucket has Requester Pays enabled.",
+      "question_type": "factual",
+      "qa_id": "gcs_068"
+    },
+    {
+      "question": "How does billing for resumable uploads work with Requester Pays?",
+      "answer": "For resumable uploads, only the first request needs to include a billing project, and it applies to the entire upload. Billing projects specified in subsequent requests are ignored. This differs from rewrites and XML API multipart uploads, where each request can use a different billing project.",
+      "evidence": "For resumable uploads, only the first request needs to include a billing project, and it applies to the entire upload. Billing projects specified in subsequent requests are ignored.",
+      "question_type": "factual",
+      "qa_id": "gcs_069"
+    },
+    {
+      "question": "What is the generation property of an object in Cloud Storage?",
+      "answer": "The generation property is a long value representing the content generation of an object. It is used for object versioning and soft delete. Each time an object's content changes (through replacement or upload), it receives a new generation number. Noncurrent versions retain their original generation number and can be uniquely identified by it.",
+      "evidence": "| `generation` | `long`1 | The content generation of this object. Used for object versioning and soft delete. |  |",
+      "question_type": "definitional",
+      "qa_id": "gcs_072"
+    },
+    {
+      "question": "What is the metageneration property of an object in Cloud Storage?",
+      "answer": "The metageneration is the version of the metadata for an object at a particular generation. It is used for preconditions and detecting changes in metadata. A metageneration number is only meaningful in the context of a particular generation of a particular object. It increments each time the object's metadata is modified.",
+      "evidence": "| `metageneration` | `long`1 | The version of the metadata for this object at this generation. Used for preconditions and for detecting changes in metadata. A metageneration number is only meaningful in the context of a particular generation of a particular object. |  |",
+      "question_type": "definitional",
+      "qa_id": "gcs_073"
+    },
+    {
+      "question": "What is the restoreToken property used for in Cloud Storage?",
+      "answer": "The restoreToken is a universally unique identifier (UUID) associated with each soft-deleted object. It is applicable in buckets with hierarchical namespace enabled and can be used in requests to restore a soft-deleted object or retrieve its metadata. It is only required when the name and generation values of an object do not uniquely identify it.",
+      "evidence": "| `restoreToken` | `string` | Applicable in buckets with hierarchical namespace enabled. The `restoreToken` is a universally unique identifier (UUID) associated with each soft-deleted object and can be used in requests to restore a soft-deleted object or retrieve its metadata. The `restoreToken` is only required when the `name` and `generation` values of an object do not uniquely identify it. Otherwise, including a `restoreToken` is optional. |  |",
+      "question_type": "definitional",
+      "qa_id": "gcs_074"
+    },
+    {
+      "question": "How do you download an object using the Node.js client library?",
+      "answer": "To download an object using the Node.js client library, require '@google-cloud/storage', create a new Storage() instance, then use storage.bucket(bucketName).file(srcFilename).download({ destination: destFilename }) with an options object that includes the destination path.",
+      "evidence": "const options = {\ndestination: destFileName,\n};\n// Downloads the file\nawait storage.bucket(bucketName).file(fileName).download(options);",
+      "question_type": "procedural",
+      "qa_id": "gcs_082"
+    },
+    {
+      "question": "How do you list objects using the Node.js client library?",
+      "answer": "To list objects in Node.js, require '@google-cloud/storage', create a Storage instance, and call storage.bucket(bucketName).getFiles() which returns a promise resolving to an array of files. You can then iterate over the files and access each file's name property.",
+      "evidence": "const storage = new Storage();\nasync function listFiles() {\n// Lists files in the bucket\nconst [files] = await storage.bucket(bucketName).getFiles();\nconsole.log('Files:');\nfiles.forEach(file => {\nconsole.log(file.name);",
+      "question_type": "procedural",
+      "qa_id": "gcs_083"
+    },
+    {
+      "question": "How does the currentDirectory() option affect listing in the Java client library?",
+      "answer": "The currentDirectory() option causes results to display in a 'directory-like' mode. Without it, listing with prefix 'a/' returns all objects under that prefix including nested paths (a/1.txt, a/b/2.txt, a/b/3.txt). With currentDirectory(), only files directly in 'a/' and immediate subdirectory names are returned (a/1.txt, a/b/), not objects nested deeper.",
+      "evidence": "Using the Storage.BlobListOption.currentDirectory() option here causes the results to display in a \"directory-like\" mode, showing what objects are in the directory you've specified, as well as what other directories exist in that directory.",
+      "question_type": "factual",
+      "qa_id": "gcs_085"
+    },
+    {
+      "question": "How do you use the JSON API to list objects in a bucket?",
+      "answer": "To list objects via the JSON API, use cURL with a GET request to the endpoint https://storage.googleapis.com/storage/v1/b/BUCKET_NAME/o with an Authorization header containing a bearer token. The token can be generated using 'gcloud auth print-access-token'.",
+      "evidence": "curl -X GET -H \"Authorization: Bearer $(gcloud auth print-access-token)\" \\\n     \"https://storage.googleapis.com/storage/v1/b/BUCKET_NAME/o\"",
+      "question_type": "procedural",
+      "qa_id": "gcs_086"
+    },
+    {
+      "question": "How do you delete an object using the JSON API?",
+      "answer": "To delete an object via the JSON API, use cURL with a DELETE request to https://storage.googleapis.com/storage/v1/b/BUCKET_NAME/o/OBJECT_NAME with an Authorization header. The object name must be URL-encoded (e.g., 'pets/dog.png' becomes 'pets%2Fdog.png').",
+      "evidence": "curl -X DELETE \\\n     -H \"Authorization: Bearer $(gcloud auth print-access-token)\" \\\n     \"https://storage.googleapis.com/storage/v1/b/BUCKET_NAME/o/OBJECT_NAME\"",
+      "question_type": "procedural",
+      "qa_id": "gcs_087"
+    },
+    {
+      "question": "How do you upload an object using the XML API?",
+      "answer": "To upload an object via the XML API, use cURL with a PUT request to https://storage.googleapis.com/BUCKET_NAME/OBJECT_NAME with an Authorization bearer token header and a --data-binary flag to include the object data from a file (e.g., --data-binary @OBJECT).",
+      "evidence": "curl -X PUT --data-binary @OBJECT_LOCATION \\\n-H \"Authorization: Bearer $(gcloud auth print-access-token)\" \\\n-H \"Content-Type: OBJECT_CONTENT_TYPE\" \\\n\"https://storage.googleapis.com/BUCKET_NAME/OBJECT_NAME\"",
+      "question_type": "procedural",
+      "qa_id": "gcs_088"
+    },
+    {
+      "question": "What is the purpose of generation-match preconditions when uploading or deleting objects?",
+      "answer": "Generation-match preconditions help avoid potential race conditions and data corruptions. When uploading, setting ifGenerationMatch to 0 ensures the upload only succeeds if the object doesn't already exist. When deleting, setting ifGenerationMatch to the object's current generation number ensures you only delete the expected version of the object, not one that was modified between your read and delete operations.",
+      "evidence": "// Optional: set a generation-match precondition to avoid potential race\n// conditions and data corruptions. The request to delete the file is aborted\n// if the object's generation number does not match your precondition.",
+      "question_type": "causal",
+      "qa_id": "gcs_089"
+    },
+    {
+      "question": "What is the Object Versioning example walkthrough in the documentation?",
+      "answer": "The walkthrough tracks a cat.jpg object through several operations: First, upload creates the object with a generation number (1360887697105000) and metageneration 1. Enabling Object Versioning doesn't change these numbers. Updating metadata increments metageneration to 2. Uploading a new version moves the existing object to noncurrent and creates a new live version with a new generation (1360887759327000). Deleting the live version makes it noncurrent too. Disabling versioning stops new noncurrent accumulation but preserves existing versions.",
+      "evidence": "When you first upload `cat.jpg` to Cloud Storage, it receives a `generation` number and a `metageneration` number. In this example, the generation number is `1360887697105000`. Because the object is new, the `metageneration` number is `1`.",
+      "question_type": "factual",
+      "qa_id": "gcs_090"
+    },
+    {
+      "question": "What are the matchesPrefix and matchesSuffix lifecycle conditions?",
+      "answer": "The matchesPrefix and matchesSuffix conditions are satisfied when the beginning or end of an object's name is an exact case-sensitive match with the specified prefix or suffix. You can specify multiple strings as a list (e.g., matchesSuffix: ['.jpg', '.png']). You can have up to 1000 prefixes and suffixes total across all rules. A prefix or suffix cannot be used twice in a single condition.",
+      "evidence": "The `matchesPrefix` and `matchesSuffix` conditions are satisfied when the beginning or end of an object's name is an exact case-sensitive match with the specified prefix or suffix. You can specify multiple strings as a list (for example, `\"matchesSuffix\": [\".jpg\", \".png\"]`).",
+      "question_type": "factual",
+      "qa_id": "gcs_091"
+    },
+    {
+      "question": "How does Cloud Storage track lifecycle management actions?",
+      "answer": "Cloud Storage provides two options for tracking lifecycle actions: (1) Cloud Storage usage logs, where a value of 'GCS Lifecycle Management' in the cs_user_agent field indicates the action was taken by lifecycle management; (2) Pub/Sub Notifications for Cloud Storage, which sends notifications to a Pub/Sub topic when specified actions occur, though this does not record who performed the actions.",
+      "evidence": "Use Cloud Storage usage logs. This feature logs both the action and who performed the action. A value of `GCS Lifecycle Management` in the `cs_user_agent` field of the log entry indicates the action was taken by Cloud Storage in accordance with a lifecycle configuration.",
+      "question_type": "factual",
+      "qa_id": "gcs_092"
+    },
+    {
+      "question": "What is the expiration time metadata and when is it set?",
+      "answer": "Expiration time metadata indicates when an object becomes eligible for deletion by Object Lifecycle Management. It is set when a Delete action has an age condition (with no other conditions besides matchesStorageClass). The expiration time may change as the lifecycle configuration or retention policy changes. It is not available if there are additional conditions, if matchesStorageClass doesn't match the object's class, if the object has a hold, or if soft delete is enabled.",
+      "evidence": "If a `Delete` action is specified for a bucket with the `age` condition (and no other conditions besides `matchesStorageClass`), then some objects might be tagged with expiration time metadata. An object's expiration time indicates the time at which the object becomes (or became) eligible for deletion by Object Lifecycle Management.",
+      "question_type": "factual",
+      "qa_id": "gcs_093"
+    },
+    {
+      "question": "How does the Delete lifecycle action interact with retention policies and object holds?",
+      "answer": "The Delete action does not take effect on an object while it has an object hold placed on it or a retention policy it has not yet fulfilled. As long as the conditions in the Delete action remain satisfied, the deletion occurs after any hold is removed and any retention policy is fulfilled.",
+      "evidence": "The `Delete` action does not take effect on an object while the object has an object hold placed on it or a retention policy that it has not yet fulfilled. As long as the conditions in the `Delete` action remain satisfied for the object, the `Delete` action occurs after any object hold is removed and any retention policy is fulfilled.",
+      "question_type": "factual",
+      "qa_id": "gcs_094"
+    },
+    {
+      "question": "How does a retention policy interact with Object Versioning?",
+      "answer": "In buckets with Object Versioning, a live object version that has a retention expiration date in the future can still be made noncurrent (moved to a noncurrent state). Additionally, any versioned objects that exist in the bucket when the retention policy is applied are also protected by the policy.",
+      "evidence": "In buckets that use Object Versioning, a live object version that has a retention expiration date in the future can still be made noncurrent, and any versioned objects that exist in the bucket at the time you apply a retention policy are also protected by the policy.",
+      "question_type": "factual",
+      "qa_id": "gcs_095"
+    },
+    {
+      "question": "What restrictions apply to Requester Pays buckets?",
+      "answer": "Two restrictions apply to Requester Pays buckets: you cannot use a bucket with Requester Pays enabled for imports and exports from Cloud SQL, and you cannot use a bucket with Requester Pays enabled for exports from Pub/Sub.",
+      "evidence": "The following restrictions apply when using Requester Pays: You cannot use a bucket that has Requester Pays enabled for imports and exports from Cloud SQL. You cannot use a bucket that has Requester Pays enabled for exports from Pub/Sub.",
+      "question_type": "factual",
+      "qa_id": "gcs_096"
+    },
+    {
+      "question": "What is the componentCount property in the Objects resource?",
+      "answer": "The componentCount property is returned only for composite objects and indicates the number of non-composite objects in the composite object. It includes non-composite objects that were part of any composite objects used to compose the current object.",
+      "evidence": "| `componentCount` | `integer` | Returned for composite objects only. Number of non-composite objects in the composite object. `componentCount` includes non-composite objects that were part of any composite objects used to compose the current object. |  |",
+      "question_type": "definitional",
+      "qa_id": "gcs_097"
+    },
+    {
+      "question": "What is the Autoclass feature in Cloud Storage?",
+      "answer": "Autoclass is a feature you can enable on a bucket to let Cloud Storage automatically manage storage class transitions for you. Instead of manually setting lifecycle rules or changing storage classes, Autoclass moves objects between storage classes based on access patterns automatically.",
+      "evidence": "You can enable the Autoclass feature on a bucket to let Cloud Storage manage storage class transitions for you automatically.",
+      "question_type": "definitional",
+      "qa_id": "gcs_098"
+    },
+    {
+      "question": "What filter syntax is supported for filtering objects by contexts in Cloud Storage?",
+      "answer": "Cloud Storage supports four filter syntax patterns: contexts.\"KEY\":* matches any object with the specified context key; contexts.\"KEY\"=\"VALUE\" matches objects with a specific key-value pair; NOT contexts.\"KEY\":* (or -contexts.\"KEY\":*) matches objects without the specified key; NOT contexts.\"KEY\"=\"VALUE\" (or -contexts.\"KEY\"=\"VALUE\") matches objects without the specific key-value pair.",
+      "evidence": "| `contexts.\"KEY\":*` | Match any object that has a context with the specified key attached. |\n| `contexts.\"KEY\"=\"VALUE\"` | Match any object that has a context with the specified key and value attached. |\n| `NOT contexts.\"KEY\":*`  *OR*  `-contexts.\"KEY\":*` | Match any object that does not have a context with the specified key attached. |\n| `NOT contexts.\"KEY\"=\"VALUE\"`  *OR*  `-contexts.\"KEY\"=\"VALUE\"` | Match any object that does not have a context with the specified key and value attached. |",
+      "question_type": "factual",
+      "qa_id": "gcs_099"
+    },
+    {
+      "question": "Why should you avoid performing parallel composite uploads on buckets with retention policies?",
+      "answer": "You should not perform parallel composite uploads if your bucket has a retention policy because the component pieces cannot be deleted until each has met the bucket's minimum retention period. This means temporary component objects created during the upload process would be retained and incur storage charges until the retention period expires.",
+      "evidence": "You should not perform parallel composite uploads if your bucket has a retention policy, because the component pieces cannot be deleted until each has met the bucket's minimum retention period.",
+      "question_type": "causal",
+      "qa_id": "gcs_100"
+    },
+    {
+      "question": "How do QPS limits for buckets with hierarchical namespace enabled compare to those without it?",
+      "answer": "Buckets with hierarchical namespace enabled have 8 times higher initial QPS limits for reading and writing objects compared to buckets without hierarchical namespace enabled.",
+      "evidence": "8 times higher initial QPS limits for reading and writing objects compared\n    to buckets without hierarchical namespace enabled, and is beneficial for",
+      "question_type": "comparative",
+      "qa_id": "gcs_101"
+    },
+    {
+      "question": "How do folders in hierarchical namespace buckets differ from a simulated file system in Cloud Storage?",
+      "answer": "Folders enable a real file system for storing objects, as opposed to a simulated file system. With hierarchical namespace, you can atomically rename a folder and all the objects within it.",
+      "evidence": "Folders enable a real file system for storing objects, as opposed to a\n  simulated file system. You can atomically rename a folder and all the objects",
+      "question_type": "comparative",
+      "qa_id": "gcs_102"
+    },
+    {
+      "question": "What are the first steps to create a bucket using the Google Cloud console?",
+      "answer": "First, go to the Cloud Storage Buckets page in the Google Cloud console, then click the Create button to begin the bucket creation process.",
+      "evidence": "1. In the Google Cloud console, go to the Cloud Storage **Buckets** page.  \n\n   Go to Buckets\n2. Click add\\_box **Create**.",
+      "question_type": "procedural",
+      "qa_id": "gcs_103"
+    },
+    {
+      "question": "What workflow does the Google Cloud console follow when creating a new bucket?",
+      "answer": "On the Create a bucket page, you enter your bucket information in a step-by-step process, clicking Continue after each step to proceed to the next one.",
+      "evidence": "Go to Buckets\n2. Click add\\_box **Create**.\n3. On the **Create a bucket** page, enter your bucket information. After\n   each of the following steps, click **Continue** to proceed to the next",
+      "question_type": "procedural",
+      "qa_id": "gcs_104"
+    },
+    {
+      "question": "What is the first configuration step when creating a bucket in the Google Cloud console?",
+      "answer": "In the Get started section, you must enter a globally unique name that meets the bucket name requirements.",
+      "evidence": "step:\n   1. In the **Get started** section, do the following:\n\n      * Enter a globally unique name that meets the\n        bucket name requirements.",
+      "question_type": "procedural",
+      "qa_id": "gcs_105"
+    },
+    {
+      "question": "How do you activate Cloud Shell in the Google Cloud console for command line operations?",
+      "answer": "In the Google Cloud console, you activate Cloud Shell, which opens at the bottom of the Google Cloud console, providing a command line interface for running gcloud commands.",
+      "evidence": "1. In the Google Cloud console, activate Cloud Shell.\n\n   Activate Cloud Shell\n\n   At the bottom of the Google Cloud console, a",
+      "question_type": "procedural",
+      "qa_id": "gcs_106"
+    },
+    {
+      "question": "What is the full gcloud CLI command syntax for creating a Cloud Storage bucket with a specified location?",
+      "answer": "The command is `gcloud storage buckets create gs://BUCKET_NAME --location=BUCKET_LOCATION`, which creates a new bucket with the specified name and location.",
+      "evidence": "2. In your development environment, run the\n   `gcloud storage buckets create` command:\n\n   ```\n   gcloud storage buckets create gs://BUCKET_NAME --location=BUCKET_LOCATION\n   ```",
+      "question_type": "procedural",
+      "qa_id": "gcs_107"
+    },
+    {
+      "question": "What message does the gcloud CLI return when a bucket is successfully created?",
+      "answer": "If the request is successful, the command returns the message 'Creating gs://BUCKET_NAME/...' and additional flags can be set for greater control over the creation of the bucket.",
+      "evidence": "If the request is successful, the command returns the following message:\n\n   ```\n   Creating gs://BUCKET_NAME/...\n   ```\n\n   Set the following flags to have greater control over the creation of",
+      "question_type": "causal",
+      "qa_id": "gcs_108"
+    },
+    {
+      "question": "What prerequisites are needed before creating a bucket using the Cloud Storage JSON API?",
+      "answer": "You need to have gcloud CLI installed and initialized, which lets you generate an access token for the Authorization header, and you need to create a JSON file that contains the settings for the bucket.",
+      "evidence": "1. Have gcloud CLI installed and initialized, which lets\n   you generate an access token for the `Authorization` header.\n2. Create a JSON file that contains the settings for the bucket, which",
+      "question_type": "procedural",
+      "qa_id": "gcs_109"
+    },
+    {
+      "question": "What is the minimum required field in the JSON file when creating a bucket via the JSON API?",
+      "answer": "The JSON file that contains the settings for the bucket must include a `name` for the bucket.",
+      "evidence": "2. Create a JSON file that contains the settings for the bucket, which\n   must include a `name` for the bucket.",
+      "question_type": "procedural",
+      "qa_id": "gcs_110"
+    },
+    {
+      "question": "How do you use cURL to create a bucket through the Cloud Storage JSON API?",
+      "answer": "You use `cURL` with a POST request, passing the JSON file with `--data-binary @JSON_FILE_NAME` and providing an authorization header with a bearer token generated by `gcloud auth print-access-token`.",
+      "evidence": "3. Use `cURL` to call the JSON API:\n\n   ```\n   curl -X POST --data-binary @JSON_FILE_NAME \\\n    -H \"Authorization: Bearer $(gcloud auth print-access-token)\" \\",
+      "question_type": "procedural",
+      "qa_id": "gcs_111"
+    },
+    {
+      "question": "What file must you create when creating a bucket via the Cloud Storage XML API?",
+      "answer": "You must create an XML file that contains settings for the bucket, as described in the XML: Create a bucket documentation which provides a complete list of available settings.",
+      "evidence": "2. Create an XML file that contains settings for the bucket. See the\n   XML: Create a bucket documentation for a complete list of",
+      "question_type": "procedural",
+      "qa_id": "gcs_112"
+    },
+    {
+      "question": "What IAM role must be granted to upload objects to a Cloud Storage bucket?",
+      "answer": "To get the permissions needed to upload objects to a bucket, your administrator must grant you the Storage Object User role.",
+      "evidence": "To get the permissions that you need to upload objects to a bucket, ask your\nadministrator to grant you the Storage Object User",
+      "question_type": "procedural",
+      "qa_id": "gcs_113"
+    },
+    {
+      "question": "What methods are available for uploading objects to a bucket through the Google Cloud console?",
+      "answer": "In the Objects tab for the bucket, you can either drag files from your desktop or file manager to the main pane in the Google Cloud console, or use the upload button.",
+      "evidence": "3. In the **Objects** tab for the bucket, either:\n\n   * Drag files from your desktop or file manager\n     to the main pane in the Google Cloud console.",
+      "question_type": "procedural",
+      "qa_id": "gcs_114"
+    },
+    {
+      "question": "What is the purpose of the generation-match precondition in the Java Cloud Storage upload code?",
+      "answer": "The precondition causes the request to fail if the object is created before the request runs, preventing race conditions during upload operations.",
+      "evidence": "// This will cause the request to fail if the object is created before the request runs.\n      precondition = Storage.",
+      "question_type": "causal",
+      "qa_id": "gcs_115"
+    },
+    {
+      "question": "How does file size affect the optimal number of processes for parallel uploads in the Python Cloud Storage library?",
+      "answer": "The impact of the number of processes depends on the use case, but smaller files usually benefit from a higher number of processes.",
+      "evidence": "# impact of this value depends on the use case, but smaller files usually\n    # benefit from a higher number of processes.",
+      "question_type": "causal",
+      "qa_id": "gcs_116"
+    },
+    {
+      "question": "What is the structure of a JSON API multipart upload request for Cloud Storage?",
+      "answer": "You create a `multipart/related` file that contains sections separated by a BOUNDARY_STRING, including a section with Content-Type `application/json; charset=UTF-8` containing object metadata and another section with the OBJECT_CONTENT_TYPE containing the actual OBJECT_DATA.",
+      "evidence": "2. Create a `multipart/related` file that contains the following\n   information:\n\n   ```\n   --BOUNDARY_STRING\n   Content-Type: application/json; charset=UTF-8\n\n   OBJECT_METADATA\n\n   --BOUNDARY_STRING\n   Content-Type: OBJECT_CONTENT_TYPE\n\n   OBJECT_DATA",
+      "question_type": "procedural",
+      "qa_id": "gcs_117"
+    },
+    {
+      "question": "How do you download an object from a Cloud Storage bucket using the Google Cloud console?",
+      "answer": "Navigate to the object, which may be located in a folder, then click the Download icon associated with the object.",
+      "evidence": "3. Navigate to the object, which may be located in a folder.\n4. Click the **Download** icon associated with the object.",
+      "question_type": "procedural",
+      "qa_id": "gcs_118"
+    },
+    {
+      "question": "What determines the download location when downloading an object from Cloud Storage via the Google Cloud console?",
+      "answer": "Your browser settings control the download location for the object when downloading from the Google Cloud console.",
+      "evidence": "4. Click the **Download** icon associated with the object.\n\n   Your browser settings control the download location for the object.\n\nTo learn how to get detailed error information about failed Cloud Storage",
+      "question_type": "procedural",
+      "qa_id": "gcs_119"
+    },
+    {
+      "question": "How does the Python Cloud Storage client library handle batch downloads with multiple processes?",
+      "answer": "The library supports downloading multiple objects concurrently using multiple processes. Failed downloads report the exception, while successful downloads print the destination path in the format 'Downloaded {name} to {destination_directory + name}'.",
+      "evidence": "print(\"Failed to download {} due to exception: {}\".format(name, result))\n        else:\n            print(\"Downloaded {} to {}.\".format(name, destination_directory + name))\n```\n\nThe following sample downloads all objects in a bucket using multiple processes:",
+      "question_type": "causal",
+      "qa_id": "gcs_120"
+    },
+    {
+      "question": "How can you resume an interrupted download in Cloud Storage?",
+      "answer": "If your download gets interrupted, you can resume where you left off by requesting only the portion of the object that's left, rather than re-downloading the entire object.",
+      "evidence": "If your download gets interrupted, you can resume where you left off by\nrequesting only the portion of the object that's left.",
+      "question_type": "causal",
+      "qa_id": "gcs_121"
+    },
+    {
+      "question": "What IAM role can be granted on a managed folder to allow listing objects within it?",
+      "answer": "If you want to list objects within managed folders, you can grant `roles/storage.objectViewer` on the managed folder that contains the objects.",
+      "evidence": "If you want to list objects within managed folders, you can grant\n`roles/storage.objectViewer` on the managed folder that contains the objects",
+      "question_type": "causal",
+      "qa_id": "gcs_122"
+    },
+    {
+      "question": "How does using a prefix with and without a delimiter affect object listing results in the C# Cloud Storage client?",
+      "answer": "If you just specify prefix=\"a/\", you'll get back a/1.txt and a/b/2.txt (all objects under that prefix). However, if you specify prefix=\"a/\" and delimiter=\"/\", you'll get back only a/1.txt, filtering out objects in subdirectories.",
+      "evidence": "/// If you just specify prefix=\"a/\", you'll get back:\n    ///   a/1.txt\n    ///   a/b/2.txt\n    ///\n    /// However, if you specify prefix=\"a/\" and delimiter=\"/\", you'll get back:",
+      "question_type": "causal",
+      "qa_id": "gcs_123"
+    },
+    {
+      "question": "What is the effect of specifying both prefix and delimiter when listing objects in the Python Cloud Storage client?",
+      "answer": "If you specify prefix='a/' without a delimiter, you get back all objects including nested ones (a/1.txt, a/b/2.txt). However, if you specify both prefix='a/' and delimiter='/', you get back only the files directly under that prefix level.",
+      "evidence": "If you specify prefix ='a/', without a delimiter, you'll get back:\n\n        a/1.txt\n        a/b/2.txt\n\n    However, if you specify prefix='a/' and delimiter='/', you'll get back",
+      "question_type": "causal",
+      "qa_id": "gcs_124"
+    },
+    {
+      "question": "What type of wildcards can be used to match multiple folder levels when listing objects with the gcloud CLI?",
+      "answer": "You can use double-star wildcards to match zero or more folder levels when listing objects. A successful listing request returns output in the format gs://my-bucket/object-name for each matching object.",
+      "evidence": "If the request is successful, the response looks similar to the following:\n\n```\ngs://my-bucket/image.png\ngs://my-bucket/image-dog.png\ngs://my-bucket/image-cat.png\n...\n```\n\nYou can use double-star wildcards to match zero or more folder levels in",
+      "question_type": "causal",
+      "qa_id": "gcs_125"
+    },
+    {
+      "question": "How does hierarchical namespace affect the performance of listing objects compared to flat namespace buckets?",
+      "answer": "Hierarchical namespace influences the performance of the listing objects operation when compared to flat namespace buckets, and users should consult the guidance on optimizing performance in buckets with hierarchical namespace enabled.",
+      "evidence": "influences the performance of the listing objects operation, when compared to\nflat namespace buckets. For more information, see\nOptimize performance in buckets with hierarchical namespace enabled.",
+      "question_type": "comparative",
+      "qa_id": "gcs_126"
+    }
+  ]
+}

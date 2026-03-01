@@ -1,0 +1,712 @@
+{
+  "corpus_id": "goog_10k",
+  "qa_pairs": [
+    {
+      "question": "Where is Alphabet Inc. incorporated and what is its IRS Employer Identification Number?",
+      "answer": "Alphabet Inc. is incorporated in the state of Delaware. Its IRS Employer Identification Number is 61-1767919.",
+      "evidence": "Delaware | | | 61-1767919",
+      "question_type": "factual",
+      "qa_id": "goog_10k_002"
+    },
+    {
+      "question": "What is the address of Alphabet's principal executive offices?",
+      "answer": "Alphabet's principal executive offices are located at 1600 Amphitheatre Parkway, Mountain View, CA 94043. The registrant's telephone number is (650) 253-0000.",
+      "evidence": "1600 Amphitheatre Parkway\n\nMountain View, CA 94043\n\n(Address of principal executive offices, including zip code)\n\n(650) 253-0000",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_003"
+    },
+    {
+      "question": "What are the trading symbols and stock exchanges for Alphabet's Class A and Class C stock?",
+      "answer": "Alphabet's Class A Common Stock trades under the symbol GOOGL on the Nasdaq Stock Market LLC (Nasdaq Global Select Market). Class C Capital Stock trades under the symbol GOOG, also on the Nasdaq Stock Market LLC (Nasdaq Global Select Market).",
+      "evidence": "Class A Common Stock, $0.001 par value | | | GOOGL | | | Nasdaq Stock Market LLC",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_004"
+    },
+    {
+      "question": "How many shares of each class of Alphabet stock were outstanding as of January 23, 2024?",
+      "answer": "As of January 23, 2024, there were 5,893 million shares of Class A stock, 869 million shares of Class B stock, and 5,671 million shares of Class C stock outstanding.",
+      "evidence": "As of January 23, 2024, there were 5,893 million shares of Alphabet's Class A stock outstanding, 869 million shares of Alphabet's Class B stock outstanding, and 5,671 million shares of the Alphabet's Class C stock outstanding.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_005"
+    },
+    {
+      "question": "What was the aggregate market value of shares held by non-affiliates as of June 30, 2023?",
+      "answer": "As of June 30, 2023, the aggregate market value of shares held by non-affiliates of the registrant was approximately $1,331.2 billion, based upon the closing sale prices on the Nasdaq Global Select Market on that date.",
+      "evidence": "As of June 30, 2023, the aggregate market value of shares held by non-affiliates of the registrant (based upon the closing sale prices of such shares on the Nasdaq Global Select Market on June 30, 2023) was approximately $1,331.2 billion.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_006"
+    },
+    {
+      "question": "How does Alphabet define its reporting segments?",
+      "answer": "Alphabet reports Google in two segments: Google Services and Google Cloud. All non-Google businesses are reported collectively as Other Bets. Alphabet's structure is designed to help each business prosper through strong leaders and independence.",
+      "evidence": "Alphabet is a collection of businesses \u2014 the largest of which is Google. We report Google in two segments, Google Services and Google Cloud, and all non-Google businesses collectively as Other Bets. Alphabet's structure is about helping each of our businesses prosper through strong leaders and independence.",
+      "question_type": "definitional",
+      "qa_id": "goog_10k_007"
+    },
+    {
+      "question": "What is the Transformer architecture and what role did it play in Google's AI development?",
+      "answer": "The Transformer is a neural network architecture that Google introduced in 2017 which helped with language understanding. It led to BERT (Bidirectional Encoder Representations from Transformers) in 2019, which helped Search understand the intent of user search queries better than ever before.",
+      "evidence": "Large language models (LLMs) are an exciting aspect of our work in AI based on deep learning architectures, such as the Transformer, a neural network architecture that we introduced in 2017 that helped with language understanding. This led to the Bidirectional Encoder Representations from Transformers, or BERT, in 2019 that helped Search understand the intent of user search queries better than ever before.",
+      "question_type": "definitional",
+      "qa_id": "goog_10k_010"
+    },
+    {
+      "question": "What was the significance of Google DeepMind's AlphaFold system?",
+      "answer": "In 2020, Google DeepMind's AlphaFold system solved a 50-year-old protein folding challenge. Google has since open-sourced 200 million of AlphaFold's protein structures to the scientific community, which are used for applications like accelerating new malaria vaccines, advancing cancer drug discovery, and developing plastic-eating enzymes.",
+      "evidence": "in 2020, Google DeepMind's AlphaFold system solved a 50-year-old protein folding challenge. Since then, we have open-sourced to the scientific community 200 million of AlphaFold's protein structures which are used to work on everything from accelerating new malaria vaccines to advancing cancer drug discovery and developing plastic-eating enzymes.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_011"
+    },
+    {
+      "question": "When did Google publish its AI Principles and what do they prioritize?",
+      "answer": "Google published its AI Principles in 2018, making it one of the first companies to articulate such principles. The principles put beneficial use, users, safety, and avoidance of harms above business considerations.",
+      "evidence": "We published these in 2018, as one of the first companies to articulate principles that put beneficial use, users, safety, and avoidance of harms above business considerations.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_012"
+    },
+    {
+      "question": "What is the Vertex AI platform used for?",
+      "answer": "The Vertex AI platform gives developers the ability to train, tune, augment, and deploy applications using generative AI models and services such as Enterprise Search and Conversations. It is part of Google Cloud's offerings for enabling organizations and developers to innovate.",
+      "evidence": "Our Vertex AI platform gives developers the ability to train, tune, augment, and deploy applications using generative AI models and services such as Enterprise Search and Conversations.",
+      "question_type": "definitional",
+      "qa_id": "goog_10k_013"
+    },
+    {
+      "question": "What does Performance Max do for advertisers?",
+      "answer": "With Performance Max, advertisers simply tell Google their campaign goals and share their creative assets, and AI will automatically produce and run a highly effective ad campaign across all of Google's properties to meet their budget. It uses the full power of AI to help advertisers find untapped and incremental conversion opportunities.",
+      "evidence": "With Performance Max, advertisers simply tell us their campaign goals and share their creative assets, and AI will automatically produce and run a highly effective ad campaign across all of Google's properties, to meet their budget.",
+      "question_type": "definitional",
+      "qa_id": "goog_10k_014"
+    },
+    {
+      "question": "What are the core products and platforms of Google Services?",
+      "answer": "Google Services' core products and platforms include ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube, with broad and growing adoption by users around the world.",
+      "evidence": "Google Services' core products and platforms include ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube, with broad and growing adoption by users around the world.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_015"
+    },
+    {
+      "question": "How does Google differentiate between performance advertising and brand advertising?",
+      "answer": "Performance advertising creates and delivers relevant ads that users will click on, leading to direct engagement with advertisers and measurable results. Brand advertising helps enhance users' awareness of and affinity for advertisers' products and services through videos, text, images, and other interactive ads that run across various devices.",
+      "evidence": "Performance advertising creates and delivers relevant ads that users will click on leading to direct engagement with advertisers. Performance advertising lets our advertisers connect with users while driving measurable results. Our ads tools allow performance advertisers to create simple text-based ads.\n\n\u2022Brand advertising helps enhance users' awareness of and affinity for advertisers' products and services, through videos, text, images, and other interactive ads that run across various devices.",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_016"
+    },
+    {
+      "question": "What consumer subscription services does Google Services offer?",
+      "answer": "Google Services' consumer subscriptions primarily include revenues from YouTube services such as YouTube TV, YouTube Music and Premium, and NFL Sunday Ticket, as well as Google One. These subscriptions are part of the company's growing revenue beyond advertising.",
+      "evidence": "consumer subscriptions, which primarily include revenues from YouTube services, such as YouTube TV, YouTube Music and Premium, and NFL Sunday Ticket, as well as Google One",
+      "question_type": "factual",
+      "qa_id": "goog_10k_017"
+    },
+    {
+      "question": "What are the five key capabilities provided by Google Cloud?",
+      "answer": "Google Cloud provides five key capabilities: (1) AI-optimized Infrastructure for compute, networking, and storage; (2) Cybersecurity for detecting, protecting, and responding to threats; (3) Databases and Analytics for data management; (4) Collaboration Tools through Google Workspace; and (5) AI Platform and Duet AI for Google Cloud.",
+      "evidence": "Customers use five key capabilities from Google Cloud.\n\n\u2022AI-optimized Infrastructure: provides open, reliable, and scalable compute, networking, and storage",
+      "question_type": "factual",
+      "qa_id": "goog_10k_018"
+    },
+    {
+      "question": "What types of businesses make up Alphabet's Other Bets segment?",
+      "answer": "Other Bets includes businesses at various stages of development, ranging from R&D phase to beginning stages of commercialization. They operate as independent companies with some having their own boards with independent members and outside investors. Revenues from Other Bets are generated primarily from the sale of healthcare-related services and internet services.",
+      "evidence": "Across Alphabet, we are also using technology to try to solve big problems that affect a wide variety of industries from improving transportation and health technology to exploring solutions to address climate change. Alphabet\u2019s investment in the portfolio of Other Bets includes businesses that are at various stages of development, ranging from those in the R&D phase to those that are in the beginning stages of commercialization. Our goal is for them to become thriving, successful businesses. Other Bets operate as independent companies and some of them have their own boards with independent members and outside investors. While these early-stage businesses naturally come with considerable uncertainty, some of them are already generating revenue and making important strides in their industries. Revenues from Other Bets are generated primarily from the sale of healthcare-related services and internet services.",
+      "question_type": "definitional",
+      "qa_id": "goog_10k_019"
+    },
+    {
+      "question": "What is the 24/7 carbon-free energy (CFE) goal and why was it established?",
+      "answer": "Alphabet set a goal to run on 24/7 carbon-free energy (CFE) on every grid where it operates by 2030. This was established because although Google has matched 100% of its electricity consumption with renewable energy purchases annually since 2017, differences in renewable energy availability across regions and variable supply mean they still rely on carbon-emitting energy sources that power local grids.",
+      "evidence": "Since 2017, we have matched 100% of the electricity consumption of our global operations with purchases of renewable energy on an annual basis. However, because of differences in the availability of renewable energy sources like solar and wind across the regions where we operate\u2014and because of the variable supply of these resources\u2014we still need to rely on carbon-emitting energy sources that power local grids. That is why we set a goal to run on 24/7 carbon-free energy (CFE) on every grid where we operate by 2030.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_022"
+    },
+    {
+      "question": "What percentage of total revenues did Alphabet generate from online advertising in 2023?",
+      "answer": "Alphabet generated more than 75% of total revenues from online advertising in 2023. This heavy reliance on advertising revenue is identified as a key risk factor, as reduced spending by advertisers could harm the business.",
+      "evidence": "We generated more than 75% of total revenues from online advertising in 2023.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_024"
+    },
+    {
+      "question": "What percentage of consolidated revenues came from international operations in 2023?",
+      "answer": "International revenues accounted for approximately 53% of Alphabet's consolidated revenues in 2023. The company states that its international operations are significant to revenues and net income, and it plans to continue growing internationally.",
+      "evidence": "International revenues accounted for approximately 53% of our consolidated revenues in 2023.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_025"
+    },
+    {
+      "question": "What voting rights do each class of Alphabet stock have?",
+      "answer": "Alphabet's Class B stock has 10 votes per share, Class A stock has one vote per share, and Class C stock has no voting rights. As of December 31, 2023, Larry Page and Sergey Brin beneficially owned approximately 86.5% of outstanding Class B stock, representing approximately 51.5% of the voting power.",
+      "evidence": "Our Class B stock has 10 votes per share, our Class A stock has one vote per share, and our Class C stock has no voting rights. As of December 31, 2023, Larry Page and Sergey Brin beneficially owned approximately 86.5% of our outstanding Class B stock, which represented approximately 51.5% of the voting power of our outstanding common stock.",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_026"
+    },
+    {
+      "question": "How does the concentration of stock ownership by Larry Page and Sergey Brin affect corporate governance?",
+      "answer": "Through their stock ownership of approximately 86.5% of Class B stock (51.5% of voting power), Larry Page and Sergey Brin have significant influence over all matters requiring stockholder approval, including election of directors and significant corporate transactions such as mergers. This concentrated control limits other stockholders' ability to influence corporate matters.",
+      "evidence": "Through their stock ownership, Larry and Sergey have significant influence over all matters requiring stockholder approval, including the election of directors and significant corporate transactions, such as a merger or other sale of our company or our assets, for the foreseeable future.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_027"
+    },
+    {
+      "question": "What were Alphabet's total consolidated revenues for fiscal year 2023?",
+      "answer": "Alphabet's total consolidated revenues for fiscal year 2023 were $307.4 billion ($307,394 million), an increase of 9% year over year from $282.8 billion in 2022. Total constant currency revenues, which exclude the effect of hedging, increased 10% year over year.",
+      "evidence": "Consolidated revenues | | |  | | |  | | | $ | 282,836 |  |  | | | $ | 307,394 |  |  | | | $ | 24,558 |  |  | | | 9 | | %",
+      "question_type": "factual",
+      "qa_id": "goog_10k_028"
+    },
+    {
+      "question": "What was the primary driver of the revenue increase from 2022 to 2023?",
+      "answer": "The revenue increase was primarily driven by an increase in Google Services revenues of $19.0 billion (8%) and an increase in Google Cloud revenues of $6.8 billion (26%). Within Google Services, Google Search & other revenues grew by $12.6 billion.",
+      "evidence": "Revenues were $307.4 billion, an increase of 9% year over year, primarily driven by an increase in Google Services revenues of $19.0 billion, or 8%, and an increase in Google Cloud revenues of $6.8 billion, or 26%.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_029"
+    },
+    {
+      "question": "What was Alphabet's net income for fiscal year 2023 and how did it compare to 2022?",
+      "answer": "Alphabet's net income for fiscal year 2023 was $73.8 billion ($73,795 million), an increase of 23% from $60.0 billion ($59,972 million) in 2022. Diluted earnings per share increased 27% from $4.56 to $5.80.",
+      "evidence": "| Net income | | |  | | |  | | | $ | 59,972 |  |  | | | $ | 73,795 |  |  | | | $ | 13,823 |  |  | | | 23 | | % |\n| Diluted EPS | | |  | | |  | | | $ | 4.56 |  |  | | | $ | 5.80 |  |  | | | $ | 1.24 |  |  | | | 27 | | % |",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_030"
+    },
+    {
+      "question": "What were Google Search & other revenues for 2023?",
+      "answer": "Google Search & other revenues were $175.0 billion ($175,033 million) for fiscal year 2023, an increase of $12.6 billion from $162.5 billion ($162,450 million) in 2022. The growth was driven by increases in search queries, growth in advertiser spending, and improvements in ad formats and delivery.",
+      "evidence": "Google Search & other | | |  | | |  | | | $ | 162,450 |  |  | | | $ | 175,033",
+      "question_type": "factual",
+      "qa_id": "goog_10k_032"
+    },
+    {
+      "question": "How did YouTube ads revenue change from 2022 to 2023?",
+      "answer": "YouTube ads revenues increased $2.3 billion from $29.2 billion ($29,243 million) in 2022 to $31.5 billion ($31,510 million) in 2023. The growth was driven by brand and direct response advertising products, both of which benefited from increased spending by advertisers.",
+      "evidence": "YouTube ads revenues increased $2.3 billion from 2022 to 2023. The growth was driven by our brand and direct response advertising products, both of which benefited from increased spending by our advertisers.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_033"
+    },
+    {
+      "question": "What were Google Cloud revenues for 2023 and what drove the growth?",
+      "answer": "Google Cloud revenues were $33.1 billion ($33,088 million) in 2023, an increase of $6.8 billion from $26.3 billion ($26,280 million) in 2022, representing a 26% increase. Growth was primarily driven by Google Cloud Platform followed by Google Workspace offerings, with infrastructure and platform services being the largest drivers.",
+      "evidence": "Google Cloud revenues increased $6.8 billion from 2022 to 2023. Growth was primarily driven by Google Cloud Platform followed by Google Workspace offerings. Google Cloud's infrastructure and platform services were the largest drivers of growth in Google Cloud Platform.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_035"
+    },
+    {
+      "question": "How did Google Cloud's profitability change from 2022 to 2023?",
+      "answer": "Google Cloud went from an operating loss of $1.9 billion in 2022 to operating income of $1.7 billion in 2023, representing a $3.6 billion improvement. The increase was primarily driven by higher revenues, partially offset by increased compensation expenses from headcount growth, and benefited from changes in estimated useful lives of servers and network equipment.",
+      "evidence": "Google Cloud operating income of $1.7 billion for 2023 compared to an operating loss of $1.9 billion for 2022 represents an increase of $3.6 billion. The increase in operating income was primarily driven by an increase in revenues, partially offset by an increase in compensation expenses largely driven by headcount growth.",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_036"
+    },
+    {
+      "question": "How did Google Services operating income compare between 2022 and 2023?",
+      "answer": "Google Services operating income was $95.9 billion ($95,858 million) in 2023, an increase of $13.2 billion from $82.7 billion ($82,699 million) in 2022. The increase was primarily driven by higher revenues, partially offset by increases in content acquisition costs and compensation expenses.",
+      "evidence": "Google Services | | |  | | |  | | | $ | 82,699 |  |  | | | $ | 95,858",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_037"
+    },
+    {
+      "question": "What was the Other Bets segment's operating loss for 2023?",
+      "answer": "Other Bets had an operating loss of $4.1 billion ($4,095 million) in 2023, compared to a loss of $4.6 billion ($4,636 million) in 2022. The $541 million improvement was primarily due to growth in revenues as well as a reduction in valuation-based compensation liabilities related to Other Bet companies.",
+      "evidence": "Other Bets operating loss decreased $541 million from 2022 to 2023 primarily due to growth in revenues as well as a reduction in valuation-based compensation liabilities related to Other Bet companies.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_038"
+    },
+    {
+      "question": "How do revenue percentages by geographic region compare between 2022 and 2023?",
+      "answer": "In 2023, the United States accounted for 47% of revenues (down from 48%), EMEA for 30% (up from 29%), APAC for 17% (up from 16%), and Other Americas for 6% (unchanged). The shift reflects increasing international revenue contribution.",
+      "evidence": "| United States | | |  | | |  | | | 48 | | % |  | | | 47 | | % |\n| EMEA | | |  | | |  | | | 29 | | % |  | | | 30 | | % |\n| APAC | | |  | | |  | | | 16 | | % |  | | | 17 | | % |\n| Other Americas | | |  | | |  | | | 6 | | % |  | | | 6 | | % |",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_039"
+    },
+    {
+      "question": "What is the definition of constant currency revenues as used by Alphabet?",
+      "answer": "Constant currency revenues are defined as revenues excluding the effect of foreign currency exchange rate movements (FX Effect) as well as hedging activities recognized at the consolidated level. They are calculated by translating current period revenues using prior year comparable period exchange rates and excluding any hedging effects realized in the current period.",
+      "evidence": "We define constant currency revenues as revenues excluding the effect of foreign currency exchange rate movements (\"FX Effect\") as well as hedging activities, which are recognized at the consolidated level. We use constant currency revenues to determine the constant currency revenue percentage change on a year-on-year basis. Constant currency revenues are calculated by translating current period revenues using prior year comparable period exchange rates, as well as excluding any hedging effects realized in the current period.",
+      "question_type": "definitional",
+      "qa_id": "goog_10k_040"
+    },
+    {
+      "question": "What was the total constant currency revenue for 2023?",
+      "answer": "Total constant currency revenues for 2023 were $309.1 billion, an increase of $28.2 billion compared to $280.9 billion in revenues excluding hedging effect for 2022. This represents a 10% constant currency revenue percentage change year over year.",
+      "evidence": "Total constant currency revenues of $309.1 billion for 2023 increased $28.2 billion compared to $280.9 billion in revenues, excluding hedging effect, for 2022.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_041"
+    },
+    {
+      "question": "What was Traffic Acquisition Cost (TAC) for 2023 and how does TAC differ between Google properties?",
+      "answer": "TAC was $50.9 billion ($50,886 million) in 2023, up from $49.0 billion ($48,955 million) in 2022. TAC as a percentage of revenues from Google Network properties is significantly higher than TAC on Google Search & other properties, because most advertiser revenues from Network properties are paid as TAC to Google Network partners.",
+      "evidence": "TAC as a percentage of revenues generated from ads placed on Google Network properties are significantly higher than TAC as a percentage of revenues generated from ads placed on Google Search & other properties, because most of the advertiser revenues from ads served on Google Network properties are paid as TAC to our Google Network partners.",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_042"
+    },
+    {
+      "question": "What were Alphabet's research and development expenses for 2023?",
+      "answer": "Alphabet's R&D expenses were $45.4 billion ($45,427 million) in 2023, up from $39.5 billion ($39,500 million) in 2022, representing a 15% of revenues compared to 14% in 2022. The increase was primarily driven by a $2.9 billion increase in compensation expenses and $870 million in charges related to office space optimization.",
+      "evidence": "| Research and development expenses | | |  | | |  | | | $ | 39,500 |  |  | | | $ | 45,427 |  |\n| Research and development expenses as a percentage of revenues | | |  | | |  | | | 14 | | % |  | | | 15 | | % |",
+      "question_type": "factual",
+      "qa_id": "goog_10k_044"
+    },
+    {
+      "question": "What were Alphabet's sales and marketing expenses for 2023?",
+      "answer": "Sales and marketing expenses were $27.9 billion ($27,917 million) in 2023, up from $26.6 billion ($26,567 million) in 2022, maintaining at 9% of revenues. The $1.4 billion increase was primarily driven by an increase in compensation expenses of $1.6 billion, partially offset by a decrease in advertising and promotional activities of $441 million.",
+      "evidence": "| Sales and marketing expenses | | |  | | |  | | | $ | 26,567 |  |  | | | $ | 27,917 |  |\n| Sales and marketing expenses as a percentage of revenues | | |  | | |  | | | 9 | | % |  | | | 9 | | % |",
+      "question_type": "factual",
+      "qa_id": "goog_10k_045"
+    },
+    {
+      "question": "What were Alphabet's general and administrative expenses for 2023?",
+      "answer": "General and administrative expenses were $16.4 billion ($16,425 million) in 2023, up from $15.7 billion ($15,724 million) in 2022. As a percentage of revenues, G&A decreased from 6% to 5%. The $701 million increase was primarily driven by a $416 million increase in compensation expenses.",
+      "evidence": "| General and administrative expenses | | |  | | |  | | | $ | 15,724 |  |  | | | $ | 16,425 |  |\n| General and administrative expenses as a percentage of revenues | | |  | | |  | | | 6 | | % |  | | | 5 | | % |",
+      "question_type": "factual",
+      "qa_id": "goog_10k_046"
+    },
+    {
+      "question": "What were the workforce reduction charges in 2023?",
+      "answer": "In January 2023, Alphabet announced a reduction in its workforce, resulting in employee severance and related charges of $2.1 billion for the year ended December 31, 2023. Additionally, the company incurred $1.8 billion in exit charges related to office space optimization efforts and $269 million in accelerated rent and accelerated depreciation.",
+      "evidence": "In January 2023, we announced a reduction of our workforce, and as a result we recorded employee severance and related charges of $2.1 billion for the year ended December 31, 2023. In addition, we are taking actions to optimize our global office space. As a result, exit charges recorded during the year ended December 31, 2023, were $1.8 billion. In addition to these exit charges, for the year ended December 31, 2023, we incurred $269 million in accelerated rent and accelerated depreciation.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_047"
+    },
+    {
+      "question": "What was the impact of the change in estimated useful lives of servers and network equipment?",
+      "answer": "In January 2023, Alphabet changed the estimated useful life of its servers from four years to six years and certain network equipment from five years to six years. Based on carrying values, this resulted in a reduction in depreciation expense of $3.9 billion and an increase in net income of $3.0 billion, or $0.24 per basic and diluted share, for 2023.",
+      "evidence": "In January 2023, we completed an assessment of the useful lives of our servers and network equipment and adjusted the estimated useful life of our servers from four years to six years and the estimated useful life of certain network equipment from five years to six years. This change in accounting estimate was effective beginning in fiscal year 2023. Based on the carrying value of servers and certain network equipment as of December 31, 2022, and those placed in service during the year ended December 31, 2023, the effect of this change in estimate was a reduction in depreciation expense of $3.9 billion and an increase in net income of $3.0 billion, or $0.24 per basic and $0.24 per diluted share, for the year ended December 31, 2023.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_048"
+    },
+    {
+      "question": "What were Alphabet's capital expenditures for 2023 and what were they primarily used for?",
+      "answer": "Capital expenditures were $32.3 billion ($32,251 million) for 2023, up from $31.5 billion ($31,485 million) in 2022. These primarily reflected investments in technical infrastructure. The company expects to increase investment relative to 2023 in technical infrastructure including servers, network equipment, and data centers, particularly in support of AI products and services.",
+      "evidence": "Capital expenditures, which primarily reflected investments in technical infrastructure, were $32.3 billion for the year ended December 31, 2023.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_051"
+    },
+    {
+      "question": "How much did Alphabet repurchase in stock during 2023?",
+      "answer": "During 2023, Alphabet repurchased and subsequently retired 528 million shares for $62.2 billion ($62,184 million). This consisted of 78 million Class A shares for $9.3 billion and 450 million Class C shares for $52.9 billion.",
+      "evidence": "During 2023 we repurchased and subsequently retired 528 million shares for $62.2 billion.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_053"
+    },
+    {
+      "question": "What are the European Commission fines that Alphabet disclosed?",
+      "answer": "In 2017, 2018, and 2019, the European Commission imposed fines on Google for infringing European competition law. The fines were approximately 2.4 billion euros ($2.7 billion), 4.3 billion euros ($5.1 billion), and 1.5 billion euros ($1.7 billion), respectively. The 2018 fine was reduced to 4.1 billion euros by the General Court in September 2022, and Alphabet filed a further appeal.",
+      "evidence": "In 2017, 2018 and 2019, the EC announced decisions that certain actions taken by Google infringed European competition law and imposed fines of \u20ac2.4 billion ($2.7 billion as of June 27, 2017), \u20ac4.3 billion ($5.1 billion as of June 30, 2018), and \u20ac1.5 billion ($1.7 billion as of March 20, 2019), respectively. On September 14, 2022, the General Court reduced the 2018 fine from \u20ac4.3 billion to \u20ac4.1 billion.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_055"
+    },
+    {
+      "question": "What was Alphabet's total assets as of December 31, 2023?",
+      "answer": "Alphabet's total assets were $402.4 billion ($402,392 million) as of December 31, 2023, up from $365.3 billion ($365,264 million) as of December 31, 2022. The increase was driven by growth in property and equipment, accounts receivable, and deferred income taxes.",
+      "evidence": "Total assets | | | $ | 365,264 |  |  | | | $ | 402,392",
+      "question_type": "factual",
+      "qa_id": "goog_10k_056"
+    },
+    {
+      "question": "What was Alphabet's total stockholders' equity as of December 31, 2023?",
+      "answer": "Alphabet's total stockholders' equity was $283.4 billion ($283,379 million) as of December 31, 2023, up from $256.1 billion ($256,144 million) as of December 31, 2022. Retained earnings were $211.2 billion and accumulated other comprehensive loss was $4.4 billion.",
+      "evidence": "Total stockholders' equity | | | 256,144 | |  |  | | | 283,379",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_057"
+    },
+    {
+      "question": "What was Alphabet's property and equipment, net, as of December 31, 2023?",
+      "answer": "Property and equipment, net, was $134.3 billion ($134,345 million) as of December 31, 2023, up from $112.7 billion ($112,668 million) as of December 31, 2022. This reflects the company's continued significant investments in technical infrastructure including data centers and servers.",
+      "evidence": "Property and equipment, net | | | 112,668 | |  |  | | | 134,345",
+      "question_type": "factual",
+      "qa_id": "goog_10k_058"
+    },
+    {
+      "question": "What is the revenue backlog as of December 31, 2023?",
+      "answer": "As of December 31, 2023, Alphabet had $74.1 billion of remaining performance obligations (revenue backlog), primarily related to Google Cloud. The company expects to recognize approximately half of the revenue backlog as revenues over the next 24 months, with the remainder recognized thereafter.",
+      "evidence": "As of December\u00a031, 2023, we had $74.1 billion of remaining performance obligations (\u201crevenue backlog\u201d), primarily related to Google Cloud. Our revenue backlog represents commitments in customer contracts for future services that have not yet been recognized as revenue. The estimated revenue backlog and timing of revenue recognition for these commitments is largely driven by our ability to deliver in accordance with relevant contract terms and when our customers utilize services. We expect to recognize approximately half of the revenue backlog as revenues over the next 24 months with the remaining to be recognized thereafter. Revenue backlog includes related deferred revenue currently recorded as well as amounts that will be invoiced in future periods, and excludes contracts with an original expected term of one year or less and cancellable contracts.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_059"
+    },
+    {
+      "question": "How many stockholders of record were there as of December 31, 2023?",
+      "answer": "As of December 31, 2023, there were approximately 7,305 stockholders of record of Class A stock, 1,757 stockholders of record of Class C stock, and approximately 59 stockholders of record of Class B stock. The actual total number of stockholders is higher since many shares are held by brokers and institutions on behalf of stockholders.",
+      "evidence": "As of December 31, 2023, there were approximately 7,305 and 1,757 stockholders of record of our Class A stock and Class C stock, respectively. Because many of our shares of Class A stock and Class C stock are held by brokers and other institutions on behalf of stockholders, we are unable to estimate the total number of stockholders represented by these record holders. As of December 31, 2023, there were approximately 59 stockholders of record of our Class B stock.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_061"
+    },
+    {
+      "question": "What are the components of Alphabet's cost of revenues?",
+      "answer": "Cost of revenues consists of TAC (traffic acquisition costs) and other costs of revenues. TAC includes amounts paid to distribution partners and Google Network partners. Other cost of revenues includes compensation expense for data centers and operations, content acquisition costs for YouTube and Google Play, depreciation expense for technical infrastructure, and inventory costs for devices.",
+      "evidence": "Cost of revenues is comprised of TAC and other costs of revenues.\n\u2022TAC includes:\n\u25e6amounts paid to our distribution partners who make available our search access points and services. Our distribution partners include browser providers, mobile carriers, original equipment manufacturers, and software developers; and\n\u25e6amounts paid to Google Network partners primarily for ads displayed on their properties.\n\u2022Other cost of revenues primarily includes:\n\u25e6compensation expense related to our data centers and other operations such as content review and customer and product support;\n\u25e6content acquisition costs, which are payments to content providers from whom we license video and other content for distribution on YouTube and Google Play (we pay fees to these content providers based on revenues generated or a flat fee);",
+      "question_type": "definitional",
+      "qa_id": "goog_10k_062"
+    },
+    {
+      "question": "What are the main components of Alphabet's R&D expenses?",
+      "answer": "The main components of R&D expenses are compensation expenses for engineering and technical employees responsible for R&D related to existing and new products and services, depreciation, and third-party services fees primarily relating to consulting and outsourced services in support of engineering and product development efforts.",
+      "evidence": "The main components of our R&D expenses are:\n\n\u2022compensation expenses for engineering and technical employees responsible for R&D related to our existing and new products and services;\n\n\u2022depreciation; and\n\n\u2022third-party services fees primarily relating to consulting and outsourced services in support of our engineering and product development efforts.",
+      "question_type": "definitional",
+      "qa_id": "goog_10k_063"
+    },
+    {
+      "question": "How does Alphabet define paid clicks and cost-per-click?",
+      "answer": "Paid clicks represent engagement by users and include clicks on advertisements by end-users on Google search properties and other Google owned and operated properties including Gmail, Google Maps, and Google Play. Cost-per-click is defined as click-driven revenues divided by the total number of paid clicks, representing the average amount charged to advertisers for each engagement by users.",
+      "evidence": "Paid clicks represent engagement by users and include clicks on advertisements by end-users on Google search properties and other Google owned and operated properties including Gmail, Google Maps, and Google Play. Cost-per-click is defined as click-driven revenues divided by our total number of paid clicks and represents the average amount we charge advertisers for each engagement by users.",
+      "question_type": "definitional",
+      "qa_id": "goog_10k_064"
+    },
+    {
+      "question": "What were the changes in paid clicks and cost-per-click from 2022 to 2023?",
+      "answer": "Paid clicks on Google Search & other properties increased 7% from 2022 to 2023, while cost-per-click increased 1% over the same period. These changes are driven by interrelated factors including changes in advertiser spending, ongoing product and policy changes, and fluctuations in search queries.",
+      "evidence": "| Paid clicks change | | |  | | |  | | |  | | |  | | | 7 | | % |\n| Cost-per-click change | | |  | | |  | | |  | | |  | | | 1 | | % |",
+      "question_type": "factual",
+      "qa_id": "goog_10k_065"
+    },
+    {
+      "question": "What is Other Income (Expense), Net (OI&E) comprised of?",
+      "answer": "OI&E primarily consists of interest income (expense), the effect of foreign currency exchange gains (losses), net gains (losses) and impairment on marketable and non-marketable securities, performance fees, and income (loss) and impairment from equity method investments.",
+      "evidence": "OI&E, net primarily consists of interest income (expense), the effect of foreign currency exchange gains (losses), net gains (losses) and impairment on our marketable and non-marketable securities, performance fees, and income (loss) and impairment from our equity method investments.",
+      "question_type": "definitional",
+      "qa_id": "goog_10k_067"
+    },
+    {
+      "question": "How did OI&E change from 2022 to 2023 and what caused the change?",
+      "answer": "OI&E increased $4.9 billion from a net expense of $3.5 billion in 2022 to net income of $1.4 billion in 2023. The increase was primarily due to fluctuations in the value of equity securities reflecting market-driven changes in marketable equity securities, investment-specific event-driven changes in non-marketable equity securities, and increased interest income due to interest rates.",
+      "evidence": "OI&E, net increased $4.9 billion from 2022 to 2023. The increase was primarily due to fluctuations in the value of equity securities reflecting market driven changes in the value of our marketable equity securities, investment specific event driven changes in our non-marketable equity securities, and increased interest income due to interest rates.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_068"
+    },
+    {
+      "question": "What are the terms of Alphabet's revolving credit facilities?",
+      "answer": "As of December 31, 2023, Alphabet had $10.0 billion of revolving credit facilities: $4.0 billion expiring in April 2024 and $6.0 billion expiring in April 2028. The interest rates are determined based on a formula using certain market rates and progress toward sustainability goals. No amounts have been borrowed under these facilities.",
+      "evidence": "As of December 31, 2023, we had $10.0 billion of revolving credit facilities, $4.0 billion expiring in April 2024 and $6.0 billion expiring in April 2028. The interest rates for all credit facilities are determined based on a formula using certain market rates, as well as our progress toward the achievement of certain sustainability goals. No amounts have been borrowed under the credit facilities.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_070"
+    },
+    {
+      "question": "What is Alphabet's short-term commercial paper program?",
+      "answer": "Alphabet has a short-term debt financing program allowing issuance of commercial paper up to $10.0 billion. Net proceeds from the program are used for general corporate purposes. As of December 31, 2023, there was no commercial paper outstanding.",
+      "evidence": "We have a short-term debt financing program of up to $10.0 billion through the issuance of commercial paper. Net proceeds from this program are used for general corporate purposes. As of December 31, 2023, we had no commercial paper outstanding.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_071"
+    },
+    {
+      "question": "What was the carrying value of Alphabet's senior unsecured notes as of December 31, 2023?",
+      "answer": "As of December 31, 2023, Alphabet had senior unsecured notes outstanding with a total carrying value of $12.9 billion, with short-term future interest payments of $214 million and long-term future interest payments of $3.6 billion.",
+      "evidence": "As of December 31, 2023, we had senior unsecured notes outstanding with a total carrying value of $12.9 billion with short-term and long-term future interest payments of $214 million and $3.6 billion, respectively.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_072"
+    },
+    {
+      "question": "What were Alphabet's material purchase commitments and contractual obligations as of December 31, 2023?",
+      "answer": "As of December 31, 2023, Alphabet had material purchase commitments and other contractual obligations of $45.9 billion, of which $31.6 billion was short-term. These primarily consist of purchase orders for technical infrastructure and the non-cancelable portion of agreements related to licenses, including content licenses, inventory, and network capacity.",
+      "evidence": "As of December 31, 2023, we had material purchase commitments and other contractual obligations of $45.9 billion, of which $31.6 billion was short-term. These amounts primarily consist of purchase orders for certain technical infrastructure as well as the non-cancelable portion or the minimum cancellation fee in certain agreements related to commitments to purchase licenses, including content licenses, inventory and network capacity.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_073"
+    },
+    {
+      "question": "What transition tax obligations does Alphabet have related to the Tax Cuts and Jobs Act?",
+      "answer": "As of December 31, 2023, Alphabet had income taxes payable of $4.2 billion related to the one-time transition tax incurred under the Tax Cuts and Jobs Act, of which $2.1 billion was short-term. As permitted by the Tax Act, the company will pay the transition tax in annual interest-free installments through 2025.",
+      "evidence": "As of December 31, 2023, we had income taxes payable of $4.2 billion, of which $2.1 billion was short-term, related to a one-time transition tax payable incurred as a result of the U.S. Tax Cuts and Jobs Act (\"Tax Act\"). As permitted by the Tax Act, we will pay the transition tax in annual interest-free installments through 2025.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_074"
+    },
+    {
+      "question": "How does Alphabet manage foreign currency exchange risk?",
+      "answer": "Alphabet uses foreign currency forward and option contracts, including collars, to protect forecasted U.S. dollar-equivalent earnings and to offset foreign exchange risk on assets and liabilities denominated in currencies other than the subsidiary's functional currency. Principal currencies hedged include the Australian dollar, British pound, Canadian dollar, Euro, and Japanese yen. These hedging contracts reduce, but do not entirely eliminate, the effect of exchange rate movements.",
+      "evidence": "We use foreign currency forward and option contracts to offset the foreign exchange risk on assets and liabilities denominated in currencies other than the functional currency of the subsidiary.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_075"
+    },
+    {
+      "question": "What is the potential adverse effect of a 10% foreign currency exchange rate change?",
+      "answer": "If an adverse 10% foreign currency exchange rate change was applied to total monetary assets, liabilities, and commitments denominated in currencies other than functional currencies at the balance sheet date, it would have resulted in an adverse effect on income before income taxes of approximately $503 million as of December 31, 2023, after consideration of foreign exchange contracts in place.",
+      "evidence": "If an adverse 10% foreign currency exchange rate change was applied to total monetary assets, liabilities, and commitments denominated in currencies other than the functional currencies at the balance sheet date, it would have resulted in an adverse effect on income before income taxes of approximately $136 million and $503 million as of December 31, 2022 and 2023, respectively, after consideration of the effect of foreign exchange contracts in place for the years ended December 31, 2022 and 2023.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_076"
+    },
+    {
+      "question": "How does Alphabet use Value-at-Risk (VaR) analysis for interest rate risk?",
+      "answer": "Alphabet uses a variance/covariance VaR model with a 95% confidence interval to determine the potential effect of fluctuations in interest rates on its marketable debt security portfolio. The estimated one-day loss in fair value was $296 million as of December 31, 2023, up from $256 million as of December 31, 2022.",
+      "evidence": "We use value-at-risk (VaR) analysis to determine the potential effect of fluctuations in interest rates on the value of our marketable debt security portfolio. The VaR is the expected loss in fair value, for a given confidence interval, for our investment portfolio due to adverse movements in interest rates. We use a variance/covariance VaR model with 95% confidence interval.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_077"
+    },
+    {
+      "question": "What was the carrying value of Alphabet's non-marketable equity securities as of December 31, 2023?",
+      "answer": "As of December 31, 2023, the carrying value of non-marketable equity securities accounted for under the measurement alternative was $28.8 billion. Of this amount, $13.7 billion were remeasured at fair value during 2023 and primarily classified within Level 2 of the fair value hierarchy.",
+      "evidence": "As of December 31, 2023, the carrying value of our non-marketable equity securities was $28.8 billion, of which $13.7 billion were remeasured at fair value during the year ended December 31, 2023, and primarily classified within Level 2 of the fair value hierarchy at the time of measurement.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_078"
+    },
+    {
+      "question": "What is the measurement alternative method for non-marketable equity securities?",
+      "answer": "Under the measurement alternative, the carrying value of non-marketable equity securities is measured at cost, less any impairment, plus or minus changes resulting from observable price changes in orderly transactions for identical or similar investments of the same issuer. Adjustments are determined primarily based on a market approach as of the transaction date.",
+      "evidence": "Non-marketable securities primarily consist of equity securities. We account for non-marketable equity securities through which we exercise significant influence but do not have control over the investee under the equity method. All other non-marketable equity securities that we hold are primarily accounted for under the measurement alternative. Under the measurement alternative, the carrying value is measured at cost, less any impairment, plus or minus",
+      "question_type": "definitional",
+      "qa_id": "goog_10k_079"
+    },
+    {
+      "question": "Who serves as Alphabet's independent auditor and how long have they served?",
+      "answer": "Ernst & Young LLP serves as Alphabet's independent registered public accounting firm. They have served as the company's auditor since 1999 and are based in San Jose, California. The audit report was signed on January 30, 2024.",
+      "evidence": "| We have served as the Company's auditor since 1999. | | |  | | |\n|  | | |  | | |\n| San Jose, California | | |  | | |\n| January 30, 2024 | | |  | | |",
+      "question_type": "factual",
+      "qa_id": "goog_10k_080"
+    },
+    {
+      "question": "What opinion did Ernst & Young express on Alphabet's internal controls?",
+      "answer": "Ernst & Young expressed an unqualified opinion on Alphabet's internal control over financial reporting as of December 31, 2023, based on criteria established in the Internal Control -- Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (2013 framework).",
+      "evidence": "In our opinion, Alphabet Inc. (the Company) maintained, in all material respects, effective internal control over financial reporting as of December 31, 2023, based on the COSO criteria.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_081"
+    },
+    {
+      "question": "What critical audit matter did Ernst & Young identify in the 2023 audit?",
+      "answer": "The critical audit matter identified by Ernst & Young was loss contingencies. The company faces claims, lawsuits, regulatory investigations, and other proceedings involving competition, intellectual property, data privacy, tax compliance, and other matters. Significant judgment is required to determine both the likelihood and estimated amount of loss, making this a challenging audit area.",
+      "evidence": "The Company is regularly subject to claims, lawsuits, regulatory and government investigations, other proceedings, and consent orders involving competition, intellectual property, data privacy and security, tax and related compliance, labor and employment, commercial disputes",
+      "question_type": "factual",
+      "qa_id": "goog_10k_082"
+    },
+    {
+      "question": "How are Google Cloud subscription revenues recognized?",
+      "answer": "Revenues related to cloud services provided on a consumption basis are recognized when the customer utilizes the services, based on the quantity of services consumed. Revenues related to cloud services provided on a subscription basis are recognized ratably over the contract term as the customer receives and consumes the benefits of the cloud services.",
+      "evidence": "Revenues related to cloud services provided on a consumption basis are recognized when the customer utilizes the services, based on the quantity of services consumed. Revenues related to cloud services provided on a subscription basis are recognized ratably over the contract term as the customer receives and consumes the benefits of the cloud services.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_084"
+    },
+    {
+      "question": "How does Alphabet account for Google Play app sales revenues?",
+      "answer": "Alphabet reports revenues from Google Play app sales and in-app purchases on a net basis, because its performance obligation is to facilitate a transaction between app developers and end users, for which it earns a service fee. This is in contrast to advertising revenues which are generally reported on a gross basis.",
+      "evidence": "We report revenues from Google Play app sales and in-app purchases on a net basis, because our performance obligation is to facilitate a transaction between app developers and end users, for which we earn a service fee.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_085"
+    },
+    {
+      "question": "How does Alphabet depreciate its property and equipment?",
+      "answer": "Alphabet uses the straight-line depreciation method. Buildings are depreciated over 7 to 25 years. Information technology assets, including servers and network equipment, are depreciated over a period of six years (changed from four years for servers and five years for certain network equipment in January 2023). Leasehold improvements are depreciated over the shorter of the remaining lease term or the estimated useful lives of the assets.",
+      "evidence": "We depreciate buildings over periods of seven to 25 years. We depreciate information technology assets generally over a period of six years for servers and network equipment. We depreciate leasehold improvements over the shorter of the remaining lease term or the estimated useful lives of the assets.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_086"
+    },
+    {
+      "question": "How does Alphabet account for stock-based compensation?",
+      "answer": "Stock-based compensation primarily consists of restricted stock units (RSUs), which are equity classified and measured at fair market value of the underlying stock at the grant date. RSU expense is recognized using the straight-line attribution method over the requisite service period, and forfeitures are accounted for as they occur. Shares are issued on vesting dates net of applicable statutory income tax withholding.",
+      "evidence": "Stock-based compensation (SBC) primarily consists of Alphabet restricted stock units (RSUs). RSUs are equity classified and measured at the fair market value of the underlying stock at the grant date. We recognize RSU expense using the straight-line attribution method over the requisite service period and account for forfeitures as they occur.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_087"
+    },
+    {
+      "question": "How does Alphabet manage its cybersecurity risk and what is the governance structure?",
+      "answer": "Alphabet maintains a comprehensive process for identifying, assessing, and managing cybersecurity risks as part of its broader risk management system. Teams of dedicated privacy, safety, and security professionals oversee the program, led by the Vice President of Privacy, Safety, and Security Engineering. The Audit and Compliance Committee has oversight responsibility for cybersecurity-related risks and reports findings to the full Board.",
+      "evidence": "We maintain a comprehensive process for identifying, assessing, and managing material risks from cybersecurity threats as part of our broader risk management system and processes. We obtain input, as appropriate, for our cybersecurity risk management program on the security industry and threat trends from multiple external experts and internal threat intelligence teams. Teams of dedicated privacy, safety, and security professionals oversee cybersecurity risk management and mitigation, incident prevention, detection, and remediation. Leadership for these teams are professionals with deep cybersecurity expertise across multiple industries, including our Vice President of Privacy, Safety, and Security Engineering. Our executive leadership team, along with input from the above teams, are responsible for our overall enterprise risk management system and processes and regularly consider cybersecurity risks in the context of other material risks to the company.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_092"
+    },
+    {
+      "question": "How does Alphabet handle cybersecurity incident escalation?",
+      "answer": "Alphabet's incident management teams track and log privacy and security incidents across the company, its vendors, and third-party service providers. Significant incidents are reviewed by a cross-functional working group to determine if further escalation is needed. Any incident assessed as potentially material is immediately escalated for further assessment and reported to designated senior management, with consultation from outside counsel on materiality analysis.",
+      "evidence": "As part of our cybersecurity risk management system, our incident management teams track and log privacy and security incidents across Alphabet, our vendors, and other third-party service providers to remediate and resolve any such incidents. Significant incidents are reviewed regularly by a cross-functional working group to determine whether further escalation is appropriate. Any incident assessed as potentially being or potentially becoming material is immediately escalated for further assessment, and then reported to designated members of our senior management.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_093"
+    },
+    {
+      "question": "What were the total operating lease payments and weighted average remaining lease term as of December 31, 2023?",
+      "answer": "As of December 31, 2023, total future lease payments under operating leases were $17.7 billion, with a weighted average remaining lease term of eight years. Of the total, $3.2 billion was short-term. Operating lease expenses including variable lease costs were $4.5 billion for 2023.",
+      "evidence": "As of December 31, 2023, the amount of total future lease payments under operating leases, which had a weighted average remaining lease term of eight years, was $17.7 billion, of which $3.2 billion is short-term.",
+      "question_type": "factual",
+      "qa_id": "goog_10k_095"
+    },
+    {
+      "question": "How did Alphabet's total revenues trend across all three reported years (2021-2023)?",
+      "answer": "Alphabet's total revenues were $257.6 billion ($257,637 million) in 2021, $282.8 billion ($282,836 million) in 2022, and $307.4 billion ($307,394 million) in 2023. This represents consistent growth from 2021 through 2023.",
+      "evidence": "Revenues | | | $ | 257,637 |  |  | | | $ | 282,836 |  |  | | | $ | 307,394",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_096"
+    },
+    {
+      "question": "How does Alphabet approach its goodwill impairment testing?",
+      "answer": "Alphabet allocates goodwill to reporting units based on the expected benefit from the business combination. The company evaluates reporting units periodically, and when changes occur, it reassigns goodwill using a relative fair value allocation approach. Goodwill is tested for impairment at least annually, or more frequently if events or circumstances indicate the asset may be impaired. Goodwill was $29.2 billion as of December 31, 2023.",
+      "evidence": "We allocate goodwill to reporting units based on the expected benefit from the business combination. We evaluate our reporting units periodically, as well as when changes in our operating segments occur. For changes in reporting units, we reassign goodwill using a relative fair value allocation approach. We test our goodwill for impairment at least annually, or more frequently if events or changes in circumstances indicate that the asset may be impaired.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_100"
+    },
+    {
+      "question": "What seasonal factors does Alphabet identify as likely to cause fluctuations in its quarterly results?",
+      "answer": "Alphabet identifies seasonal fluctuations in internet usage and advertiser expenditures, as well as underlying business trends such as traditional retail seasonality, as factors likely to cause fluctuations in quarterly results.",
+      "evidence": "\u2022seasonal fluctuations in internet usage and advertiser expenditures, underlying business trends such as traditional retail seasonality, which are likely to cause fluctuations in our quarterly results;",
+      "question_type": "causal",
+      "qa_id": "goog_10k_101"
+    },
+    {
+      "question": "Why might Alphabet's forward-looking statements differ from actual results?",
+      "answer": "Forward-looking statements are based on current expectations and assumptions that are subject to risks and uncertainties, which could cause actual results to differ materially from those reflected in the forward-looking statements.",
+      "evidence": "These forward-looking statements are based on current expectations and assumptions that are subject to risks and uncertainties, which could cause our actual results to differ materially from those reflected in the forward-looking statements.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_102"
+    },
+    {
+      "question": "Where in the 10-K does Alphabet direct readers to find factors that could cause actual results to differ from forward-looking statements?",
+      "answer": "Alphabet directs readers to the risks discussed in Part I, Item 1A \"Risk Factors\" and the trends discussed in Part II, Item 7 \"Management's Discussion and Analysis of Financial Condition and Results of Operations,\" as well as other documents filed with the SEC.",
+      "evidence": "Factors that could cause or contribute to such differences include, but are not limited to, those discussed in this Annual Report on Form 10-K, including the risks discussed in Part I, Item 1A \"Risk Factors\" and the trends discussed in Part II, Item 7 \"Management's Discussion and Analysis of Financial Condition and Results of Operations,\" and those discussed in other documents we file with the SEC.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_103"
+    },
+    {
+      "question": "When did Google become an AI-first company and who leads this effort?",
+      "answer": "Google became an AI-first company in 2016 after being a pioneer in the development of AI. This work continues under the leadership of Alphabet and Google CEO, Sundar Pichai.",
+      "evidence": "It led us to be a pioneer in the development of AI and, since 2016, an AI-first company. We continue this work under the leadership of Alphabet and Google CEO, Sundar Pichai.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_104"
+    },
+    {
+      "question": "How has Google's core mission evolved over time according to the 10-K?",
+      "answer": "Google has evolved from a company that helps people find answers to a company that also helps people get things done, expanding beyond its original search-focused mission.",
+      "evidence": "Since then, we have evolved from a company that helps people find answers to a company that also helps people get things done.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_105"
+    },
+    {
+      "question": "What was the significance of BERT for Google Search and when was it introduced?",
+      "answer": "BERT (Bidirectional Encoder Representations from Transformers) was introduced in 2019 and helped Search understand the intent of user search queries better than ever before.",
+      "evidence": "This led to the Bidirectional Encoder Representations from Transformers, or BERT, in 2019 that helped Search understand the intent of user search queries better than ever before.",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_106"
+    },
+    {
+      "question": "How many AlphaFold protein structures were open-sourced and what applications do they support?",
+      "answer": "Google open-sourced 200 million of AlphaFold's protein structures to the scientific community. These structures are used to work on accelerating new malaria vaccines, advancing cancer drug discovery, and developing plastic-eating enzymes.",
+      "evidence": "Since then, we have open-sourced to the scientific community 200 million of AlphaFold\u2019s protein structures which are used to work on everything from accelerating new malaria vaccines to advancing cancer drug discovery and developing plastic-eating enzymes.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_107"
+    },
+    {
+      "question": "How does Alphabet describe the tension between boldness and responsibility in its AI development approach?",
+      "answer": "Alphabet acknowledges a natural tension between being bold and being responsible in AI development, but believes it is possible and in fact critical to embrace that tension productively.",
+      "evidence": "While there is natural tension between being bold and being responsible, we believe it is possible \u2014 and in fact critical \u2014 to embrace that tension productively.",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_108"
+    },
+    {
+      "question": "How does Alphabet distinguish between its historical AI integration and its current generative AI strategy?",
+      "answer": "While Alphabet has been integrating AI into its products for years, it is now specifically embedding the power of generative AI to continue helping users express themselves and get things done, representing a shift toward generative capabilities.",
+      "evidence": "While we have been integrating AI into our products for years, we are now embedding the power of generative AI to continue helping our users express themselves and get things done.",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_109"
+    },
+    {
+      "question": "What examples does Alphabet cite to illustrate that bold acquisitions initially perceived as risky can mature into major platforms?",
+      "answer": "Alphabet cites the acquisitions of YouTube and Android, as well as the launch of Chrome, as examples where people thought the company was crazy at the time, but these efforts matured into major platforms for digital video, mobile devices, and a safer, popular browser.",
+      "evidence": "This incrementalism leads to irrelevance over time, especially in technology, where change tends to be revolutionary, not evolutionary. People thought we were crazy when we acquired YouTube and Android and when we launched Chrome, but those efforts have matured into major platforms for digital video and mobile devices and a safer, popular browser.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_110"
+    },
+    {
+      "question": "How has Google Search transformed from its original format according to the filing?",
+      "answer": "Google Search started as a way to find web pages organized into ten blue links, but technical advancements and product innovations have transformed it into a dynamic, multimodal experience.",
+      "evidence": "While Google Search started as a way to find web pages, organized into ten blue links, we have driven technical advancements and product innovations that have transformed Google Search into a dynamic, multimodal experience.",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_111"
+    },
+    {
+      "question": "What types of vertical competitors may draw users away from Google Search?",
+      "answer": "Vertical search engines and e-commerce providers for queries related to travel, jobs, and health may draw users away, as users may navigate directly to these services rather than go through Google.",
+      "evidence": "\u2022vertical search engines and e-commerce providers for queries related to travel, jobs, and health, which users may navigate directly to rather than go through Google;",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_112"
+    },
+    {
+      "question": "How do social networks pose a competitive threat to traditional search engines like Google?",
+      "answer": "Social networks pose a competitive threat because users may rely on them for product or service referrals, rather than seeking information through traditional search engines.",
+      "evidence": "\u2022social networks, which users may rely on for product or service referrals, rather than seeking information through traditional search engines;",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_113"
+    },
+    {
+      "question": "What are the three pillars of Alphabet's sustainability work?",
+      "answer": "Alphabet's sustainability work is focused on three pillars: empowering individuals to take action, working together with partners and customers, and working to reduce its carbon footprint across operations and supply chain.",
+      "evidence": "We have been a leader on sustainability and climate change since Google\u2019s founding more than 25 years ago.\n\nOur sustainability work is focused on empowering individuals to take action, working together with our partners and customers, and working to reduce our carbon footprint across our operations and supply chain.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_114"
+    },
+    {
+      "question": "Why does Alphabet still rely on carbon-emitting energy sources despite its renewable energy commitments?",
+      "answer": "Alphabet still relies on carbon-emitting energy sources because of differences in the availability of renewable energy sources like solar and wind across the regions where it operates, and because of the variable supply of these resources, requiring reliance on carbon-emitting energy sources that power local grids.",
+      "evidence": "However, because of differences in the availability of renewable energy sources like solar and wind across the regions where we operate\u2014and because of the variable supply of these resources\u2014we still need to rely on carbon-emitting energy sources that power local grids.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_115"
+    },
+    {
+      "question": "Since when has Google matched 100% of its electricity consumption with renewable energy purchases?",
+      "answer": "Since 2017, Google has matched 100% of the electricity consumption of its global operations with purchases of renewable energy on an annual basis.",
+      "evidence": "Since 2017, we have matched 100% of the electricity consumption of our global operations with purchases of renewable energy on an annual basis.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_116"
+    },
+    {
+      "question": "Under what circumstances does Alphabet contract with temporary staffing agencies?",
+      "answer": "Alphabet contracts with temporary staffing agencies when it needs to cover short-term leaves, when it has spikes in business needs, or when it needs to quickly incubate special projects.",
+      "evidence": "We also contract with temporary staffing agencies when we need to cover short-term leaves, when we have spikes in business needs, or when we need to quickly incubate special projects.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_117"
+    },
+    {
+      "question": "What broad business impacts could regulatory compliance have on Alphabet according to its risk factors?",
+      "answer": "Regulatory compliance could increase Alphabet's cost of doing business, make its products and services less useful, limit its ability to pursue certain business models, cause changes to business practices, affect its competitive position relative to peers, and otherwise harm its business, reputation, financial condition, and operating results.",
+      "evidence": "Our compliance with these laws and regulations may be onerous and could, individually or in the aggregate, increase our cost of doing business, make our products and services less useful, limit our ability to pursue certain business models, cause us to change our business practices, affect our competitive position relative to our peers, and/or otherwise harm our business, reputation, financial condition, and operating results.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_118"
+    },
+    {
+      "question": "What does Alphabet identify as requirements for competing successfully in the technology industry?",
+      "answer": "To compete successfully, Alphabet states it must accurately anticipate technology developments and deliver innovative, relevant, and useful products, services, and technologies in a timely manner.",
+      "evidence": "To compete successfully, we must accurately anticipate technology developments and deliver innovative, relevant and useful products, services, and technologies in a timely manner.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_119"
+    },
+    {
+      "question": "What competitive risk does Alphabet face regarding the speed of innovation by its competitors?",
+      "answer": "Alphabet's competitors may be able to innovate and provide products and services faster than Alphabet can, or may foresee the need for products and services before Alphabet does.",
+      "evidence": "Our competitors may also be able to innovate and provide products and services faster than we can or may foresee the need for products and services before we do.",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_120"
+    },
+    {
+      "question": "What risks does Alphabet identify regarding the commercial viability of its investments?",
+      "answer": "Alphabet warns that its investments ultimately may not be commercially viable or may not result in an adequate return of capital, and that in pursuing new strategies, the company may incur unanticipated liabilities.",
+      "evidence": "Our investments ultimately may not be commercially viable or may not result in an adequate return of capital and, in pursuing new strategies, we may incur unanticipated liabilities.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_121"
+    },
+    {
+      "question": "What specific factors does Alphabet identify as potential causes for a decline in its revenue growth rate over time?",
+      "answer": "Alphabet identifies several factors including changes in devices and modalities used to access products, changes in geographic mix, deceleration or declines in advertiser spending, competition, customer usage and demand changes, decreases in pricing, ongoing product and policy changes, and shifts to lower priced products and services.",
+      "evidence": "Our revenue growth rate could decline over time as a result of a number of factors, including changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; customer usage and demand for our products; decreases in our pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_122"
+    },
+    {
+      "question": "Why have margins on Alphabet's devices had an adverse effect on consolidated margins?",
+      "answer": "Margins on Alphabet's devices have had, and may continue to have, an adverse effect on consolidated margins due to pressures on pricing and higher cost of sales.",
+      "evidence": "In particular, margins on our devices have had, and may continue to have, an adverse effect on our consolidated margins due to pressures on pricing and higher cost of sales.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_123"
+    },
+    {
+      "question": "What risk does Alphabet face if the word 'Google' becomes a generic term?",
+      "answer": "If 'Google' becomes a generic term, Alphabet could lose trademark protection, which could result in other people using the word 'Google' to refer to their own products, thus diminishing the brand.",
+      "evidence": "If this happens, we could lose protection for this trademark, which could result in other people using the word \u201cGoogle\u201d to refer to their own products, thus diminishing our brand.",
+      "question_type": "causal",
+      "qa_id": "goog_10k_124"
+    },
+    {
+      "question": "What was the status of the EU AI Act as described in Alphabet's 10-K filing?",
+      "answer": "As of the filing, the EU AI Act's legislative text had yet to be finalized and formally approved, but a provisional political agreement was reached between co-legislators in December 2023, including that specific transparency and other requirements would be introduced for general purpose AI systems and the models on which those systems are based.",
+      "evidence": "For example, while legislative text has yet to be finalized and formally approved, provisional political agreement on a proposed EU AI Act was reached between co-legislators in December 2023, including that specific transparency and other requirements would be introduced for general purpose AI systems and the models on which those systems are based.",
+      "question_type": "comparative",
+      "qa_id": "goog_10k_125"
+    },
+    {
+      "question": "What advance notice requirement exists for Alphabet stockholders who wish to nominate directors or propose matters at meetings?",
+      "answer": "Stockholders must provide advance notice to nominate individuals for election to the Board of Directors or to propose matters that can be acted upon at a stockholders' meeting.",
+      "evidence": "\u2022Stockholders must provide advance notice to nominate individuals for election to the Board of Directors or to propose matters that can be acted upon at a stockholders\u2019 meeting.",
+      "question_type": "procedural",
+      "qa_id": "goog_10k_126"
+    }
+  ]
+}

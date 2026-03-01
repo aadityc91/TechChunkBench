@@ -1,0 +1,705 @@
+{
+  "corpus_id": "cdc_immunization",
+  "qa_pairs": [
+    {
+      "question": "How many adults and children die every year in the USA from vaccine-preventable diseases?",
+      "answer": "More than 40,000 adults and 300 children die every year in the USA from vaccine-preventable diseases, despite the advancement in vaccine coverage.",
+      "evidence": "Despite the advancement in vaccine coverage, more than 40,000 adults and 300 children die every year in the USA from vaccine-preventable diseases.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_001"
+    },
+    {
+      "question": "What is the role of the Advisory Committee on Immunization Practices (ACIP) in the United States?",
+      "answer": "The ACIP recommends immunization in the United States. After the CDC director reviews and approves the ACIP recommendation, they are published in MMWR (Morbidity and Mortality Weekly Report) as the final CDC recommendations for immunization.",
+      "evidence": "A schedule is a tool that helps to shield individuals from disease by vaccinating them when they are the most vulnerable. The ACIP (Advisory Committee on Immunization Practices) recommends immunization in the United States.[5]\u00a0After the CDC director reviews and approves the ACIP recommendation, they are published in MMWR (Morbidity and Mortality weekly report) as the final CDC recommendations for immunization in the United States.[6]",
+      "question_type": "definitional",
+      "qa_id": "cdc_immunization_002"
+    },
+    {
+      "question": "How many infectious diseases does the current immunization schedule for children below 6 years cover, and how does this compare to 1948?",
+      "answer": "The current immunization schedule for children below 6 years covers 14 infectious diseases, compared to only 4 diseases (diphtheria, tetanus, pertussis, and smallpox) in 1948. A child may receive up to 24 injections in the first 2 years of age.",
+      "evidence": "The current immunization schedules for children below 6 years comprises vaccines that prevent 14 infectious diseases, which is a drastic achievement compared with the schedule in 1948 when immunizations against only diphtheria, tetanus, pertussis, and smallpox were available. Per the immunization schedule, a child may receive up to 24 injections in the first 2 years of age and up to 5 injections in a single visit.",
+      "question_type": "comparative",
+      "qa_id": "cdc_immunization_003"
+    },
+    {
+      "question": "What are the 2020 CDC schedule changes regarding the 5th dose of DTaP vaccine?",
+      "answer": "The 5th dose of the DTaP vaccine is unnecessary if the fourth dose was given after 4 years of age and 6 months after the third dose.",
+      "evidence": "The 5th dose of the DTaP vaccine is unnecessary if the fourth dose was given after 4 years of age and 6 months after the third dose.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_004"
+    },
+    {
+      "question": "What is the minimum age for DTaP vaccine and how many doses are in the series?",
+      "answer": "The minimum age for DTaP vaccine is 6 weeks. A 5-dose series is necessary at ages 2, 4, 6, 15-18 months, and 4-6 years. DTaP is not recommended beyond 7 years of age; Tdap vaccine is preferred after that.",
+      "evidence": "The minimum age for the DTaP vaccine is 6 weeks. Per CDC guidelines, 5 dose series is necessary for DTaP at 2, 4, 6, 15-18 months, and 4 -6 years. The fifth dose is unnecessary for catch-up immunization if the fourth dose is given at more than 4 years of age and at least 6 months after the third dose. DTaP is not recommended beyond 7 years of age. Tdap vaccine is preferred for kids after 7 years of age.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_005"
+    },
+    {
+      "question": "When is the Tdap vaccine recommended during pregnancy?",
+      "answer": "Tdap is recommended during each pregnancy between 27 to 36 weeks gestational age.",
+      "evidence": "Also, Tdap is recommended during each pregnancy between 27 to 36 weeks gestational.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_006"
+    },
+    {
+      "question": "What special Hib vaccination consideration applies to children undergoing elective splenectomy?",
+      "answer": "Children undergoing elective splenectomy need 1 dose of Hib vaccine, preferably 14 days before the procedure, irrespective of vaccine status.",
+      "evidence": "Children undergoing elective splenectomy need 1 dose of Hib vaccine, preferably 14 days before the procedure, irrespective of vaccine status.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_008"
+    },
+    {
+      "question": "What is the Hepatitis A vaccination schedule for infants who need to travel to countries with high endemic hepatitis A?",
+      "answer": "For infants aged 6-12 months, 1 dose of Hep A vaccine should be given before travel and revaccination with 2 doses after 12 months of age.",
+      "evidence": "For infants aged 6-12 months, 1 dose of Hep A vaccine should be given before travel and revaccination with 2 doses after 12 months.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_009"
+    },
+    {
+      "question": "How does the HPV vaccine dosing schedule differ for individuals under 14 versus 15 and above?",
+      "answer": "CDC recommends a 2-dose series (0, 6 months) for age groups up to 14 years and a 3-dose series (0, 1, 6 months) for the 15 years and above age group.",
+      "evidence": "CDC recommends 2-dose series (0,6 months) for age groups up to 14 years and 3-dose series (0, 1, 6 months) for the 15 years and above age group.",
+      "question_type": "comparative",
+      "qa_id": "cdc_immunization_011"
+    },
+    {
+      "question": "What is the MMR vaccine post-exposure prophylaxis window?",
+      "answer": "MMR vaccine can be used as postexposure prophylaxis within 3 days of exposure.",
+      "evidence": "MMR vaccine can be used as postexposure prophylaxis within 3 days of exposure.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_013"
+    },
+    {
+      "question": "What is the rotavirus vaccine series timing constraint regarding start and finish?",
+      "answer": "The rotavirus vaccine series should not be started after 15 weeks of age, and the final dose should be administered before 8 months of age.",
+      "evidence": "The series should not be started after 15 weeks of age. The final dose should be administered before 8 months.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_014"
+    },
+    {
+      "question": "Are MenB-4C and MenB-FHbp vaccines interchangeable?",
+      "answer": "No, MenB-4C and MenB-FHbp vaccines are not interchangeable; the same product should be used for all doses in a series.",
+      "evidence": "MenB-4C and MenB-FHbp vaccines are not interchangeable; the same product should be used for all doses in a series.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_016"
+    },
+    {
+      "question": "What pneumococcal vaccination series is recommended for high-risk children aged 2-5 years?",
+      "answer": "For high-risk children aged 2 to 5 years, a 2-dose series of PCV13 with 8 weeks intervals followed by 1 dose of PPSV23 at least 8 weeks after the last PCV13 dose is recommended.",
+      "evidence": "For high-risk children of age group 2 to 5 years, a 2-dose series of PCV13 with 8 weeks intervals followed by 1 dose of PPSV23 at least 8 weeks after the last PCV13 dose.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_017"
+    },
+    {
+      "question": "What was the approximate USA vaccination rate in 2019 for MMR, Varicella, and DTaP?",
+      "answer": "As per the 2020 CDC report, the USA's vaccination rate in 2019 was approximately 95% for MMR, Varicella, and DTaP.",
+      "evidence": "As per the 2020 CDC report, the USA's vaccination rate in 2019 was approximately 95% for MMR, Varicella, and DTaP.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_018"
+    },
+    {
+      "question": "How did the COVID-19 pandemic affect childhood immunization rates?",
+      "answer": "The COVID pandemic reduced the immunization rate in the 2020-2021 school year among children entering kindergarten due to decreased slots for well-visit appointments and schools not enforcing vaccination policies because of remote learning.",
+      "evidence": "the COVID pandemic has reduced the immunization rate in the 2020-2021 school year among children entering kindergarten due to decreased slots for well-visit appointments and schools not enforcing the vaccination policies because of remote learning.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_019"
+    },
+    {
+      "question": "What was Edward Jenner's contribution to vaccination and when did it occur?",
+      "answer": "Edward Jenner inoculated a 13-year-old boy with cowpox material in 1796, demonstrating immunity to smallpox and laying the foundation for modern vaccines. His work led to the creation of the first smallpox vaccine in 1798, ultimately culminating in the global eradication of smallpox by 1979.",
+      "evidence": "The history of immunization dates back to 1796, when Edward Jenner inoculated a 13-year-old boy with cowpox material, demonstrating immunity to smallpox and laying the foundation for modern vaccines. Jenner\u2019s work led to the creation of the first smallpox vaccine in 1798, ultimately culminating in the global eradication of smallpox by 1979.[4][5][6] Over the centuries, vaccine development has advanced through the refinement of scientific methods, the discovery of microbial pathogens, and the innovation of novel vaccine platforms, eg, mRNA technology. These achievements not only expanded the scope of preventable diseases but also reinforced the vital role of immunization in safeguarding humanity against both established and emerging infections.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_020"
+    },
+    {
+      "question": "What is the definition of a vaccine and how does it work?",
+      "answer": "A vaccine is a pharmacologic compound that strengthens an individual's immunity against a specific disease. Vaccines contain a modified form of the disease-causing agent (weakened or inactivated microbe, neutralized toxin, or pathogen surface protein) which exposes the immune system to the antigen in a controlled manner, enabling the development of antibodies and memory T lymphocytes.",
+      "evidence": "A vaccine functions as a pharmacologic compound that strengthens an individual's immunity against a specific disease. When a pathogenic bacterium or virus enters the body, the immune system identifies it as foreign by detecting distinct protein segments of the invading organism, known as antigens. Vaccines contain a modified form of the disease-causing agent, which may include a weakened or inactivated microbe, a neutralized toxin, or a protein derived from the pathogen\u2019s surface.[1]",
+      "question_type": "definitional",
+      "qa_id": "cdc_immunization_021"
+    },
+    {
+      "question": "How do mRNA vaccines work?",
+      "answer": "Modern mRNA vaccine technology introduces messenger RNA that the human body translates into a particular viral or bacterial protein, generating the target antigen internally. This process exposes the immune system to the antigen in a controlled manner.",
+      "evidence": "Modern mRNA vaccine technology introduces messenger RNA that the human body translates into a particular viral or bacterial protein, generating the target antigen internally. This process exposes the immune system to the antigen in a controlled manner, enabling the development of antibodies and memory T lymphocytes specifically tailored to recognize and combat the pathogen.",
+      "question_type": "definitional",
+      "qa_id": "cdc_immunization_022"
+    },
+    {
+      "question": "What functions do antibodies produced by vaccines perform?",
+      "answer": "Antibodies perform several critical functions: neutralizing soluble protein toxins (antitoxins), disrupting bacterial membranes to facilitate intracellular digestion (lysins), preventing viral replication (neutralizing antibodies), and blocking bacterial adhesion to mucosal surfaces (antiadhesion antibodies).",
+      "evidence": "These antibodies perform several critical functions: neutralizing soluble protein toxins (antitoxins), disrupting bacterial membranes to facilitate intracellular digestion (lysins), preventing viral replication (neutralizing antibodies), and blocking bacterial adhesion to mucosal surfaces (antiadhesion antibodies).",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_024"
+    },
+    {
+      "question": "What are the five commonly used routes for immunization administration?",
+      "answer": "The five routes are oral, intranasal, subcutaneous, intradermal, and intramuscular. Each vaccine's route and site are derived from clinical evidence and theoretical rationale. Varying from recommended routes may reduce efficacy or increase adverse effects.",
+      "evidence": "Immunizations are administered via 5 commonly used routes: oral, intranasal, subcutaneous, intradermal, and intramuscular. Each vaccine\u2019s route and site are derived from clinical evidence and theoretical rationale.\u00a0Varying from recommended administration routes may reduce efficacy or increase adverse effects, rendering some doses invalid and requiring revaccination.[CDC. Vaccine Administration: During Vaccination. June 24, 2025]",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_025"
+    },
+    {
+      "question": "What is the primary contraindication to immunization?",
+      "answer": "The primary contraindication is a known allergy to a vaccine or its components. Patients with compromised immune function require caution with live attenuated vaccines, and pregnant women should avoid live vaccines unless an immediate significant threat exists.",
+      "evidence": "The primary contraindication is a known allergy to a vaccine or its components. Patients with compromised immune function, including those with acquired immunodeficiency syndrome or other immune deficiencies, require caution when receiving live attenuated vaccines.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_026"
+    },
+    {
+      "question": "Why should pregnant women avoid live vaccines?",
+      "answer": "Pregnant women should avoid live vaccines because live vaccines can potentially infect the fetus. They should only receive live vaccines if an immediate and significant threat exists, such as exposure during a polio outbreak.",
+      "evidence": "Pregnant women should avoid live vaccines unless an immediate and significant threat exists, eg, exposure during a polio outbreak, because live vaccines can potentially infect the fetus.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_027"
+    },
+    {
+      "question": "What specific contraindications apply to rotavirus vaccination?",
+      "answer": "According to the CDC, severe combined immunodeficiency and a prior history of intussusception represent specific contraindications to rotavirus vaccination.",
+      "evidence": "According to the CDC, severe combined immunodeficiency and a prior history of intussusception represent specific contraindications to rotavirus vaccination.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_028"
+    },
+    {
+      "question": "What is Guillain-Barr\u00e9 syndrome in relation to vaccination?",
+      "answer": "Guillain-Barr\u00e9 syndrome is a very rare complication of vaccination that is a potentially life-threatening condition affecting the peripheral nervous system. The mechanism by which vaccination causes it is not known. Symptoms include ascending paresthesias and paralysis, with paralysis of respiratory muscles possible.",
+      "evidence": "Another very rare complication of vaccination is Guillain-Barr\u00e9 syndrome, a potentially life-threatening condition affecting the peripheral nervous system. The mechanism by which vaccination causes Guillain-Barr\u00e9 is not known. Symptoms include ascending paresthesias and paralysis, with paralysis of respiratory muscles possible.",
+      "question_type": "definitional",
+      "qa_id": "cdc_immunization_029"
+    },
+    {
+      "question": "What is passive immunization and when is it used?",
+      "answer": "Passive immunization benefits individuals who are unable to produce antibodies (e.g., immunocompromised patients). It also applies when disease progression could outpace the development of active immunity, such as in rabies exposure, where the patient may contract the disease before the immune system generates a sufficient antibody response.",
+      "evidence": "Passive immunization benefits individuals who are unable to produce antibodies (eg, immunocompromised patients). This approach also applies when disease progression could outpace the development of active immunity, as seen in rabies exposure. In such cases, the patient may contract the disease before the immune system generates a sufficient antibody response through active vaccination, making passive immunization a vital measure for immediate protection.",
+      "question_type": "definitional",
+      "qa_id": "cdc_immunization_030"
+    },
+    {
+      "question": "Why should vaccine preparation areas be designated as 'Quiet Zones'?",
+      "answer": "Declaring the preparation area a 'Quiet Zone' or 'No Interruptions Area' helps minimize distractions, which are a known contributor to vaccine errors.",
+      "evidence": "Declaring the preparation area a \"Quiet Zone\" or \"No Interruptions Area\" helps minimize distractions, a known contributor to vaccine errors.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_031"
+    },
+    {
+      "question": "What are the rules for single-dose vials versus multidose vials?",
+      "answer": "Single-dose vials contain no preservatives and are intended for use with a single patient; they must never be used for multiple patients. Multidose vials contain multiple doses and include antimicrobial preservatives, and can be punctured more than once, but must remain in a clean, dedicated preparation area, never in patient care zones.",
+      "evidence": "Single-dose vials contain no preservatives and are intended for use with a single patient. After withdrawing the appropriate dose, the vial and any remaining contents must be discarded. Single-dose vials must never be used for multiple patients. Manufacturer-filled syringes, sealed under sterile conditions and containing a single vaccine dose, also lack preservatives. Once the sterile seal has been broken, the vaccine must be used or discarded by the end of the workday.[CDC. Vaccine Administration: During Vaccination. June 24, 2025]\nMultidose vials, which contain multiple doses and include antimicrobial preservatives, can be punctured more than once. Many vaccinations are combinations,\u00a0eg, measles, mumps, rubella, tetanus, diphtheria, and acellular pertussis. Multidose vials used for multiple patients must remain in a clean, dedicated preparation area, never in patient care zones. Only the number of doses specified by the manufacturer should be withdrawn, and partial doses from separate vials must never be combined. Use of specific antiviral drugs (acyclovir, famciclovir, or valacyclovir) should be discontinued 24 hours before varicella vaccination. Avoiding antiviral use for 14 days after varicella vaccination is also recommended.[11][CDC. Vaccine Administration: During Vaccination. June 24, 2025][11]",
+      "question_type": "comparative",
+      "qa_id": "cdc_immunization_032"
+    },
+    {
+      "question": "What is the proper angle for intramuscular vaccine injections?",
+      "answer": "During intramuscular administration, the vaccine must be injected into the thickest portion of the target muscle belly at a 90-degree angle.",
+      "evidence": "During IM administration, the vaccine must be injected into the thickest portion of the target muscle belly at a 90-degree angle.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_033"
+    },
+    {
+      "question": "How far apart should injection sites be when multiple vaccines are administered in the same arm?",
+      "answer": "When multiple vaccines are delivered to the same arm, injection sites should be separated by at least 1 inch to prevent overlap of local reactions.",
+      "evidence": "When multiple vaccines are delivered to the same arm, injection sites should be separated by at least 1 inch to prevent overlap of local reactions.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_034"
+    },
+    {
+      "question": "What are the characteristic features of respiratory diphtheria?",
+      "answer": "A classic feature of respiratory diphtheria is a gray-colored pseudo-membrane that firmly adheres to the mucosal lining of the nasopharynx, tonsils, or larynx. This pseudo-membrane can extend further into the nasal cavity or larynx, obstructing the airways. Cardiac and neurological complications can occur once the toxin reaches the bloodstream.",
+      "evidence": "A classic feature of respiratory diphtheria is a gray-colored pseudo-membrane that firmly adheres to the mucosal lining of the nasopharynx, tonsils, or larynx. This pseudo-membrane can extend further into the nasal cavity or larynx, obstructing the airways. Cardiac and neurological complications can occur once the toxin reaches the bloodstream.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_037"
+    },
+    {
+      "question": "What are the three stages of pertussis?",
+      "answer": "Pertussis has 3 stages: the catarrhal stage with symptoms of coryza, mild cough, and low-grade fever; the paroxysmal stage with spasmodic coughing, posttussive vomiting, and inspiratory whoop; and the convalescent stage where symptoms slowly improve but can last for weeks to months.",
+      "evidence": "The disease characteristically has 3 stages: catarrhal, paroxysmal, and convalescent. The catarrhal stage includes symptoms of coryza, mild cough, and low-grade fever. Around 1 to 2 weeks, the infected person enters the paroxysmal stage with symptoms of spasmodic coughing, posttussive vomiting, and inspiratory whoop. Symptoms slowly improve in the convalescent stage but can last for weeks to months.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_038"
+    },
+    {
+      "question": "What components make up the DTaP vaccine?",
+      "answer": "The DTaP vaccine comprises diphtheria and tetanus toxoids (inactivated toxins) and acellular pertussis antigens. The tetanus component is about 5 to 10 levels of flocculation units, the diphtheria component is about 15 to 25 flocculation units, and the acellular pertussis component consists of pertussis toxin, filamentous haemagglutinin, pertactin, and fimbriae type 2 and 3.",
+      "evidence": "It comprises diphtheria, tetanus toxoids (inactivated toxins), and acellular pertussis antigens. The tetanus component of the vaccine is about 5 to 10 levels of flocculation units of manufactured tetanus toxoid. The diphtheria component is a manufactured diphtheria toxoid of about 15 to 25 levels of flocculation units. The acellular pertussis component of a DTaP vaccine consists of manufactured pertussis antigens called pertussis toxin, filamentous haemagglutinin, pertactin, and fimbriae type 2 and 3.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_039"
+    },
+    {
+      "question": "Why did DTaP replace DTP vaccines in the 1990s?",
+      "answer": "DTaP vaccines replaced DTP vaccines in the 1990s to reduce the number of common adverse events such as swelling, redness, and pain at the injection site that were associated with whole-cell pertussis vaccines.",
+      "evidence": "Whole-cell pertussis vaccines, or DTP vaccines, were commonly associated with local adverse events, including swelling, redness, and pain at the injection site. DTaP vaccines replaced DTP vaccines in the 1990s to reduce the number of these common adverse events.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_041"
+    },
+    {
+      "question": "What constitutes a contraindication for further DTaP doses involving encephalopathy?",
+      "answer": "Encephalopathy (coma, a decreased level of consciousness, or prolonged seizures) that occurs within 7 days of DTaP administration and with no identifiable cause is a contraindication to further doses.",
+      "evidence": "Encephalopathy (coma, a decreased level of consciousness, or prolonged seizures) that occurs within 7 days of DTaP administration and with no identifiable cause is also a contraindication.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_043"
+    },
+    {
+      "question": "Why was Tdap recommended for women during pregnancy in 2012?",
+      "answer": "In 2012, ACIP recommended Tdap during each pregnancy to reduce the burden of pertussis in infants. Clinical studies showed that newborn infants of vaccinated mothers had higher concentrations of pertussis antibodies at birth compared to newborns of unvaccinated mothers.",
+      "evidence": "In 2012, ACIP recommended a dose of Tdap for women during each pregnancy to reduce the burden of pertussis in infants. Clinical studies indicated that newborn infants of mothers vaccinated during pregnancy had higher concentrations of pertussis antibodies at birth compared to newborns of unvaccinated mothers during pregnancy.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_045"
+    },
+    {
+      "question": "What postexposure prophylaxis is recommended for healthcare personnel exposed to pertussis?",
+      "answer": "Postexposure prophylaxis includes antibiotic treatment with a macrolide such as azithromycin and immediate evaluation of persons with an illness that presents with a cough.",
+      "evidence": "Postexposure prophylaxis is recommended for healthcare personnel in contact with persons at risk for pertussis. This prophylaxis includes antibiotic treatment with a macrolide such as azithromycin and immediate evaluation of persons with an illness that presents with a cough.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_046"
+    },
+    {
+      "question": "What is the recommended MMR vaccine schedule for children?",
+      "answer": "The first dose should be given at 12-15 months and the second dose at 4-6 years (before school entry). The dose is 0.5 mL administered intramuscularly or subcutaneously, with a minimum 28-day interval between doses.",
+      "evidence": "Estimates of the effectiveness of the MMR vaccine are 99% in measles prevention after\u00a0a second vaccination, over 95% in the prevention of mumps, and 90% in the prevention of rubella after a single dose. The ACIP recommends that vaccine doses in a series should be obtained from the same manufacturer; however, vaccination should not be\u00a0delayed if the vaccine from the same manufacturer is unavailable. Clinical trials have demonstrated that both MMR vaccines are safe and efficacious when administered as a second dose and, therefore, interchangeable.[9][10]\u00a0The 0.5 mL of vaccine, representing the complete contents of the reconstituted vial, shall be administered via intramuscular or subcutaneous injection to the individual, with a minimum interval of 28 days between doses.\n* The first dose should be administered to individuals aged 12 to 15 months, and the second should be administered between the ages of 4 and 6 years. The second dose is preferably administered before kindergarten or school entry. Note that the interval between doses should not be shorter than 28 days.[6]",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_048"
+    },
+    {
+      "question": "Why should children aged 12-23 months receive separate MMR and varicella vaccines rather than MMRV combination?",
+      "answer": "Children aged 12-23 months should receive separate MMR and varicella vaccines rather than the MMRV combination to reduce febrile seizure risk. The rate of febrile seizures is approximately 1 additional per 2,300-2,800 MMRV doses in this age group.",
+      "evidence": "Children aged 12 to 23 months should receive the MMR vaccine and a univalent varicella vaccine at the same visit, rather than the measles-mumps-rubella-varicella (MMRV) vaccine, to reduce the risk of fever and febrile seizures. The risk is estimated to be around one additional febrile seizure per 2300 to 2800 doses of MMRV vaccine in this patient cohort.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_049"
+    },
+    {
+      "question": "What are the two types of influenza that cause severe cases and how many severe cases occur globally?",
+      "answer": "Influenza types A and B cause 3 to 5 million severe cases and thousands of deaths globally each year. Influenza belongs to the Orthomyxoviridae RNA virus family with three types: A, B, and C.",
+      "evidence": "Influenza viruses belong to the Orthomyxoviridae RNA virus family and are classified into 3 distinct types based on their significant antigenic differences: influenza A, influenza B, and influenza C. Influenza viruses cause human epidemics, seasonal and pandemics. Seasonal influenza epidemics caused by influenza A and B viruses result in 3\u00a0to 5 million severe cases and thousands of deaths globally yearly.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_057"
+    },
+    {
+      "question": "What influenza vaccine is recommended for people aged 65 and older?",
+      "answer": "For those 65 and older, ACIP recommends preferentially receiving one of the higher doses (quadrivalent HD-IIV4 or quadrivalent RIV4) or adjuvanted influenza vaccine (quadrivalent aIIV4). If none of these 3 options are available, any other age-appropriate influenza vaccine should be used.",
+      "evidence": "+ ACIP recommends that the recipient preferentially receive\u00a01 of the higher doses (quadrivalent HD-IIV4 or quadrivalent RIV4) or adjuvanted influenza vaccine (quadrivalent aIIV4).\n+ If none of these\u00a03 options are available at an opportunity for vaccination, then any other age-appropriate influenza vaccine should be used.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_060"
+    },
+    {
+      "question": "What are the specific LAIV4 contraindications beyond general influenza vaccine contraindications?",
+      "answer": "LAIV4 is additionally contraindicated for: children on aspirin/salicylate medications; children aged 2-4 with asthma or recent wheezing; immunocompromised individuals; caregivers of severely immunosuppressed persons; pregnant women; individuals with active CSF leaks; persons with cochlear implants; and those who recently received certain antivirals.",
+      "evidence": "* Children or adolescents on concomitant aspirin/salicylate-containing medicine\n* Children aged 2 to 4 years age with asthma or reported wheezing/asthma in the preceding 12 months or whose health record\u00a0 notes wheezing episodes in the preceding 12 months\n* Children/adults who are immunocompromised due to any cause, including but not limited to medications, anatomic asplenia, congenital or acquired immunodeficiency states, functional asplenia (eg, due to sickle-cell anemia), or HIV infection\n* Close contacts/caregivers of severely immunosuppressed persons requiring a protected environment\n* Pregnant women\n* Individuals with active communication between the\u00a0cerebrospinal fluid (CSF) and the nasopharynx, oropharynx, nose, ear, or any other cranial CSF leak\n* Persons with cochlear implants (due to the potential for CSF leak)",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_062"
+    },
+    {
+      "question": "What are the antiviral drug timing restrictions relative to LAIV4 vaccination?",
+      "answer": "Influenza antivirals can decrease LAIV4 efficacy. The timing restrictions are: oseltamivir and zanamivir 48 hours before to 2 weeks following LAIV4; baloxavir 17 days before to 2 weeks following LAIV4; and peramivir 5 days before to 2 weeks following LAIV4.",
+      "evidence": "* Oseltamivir and zanamivir 48 hours before to 2 weeks following LAIV4\n* Baloxavir 17 days before to 2 weeks following LAIV4\n* Peramivir 5 days before to 2 weeks following LAIV4",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_063"
+    },
+    {
+      "question": "What are the three CDC systems for vaccine safety monitoring?",
+      "answer": "The three systems are: (1) VAERS (Vaccine Adverse Event Reporting System), an early warning system; (2) VSD (Vaccine Safety Datalink), a collaborative effort between CDC and 9 healthcare organizations for ongoing monitoring; and (3) CISA (Clinical Immunization Safety Assessment) Project, a partnership for clinical research on vaccine-associated health risks.",
+      "evidence": "1. The\u00a0Vaccine Adverse Event Reporting System (VAERS): an early warning system that helps the CDC and FDA monitor problems following vaccination.\u00a0 Anyone can report possible vaccine side effects to VAERS.\n2. The\u00a0Vaccine Safety Datalink (VSD): a collaborative effort between the CDC and\u00a09 other healthcare organizations that allows ongoing monitoring and proactive searches of vaccine-related data.\n3. The\u00a0Clinical Immunization Safety Assessment (CISA) Project: a partnership between the CDC and several medical centers conducting clinical research on vaccine-associated health risks.[16]",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_064"
+    },
+    {
+      "question": "What procedure should be followed when a less-than-necessary influenza vaccine dose is administered?",
+      "answer": "If the error is found immediately (before the recipient has left), inject the remaining additional volume needed. If discovered after the recipient has left or it's not easy to measure the remaining volume, inject a repeat of the full dose.",
+      "evidence": "When an error is found immediately (before the recipient has left the vaccination setting), inject the remaining additional volume needed. If the error is discovered after the recipient has left the vaccination setting or it is not easy to measure the remaining needed volume, inject a repeat of the full dose.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_065"
+    },
+    {
+      "question": "What are the components found in influenza vaccines?",
+      "answer": "The components include: formaldehyde (to inactivate toxins from viruses and bacteria), thimerosal (to safeguard against contamination, only in multi-dose vials), aluminum salts (as adjuvants for more robust immune response), gelatin (as a stabilizer), and antibiotics such as gentamicin or neomycin (to keep bacteria from growing).",
+      "evidence": "Formaldehyde which is used to inactivate toxins from viruses and bacteria. Thimerosal which safeguards against contamination and is only present in multi-dose vials. Aluminum salts which act as adjuvants and impart a more robust immune response. Gelatin which is present as a stabilizer. Antibiotics, such as gentamicin or neomycin, which are present in the flu vaccine to keep bacteria from growing.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_067"
+    },
+    {
+      "question": "How does vaccinating pregnant women help protect their infants from influenza?",
+      "answer": "Influenza infection during pregnancy after vaccination tends to be less severe, and the mother passes immune protection to her newborn, helping protect the infant during the crucial first 6 months of life.",
+      "evidence": "Influenza infection during pregnancy after vaccination tends to be less severe, and complications are reduced. It helps to protect the infant against flu during the crucial first 6 months of life as the mother passes the immune protection to her newborn.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_069"
+    },
+    {
+      "question": "What should people with egg allergy who experienced only hives know about influenza vaccination?",
+      "answer": "Individuals who have experienced only hives after exposure to eggs may get the influenza vaccine (any IIV4, RIV4, or LAIV4) appropriate for their health status and age.",
+      "evidence": "Individuals who have experienced only hives after exposure to eggs may get the influenza vaccine (ie, any IIV4, RIV4, or LAIV4) appropriate for their health status and age.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_070"
+    },
+    {
+      "question": "What is the 9-valent HPV vaccine and which HPV types does it protect against?",
+      "answer": "The 9vHPV is a second-generation, noninfectious, recombinant vaccine that protects against HPV types 6, 11, 16, 18, 31, 33, 45, 52, and 58. It is the only HPV vaccine available in the United States and prevents infections, diseases, and cancers caused by both low-risk and high-risk HPV types.",
+      "evidence": "The 9-valent human papillomavirus (HPV) vaccine (9vHPV) is a second-generation, noninfectious, recombinant vaccine available in the United States and indicated for the management and prevention of infections, diseases, or cancers caused by both low-risk and high-risk HPV types, including 6, 11, 16, 18, 31, 33, 45, 52, and 58.",
+      "question_type": "definitional",
+      "qa_id": "cdc_immunization_071"
+    },
+    {
+      "question": "What types of cancers does the 9vHPV vaccine prevent?",
+      "answer": "The 9vHPV vaccine prevents anal, oropharyngeal, cervical, vulvar, vaginal, and other head-and-neck cancers caused by HPV types 16, 18, 31, 33, 45, 52, and 58.",
+      "evidence": "Anal, oropharyngeal, cervical, vulvar, vaginal, and other head-and-neck cancers caused by HPV types 16, 18, 31, 33, 45, 52, and 58.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_072"
+    },
+    {
+      "question": "How do the three FDA-approved HPV vaccines differ in their coverage?",
+      "answer": "The 2vHPV (bivalent) protects against HPV types 16 and 18. The 4vHPV (quadrivalent) protects against HPV types 6, 11, 16, and 18. The 9vHPV (9-valent) protects against HPV types 6, 11, 16, 18, 31, 33, 45, 52, and 58. Only 9vHPV is currently available in the United States.",
+      "evidence": "2vHPV (bivalent vaccine): Protects against HPV types 16 and 18. Although this vaccine is unavailable in the United States, it is still used in other countries. 4vHPV (quadrivalent vaccine): Protects against HPV types 6, 11, 16, and 18. 9vHPV (9-valent vaccine): Protects against HPV types 6, 11, 16, 18, 31, 33, 45, 52, and 58. This is the only HPV vaccine available in the United States that confers protection against these specific HPV types.",
+      "question_type": "comparative",
+      "qa_id": "cdc_immunization_073"
+    },
+    {
+      "question": "For which populations is routine HPV vaccination recommended?",
+      "answer": "Routine vaccination is recommended for males and females aged 9 to 45 who have not previously received vaccination, men who have sex with men aged 26 and older, immunocompromised patients without prior vaccination, victims of sexual abuse or assault, and transgender individuals.",
+      "evidence": "Males and females aged 9 through 45 who have not previously received a vaccination or who did not complete the currently recommended 3-dose regimen. Men who have sex with men (MSM) aged 26 and older. Patients with the immunocompromised state who have no prior vaccination or who did not complete the 3-dose regimen. Victims of sexual abuse or assault. Transgender individuals",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_074"
+    },
+    {
+      "question": "What does the blue color box in the 2020 CDC immunization schedule indicate?",
+      "answer": "A blue color box in the 2020 CDC schedule indicates shared clinical decision-making about vaccination for human papillomavirus vaccine, pneumococcal conjugate vaccine, and meningococcal B vaccine.",
+      "evidence": "A blue color box in the 2020 CDC schedule indicates shared clinical decision-making about vaccination for human papillomavirus vaccine, pneumococcal conjugate vaccine, and meningococcal B vaccine.",
+      "question_type": "definitional",
+      "qa_id": "cdc_immunization_076"
+    },
+    {
+      "question": "What meningococcal booster doses were added in the 2020 CDC schedule?",
+      "answer": "CDC 2020 recommends booster doses for Meningococcal B for persons above 10 years with risk factors like asplenia, complement deficiency, and microbiologists.",
+      "evidence": "CDC 2020 recommends booster doses for Meningococcal B for persons above 10 years with risk factors like asplenia, complement deficiency, and microbiologists.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_077"
+    },
+    {
+      "question": "How should OPV doses administered before April 1, 2016 be counted?",
+      "answer": "Oral Polio Vaccine (OPV) doses administered before April 1, 2016, should be counted toward the United States vaccination requirements.",
+      "evidence": "Oral Polio Vaccine (OPV) doses may be counted toward the United States vaccination requirements. The OPV administered before April 1, 2016, should be counted.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_078"
+    },
+    {
+      "question": "What Hepatitis A indications changed in the 2020 adult CDC schedule?",
+      "answer": "HIV infection and persons experiencing homelessness were added to the existing list of Hepatitis A vaccine indications. Clotting factor disorders were removed from the list.",
+      "evidence": "Few changes are made in Hepatitis A indications for adults. HIV infection and persons experiencing homelessness are added to the existing list. Clotting factor disorders are removed from the list.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_079"
+    },
+    {
+      "question": "What vaccines are targeted for children up to 10 years covering 14 infectious diseases?",
+      "answer": "Ten vaccines covering 14 infectious diseases include: DTaP, Haemophilus influenza type b, MMR, varicella, pneumococcal conjugate, inactivated poliovirus, rotavirus, hepatitis A, hepatitis B, and inactivated influenza vaccine.",
+      "evidence": "Ten vaccines covering 14 infectious diseases are targeted for children up to 10 years. They include diphtheria, tetanus, acellular pertussis (DTaP) vaccine, Haemophilus influenza type b vaccine, measles, mumps, and rubella vaccine (MMR), varicella vaccine, pneumococcal conjugate vaccine, inactivated poliovirus vaccine, rotavirus vaccine, hepatitis A vaccine, hepatitis B vaccine, and inactivated influenza vaccine.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_080"
+    },
+    {
+      "question": "What vaccines are targeted for adolescents?",
+      "answer": "Four vaccines covering 6 infectious diseases are targeted for adolescents: Tdap, meningococcal conjugate, Human Papillomavirus, and the influenza vaccine.",
+      "evidence": "Four vaccines covering 6 infectious diseases are targeted for adolescents. They include Tetanus, Diphtheria acellular pertussis (Tdap), meningococcal conjugate, Human Papillomavirus, and the influenza vaccine.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_081"
+    },
+    {
+      "question": "What varicella vaccine doses are needed for unimmunized individuals above 13 years?",
+      "answer": "For individuals above 13 years, 2 doses with a 4-week interval are needed. For unimmunized children less than 12 years, 2 doses with a 3 months interval are needed.",
+      "evidence": "Unimmunized children less than 12 years need 2 doses with 3 months interval. For individuals above 13 years, a 4-week interval is enough.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_082"
+    },
+    {
+      "question": "What is the role of the MHC molecules in vaccine immune response?",
+      "answer": "After macrophages engulf and digest foreign material, they break it into smaller peptide fragments that move to the macrophage surface and are displayed by major histocompatibility complex (MHC) molecules, which exist in 2 forms: MHC-I and MHC-II. This antigen presentation triggers the release of inflammatory mediators including cytokines and interferons.",
+      "evidence": "Macrophages first engulf and digest the foreign material, breaking it down into smaller peptide fragments. These peptides move to the macrophage surface and are displayed by major histocompatibility complex (MHC) molecules, which exist in 2 forms: MHC-I and MHC-II. Antigen presentation triggers the release of inflammatory mediators, including cytokines and interferons, which amplify the immune reaction and promote communication among immune cells.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_083"
+    },
+    {
+      "question": "What is T-cell-independent immunity?",
+      "answer": "T-cell-independent immunity occurs when some antigens can directly stimulate B lymphocytes to produce antibodies without assistance from T lymphocytes, as opposed to T-cell-dependent immunity which requires a coordinated response involving both B and T lymphocytes.",
+      "evidence": "Many antigens require a coordinated response involving both B lymphocytes and T lymphocytes, a process known as T-cell-dependent immunity. Some antigens, however, can directly stimulate B lymphocytes to produce antibodies without assistance from T lymphocytes, thereby eliciting T-cell-independent immunity.",
+      "question_type": "definitional",
+      "qa_id": "cdc_immunization_084"
+    },
+    {
+      "question": "What is the WHO's approach to immunization for 2030?",
+      "answer": "The World Health Organization has emphasized lifelong immunization as a cornerstone of the 2030 Sustainable Development Goals, aiming to reduce the burden of infectious and noncommunicable diseases by expanding vaccine access, supporting vaccine research, and integrating immunization into all stages of healthcare delivery. This extends beyond childhood to encompass adolescents, adults, pregnant women, healthcare workers, and older adults.",
+      "evidence": "In the contemporary era, the World Health Organization (WHO) has emphasized lifelong immunization as a cornerstone of the 2030 Sustainable Development Goals, aiming to reduce the burden of infectious and noncommunicable diseases by expanding vaccine access, supporting vaccine research, and integrating immunization into all stages of healthcare delivery.[7] This approach extends beyond childhood vaccination to encompass adolescents, adults, pregnant women, healthcare workers, and older adults, emphasizing the necessity of catch-up doses, booster programs, and robust vaccine data systems. The COVID-19 pandemic underscored the critical need for strong immunization infrastructures, revealing vulnerabilities but also catalyzing new strategies for outbreak response and system resilience. Building a future of sustained immunization requires not only scientific advancement but also cross-sectoral collaboration, public trust, and a shared commitment to ensuring equitable protection against vaccine-preventable diseases for all populations.[8]",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_085"
+    },
+    {
+      "question": "What are the most common reasons families refuse vaccines?",
+      "answer": "Families refuse vaccines for medical, religious, philosophical, or socioeconomic reasons. The immunization rate among children entering kindergarten exceeds 90 percent, but increased vaccination delay and refusal have led to the emergence of vaccine-preventable diseases like measles and pertussis outbreaks in areas with low vaccination rates.",
+      "evidence": "Families refuse vaccines for medical, religious, philosophical, or socioeconomic reasons. Clinicians have a crucial role in parental decision-making for vaccination.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_086"
+    },
+    {
+      "question": "What strategies can improve vaccine compliance?",
+      "answer": "Patient counseling, improving access to vaccination, offering combination vaccines, and using vaccine delay alerts and reminder-recall systems incorporated in EMR help improve vaccine compliance.",
+      "evidence": "Patient counseling, improving access to vaccination, offering combination vaccines, and using vaccine delay alerts and reminder-recall systems incorporated in EMR help improve vaccine compliance.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_087"
+    },
+    {
+      "question": "What should be done when children who had stem cell transplants need Hib vaccine?",
+      "answer": "Children who had stem cell transplants need 3 doses of Hib 4 weeks apart to be started 6 months after transplant, irrespective of vaccine status.",
+      "evidence": "Children who had stem cell transplants need 3 doses of Hib 4 weeks apart to be started 6 months after transplant, irrespective of vaccine status.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_088"
+    },
+    {
+      "question": "When should clinicians defer pertussis-containing vaccines in children?",
+      "answer": "Clinicians should defer vaccines with pertussis components in infants or children with suspected or evolving neurological disease, including seizures. Vaccination can begin or resume upon establishing a treatment regimen, or when the condition has stabilized.",
+      "evidence": "Clinicians should defer vaccines with pertussis components in infants or children with suspected or evolving neurological disease, including seizures. Vaccination with pertussis components can begin or resume upon establishing a treatment regimen, or the condition has stabilized.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_089"
+    },
+    {
+      "question": "What is the Hepatitis A post-exposure prophylaxis protocol for children?",
+      "answer": "Unimmunized children who had exposure to hepatitis A virus need 1 dose of vaccine as post-exposure prophylaxis within 10 days of exposure. Children less than 12 months with exposure need immunoglobulin instead.",
+      "evidence": "Unimmunized children who had exposure to the hepatitis A virus need 1 dose of the Hepatitis A vaccine as post-exposure prophylaxis within 10 days of exposure. Children less than 12 months with exposure need immunoglobulin for post-exposure prophylaxis.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_091"
+    },
+    {
+      "question": "What is the meningococcal vaccination schedule for unvaccinated first-year college students?",
+      "answer": "Unvaccinated first-year college students who live in residential housing or military recruits should get 1 dose of the MenACWY-CRM vaccine or the MenACWY-D vaccine.",
+      "evidence": "Unvaccinated first-year college students who live in residential housing or military recruits should get 1 dose of the MenACWY-CRM vaccine or the MenACWY-D vaccine.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_092"
+    },
+    {
+      "question": "What should happen with PCV13 and PPSV23 if both are needed?",
+      "answer": "If PCV13 and PPSV23 need to be given, PCV13 is administered first. They should not be given together on the same day.",
+      "evidence": "If PCV13 and PPSV23 need to be given, PCV13 is administered first. They should not be given together on the same day.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_093"
+    },
+    {
+      "question": "What pneumococcal vaccination is needed for individuals aged 6-18 with sickle cell disease or HIV?",
+      "answer": "Individuals with sickle cell disease, asplenia, immunodeficiency, HIV infection, chronic renal failure, nephrotic syndromes, leukemias, lymphomas, and Hodgkin disease need 1 dose of PCV13 followed by 2 doses of PPSV23. The first dose of PPSV23 is administered 8 weeks after PCV13, and the second dose at least 5 years after the first PPSV23.",
+      "evidence": "Individuals with Sickle cell disease, asplenia, immunodeficiency, HIV infection, chronic renal failure, nephrotic syndromes, leukemias, lymphomas, and Hodgkin disease need 1 dose of PCV13 followed by 2 doses of PPSV23. The first dose of PPSV23 is administered 8 weeks after PCV13, and the second dose is administered at least 5 years after dose 1 of PPSV23.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_094"
+    },
+    {
+      "question": "What should be avoided relative to varicella vaccination in terms of antiviral drugs?",
+      "answer": "Use of specific antiviral drugs (acyclovir, famciclovir, or valacyclovir) should be discontinued 24 hours before varicella vaccination. Avoiding antiviral use for 14 days after varicella vaccination is also recommended.",
+      "evidence": "Use of specific antiviral drugs (acyclovir, famciclovir, or valacyclovir) should be discontinued 24 hours before varicella vaccination. Avoiding antiviral use for 14 days after varicella vaccination is also recommended.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_095"
+    },
+    {
+      "question": "How does the oral route for vaccine administration work in the United States?",
+      "answer": "Oral applicators provide a single vaccine dose administered by mouth and contain no preservatives. In the United States, this method is used exclusively for the rotavirus vaccine.",
+      "evidence": "Oral applicators provide a single vaccine dose administered by mouth and contain no preservatives. In the United States, this method is used exclusively for the rotavirus vaccine.",
+      "question_type": "factual",
+      "qa_id": "cdc_immunization_096"
+    },
+    {
+      "question": "What pain control techniques are recommended for vaccination?",
+      "answer": "Evidence-based techniques include use of topical anesthetics, breastfeeding or providing sweet-tasting liquids during the procedure, performing the injection swiftly without aspiration, and distraction methods like guided breathing to reduce pain perception.",
+      "evidence": "Pain control remains a key component of vaccination practice, especially for children, since injection pain can heighten anxiety for both patients and caregivers. Evidence-based techniques to ease distress include the use of topical anesthetics, breastfeeding or providing sweet-tasting liquids during the procedure, and performing the injection swiftly without aspiration. Aspiration extends the needle\u2019s time in tissue and increases discomfort through unnecessary movement. Distraction methods, eg, guided breathing, also help reduce pain perception. Fear of injections frequently deters adults\u2014including healthcare workers\u2014from receiving vaccines, yet applying the same comfort strategies used in pediatrics can effectively reduce anxiety and enhance vaccine acceptance.[CDC. Vaccine Administration: During Vaccination. June 24, 2025]",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_097"
+    },
+    {
+      "question": "What is the DTaP rule regarding administration after age 7?",
+      "answer": "DTaP is not recommended beyond 7 years of age. For children over 7, Tdap vaccine is preferred. If DTaP or Tdap is given at 7-9 years of age, it should not count as the booster dose, and Tdap should be readministered at 11-12 years of age. However, if given at 10 years of age, it can be included as the booster dose.",
+      "evidence": "DTaP is not recommended beyond 7 years of age. Tdap vaccine is preferred for kids after 7 years of age.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_098"
+    },
+    {
+      "question": "What is cocoon protection in the context of influenza vaccination during pregnancy?",
+      "answer": "Individual vaccination of pregnant women should be complemented by cocoon protection, achieved through the vaccination of those in close proximity. This approach provides a protective barrier, reducing the risk of influenza transmission to pregnant individuals and safeguarding maternal and fetal health.",
+      "evidence": "Individual vaccination of pregnant women should be complemented by cocoon protection, achieved through the vaccination of those in close proximity. This approach provides a protective barrier, reducing the risk of influenza transmission to pregnant individuals and safeguarding maternal and fetal health.",
+      "question_type": "definitional",
+      "qa_id": "cdc_immunization_099"
+    },
+    {
+      "question": "What are the vaccines that should be administered last when giving multiple injections?",
+      "answer": "Vaccines known to cause more pain, such as MMR and HPV, should be administered last. Vaccines more likely to cause local reactions, such as tetanus toxoid-containing vaccines, should be given in separate limbs when possible.",
+      "evidence": "Vaccines known to cause more pain, eg, MMR and HPV, should be administered last, and those more likely to cause local reactions, eg, tetanus toxoid-containing vaccines, should be given in separate limbs when possible.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_100"
+    },
+    {
+      "question": "What pneumococcal vaccination regimen is recommended for individuals with a cerebrospinal fluid leak or cochlear implant?",
+      "answer": "Individuals with a cerebrospinal fluid leak or cochlear implant need 1 dose of PCV13 followed by 1 dose of PPSV23 after 8 weeks.",
+      "evidence": "2. Individuals with a cerebrospinal fluid leak or cochlear implant need\u00a01 dose of PCV13 followed by\u00a01 dose of PPSV23 after\u00a08 weeks.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_101"
+    },
+    {
+      "question": "What pneumococcal vaccination protocol is required for individuals with sickle cell disease, asplenia, or immunodeficiency conditions?",
+      "answer": "Individuals with sickle cell disease, asplenia, immunodeficiency, HIV infection, chronic renal failure, nephrotic syndromes, leukemias, lymphomas, and Hodgkin disease need 1 dose of PCV13 followed by 2 doses of PPSV23.",
+      "evidence": "3. Individuals with Sickle cell disease, asplenia, immunodeficiency, HIV infection, chronic renal failure, nephrotic syndromes, leukemias, lymphomas, and Hodgkin disease need\u00a01 dose of PCV13 followed by\u00a02 doses of PPSV23.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_102"
+    },
+    {
+      "question": "What has caused the re-emergence of vaccine-preventable diseases such as measles and pertussis?",
+      "answer": "The emergence of vaccine-preventable diseases has been driven by increased vaccination delay and refusal. Measles and pertussis outbreaks have occurred in areas with low vaccination rates.",
+      "evidence": "Still, we can see the emergence of vaccine-preventable diseases due to increased vaccination delay and refusal. Measles and pertussis outbreaks happened in areas with low vaccination rates.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_103"
+    },
+    {
+      "question": "Why can initial exposure to a natural pathogen be more dangerous than encountering it after vaccination?",
+      "answer": "Without prior immunization, the initial exposure to a natural pathogen can overwhelm the immune response, potentially leading to severe or fatal illness before adequate protection develops. Vaccination prepares the immune system in advance, ensuring a faster and more effective defense.",
+      "evidence": "By preparing the immune system in advance, vaccination ensures a faster and more effective defense if the body encounters the infectious organism in the future. Without prior immunization, the initial exposure to the natural pathogen can overwhelm the immune response, potentially leading to severe or fatal illness before adequate protection develops.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_104"
+    },
+    {
+      "question": "What quality measure was developed to monitor adult immunization coverage, and which vaccines does it track?",
+      "answer": "The composite adult vaccination index was developed to monitor coverage for key vaccines, including influenza, pneumococcal, herpes zoster, and tetanus-diphtheria-pertussis.",
+      "evidence": "Despite the proven effectiveness of vaccines, immunization coverage remains below national goals, leaving substantial portions of the population vulnerable to preventable diseases. To address this gap, quality measures, eg, the composite adult vaccination index, were developed to monitor coverage for key vaccines, including influenza, pneumococcal, herpes zoster, and tetanus-diphtheria-pertussis.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_105"
+    },
+    {
+      "question": "Why should severely immunocompromised individuals avoid live vaccines?",
+      "answer": "Severely immunocompromised individuals generally should not receive live vaccines due to the heightened risk of vaccine-derived infection. Caution also applies when vaccinating children experiencing acute moderate to severe illness, whether or not fever is present.",
+      "evidence": "Severely immunocompromised individuals generally should not receive live vaccines due to the heightened risk of vaccine-derived infection.[15]\n\nCaution also applies when vaccinating children experiencing acute moderate to severe illness, whether or not fever is present.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_106"
+    },
+    {
+      "question": "What hygiene and inspection steps must be performed before preparing a vaccine?",
+      "answer": "Hand hygiene must precede vaccine preparation, and vials must be inspected carefully for damage, particulate matter, or contamination before use.",
+      "evidence": "Every practice, clinic, and pharmacy must maintain adequate supplies for vaccination. Hand hygiene must precede vaccine preparation, and vials must be inspected carefully for damage, particulate matter, or contamination before use.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_107"
+    },
+    {
+      "question": "Why is pain control considered a key component of vaccination practice, particularly for pediatric patients?",
+      "answer": "Pain control is a key component of vaccination practice, especially for children, because injection pain can heighten anxiety for both patients and caregivers.",
+      "evidence": "Pain control remains a key component of vaccination practice, especially for children, since injection pain can heighten anxiety for both patients and caregivers.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_108"
+    },
+    {
+      "question": "What causes the common post-vaccination symptoms of fever, fatigue, and myalgia, and how long do they typically last?",
+      "answer": "These symptoms are caused by the immune response being mounted against the antigen introduced by the vaccine and usually last a day or two.",
+      "evidence": "Most vaccines carry a small risk of symptoms after administration, including fever, fatigue, and myalgia.[20]\u00a0These symptoms are caused by the immune response being mounted against the antigen introduced by the vaccine and usually last a day or 2.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_109"
+    },
+    {
+      "question": "What systems have been implemented to address gaps in vaccination coverage caused by missed medical appointments?",
+      "answer": "Patient recall and reminder systems have been implemented and have demonstrated substantial success in improving compliance and maintaining timely vaccination rates across populations.",
+      "evidence": "Missed medical appointments further contribute to gaps in vaccination coverage. To address this issue, patient recall and reminder systems have been implemented and have demonstrated substantial success in improving compliance and maintaining timely vaccination rates across populations.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_110"
+    },
+    {
+      "question": "What action is required before vaccinating a patient who has a history of anaphylaxis or severe allergic reaction to a vaccine or its components?",
+      "answer": "If a patient has ever had anaphylaxis or a severe allergic reaction to any parts of a specific vaccine or prior vaccination, further investigation must be performed before inoculation.",
+      "evidence": "If a patient has ever had anaphylaxis or a severe allergic reaction to any parts of a specific vaccine or prior vaccination, further investigation must be performed before inoculation.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_111"
+    },
+    {
+      "question": "What gauge needle is recommended for intramuscular injections, and what determines the needle length and injection position?",
+      "answer": "Intramuscular injections should be given with a 22 to 25 gauge hypodermic needle, and a patient's age and weight determine the length and position of the injection.",
+      "evidence": "* Intramuscular (IM) injections should be given with a 22\u00a0to 25 gauge hypodermic needle. A patient's age and weight determine the length and position of the injection.",
+      "question_type": "procedural",
+      "qa_id": "cdc_immunization_112"
+    },
+    {
+      "question": "How does the subcutaneous injection site for children ages 1 to 12 months differ from intramuscular injection technique?",
+      "answer": "In contrast to intramuscular injection, subcutaneous injection delivers the syringe contents into the skin's fatty layers, such as the anterior lateral thigh for children ages 1 to 12 months.",
+      "evidence": "In contrast to intramuscular injection, the syringe contents should be injected into the skin's fatty layers, such as the anterior lateral thigh for children ages 1 to 12 months.",
+      "question_type": "comparative",
+      "qa_id": "cdc_immunization_113"
+    },
+    {
+      "question": "What does an opaque or murky appearance of a vaccine solution indicate?",
+      "answer": "If the solution is opaque or murky appearing, it is likely that the medication has been exposed to extreme temperatures and is therefore not viable for use.",
+      "evidence": "If the solution is opaque or murky appearing, it is likely that the medication has been exposed to extreme temperatures and is therefore not viable.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_114"
+    },
+    {
+      "question": "What are the expected side effects of epinephrine when administered for a post-vaccination anaphylactic reaction?",
+      "answer": "The patient may feel tremulous and experience palpitations, which are expected side effects of epinephrine. Emergency services should be called and the patient moved to a hospital setting for physician monitoring.",
+      "evidence": "The patient may feel tremulous and experience palpitations; this is an expected side effect of epinephrine.\u00a0At this point, make sure to call emergency services and have the patient moved to a hospital setting where physicians can monitor them.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_115"
+    },
+    {
+      "question": "How has the incidence of diphtheria, tetanus, and pertussis changed since the development of universal vaccines in the 1940s?",
+      "answer": "Since the development of universal vaccines in the 1940s, the number of reported cases of diphtheria, tetanus, and pertussis has declined in the United States.",
+      "evidence": "Since the development of universal vaccines in the 1940s, the number of reported cases of diphtheria, tetanus, and pertussis has declined in the United States.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_116"
+    },
+    {
+      "question": "What neurological adverse effect can tetanus toxoid-containing vaccines cause?",
+      "answer": "Vaccines with tetanus toxoids can cause brachial neuritis, based on case reports and studies reviewed by the World Health Organization and ACIP.",
+      "evidence": "[1][4]\u00a0Vaccines with tetanus toxoids can cause brachial neuritis based on case reports and studies reviewed by the World Health Organization and ACIP.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_117"
+    },
+    {
+      "question": "What increased risk is associated with co-administration of inactivated influenza vaccine and PCV13 or DTaP vaccine?",
+      "answer": "There may be an increased risk of febrile seizures within 24 hours when administering the inactivated influenza vaccine together with the pneumococcal 13-valent conjugate vaccine or the DTaP vaccine.",
+      "evidence": "There may be an increased risk\u00a0of febrile seizures within 24 hours when administering the inactivated influenza vaccine and the pneumococcal 13-valent conjugate vaccine or the DTaP vaccine.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_118"
+    },
+    {
+      "question": "How do pertussis antibody levels in newborns differ based on whether their mothers received vaccination during pregnancy?",
+      "answer": "Clinical studies indicated that newborn infants of mothers vaccinated during pregnancy had higher concentrations of pertussis antibodies at birth compared to newborns of unvaccinated mothers.",
+      "evidence": "Clinical studies indicated that\u00a0newborn infants of mothers vaccinated during pregnancy had higher concentrations of pertussis antibodies at birth compared to newborns of unvaccinated mothers during pregnancy.",
+      "question_type": "comparative",
+      "qa_id": "cdc_immunization_119"
+    },
+    {
+      "question": "Which healthcare professionals are best positioned to monitor for adverse events after vaccination, and what should they do if events occur?",
+      "answer": "Nursing is in the best position to monitor for adverse events or allergic reactions. While rare, these events should be reported to the physician immediately when they occur.",
+      "evidence": "Nursing is in the best position to monitor for adverse events or allergic reactions, which, while rare, can occur. These events should be reported to the physician immediately.",
+      "question_type": "comparative",
+      "qa_id": "cdc_immunization_120"
+    },
+    {
+      "question": "Which susceptible populations should receive the MMR vaccine to protect against measles infection?",
+      "answer": "Susceptible patients such as healthcare professionals, military personnel, and travelers outside North America should receive the measles-mumps-rubella (MMR) vaccine to safeguard against potential infection.",
+      "evidence": "However,\u00a0susceptible patients, such as healthcare professionals, military personnel, and travelers outside North America, should receive the measles-mumps-rubella (MMR) vaccine to safeguard against potential infection.",
+      "question_type": "comparative",
+      "qa_id": "cdc_immunization_121"
+    },
+    {
+      "question": "Why does the MMR vaccine require multiple doses despite demonstrating high efficacy?",
+      "answer": "Due to its live attenuated nature, the MMR vaccine demonstrates high efficacy but necessitates multiple doses for complete immunity to be attained.",
+      "evidence": "Due to its live attenuated nature, the MMR vaccine demonstrates\u00a0high efficacy but necessitates multiple doses for complete\u00a0immunity to be attained.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_122"
+    },
+    {
+      "question": "Should pregnancy termination be advised for women who received the MMR or MMRV vaccine during pregnancy?",
+      "answer": "Women vaccinated with the MMR or MMRV vaccine during pregnancy should not be advised to terminate the pregnancy due to teratogenic risk, as no evidence supports a significant teratogenic risk from either vaccine.",
+      "evidence": "Women vaccinated with the MMR or MMRV vaccine during pregnancy should not be advised to terminate the pregnancy due to teratogenic risk, as no evidence supports a significant teratogenic risk from either vaccine.",
+      "question_type": "causal",
+      "qa_id": "cdc_immunization_123"
+    },
+    {
+      "question": "What does the ACIP recommend regarding obtaining vaccine doses from the same manufacturer within a series?",
+      "answer": "The ACIP recommends that vaccine doses in a series should be obtained from the same manufacturer; however, vaccination should not be delayed if the vaccine from the same manufacturer is unavailable.",
+      "evidence": "The ACIP recommends that vaccine doses in a series should be obtained from the same manufacturer; however, vaccination should not be\u00a0delayed if the vaccine from the same manufacturer is unavailable.",
+      "question_type": "comparative",
+      "qa_id": "cdc_immunization_124"
+    },
+    {
+      "question": "Why are 2 doses of the MMR vaccine administered even when only mumps or rubella immunity is needed?",
+      "answer": "In practice, 2 doses of the MMR vaccine are administered in this situation due to the limited availability of monovalent vaccines against these viruses.",
+      "evidence": "In practice, however, 2 doses of the MMR vaccine are also administered in this situation, which is dictated by the limited availability of monovalent vaccines against these viruses.",
+      "question_type": "comparative",
+      "qa_id": "cdc_immunization_125"
+    }
+  ]
+}

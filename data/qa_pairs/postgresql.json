@@ -1,0 +1,698 @@
+{
+  "corpus_id": "postgresql",
+  "qa_pairs": [
+    {
+      "question": "How can users add new data types beyond the built-in types in PostgreSQL?",
+      "answer": "Users can add new types to PostgreSQL using the CREATE TYPE command.",
+      "evidence": "PostgreSQL has a rich set of native data types available to users. Users can add new types to PostgreSQL using the CREATE TYPE command.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_002"
+    },
+    {
+      "question": "What happens when multiple elements are specified in the FROM list of a SELECT statement?",
+      "answer": "If more than one element is specified in the FROM list, they are cross-joined together. Each element is treated as a real or virtual table.",
+      "evidence": "All elements in the `FROM` list are computed. (Each element in the `FROM` list is a real or virtual table.) If more than one element is specified in the `FROM` list, they are cross-joined together. (See FROM Clause below.)",
+      "question_type": "factual",
+      "qa_id": "postgresql_003"
+    },
+    {
+      "question": "How does UNION handle duplicate rows, and why is UNION ALL usually faster?",
+      "answer": "UNION eliminates duplicate rows by default. UNION ALL prevents this elimination and is usually significantly quicker because it skips the deduplication step.",
+      "evidence": "The result of `UNION` does not contain any duplicate rows unless the `ALL` option is specified. `ALL` prevents elimination of duplicates. (Therefore, `UNION ALL` is usually significantly quicker than `UNION`; use `ALL` when you can.) `DISTINCT` can be written to explicitly specify the default behavior of eliminating duplicate rows.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_004"
+    },
+    {
+      "question": "What is the default sorting order when ASC or DESC is not specified in an ORDER BY clause?",
+      "answer": "ASC (ascending) is assumed by default when neither ASC nor DESC is specified.",
+      "evidence": "Optionally one can add the key word `ASC` (ascending) or `DESC` (descending) after any expression in the `ORDER BY` clause. If not specified, `ASC` is assumed by default. Alternatively, a specific ordering operator name can be specified in the `USING` clause.",
+      "question_type": "factual",
+      "qa_id": "postgresql_006"
+    },
+    {
+      "question": "What is the default behavior for sorting null values in ORDER BY clauses?",
+      "answer": "By default, NULLS LAST is used when ASC is specified or implied, and NULLS FIRST when DESC is specified, acting as though nulls are larger than non-nulls.",
+      "evidence": "If `NULLS LAST` is specified, null values sort after all non-null values; if `NULLS FIRST` is specified, null values sort before all non-null values. If neither is specified, the default behavior is `NULLS LAST` when `ASC` is specified or implied, and `NULLS FIRST` when `DESC` is specified (thus, the default is to act as though nulls are larger than non-nulls).",
+      "question_type": "factual",
+      "qa_id": "postgresql_007"
+    },
+    {
+      "question": "What clauses can and cannot be used with the TABLE command in PostgreSQL?",
+      "answer": "TABLE can use WITH, UNION, INTERSECT, EXCEPT, ORDER BY, LIMIT, OFFSET, FETCH, and FOR locking clauses, but cannot use WHERE or any form of aggregation.",
+      "evidence": "It can be used as a top-level command or as a space-saving syntax variant in parts of complex queries. Only the `WITH`, `UNION`, `INTERSECT`, `EXCEPT`, `ORDER BY`, `LIMIT`, `OFFSET`, `FETCH` and `FOR` locking clauses can be used with `TABLE`; the `WHERE` clause and any form of aggregation cannot be used.",
+      "question_type": "factual",
+      "qa_id": "postgresql_009"
+    },
+    {
+      "question": "What happens when a HAVING clause is present in a query without a GROUP BY clause?",
+      "answer": "The query becomes a grouped query where all selected rows form a single group. The query emits a single row if the HAVING condition is true, or zero rows otherwise.",
+      "evidence": "The presence of `HAVING` turns a query into a grouped query even if there is no `GROUP BY` clause. This is the same as what happens when the query contains aggregate functions but no `GROUP BY` clause. All the selected rows are considered to form a single group, and the `SELECT` list and `HAVING` clause can only reference table columns from within aggregate functions. Such a query will emit a single row if the `HAVING` condition is true, zero rows if it is not true.",
+      "question_type": "factual",
+      "qa_id": "postgresql_011"
+    },
+    {
+      "question": "What is the default window frame when no frame clause is specified for a window function?",
+      "answer": "The default is RANGE UNBOUNDED PRECEDING, which includes all rows from the partition start through the current row's last peer in the ORDER BY ordering.",
+      "evidence": "The default framing option is `RANGE UNBOUNDED PRECEDING`, which is the same as `RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`; it sets the frame to be all rows from the partition start up through the current row's last *peer* (a row that the window's `ORDER BY` clause considers equivalent to the current row; all rows are peers if there is no `ORDER BY`).",
+      "question_type": "factual",
+      "qa_id": "postgresql_012"
+    },
+    {
+      "question": "What does the LATERAL keyword allow in the FROM clause of a SELECT statement?",
+      "answer": "LATERAL allows a sub-SELECT to refer to columns of FROM items that appear before it in the FROM list, which is not possible without LATERAL.",
+      "evidence": "The `LATERAL` key word can precede a sub-`SELECT` `FROM` item. This allows the sub-`SELECT` to refer to columns of `FROM` items that appear before it in the `FROM` list. (Without `LATERAL`, each sub-`SELECT` is evaluated independently and so cannot cross-reference any other `FROM` item.)",
+      "question_type": "definitional",
+      "qa_id": "postgresql_013"
+    },
+    {
+      "question": "Are LIMIT and OFFSET part of the SQL standard, or are they PostgreSQL-specific?",
+      "answer": "LIMIT and OFFSET are PostgreSQL-specific syntax, also used by MySQL. The SQL:2008 standard introduced OFFSET ... FETCH {FIRST|NEXT} ... for the same functionality.",
+      "evidence": "The clauses `LIMIT` and `OFFSET` are PostgreSQL-specific syntax, also used by MySQL. The SQL:2008 standard has introduced the clauses `OFFSET ... FETCH {FIRST|NEXT} ...` for the same functionality, as shown above in LIMIT Clause. This syntax is also used by IBM DB2.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_014"
+    },
+    {
+      "question": "What does the ON CONFLICT DO UPDATE clause guarantee in an INSERT statement?",
+      "answer": "It guarantees an atomic INSERT or UPDATE outcome even under high concurrency, which is also known as UPSERT.",
+      "evidence": "`ON CONFLICT DO UPDATE` guarantees an atomic `INSERT` or `UPDATE` outcome; provided there is no independent error, one of those two outcomes is guaranteed, even under high concurrency. This is also known as *UPSERT* \u2014 \u201cUPDATE or INSERT\u201d.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_015"
+    },
+    {
+      "question": "What happens when inserting rows into a partitioned table vs. a partition in PostgreSQL?",
+      "answer": "When inserting into a partitioned table, each row is routed to the appropriate partition. When inserting into a specific partition, an error occurs if an input row violates the partition constraint.",
+      "evidence": "If the specified table is a partitioned table, each row is routed to the appropriate partition and inserted into it. If the specified table is a partition, an error will occur if one of the input rows violates the partition constraint.",
+      "question_type": "factual",
+      "qa_id": "postgresql_016"
+    },
+    {
+      "question": "What happens to columns not mentioned in the SET clause of an UPDATE statement?",
+      "answer": "Columns not explicitly modified in the SET clause retain their previous values.",
+      "evidence": "`UPDATE` changes the values of the specified columns in all rows that satisfy the condition. Only the columns to be modified need be mentioned in the `SET` clause; columns not explicitly modified retain their previous values.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_018"
+    },
+    {
+      "question": "What happens when an UPDATE causes a row to no longer satisfy its partition constraint?",
+      "answer": "The row is moved to another partition whose constraint it satisfies. If no such partition exists, an error occurs. The row movement is actually a DELETE and INSERT operation behind the scenes.",
+      "evidence": "In the case of a partitioned table, updating a row might cause it to no longer satisfy the partition constraint of the containing partition. In that case, if there is some other partition in the partition tree for which this row satisfies its partition constraint, then the row is moved to that partition. If there is no such partition, an error will occur. Behind the scenes, the row movement is actually a `DELETE` and `INSERT` operation.",
+      "question_type": "factual",
+      "qa_id": "postgresql_019"
+    },
+    {
+      "question": "What is the effect of a DELETE command when the WHERE clause is absent?",
+      "answer": "Without a WHERE clause, all rows in the table are deleted, resulting in a valid but empty table.",
+      "evidence": "`DELETE` deletes rows that satisfy the `WHERE` clause from the specified table. If the `WHERE` clause is absent, the effect is to delete all rows in the table. The result is a valid, but empty table.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_020"
+    },
+    {
+      "question": "What is a faster alternative to DELETE for removing all rows from a table?",
+      "answer": "TRUNCATE provides a faster mechanism to remove all rows from a table.",
+      "evidence": "`TRUNCATE` provides a faster mechanism to remove all rows from a table.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_021"
+    },
+    {
+      "question": "What are unlogged tables in PostgreSQL and what are their tradeoffs?",
+      "answer": "Unlogged tables do not write data to the write-ahead log, making them faster, but they are not crash-safe and are automatically truncated after a crash. Their contents are not replicated to standby servers.",
+      "evidence": "If specified, the table is created as an unlogged table. Data written to unlogged tables is not written to the write-ahead log (see Chapter\u00a030), which makes them considerably faster than ordinary tables. However, they are not crash-safe: an unlogged table is automatically truncated after a crash or unclean shutdown. The contents of an unlogged table are also not replicated to standby servers. Any indexes created on an unlogged table are automatically unlogged as well.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_023"
+    },
+    {
+      "question": "How does the LIKE clause differ from INHERITS when copying table structure?",
+      "answer": "Unlike INHERITS, with LIKE the new table and original table are completely decoupled after creation. Changes to the original table do not propagate, and the new table's data cannot be included in scans of the original.",
+      "evidence": "Unlike `INHERITS`, the new table and original table are completely decoupled after creation is complete. Changes to the original table will not be applied to the new table, and it is not possible to include data of the new table in scans of the original table.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_026"
+    },
+    {
+      "question": "What is a generated column in PostgreSQL and what keyword is required for it?",
+      "answer": "A generated column cannot be written to and returns the result of a specified expression when read. The keyword STORED is required to signify the column will be computed on write and stored on disk.",
+      "evidence": "This clause creates the column as a *generated column*. The column cannot be written to, and when read the result of the specified expression will be returned.\n\n    The keyword `STORED` is required to signify that the column will be computed on write and will be stored on disk.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_027"
+    },
+    {
+      "question": "How does the PRIMARY KEY constraint compare to a combination of UNIQUE and NOT NULL?",
+      "answer": "PRIMARY KEY enforces the same data constraints as UNIQUE and NOT NULL combined, but also provides schema metadata indicating that other tables can rely on the columns as a unique identifier for rows.",
+      "evidence": "`PRIMARY KEY` enforces the same data constraints as a combination of `UNIQUE` and `NOT NULL`. However, identifying a set of columns as the primary key also provides metadata about the design of the schema, since a primary key implies that other tables can rely on this set of columns as a unique identifier for rows.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_029"
+    },
+    {
+      "question": "What are the three foreign key match types in PostgreSQL and how do MATCH FULL and MATCH SIMPLE differ?",
+      "answer": "The three types are MATCH FULL, MATCH PARTIAL, and MATCH SIMPLE. MATCH FULL disallows partial nulls in multicolumn foreign keys unless all are null. MATCH SIMPLE allows any foreign key columns to be null. MATCH PARTIAL is not yet implemented.",
+      "evidence": "There are three match types: `MATCH FULL`, `MATCH PARTIAL`, and `MATCH SIMPLE` (which is the default). `MATCH FULL` will not allow one column of a multicolumn foreign key to be null unless all foreign key columns are null; if they are all null, the row is not required to have a match in the referenced table. `MATCH SIMPLE` allows any of the foreign key columns to be null; if any of them are null, the row is not required to have a match in the referenced table. `MATCH PARTIAL` is not yet implemented.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_031"
+    },
+    {
+      "question": "How does PostgreSQL's handling of temporary tables differ from the SQL standard?",
+      "answer": "In the SQL standard, temporary tables are defined once and automatically exist in every session. PostgreSQL instead requires each session to issue its own CREATE TEMPORARY TABLE command.",
+      "evidence": "Although the syntax of `CREATE TEMPORARY TABLE` resembles that of the SQL standard, the effect is not the same. In the standard, temporary tables are defined just once and automatically exist (starting with empty contents) in every session that needs them. PostgreSQL instead requires each session to issue its own `CREATE TEMPORARY TABLE` command for each temporary table to be used.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_032"
+    },
+    {
+      "question": "What lock level does ALTER TABLE typically acquire, and how is it determined when multiple subcommands are given?",
+      "answer": "ALTER TABLE acquires an ACCESS EXCLUSIVE lock unless explicitly noted otherwise. When multiple subcommands are given, the strictest lock required by any subcommand is used.",
+      "evidence": "`ALTER TABLE` changes the definition of an existing table. There are several subforms described below. Note that the lock level required may differ for each subform. An `ACCESS EXCLUSIVE` lock is acquired unless explicitly noted. When multiple subcommands are given, the lock acquired will be the strictest one required by any subcommand.",
+      "question_type": "factual",
+      "qa_id": "postgresql_033"
+    },
+    {
+      "question": "What actually happens internally when a column is dropped using ALTER TABLE DROP COLUMN?",
+      "answer": "The column is not physically removed; it is made invisible to SQL operations. Subsequent operations store null for the column. The space is reclaimed over time as existing rows are updated.",
+      "evidence": "The `DROP COLUMN` form does not physically remove the column, but simply makes it invisible to SQL operations. Subsequent insert and update operations in the table will store a null value for the column. Thus, dropping a column is quick but it will not immediately reduce the on-disk size of your table, as the space occupied by the dropped column is not reclaimed. The space will be reclaimed over time as existing rows are updated.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_034"
+    },
+    {
+      "question": "How can you add a foreign key constraint with minimal impact on concurrent operations?",
+      "answer": "Use NOT VALID with ADD CONSTRAINT to skip the table scan, then use VALIDATE CONSTRAINT separately. Validation only acquires a SHARE UPDATE EXCLUSIVE lock, which does not block concurrent updates.",
+      "evidence": "The main purpose of the `NOT VALID` constraint option is to reduce the impact of adding a constraint on concurrent updates. With `NOT VALID`, the `ADD CONSTRAINT` command does not scan the table and can be committed immediately. After that, a `VALIDATE CONSTRAINT` command can be issued to verify that existing rows satisfy the constraint. The validation step does not need to lock out concurrent updates, since it knows that other transactions will be enforcing the constraint for rows that they insert or update; only pre-existing rows need to be checked. Hence, validation acquires only a `SHARE UPDATE EXCLUSIVE` lock on the table being altered.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_035"
+    },
+    {
+      "question": "What is the WITH clause in a SELECT statement used for?",
+      "answer": "The WITH clause allows specifying subqueries that can be referenced by name in the primary query, effectively acting as temporary tables or views for the duration of the primary query.",
+      "evidence": "The `WITH` clause allows you to specify one or more subqueries that can be referenced by name in the primary query. The subqueries effectively act as temporary tables or views for the duration of the primary query. Each subquery can be a `SELECT`, `TABLE`, `VALUES`, `INSERT`, `UPDATE` or `DELETE` statement.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_037"
+    },
+    {
+      "question": "What are the two ways to define constraints in PostgreSQL, and how do they differ?",
+      "answer": "Constraints can be defined as column constraints (part of a column definition) or table constraints (not tied to a particular column, can encompass multiple columns). Every column constraint can also be written as a table constraint.",
+      "evidence": "There are two ways to define constraints: table constraints and column constraints. A column constraint is defined as part of a column definition. A table constraint definition is not tied to a particular column, and it can encompass more than one column. Every column constraint can also be written as a table constraint; a column constraint is only a notational convenience for use when the constraint only affects one column.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_039"
+    },
+    {
+      "question": "What does the NATURAL keyword do in a JOIN operation?",
+      "answer": "NATURAL is shorthand for a USING list that mentions all columns with matching names in the two tables. If there are no common column names, it is equivalent to ON TRUE.",
+      "evidence": "`NATURAL` is shorthand for a `USING` list that mentions all columns in the two tables that have matching names. If there are no common column names, `NATURAL` is equivalent to `ON TRUE`.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_040"
+    },
+    {
+      "question": "What is the general processing order of a SELECT statement in PostgreSQL?",
+      "answer": "SELECT processes in this order: WITH queries are computed, FROM list elements are computed, WHERE filters rows, GROUP BY and HAVING group and filter, SELECT output expressions are computed, DISTINCT eliminates duplicates, set operations (UNION/INTERSECT/EXCEPT) are applied, ORDER BY sorts, LIMIT/OFFSET restricts rows, and locking clauses lock rows.",
+      "evidence": "`SELECT` retrieves rows from zero or more tables. The general processing of `SELECT` is as follows:\n\n1. All queries in the `WITH` list are computed. These effectively serve as temporary tables that can be referenced in the `FROM` list. A `WITH` query that is referenced more than once in `FROM` is computed only once, unless specified otherwise with `NOT MATERIALIZED`. (See WITH Clause below.)\n2. All elements in the `FROM` list are computed. (Each element in the `FROM` list is a real or virtual table.) If more than one element is specified in the `FROM` list, they are cross-joined together. (See FROM Clause below.)\n3. If the `WHERE` clause is specified, all rows that do not satisfy the condition are eliminated from the output. (See WHERE Clause below.)\n4. If the `GROUP BY` clause is specified, or if there are aggregate function calls, the output is combined into groups of rows that match on one or more values, and the results of aggregate functions are computed. If the `HAVING` clause is present, it eliminates groups that do not satisfy the given condition. (See GROUP BY Clause and HAVING Clause below.) Although query output columns are nominally computed in the next step, they can also be referenced (by name or ordinal number) in the `GROUP BY` clause.\n5. The actual output rows are computed using the `SELECT` output expressions for each selected row or row group. (See SELECT List below.)\n6. `SELECT DISTINCT` eliminates duplicate rows from the result. `SELECT DISTINCT ON` eliminates rows that match on all the specified expressions. `SELECT ALL` (the default) will return all candidate rows, including duplicates. (See DISTINCT Clause below.)\n7. Using the operators `UNION`, `INTERSECT`, and `EXCEPT`, the output of more than one `SELECT` statement can be combined to form a single result set. The `UNION` operator returns all rows that are in one or both of the result sets. The `INTERSECT` operator returns all rows that are strictly in both result sets. The `EXCEPT` operator returns the rows that are in the first result set but not in the second. In all three cases, duplicate rows are eliminated unless `ALL` is specified. The noise word `DISTINCT` can be added to explicitly specify eliminating duplicate rows. Notice that `DISTINCT` is the default behavior here, even though `ALL` is the default for `SELECT` itself. (See UNION Clause, INTERSECT Clause, and EXCEPT Clause below.)\n8. If the `ORDER BY` clause is specified, the returned rows are sorted in the specified order. If `ORDER BY` is not given, the rows are returned in whatever order the system finds fastest to produce. (See ORDER BY Clause below.)\n9. If the `LIMIT` (or `FETCH FIRST`) or `OFFSET` clause is specified, the `SELECT` statement only returns a subset of the result rows. (See LIMIT Clause below.)\n10. If `FOR UPDATE`, `FOR NO KEY UPDATE`, `FOR SHARE` or `FOR KEY SHARE` is specified, the `SELECT` statement locks the selected rows against concurrent updates. (See The Locking Clause below.)",
+      "question_type": "procedural",
+      "qa_id": "postgresql_041"
+    },
+    {
+      "question": "What happens when an alias is provided for a FROM item in a SELECT statement?",
+      "answer": "When an alias is provided, it completely hides the actual name of the table or function. The remainder of the SELECT must refer to the FROM item by the alias, not by its original name.",
+      "evidence": "A substitute name for the `FROM` item containing the alias. An alias is used for brevity or to eliminate ambiguity for self-joins (where the same table is scanned multiple times). When an alias is provided, it completely hides the actual name of the table or function; for example given `FROM foo AS f`, the remainder of the `SELECT` must refer to this `FROM` item as `f` not `foo`.",
+      "question_type": "factual",
+      "qa_id": "postgresql_043"
+    },
+    {
+      "question": "How does LEFT OUTER JOIN work in PostgreSQL?",
+      "answer": "LEFT OUTER JOIN returns all rows in the qualified Cartesian product that pass the join condition, plus one copy of each row in the left-hand table for which there was no matching right-hand row, with null values inserted for the right-hand columns.",
+      "evidence": "`LEFT OUTER JOIN` returns all rows in the qualified Cartesian product (i.e., all combined rows that pass its join condition), plus one copy of each row in the left-hand table for which there was no right-hand row that passed the join condition. This left-hand row is extended to the full width of the joined table by inserting null values for the right-hand columns.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_045"
+    },
+    {
+      "question": "How does GROUP BY handle ambiguity when a name matches both an input column and an output column?",
+      "answer": "In case of ambiguity, a GROUP BY name will be interpreted as an input-column name rather than an output column name.",
+      "evidence": "`GROUP BY` will condense into a single row all selected rows that share the same values for the grouped expressions. An *`expression`* used inside a *`grouping_element`* can be an input column name, or the name or ordinal number of an output column (`SELECT` list item), or an arbitrary expression formed from input-column values. In case of ambiguity, a `GROUP BY` name will be interpreted as an input-column name rather than an output column name.",
+      "question_type": "factual",
+      "qa_id": "postgresql_048"
+    },
+    {
+      "question": "What is the INTERSECT ALL behavior for determining how many times a row appears in the result?",
+      "answer": "With ALL, a row that has m duplicates in the left table and n duplicates in the right table will appear min(m,n) times in the result set.",
+      "evidence": "The result of `INTERSECT` does not contain any duplicate rows unless the `ALL` option is specified. With `ALL`, a row that has *`m`* duplicates in the left table and *`n`* duplicates in the right table will appear min(*`m`*,*`n`*) times in the result set.",
+      "question_type": "factual",
+      "qa_id": "postgresql_049"
+    },
+    {
+      "question": "How does INTERSECT bind relative to UNION in terms of operator precedence?",
+      "answer": "INTERSECT binds more tightly than UNION. So the expression A UNION B INTERSECT C will be read as A UNION (B INTERSECT C).",
+      "evidence": "Multiple `INTERSECT` operators in the same `SELECT` statement are evaluated left to right, unless parentheses dictate otherwise. `INTERSECT` binds more tightly than `UNION`. That is, `A UNION B INTERSECT C` will be read as `A UNION (B INTERSECT C)`.",
+      "question_type": "factual",
+      "qa_id": "postgresql_050"
+    },
+    {
+      "question": "What does the REPEATABLE clause do in TABLESAMPLE?",
+      "answer": "The REPEATABLE clause specifies a seed number for generating random numbers within the sampling method. Two queries with the same seed and argument values will select the same sample of the table, if the table has not been changed meanwhile.",
+      "evidence": "The optional `REPEATABLE` clause specifies a *`seed`* number or expression to use for generating random numbers within the sampling method. The seed value can be any non-null floating-point value. Two queries that specify the same seed and *`argument`* values will select the same sample of the table, if the table has not been changed meanwhile.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_051"
+    },
+    {
+      "question": "What is the difference between SELECT DISTINCT and SELECT DISTINCT ON?",
+      "answer": "SELECT DISTINCT removes all duplicate rows from the result set. SELECT DISTINCT ON keeps only the first row of each set of rows where the given expressions evaluate to equal, and should be used with ORDER BY to control which row appears first.",
+      "evidence": "If `SELECT DISTINCT` is specified, all duplicate rows are removed from the result set (one row is kept from each group of duplicates). `SELECT ALL` specifies the opposite: all rows are kept; that is the default.\n\n`SELECT DISTINCT ON ( expression [, ...] )` keeps only the first row of each set of rows where the given expressions evaluate to equal. The `DISTINCT ON` expressions are interpreted using the same rules as for `ORDER BY` (see above). Note that the \u201cfirst row\u201d of each set is unpredictable unless `ORDER BY` is used to ensure that the desired row appears first.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_052"
+    },
+    {
+      "question": "What happens when the LIMIT count expression evaluates to NULL?",
+      "answer": "If the count expression evaluates to NULL, it is treated as LIMIT ALL, meaning no limit is applied. Similarly, if the OFFSET start evaluates to NULL, it is treated as OFFSET 0.",
+      "evidence": "If the *`count`* expression evaluates to NULL, it is treated as `LIMIT ALL`, i.e., no limit. If *`start`* evaluates to NULL, it is treated the same as `OFFSET 0`.",
+      "question_type": "factual",
+      "qa_id": "postgresql_053"
+    },
+    {
+      "question": "What does the WITH TIES option do in the FETCH FIRST clause?",
+      "answer": "WITH TIES returns any additional rows that tie for the last place in the result set according to the ORDER BY clause. ORDER BY is mandatory when using WITH TIES.",
+      "evidence": "The `WITH TIES` option is used to return any additional rows that tie for the last place in the result set according to the `ORDER BY` clause; `ORDER BY` is mandatory in this case, and `SKIP LOCKED` is not allowed.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_055"
+    },
+    {
+      "question": "What does the RECURSIVE keyword enable in a WITH clause?",
+      "answer": "RECURSIVE allows a SELECT subquery to reference itself by name. The subquery must have the form of a non-recursive term UNION [ALL | DISTINCT] recursive term, with the recursive self-reference appearing on the right-hand side of the UNION.",
+      "evidence": "If `RECURSIVE` is specified, it allows a `SELECT` subquery to reference itself by name. Such a subquery must have the form\n\n```\nnon_recursive_term UNION [ ALL | DISTINCT ] recursive_term\n```\n\nwhere the recursive self-reference must appear on the right-hand side of the `UNION`.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_056"
+    },
+    {
+      "question": "What is the key property of WITH queries regarding evaluation frequency?",
+      "answer": "WITH queries are normally evaluated only once per execution of the primary query, even if referenced more than once. Data-modifying statements in WITH are guaranteed to execute once and only once.",
+      "evidence": "A key property of `WITH` queries is that they are normally evaluated only once per execution of the primary query, even if the primary query refers to them more than once. In particular, data-modifying statements are guaranteed to be executed once and only once, regardless of whether the primary query reads all or any of their output.",
+      "question_type": "factual",
+      "qa_id": "postgresql_057"
+    },
+    {
+      "question": "What does NOT MATERIALIZED do for a WITH query?",
+      "answer": "NOT MATERIALIZED removes the guarantee that the WITH query is evaluated only once. It allows the WITH query to be folded into the primary query like a simple sub-SELECT, potentially enabling joint optimization but causing duplicate computations if referenced multiple times.",
+      "evidence": "However, a `WITH` query can be marked `NOT MATERIALIZED` to remove this guarantee. In that case, the `WITH` query can be folded into the primary query much as though it were a simple sub-`SELECT` in the primary query's `FROM` clause. This results in duplicate computations if the primary query refers to that `WITH` query more than once; but if each such use requires only a few rows of the `WITH` query's total output, `NOT MATERIALIZED` can provide a net savings by allowing the queries to be optimized jointly.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_058"
+    },
+    {
+      "question": "What privilege is required to use FOR UPDATE or FOR SHARE in a SELECT statement?",
+      "answer": "Using FOR NO KEY UPDATE, FOR UPDATE, FOR SHARE, or FOR KEY SHARE requires UPDATE privilege on at least one column of each table being locked, in addition to the SELECT privilege on each column used in the SELECT command.",
+      "evidence": "You must have `SELECT` privilege on each column used in a `SELECT` command. The use of `FOR NO KEY UPDATE`, `FOR UPDATE`, `FOR SHARE` or `FOR KEY SHARE` requires `UPDATE` privilege as well (for at least one column of each table so selected).",
+      "question_type": "factual",
+      "qa_id": "postgresql_059"
+    },
+    {
+      "question": "How does ORDER BY resolve ambiguity when a name matches both an output column and an input column?",
+      "answer": "ORDER BY interprets the ambiguous name as the output column name. This is the opposite of GROUP BY, which interprets it as an input column name in the same situation.",
+      "evidence": "If an `ORDER BY` expression is a simple name that matches both an output column name and an input column name, `ORDER BY` will interpret it as the output column name. This is the opposite of the choice that `GROUP BY` will make in the same situation. This inconsistency is made to be compatible with the SQL standard.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_060"
+    },
+    {
+      "question": "Can an ORDER BY clause on the result of a UNION, INTERSECT, or EXCEPT use arbitrary expressions?",
+      "answer": "No. An ORDER BY clause applying to the result of a UNION, INTERSECT, or EXCEPT clause can only specify an output column name or number, not an expression.",
+      "evidence": "A limitation of this feature is that an `ORDER BY` clause applying to the result of a `UNION`, `INTERSECT`, or `EXCEPT` clause can only specify an output column name or number, not an expression.",
+      "question_type": "factual",
+      "qa_id": "postgresql_061"
+    },
+    {
+      "question": "What are the four locking strength levels available in PostgreSQL's SELECT locking clause?",
+      "answer": "The four locking strengths are UPDATE, NO KEY UPDATE, SHARE, and KEY SHARE. These are specified using FOR UPDATE, FOR NO KEY UPDATE, FOR SHARE, and FOR KEY SHARE respectively.",
+      "evidence": "`FOR UPDATE`, `FOR NO KEY UPDATE`, `FOR SHARE` and `FOR KEY SHARE` are *locking clauses*; they affect how `SELECT` locks rows as they are obtained from the table.",
+      "question_type": "factual",
+      "qa_id": "postgresql_063"
+    },
+    {
+      "question": "What happens when a locking clause is used with LIMIT in PostgreSQL?",
+      "answer": "Locking stops once enough rows have been returned to satisfy the limit. However, rows skipped over by OFFSET will still get locked.",
+      "evidence": "If a `LIMIT` is used, locking stops once enough rows have been returned to satisfy the limit (but note that rows skipped over by `OFFSET` will get locked).",
+      "question_type": "factual",
+      "qa_id": "postgresql_064"
+    },
+    {
+      "question": "Why might SELECT with ORDER BY and a locking clause return rows out of order at the READ COMMITTED isolation level?",
+      "answer": "ORDER BY is applied first, and then the command might block trying to obtain a lock. Once unblocked, some ordering column values might have been modified by other transactions, causing rows to appear out of order relative to their current values.",
+      "evidence": "It is possible for a `SELECT` command running at the `READ COMMITTED` transaction isolation level and using `ORDER BY` and a locking clause to return rows out of order. This is because `ORDER BY` is applied first. The command sorts the result, but might then block trying to obtain a lock on one or more of the rows. Once the `SELECT` unblocks, some of the ordering column values might have been modified, leading to those rows appearing to be out of order (though they are in order in terms of the original column values). This can be worked around at need by placing the `FOR UPDATE/SHARE` clause in a sub-query, for example",
+      "question_type": "causal",
+      "qa_id": "postgresql_065"
+    },
+    {
+      "question": "Can PostgreSQL omit the FROM clause in a SELECT statement?",
+      "answer": "Yes, PostgreSQL allows omitting the FROM clause to compute the results of simple expressions, such as SELECT 2+2. Some other SQL databases cannot do this except by introducing a dummy one-row table.",
+      "evidence": "PostgreSQL allows one to omit the `FROM` clause. It has a straightforward use to compute the results of simple expressions:\n\n```\nSELECT 2+2;\n\n ?column?\n----------\n        4\n```\n\nSome other SQL databases cannot do this except by introducing a dummy one-row table from which to do the `SELECT`.",
+      "question_type": "factual",
+      "qa_id": "postgresql_066"
+    },
+    {
+      "question": "What does ON CONFLICT DO NOTHING do in an INSERT statement?",
+      "answer": "ON CONFLICT DO NOTHING simply avoids inserting a row as its alternative action when a unique violation or exclusion constraint violation occurs.",
+      "evidence": "`ON CONFLICT DO NOTHING` simply avoids inserting a row as its alternative action. `ON CONFLICT DO UPDATE` updates the existing row that conflicts with the row proposed for insertion as its alternative action.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_067"
+    },
+    {
+      "question": "What is the excluded table in the context of ON CONFLICT DO UPDATE?",
+      "answer": "The special excluded table represents the row proposed for insertion. The SET and WHERE clauses in ON CONFLICT DO UPDATE can use the excluded table to reference values originally proposed for insertion.",
+      "evidence": "The `SET` and `WHERE` clauses in `ON CONFLICT DO UPDATE` have access to the existing row using the table's name (or an alias), and to the row proposed for insertion using the special `excluded` table. `SELECT` privilege is required on any column in the target table where corresponding `excluded` columns are read.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_068"
+    },
+    {
+      "question": "What command tag does INSERT return on successful completion?",
+      "answer": "INSERT returns a command tag of the form INSERT oid count, where count is the number of rows inserted or updated, and oid is always 0.",
+      "evidence": "On successful completion, an `INSERT` command returns a command tag of the form\n\n```\nINSERT oid count\n```\n\nThe *`count`* is the number of rows inserted or updated. *`oid`* is always 0 (it used to be the OID assigned to the inserted row if *`count`* was exactly one and the target table was declared `WITH OIDS` and 0 otherwise, but creating a table `WITH OIDS` is not supported anymore).",
+      "question_type": "factual",
+      "qa_id": "postgresql_069"
+    },
+    {
+      "question": "What does OVERRIDING USER VALUE do in an INSERT statement?",
+      "answer": "OVERRIDING USER VALUE causes any supplied values for identity columns to be ignored and the default sequence-generated values to be applied instead. This is useful when copying data between tables.",
+      "evidence": "If this clause is specified, then any values supplied for identity columns are ignored and the default sequence-generated values are applied.\n\n    This clause is useful for example when copying values between tables. Writing `INSERT INTO tbl2 OVERRIDING USER VALUE SELECT * FROM tbl1` will copy from `tbl1` all columns that are not identity columns in `tbl2` while values for the identity columns in `tbl2` will be generated by the sequences associated with `tbl2`.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_071"
+    },
+    {
+      "question": "What happens to a column not present in the INSERT column list?",
+      "answer": "Each column not present in the explicit or implicit column list will be filled with a default value, either its declared default value or null if there is none.",
+      "evidence": "Each column not present in the explicit or implicit column list will be filled with a default value, either its declared default value or null if there is none.",
+      "question_type": "factual",
+      "qa_id": "postgresql_072"
+    },
+    {
+      "question": "What constraints can serve as arbiters for ON CONFLICT in an INSERT statement?",
+      "answer": "Only NOT DEFERRABLE constraints and unique indexes are supported as arbiters with ON CONFLICT. Exclusion constraints are not supported as arbiters with ON CONFLICT DO UPDATE.",
+      "evidence": "Note that exclusion constraints are not supported as arbiters with `ON CONFLICT DO UPDATE`. In all cases, only `NOT DEFERRABLE` constraints and unique indexes are supported as arbiters.",
+      "question_type": "factual",
+      "qa_id": "postgresql_073"
+    },
+    {
+      "question": "What is the risk of using a FROM clause in an UPDATE when the join is not one-to-one?",
+      "answer": "If a target row joins to more than one row from the other tables, only one of the join rows will be used to update the target row, but which one is used is not readily predictable.",
+      "evidence": "When using `FROM` you should ensure that the join produces at most one output row for each row to be modified. In other words, a target row shouldn't join to more than one row from the other table(s). If it does, then only one of the join rows will be used to update the target row, but which one will be used is not readily predictable.",
+      "question_type": "causal",
+      "qa_id": "postgresql_076"
+    },
+    {
+      "question": "What is the USING clause in a DELETE statement used for?",
+      "answer": "The USING clause allows columns from other tables to appear in the WHERE condition, effectively performing a join between the target table and the USING tables. Successfully joined rows from the target table are marked for deletion.",
+      "evidence": "PostgreSQL lets you reference columns of other tables in the `WHERE` condition by specifying the other tables in the `USING` clause. For example, to delete all films produced by a given producer, one can do:\n\n```\nDELETE FROM films USING producers\n  WHERE producer_id = producers.id AND producers.name = 'foo';\n```\n\nWhat is essentially happening here is a join between `films` and `producers`, with all successfully joined `films` rows being marked for deletion.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_077"
+    },
+    {
+      "question": "What command tag does DELETE return on successful completion?",
+      "answer": "DELETE returns a command tag of the form DELETE count, where count is the number of rows deleted. The count may be less than the rows matching the condition if deletes were suppressed by a BEFORE DELETE trigger.",
+      "evidence": "On successful completion, a `DELETE` command returns a command tag of the form\n\n```\nDELETE count\n```\n\nThe *`count`* is the number of rows deleted. Note that the number may be less than the number of rows that matched the *`condition`* when deletes were suppressed by a `BEFORE DELETE` trigger.",
+      "question_type": "factual",
+      "qa_id": "postgresql_078"
+    },
+    {
+      "question": "What privilege is required to delete rows from a table in PostgreSQL?",
+      "answer": "You must have the DELETE privilege on the table to delete from it, as well as the SELECT privilege for any table in the USING clause or whose values are read in the condition.",
+      "evidence": "You must have the `DELETE` privilege on the table to delete from it, as well as the `SELECT` privilege for any table in the `USING` clause or whose values are read in the *`condition`*.",
+      "question_type": "factual",
+      "qa_id": "postgresql_079"
+    },
+    {
+      "question": "What does the IF NOT EXISTS clause do in CREATE TABLE?",
+      "answer": "IF NOT EXISTS prevents an error from being thrown if a relation with the same name already exists. A notice is issued instead. However, there is no guarantee that the existing relation matches the one that would have been created.",
+      "evidence": "Do not throw an error if a relation with the same name already exists. A notice is issued in this case. Note that there is no guarantee that the existing relation is anything like the one that would have been created.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_080"
+    },
+    {
+      "question": "What is a typed table in PostgreSQL and what happens when its type is dropped?",
+      "answer": "A typed table takes its structure from a specified composite type. It is tied to its type, so the table will be dropped if the type is dropped with DROP TYPE ... CASCADE.",
+      "evidence": "Creates a *typed table*, which takes its structure from the specified composite type (name optionally schema-qualified). A typed table is tied to its type; for example the table will be dropped if the type is dropped (with `DROP TYPE ... CASCADE`).",
+      "question_type": "definitional",
+      "qa_id": "postgresql_081"
+    },
+    {
+      "question": "What does the INHERITS clause do and how are schema modifications handled between parent and child tables?",
+      "answer": "INHERITS creates a persistent relationship between the new child table and parent tables. Schema modifications to the parent normally propagate to children, and the child table data is included in scans of the parent by default.",
+      "evidence": "Use of `INHERITS` creates a persistent relationship between the new child table and its parent table(s). Schema modifications to the parent(s) normally propagate to children as well, and by default the data of the child table is included in scans of the parent(s).",
+      "question_type": "procedural",
+      "qa_id": "postgresql_082"
+    },
+    {
+      "question": "What happens when a range partition's lower and upper bounds are specified with FROM and TO?",
+      "answer": "The lower bound specified with FROM is an inclusive bound, while the upper bound specified with TO is an exclusive bound. Values in the FROM list are valid for this partition, but values in the TO list are not.",
+      "evidence": "When creating a range partition, the lower bound specified with `FROM` is an inclusive bound, whereas the upper bound specified with `TO` is an exclusive bound. That is, the values specified in the `FROM` list are valid values of the corresponding partition key columns for this partition, whereas those in the `TO` list are not.",
+      "question_type": "factual",
+      "qa_id": "postgresql_083"
+    },
+    {
+      "question": "What are MINVALUE and MAXVALUE used for when creating range partitions?",
+      "answer": "MINVALUE and MAXVALUE indicate that there is no lower or upper bound on the column's value. MAXVALUE is greater than any other value including infinity, and MINVALUE is less than any other value including minus infinity.",
+      "evidence": "The special values `MINVALUE` and `MAXVALUE` may be used when creating a range partition to indicate that there is no lower or upper bound on the column's value. For example, a partition defined using `FROM (MINVALUE) TO (10)` allows any values less than 10, and a partition defined using `FROM (10) TO (MAXVALUE)` allows any values greater than or equal to 10.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_084"
+    },
+    {
+      "question": "What is a default partition and is it available for all partitioning methods?",
+      "answer": "A default partition receives any rows whose partition key values do not fit into any other partition. Default partitions are not available for hash-partitioned tables.",
+      "evidence": "If `DEFAULT` is specified, the table will be created as the default partition of the parent table. This option is not available for hash-partitioned tables. A partition key value not fitting into any other partition of the given parent will be routed to the default partition.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_085"
+    },
+    {
+      "question": "What does the CHECK constraint's NO INHERIT option do?",
+      "answer": "A constraint marked with NO INHERIT will not propagate to child tables. Child tables will not inherit this constraint.",
+      "evidence": "A constraint marked with `NO INHERIT` will not propagate to child tables.",
+      "question_type": "factual",
+      "qa_id": "postgresql_086"
+    },
+    {
+      "question": "In what order are CHECK constraints tested when a table has multiple CHECK constraints?",
+      "answer": "When a table has multiple CHECK constraints, they are tested for each row in alphabetical order by name, after checking NOT NULL constraints.",
+      "evidence": "When a table has multiple `CHECK` constraints, they will be tested for each row in alphabetical order by name, after checking `NOT NULL` constraints. (PostgreSQL versions before 9.5 did not honor any particular firing order for `CHECK` constraints.)",
+      "question_type": "factual",
+      "qa_id": "postgresql_087"
+    },
+    {
+      "question": "What does the UNIQUE constraint's NULLS NOT DISTINCT option change?",
+      "answer": "By default, null values are not considered equal for the purpose of unique constraints. Specifying NULLS NOT DISTINCT changes this so that null values are considered equal, preventing multiple null values in the constrained columns.",
+      "evidence": "For the purpose of a unique constraint, null values are not considered equal, unless `NULLS NOT DISTINCT` is specified.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_088"
+    },
+    {
+      "question": "What is the EXCLUDE constraint and how does it relate to UNIQUE constraints?",
+      "answer": "The EXCLUDE constraint guarantees that if any two rows are compared on specified columns using specified operators, not all comparisons will return TRUE. If all operators test for equality, it is equivalent to a UNIQUE constraint, though a regular unique constraint will be faster.",
+      "evidence": "The `EXCLUDE` clause defines an exclusion constraint, which guarantees that if any two rows are compared on the specified column(s) or expression(s) using the specified operator(s), not all of these comparisons will return `TRUE`. If all of the specified operators test for equality, this is equivalent to a `UNIQUE` constraint, although an ordinary unique constraint will be faster.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_089"
+    },
+    {
+      "question": "How do NO ACTION and RESTRICT differ as foreign key referential actions?",
+      "answer": "Both produce an error when a deletion or update would create a foreign key constraint violation. The difference is that NO ACTION is deferrable (the check can be postponed until end of transaction) while RESTRICT is not deferrable and always checks immediately.",
+      "evidence": "`NO ACTION` #\n    :   Produce an error indicating that the deletion or update would create a foreign key constraint violation. If the constraint is deferred, this error will be produced at constraint check time if there still exist any referencing rows. This is the default action.\n\n    `RESTRICT` #\n    :   Produce an error indicating that the deletion or update would create a foreign key constraint violation. This is the same as `NO ACTION` except that the check is not deferrable.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_091"
+    },
+    {
+      "question": "What does the DEFERRABLE clause control for constraints?",
+      "answer": "DEFERRABLE controls whether constraint checking can be postponed until the end of the transaction using the SET CONSTRAINTS command. NOT DEFERRABLE (the default) means the constraint is checked immediately after every command. Only UNIQUE, PRIMARY KEY, EXCLUDE, and REFERENCES constraints accept this clause.",
+      "evidence": "This controls whether the constraint can be deferred. A constraint that is not deferrable will be checked immediately after every command. Checking of constraints that are deferrable can be postponed until the end of the transaction (using the `SET CONSTRAINTS` command). `NOT DEFERRABLE` is the default. Currently, only `UNIQUE`, `PRIMARY KEY`, `EXCLUDE`, and `REFERENCES` (foreign key) constraints accept this clause. `NOT NULL` and `CHECK` constraints are not deferrable.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_092"
+    },
+    {
+      "question": "What compression methods are supported for column data in PostgreSQL?",
+      "answer": "PostgreSQL supports pglz and lz4 compression methods. lz4 is only available if PostgreSQL was built with --with-lz4. The compression_method can also be set to default to consult the default_toast_compression setting at insertion time.",
+      "evidence": "The supported compression methods are `pglz` and `lz4`. (`lz4` is available only if `--with-lz4` was used when building PostgreSQL.) In addition, *`compression_method`* can be `default` to explicitly specify the default behavior, which is to consult the default\\_toast\\_compression setting at the time of data insertion to determine the method to use.",
+      "question_type": "factual",
+      "qa_id": "postgresql_096"
+    },
+    {
+      "question": "What does ALTER TABLE SET DATA TYPE do and when is a table rewrite required?",
+      "answer": "SET DATA TYPE changes the type of a column. A table rewrite is required when changing to a type that is not binary coercible from the old type. However, if the old type is binary coercible to the new type and the USING clause does not change column contents, no table rewrite is needed, though indexes must still be rebuilt.",
+      "evidence": "Adding a column with a volatile `DEFAULT` or changing the type of an existing column will require the entire table and its indexes to be rewritten. As an exception, when changing the type of an existing column, if the `USING` clause does not change the column contents and the old type is either binary coercible to the new type or an unconstrained domain over the new type, a table rewrite is not needed. However, indexes must always be rebuilt unless the system can verify that the new index would be logically equivalent to the existing one.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_097"
+    },
+    {
+      "question": "What does the DROP EXPRESSION form of ALTER TABLE do?",
+      "answer": "DROP EXPRESSION turns a stored generated column into a normal base column. Existing data in the column is retained, but future changes will no longer apply the generation expression.",
+      "evidence": "This form turns a stored generated column into a normal base column. Existing data in the columns is retained, but future changes will no longer apply the generation expression.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_098"
+    },
+    {
+      "question": "How can you force immediate reclamation of space from a dropped column?",
+      "answer": "You can execute one of the forms of ALTER TABLE that performs a rewrite of the whole table, which reconstructs each row with the dropped column replaced by a null value.",
+      "evidence": "To force immediate reclamation of space occupied by a dropped column, you can execute one of the forms of `ALTER TABLE` that performs a rewrite of the whole table. This results in reconstructing each row with the dropped column replaced by a null value.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_099"
+    },
+    {
+      "question": "What does the INCLUDE clause do when added to a UNIQUE or PRIMARY KEY constraint?",
+      "answer": "The INCLUDE clause adds columns to the constraint's index as payload only. Uniqueness is not enforced on these included columns, and the index cannot be searched on them, but they can be retrieved by an index-only scan.",
+      "evidence": "The optional `INCLUDE` clause adds to that index one or more columns that are simply \u201cpayload\u201d: uniqueness is not enforced on them, and the index cannot be searched on the basis of those columns. However they can be retrieved by an index-only scan. Note that although the constraint is not enforced on included columns, it still depends on them. Consequently, some operations on such columns (e.g., `DROP COLUMN`) can cause cascaded constraint and index deletion.",
+      "question_type": "definitional",
+      "qa_id": "postgresql_100"
+    },
+    {
+      "question": "What SQL commands does PostgreSQL provide for forcing a write-ahead log checkpoint, closing a cursor, and clustering a table?",
+      "answer": "PostgreSQL provides the CHECKPOINT command to force a write-ahead log checkpoint, the CLOSE command to close a cursor, and the CLUSTER command to cluster a table according to an index.",
+      "evidence": "CHECKPOINT \u2014 force a write-ahead log checkpoint\n\nCLOSE \u2014 close a cursor\n\nCLUSTER \u2014 cluster a table according to an index",
+      "question_type": "procedural",
+      "qa_id": "postgresql_101"
+    },
+    {
+      "question": "What is the purpose of the END, EXECUTE, and EXPLAIN SQL commands in PostgreSQL?",
+      "answer": "END commits the current transaction, EXECUTE runs a prepared statement, and EXPLAIN shows the execution plan of a statement.",
+      "evidence": "END \u2014 commit the current transaction\n\nEXECUTE \u2014 execute a prepared statement\n\nEXPLAIN \u2014 show the execution plan of a statement",
+      "question_type": "procedural",
+      "qa_id": "postgresql_102"
+    },
+    {
+      "question": "What does the SECURITY LABEL command do in PostgreSQL?",
+      "answer": "The SECURITY LABEL command is used to define or change a security label applied to an object.",
+      "evidence": "SECURITY LABEL \u2014 define or change a security label applied to an object\n\nSELECT \u2014 retrieve rows from a table or view",
+      "question_type": "procedural",
+      "qa_id": "postgresql_103"
+    },
+    {
+      "question": "What types does PostgreSQL have that are considered unique compared to the SQL standard?",
+      "answer": "PostgreSQL has several types that are either unique to it, such as geometric paths, or have several possible formats, such as the date and time types.",
+      "evidence": "However, several types are either unique to PostgreSQL, such as geometric paths, or have several possible formats, such as the date and time types.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_104"
+    },
+    {
+      "question": "How does an index affect the performance of a database server when finding and retrieving rows?",
+      "answer": "An index allows the database server to find and retrieve specific rows much faster than it could without an index.",
+      "evidence": "An index allows the database server to find and retrieve specific rows much faster than it could do without an index.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_105"
+    },
+    {
+      "question": "How does the WHERE clause affect the output of a SELECT statement?",
+      "answer": "If the WHERE clause is specified, all rows that do not satisfy the condition are eliminated from the output.",
+      "evidence": ")\n3. If the `WHERE` clause is specified, all rows that do not satisfy the condition are eliminated from the output.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_106"
+    },
+    {
+      "question": "What naming requirements apply to WITH queries, and how are column names determined?",
+      "answer": "A name without schema qualification must be specified for each WITH query. A list of column names can optionally be specified; if omitted, the column names are inferred from the subquery.",
+      "evidence": "A name (without schema qualification) must be specified for each `WITH` query. Optionally, a list of column names can be specified; if this is omitted, the column names are inferred from the subquery.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_107"
+    },
+    {
+      "question": "What form must a recursive WITH subquery take, and where must the recursive self-reference appear?",
+      "answer": "A recursive WITH subquery must have the form of a non_recursive_term UNION [ALL | DISTINCT] recursive_term, and the recursive self-reference must appear on the right-hand side of the UNION.",
+      "evidence": "Such a subquery must have the form\n\n```\nnon_recursive_term UNION [ ALL | DISTINCT ] recursive_term\n```\n\nwhere the recursive self-reference must appear on the right-hand side of the `UNION`.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_108"
+    },
+    {
+      "question": "How many recursive self-references are permitted per query in a recursive WITH clause?",
+      "answer": "Only one recursive self-reference is permitted per query.",
+      "evidence": "where the recursive self-reference must appear on the right-hand side of the `UNION`. Only one recursive self-reference is permitted per query.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_109"
+    },
+    {
+      "question": "What syntactic requirements apply to sub-SELECT expressions used in the FROM clause?",
+      "answer": "The sub-SELECT must be surrounded by parentheses, and an alias can be provided in the same way as for a table.",
+      "evidence": "Note that the sub-`SELECT` must be surrounded by parentheses, and an alias can be provided in the same way as for a table.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_110"
+    },
+    {
+      "question": "Why is it invalid for SELECT list expressions to reference ungrouped columns when GROUP BY or aggregate functions are present?",
+      "answer": "It is invalid because there would otherwise be more than one possible value to return for an ungrouped column. The exception is when ungrouped columns appear within aggregate functions or are functionally dependent on the grouped columns.",
+      "evidence": "When `GROUP BY` is present, or any aggregate functions are present, it is not valid for the `SELECT` list expressions to refer to ungrouped columns except within aggregate functions or when the ungrouped column is functionally dependent on the grouped columns, since there would otherwise be more than one possible value to return for an ungrouped column.",
+      "question_type": "causal",
+      "qa_id": "postgresql_111"
+    },
+    {
+      "question": "What is the effect of specifying multiple grouping sets in a GROUP BY clause?",
+      "answer": "The effect is equivalent to constructing a UNION ALL between subqueries with the individual grouping sets as their GROUP BY clauses.",
+      "evidence": "The effect of this is equivalent to constructing a `UNION ALL` between subqueries with the individual grouping sets as their `GROUP BY` clauses.",
+      "question_type": "causal",
+      "qa_id": "postgresql_112"
+    },
+    {
+      "question": "What constraints apply to column references in the HAVING clause condition?",
+      "answer": "Each column referenced in the HAVING condition must unambiguously reference a grouping column, unless the reference appears within an aggregate function or the ungrouped column is functionally dependent on the grouping columns.",
+      "evidence": "Each column referenced in *`condition`* must unambiguously reference a grouping column, unless the reference appears within an aggregate function or the ungrouped column is functionally dependent on the grouping columns.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_113"
+    },
+    {
+      "question": "How does HAVING differ from WHERE in terms of when filtering occurs?",
+      "answer": "WHERE filters individual rows before the application of GROUP BY, while HAVING filters group rows created by GROUP BY.",
+      "evidence": "`HAVING` is different from `WHERE`: `WHERE` filters individual rows before the application of `GROUP BY`, while `HAVING` filters group rows created by `GROUP BY`.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_114"
+    },
+    {
+      "question": "What does a new WINDOW definition inherit when it references an existing_window_name?",
+      "answer": "The new window copies its partitioning clause from the referenced earlier entry in the WINDOW list, as well as its ordering clause if any. However, the new window always uses its own frame clause, and the copied window must not specify a frame clause.",
+      "evidence": "If an *`existing_window_name`* is specified it must refer to an earlier entry in the `WINDOW` list; the new window copies its partitioning clause from that entry, as well as its ordering clause if any. In this case the new window cannot specify its own `PARTITION BY` clause, and it can specify `ORDER BY` only if the copied window does not have one. The new window always uses its own frame clause; the copied window must not specify a frame clause.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_115"
+    },
+    {
+      "question": "How are PARTITION BY list elements interpreted compared to GROUP BY elements in PostgreSQL?",
+      "answer": "The elements of the PARTITION BY list are interpreted in much the same fashion as elements of a GROUP BY clause, except that they are always simple expressions and never the name or number of an output column.",
+      "evidence": "The new window always uses its own frame clause; the copied window must not specify a frame clause.\n\nThe elements of the `PARTITION BY` list are interpreted in much the same fashion as elements of a `GROUP BY` clause, except that they are always simple expressions and never the name or number of an output column.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_116"
+    },
+    {
+      "question": "What restrictions apply to the offset value in a window frame clause?",
+      "answer": "The offset must be non-null and non-negative. Additionally, while the offset does not have to be a simple constant, it cannot contain variables, aggregate functions, or window functions.",
+      "evidence": "In all these cases, the value of the *`offset`* must be non-null and non-negative. Also, while the *`offset`* does not have to be a simple constant, it cannot contain variables, aggregate functions, or window functions.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_117"
+    },
+    {
+      "question": "In which clauses can an output column name be used versus where the full expression must be written?",
+      "answer": "An output column's name can be used to refer to its value in ORDER BY and GROUP BY clauses, but not in WHERE or HAVING clauses, where the full expression must be written out instead.",
+      "evidence": "An output column's name can be used to refer to the column's value in `ORDER BY` and `GROUP BY` clauses, but not in the `WHERE` or `HAVING` clauses; there you must write out the expression instead.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_118"
+    },
+    {
+      "question": "According to the SQL standard, when should output list expressions be computed relative to DISTINCT, ORDER BY, and LIMIT?",
+      "answer": "According to the SQL standard, the expressions in the output list should be computed before applying DISTINCT, ORDER BY, or LIMIT.",
+      "evidence": "According to the SQL standard, the expressions in the output list should be computed before applying `DISTINCT`, `ORDER BY`, or `LIMIT`.",
+      "question_type": "procedural",
+      "qa_id": "postgresql_119"
+    },
+    {
+      "question": "Why can using different LIMIT and OFFSET values to select subsets of a query result produce inconsistent results?",
+      "answer": "Using different LIMIT/OFFSET values will give inconsistent results unless a predictable result ordering is enforced with ORDER BY, because SQL does not promise to deliver query results in any particular order unless ORDER BY is used.",
+      "evidence": "Thus, using different `LIMIT`/`OFFSET` values to select different subsets of a query result *will give inconsistent results* unless you enforce a predictable result ordering with `ORDER BY`. This is not a bug; it is an inherent consequence of the fact that SQL does not promise to deliver the results of a query in any particular order unless `ORDER BY` is used to constrain the order.",
+      "question_type": "causal",
+      "qa_id": "postgresql_120"
+    },
+    {
+      "question": "How do the NOWAIT and SKIP LOCKED options differ when a selected row cannot be locked immediately?",
+      "answer": "With NOWAIT, the statement reports an error rather than waiting if a selected row cannot be locked immediately. With SKIP LOCKED, any selected rows that cannot be immediately locked are simply skipped.",
+      "evidence": "With `NOWAIT`, the statement reports an error, rather than waiting, if a selected row cannot be locked immediately. With `SKIP LOCKED`, any selected rows that cannot be immediately locked are skipped.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_121"
+    },
+    {
+      "question": "How does the scope of row locking differ between FOR UPDATE in a subquery versus at the top level?",
+      "answer": "FOR UPDATE in a subquery will result in locking all rows of the referenced table, whereas FOR UPDATE at the top level would lock only the actually returned rows.",
+      "evidence": "Note that this will result in locking all rows of `mytable`, whereas `FOR UPDATE` at the top level would lock only the actually returned rows.",
+      "question_type": "comparative",
+      "qa_id": "postgresql_122"
+    },
+    {
+      "question": "What happens at the REPEATABLE READ or SERIALIZABLE isolation level when row locking might cause out-of-order results?",
+      "answer": "At the REPEATABLE READ or SERIALIZABLE transaction isolation level, a serialization failure with SQLSTATE '40001' would occur, so there is no possibility of receiving rows out of order under these isolation levels.",
+      "evidence": "At the `REPEATABLE READ` or `SERIALIZABLE` transaction isolation level this would cause a serialization failure (with an `SQLSTATE` of `'40001'`), so there is no possibility of receiving rows out of order under these isolation levels.",
+      "question_type": "causal",
+      "qa_id": "postgresql_123"
+    },
+    {
+      "question": "Why might manufacturers without products not appear in a join result, and how can this be resolved?",
+      "answer": "Manufacturers not currently having any products would not appear because it is an inner join. To include such manufacturers in the result, an outer join should be used instead.",
+      "evidence": "Manufacturers not currently having any products would not appear in the result, since it is an inner join. If we wished to include the names of such manufacturers in the result, we could do:\n\n```\nSELECT m.name AS mname, pname\nFROM manufacturers m LEFT JOIN LATERAL get_product_names(m.id) pname ON true;\n```",
+      "question_type": "causal",
+      "qa_id": "postgresql_124"
+    }
+  ]
+}

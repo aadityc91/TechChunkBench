@@ -1,0 +1,698 @@
+{
+  "corpus_id": "sqlite",
+  "qa_pairs": [
+    {
+      "question": "What is the result of a SELECT statement in SQLite?",
+      "answer": "A SELECT statement returns zero or more rows of data where each row has a fixed number of columns. Importantly, a SELECT statement does not make any changes to the database, making it purely a read operation.",
+      "evidence": "The SELECT statement is used to query the database. The result of a SELECT is zero or more rows of data where each row has a fixed number of columns. A SELECT statement does not make any changes to the database.",
+      "question_type": "factual",
+      "qa_id": "sqlite_001"
+    },
+    {
+      "question": "What is the definition of an aggregate query in SQLite?",
+      "answer": "A simple SELECT statement is an aggregate query if it contains either a GROUP BY clause or one or more aggregate functions in the result-set. Otherwise, if a simple SELECT contains no aggregate functions or a GROUP BY clause, it is classified as a non-aggregate query.",
+      "evidence": "A simple SELECT statement is an aggregate query if it contains either a GROUP BY clause or one or more aggregate functions in the result-set. Otherwise, if a simple SELECT contains no aggregate functions or a GROUP BY clause, it is a non-aggregate query.",
+      "question_type": "definitional",
+      "qa_id": "sqlite_003"
+    },
+    {
+      "question": "What happens when the FROM clause is omitted from a simple SELECT statement?",
+      "answer": "When the FROM clause is omitted, the input data is implicitly a single row zero columns wide. This means N=1 and M=0, so the query operates on exactly one row with no columns of input data.",
+      "evidence": "If the FROM clause is omitted from a simple SELECT statement, then the input data is implicitly a single row zero columns wide (i.e. N=1 and M=0).",
+      "question_type": "factual",
+      "qa_id": "sqlite_004"
+    },
+    {
+      "question": "How are all joins in SQLite fundamentally based?",
+      "answer": "All joins in SQLite are based on the cartesian product of the left and right-hand datasets. The columns of the cartesian product dataset consist of all columns from the left-hand dataset followed by all columns from the right-hand dataset, and the resulting dataset contains Nleft times Nright rows, each with Mleft+Mright columns.",
+      "evidence": "All joins in SQLite are based on the cartesian product of the left and right-hand datasets. The columns of the cartesian product dataset are, in order, all the columns of the left-hand dataset followed by all the columns of the right-hand dataset. There is a row in the cartesian product dataset formed by combining each unique combination of a row from the left-hand and right-hand datasets.",
+      "question_type": "factual",
+      "qa_id": "sqlite_005"
+    },
+    {
+      "question": "What is special about the CROSS JOIN operator compared to INNER JOIN in SQLite?",
+      "answer": "The CROSS JOIN operator produces the same result as INNER JOIN, JOIN, and comma operators, but it is handled differently by the query optimizer. CROSS JOIN prevents the query optimizer from reordering the tables in the join, allowing programmers to directly influence the algorithm chosen to implement the SELECT statement. This special handling is an SQLite-specific feature and not part of standard SQL.",
+      "evidence": "The \"CROSS JOIN\" join operator produces the same result as the\n\"INNER JOIN\", \"JOIN\" and \",\" operators, but is\nhandled differently by the query optimizer\nin that it prevents the query optimizer from reordering\nthe tables in the join. An application programmer can use the CROSS JOIN\noperator to directly influence the algorithm that is chosen to implement\nthe SELECT statement. The special handling of CROSS JOIN is an SQLite-specific\nfeature and is not a part of standard SQL.",
+      "question_type": "comparative",
+      "qa_id": "sqlite_008"
+    },
+    {
+      "question": "What is the difference between ON and WHERE clause processing for outer joins?",
+      "answer": "For outer joins, the extra NULL rows for non-matched rows are added after ON clause processing but before WHERE clause processing. This means an ON clause constraint will allow the added all-NULL rows through, while a WHERE clause constraint containing a NULL comparison will exclude those rows from the output.",
+      "evidence": "In an outer join, the extra NULL rows for non-matched rows on the other operand are added after ON clause processing but before WHERE clause processing. A constraint of the form \"left.x=right.y\" in an ON clause will therefore allow through for the added all-NULL rows. But if that same constraint is in the WHERE clause, a NULL in one of \"right.y\" or \"left.x\" will prevent the expression \"left.x=right.y\" from being true, and thus exclude that row from the output.",
+      "question_type": "comparative",
+      "qa_id": "sqlite_009"
+    },
+    {
+      "question": "What is a LEFT JOIN in SQLite and how does it work?",
+      "answer": "A LEFT JOIN (or LEFT OUTER JOIN) adds extra rows to the output for each row in the original left-hand input dataset that does not match any row in the right-hand dataset. The added rows contain NULL values in the columns that would normally contain values copied from the right-hand input dataset.",
+      "evidence": "If the join-operator is a \"LEFT JOIN\" or \"LEFT OUTER JOIN\", then after the ON or USING filtering clauses have been applied, an extra row is added to the output for each row in the original left-hand input dataset that does not match any row in the right-hand dataset. The added rows contain NULL values in the columns that would normally contain values copied from the right-hand input dataset.",
+      "question_type": "definitional",
+      "qa_id": "sqlite_010"
+    },
+    {
+      "question": "What is a FULL JOIN in SQLite?",
+      "answer": "A FULL JOIN (or FULL OUTER JOIN) is a combination of a LEFT JOIN and a RIGHT JOIN. It adds extra rows of output for each row in the left dataset that matches no rows in the right, and for each row in the right dataset that matches no rows in the left. Unmatched columns are filled in with NULL.",
+      "evidence": "A \"FULL JOIN\" or \"FULL OUTER JOIN\" is a combination of a \"LEFT JOIN\" and a \"RIGHT JOIN\". Extra rows of output are added for each row in left dataset that matches no rows in the right, and for each row in the right dataset that matches no rows in the left. Unmatched columns are filled in with NULL.",
+      "question_type": "definitional",
+      "qa_id": "sqlite_011"
+    },
+    {
+      "question": "How are WHERE clause rows excluded in SQLite?",
+      "answer": "When a WHERE clause is specified, the WHERE expression is evaluated for each row in the input data as a boolean expression. Only rows for which the WHERE clause expression evaluates to true are included. Rows are excluded from the result if the WHERE clause evaluates to either false or NULL.",
+      "evidence": "If a WHERE clause is specified, the WHERE expression is evaluated for each row in the input data as a boolean expression. Only rows for which the WHERE clause expression evaluates to true are included from the dataset before continuing. Rows are excluded from the result if the WHERE clause evaluates to either false or NULL.",
+      "question_type": "factual",
+      "qa_id": "sqlite_012"
+    },
+    {
+      "question": "How many rows does an aggregate query without a GROUP BY clause always return?",
+      "answer": "An aggregate query without a GROUP BY clause always returns exactly one row of data, even if there are zero rows of input data. Each aggregate expression is evaluated once across the entire dataset, while non-aggregate expressions are evaluated once for an arbitrarily selected row.",
+      "evidence": "An aggregate query without a GROUP BY clause always returns exactly one row of data, even if there are zero rows of input data.",
+      "question_type": "factual",
+      "qa_id": "sqlite_013"
+    },
+    {
+      "question": "What is a 'bare column' in an SQLite aggregate query?",
+      "answer": "A bare column is a result column that contains a column name not within an aggregate function and that does not appear in the GROUP BY clause. The value of a bare column will be the value from one of the input rows that form the aggregate, but which specific input row is used is generally undefined.",
+      "evidence": "A result column which contains a column name that is not within an aggregate function and that does not appear in the GROUP BY clause (if one exists) is called a \"bare\" column.",
+      "question_type": "definitional",
+      "qa_id": "sqlite_014"
+    },
+    {
+      "question": "What special behavior do min() and max() aggregate functions have with bare columns?",
+      "answer": "If there is exactly one min() or max() aggregate in a query, then all bare columns in the result set take values from the input row which also contains the minimum or maximum. This special processing only works for the built-in implementation of those aggregates, not application-defined alternatives.",
+      "evidence": "If there is exactly one min() or max() aggregate in the query, then all bare columns in the result set take values from an input row which also contains the minimum or maximum.",
+      "question_type": "factual",
+      "qa_id": "sqlite_015"
+    },
+    {
+      "question": "How does SELECT DISTINCT detect duplicate rows in SQLite?",
+      "answer": "For detecting duplicate rows, values are compared using the IS DISTINCT FROM operator. This means two NULL values are considered equal, an integer is equal to a floating point number if they represent the same quantity, and text values are compared using an appropriate collation sequence. BLOB affinity is used for DISTINCT comparisons, so no type coercions occur.",
+      "evidence": "If the simple SELECT is a SELECT DISTINCT, then duplicate rows are removed from the set of result rows before it is returned. For the purposes of detecting duplicate rows, values are compared using the IS DISTINCT FROM operator. Thus two NULL values are considered to be equal. An integer is equal to a floating point number if they represent the same quantity.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_016"
+    },
+    {
+      "question": "What operators can be used to create compound SELECT statements?",
+      "answer": "Two or more simple SELECT statements may be connected together using the UNION, UNION ALL, INTERSECT or EXCEPT operator. UNION ALL returns all rows from both SELECTs, UNION works like UNION ALL but removes duplicates, INTERSECT returns the intersection, and EXCEPT returns rows from the left SELECT not also returned by the right.",
+      "evidence": "Two or more simple SELECT statements may be connected together to form a compound SELECT using the UNION, UNION ALL, INTERSECT or EXCEPT operator",
+      "question_type": "factual",
+      "qa_id": "sqlite_017"
+    },
+    {
+      "question": "How does UNION ALL differ from UNION in SQLite?",
+      "answer": "UNION ALL returns all rows from both the left and right SELECT statements without any duplicate removal. UNION works the same way as UNION ALL, except that duplicate rows are removed from the final result set. For INTERSECT and EXCEPT operators, duplicates are also removed before the result set is returned.",
+      "evidence": "A compound SELECT created using the UNION ALL operator returns all the rows from the SELECT to the left of the UNION ALL operator, and all the rows from the SELECT to the right of it. The UNION operator works the same way as UNION ALL, except that duplicate rows are removed from the final result set.",
+      "question_type": "comparative",
+      "qa_id": "sqlite_018"
+    },
+    {
+      "question": "How does SQLite handle NULL values in ORDER BY sorting?",
+      "answer": "SQLite considers NULL values to be smaller than any other values for sorting purposes. Therefore, NULLs naturally appear at the beginning of an ASC order-by and at the end of a DESC order-by. This behavior can be changed using the 'ASC NULLS LAST' or 'DESC NULLS FIRST' syntax.",
+      "evidence": "SQLite considers NULL values to be smaller than any other values for sorting purposes. Hence, NULLs naturally appear at the beginning of an ASC order-by and at the end of a DESC order-by. This can be changed using the \"ASC NULLS LAST\" or \"DESC NULLS FIRST\" syntax.",
+      "question_type": "factual",
+      "qa_id": "sqlite_019"
+    },
+    {
+      "question": "What happens when a constant integer K is used as an ORDER BY expression?",
+      "answer": "When the ORDER BY expression is a constant integer K, it is considered an alias for the K-th column of the result set, with columns numbered from left to right starting with 1. If it is an identifier matching an output column alias, it is treated as an alias for that column.",
+      "evidence": "If the ORDER BY expression is a constant integer K then the expression is considered an alias for the K-th column of the result set (columns are numbered from left to right starting with 1).",
+      "question_type": "factual",
+      "qa_id": "sqlite_020"
+    },
+    {
+      "question": "What is counter-intuitive about the comma-separated form of the LIMIT clause?",
+      "answer": "When the LIMIT clause uses two expressions separated by a comma, the first expression is used as the OFFSET and the second as the LIMIT. This is counter-intuitive because when using the OFFSET keyword, the first expression is the LIMIT and the second is the OFFSET. This reversal is intentional for compatibility with other SQL databases.",
+      "evidence": "Instead of a separate OFFSET clause, the LIMIT clause may specify two scalar expressions separated by a comma. In this case, the first expression is used as the OFFSET expression and the second as the LIMIT expression. This is counter-intuitive, as when using the OFFSET clause the second of the two expressions is the OFFSET and the first the LIMIT. This reversal of the offset and limit is intentional - it maximizes compatibility with other SQL database systems.",
+      "question_type": "factual",
+      "qa_id": "sqlite_022"
+    },
+    {
+      "question": "What is the difference between VALUES clause and SELECT compound statements?",
+      "answer": "The phrase VALUES(expr-list-1),...,(expr-list-N) is equivalent to SELECT expr-list-1 UNION ALL ... UNION ALL SELECT expr-list-N. However, the number of SELECT statements in a compound is limited by SQLITE_LIMIT_COMPOUND_SELECT, whereas the number of rows in a VALUES clause has no arbitrary limit.",
+      "evidence": "SELECT *expr-list-N*\". Both forms are the same, except that\nthe number of SELECT statements in a compound is limited by\nSQLITE\\_LIMIT\\_COMPOUND\\_SELECT whereas the number of rows in a\nVALUES clause has no arbitrary limit.",
+      "question_type": "comparative",
+      "qa_id": "sqlite_023"
+    },
+    {
+      "question": "How does SQLite handle non-standard JOIN names?",
+      "answer": "SQLite allows between 1 and 3 keywords before JOIN, each of which can be CROSS, FULL, INNER, LEFT, NATURAL, OUTER, or RIGHT. These are treated as attributes that can be combined in any order. For example, 'OUTER LEFT NATURAL JOIN' means the same as 'NATURAL LEFT OUTER JOIN', and 'LEFT RIGHT JOIN' is the same as 'FULL JOIN'. Some contradictory combinations like 'INNER OUTER JOIN' are disallowed.",
+      "evidence": "Where there are between 1 and 3 instances of \"blah\", each of which can be any of \"CROSS\", \"FULL\", \"INNER\", \"LEFT\", \"NATURAL\", \"OUTER\", or \"RIGHT\". The SQLite parser treats each of these keywords as an attribute of the join, which can be combined in any order.",
+      "question_type": "factual",
+      "qa_id": "sqlite_025"
+    },
+    {
+      "question": "What are the join syntax restrictions in SQLite compared to standard SQL?",
+      "answer": "SQLite is more flexible than standard SQL regarding join syntax. In SQLite, the only restrictions are: (1) you cannot have an ON or USING clause on a NATURAL join, and (2) you cannot have both an ON clause and a USING clause on the same join. Standard SQL requires ON or USING for most joins and prohibits them on comma-joins, CROSS JOINs, and NATURAL joins.",
+      "evidence": "In SQLite, the only restrictions are: You cannot have an ON or USING clause on a NATURAL join. You cannot have both an ON clause and a USING clause on the same join.",
+      "question_type": "comparative",
+      "qa_id": "sqlite_026"
+    },
+    {
+      "question": "What does an UPDATE statement do in SQLite when it has no WHERE clause?",
+      "answer": "If an UPDATE statement does not have a WHERE clause, all rows in the table are modified by the UPDATE. If a WHERE clause is present, only rows for which the boolean expression is true are affected. It is not an error if the WHERE clause does not evaluate to true for any row.",
+      "evidence": "If the UPDATE statement does not have a WHERE clause, all rows in the table are modified by the UPDATE. Otherwise, the UPDATE affects only those rows for which the WHERE clause boolean expression is true. It is not an error if the WHERE clause does not evaluate to true for any row in the table - this just means that the UPDATE statement affects zero rows.",
+      "question_type": "factual",
+      "qa_id": "sqlite_029"
+    },
+    {
+      "question": "How are scalar expressions evaluated during an UPDATE statement?",
+      "answer": "For each affected row, the named columns are set to the values found by evaluating the corresponding scalar expressions. The scalar expressions may refer to columns of the row being updated, and in this case all scalar expressions are evaluated before any assignments are made. If a column appears more than once in the list, all but the rightmost occurrence is ignored.",
+      "evidence": "If a single column-name appears more than once in the list of\nassignment expressions, all but the rightmost occurrence is ignored. The scalar expressions may refer to columns of the row being updated. In this case all scalar expressions are evaluated before any assignments are made.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_030"
+    },
+    {
+      "question": "What is UPDATE-FROM in SQLite and when was it introduced?",
+      "answer": "UPDATE-FROM is an extension to SQL that allows an UPDATE statement to be driven by other tables in the database. You can join the target table against other tables to compute which rows need updating and what the new values should be. UPDATE-FROM is supported beginning in SQLite version 3.33.0 (2020-08-14).",
+      "evidence": "The UPDATE-FROM idea is an extension to SQL that allows an UPDATE statement to be driven by other tables in the database. The \"target\" table is the specific table that is being updated. With UPDATE-FROM you can join the target table against other tables in the database in order to help compute which rows need updating and what the new values should be on those rows. UPDATE-FROM is supported beginning in SQLite version 3.33.0 (2020-08-14).",
+      "question_type": "definitional",
+      "qa_id": "sqlite_031"
+    },
+    {
+      "question": "How does SQLite's UPDATE-FROM differ from SQL Server's implementation?",
+      "answer": "In SQLite (compatible with PostgreSQL), the target table is not included in the FROM clause. In SQL Server, the target table must be included in the FROM clause, naming it twice in the statement. MySQL uses a completely different approach where the join specification is given between the UPDATE and SET keywords.",
+      "evidence": "SQL Server also supports UPDATE FROM, but in SQL Server the target table must be included in the FROM clause. In other words, the target table is named twice in the statement.",
+      "question_type": "comparative",
+      "qa_id": "sqlite_032"
+    },
+    {
+      "question": "What happens with multiple output rows in an UPDATE-FROM join?",
+      "answer": "If the join between the target table and the FROM clause results in multiple output rows for the same target table row, then only one of those output rows is used for updating the target table. The output row selected is arbitrary and might change from one release of SQLite to the next, or from one run to the next.",
+      "evidence": "If the join between the target table and the FROM clause results in multiple output rows for the same target table row, then only one of those output rows is used for updating the target table. The output row selected is arbitrary and might change from one release of SQLite to the next, or from one run to the next.",
+      "question_type": "factual",
+      "qa_id": "sqlite_033"
+    },
+    {
+      "question": "How do you enable LIMIT and ORDER BY clauses for UPDATE and DELETE statements?",
+      "answer": "SQLite must be built with the SQLITE_ENABLE_UPDATE_DELETE_LIMIT compile-time option to extend the UPDATE and DELETE syntax with optional ORDER BY and LIMIT clauses. These clauses are unsupported within triggers regardless of the compilation options used.",
+      "evidence": "If SQLite is built with the SQLITE\\_ENABLE\\_UPDATE\\_DELETE\\_LIMIT\ncompile-time option then the syntax of the UPDATE statement is extended\nwith optional ORDER BY and LIMIT clauses as follows:\nThe LIMIT and ORDER BY clauses for UPDATE are unsupported within\ntriggers, regardless of the compilation options used to build SQLite.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_034"
+    },
+    {
+      "question": "What is the truncate optimization in SQLite?",
+      "answer": "When both the WHERE clause and RETURNING clause are omitted from a DELETE statement and the table has no triggers, SQLite uses an optimization to erase the entire table content without visiting each row individually. This makes the delete run much faster. It can be permanently disabled by compiling with SQLITE_OMIT_TRUNCATE_OPTIMIZATION.",
+      "evidence": "When the WHERE clause and RETURNING clause are both omitted from a DELETE statement and the table being deleted has no triggers, SQLite uses an optimization to erase the entire table content without having to visit each row of the table individually. This \"truncate\" optimization makes the delete run much faster.",
+      "question_type": "definitional",
+      "qa_id": "sqlite_036"
+    },
+    {
+      "question": "What table names are reserved in SQLite?",
+      "answer": "Table names that begin with 'sqlite_' are reserved for internal use. It is an error to attempt to create a table with a name that starts with 'sqlite_'. This reservation prevents user tables from conflicting with SQLite's internal schema tables.",
+      "evidence": "Table names that begin with \"sqlite\\_\" are reserved for internal use. It\nis an error to attempt to create a table with a name that starts with\n\"sqlite\\_\".",
+      "question_type": "factual",
+      "qa_id": "sqlite_039"
+    },
+    {
+      "question": "How does CREATE TABLE ... AS SELECT work?",
+      "answer": "A CREATE TABLE ... AS SELECT statement creates and populates a database table based on the results of a SELECT statement. The table has the same number of columns as the SELECT returns, with each column name matching the corresponding result set column. A table created this way has no PRIMARY KEY, no constraints, default values of NULL for all columns, and BINARY as the default collation sequence.",
+      "evidence": "A \"CREATE TABLE ... AS SELECT\" statement creates and populates a database\ntable based on the results of a SELECT statement. The table has the same\nnumber of columns as the SELECT statement returns. The name of\neach column is the same as the name of the corresponding column in the result\nset of the SELECT statement. A table created using CREATE TABLE AS has no PRIMARY KEY and no\nconstraints of any kind. The default value of each column is NULL. The default\ncollation sequence for each column of the new table is BINARY.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_041"
+    },
+    {
+      "question": "How does SQLite handle column data types differently from other SQL databases?",
+      "answer": "Unlike most SQL databases, SQLite does not restrict the type of data that may be inserted into a column based on the column's declared type. Instead, SQLite uses dynamic typing. The declared type of a column is used only to determine the affinity of the column, not to enforce data type constraints.",
+      "evidence": "Unlike most SQL databases, SQLite does not restrict the type of data that may be inserted into a column based on the columns declared type. Instead, SQLite uses dynamic typing. The declared type of a column is used to determine the affinity of the column only.",
+      "question_type": "comparative",
+      "qa_id": "sqlite_042"
+    },
+    {
+      "question": "What are the special keywords that can be used as default values in SQLite?",
+      "answer": "A default value may be one of the special case-independent keywords CURRENT_TIME, CURRENT_DATE, or CURRENT_TIMESTAMP. CURRENT_TIME produces values in 'HH:MM:SS' format, CURRENT_DATE produces 'YYYY-MM-DD' format, and CURRENT_TIMESTAMP produces 'YYYY-MM-DD HH:MM:SS' format, all representing the current UTC date and/or time.",
+      "evidence": "* If the default value of a column is CURRENT\\_TIME, CURRENT\\_DATE or\nCURRENT\\_TIMESTAMP, then the value used in the new row is a text\nrepresentation of the current UTC date and/or time. For CURRENT\\_TIME, the\nformat of the value is \"HH:MM:SS\". For CURRENT\\_DATE, \"YYYY-MM-DD\". The\nformat for CURRENT\\_TIMESTAMP is \"YYYY-MM-DD HH:MM:SS\".",
+      "question_type": "factual",
+      "qa_id": "sqlite_043"
+    },
+    {
+      "question": "What is the default collation sequence for a column if none is specified?",
+      "answer": "If no COLLATE clause is specified for a column, the default collation sequence is BINARY. The COLLATE clause can be used to define alternative collating functions for a column.",
+      "evidence": "The COLLATE clause specifies the name of a collating sequence to use as the default collation sequence for the column. If no COLLATE clause is specified, the default collation sequence is BINARY.",
+      "question_type": "factual",
+      "qa_id": "sqlite_044"
+    },
+    {
+      "question": "When were generated columns introduced in SQLite?",
+      "answer": "Generated columns are supported beginning with SQLite version 3.31.0 (2020-01-22). A column that includes a GENERATED ALWAYS AS clause is a generated column.",
+      "evidence": "A column that includes a GENERATED ALWAYS AS clause is a generated column. Generated columns are supported beginning with SQLite version 3.31.0 (2020-01-22).",
+      "question_type": "factual",
+      "qa_id": "sqlite_045"
+    },
+    {
+      "question": "Why does SQLite allow NULLs in PRIMARY KEY columns?",
+      "answer": "According to the SQL standard, PRIMARY KEY should always imply NOT NULL. However, due to a bug in some early versions of SQLite, NULLs are allowed in PRIMARY KEY columns unless the column is an INTEGER PRIMARY KEY, the table is WITHOUT ROWID, the table is STRICT, or the column is explicitly declared NOT NULL. This behavior is maintained for backwards compatibility with legacy applications.",
+      "evidence": "According to the SQL standard, PRIMARY KEY should always imply NOT NULL. Unfortunately, due to a bug in some early versions, this is not the case in SQLite. Unless the column is an INTEGER PRIMARY KEY or the table is a WITHOUT ROWID table or a STRICT table or the column is declared NOT NULL, SQLite allows NULL values in a PRIMARY KEY column.",
+      "question_type": "causal",
+      "qa_id": "sqlite_046"
+    },
+    {
+      "question": "How are CHECK constraints enforced in SQLite?",
+      "answer": "CHECK constraints are only verified when the table is written, not when it is read. The expression is evaluated and cast to a NUMERIC value; if the result is zero (integer 0 or real 0.0), a constraint violation has occurred. NULL or any other non-zero value is not a violation. Verification can be temporarily disabled using PRAGMA ignore_check_constraints=ON.",
+      "evidence": "A CHECK constraint may be attached to a column definition or\nspecified as a table constraint. In practice it makes no difference. Each\ntime a new row is inserted into the table or an existing row is updated,\nthe expression associated with each CHECK constraint is evaluated and\ncast to a NUMERIC value in the same way as a CAST expression. If the\nresult is zero (integer value 0 or real value 0.0), then a constraint\nviolation has occurred. If the CHECK expression evaluates to NULL, or\nany other non-zero value, it is not a constraint violation. CHECK constraints are only verified when the table is written, not when\nit is read. Furthermore, verification of CHECK constraints can be\ntemporarily disabled using the \"PRAGMA ignore\\_check\\_constraints=ON;\"",
+      "question_type": "procedural",
+      "qa_id": "sqlite_047"
+    },
+    {
+      "question": "What is a rowid in SQLite?",
+      "answer": "Except for WITHOUT ROWID tables, all rows within SQLite tables have a 64-bit signed integer key that uniquely identifies the row within its table. This integer is usually called the 'rowid' and can be accessed using the special case-independent names 'rowid', 'oid', or '_rowid_' in place of a column name.",
+      "evidence": "Except for WITHOUT ROWID tables, all rows within SQLite tables\nhave a 64-bit signed integer key that uniquely identifies the row within its table.\nThis integer is usually\ncalled the \"rowid\". The rowid value can be accessed using one of the special\ncase-independent names \"rowid\", \"oid\", or \"\\_rowid\\_\" in place of a column name.",
+      "question_type": "definitional",
+      "qa_id": "sqlite_048"
+    },
+    {
+      "question": "How is data stored in rowid tables?",
+      "answer": "The data for rowid tables is stored as a B-Tree structure containing one entry for each table row, using the rowid value as the key. This means retrieving or sorting records by rowid is fast, and searching for a record with a specific rowid is around twice as fast as a similar search made by specifying any other PRIMARY KEY or indexed value.",
+      "evidence": "The data for rowid tables is stored as a B-Tree structure containing one entry for each table row, using the rowid value as the key. This means that retrieving or sorting records by rowid is fast. Searching for a record with a specific rowid, or for all records with rowids within a specified range is around twice as fast as a similar search made by specifying any other PRIMARY KEY or indexed value.",
+      "question_type": "factual",
+      "qa_id": "sqlite_049"
+    },
+    {
+      "question": "Under what conditions does a column become an INTEGER PRIMARY KEY?",
+      "answer": "A column becomes an alias for the rowid (INTEGER PRIMARY KEY) when the table has a primary key consisting of a single column, the declared type of that column is exactly 'INTEGER' in any mixture of upper and lower case, and the table is not a WITHOUT ROWID table. Other integer type names like 'INT' or 'BIGINT' do not qualify. There is also a quirk where 'INTEGER PRIMARY KEY DESC' does not create an integer primary key.",
+      "evidence": "if a rowid table has a primary key that consists of a single column and the declared type of that column is \"INTEGER\" in any mixture of upper and lower case, then the column becomes an alias for the rowid. Such a column is usually referred to as an \"integer primary key\". A PRIMARY KEY column only becomes an integer primary key if the declared type name is exactly \"INTEGER\". Other integer type names like \"INT\" or \"BIGINT\" or \"SHORT INTEGER\" or \"UNSIGNED INTEGER\" causes the primary key column to behave as an ordinary table column with integer affinity and a unique index, not as an alias for the rowid.",
+      "question_type": "factual",
+      "qa_id": "sqlite_050"
+    },
+    {
+      "question": "Why does ALTER TABLE ADD COLUMN run in constant time regardless of table size?",
+      "answer": "The ALTER TABLE command works by modifying the SQL text of the schema stored in the sqlite_schema table without making changes to table content for renames or column additions without constraints. This makes the execution time independent of the amount of data in the table, running as quickly on a table with 10 million rows as on a table with 1 row.",
+      "evidence": "The ALTER TABLE command works by modifying the SQL text of the schema\nstored in the sqlite\\_schema table.\nNo changes are made to table content for renames or column addition without\nconstraints.\nBecause of this,\nthe execution time of such ALTER TABLE commands is independent of\nthe amount of data in the table and such commands will\nrun as quickly on a table with 10 million rows as on a table with 1 row.",
+      "question_type": "causal",
+      "qa_id": "sqlite_053"
+    },
+    {
+      "question": "What is the correct procedure for making schema changes in SQLite?",
+      "answer": "The correct procedure is: (1) create a new table with the desired format, (2) copy data from the old table to the new one, (3) drop the old table, (4) rename the new table to the old name. The incorrect approach of renaming the old table first, creating a new table, copying data, then dropping the old table can corrupt references in triggers, views, and foreign key constraints.",
+      "evidence": "In the procedure on the right, the initial rename of the\ntable to a temporary name might corrupt references to that table in\ntriggers, views, and foreign key constraints. The safe procedure on\nthe left constructs the revised table definition using a new temporary\nname, then renames the table into its final name, which does not break\nlinks.\n1. Create new table 2. Copy data 3. Drop old table 4. Rename new into old",
+      "question_type": "procedural",
+      "qa_id": "sqlite_054"
+    },
+    {
+      "question": "Why is ALTER TABLE such a problem for SQLite?",
+      "answer": "SQLite stores the schema as original text of CREATE statements in the sqlite_schema table, unlike other SQL engines that store pre-parsed schemas in system tables. ALTER TABLE needs to revise this text, which can be tricky. However, this approach has advantages: the schema takes up less space, provides flexibility for internal representation changes between releases, and makes the database file format easier to define and document.",
+      "evidence": "SQLite is different in that it stores the schema\nin the sqlite\\_schema table as the original text of the CREATE\nstatements that define the schema. Hence ALTER TABLE needs\nto revise the text of the CREATE statement. Doing\nso can be tricky for certain \"creative\" schema designs.",
+      "question_type": "causal",
+      "qa_id": "sqlite_055"
+    },
+    {
+      "question": "How does SQLite's type system differ from other SQL database engines?",
+      "answer": "Most SQL database engines use static, rigid typing where the datatype is determined by the column container. SQLite uses a more general dynamic type system where the datatype is associated with the value itself, not with its container. This flexible typing is a feature of SQLite. As of version 3.37.0, SQLite also provides STRICT tables for rigid type enforcement.",
+      "evidence": "Most SQL database engines (every SQL database engine other than SQLite, as far as we know) uses static, rigid typing. With static typing, the datatype of a value is determined by its container - the particular column in which the value is stored. SQLite uses a more general dynamic type system. In SQLite, the datatype of a value is associated with the value itself, not with its container.",
+      "question_type": "comparative",
+      "qa_id": "sqlite_056"
+    },
+    {
+      "question": "What are the five storage classes in SQLite?",
+      "answer": "SQLite has five storage classes: NULL (a NULL value), INTEGER (a signed integer stored in 0, 1, 2, 3, 4, 6, or 8 bytes), REAL (a floating point value stored as an 8-byte IEEE floating point number), TEXT (a text string stored using UTF-8, UTF-16BE or UTF-16LE), and BLOB (a blob of data stored exactly as input).",
+      "evidence": "NULL. The value is a NULL value. INTEGER. The value is a signed integer, stored in 0, 1, 2, 3, 4, 6, or 8 bytes depending on the magnitude of the value. REAL. The value is a floating point value, stored as an 8-byte IEEE floating point number. TEXT. The value is a text string, stored using the database encoding (UTF-8, UTF-16BE or UTF-16LE). BLOB. The value is a blob of data, stored exactly as it was input.",
+      "question_type": "factual",
+      "qa_id": "sqlite_057"
+    },
+    {
+      "question": "How can dates and times be stored in SQLite?",
+      "answer": "SQLite does not have a dedicated storage class for dates and times. Instead, dates and times can be stored as TEXT in ISO8601 format ('YYYY-MM-DD HH:MM:SS.SSS'), as REAL representing Julian day numbers (days since noon on November 24, 4714 B.C.), or as INTEGER representing Unix Time (seconds since 1970-01-01 00:00:00 UTC).",
+      "evidence": "SQLite does not have a storage class set aside for storing dates and/or times. Instead, the built-in Date And Time Functions of SQLite are capable of storing dates and times as TEXT, REAL, or INTEGER values: TEXT as ISO8601 strings (\"YYYY-MM-DD HH:MM:SS.SSS\"). REAL as Julian day numbers, the number of days since noon in Greenwich on November 24, 4714 B.C. according to the proleptic Gregorian calendar. INTEGER as Unix Time, the number of seconds since 1970-01-01 00:00:00 UTC.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_059"
+    },
+    {
+      "question": "What is type affinity in SQLite?",
+      "answer": "Type affinity is the recommended type for data stored in a column. The type is recommended, not required, meaning any column can still store any type of data. The preferred storage class for a column is called its 'affinity'. SQLite supports five type affinities: TEXT, NUMERIC, INTEGER, REAL, and BLOB.",
+      "evidence": "The type affinity of a column is the recommended type for data stored in that column. The important idea here is that the type is recommended, not required. Any column can still store any type of data. It is just that some columns, given the choice, will prefer to use one storage class over another. The preferred storage class for a column is called its \"affinity\".",
+      "question_type": "definitional",
+      "qa_id": "sqlite_060"
+    },
+    {
+      "question": "How is column affinity determined from the declared type in SQLite?",
+      "answer": "Column affinity is determined by these rules in order: (1) if the type contains 'INT', it is INTEGER affinity; (2) if it contains 'CHAR', 'CLOB', or 'TEXT', it is TEXT affinity; (3) if it contains 'BLOB' or no type is specified, it is BLOB affinity; (4) if it contains 'REAL', 'FLOA', or 'DOUB', it is REAL affinity; (5) otherwise, it is NUMERIC affinity.",
+      "evidence": "1. If the declared type contains the string \"INT\" then it\nis assigned INTEGER affinity.\n2. If the declared type of the column contains any of the strings\n\"CHAR\", \"CLOB\", or \"TEXT\" then that\ncolumn has TEXT affinity. Notice that the type VARCHAR contains the\nstring \"CHAR\" and is thus assigned TEXT affinity.\n3. If the declared type for a column\ncontains the string \"BLOB\" or if\nno type is specified then the column has affinity BLOB.\n4. If the declared type for a column\ncontains any of the strings \"REAL\", \"FLOA\",\nor \"DOUB\" then the column has REAL affinity.\n5. Otherwise, the affinity is NUMERIC.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_061"
+    },
+    {
+      "question": "What are the three built-in collating functions in SQLite?",
+      "answer": "SQLite has three built-in collating functions: BINARY (compares using memcmp() regardless of text encoding), NOCASE (similar to BINARY but folds the 26 upper case ASCII characters to their lower case equivalents before comparison), and RTRIM (same as BINARY but trailing space characters are ignored).",
+      "evidence": "SQLite has three built-in collating functions: BINARY, NOCASE, and\nRTRIM.\n* **BINARY** - Compares string data using memcmp(), regardless\nof text encoding.\n* **NOCASE** - Similar to binary, except that it uses\nsqlite3\\_strnicmp() for the comparison. Hence the 26 upper case\ncharacters of ASCII are folded to their lower case equivalents before\nthe comparison is performed. Note that only ASCII characters\nare case folded. SQLite does not attempt to do full\nUTF case folding due to the size of the tables required.\n* **RTRIM** - The same as binary, except that trailing space\ncharacters are ignored.",
+      "question_type": "factual",
+      "qa_id": "sqlite_065"
+    },
+    {
+      "question": "How does a rowid lookup improve query performance?",
+      "answer": "Since table information is stored in rowid order, SQLite can find the correct row using a binary search. If the table contains N elements, the time required is proportional to logN rather than N. For a table with 10 million elements, this makes the query about N/logN or approximately one million times faster than a full table scan.",
+      "evidence": "Since the information is stored in the table in rowid order, SQLite can find the correct row using a binary search. If the table contains N elements, the time required to look up the desired row is proportional to logN rather than being proportional to N as in a full table scan. If the table contains 10 million elements, that means the query will be on the order of N/logN or about 1 million times faster.",
+      "question_type": "causal",
+      "qa_id": "sqlite_068"
+    },
+    {
+      "question": "How does an index work in SQLite?",
+      "answer": "An index is another table similar to the original but with the indexed content column stored in front of the rowid with all rows in content order. The indexed column serves as the primary key for ordering, and the rowid serves as the secondary key to break ties. This allows binary search on the index followed by a binary search on the original table.",
+      "evidence": "An index is another table similar to the original \"fruitsforsale\" table\nbut with the content (the fruit column in this case) stored in front of the\nrowid and with all rows in content order. The \"fruit\" column is the primary key used to order the elements of the\ntable and the \"rowid\" is the secondary key used to break the tie when\ntwo or more rows have the same \"fruit\".",
+      "question_type": "definitional",
+      "qa_id": "sqlite_069"
+    },
+    {
+      "question": "What is a covering index in SQLite?",
+      "answer": "A covering index is an index that contains all the columns of the original table that are used by the query, including both the search terms and the output columns. Because all needed information is in the covering index, SQLite never needs to consult the original table, cutting the number of binary searches in half.",
+      "evidence": "This new index contains all the columns of the original FruitsForSale table that are used by the query - both the search terms and the output. We call this a \"covering index\". Because all of the information needed is in the covering index, SQLite never needs to consult the original table in order to find the price.",
+      "question_type": "definitional",
+      "qa_id": "sqlite_070"
+    },
+    {
+      "question": "How does SQLite handle OR-connected terms in the WHERE clause?",
+      "answer": "SQLite examines each OR term separately and tries to use an index to find the rowids associated with each term. It then takes the union of the resulting rowid sets. For this technique to be useful, there must be an index available for every OR-connected term; if even a single term is not indexed, SQLite may fall back to a full table scan.",
+      "evidence": "When confronted with OR-connected terms in a WHERE clause, SQLite examines each OR term separately and tries to use an index to find the rowids associated with each term. It then takes the union of the resulting rowid sets to find the end result.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_072"
+    },
+    {
+      "question": "What is partial sorting (block sorting) using an index?",
+      "answer": "When only part of an ORDER BY clause can be satisfied using indexes, SQLite does many small sorts instead of one large sort. This is more efficient because multiple small sorts use fewer CPU cycles, require less temporary storage, columns already in correct order can be omitted from sort keys, and output can be returned as each small sort completes.",
+      "evidence": "The advantages of doing many smaller sorts instead of a single large sort are: 1. Multiple small sorts collectively use fewer CPU cycles than a single large sort. 2. Each small sort is run independently, meaning that much less information needs to be kept in temporary storage at any one time. 3. Those columns of the ORDER BY that are already in the correct order due to indexes can be omitted from the sort key, further reducing storage requirements and CPU time. 4. Output rows can be returned to the application as each small sort completes, and well before the table scan is complete.",
+      "question_type": "definitional",
+      "qa_id": "sqlite_074"
+    },
+    {
+      "question": "How does SQLite use a cost-based query planner?",
+      "answer": "When there are two or more ways of solving the same query, SQLite tries to estimate the total amount of time needed to run the query using each plan, and then uses the plan with the lowest estimated cost. The cost is computed mostly from estimated time and factors like table size, available WHERE clause constraints, and whether temporary storage is needed.",
+      "evidence": "SQLite uses a cost-based query planner. When there are two or more ways of solving the same query, SQLite tries to estimate the total amount of time needed to run the query using each plan, and then uses the plan with the lowest estimated cost.",
+      "question_type": "factual",
+      "qa_id": "sqlite_075"
+    },
+    {
+      "question": "What is FTS5 in SQLite?",
+      "answer": "FTS5 is an SQLite virtual table module that provides full-text search functionality to database applications. It allows users to efficiently search a large collection of documents for the subset that contain one or more instances of a search term. FTS5 is included as part of the SQLite amalgamation as of version 3.9.0 (2015-10-14).",
+      "evidence": "FTS5 is an SQLite virtual table module that provides full-text search functionality to database applications. In their most elementary form, full-text search engines allow the user to efficiently search a large collection of documents for the subset that contain one or more instances of a search term.",
+      "question_type": "definitional",
+      "qa_id": "sqlite_076"
+    },
+    {
+      "question": "What are the three ways to execute a full-text query against an FTS5 table?",
+      "answer": "There are three ways: (1) using a MATCH operator in the WHERE clause of a SELECT statement, (2) using an equals ('=') operator in the WHERE clause, or (3) using the table-valued function syntax. All three approaches are functionally equivalent.",
+      "evidence": "Once populated, there are three ways to execute a full-text query against the contents of an FTS5 table: Using a MATCH operator in the WHERE clause of a SELECT statement, or Using an equals (\"=\") operator in the WHERE clause of a SELECT statement, or using the table-valued function syntax.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_077"
+    },
+    {
+      "question": "How do you sort FTS5 results by relevance?",
+      "answer": "To sort results by relevance (most to least relevant), add ORDER BY rank to the full-text query. The 'rank' column is a special hidden column that by default returns the same value as the bm25() auxiliary function. Using 'rank' is faster than using bm25() directly, particularly when the caller might abandon the query before all rows are returned.",
+      "evidence": "results in an arbitrary order. To sort results by relevance (most to least\nrelevant), an ORDER BY may be added to a full-text query as follows:\nAll FTS5 tables feature a special hidden column named \"rank\". If the\ncurrent query is not a full-text query (i.e. if it does not include a MATCH\noperator), the value of the \"rank\" column is always NULL. Otherwise, in a\nfull-text query, column rank contains by default the same value as would be\nreturned by executing the bm25() auxiliary function with no trailing\narguments.\nThe difference between reading from the rank column and using the bm25()\nfunction directly within the query is only significant when sorting by the\nreturned value. In this case, using \"rank\" is faster than using bm25().",
+      "question_type": "procedural",
+      "qa_id": "sqlite_078"
+    },
+    {
+      "question": "What are the four built-in tokenizers in FTS5?",
+      "answer": "FTS5 has four built-in tokenizers: (1) unicode61, based on Unicode 6.1 standard and the default tokenizer; (2) ascii, which treats all non-ASCII characters as token characters; (3) porter, a wrapper that applies the porter stemming algorithm to tokens; and (4) trigram, which treats each contiguous sequence of three characters as a token for substring matching.",
+      "evidence": "FTS5 features four built-in tokenizer modules, described in subsequent\nsections:\n* The **unicode61** tokenizer, based on the Unicode 6.1 standard. This\nis the default.\n* The **ascii** tokenizer, which assumes all characters outside of\nthe ASCII codepoint range (0-127) are to be treated as token characters.\n* The **porter** tokenizer, which implements the\nporter stemming algorithm.\n* The **trigram** tokenizer, which treats each contiguous sequence of\nthree characters as a token, allowing FTS5 to support more general substring matching.",
+      "question_type": "factual",
+      "qa_id": "sqlite_079"
+    },
+    {
+      "question": "How does the unicode61 tokenizer handle diacritics?",
+      "answer": "By default, the unicode61 tokenizer removes diacritics from all Latin script characters. This means characters like 'A', 'a', 'A-grave', 'a-grave', 'A-circumflex', and 'a-circumflex' are all considered equivalent. The remove_diacritics option can be set to 0 to disable this, 1 for default behavior, or 2 for correct removal from all Latin characters.",
+      "evidence": "By default, diacritics are removed from all Latin script characters. This\nmeans, for example, that \"A\", \"a\", \"\u00c0\", \"\u00e0\", \"\u00c2\" and \"\u00e2\"\nare all considered to be equivalent.",
+      "question_type": "factual",
+      "qa_id": "sqlite_080"
+    },
+    {
+      "question": "What is the difference between the porter tokenizer and other FTS5 tokenizers?",
+      "answer": "The porter tokenizer is a wrapper tokenizer that takes the output of some other tokenizer and applies the porter stemming algorithm to each token before returning it. This allows search terms like 'correction' to match similar words such as 'corrected' or 'correcting'. By default it wraps the unicode61 tokenizer, but additional arguments can specify a different underlying tokenizer.",
+      "evidence": "The porter tokenizer is a wrapper tokenizer. It takes the output of some other tokenizer and applies the porter stemming algorithm to each token before it returns it to FTS5. This allows search terms like \"correction\" to match similar words such as \"corrected\" or \"correcting\".",
+      "question_type": "comparative",
+      "qa_id": "sqlite_081"
+    },
+    {
+      "question": "What is the trigram tokenizer used for in FTS5?",
+      "answer": "The trigram tokenizer extends FTS5 to support substring matching in general, instead of the usual token matching. Each contiguous sequence of three characters is treated as a token, so a query token may match any sequence of characters within a row. Unless the remove_diacritics option is set, trigram tables also support indexed GLOB and LIKE pattern matching.",
+      "evidence": "The trigram tokenizer extends FTS5 to support substring matching in general, instead of the usual token matching. When using the trigram tokenizer, a query or phrase token may match any sequence of characters within a row, not just a complete token.",
+      "question_type": "definitional",
+      "qa_id": "sqlite_082"
+    },
+    {
+      "question": "What is a contentless FTS5 table?",
+      "answer": "A contentless FTS5 table is created by setting the 'content' option to an empty string. It stores only FTS full-text index entries without making a copy of the original row content. This saves significant database space but means attempting to read any column value except the rowid returns SQL NULL. Contentless tables do not support UPDATE or DELETE, and INSERT statements must supply a non-NULL rowid.",
+      "evidence": "A contentless FTS5 table is created by setting the \"content\" option to\nan empty string. Contentless FTS5 tables do not support UPDATE or DELETE statements, or\nINSERT statements that do not supply a non-NULL value for the rowid field. Attempting to read any column value except the rowid from a contentless\nFTS5 table returns an SQL NULL value.",
+      "question_type": "definitional",
+      "qa_id": "sqlite_083"
+    },
+    {
+      "question": "What is a contentless-delete table in FTS5?",
+      "answer": "A contentless-delete table is created by setting the content option to empty string and contentless_delete to 1. Unlike regular contentless tables, contentless-delete tables support DELETE, 'INSERT OR REPLACE INTO', and UPDATE statements (if new values are supplied for all columns). They do not support the FTS5 delete command. They are available as of version 3.43.0.",
+      "evidence": "As of version 3.43.0, also available are contentless-delete tables.\nA contentless-delete table is created by setting the content option to an\nempty string and also setting the contentless\\_delete option to 1. A contentless-delete table differs from a contentless table in that:\n* Contentless-delete tables support both DELETE and \"INSERT OR REPLACE\n  INTO\" statements.\n* Contentless-delete tables support UPDATE statements, but only if new\n  values are supplied for all user-defined columns of the fts5 table.\n* Contentless-delete tables do **not** support the\n  FTS5 delete command.",
+      "question_type": "definitional",
+      "qa_id": "sqlite_084"
+    },
+    {
+      "question": "What is an external content FTS5 table?",
+      "answer": "An external content FTS5 table is created by setting the content option to the name of a database object (table, virtual table, or view). FTS5 queries this content table whenever column values are required. All FTS5 functionality may be used, but the user is responsible for ensuring the full-text index is consistent with the content table. Triggers can be used to maintain consistency.",
+      "evidence": "By setting it to the name of a database object (table, virtual table or view) that may be queried by FTS5 at any time to retrieve the column values. This is known as an \"external content\" table. In this case all FTS5 functionality may be used, but it is the responsibility of the user to ensure that the contents of the full-text index are consistent with the named database object.",
+      "question_type": "definitional",
+      "qa_id": "sqlite_085"
+    },
+    {
+      "question": "What are the three built-in auxiliary functions provided by FTS5?",
+      "answer": "FTS5 provides three main built-in auxiliary functions: (1) bm25(), which returns a real value reflecting match accuracy (lower values mean better matches); (2) highlight(), which returns column text with query term matches surrounded by specified markup; and (3) snippet(), which selects a short text fragment and surrounds matches with markup.",
+      "evidence": "FTS5 provides three built-in auxiliary functions:\n* The bm25() auxiliary function returns a real value\nreflecting the accuracy of the current match. Better matches are\nassigned numerically lower values.\n* The highlight() auxiliary function returns a copy\nof the text from one of the columns of the current match with each\ninstance of a queried term within the result surrounded by specified\nmarkup (for example \"<b>\" and \"</b>\").\n* The snippet() auxiliary function selects a short\nfragment of text from one of the columns of the matched row and returns\nit with each instance of a queried term surrounded by markup in\nthe same manner as the highlight() function. The fragment of text is\nselected so as to maximize the number of distinct queried terms it\ncontains.",
+      "question_type": "factual",
+      "qa_id": "sqlite_086"
+    },
+    {
+      "question": "Why does FTS5's bm25() function multiply its result by -1?",
+      "answer": "Without the -1 multiplication, a better match would be assigned a numerically higher BM25 score. Since the default sorting order is ascending, this would require the DESC keyword to return the best matches first. To avoid this pitfall, FTS5 multiplies the BM25 result by -1, ensuring that better matches are assigned numerically lower scores and appear first with a simple ORDER BY.",
+      "evidence": "The \"-1\" term at the start of the formula is not found in most implementations of the BM25 algorithm. Without it, a better match is assigned a numerically higher BM25 score. Since the default sorting order is \"ascending\", this means that appending \"ORDER BY bm25(ft)\" to a query would cause results to be returned in order from worst to best. The \"DESC\" keyword would be required in order to return the best matches first. In order to avoid this pitfall, the FTS5 implementation of BM25 multiplies the result by -1 before returning it, ensuring that better matches are assigned numerically lower scores.",
+      "question_type": "causal",
+      "qa_id": "sqlite_087"
+    },
+    {
+      "question": "How do you invoke the highlight() function in FTS5?",
+      "answer": "The highlight() function must be invoked with exactly three arguments following the table name: (1) an integer indicating the column index to read text from (starting at zero), (2) the text to insert before each phrase match, and (3) the text to insert after each phrase match. When two or more phrase instances overlap, a single open and close marker is inserted for each set.",
+      "evidence": "The highlight() must be invoked with exactly three arguments following the table name. To be interpreted as follows: 1. An integer indicating the index of the FTS table column to read the text from. Columns are numbered from left to right starting at zero. 2. The text to insert before each phrase match. 3. The text to insert after each phrase match.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_088"
+    },
+    {
+      "question": "What is the FTS5 NEAR query and how does it work?",
+      "answer": "A NEAR group matches a document if it contains a clump of tokens that contains at least one instance of each phrase, and the number of tokens between the end of the first phrase and the beginning of the last phrase is less than or equal to N. If no N parameter is supplied, it defaults to 10. The syntax is NEAR(phrase1 phrase2, N).",
+      "evidence": "If no *N* parameter is supplied, it defaults to 10. A NEAR group\nmatches a document if the document contains at least one clump of tokens that:\n1. contains at least one instance of each phrase, and\n2. for which the number of tokens between the end of the first phrase\nand the beginning of the last phrase in the clump is less than or equal to *N*.",
+      "question_type": "factual",
+      "qa_id": "sqlite_089"
+    },
+    {
+      "question": "What are the boolean operators in FTS5 and their precedence?",
+      "answer": "FTS5 has three boolean operators, from highest precedence to lowest: NOT (matches if query1 matches and query2 does not), AND (matches if both match), and OR (matches if either matches). Implicit AND operators connect adjacent phrases separated only by whitespace and group more tightly than all other operators, including NOT.",
+      "evidence": "Phrases and NEAR groups may be arranged into expressions using **boolean\noperators**. In order of precedence, from highest (tightest grouping) to\nlowest (loosest grouping), the operators are:\n| Operator | Function |\n| --- | --- |\n| `<query1> NOT <query2>` | Matches if query1 matches and query2 does not match. |\n| `<query1> AND <query2>` | Matches if both query1 and query2 match. |\n| `<query1> OR <query2>` | Matches if either query1 or query2 match. |",
+      "question_type": "factual",
+      "qa_id": "sqlite_090"
+    },
+    {
+      "question": "What does the FTS5 detail option do?",
+      "answer": "The detail option controls what information is stored in the FTS index for each term. With 'full' (default), it stores rowid, column number, and token offset. With 'column', only rowid and column number are stored, which disables NEAR and phrase queries. With 'none', only rowid is stored, also disabling column filter queries. In one test, the index was 743 MiB with full, 340 MiB with column, and 134 MiB with none.",
+      "evidence": "For each term in a document, the FTS index maintained by FTS5\nstores the rowid of the document, the column number of the column that contains\nthe term and the offset of the term within the column value. The \"detail\"\noption may be used to omit some of this information. The detail option may be set to \"full\" (the default value), \"column\" or\n\"none\". If the detail option is set to **column**, then for each term the FTS\nindex records the rowid and column number only, omitting the term offset\ninformation. This results in the following restrictions:\n* NEAR queries are not available.\n* Phrase queries are not available. If the detail option is set to **none**, then for each term the FTS\nindex records just the rowid is stored. Both column and offset information\nare omitted. As well as the restrictions itemized above for detail=column\nmode, this imposes the following extra limitations:\n* Column filter queries are not available.",
+      "question_type": "factual",
+      "qa_id": "sqlite_093"
+    },
+    {
+      "question": "What is the FTS5 optimize command used for?",
+      "answer": "The optimize command merges all individual b-trees that currently make up the full-text index into a single large b-tree structure. This ensures the index consumes minimum space and is in the fastest form to query. Because it reorganizes the entire index, it can take a long time; the merge command can be used to divide this work into multiple steps.",
+      "evidence": "This command merges all individual b-trees that currently make up the full-text index into a single large b-tree structure. This ensures that the full-text index consumes the minimum space within the database and is in the fastest form to query.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_094"
+    },
+    {
+      "question": "How does the FTS5 automerge configuration work?",
+      "answer": "FTS5 uses a series of b-trees to store the full-text index rather than a single data structure. The automerge parameter determines how many b-trees are merged at a time to prevent the number from growing too large. FTS5 begins merging when there are M or more b-trees at the same level, where M is the automerge value. The maximum is 16, the default is 4, and setting it to 0 disables automatic merging.",
+      "evidence": "FTS5 begins to merge b-trees together once there exist M or more b-trees with the same level, where M is the value of the 'automerge' parameter. The maximum allowed value for the 'automerge' parameter is 16. The default value is 4. Setting the 'automerge' parameter to 0 disables the automatic incremental merging of b-trees altogether.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_095"
+    },
+    {
+      "question": "How does SQLite handle FTS5 column filters?",
+      "answer": "A phrase or NEAR group can be restricted to matching within a specified column by prefixing it with the column name followed by a colon. To match against a set of columns, use curly braces with whitespace-separated column names followed by a colon. A dash prefix means 'all columns except'. Nested column filters can only further restrict the subset of columns, not re-enable filtered ones.",
+      "evidence": "A single phrase or NEAR group may be restricted to matching text within a specified column of the FTS table by prefixing it with the column name followed by a colon character. Or to a set of columns by prefixing it with a whitespace separated list of column names enclosed in braces (\"curly brackets\") followed by a colon character.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_098"
+    },
+    {
+      "question": "What SQL language features does SQLite understand?",
+      "answer": "SQLite understands most of the standard SQL language but omits some features while adding a few of its own. The SQL syntax includes statements for aggregate functions, ALTER TABLE, ANALYZE, ATTACH/DETACH DATABASE, transactions (BEGIN/COMMIT/ROLLBACK/SAVEPOINT), CREATE/DROP for INDEX/TABLE/TRIGGER/VIEW/VIRTUAL TABLE, SELECT, INSERT, UPDATE, DELETE, EXPLAIN, PRAGMA, UPSERT, VACUUM, and more.",
+      "evidence": "SQLite understands most of the standard SQL language. But it does omit some features while at the same time adding a few features of its own. This document attempts to describe precisely what parts of the SQL language SQLite does and does not support. + aggregate functions + ALTER TABLE + ANALYZE + ATTACH DATABASE + BEGIN TRANSACTION + comment + COMMIT TRANSACTION + core functions + CREATE INDEX + CREATE TABLE + CREATE TRIGGER + CREATE VIEW + CREATE VIRTUAL TABLE + date and time functions + DELETE + DETACH DATABASE + DROP INDEX + DROP TABLE + DROP TRIGGER + DROP VIEW + END TRANSACTION + EXPLAIN + expression + INDEXED BY + INSERT + JSON functions + keywords + math functions + ON CONFLICT clause + PRAGMA + REINDEX + RELEASE SAVEPOINT + REPLACE + RETURNING clause + ROLLBACK TRANSACTION + SAVEPOINT + SELECT + UPDATE + UPSERT + VACUUM + window functions + WITH clause",
+      "question_type": "factual",
+      "qa_id": "sqlite_099"
+    },
+    {
+      "question": "What are the three methods for implementing synonym support in FTS5 custom tokenizers?",
+      "answer": "Method (1) maps all synonyms to a single token during both indexing and querying, which is efficient but doesn't support prefix queries well. Method (2) provides multiple synonyms for query terms, causing FTS5 to query each synonym separately - no extra disk space but more CPU cycles. Method (3) adds multiple synonyms to the FTS index during document tokenization, supporting full prefix queries but using more disk space.",
+      "evidence": "1. By mapping all synonyms to a single token. In this case, using\n   the above example, this means that the tokenizer returns the\n   same token for inputs \"first\" and \"1st\".\n2. By querying the index for all synonyms of each query term\n   separately. In this case, when tokenizing query text, the\n   tokenizer may provide multiple synonyms for a single term\n   within the document. FTS5 then queries the index for each\n   synonym individually.\n3. By adding multiple synonyms for a single term to the FTS index.",
+      "question_type": "comparative",
+      "qa_id": "sqlite_100"
+    },
+    {
+      "question": "Where must the WITH clause be placed in a compound SELECT statement in SQLite?",
+      "answer": "The WITH clause must occur on the first SELECT of a compound SELECT and cannot follow a compound-operator. This is one of several syntax restrictions described in the SQLite documentation.",
+      "evidence": "* The WITH clause must occur on the first SELECT of a compound SELECT.\n  It cannot follow a compound-operator.\n\nThese and other similar syntax restrictions are described in the text.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_101"
+    },
+    {
+      "question": "What happens during the WHERE clause processing step of a simple SELECT in SQLite?",
+      "answer": "During WHERE clause processing, the input data is filtered using the WHERE clause expression. This is the second step in the four-step simple SELECT processing pipeline.",
+      "evidence": "four step process in the description below:\n\n1. FROM clause processing: The input data for the simple SELECT is\n   determined. The input data is either implicitly a single row with 0\n   columns (if there is no FROM clause) or is determined by the FROM\n   clause.\n2. WHERE clause processing: The input data is filtered using the WHERE\n   clause expression.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_102"
+    },
+    {
+      "question": "What happens during the GROUP BY, HAVING, and result-column expression processing step in SQLite?",
+      "answer": "During the third step of simple SELECT processing, the set of result rows is computed by aggregating the data according to the GROUP BY and HAVING clauses and the result-column expressions.",
+      "evidence": "3. GROUP BY, HAVING and result-column expression processing:\n   The set of result rows is computed by aggregating the data according to\n   any GROUP BY clause and calculating the result-set expressions for the\n   rows of the filtered input dataset.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_103"
+    },
+    {
+      "question": "How are values compared when using a USING clause in SQLite joins?",
+      "answer": "When comparing values as a result of a USING clause, the normal rules for handling affinities, collation sequences and NULL values apply. This means the comparison follows SQLite's standard type affinity and collation rules.",
+      "evidence": "When comparing values as a result of a USING clause, the\n  normal rules for handling affinities, collation sequences and NULL\n  values in comparisons apply.",
+      "question_type": "causal",
+      "qa_id": "sqlite_104"
+    },
+    {
+      "question": "Are INNER JOIN, JOIN, and the comma operator interchangeable in SQLite?",
+      "answer": "Yes, there is no difference between the INNER JOIN, JOIN, and comma join operators in SQLite -- they are completely interchangeable. The CROSS JOIN operator also produces the same result as these operators.",
+      "evidence": "There is no difference between the \"INNER JOIN\", \"JOIN\" and \",\" join\noperators. They are completely interchangeable in SQLite.\nThe \"CROSS JOIN\" join operator produces the same result as the\n\"INNER JOIN\", \"JOIN\" and \",\" operators, but is\nhandled differently by the query optimizer\nin that it prevents the query optimizer from reordering\nthe tables in the join.",
+      "question_type": "comparative",
+      "qa_id": "sqlite_105"
+    },
+    {
+      "question": "Is there a difference between placing a constraint in the WHERE clause versus the ON clause for inner joins in SQLite?",
+      "answer": "No, for a JOIN or INNER JOIN or CROSS JOIN, there is no difference between a constraint expression in the WHERE clause and one in the ON clause. Both produce identical results for inner joins.",
+      "evidence": "For a JOIN or INNER JOIN or CROSS JOIN, there is no difference between\na constraint expression in the WHERE clause and one in the ON clause.",
+      "question_type": "comparative",
+      "qa_id": "sqlite_106"
+    },
+    {
+      "question": "How does an ON clause differ from a WHERE clause in handling NULL rows from outer joins?",
+      "answer": "An ON clause will allow through the added all-NULL rows from outer joins, whereas if that same constraint is in the WHERE clause, a NULL in one of the comparison values would cause the row to be filtered out.",
+      "evidence": "in an ON clause will therefore allow through for the added all-NULL rows.\nBut if that same constraint is in the WHERE clause, a NULL in one of\n\"right.y\" or \"left.x\" will prevent the expression \"left.x=right.y\" from being true,\nand thus exclude that row from the output.",
+      "question_type": "causal",
+      "qa_id": "sqlite_107"
+    },
+    {
+      "question": "Can GROUP BY expressions in SQLite be aggregate expressions, and must they appear in the result set?",
+      "answer": "The expressions in a GROUP BY clause do not have to be expressions that appear in the result. However, the expressions in a GROUP BY clause may not be aggregate expressions.",
+      "evidence": "do *not* have to be expressions that appear in the result. The\n  expressions in a GROUP BY clause may not be aggregate expressions.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_108"
+    },
+    {
+      "question": "What factors determine how result rows are calculated in a simple SELECT statement?",
+      "answer": "After WHERE clause filtering, how result rows are calculated depends on whether the simple SELECT is an aggregate or non-aggregate query, and whether or not a GROUP BY clause is specified.",
+      "evidence": "Exactly how this is done depends on whether the simple\nSELECT is an aggregate or non-aggregate query, and whether or not a GROUP\nBY clause was specified.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_109"
+    },
+    {
+      "question": "What happens to bare column values when the same minimum or maximum value occurs on multiple rows in SQLite?",
+      "answer": "If the same minimum or maximum value occurs on two or more rows, then bare values might be selected from any of those rows. The choice of which row provides the bare values is non-deterministic.",
+      "evidence": "min() and max():\n\n1. If the same minimum or maximum value occurs on two or more rows,\n   then bare values might be selected from any of those rows.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_110"
+    },
+    {
+      "question": "What happens when a query has two or more min() or max() aggregates with bare columns in SQLite?",
+      "answer": "If there are two or more min() or max() aggregates in the query, then bare column values will be taken from one of the rows on which one of the aggregates achieves its minimum or maximum, but the specific row chosen is non-deterministic.",
+      "evidence": "2. If there are two or more min() or max() aggregates\n   in the query, then bare column values will be taken from one of the rows\n   on which one of the aggregates has their minimum or maximum value. The choice\n   of which min() or max() aggregate determines the\n   selection of bare column values is arbitrary. The choice might be different\n   for different bare columns within the same query.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_111"
+    },
+    {
+      "question": "Does the special min()/max() bare column processing work with custom aggregate implementations in SQLite?",
+      "answer": "No, the special processing for min() or max() aggregates only works for the built-in implementation of those aggregates. If an application-defined replacement is provided, the special bare column behavior does not apply.",
+      "evidence": "3. This special processing for min() or max() aggregates\n   only works for the built-in implementation of those aggregates. If an\n   application overrides the built-in min() or max() aggregates\n   with application-defined alternatives, then the values selected for bare\n   columns will be taken from an arbitrary row.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_112"
+    },
+    {
+      "question": "What value does a bare column take when the aggregate is composed from one or more input rows?",
+      "answer": "If the aggregate is composed from one or more input rows, then a bare column will take on the value of an arbitrary row from the aggregate's input. The specific row chosen is not guaranteed.",
+      "evidence": "1. If the aggregate is composed from one or more input rows, then a bare column\n   will take on the value of an arbitrary row from the aggregate's input.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_113"
+    },
+    {
+      "question": "How does SQLite treat NULL values and numeric comparisons for DISTINCT processing?",
+      "answer": "For DISTINCT processing, two NULL values are considered to be equal, and an integer is equal to a floating point number if they represent the same quantity. This determines which rows are treated as duplicates.",
+      "evidence": "Thus two NULL values are considered to be equal. An integer is equal\nto a floating point number if they represent the same quantity.",
+      "question_type": "causal",
+      "qa_id": "sqlite_114"
+    },
+    {
+      "question": "What does SELECT ALL return in SQLite?",
+      "answer": "If the simple SELECT is a SELECT ALL, then the entire set of result rows are returned by the SELECT without any duplicate removal.",
+      "evidence": "If the simple SELECT is a SELECT ALL, then the\nentire set of result rows are returned by the SELECT.",
+      "question_type": "causal",
+      "qa_id": "sqlite_115"
+    },
+    {
+      "question": "What constraint applies to the number of result columns in a compound SELECT?",
+      "answer": "In a compound SELECT, all the constituent SELECTs must return the same number of result columns. This ensures that the results from the different SELECT statements can be properly combined.",
+      "evidence": "In a compound SELECT, all the constituent SELECTs must return the same\nnumber of result columns. As the components of a compound SELECT must\nbe simple SELECT statements, they may not contain ORDER BY or LIMIT clauses.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_116"
+    },
+    {
+      "question": "Why may the components of a compound SELECT not contain ORDER BY or LIMIT clauses?",
+      "answer": "The components of a compound SELECT may not contain ORDER BY or LIMIT clauses because they must be simple SELECT statements. ORDER BY and LIMIT apply only to the final compound result, not to the individual component SELECTs.",
+      "evidence": "As the components of a compound SELECT must\nbe simple SELECT statements, they may not contain ORDER BY or LIMIT clauses.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_117"
+    },
+    {
+      "question": "How are NULL values treated when determining duplicate rows in compound SELECT operations?",
+      "answer": "For the purposes of determining duplicate rows for the results of compound SELECT operators, NULL values are considered equal to other NULL values. This affects how UNION, INTERSECT, and EXCEPT eliminate duplicates.",
+      "evidence": "For the purposes of determining duplicate rows for the results of compound\nSELECT operators, NULL values are considered equal to other NULL values and\ndistinct from all non-NULL values.",
+      "question_type": "procedural",
+      "qa_id": "sqlite_118"
+    },
+    {
+      "question": "What happens when a LIMIT expression evaluates to a negative value in SQLite?",
+      "answer": "If the LIMIT expression evaluates to a negative value, then there is no upper bound on the number of rows returned. This effectively means all qualifying rows are included in the result.",
+      "evidence": "If the LIMIT expression evaluates to a negative value,\nthen there is no upper bound on the number of rows returned.",
+      "question_type": "causal",
+      "qa_id": "sqlite_119"
+    },
+    {
+      "question": "Why does SQLite not fix harmless syntax quirks that deviate from standard SQL?",
+      "answer": "SQLite leaves harmless syntax quirks alone and documents them rather than trying to fix them, because any new restrictions on the input syntax would likely cause at least some of the millions of applications that use SQLite to break.",
+      "evidence": "Whatever the origin of the input quirks, we generally avoid trying to \"fix\" them,\nas any new restrictions on the input syntax would likely cause at least some of\nthe millions of applications that use SQLite to break. We do not want that.\nThe goal of the SQLite development team is to preserve backwards compability to\nthe fullest extent possible. Hence, if a syntax quirk is harmless,\nwe leave it alone and document it here, rather than try to fix it.",
+      "question_type": "causal",
+      "qa_id": "sqlite_120"
+    },
+    {
+      "question": "Why is the lack of precedence difference between comma-joins and the JOIN keyword only relevant with outer joins?",
+      "answer": "Inner joins are inherently associative, so the difference in join precedence is only evident if your FROM clause contains one or more outer joins. With only inner joins, the evaluation order does not affect the result.",
+      "evidence": "Inner joins are inherently associative, so the difference is only\nevident if your FROM clause contains one or more outer joins.",
+      "question_type": "comparative",
+      "qa_id": "sqlite_121"
+    },
+    {
+      "question": "How does SQLite's INSERT statement behave when a SELECT statement is used instead of a VALUES clause?",
+      "answer": "When a SELECT statement is used instead of a VALUES clause in an INSERT, a new entry is inserted into the table for each row of data returned by executing the SELECT statement.",
+      "evidence": "instead of a VALUES clause. A new entry is inserted into the table for each\n   row of data returned by executing the SELECT statement.",
+      "question_type": "comparative",
+      "qa_id": "sqlite_122"
+    },
+    {
+      "question": "How can an INSERT statement behave as an UPDATE in SQLite?",
+      "answer": "SQLite provides upsert syntax that can cause an INSERT to behave as an UPDATE if the INSERT would otherwise violate a uniqueness constraint. This allows conflict resolution without separate conditional logic.",
+      "evidence": "See the separate UPSERT documentation for the additional trailing\nsyntax that can cause an INSERT to behave as an UPDATE if the INSERT would\notherwise violate a uniqueness constraint.",
+      "question_type": "causal",
+      "qa_id": "sqlite_123"
+    },
+    {
+      "question": "Which database's UPDATE-FROM implementation does SQLite strive to be compatible with?",
+      "answer": "Because UPDATE-FROM is not part of the SQL standards and each product implements it differently, the SQLite implementation strives to be compatible with PostgreSQL.",
+      "evidence": "because the construct is not part of the SQL standards, each product\nimplements UPDATE-FROM differently. The SQLite implementation strives\nto be compatible with PostgreSQL.",
+      "question_type": "causal",
+      "qa_id": "sqlite_124"
+    }
+  ]
+}

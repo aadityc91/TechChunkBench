@@ -1,0 +1,1439 @@
+{
+  "cliffs_delta": {
+    "hit_rate_at_1": {
+      "fixed_overlap_vs_fixed_size": {
+        "delta": 0.17746913580246915,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_hybrid": {
+        "delta": -0.1843707133058985,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_recursive": {
+        "delta": -0.025141460905349793,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_semantic": {
+        "delta": 0.23861882716049382,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_sentence_based": {
+        "delta": 0.1420181755829904,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_structure_aware": {
+        "delta": -0.18522805212620028,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_hybrid": {
+        "delta": -0.33963477366255146,
+        "interpretation": "medium"
+      },
+      "fixed_size_vs_recursive": {
+        "delta": -0.20291066529492455,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_semantic": {
+        "delta": 0.07199502743484225,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_sentence_based": {
+        "delta": -0.03219307270233196,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_structure_aware": {
+        "delta": -0.34066358024691357,
+        "interpretation": "medium"
+      },
+      "hybrid_vs_recursive": {
+        "delta": 0.1631730109739369,
+        "interpretation": "small"
+      },
+      "hybrid_vs_semantic": {
+        "delta": 0.3733281893004115,
+        "interpretation": "medium"
+      },
+      "hybrid_vs_sentence_based": {
+        "delta": 0.30371227709190673,
+        "interpretation": "small"
+      },
+      "hybrid_vs_structure_aware": {
+        "delta": -0.0008573388203017832,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_semantic": {
+        "delta": 0.2607167352537723,
+        "interpretation": "small"
+      },
+      "recursive_vs_sentence_based": {
+        "delta": 0.16550925925925927,
+        "interpretation": "small"
+      },
+      "recursive_vs_structure_aware": {
+        "delta": -0.16435185185185186,
+        "interpretation": "small"
+      },
+      "semantic_vs_sentence_based": {
+        "delta": -0.10193758573388204,
+        "interpretation": "negligible"
+      },
+      "semantic_vs_structure_aware": {
+        "delta": -0.37459276406035663,
+        "interpretation": "medium"
+      },
+      "sentence_based_vs_structure_aware": {
+        "delta": -0.30448388203017834,
+        "interpretation": "small"
+      }
+    },
+    "hit_rate_at_3": {
+      "fixed_overlap_vs_fixed_size": {
+        "delta": 0.1952803497942387,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_hybrid": {
+        "delta": -0.08652692043895747,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_recursive": {
+        "delta": 0.024777091906721536,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_semantic": {
+        "delta": 0.2611882716049383,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_sentence_based": {
+        "delta": 0.1803840877914952,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_structure_aware": {
+        "delta": -0.0854338134430727,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_hybrid": {
+        "delta": -0.2595807613168724,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_recursive": {
+        "delta": -0.16838134430727023,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_semantic": {
+        "delta": 0.07013031550068587,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_sentence_based": {
+        "delta": -0.012988683127572016,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_structure_aware": {
+        "delta": -0.2587019890260631,
+        "interpretation": "small"
+      },
+      "hybrid_vs_recursive": {
+        "delta": 0.10718878600823045,
+        "interpretation": "negligible"
+      },
+      "hybrid_vs_semantic": {
+        "delta": 0.31968021262002744,
+        "interpretation": "small"
+      },
+      "hybrid_vs_sentence_based": {
+        "delta": 0.23857596021947874,
+        "interpretation": "small"
+      },
+      "hybrid_vs_structure_aware": {
+        "delta": 0.0017575445816186558,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_semantic": {
+        "delta": 0.23587534293552812,
+        "interpretation": "small"
+      },
+      "recursive_vs_sentence_based": {
+        "delta": 0.1509130658436214,
+        "interpretation": "small"
+      },
+      "recursive_vs_structure_aware": {
+        "delta": -0.1052383401920439,
+        "interpretation": "negligible"
+      },
+      "semantic_vs_sentence_based": {
+        "delta": -0.0917352537722908,
+        "interpretation": "negligible"
+      },
+      "semantic_vs_structure_aware": {
+        "delta": -0.3175154320987654,
+        "interpretation": "small"
+      },
+      "sentence_based_vs_structure_aware": {
+        "delta": -0.23660408093278465,
+        "interpretation": "small"
+      }
+    },
+    "hit_rate_at_5": {
+      "fixed_overlap_vs_fixed_size": {
+        "delta": 0.1762474279835391,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_hybrid": {
+        "delta": -0.05617712620027435,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_recursive": {
+        "delta": 0.024905692729766803,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_semantic": {
+        "delta": 0.2713906035665295,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_sentence_based": {
+        "delta": 0.17513288751714678,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_structure_aware": {
+        "delta": -0.056648662551440326,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_hybrid": {
+        "delta": -0.20976937585733882,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_recursive": {
+        "delta": -0.14606910150891633,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_semantic": {
+        "delta": 0.10153034979423868,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_sentence_based": {
+        "delta": 0.005572702331961592,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_structure_aware": {
+        "delta": -0.21002657750342935,
+        "interpretation": "small"
+      },
+      "hybrid_vs_recursive": {
+        "delta": 0.07891803840877915,
+        "interpretation": "negligible"
+      },
+      "hybrid_vs_semantic": {
+        "delta": 0.3042266803840878,
+        "interpretation": "small"
+      },
+      "hybrid_vs_sentence_based": {
+        "delta": 0.21559927983539096,
+        "interpretation": "small"
+      },
+      "hybrid_vs_structure_aware": {
+        "delta": 0.0002357681755829904,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_semantic": {
+        "delta": 0.24612054183813442,
+        "interpretation": "small"
+      },
+      "recursive_vs_sentence_based": {
+        "delta": 0.15020576131687244,
+        "interpretation": "small"
+      },
+      "recursive_vs_structure_aware": {
+        "delta": -0.07906807270233196,
+        "interpretation": "negligible"
+      },
+      "semantic_vs_sentence_based": {
+        "delta": -0.0991298010973937,
+        "interpretation": "negligible"
+      },
+      "semantic_vs_structure_aware": {
+        "delta": -0.30349794238683125,
+        "interpretation": "small"
+      },
+      "sentence_based_vs_structure_aware": {
+        "delta": -0.2150420096021948,
+        "interpretation": "small"
+      }
+    },
+    "mrr": {
+      "fixed_overlap_vs_fixed_size": {
+        "delta": 0.1906721536351166,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_hybrid": {
+        "delta": -0.13968192729766804,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_recursive": {
+        "delta": -0.003129286694101509,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_semantic": {
+        "delta": 0.2558299039780521,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_sentence_based": {
+        "delta": 0.16561642661179699,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_structure_aware": {
+        "delta": -0.13987482853223593,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_hybrid": {
+        "delta": -0.3055555555555556,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_recursive": {
+        "delta": -0.1909722222222222,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_semantic": {
+        "delta": 0.07928240740740741,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_sentence_based": {
+        "delta": -0.015132030178326475,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_structure_aware": {
+        "delta": -0.3056198559670782,
+        "interpretation": "small"
+      },
+      "hybrid_vs_recursive": {
+        "delta": 0.13792438271604937,
+        "interpretation": "negligible"
+      },
+      "hybrid_vs_semantic": {
+        "delta": 0.3585390946502058,
+        "interpretation": "medium"
+      },
+      "hybrid_vs_sentence_based": {
+        "delta": 0.28052126200274347,
+        "interpretation": "small"
+      },
+      "hybrid_vs_structure_aware": {
+        "delta": 0.00038580246913580245,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_semantic": {
+        "delta": 0.2581232853223594,
+        "interpretation": "small"
+      },
+      "recursive_vs_sentence_based": {
+        "delta": 0.16941015089163236,
+        "interpretation": "small"
+      },
+      "recursive_vs_structure_aware": {
+        "delta": -0.1378386488340192,
+        "interpretation": "negligible"
+      },
+      "semantic_vs_sentence_based": {
+        "delta": -0.09893689986282579,
+        "interpretation": "negligible"
+      },
+      "semantic_vs_structure_aware": {
+        "delta": -0.3590963648834019,
+        "interpretation": "medium"
+      },
+      "sentence_based_vs_structure_aware": {
+        "delta": -0.2812928669410151,
+        "interpretation": "small"
+      }
+    },
+    "ndcg_at_5": {
+      "fixed_overlap_vs_fixed_size": {
+        "delta": 0.18900034293552812,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_hybrid": {
+        "delta": -0.12037037037037036,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_recursive": {
+        "delta": 0.004329561042524005,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_semantic": {
+        "delta": 0.26030949931412894,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_sentence_based": {
+        "delta": 0.17138203017832648,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_structure_aware": {
+        "delta": -0.12058470507544582,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_hybrid": {
+        "delta": -0.2863940329218107,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_recursive": {
+        "delta": -0.18214163237311384,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_semantic": {
+        "delta": 0.08431927297668039,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_sentence_based": {
+        "delta": -0.009816529492455418,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_structure_aware": {
+        "delta": -0.28540809327846367,
+        "interpretation": "small"
+      },
+      "hybrid_vs_recursive": {
+        "delta": 0.12720764746227708,
+        "interpretation": "negligible"
+      },
+      "hybrid_vs_semantic": {
+        "delta": 0.34910836762688613,
+        "interpretation": "medium"
+      },
+      "hybrid_vs_sentence_based": {
+        "delta": 0.2686042524005487,
+        "interpretation": "small"
+      },
+      "hybrid_vs_structure_aware": {
+        "delta": 6.430041152263375e-05,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_semantic": {
+        "delta": 0.25617283950617287,
+        "interpretation": "small"
+      },
+      "recursive_vs_sentence_based": {
+        "delta": 0.16670953360768176,
+        "interpretation": "small"
+      },
+      "recursive_vs_structure_aware": {
+        "delta": -0.12647890946502058,
+        "interpretation": "negligible"
+      },
+      "semantic_vs_sentence_based": {
+        "delta": -0.09773662551440329,
+        "interpretation": "negligible"
+      },
+      "semantic_vs_structure_aware": {
+        "delta": -0.349022633744856,
+        "interpretation": "medium"
+      },
+      "sentence_based_vs_structure_aware": {
+        "delta": -0.26851851851851855,
+        "interpretation": "small"
+      }
+    },
+    "context_precision": {
+      "fixed_overlap_vs_fixed_size": {
+        "delta": 0.32253086419753085,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_hybrid": {
+        "delta": 0.4491598079561043,
+        "interpretation": "medium"
+      },
+      "fixed_overlap_vs_recursive": {
+        "delta": 0.22785922496570646,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_semantic": {
+        "delta": 0.6081318587105624,
+        "interpretation": "large"
+      },
+      "fixed_overlap_vs_sentence_based": {
+        "delta": 0.3627400548696845,
+        "interpretation": "medium"
+      },
+      "fixed_overlap_vs_structure_aware": {
+        "delta": 0.4495670438957476,
+        "interpretation": "medium"
+      },
+      "fixed_size_vs_hybrid": {
+        "delta": 0.0896133401920439,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_recursive": {
+        "delta": -0.1071673525377229,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_semantic": {
+        "delta": 0.2849365569272977,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_sentence_based": {
+        "delta": 0.03652263374485597,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_structure_aware": {
+        "delta": 0.08978480795610425,
+        "interpretation": "negligible"
+      },
+      "hybrid_vs_recursive": {
+        "delta": -0.20321073388203018,
+        "interpretation": "small"
+      },
+      "hybrid_vs_semantic": {
+        "delta": 0.22232938957475995,
+        "interpretation": "small"
+      },
+      "hybrid_vs_sentence_based": {
+        "delta": -0.04044495884773663,
+        "interpretation": "negligible"
+      },
+      "hybrid_vs_structure_aware": {
+        "delta": 0.0008144718792866941,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_semantic": {
+        "delta": 0.3945901920438957,
+        "interpretation": "medium"
+      },
+      "recursive_vs_sentence_based": {
+        "delta": 0.14776234567901234,
+        "interpretation": "small"
+      },
+      "recursive_vs_structure_aware": {
+        "delta": 0.20376800411522633,
+        "interpretation": "small"
+      },
+      "semantic_vs_sentence_based": {
+        "delta": -0.2452846364883402,
+        "interpretation": "small"
+      },
+      "semantic_vs_structure_aware": {
+        "delta": -0.22155778463648834,
+        "interpretation": "small"
+      },
+      "sentence_based_vs_structure_aware": {
+        "delta": 0.04076646090534979,
+        "interpretation": "negligible"
+      }
+    },
+    "rouge_l": {
+      "fixed_overlap_vs_fixed_size": {
+        "delta": 0.15813614540466392,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_hybrid": {
+        "delta": -0.21652091906721535,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_recursive": {
+        "delta": -0.06738683127572016,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_semantic": {
+        "delta": 0.013245884773662552,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_sentence_based": {
+        "delta": 0.08303326474622771,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_structure_aware": {
+        "delta": -0.21467764060356653,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_hybrid": {
+        "delta": -0.3575960219478738,
+        "interpretation": "medium"
+      },
+      "fixed_size_vs_recursive": {
+        "delta": -0.21960733882030178,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_semantic": {
+        "delta": -0.1419753086419753,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_sentence_based": {
+        "delta": -0.0700017146776406,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_structure_aware": {
+        "delta": -0.35510973936899864,
+        "interpretation": "medium"
+      },
+      "hybrid_vs_recursive": {
+        "delta": 0.1483196159122085,
+        "interpretation": "small"
+      },
+      "hybrid_vs_semantic": {
+        "delta": 0.22102194787379972,
+        "interpretation": "small"
+      },
+      "hybrid_vs_sentence_based": {
+        "delta": 0.283179012345679,
+        "interpretation": "small"
+      },
+      "hybrid_vs_structure_aware": {
+        "delta": 0.0007501714677640603,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_semantic": {
+        "delta": 0.07968964334705075,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_sentence_based": {
+        "delta": 0.14733367626886146,
+        "interpretation": "small"
+      },
+      "recursive_vs_structure_aware": {
+        "delta": -0.14705504115226337,
+        "interpretation": "small"
+      },
+      "semantic_vs_sentence_based": {
+        "delta": 0.06708676268861453,
+        "interpretation": "negligible"
+      },
+      "semantic_vs_structure_aware": {
+        "delta": -0.21917866941015088,
+        "interpretation": "small"
+      },
+      "sentence_based_vs_structure_aware": {
+        "delta": -0.281721536351166,
+        "interpretation": "small"
+      }
+    },
+    "rouge_1": {
+      "fixed_overlap_vs_fixed_size": {
+        "delta": 0.15517832647462276,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_hybrid": {
+        "delta": -0.18668552812071332,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_recursive": {
+        "delta": -0.054441015089163235,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_semantic": {
+        "delta": 0.027992112482853222,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_sentence_based": {
+        "delta": 0.08894890260631001,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_structure_aware": {
+        "delta": -0.18488511659807957,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_hybrid": {
+        "delta": -0.33003257887517146,
+        "interpretation": "medium"
+      },
+      "fixed_size_vs_recursive": {
+        "delta": -0.20769032921810698,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_semantic": {
+        "delta": -0.12285665294924554,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_sentence_based": {
+        "delta": -0.060871056241426615,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_structure_aware": {
+        "delta": -0.3280606995884774,
+        "interpretation": "small"
+      },
+      "hybrid_vs_recursive": {
+        "delta": 0.12915809327846364,
+        "interpretation": "negligible"
+      },
+      "hybrid_vs_semantic": {
+        "delta": 0.20580418381344306,
+        "interpretation": "small"
+      },
+      "hybrid_vs_sentence_based": {
+        "delta": 0.25801611796982166,
+        "interpretation": "small"
+      },
+      "hybrid_vs_structure_aware": {
+        "delta": 6.430041152263375e-05,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_semantic": {
+        "delta": 0.08299039780521263,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_sentence_based": {
+        "delta": 0.1408179012345679,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_structure_aware": {
+        "delta": -0.12845078875171467,
+        "interpretation": "negligible"
+      },
+      "semantic_vs_sentence_based": {
+        "delta": 0.05769890260631001,
+        "interpretation": "negligible"
+      },
+      "semantic_vs_structure_aware": {
+        "delta": -0.20503257887517146,
+        "interpretation": "small"
+      },
+      "sentence_based_vs_structure_aware": {
+        "delta": -0.2572873799725652,
+        "interpretation": "small"
+      }
+    },
+    "rouge_2": {
+      "fixed_overlap_vs_fixed_size": {
+        "delta": 0.15907921810699588,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_hybrid": {
+        "delta": -0.2269804526748971,
+        "interpretation": "small"
+      },
+      "fixed_overlap_vs_recursive": {
+        "delta": -0.05817043895747599,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_semantic": {
+        "delta": 0.016803840877914953,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_sentence_based": {
+        "delta": 0.0818758573388203,
+        "interpretation": "negligible"
+      },
+      "fixed_overlap_vs_structure_aware": {
+        "delta": -0.22487997256515774,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_hybrid": {
+        "delta": -0.3724279835390947,
+        "interpretation": "medium"
+      },
+      "fixed_size_vs_recursive": {
+        "delta": -0.21875,
+        "interpretation": "small"
+      },
+      "fixed_size_vs_semantic": {
+        "delta": -0.14141803840877915,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_sentence_based": {
+        "delta": -0.069230109739369,
+        "interpretation": "negligible"
+      },
+      "fixed_size_vs_structure_aware": {
+        "delta": -0.3704132373113855,
+        "interpretation": "medium"
+      },
+      "hybrid_vs_recursive": {
+        "delta": 0.16628086419753085,
+        "interpretation": "small"
+      },
+      "hybrid_vs_semantic": {
+        "delta": 0.2393689986282579,
+        "interpretation": "small"
+      },
+      "hybrid_vs_sentence_based": {
+        "delta": 0.29411008230452673,
+        "interpretation": "small"
+      },
+      "hybrid_vs_structure_aware": {
+        "delta": 0.002550582990397805,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_semantic": {
+        "delta": 0.07823216735253773,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_sentence_based": {
+        "delta": 0.1396604938271605,
+        "interpretation": "negligible"
+      },
+      "recursive_vs_structure_aware": {
+        "delta": -0.16493055555555555,
+        "interpretation": "small"
+      },
+      "semantic_vs_sentence_based": {
+        "delta": 0.06545781893004116,
+        "interpretation": "negligible"
+      },
+      "semantic_vs_structure_aware": {
+        "delta": -0.23718278463648834,
+        "interpretation": "small"
+      },
+      "sentence_based_vs_structure_aware": {
+        "delta": -0.2926526063100137,
+        "interpretation": "small"
+      }
+    }
+  },
+  "variance_decomposition": {
+    "hit_rate_at_1": {
+      "partial_eta_squared": {
+        "strategy": 0.1386495416788921,
+        "model": 0.352335104616439,
+        "size": 0.04182852128736587,
+        "domain": 0.31525002768084925,
+        "strategy_x_domain": 0.07868684320917556,
+        "residual": 0.5
+      },
+      "r_squared": 0.5641609228237384,
+      "n_observations": 1512
+    },
+    "hit_rate_at_3": {
+      "partial_eta_squared": {
+        "strategy": 0.10176515477493743,
+        "model": 0.35483704237461805,
+        "size": 0.06613639946921226,
+        "domain": 0.3779009179634531,
+        "strategy_x_domain": 0.055462997917874374,
+        "residual": 0.5
+      },
+      "r_squared": 0.5833839410215874,
+      "n_observations": 1512
+    },
+    "hit_rate_at_5": {
+      "partial_eta_squared": {
+        "strategy": 0.08779014442245721,
+        "model": 0.3295949891476187,
+        "size": 0.05879770095510519,
+        "domain": 0.39667285937224844,
+        "strategy_x_domain": 0.06518934269172104,
+        "residual": 0.5
+      },
+      "r_squared": 0.57940008801391,
+      "n_observations": 1512
+    },
+    "mrr": {
+      "partial_eta_squared": {
+        "strategy": 0.13237704109653362,
+        "model": 0.3750735377266802,
+        "size": 0.05722187406651864,
+        "domain": 0.37196334616301835,
+        "strategy_x_domain": 0.07265018412535894,
+        "residual": 0.5
+      },
+      "r_squared": 0.5974337362777775,
+      "n_observations": 1512
+    },
+    "ndcg_at_5": {
+      "partial_eta_squared": {
+        "strategy": 0.12500785166696238,
+        "model": 0.3742822372686902,
+        "size": 0.060200402074158096,
+        "domain": 0.3875116818448309,
+        "strategy_x_domain": 0.07114725420796585,
+        "residual": 0.5
+      },
+      "r_squared": 0.6022860258064248,
+      "n_observations": 1512
+    },
+    "context_precision": {
+      "partial_eta_squared": {
+        "strategy": 0.26591353876493296,
+        "model": 0.21246855595461603,
+        "size": 0.20758416786225856,
+        "domain": 0.5709438847480254,
+        "strategy_x_domain": 0.09585849941063322,
+        "residual": 0.5
+      },
+      "r_squared": 0.6997637714921895,
+      "n_observations": 1512
+    },
+    "rouge_l": {
+      "partial_eta_squared": {
+        "strategy": 0.07418648323529395,
+        "model": 0.17926587700278646,
+        "size": 0.215843389342471,
+        "domain": 0.20796477678935826,
+        "strategy_x_domain": 0.021864782107212717,
+        "residual": 0.5
+      },
+      "r_squared": 0.4619987139481697,
+      "n_observations": 1512
+    },
+    "rouge_1": {
+      "partial_eta_squared": {
+        "strategy": 0.059374916225536915,
+        "model": 0.14656755313003703,
+        "size": 0.18211154047842726,
+        "domain": 0.2826943966112619,
+        "strategy_x_domain": 0.019394570863915116,
+        "residual": 0.5
+      },
+      "r_squared": 0.4656425344897831,
+      "n_observations": 1512
+    },
+    "rouge_2": {
+      "partial_eta_squared": {
+        "strategy": 0.08434262611610385,
+        "model": 0.2083377336334277,
+        "size": 0.23538667965802804,
+        "domain": 0.18555053223361104,
+        "strategy_x_domain": 0.02619582161479456,
+        "residual": 0.5
+      },
+      "r_squared": 0.47858301841751993,
+      "n_observations": 1512
+    }
+  },
+  "bootstrap_confidence_intervals": {
+    "hit_rate_at_1": {
+      "fixed_overlap": {
+        "mean": 0.5772581108795808,
+        "ci_lower": 0.5493136444023151,
+        "ci_upper": 0.601138090466751,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "fixed_size": {
+        "mean": 0.5447635811866329,
+        "ci_lower": 0.5183896552975604,
+        "ci_upper": 0.5685714325924405,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "hybrid": {
+        "mean": 0.6054633016570343,
+        "ci_lower": 0.5726779951478939,
+        "ci_upper": 0.6379829587811833,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "recursive": {
+        "mean": 0.5793868223826786,
+        "ci_lower": 0.555125605416219,
+        "ci_upper": 0.6040705651017854,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "semantic": {
+        "mean": 0.5287559734881823,
+        "ci_lower": 0.49969381116029626,
+        "ci_upper": 0.5591045577545666,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "sentence_based": {
+        "mean": 0.5480766276897315,
+        "ci_lower": 0.5215374009248889,
+        "ci_upper": 0.575083679006245,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "structure_aware": {
+        "mean": 0.6056471117047059,
+        "ci_lower": 0.5744058280610836,
+        "ci_upper": 0.6364466439937145,
+        "n": 216,
+        "n_clusters": 24
+      }
+    },
+    "hit_rate_at_3": {
+      "fixed_overlap": {
+        "mean": 0.7747557170029687,
+        "ci_lower": 0.7478296337641921,
+        "ci_upper": 0.8005074878425447,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "fixed_size": {
+        "mean": 0.7395392057176219,
+        "ci_lower": 0.713103357653584,
+        "ci_upper": 0.7657006619788435,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "hybrid": {
+        "mean": 0.7844849266425195,
+        "ci_lower": 0.7517921184909726,
+        "ci_upper": 0.8138721221576299,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "recursive": {
+        "mean": 0.770438918504274,
+        "ci_lower": 0.7439041854835188,
+        "ci_upper": 0.7985031617794112,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "semantic": {
+        "mean": 0.7238193688880634,
+        "ci_lower": 0.6953625308581501,
+        "ci_upper": 0.7528619774682567,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "sentence_based": {
+        "mean": 0.7423998385572473,
+        "ci_lower": 0.7159365101305373,
+        "ci_upper": 0.7679863892988128,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "structure_aware": {
+        "mean": 0.7842068202155247,
+        "ci_lower": 0.7527527082901243,
+        "ci_upper": 0.8148172176020191,
+        "n": 216,
+        "n_clusters": 24
+      }
+    },
+    "hit_rate_at_5": {
+      "fixed_overlap": {
+        "mean": 0.837075323535778,
+        "ci_lower": 0.814346776237062,
+        "ci_upper": 0.8600570191225949,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "fixed_size": {
+        "mean": 0.8091153057293425,
+        "ci_lower": 0.7853343541336927,
+        "ci_upper": 0.8342081520357264,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "hybrid": {
+        "mean": 0.8406481756683013,
+        "ci_lower": 0.8082330004741115,
+        "ci_upper": 0.8674290499051412,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "recursive": {
+        "mean": 0.8331017503185946,
+        "ci_lower": 0.808585457180295,
+        "ci_upper": 0.8565645006569256,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "semantic": {
+        "mean": 0.7895827546401315,
+        "ci_lower": 0.7639873613846073,
+        "ci_upper": 0.8144238109893756,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "sentence_based": {
+        "mean": 0.8074533269929316,
+        "ci_lower": 0.7844553599007639,
+        "ci_upper": 0.8292056340026648,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "structure_aware": {
+        "mean": 0.8403221838854497,
+        "ci_lower": 0.8112708641975405,
+        "ci_upper": 0.8682512232262155,
+        "n": 216,
+        "n_clusters": 24
+      }
+    },
+    "mrr": {
+      "fixed_overlap": {
+        "mean": 0.679833564104127,
+        "ci_lower": 0.653208785000789,
+        "ci_upper": 0.7032310012910722,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "fixed_size": {
+        "mean": 0.647692104401753,
+        "ci_lower": 0.6208925515198194,
+        "ci_upper": 0.6728551299552207,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "hybrid": {
+        "mean": 0.6987241875638378,
+        "ci_lower": 0.6677394997339292,
+        "ci_upper": 0.7280422418801765,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "recursive": {
+        "mean": 0.6791750069852747,
+        "ci_lower": 0.6547045153451101,
+        "ci_upper": 0.7032019468705857,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "semantic": {
+        "mean": 0.6303737616932197,
+        "ci_lower": 0.603942199191791,
+        "ci_upper": 0.6590403420793566,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "sentence_based": {
+        "mean": 0.6491753783233449,
+        "ci_lower": 0.6233387773106636,
+        "ci_upper": 0.6779081788972694,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "structure_aware": {
+        "mean": 0.6987067263709209,
+        "ci_lower": 0.6686297333854273,
+        "ci_upper": 0.7294946346022753,
+        "n": 216,
+        "n_clusters": 24
+      }
+    },
+    "ndcg_at_5": {
+      "fixed_overlap": {
+        "mean": 0.7193554934100078,
+        "ci_lower": 0.6945598013431393,
+        "ci_upper": 0.7429828369285334,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "fixed_size": {
+        "mean": 0.6881784673558563,
+        "ci_lower": 0.6631049356107456,
+        "ci_upper": 0.7135635263350127,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "hybrid": {
+        "mean": 0.7344146276611825,
+        "ci_lower": 0.7034451374024017,
+        "ci_upper": 0.7629052715855251,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "recursive": {
+        "mean": 0.717841293699876,
+        "ci_lower": 0.692803751943342,
+        "ci_upper": 0.7409277250934004,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "semantic": {
+        "mean": 0.6703186175592516,
+        "ci_lower": 0.6433404791561086,
+        "ci_upper": 0.6976571725992061,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "sentence_based": {
+        "mean": 0.6888887685863989,
+        "ci_lower": 0.6622893236099716,
+        "ci_upper": 0.714380584179663,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "structure_aware": {
+        "mean": 0.7343193129523903,
+        "ci_lower": 0.7031503810565891,
+        "ci_upper": 0.7647737840208054,
+        "n": 216,
+        "n_clusters": 24
+      }
+    },
+    "context_precision": {
+      "fixed_overlap": {
+        "mean": 0.2662065198228875,
+        "ci_lower": 0.24704748284894024,
+        "ci_upper": 0.2851824872155452,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "fixed_size": {
+        "mean": 0.23309963630114622,
+        "ci_lower": 0.21376110969707865,
+        "ci_upper": 0.2522998711155865,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "hybrid": {
+        "mean": 0.22214960451098822,
+        "ci_lower": 0.2086927989287959,
+        "ci_upper": 0.23565851866877296,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "recursive": {
+        "mean": 0.24457769685416614,
+        "ci_lower": 0.22781592443891316,
+        "ci_upper": 0.2629044988428662,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "semantic": {
+        "mean": 0.20405207635552866,
+        "ci_lower": 0.19116873873572937,
+        "ci_upper": 0.21608911513925497,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "sentence_based": {
+        "mean": 0.2298654757380927,
+        "ci_lower": 0.21245565740673594,
+        "ci_upper": 0.2469528256392076,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "structure_aware": {
+        "mean": 0.22209314130466246,
+        "ci_lower": 0.2085893721863521,
+        "ci_upper": 0.23460411389067068,
+        "n": 216,
+        "n_clusters": 24
+      }
+    },
+    "rouge_l": {
+      "fixed_overlap": {
+        "mean": 0.5580533837311888,
+        "ci_lower": 0.5337309589899714,
+        "ci_upper": 0.5794032008408725,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "fixed_size": {
+        "mean": 0.536835782959915,
+        "ci_lower": 0.5152936394176265,
+        "ci_upper": 0.5569996244683023,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "hybrid": {
+        "mean": 0.5866859874564203,
+        "ci_lower": 0.5577502268994989,
+        "ci_upper": 0.6138571366210975,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "recursive": {
+        "mean": 0.5683939432407505,
+        "ci_lower": 0.5423710816805243,
+        "ci_upper": 0.5895564495026928,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "semantic": {
+        "mean": 0.5571235808597896,
+        "ci_lower": 0.5281518984621727,
+        "ci_upper": 0.5830830577277778,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "sentence_based": {
+        "mean": 0.5469534931530191,
+        "ci_lower": 0.5211378516184957,
+        "ci_upper": 0.5682507202895398,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "structure_aware": {
+        "mean": 0.5865366187531937,
+        "ci_lower": 0.5563236898784066,
+        "ci_upper": 0.6110187421898462,
+        "n": 216,
+        "n_clusters": 24
+      }
+    },
+    "rouge_1": {
+      "fixed_overlap": {
+        "mean": 0.5955375168228026,
+        "ci_lower": 0.5697864706417911,
+        "ci_upper": 0.6188944701113286,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "fixed_size": {
+        "mean": 0.5764236832426431,
+        "ci_lower": 0.5516114781269248,
+        "ci_upper": 0.5967330634517425,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "hybrid": {
+        "mean": 0.6182162684086927,
+        "ci_lower": 0.5874428082811904,
+        "ci_upper": 0.6461004634584127,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "recursive": {
+        "mean": 0.6035567188816463,
+        "ci_lower": 0.576993477574982,
+        "ci_upper": 0.6266307539228763,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "semantic": {
+        "mean": 0.5929833155162314,
+        "ci_lower": 0.5662300564394607,
+        "ci_upper": 0.619293805288423,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "sentence_based": {
+        "mean": 0.5849218463515936,
+        "ci_lower": 0.5575333593749966,
+        "ci_upper": 0.6093161267973607,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "structure_aware": {
+        "mean": 0.6180849866142674,
+        "ci_lower": 0.5876729311072147,
+        "ci_upper": 0.6433484673876568,
+        "n": 216,
+        "n_clusters": 24
+      }
+    },
+    "rouge_2": {
+      "fixed_overlap": {
+        "mean": 0.5227630154232428,
+        "ci_lower": 0.4978819277965757,
+        "ci_upper": 0.5441390321376728,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "fixed_size": {
+        "mean": 0.49811592790720066,
+        "ci_lower": 0.47251332826425385,
+        "ci_upper": 0.5192875629329846,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "hybrid": {
+        "mean": 0.5561110437268317,
+        "ci_lower": 0.5206835629776233,
+        "ci_upper": 0.5835242489722181,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "recursive": {
+        "mean": 0.5338442835922822,
+        "ci_lower": 0.5091256130004957,
+        "ci_upper": 0.5555910605963038,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "semantic": {
+        "mean": 0.5208379106877037,
+        "ci_lower": 0.4904241656242537,
+        "ci_upper": 0.5473020095318311,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "sentence_based": {
+        "mean": 0.5094898180855587,
+        "ci_lower": 0.4831628075928348,
+        "ci_upper": 0.5341753698363527,
+        "n": 216,
+        "n_clusters": 24
+      },
+      "structure_aware": {
+        "mean": 0.5559458410193233,
+        "ci_lower": 0.5227696285330663,
+        "ci_upper": 0.5833601202852495,
+        "n": 216,
+        "n_clusters": 24
+      }
+    }
+  },
+  "within_domain_variance": {
+    "cloud_api": {
+      "documents": {
+        "aws_s3": 0.7587780297304106,
+        "azure_blob": 0.7382142857142858,
+        "gcs": 0.7408900413850908
+      },
+      "mean": 0.7459607856099292,
+      "std": 0.01118039477100318,
+      "range": 0.02056374401612482,
+      "n_documents": 3
+    },
+    "corporate_finance": {
+      "documents": {
+        "basel_iii": 0.6108359788359788,
+        "goog_10k": 0.5247655717952747,
+        "msft_10k": 0.6083713133218084
+      },
+      "mean": 0.581324287984354,
+      "std": 0.04899678486127225,
+      "range": 0.08607040704070412,
+      "n_documents": 3
+    },
+    "engineering_spec": {
+      "documents": {
+        "faa_ac": 0.6873094452302373,
+        "nasa_std": 0.5792865000785792,
+        "nasa_std_2": 0.6461322751322752
+      },
+      "mean": 0.6375760734803638,
+      "std": 0.054517388142139224,
+      "range": 0.10802294515165811,
+      "n_documents": 3
+    },
+    "hardware_manual": {
+      "documents": {
+        "arduino": 0.7457486772486772,
+        "esp32": 0.5966464363523186,
+        "raspberry_pi": 0.7030348407706898
+      },
+      "mean": 0.6818099847905619,
+      "std": 0.07678372512200626,
+      "range": 0.1491022408963586,
+      "n_documents": 3
+    },
+    "legal_regulatory": {
+      "documents": {
+        "ccpa": 0.6940302495858051,
+        "gdpr": 0.6568862433862434,
+        "hipaa": 0.6987590187590188
+      },
+      "mean": 0.6832251705770224,
+      "std": 0.02293239256257956,
+      "range": 0.04187277537277545,
+      "n_documents": 3
+    },
+    "medical_guideline": {
+      "documents": {
+        "cdc_immunization": 0.6395,
+        "who_covid": 0.6178220494547024,
+        "who_malaria": 0.666759259259259
+      },
+      "mean": 0.6413604362379871,
+      "std": 0.024521593404803657,
+      "range": 0.048937209804556625,
+      "n_documents": 3
+    },
+    "software_manual": {
+      "documents": {
+        "mysql": 0.7724338624338624,
+        "postgresql": 0.7233392122281008,
+        "sqlite": 0.6829191384746941
+      },
+      "mean": 0.726230737712219,
+      "std": 0.04482735929196033,
+      "range": 0.08951472395916826,
+      "n_documents": 3
+    },
+    "technical_standard": {
+      "documents": {
+        "nist_800_53": 0.6481375661375662,
+        "nist_csf": 0.5953861174099269,
+        "owasp_top10": 0.7223478167922613
+      },
+      "mean": 0.6552905001132515,
+      "std": 0.06378237707908002,
+      "range": 0.12696169938233448,
+      "n_documents": 3
+    }
+  }
+}

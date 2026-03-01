@@ -1,0 +1,705 @@
+{
+  "corpus_id": "azure_blob",
+  "qa_pairs": [
+    {
+      "question": "What is Azure Blob Storage and what type of data is it optimized for?",
+      "answer": "Azure Blob Storage is Microsoft's object storage solution for the cloud, optimized for storing massive amounts of unstructured data that doesn't adhere to a particular data model or definition, such as text or binary data.",
+      "evidence": "Azure Blob Storage is Microsoft's object storage solution for the cloud. Blob Storage is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn't adhere to a particular data model or definition, such as text or binary data.",
+      "question_type": "definitional",
+      "qa_id": "azure_blob_001"
+    },
+    {
+      "question": "What protocols can clients use to access objects in Blob Storage besides HTTP/HTTPS?",
+      "answer": "Clients can securely connect to Blob Storage by using SSH File Transfer Protocol (SFTP) and mount Blob Storage containers by using the Network File System (NFS) 3.0 protocol.",
+      "evidence": "Clients can also securely connect to Blob Storage by using SSH File Transfer Protocol (SFTP) and mount Blob Storage containers by using the Network File System (NFS) 3.0 protocol.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_003"
+    },
+    {
+      "question": "What three types of resources does Blob Storage offer?",
+      "answer": "Blob Storage offers three types of resources: the storage account, a container in the storage account, and a blob in a container.",
+      "evidence": "Blob Storage offers three types of resources:\n\n* The **storage account**\n* A **container** in the storage account\n* A **blob** in a container",
+      "question_type": "factual",
+      "qa_id": "azure_blob_004"
+    },
+    {
+      "question": "What are the three types of storage accounts supported for Blob Storage?",
+      "answer": "The three types are General-purpose v2 (Standard tier, recommended for most scenarios), Block blob (Premium tier, recommended for high transaction rates or smaller objects requiring low latency), and Page blob (Premium tier, for page blobs only).",
+      "evidence": "| General-purpose v2 | Standard | Standard storage account type for blobs, file shares, queues, and tables. Recommended for most scenarios using Blob Storage or one of the other Azure Storage services. |\n| Block blob | Premium | Premium storage account type for block blobs and append blobs. Recommended for scenarios with high transaction rates or that use smaller objects or require consistently low storage latency. Learn more about workloads for premium block blob accounts... |\n| Page blob | Premium | Premium storage account type for page blobs only. Learn more about workloads for premium page blob accounts... |",
+      "question_type": "factual",
+      "qa_id": "azure_blob_006"
+    },
+    {
+      "question": "What are the three types of blobs supported by Azure Storage and their maximum sizes?",
+      "answer": "Block blobs store text and binary data up to about 190.7 TiB, append blobs are optimized for append operations like logging from virtual machines, and page blobs store random access files up to 8 TiB in size and serve as disks for Azure virtual machines.",
+      "evidence": "Azure Storage supports three types of blobs:\n\n* **Block blobs** store text and binary data. Block blobs are made up of blocks of data that can be managed individually. Block blobs can store up to about 190.7 TiB.\n* **Append blobs** are made up of blocks like block blobs, but are optimized for append operations. Append blobs are ideal for scenarios such as logging data from virtual machines.\n* **Page blobs** store random access files up to 8 TiB in size. Page blobs store virtual hard drive (VHD) files and serve as disks for Azure virtual machines.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_008"
+    },
+    {
+      "question": "What are the limitations on blob names regarding path segments?",
+      "answer": "If the storage account does not have hierarchical namespace enabled, the number of path segments cannot exceed 254. If the storage account has hierarchical namespace enabled, the number of path segments cannot exceed 63, including path segments for container name and account host name.",
+      "evidence": "There are limitations on the number of path segments comprising a blob name. A path segment is the string between consecutive delimiter characters (for example, a forward slash `/`) that corresponds to the directory or virtual directory. The following path segment limitations apply to blob names:\n  + If the storage account *does not* have hierarchical namespace enabled, the number of path segments comprising the blob name cannot exceed 254.\n  + If the storage account has hierarchical namespace enabled, the number of path segments comprising the blob name cannot exceed 63 (including path segments for container name and account host name).",
+      "question_type": "factual",
+      "qa_id": "azure_blob_009"
+    },
+    {
+      "question": "What is Azure Data Lake Storage Gen2 and what advantages does it offer?",
+      "answer": "Azure Data Lake Storage Gen2 is Microsoft's enterprise big data analytics solution for the cloud, supported by Blob Storage. It offers a hierarchical file system as well as low-cost tiered storage, high availability, strong consistency, and disaster recovery capabilities.",
+      "evidence": "Blob Storage supports Azure Data Lake Storage Gen2, Microsoft's enterprise big data analytics solution for the cloud. Azure Data Lake Storage Gen2 offers a hierarchical file system as well as the advantages of Blob Storage, including:\n\n* Low-cost, tiered storage\n* High availability\n* Strong consistency\n* Disaster recovery capabilities",
+      "question_type": "definitional",
+      "qa_id": "azure_blob_010"
+    },
+    {
+      "question": "What tools and services can be used to migrate existing data to Blob Storage?",
+      "answer": "Data can be migrated using AzCopy (command-line tool), Azure Storage Data Movement library (.NET library), Azure Data Factory, Blobfuse (virtual file system driver), Azure Data Box service, and Azure Import/Export service.",
+      "evidence": "* **AzCopy** is an easy-to-use command-line tool for Windows and Linux that copies data to and from Blob Storage, across containers, or across storage accounts. For more information about AzCopy, see Transfer data with the AzCopy v10.\n* The **Azure Storage Data Movement library** is a .NET library for moving data between Azure Storage services. The AzCopy utility is built with the Data Movement library. For more information, see the reference documentation for the Data Movement library.\n* **Azure Data Factory** supports copying data to and from Blob Storage by using the account key, a shared access signature, a service principal, or managed identities for Azure resources. For more information, see Copy data to or from Azure Blob Storage by using Azure Data Factory.\n* **Blobfuse** is a virtual file system driver for Azure Blob Storage. You can use BlobFuse to access your existing block blob data in your Storage account through the Linux file system. For more information, see What is BlobFuse? - BlobFuse2 (preview).\n* **Azure Data Box** service is available to transfer on-premises data to Blob Storage when large datasets or network constraints make uploading data over the wire unrealistic. Depending on your data size, you can request Azure Data Box Disk, Azure Data Box, or Azure Data Box Heavy devices from Microsoft. You can then copy your data to those devices and ship them back to Microsoft to be uploaded into Blob Storage.\n* The **Azure Import/Export service** provides a way to import or export large amounts of data to and from your storage account using hard drives that you provide. For more information, see What is Azure Import/Export service?",
+      "question_type": "factual",
+      "qa_id": "azure_blob_011"
+    },
+    {
+      "question": "What packages need to be installed for the Azure Blob Storage Python quickstart?",
+      "answer": "You need to install the azure-storage-blob and azure-identity packages using pip install. The azure-identity package is needed for passwordless connections to Azure services.",
+      "evidence": "From the project directory, install packages for the Azure Blob Storage and Azure Identity client libraries using the `pip install` command. The **azure-identity** package is needed for passwordless connections to Azure services.\n\n```\npip install azure-storage-blob azure-identity\n```",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_012"
+    },
+    {
+      "question": "What are the three main Python classes used to interact with Blob Storage resources?",
+      "answer": "The three classes are BlobServiceClient (manipulates Azure Storage resources and blob containers), ContainerClient (manipulates containers and their blobs), and BlobClient (manipulates individual blobs).",
+      "evidence": "* BlobServiceClient: The `BlobServiceClient` class allows you to manipulate Azure Storage resources and blob containers.\n* ContainerClient: The `ContainerClient` class allows you to manipulate Azure Storage containers and their blobs.\n* BlobClient: The `BlobClient` class allows you to manipulate Azure Storage blobs.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_013"
+    },
+    {
+      "question": "What is the recommended approach for implementing passwordless connections to Azure services?",
+      "answer": "Using the DefaultAzureCredential class provided by the Azure Identity client library is the recommended approach. It supports multiple authentication methods and determines which method should be used at runtime, enabling different authentication methods in different environments without environment-specific code.",
+      "evidence": "Application requests to Azure Blob Storage must be authorized. Using the `DefaultAzureCredential` class provided by the Azure Identity client library is the recommended approach for implementing passwordless connections to Azure services in your code, including Blob Storage.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_014"
+    },
+    {
+      "question": "What RBAC role is needed to read and write blob data, and what role is needed to assign it?",
+      "answer": "You need the Storage Blob Data Contributor role to read and write blob data. To assign yourself this role, you need the User Access Administrator role, or another role that includes the Microsoft.Authorization/roleAssignments/write action.",
+      "evidence": "When developing locally, make sure that the user account that is accessing blob data has the correct permissions. You'll need **Storage Blob Data Contributor** to read and write blob data. To assign yourself this role, you'll need to be assigned the **User Access Administrator** role, or another role that includes the **Microsoft.Authorization/roleAssignments/write** action.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_015"
+    },
+    {
+      "question": "Why should account access keys be used with caution when accessing Blob Storage?",
+      "answer": "Anyone who has the access key is able to authorize requests against the storage account and effectively has access to all the data. DefaultAzureCredential offers improved management and security benefits over the account key to allow passwordless authentication.",
+      "evidence": "You can also authorize requests to Azure Blob Storage by using the account access key. However, this approach should be used with caution. Developers must be diligent to never expose the access key in an unsecure location. Anyone who has the access key is able to authorize requests against the storage account, and effectively has access to all the data. `DefaultAzureCredential` offers improved management and security benefits over the account key to allow passwordless authentication.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_016"
+    },
+    {
+      "question": "How do you create a container with a unique name in the Python quickstart?",
+      "answer": "The code appends a GUID value to the container name using uuid.uuid4() to ensure uniqueness, then calls blob_service_client.create_container() with the container name.",
+      "evidence": "Create a new container in your storage account by calling the create\\_container method on the `blob_service_client` object. In this example, the code appends a GUID value to the container name to ensure that it's unique.\nAdd this code to the end of the `try` block:\n```\n# Create a unique name for the container\ncontainer_name = str(uuid.uuid4())\n# Create the container\ncontainer_client = blob_service_client.create_container(container_name)",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_017"
+    },
+    {
+      "question": "How do you upload a blob from a local file path using the Python client library?",
+      "answer": "You use a BlobClient object and call upload_blob with the file data opened in binary read mode. The ContainerClient.upload_blob method accepts a name parameter for the blob name and a data parameter for the file data.",
+      "evidence": "The following example uploads a file to a block blob using a `BlobClient` object:\n\n```\ndef upload_blob_file(self, blob_service_client: BlobServiceClient, container_name: str):\n    container_client = blob_service_client.get_container_client(container=container_name)\n    with open(file=os.path.join('filepath', 'filename'), mode=\"rb\") as data:\n        blob_client = container_client.upload_blob(name=\"sample-blob.txt\", data=data, overwrite=True)\n```",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_018"
+    },
+    {
+      "question": "What data transfer options can be configured when uploading a blob?",
+      "answer": "You can set max_block_size (maximum chunk size for uploading, defaults to 4 MiB), max_single_put_size (if blob size is less than or equal to this, it uploads with a single Put Blob request, defaults to 64 MiB), and max_concurrency (maximum number of parallel connections when blob size exceeds 64 MiB).",
+      "evidence": "You can pass the following keyword arguments when constructing a client object in Python:\n\n* `max_block_size` - The maximum chunk size for uploading a block blob in chunks. Defaults to 4 MiB.\n* `max_single_put_size` - If the blob size is less than or equal to `max_single_put_size`, the blob is uploaded with a single `Put Blob` request. If the blob size is larger than `max_single_put_size` or unknown, the blob is uploaded in chunks using `Put Block` and committed using `Put Block List`. Defaults to 64 MiB.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_019"
+    },
+    {
+      "question": "How does the Azure Storage client library handle automatic chunking during upload?",
+      "answer": "The upload_blob method creates a new blob from a data source with automatic chunking, meaning the data source may be split into smaller chunks and uploaded. The client library may use either Put Blob or a series of Put Block calls followed by Put Block List, depending on the overall size of the object and data transfer options.",
+      "evidence": "This method creates a new blob from a data source with automatic chunking, meaning that the data source may be split into smaller chunks and uploaded. To perform the upload, the client library may use either Put Blob or a series of Put Block calls followed by Put Block List. This behavior depends on the overall size of the object and how the data transfer options are set.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_020"
+    },
+    {
+      "question": "How do you upload a blob with index tags using Python?",
+      "answer": "You pass a tags parameter as a dictionary to the upload_blob method, for example: tags={\"Content\": \"image\", \"Date\": \"2022-01-01\"}.",
+      "evidence": "The following example uploads a block blob with index tags:\n\n```\ndef upload_blob_tags(self, blob_service_client: BlobServiceClient, container_name: str):\n    container_client = blob_service_client.get_container_client(container=container_name)\n    sample_tags = {\"Content\": \"image\", \"Date\": \"2022-01-01\"}\n    with open(file=os.path.join('filepath', 'filename'), mode=\"rb\") as data:\n        blob_client = container_client.upload_blob(name=\"sample-blob.txt\", data=data, tags=sample_tags)\n```",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_021"
+    },
+    {
+      "question": "How do you manually stage individual blocks and commit them as a blob?",
+      "answer": "Use stage_block to create individual blocks with unique block IDs, then use commit_block_list to write the blob by specifying the list of block IDs. You read data from a file in chunks, stage each chunk as a block, collect the block IDs, and finally commit the block list.",
+      "evidence": "Use the following method to write a blob by specifying the list of block IDs that make up the blob:\n* commit\\_block\\_list\nThe following example reads data from a file and stages blocks to be committed as part of a blob:\n```\ndef upload_blocks(self, blob_container_client: ContainerClient, local_file_path: str, block_size: int):\nfile_name = os.path.basename(local_file_path)\nblob_client = blob_container_client.get_blob_client(file_name)\nwith open(file=local_file_path, mode=\"rb\") as file_stream:\nblock_id_list = []\nwhile True:\nbuffer = file_stream.read(block_size)\nif not buffer:\nbreak\nblock_id = uuid.uuid4().hex\nblock_id_list.append(BlobBlock(block_id=block_id))",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_023"
+    },
+    {
+      "question": "Does the Azure Storage client library support concurrent writes to the same blob?",
+      "answer": "No, the Azure Storage client libraries don't support concurrent writes to the same blob. If your app requires multiple processes writing to the same blob, you should implement a strategy for concurrency control to provide a predictable experience.",
+      "evidence": "The Azure Storage client libraries don't support concurrent writes to the same blob. If your app requires multiple processes writing to the same blob, you should implement a strategy for concurrency control to provide a predictable experience. To learn more about concurrency strategies, see Manage concurrency in Blob Storage.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_024"
+    },
+    {
+      "question": "How does download_blob work and how does it handle large blobs?",
+      "answer": "The download_blob method returns a StorageStreamDownloader object. During a download, the client libraries split the download request into chunks, where each chunk is downloaded with a separate Get Blob range request. This behavior depends on the total size of the blob and data transfer options.",
+      "evidence": "The `download_blob` method returns a StorageStreamDownloader object. During a download, the client libraries split the download request into chunks, where each chunk is downloaded with a separate Get Blob range request. This behavior depends on the total size of the blob and how the data transfer options are set.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_025"
+    },
+    {
+      "question": "How do you download a blob in chunks using the Python client library?",
+      "answer": "You call download_blob to get a StorageStreamDownloader, then iterate over chunks using the chunks() method, which returns an iterator that allows you to read the blob content in chunks.",
+      "evidence": "The following example downloads a blob and iterates over chunks in the download stream. In this example, StorageStreamDownloader.chunks returns an iterator, which allows you to read the blob content in chunks:\n\n```\ndef download_blob_chunks(self, blob_service_client: BlobServiceClient, container_name):\n    blob_client = blob_service_client.get_blob_client(container=container_name, blob=\"sample-blob.txt\")\n\n    # This returns a StorageStreamDownloader\n    stream = blob_client.download_blob()\n    chunk_list = []\n\n    # Read data in chunks to avoid loading all into memory at once\n    for chunk in stream.chunks():\n        # Process your data (anything can be done here - 'chunk' is a byte array)\n        chunk_list.append(chunk)\n```",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_028"
+    },
+    {
+      "question": "How do you delete a blob and its snapshots using the Python client library?",
+      "answer": "To delete a blob and all its associated snapshots, call blob_client.delete_blob(delete_snapshots=\"include\"). To delete only the snapshots and not the blob itself, pass delete_snapshots=\"only\".",
+      "evidence": "If the blob has any associated snapshots, you must delete all of its snapshots to delete the blob. The following example deletes a blob and its snapshots:\n\n```\ndef delete_blob_snapshots(self, blob_service_client: BlobServiceClient, container_name: str, blob_name: str):\n    blob_client = blob_service_client.get_blob_client(container=container_name, blob=blob_name)\n    blob_client.delete_blob(delete_snapshots=\"include\")\n```\n\nTo delete *only* the snapshots and not the blob itself, you can pass the parameter `delete_snapshots=\"only\"`.",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_029"
+    },
+    {
+      "question": "What is blob soft delete and how does the retention period work?",
+      "answer": "Blob soft delete protects an individual blob, snapshot, or version from accidental deletes or overwrites by maintaining the deleted data in the system for a specified period of time. During the retention period, you can restore the soft-deleted object to its state at the time it was deleted. After the retention period expires, the object is permanently deleted.",
+      "evidence": "Blob soft delete protects an individual blob, snapshot, or version from accidental deletes or overwrites by maintaining the deleted data in the system for a specified period of time. During the retention period, you can restore a soft-deleted object to its state at the time it was deleted. After the retention period has expired, the object is permanently deleted.",
+      "question_type": "definitional",
+      "qa_id": "azure_blob_030"
+    },
+    {
+      "question": "How do you restore a soft-deleted blob when versioning is disabled?",
+      "answer": "Call the BlobClient.undelete_blob method, which restores the content and metadata of a soft-deleted blob and any associated soft-deleted snapshots. Calling this method for a blob that hasn't been deleted has no effect.",
+      "evidence": "To restore deleted blobs when versioning is disabled, call the following method:\n* BlobClient.undelete\\_blob\nThis method restores the content and metadata of a soft-deleted blob and any associated soft-deleted snapshots. Calling this method for a blob that hasn't been deleted has no effect.\n```\ndef restore_blob(self, blob_service_client: BlobServiceClient, container_name: str, blob_name: str):\nblob_client = blob_service_client.get_blob_client(container=container_name, blob=blob_name)\nblob_client.undelete_blob()",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_031"
+    },
+    {
+      "question": "How do you list containers with metadata and filter by prefix using Python?",
+      "answer": "Call blob_service_client.list_containers(include_metadata=True) to list all containers with metadata. To filter by prefix, use the name_starts_with parameter, e.g., list_containers(name_starts_with='test-').",
+      "evidence": "The following example lists all containers and metadata. You can include container metadata by setting `include_metadata` to `True`:\n\n```\ndef list_containers(self, blob_service_client: BlobServiceClient):\n    containers = blob_service_client.list_containers(include_metadata=True)\n    for container in containers:\n        print(container['name'], container['metadata'])\n```\n\nThe following example lists only containers that begin with a prefix specified in the `name_starts_with` parameter:\n\n```\ndef list_containers_prefix(self, blob_service_client: BlobServiceClient):\n    containers = blob_service_client.list_containers(name_starts_with='test-')\n    for container in containers:\n        print(container['name'])\n```",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_033"
+    },
+    {
+      "question": "How many results does a container listing operation return by default?",
+      "answer": "By default, a listing operation returns up to 5000 results at a time. To return a smaller set, provide a nonzero value for the results_per_page keyword argument.",
+      "evidence": "By default, a listing operation returns up to 5000 results at a time. To return a smaller set of results, provide a nonzero value for the `results_per_page` keyword argument.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_034"
+    },
+    {
+      "question": "What REST API operations can be used for copy operations and when should each be used?",
+      "answer": "Put Blob From URL is preferred for moving data into a storage account from a source URL (synchronous). Put Block From URL is used for large objects by writing individual blocks then committing them (synchronous). Copy Blob is used for asynchronous scheduling of a copy operation.",
+      "evidence": "| Put Blob From URL | This operation is preferred for scenarios where you want to move data into a storage account and have a URL for the source object. This operation completes synchronously. | upload\\_blob\\_from\\_url | Copy a blob from a source object URL with Python |\n| Put Block From URL | For large objects, you can use Put Block From URL to write individual blocks to Blob Storage, and then call Put Block List to commit those blocks to a block blob. This operation completes synchronously. | stage\\_block\\_from\\_url | Copy a blob from a source object URL with Python |\n| Copy Blob | This operation can be used when you want asynchronous scheduling for a copy operation. | start\\_copy\\_from\\_url | Copy a blob with asynchronous scheduling using Python |",
+      "question_type": "comparative",
+      "qa_id": "azure_blob_035"
+    },
+    {
+      "question": "What are the five access tiers available for Azure Blob Storage data?",
+      "answer": "The five access tiers are Hot (frequently accessed, highest storage costs, lowest access costs), Cool (infrequently accessed, minimum 30 days), Cold (rarely accessed, minimum 90 days), Archive (offline, minimum 180 days, lowest storage cost), and Smart (automatically moves data between hot, cool, and cold tiers based on usage patterns).",
+      "evidence": "* **Hot tier** - An online tier optimized for storing data that is accessed or modified frequently. The hot tier has the highest storage costs, but the lowest access costs.\n* **Cool tier** - An online tier optimized for storing data that is infrequently accessed or modified. Data in the cool tier should be stored for a minimum of **30** days. The cool tier has lower storage costs and higher access costs compared to the hot tier.\n* **Cold tier** - An online tier optimized for storing data that is rarely accessed or modified, but still requires fast retrieval. Data in the cold tier should be stored for a minimum of **90** days. The cold tier has lower storage costs and higher access costs compared to the cool tier.\n* **Archive tier** - An offline tier optimized for storing data that is rarely accessed, and that has flexible latency requirements, on the order of hours. Data in the archive tier should be stored for a minimum of **180** days.\n* **Smart tier** - Smart tier automatically moves your data between the hot, cool, and cold access tiers based on usage patterns, optimizing your costs for these access tiers automatically.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_036"
+    },
+    {
+      "question": "What happens when a blob is archived and you try to read it?",
+      "answer": "While a blob is in the archive tier, it can't be read or modified. To read or download it, you must first rehydrate it to an online tier (hot, cool, or cold). Data in the archive tier can take up to 15 hours to rehydrate. However, an archived blob's metadata remains available for read access.",
+      "evidence": "While a blob is in the archive tier, it can't be read or modified. To read or download a blob in the archive tier, you must first rehydrate it to an online tier, either hot, cool, or cold. Data in the archive tier can take up to 15 hours to rehydrate, depending on the priority you specify for the rehydration operation. For more information about blob rehydration, see Overview of blob rehydration from the archive tier.\nAn archived blob's metadata remains available for read access, so that you can list the blob and its properties, metadata, and index tags. Metadata for a blob in the archive tier is read-only, while blob index tags can be read or written. Storage costs for metadata of archived blobs will be charged on cool tier rates.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_038"
+    },
+    {
+      "question": "What are the early deletion penalties for moving blobs out of cool, cold, or archive tiers?",
+      "answer": "Blobs in the cool tier are subject to early deletion if deleted or moved before 30 days. Cold tier has a 90-day minimum. Archive tier has a 180-day minimum. The charge is prorated based on the remaining days.",
+      "evidence": "Blobs are subject to an early deletion penalty if they are deleted, overwritten or moved to a different tier before the minimum number of days required by the tier have transpired. For example, a blob in the cool tier in a general-purpose v2 account is subject to an early deletion penalty if it's deleted or moved to a different tier before 30 days has elapsed. For a blob in the cold tier, the deletion penalty applies if it's deleted or moved to a different tier before 90 days has elapsed. This charge is prorated. For example, if a blob is moved to the cool tier and then deleted after 21 days, you'll be charged an early deletion fee equivalent to 9 (30 minus 21) days of storing that blob in the cool tier.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_039"
+    },
+    {
+      "question": "Which redundancy configurations support moving blobs to the archive tier?",
+      "answer": "Only storage accounts configured for LRS, GRS, or RA-GRS support moving blobs to the archive tier. The archive tier isn't supported for ZRS, GZRS, or RA-GZRS accounts.",
+      "evidence": "Only storage accounts that are configured for LRS, GRS, or RA-GRS support moving blobs to the archive tier. The archive tier isn't supported for ZRS, GZRS, or RA-GZRS accounts.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_040"
+    },
+    {
+      "question": "What is the default access tier for a new general-purpose v2 storage account?",
+      "answer": "The default access tier is set to the hot tier by default. You can change this when creating or after creating the account. A blob without an explicitly assigned tier infers its tier from the default account access tier setting.",
+      "evidence": "The default access tier for a new general-purpose v2 storage account is set to the hot tier by default. You can change the default access tier setting when you create a storage account or after it's created. If you don't change this setting on the storage account or explicitly set the tier when uploading a blob, then a new blob is uploaded to the hot tier by default.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_041"
+    },
+    {
+      "question": "What happens when you change the default access tier for a storage account to a cooler tier?",
+      "answer": "Changing the default tier applies to all blobs without an explicitly assigned tier. Toggling to a cooler tier charges for write operations (per 10,000) for all inferred-tier blobs. Toggling to a warmer tier charges for both read operations (per 10,000) and data retrieval (per GB).",
+      "evidence": "Changing the default access tier setting for a storage account applies to all blobs in the account for which an access tier hasn't been explicitly set. If you toggle the default access tier setting to a cooler tier in a general-purpose v2 account, then you're charged for write operations (per 10,000) for all blobs for which the access tier is inferred. You're charged for both read operations (per 10,000) and data retrieval (per GB) if you toggle to a warmer tier in a general-purpose v2 account.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_043"
+    },
+    {
+      "question": "What is customer-provided encryption and how does it work for Blob Storage?",
+      "answer": "Clients can provide an AES-256 encryption key on write requests to encrypt a blob. Azure Storage performs encryption and decryption transparently while reading and writing data. Azure Storage writes an SHA-256 hash of the encryption key alongside the blob's contents but does not store or manage the key.",
+      "evidence": "Clients making requests against Azure Blob storage can provide an AES-256 encryption key to encrypt that blob on a write operation. Subsequent requests to read or write to the blob must include the same key. Including the encryption key on the request provides granular control over encryption settings for Blob storage operations. Customer-provided keys can be stored in Azure Key Vault or in another key store.\n## Encrypting read and write operations\nWhen a client application provides an encryption key on the request, Azure Storage performs encryption and decryption transparently while reading and writing blob data. Azure Storage writes an SHA-256 hash of the encryption key alongside the blob's contents. The hash is used to verify that all subsequent operations against the blob use the same encryption key.\nAzure Storage doesn't store or manage the encryption key that the client sends with the request. The key is securely discarded as soon as the encryption or decryption process is complete.",
+      "question_type": "definitional",
+      "qa_id": "azure_blob_044"
+    },
+    {
+      "question": "What happens if you try to read a blob encrypted with a customer-provided key without providing the key?",
+      "answer": "The request fails with error code 409 (Conflict). If the key isn't provided on a request for a blob that has already been encrypted with a customer-provided key, the request fails.",
+      "evidence": "When a client creates or updates a blob using a customer-provided key on the request, then subsequent read and write requests for that blob must also provide the key. If the key isn't provided on a request for a blob that has already been encrypted with a customer-provided key, then the request fails with error code 409 (Conflict).",
+      "question_type": "factual",
+      "qa_id": "azure_blob_045"
+    },
+    {
+      "question": "What are the three request headers for specifying customer-provided encryption keys?",
+      "answer": "The headers are x-ms-encryption-key (Base64-encoded AES-256 key value), x-ms-encryption-key-sha256 (Base64-encoded SHA256 of the key), and x-ms-encryption-algorithm (must be AES256 for writes, optional for reads).",
+      "evidence": "| `x-ms-encryption-key` | Required for both write and read requests. A Base64-encoded AES-256 encryption key value. |\n| `x-ms-encryption-key-sha256` | Required for both write and read requests. The Base64-encoded SHA256 of the encryption key. |\n| `x-ms-encryption-algorithm` | Required for write requests, optional for read requests. Specifies the algorithm to use when encrypting data using the given key. The value of this header must be `AES256`. |",
+      "question_type": "factual",
+      "qa_id": "azure_blob_046"
+    },
+    {
+      "question": "What is blob versioning and how does it work?",
+      "answer": "Blob versioning automatically maintains previous versions of an object. When enabled, Azure Storage automatically creates a new version with a unique ID when a blob is first created and each time it is subsequently modified. Each version captures the state of a blob at a given point in time.",
+      "evidence": "A version captures the state of a blob at a given point in time. Each version is identified with a version ID. When blob versioning is enabled for a storage account, Azure Storage automatically creates a new version with a unique ID when a blob is first created and each time that the blob is subsequently modified.",
+      "question_type": "definitional",
+      "qa_id": "azure_blob_048"
+    },
+    {
+      "question": "How many versions per blob does Microsoft recommend maintaining and why?",
+      "answer": "Microsoft recommends maintaining fewer than 1000 versions per blob because having a large number of versions can increase the latency for blob listing operations. Lifecycle management can be used to automatically delete old versions.",
+      "evidence": "Having a large number of versions per blob can increase the latency for blob listing operations. Microsoft recommends maintaining fewer than 1000 versions per blob. You can use lifecycle management to automatically delete old versions.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_050"
+    },
+    {
+      "question": "What happens to blob versions during write operations when versioning is enabled?",
+      "answer": "When a write operation modifies an existing blob, the current version becomes a previous version and a new version is created to capture the updated state. Write operations that trigger versioning include Put Blob, Put Block List, Copy Blob, and Set Blob Metadata.",
+      "evidence": "When blob versioning is turned on, each write operation to a blob creates a new version. Write operations include Put Blob, Put Block List, Copy Blob, and Set Blob Metadata.\n\nIf the write operation creates a new blob, then the resulting blob is the current version of the blob. If the write operation modifies an existing blob, then the current version becomes a previous version, and a new current version is created to capture the updated blob.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_051"
+    },
+    {
+      "question": "What happens when you delete a versioned blob without specifying a version ID?",
+      "answer": "The current version becomes a previous version and there is no longer a current version. All existing previous versions of the blob are preserved. Writing new data to the blob creates a new current version.",
+      "evidence": "When you call the Delete Blob operation without specifying a version ID, the current version becomes a previous version, and there's no longer a current version. All existing previous versions of the blob are preserved.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_052"
+    },
+    {
+      "question": "What is the version ID for a blob version and how is it determined?",
+      "answer": "Each blob version is identified by a unique version ID. The value of the version ID is the timestamp at which the blob was updated. It is assigned at creation time and remains the same for the lifetime of the version.",
+      "evidence": "Each blob version is identified by a unique version ID. The value of the version ID is the timestamp at which the blob was updated. The version ID is assigned at the time that the version is created.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_053"
+    },
+    {
+      "question": "Are blob versions immutable?",
+      "answer": "Yes, blob versions are immutable. You can't modify the content or metadata of an existing blob version.",
+      "evidence": "Blob versions are immutable. You can't modify the content or metadata of an existing blob version.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_054"
+    },
+    {
+      "question": "What happens when you disable blob versioning for a storage account?",
+      "answer": "Disabling versioning doesn't delete existing blobs, versions, or snapshots. Existing versions remain accessible. No new versions are subsequently created. After disabling, modifying the current version creates a blob that isn't a version, and all subsequent updates overwrite its data without saving the previous state.",
+      "evidence": "Disabling blob versioning doesn't delete existing blobs, versions, or snapshots. When you turn off blob versioning, any existing versions remain accessible in your storage account. No new versions are subsequently created.\n\nAfter versioning is disabled, modifying the current version creates a blob that isn't a version. All subsequent updates to the blob overwrite its data without saving the previous state. All existing versions persist as previous versions.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_055"
+    },
+    {
+      "question": "What write operations don't trigger the creation of a new version for page blobs and append blobs?",
+      "answer": "Put Page (for page blobs) and Append Block (for append blobs) don't trigger the creation of a new version. To capture changes from those operations, you must take a manual snapshot.",
+      "evidence": "The following operations don't trigger the creation of a new version. To capture changes from those operations, take a manual snapshot:\n\n* Put Page (page blob)\n* Append Block (append blob)",
+      "question_type": "factual",
+      "qa_id": "azure_blob_056"
+    },
+    {
+      "question": "How does billing work for blob versions when the tier has not been explicitly set?",
+      "answer": "You're charged for unique blocks of data across the blob, its versions, and snapshots. Data shared across versions is charged only once. When a blob is updated, the new data diverges from previous versions, and the unique data is charged per block or page.",
+      "evidence": "If you have not explicitly set the blob tier for any versions of a blob, then you're charged for unique blocks or pages across all versions, and any snapshots it may have. Data that is shared across blob versions is charged only once. When a blob is updated, then data in the new current version diverges from the data stored in previous versions, and the unique data is charged per block or page.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_058"
+    },
+    {
+      "question": "Why might Put Blob lead to higher charges than Put Block and Put Block List?",
+      "answer": "Put Blob replaces the entire contents of a blob, which means all blocks are unique and charged individually. Put Block and Put Block List allow fine-grained control over blocks, so only changed blocks create additional charges.",
+      "evidence": "The write operations that permit fine-grained control over blocks are Put Block and Put Block List. The Put Blob operation, on the other hand, replaces the entire contents of a blob and so may lead to additional charges.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_059"
+    },
+    {
+      "question": "What is the soft delete retention period range and how does it work?",
+      "answer": "When you enable blob soft delete, you specify a retention period between 1 and 365 days. The retention period indicates how long deleted data remains available. The clock starts as soon as an object is deleted or overwritten. An updated retention period applies only to data deleted after the change.",
+      "evidence": "When you enable blob soft delete for a storage account, you specify a retention period for deleted objects of between 1 and 365 days. The retention period indicates how long the data remains available after it's deleted or overwritten. The clock starts on the retention period as soon as an object is deleted or overwritten.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_060"
+    },
+    {
+      "question": "How does soft delete handle overwrites when versioning is not enabled?",
+      "answer": "When blob soft delete is enabled and a blob is overwritten, Azure Storage automatically creates a soft-deleted snapshot of the blob's state prior to the write operation. When the retention period expires, the soft-deleted snapshot is permanently deleted.",
+      "evidence": "Calling an operation such as Put Blob, Put Block List, or Copy Blob overwrites the data in a blob. When blob soft delete is enabled, overwriting a blob automatically creates a soft-deleted snapshot of the blob's state prior to the write operation. When the retention period expires, the soft-deleted snapshot is permanently deleted.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_061"
+    },
+    {
+      "question": "How do soft delete and versioning interact when both are enabled?",
+      "answer": "When both are enabled, overwriting a blob creates a new previous version (not soft-deleted, not removed when retention expires). When deleting a blob, the current version becomes a previous version with no new version or snapshots created. Deleting a previous version makes it soft-deleted until the retention period elapses.",
+      "evidence": "If blob versioning and blob soft delete are both enabled for a storage account, then overwriting a blob automatically creates a new previous version that reflects the blob's state before the write operation. The new version isn't soft-deleted and isn't removed when the soft-delete retention period expires. No soft-deleted snapshots are created.\nIf blob versioning and blob soft delete are both enabled for a storage account, then when you delete a blob, the current version of the blob becomes a previous version, and there's no longer a current version. No new version is created and no soft-deleted snapshots are created. All previous versions are retained until they're explicitly deleted, either with a direct delete operation or via a lifecycle management policy.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_062"
+    },
+    {
+      "question": "Can soft delete protect against deletion of a storage account?",
+      "answer": "No, blob soft delete does not protect against the deletion of a storage account. To protect a storage account from deletion, configure a lock on the storage account resource.",
+      "evidence": "Blob soft delete does not protect against the deletion of a storage account. To protect a storage account from deletion, configure a lock on the storage account resource. For more information about locking a storage account, see Apply an Azure Resource Manager lock to a storage account.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_063"
+    },
+    {
+      "question": "How does the Undelete Blob operation work when versioning is enabled?",
+      "answer": "The Undelete Blob operation always restores all soft-deleted versions of the blob; it isn't possible to restore only a single soft-deleted version. However, it does not restore the current version. To restore the current version, promote a previous version by copying it to the current version.",
+      "evidence": "Calling the **Undelete Blob** operation on a deleted blob when versioning is enabled restores any soft-deleted versions or snapshots, but does not restore the current version. To restore the current version, promote a previous version by copying it to the current version.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_064"
+    },
+    {
+      "question": "Is soft-deleted data billed at a different rate than active data?",
+      "answer": "No, all soft-deleted data is billed at the same rate as active data. You won't be charged for data that is permanently deleted after the retention period elapses.",
+      "evidence": "All soft-deleted data is billed at the same rate as active data. You won't be charged for data that is permanently deleted after the retention period elapses.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_065"
+    },
+    {
+      "question": "What is a blob snapshot and how does it differ from blob versioning?",
+      "answer": "A blob snapshot is a read-only copy of a blob taken at a specific point in time. Snapshots and versions are similar, but a snapshot is created manually by you or your application, while a version is created automatically on a write or delete operation when versioning is enabled.",
+      "evidence": "A blob snapshot is a read-only copy of a blob that's taken at a specific point in time. Blob snapshots and blob versions are similar, but a snapshot is created manually by you or your application, while a blob version is created automatically on a write or delete operation when blob versioning is enabled for your storage account.",
+      "question_type": "comparative",
+      "qa_id": "azure_blob_066"
+    },
+    {
+      "question": "What can the lifecycle management policy do with blobs?",
+      "answer": "The policy can transition current versions, previous versions, or snapshots to cooler storage tiers if not accessed for a period of time, transition blobs back from cool to hot when accessed, delete blobs at the end of their lifecycles, and apply rules to entire accounts, select containers, or subsets of blobs using name prefixes or blob index tags.",
+      "evidence": "With the lifecycle management policy, you can:\n\n* Transition current versions of a blob, previous versions of a blob, or blob snapshots to a cooler storage tier if these objects aren't accessed or modified for a period of time, to optimize for cost.\n* Transition blobs back from cool to hot immediately when they're accessed.\n* Delete current versions of a blob, previous versions of a blob, or blob snapshots at the end of their lifecycles.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_069"
+    },
+    {
+      "question": "What are the three elements of a lifecycle management rule?",
+      "answer": "The three elements are Conditions (based on Creation Time, Last Modified Time, and Last Accessed Time), Actions (applied to filtered blobs that meet conditions, such as changing tier or deleting), and Filters (limit actions to a subset using path prefixes and blob tags with logical AND).",
+      "evidence": "| Conditions | Conditions are based on the following three blob properties: Creation Time, Last Modified Time, and Last Accessed Time (if access time tracking is enabled) |\n| Actions | Actions are applied to the filtered blobs that meet the associated conditions. You must define at least one action per rule such as changing the blob tier to the cool tier or deleting blobs. |\n| Filters | Filters limit rule actions to a subset of blobs within the storage account by using path prefixes and blob tags. If more than one filter is defined, a logical AND runs on all filters. You can use a filter to specify which blobs to include. A filter provides no means to specify which blobs to exclude. |",
+      "question_type": "factual",
+      "qa_id": "azure_blob_070"
+    },
+    {
+      "question": "What are the known limitations of lifecycle management policies?",
+      "answer": "Key limitations include: tiering isn't supported in premium block blob accounts, policies can't rehydrate blobs from archive, partial updates aren't supported, each rule can have up to 10 prefixes and 10 tag conditions, and delete actions won't work with blobs in immutable containers.",
+      "evidence": "* Tiering isn't yet supported in a premium block blob storage account. For all other accounts, tiering is allowed only on block blobs and not for append and page blobs.\n* Lifecycle management policies can't be used to rehydrate blobs to an online tier.\n* A lifecycle management policy must be read or written in full. Partial updates aren't supported.\n* Each rule can have up to 10 case-sensitive prefixes and up to 10 blob index tag conditions.\n* A lifecycle management policy can't be used to change the tier of a blob that uses an encryption scope to the archive tier.\n* The delete action of a lifecycle management policy won't work with any blob in an immutable container.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_072"
+    },
+    {
+      "question": "What is immutable storage for Azure Blob Storage?",
+      "answer": "Immutable storage enables users to store business-critical data in a WORM (Write Once, Read Many) state. While in a WORM state, data can't be modified or deleted for a user-specified interval. Immutability policies include time-based retention policies and legal holds.",
+      "evidence": "Immutable storage for Azure Blob Storage enables users to store business-critical data in a WORM (Write Once, Read Many) state. While in a WORM state, data can't be modified or deleted for a user-specified interval. By configuring immutability policies for blob data, you can protect your data from overwrites and deletes. Immutability policies include time-based retention policies and legal holds.",
+      "question_type": "definitional",
+      "qa_id": "azure_blob_073"
+    },
+    {
+      "question": "What are the two steps for configuring a version-level immutability policy?",
+      "answer": "First, enable support for version-level immutability on a new storage account or on a new or existing container. Second, configure a time-based retention policy or legal hold that applies to one or more blob versions in that container.",
+      "evidence": "Configuring a version-level immutability policy is a two-step process:\n\n1. First, enable support for version-level immutability on a new storage account or on a new or existing container. See Enable support for version-level immutability for details.\n2. Next, configure a time-based retention policy or legal hold that applies to one or more blob versions in that container.",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_074"
+    },
+    {
+      "question": "What is required to migrate an existing container to support version-level immutability?",
+      "answer": "The container must have a container-level time-based retention policy configured; the migration fails without one. The retention interval is maintained as the retention interval for the default version-level policy. Containers with legal holds cannot be migrated. You can migrate 10 containers at a time per storage account.",
+      "evidence": "To migrate an existing container to support version-level immutability policies, the container must have a container-level time-based retention policy configured. The migration fails unless the container has an existing policy. The retention interval for the container-level policy is maintained as the retention interval for the default version-level policy on the container.\n\nIf the container has an existing container-level legal hold, then it can't be migrated until the legal hold is removed.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_076"
+    },
+    {
+      "question": "What are the three options for configuring time-based retention policies for blob versions?",
+      "answer": "Option 1: Configure a default policy on the storage account or container that applies to all objects. Option 2: Configure a policy on the current version of a blob that can override the default. Option 3: Configure a policy on a previous version that can override the current version's policy.",
+      "evidence": "You have three options for configuring a time-based retention policy for a blob version:\n* Option 1: You can configure a default policy on the storage account or container that applies to all objects in the account or container. Objects in the account or container will inherit the default policy unless you explicitly override it by configuring a policy on an individual blob version. For more information, see Configure a default time-based retention policy.\n* Option 2: You can configure a policy on the current version of the blob. This policy can override a default policy configured on the storage account or container, if a default policy exists and it's unlocked. By default, any previous versions that are created after the policy is configured will inherit the policy on the current version of the blob. For more information, see Configure a retention policy on the current version of a blob.\n* Option 3: You can configure a policy on a previous version of a blob. This policy can override a default policy configured on the current version, if one exists and it's unlocked. For more information, see Configure a retention policy on a previous version of a blob.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_077"
+    },
+    {
+      "question": "What RBAC role is needed for download operations?",
+      "answer": "For download operations, you need the Azure RBAC built-in role Storage Blob Data Reader or higher.",
+      "evidence": "The authorization mechanism must have the necessary permissions to perform a download operation. For authorization with Microsoft Entra ID (recommended), you need Azure RBAC built-in role **Storage Blob Data Reader** or higher.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_082"
+    },
+    {
+      "question": "How do you download a blob to a stream and get the number of bytes read?",
+      "answer": "Use StorageStreamDownloader.read_into which downloads the blob contents to a stream and returns the number of bytes read. Create a BytesIO stream and pass it to download_blob().readinto().",
+      "evidence": "The following example downloads a blob to a stream. In this example, StorageStreamDownloader.read\\_into downloads the blob contents to a stream and returns the number of bytes read:\n```\ndef download_blob_to_stream(self, blob_service_client: BlobServiceClient, container_name):\nblob_client = blob_service_client.get_blob_client(container=container_name, blob=\"sample-blob.txt\")\n# readinto() downloads the blob contents to a stream and returns the number of bytes read\nstream = io.BytesIO()\nnum_bytes = blob_client.download_blob().readinto(stream)\nprint(f\"Number of bytes: {num_bytes}\")",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_083"
+    },
+    {
+      "question": "What RBAC role is needed to delete blobs or restore soft-deleted blobs?",
+      "answer": "For deleting blobs or restoring soft-deleted blobs, you need the Azure RBAC built-in role Storage Blob Data Contributor or higher.",
+      "evidence": "The authorization mechanism must have the necessary permissions to delete a blob, or to restore a soft-deleted blob. For authorization with Microsoft Entra ID (recommended), you need Azure RBAC built-in role **Storage Blob Data Contributor** or higher.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_084"
+    },
+    {
+      "question": "What happens when you perform a permanent deletion on a blob with soft delete enabled?",
+      "answer": "When soft delete is enabled, you can't perform a permanent deletion using client library methods. A soft-deleted blob, version, or snapshot remains available until the retention period expires, at which time it's permanently deleted.",
+      "evidence": "When blob soft delete is enabled for a storage account, you can't perform a permanent deletion using client library methods. Using the methods in this article, a soft-deleted blob, blob version, or snapshot remains available until the retention period expires, at which time it's permanently deleted.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_085"
+    },
+    {
+      "question": "How do you include soft-deleted containers in a container listing?",
+      "answer": "Set the include_deleted keyword argument to True when calling list_containers to include soft-deleted containers in the results.",
+      "evidence": "To include soft-deleted containers with the results, set the `include_deleted` keyword argument to `True`.",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_086"
+    },
+    {
+      "question": "What operations are supported for blobs in the archive tier?",
+      "answer": "Supported operations include Copy Blob, Delete Blob, Undelete Blob, Find Blobs by Tags, Get Blob Metadata, Get Blob Properties, Get Blob Tags, List Blobs, Set Blob Tags, and Set Blob Tier.",
+      "evidence": "The following operations are supported for blobs in the archive tier:\n\n* Copy Blob\n* Delete Blob\n* Undelete Blob\n* Find Blobs by Tags\n* Get Blob Metadata\n* Get Blob Properties\n* Get Blob Tags\n* List Blobs\n* Set Blob Tags\n* Set Blob Tier",
+      "question_type": "factual",
+      "qa_id": "azure_blob_087"
+    },
+    {
+      "question": "What is the availability percentage for the hot tier vs cool tier?",
+      "answer": "The hot tier has 99.9% availability (99.99% with RA-GRS reads). The cool tier has 99% availability (99.9% with RA-GRS reads).",
+      "evidence": "|  | **Hot tier** | **Cool tier** | **Cold tier** | **Archive tier** |\n| --- | --- | --- | --- | --- |\n| **Availability** | 99.9% | 99% | 99% | 99% |\n| **Availability**   **(RA-GRS reads)** | 99.99% | 99.9% | 99.9% | 99.9% |",
+      "question_type": "comparative",
+      "qa_id": "azure_blob_088"
+    },
+    {
+      "question": "What is the setting access tier restriction regarding blob types?",
+      "answer": "Setting the access tier is only allowed on Block Blobs. It is not supported for Append and Page Blobs.",
+      "evidence": "Setting the access tier is only allowed on Block Blobs. They are not supported for Append and Page Blobs.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_090"
+    },
+    {
+      "question": "What minimum SDK versions are required for the cold tier in Python and .NET?",
+      "answer": "Python requires minimum version 12.15.0 and .NET requires minimum version 12.15.0 to use the cold tier.",
+      "evidence": "| REST API | 2021-12-02 |\n| .NET | 12.15.0 |\n| Java | 12.21.0 |\n| Python | 12.15.0 |",
+      "question_type": "factual",
+      "qa_id": "azure_blob_091"
+    },
+    {
+      "question": "How are storage costs and access costs related across access tiers?",
+      "answer": "The per-gigabyte capacity cost decreases as the tier gets cooler (hot is most expensive, archive is cheapest for storage). Conversely, data access charges increase as the tier gets cooler. Transaction costs also apply to all tiers and increase as the tier gets cooler.",
+      "evidence": "In addition to the amount of data stored, the cost of storing data varies depending on the access tier. The per-gigabyte capacity cost decreases as the tier gets cooler.\n### Data access costs\nData access charges increase as the tier gets cooler. For data in the cool, cold and archive access tier, you're charged a per-gigabyte data access charge for reads.\n### Transaction costs\nA per-transaction charge applies to all tiers and increases as the tier gets cooler.",
+      "question_type": "comparative",
+      "qa_id": "azure_blob_092"
+    },
+    {
+      "question": "What is the recommended minimum retention period for soft delete and why?",
+      "answer": "Microsoft recommends using a short retention period, with a minimum of seven days, to better understand how the feature affects your bill.",
+      "evidence": "When you enable soft delete, Microsoft recommends using a short retention period to better understand how the feature affects your bill. The minimum recommended retention period is seven days.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_094"
+    },
+    {
+      "question": "Can blob soft delete recover data overwritten by Put Page operations on page blobs?",
+      "answer": "No, data that is overwritten by a call to Put Page isn't recoverable. An Azure virtual machine writes to an unmanaged disk using calls to Put Page, so using soft delete to undo writes to an unmanaged disk from an Azure VM isn't a supported scenario.",
+      "evidence": "Data that is overwritten by a call to Put Page isn't recoverable. An Azure virtual machine writes to an unmanaged disk using calls to Put Page, so using soft delete to undo writes to an unmanaged disk from an Azure VM isn't a supported scenario.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_095"
+    },
+    {
+      "question": "What is the relationship between containers and blobs in terms of storage capacity limits?",
+      "answer": "A storage account can include an unlimited number of containers, and a container can store an unlimited number of blobs. Azure storage capacity limits are set at the account level, not according to access tier.",
+      "evidence": "A container organizes a set of blobs, similar to a directory in a file system. A storage account can include an unlimited number of containers, and a container can store an unlimited number of blobs.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_096"
+    },
+    {
+      "question": "What system containers are not affected by lifecycle management?",
+      "answer": "Lifecycle management doesn't affect system containers such as the $logs or $web containers.",
+      "evidence": "* Lifecycle management doesn't affect system containers such as the\u00e2\u0080\u00af`$logs`\u00e2\u0080\u00afor\u00e2\u0080\u00af`$web\u00e2\u0080\u00afcontainers`.",
+      "question_type": "factual",
+      "qa_id": "azure_blob_098"
+    },
+    {
+      "question": "What is the default Blob Storage endpoint format for a storage account?",
+      "answer": "The default endpoint for Blob Storage follows the format http://<accountname>.blob.core.windows.net. For example, if the storage account is named mystorageaccount, the endpoint is http://mystorageaccount.blob.core.windows.net.",
+      "evidence": "For example, if your storage account is named *mystorageaccount*, then the default endpoint for Blob Storage is:\n\n```\nhttp://mystorageaccount.blob.core.windows.net\n```",
+      "question_type": "causal",
+      "qa_id": "azure_blob_099"
+    },
+    {
+      "question": "Why must a container name be a valid DNS name in Azure Blob Storage?",
+      "answer": "A container name must be a valid DNS name because it forms part of the unique URI (Uniform resource identifier) used to address the container or its blobs.",
+      "evidence": "A container name must be a valid DNS name, as it forms part of the unique URI (Uniform resource identifier) used to address the container or its blobs.",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_100"
+    },
+    {
+      "question": "What characters are allowed in Azure Blob Storage container names?",
+      "answer": "Container names must start with a letter or number, and can contain only lowercase letters, numbers, and the dash (-) character.",
+      "evidence": "* Container names must start with a letter or number, and can contain only lowercase letters, numbers, and the dash (-) character.",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_101"
+    },
+    {
+      "question": "What are the length constraints for blob names in Azure Storage?",
+      "answer": "A blob name must be at least one character long and cannot be more than 1,024 characters long for blobs in Azure Storage.",
+      "evidence": "* A blob name must be at least one character long and cannot be more than 1,024 characters long, for blobs in Azure Storage.",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_102"
+    },
+    {
+      "question": "What are the naming requirements for Azure storage account names when using the Azure Developer CLI?",
+      "answer": "The storage account name must be unique across all Azure subscriptions, must be between 3 and 24 characters long, and can contain only numbers and lowercase letters.",
+      "evidence": "The name must be unique across all Azure subscriptions and must be between 3 and 24 characters long. The name can contain numbers and lowercase letters only.",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_103"
+    },
+    {
+      "question": "How does DefaultAzureCredential determine which authentication method to use?",
+      "answer": "DefaultAzureCredential supports multiple authentication methods and determines which method should be used at runtime, enabling the app to use different authentication methods in different environments such as local development versus production.",
+      "evidence": "`DefaultAzureCredential` supports multiple authentication methods and determines which method should be used at runtime. This approach enables your app to use different authentication methods in different environments (local vs.",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_104"
+    },
+    {
+      "question": "How do you navigate to the role assignment page for a storage account in the Azure portal?",
+      "answer": "On the storage account overview page, select Access control (IAM) from the left-hand menu, then on the Access control (IAM) page, select the Role assignments tab.",
+      "evidence": "2. On the storage account overview page, select **Access control (IAM)** from the left-hand menu.\n3. On the **Access control (IAM)** page, select the **Role assignments** tab.",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_105"
+    },
+    {
+      "question": "What is the first step when authorizing access to data in your storage account using DefaultAzureCredential?",
+      "answer": "You must first make sure you are authenticated with the same Microsoft Entra account you assigned the role to on your storage account.",
+      "evidence": "You can authorize access to data in your storage account using the following steps:\n\n1. Make sure you're authenticated with the same Microsoft Entra account you assigned the role to on your storage account.",
+      "question_type": "procedural",
+      "qa_id": "azure_blob_106"
+    },
+    {
+      "question": "What security risk arises if an account access key is lost or placed in an insecure location?",
+      "answer": "If an account access key is lost or accidentally placed in an insecure location, the service may become vulnerable because anyone who has the access key can authorize requests against the storage account and effectively has access to all the data.",
+      "evidence": "If your account access key is lost or accidentally placed in an insecure location, your service may become vulnerable. Anyone who has the access key is able to authorize requests against the storage account, and effectively has access to all the data.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_107"
+    },
+    {
+      "question": "Why should you implement concurrency control when multiple processes write to the same blob?",
+      "answer": "If your app requires multiple processes writing to the same blob, you should implement a strategy for concurrency control to provide a predictable experience, since the storage client library does not inherently manage concurrent writes.",
+      "evidence": "If your app requires multiple processes writing to the same blob, you should implement a strategy for concurrency control to provide a predictable experience.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_108"
+    },
+    {
+      "question": "What happens when a blob's size is less than or equal to max_single_put_size?",
+      "answer": "If the blob size is less than or equal to max_single_put_size, the blob is uploaded with a single Put Blob request.",
+      "evidence": "* `max_single_put_size` - If the blob size is less than or equal to `max_single_put_size`, the blob is uploaded with a single `Put Blob` request.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_109"
+    },
+    {
+      "question": "What is the default value of max_single_get_size and what happens when a blob exceeds it during download?",
+      "answer": "The max_single_get_size defaults to 32 MiB. If the total blob size exceeds max_single_get_size, the remainder of the blob data is downloaded in chunks.",
+      "evidence": "If the total blob size exceeds `max_single_get_size`, the remainder of the blob data is downloaded in chunks. Defaults to 32 MiB.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_110"
+    },
+    {
+      "question": "What must you do before deleting a blob that has associated snapshots?",
+      "answer": "If the blob has any associated snapshots, you must delete all of its snapshots before you can delete the blob itself.",
+      "evidence": "If the blob has any associated snapshots, you must delete all of its snapshots to delete the blob. The following example deletes a blob and its snapshots:",
+      "question_type": "causal",
+      "qa_id": "azure_blob_111"
+    },
+    {
+      "question": "What happens to the current version of a blob when it is deleted in a versioning-enabled storage account?",
+      "answer": "If a storage account is configured to enable blob versioning, deleting a blob causes the current version of the blob to become the previous version rather than being permanently removed.",
+      "evidence": "If a storage account is configured to enable blob versioning, deleting a blob causes the current version of the blob to become the previous version.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_112"
+    },
+    {
+      "question": "How do the storage and access costs of the cold tier compare to the cool tier?",
+      "answer": "The cold tier has lower storage costs and higher access costs compared to the cool tier.",
+      "evidence": "The cold tier has lower storage costs and higher access costs compared to the cool tier.\n* **Archive tier** - An offline tier optimized for storing data that is rarely accessed, and that has flexible latency requirements, on the order of hours.",
+      "question_type": "comparative",
+      "qa_id": "azure_blob_113"
+    },
+    {
+      "question": "Are Azure storage capacity limits set per access tier or per account?",
+      "answer": "Azure storage capacity limits are set at the account level, rather than according to access tier. You can choose to maximize your capacity usage in one tier, or to distribute capacity across two or more tiers.",
+      "evidence": "Azure storage capacity limits are set at the account level, rather than according to access tier. You can choose to maximize your capacity usage in one tier, or to distribute capacity across two or more tiers.",
+      "question_type": "comparative",
+      "qa_id": "azure_blob_114"
+    },
+    {
+      "question": "Can metadata and blob index tags be accessed for a blob in the archive tier?",
+      "answer": "Metadata for a blob in the archive tier is read-only, while blob index tags can be read or written. Storage costs for metadata of archived blobs are charged at cool tier rates.",
+      "evidence": "Metadata for a blob in the archive tier is read-only, while blob index tags can be read or written. Storage costs for metadata of archived blobs will be charged on cool tier rates.",
+      "question_type": "comparative",
+      "qa_id": "azure_blob_115"
+    },
+    {
+      "question": "How does the Azure portal display a blob's access tier when it is inferred from the account default?",
+      "answer": "If a blob's access tier is inferred from the default account access tier setting, the Azure portal displays the access tier as Hot (inferred), Cool (inferred), or Cold (inferred).",
+      "evidence": "If a blob's access tier is inferred from the default account access tier setting, then the Azure portal displays the access tier as **Hot (inferred)**, **Cool (inferred)**, or **Cold (inferred)**.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_116"
+    },
+    {
+      "question": "How can you avoid the early deletion penalty when changing a blob's access tier?",
+      "answer": "By copying a blob, you can avoid the early deletion penalty if the required storage interval for the source blob has not yet elapsed. However, copying a blob results in capacity charges for two blobs, the source blob and the destination blob.",
+      "evidence": "By copying a blob, you can avoid the early deletion penalty, if the required storage interval for the source blob hasn't yet elapsed. However, copying a blob results in capacity charges for two blobs, the source blob and the destination blob.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_117"
+    },
+    {
+      "question": "What happens to the early deletion charge if a blob is explicitly moved from a cool or cold tier to the archive tier?",
+      "answer": "If a blob is explicitly moved to the cool or cold tier and then moved to the archive tier, the early deletion charge applies.",
+      "evidence": "* If a blob is explicitly moved to the cool or cold tier and then moved to the archive tier, the early deletion charge applies.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_118"
+    },
+    {
+      "question": "How does a storage task differ from lifecycle management for moving data between tiers?",
+      "answer": "While lifecycle management helps you move data between tiers in a single account, a storage task can accomplish this at scale across multiple accounts.",
+      "evidence": "While lifecycle management helps you move data between tiers in a single account, you can use a *storage task* to accomplish this task at scale across multiple accounts.",
+      "question_type": "comparative",
+      "qa_id": "azure_blob_119"
+    },
+    {
+      "question": "What charges are incurred when changing the default access tier at the account level?",
+      "answer": "Changing the account access tier results in tier change charges for all blobs that do not already have a tier explicitly set.",
+      "evidence": "Changing the account access tier results in tier change charges for all blobs that don't already have a tier explicitly set.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_120"
+    },
+    {
+      "question": "How is a blob billed while it is being rehydrated from the archive tier?",
+      "answer": "While a blob is being rehydrated from the archive tier, that blob's data is billed as archived data until the data is restored and the blob's tier changes to hot, cool, or cold.",
+      "evidence": "* While a blob is being rehydrated from the archive tier, that blob's data is billed as archived data until the data is restored and the blob's tier changes to hot, cool, or cold.",
+      "question_type": "comparative",
+      "qa_id": "azure_blob_121"
+    },
+    {
+      "question": "What additional cost risk exists when changing the access tier of a versioned blob or a blob with snapshots?",
+      "answer": "Changing the access tier for a blob when versioning is enabled, or if the blob has snapshots, might result in additional charges.",
+      "evidence": "Changing the access tier for a blob when versioning is enabled, or if the blob has snapshots, might result in more charges.",
+      "question_type": "causal",
+      "qa_id": "azure_blob_122"
+    },
+    {
+      "question": "How does Azure Storage handle encryption and decryption when a client application provides an encryption key on a request?",
+      "answer": "When a client application provides an encryption key on the request, Azure Storage performs encryption and decryption transparently while reading and writing blob data.",
+      "evidence": "When a client application provides an encryption key on the request, Azure Storage performs encryption and decryption transparently while reading and writing blob data.",
+      "question_type": "comparative",
+      "qa_id": "azure_blob_123"
+    }
+  ]
+}

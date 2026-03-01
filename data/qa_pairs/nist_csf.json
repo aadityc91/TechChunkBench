@@ -1,0 +1,593 @@
+{
+  "corpus_id": "nist_csf",
+  "qa_pairs": [
+    {
+      "question": "Does the CSF prescribe specific methods for achieving cybersecurity outcomes?",
+      "answer": "No, the CSF does not prescribe how outcomes should be achieved. Instead, it links to online resources that provide additional guidance on practices and controls that could be used to achieve those outcomes. The document describes the CSF 2.0, its components, and some of the many ways it can be used.",
+      "evidence": "The CSF does not prescribe  how outcomes should be achieved. Rather, i t links to online resources that provide additional  guidance on practices and  controls that could be used to achieve those outcome s.",
+      "question_type": "factual",
+      "qa_id": "nist_csf_002"
+    },
+    {
+      "question": "What types of risks should the CSF ideally be used to address alongside cybersecurity risks?",
+      "answer": "Ideally, the CSF will be used to address cybersecurity risks alongside other risks of the enterprise, including those that are financial, privacy, supply chain, reputational, technological, or physical in nature. This holistic approach helps organizations manage their overall risk landscape.",
+      "evidence": "Ideally, the CSF will be used to address cybersecurity risks alongside other risks of the enterprise, including those that are financial, privacy, supply chain, reputational, technolo gical, or physical in nature.",
+      "question_type": "factual",
+      "qa_id": "nist_csf_006"
+    },
+    {
+      "question": "What new features does CSF 2.0 contain compared to previous versions?",
+      "answer": "CSF 2.0 contains new features that highlight the importance of governance and supply chains. It also provides Implementation Examples and Informative References available online and updated regularly, special attention to Quick Start Guides (QSGs) for smaller organizations, and the ability to create current and target state Organizational Profiles.",
+      "evidence": "Building on previous versions, CSF 2.0 contains new features tha t highlight the importance of governance  and supply chains . Special attention is paid to the QSGs to ensure that the C SF is relevant and readily accessible by smaller organizations as well as their larger counterparts.",
+      "question_type": "comparative",
+      "qa_id": "nist_csf_007"
+    },
+    {
+      "question": "What is the CSF Core?",
+      "answer": "The CSF Core is the nucleus of the CSF, a taxonomy of high-level cybersecurity outcomes that can help any organization manage its cybersecurity risks. Its components are a hierarchy of Functions, Categories, and Subcategories that detail each outcome. These outcomes can be understood by a broad audience, including executives, managers, and practitioners, regardless of their cybersecurity expertise.",
+      "evidence": "CSF Core , the nucleus of the CSF, which is a taxonomy of high- level cybersecurity outcomes that can help any organization manage its cybersecurity risk s. The CSF Core components are a hierarchy of Functions , Categor ies, and Subcategor ies that detail each outcome.  These outcomes  can be understood by a broad audience, including executives, managers, and practitioners, regardless of their cybersecurity expertise.",
+      "question_type": "definitional",
+      "qa_id": "nist_csf_009"
+    },
+    {
+      "question": "What is a CSF Organizational Profile?",
+      "answer": "A CSF Organizational Profile is a mechanism for describing an organization's current and/or target cybersecurity posture in terms of the CSF Core's outcomes. It is used to understand, tailor, assess, prioritize, and communicate the Core's outcomes by considering an organization's mission objectives, stakeholder expectations, threat landscape, and requirements.",
+      "evidence": "A CSF Organizational Profile  describ es an organization\u2019s current and/ or target cybersecurity posture in terms of the Core\u2019s outcomes . Organizational Profiles  are used to understand, tailor, assess, prioritize, and communicate the Core \u2019s outcomes by considering  an organization\u2019s mission objectives, stakeholder expectations, threat landscape, and requirements . An organization can then prioritize its actions to achieve specific outcomes and communicate that information to stakeholders.",
+      "question_type": "definitional",
+      "qa_id": "nist_csf_010"
+    },
+    {
+      "question": "What are CSF Tiers and what do they characterize?",
+      "answer": "CSF Tiers can be applied to CSF Organizational Profiles to characterize the rigor of an organization's cybersecurity risk governance and management practices. They also provide context for how an organization views cybersecurity risks and the processes in place to manage those risks.",
+      "evidence": "\u2022 CSF Tiers , which can be applied to CSF Organizational Profiles to characterize the rigor of\nan organization\u2019s  cybersecurity risk governance and management  practices . Tiers can\nalso provide context for how an organization views cybersecurity risks and the processes\nin place to manage those risks.",
+      "question_type": "definitional",
+      "qa_id": "nist_csf_011"
+    },
+    {
+      "question": "What are the four types of online resources that supplement the CSF?",
+      "answer": "The four types of online resources that supplement the CSF are: (1) Informative References that point to sources of guidance on each outcome from existing standards, guidelines, and frameworks; (2) Implementation Examples that illustrate potential ways to achieve each outcome; (3) Quick-Start Guides that give actionable guidance on using the CSF; and (4) Community Profiles and Organizational Profile Templates that help put the CSF into practice.",
+      "evidence": "\u2022 Informative References  that point to sources of guidance on each outcome  from existing\nglobal standards, guidelines, frameworks, regulations, policies, etc.\n\u2022 Implementation Examples  that illustrate potential ways to achieve each outcome\n\u2022 Quick -Start Guides  that give actionable guidance on using the CSF and its online\nresources , including transitioning from previous  CSF versions to version 2.0\n\u2022 Community Profiles  and Organizational  Profile Templates  that help an organization put\nthe CSF into practice and set priorities  for managing cybersecurity risks",
+      "question_type": "factual",
+      "qa_id": "nist_csf_012"
+    },
+    {
+      "question": "How can an organization use the CSF Core, Profiles, and Tiers?",
+      "answer": "An organization can use the CSF Core, Profiles, and Tiers with supplementary resources to understand, assess, prioritize, and communicate cybersecurity risks. Specifically, they can describe current or target cybersecurity posture and determine gaps ('Understand and Assess'), identify and prioritize actions ('Prioritize'), and provide a common language for communicating about cybersecurity risks ('Communicate').",
+      "evidence": "An organization can use the CSF  Core, Profiles, and Tiers  with the supplementary resources to understand, assess, prioritize, and communicate cybersecurity risks .",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_013"
+    },
+    {
+      "question": "What are the six CSF Core Functions?",
+      "answer": "The six CSF Core Functions are GOVERN (GV), IDENTIFY (ID), PROTECT (PR), DETECT (DE), RESPOND (RS), and RECOVER (RC). These Functions organize cybersecurity outcomes at their highest level and are depicted as a wheel because all of the Functions relate to one another, with GOVERN in the center.",
+      "evidence": "The CSF Core Functions  \u2014 G OVERN , IDENTIFY , PROTECT , DETECT , RESPOND , and RECOVER  \u2014 organize cybersecurity outcomes at their highest level.",
+      "question_type": "factual",
+      "qa_id": "nist_csf_014"
+    },
+    {
+      "question": "What is the purpose of the IDENTIFY Function in the CSF?",
+      "answer": "The IDENTIFY Function ensures the organization's current cybersecurity risks are understood. Understanding the organization's assets (such as data, hardware, software, systems, facilities, services, and people), suppliers, and related cybersecurity risks enables an organization to prioritize its efforts consistent with its risk management strategy and mission needs identified under GOVERN.",
+      "evidence": "IDENTIFY (ID) \u2014 The organization\u2019s current cybersecurity risk s are understood. Understanding the organization\u2019s  assets ( e.g., data, hardware , software, systems, facilities, services, people) , suppliers,  and related cybersecurity risks enables an organization to prioritize its efforts  consistent with its risk management strategy and the mission  needs  identified under GOVERN .",
+      "question_type": "definitional",
+      "qa_id": "nist_csf_016"
+    },
+    {
+      "question": "What is the purpose of the DETECT Function?",
+      "answer": "The DETECT Function is focused on finding and analyzing possible cybersecurity attacks and compromises. It enables the timely discovery and analysis of anomalies, indicators of compromise, and other potentially adverse events that may indicate cybersecurity attacks and incidents are occurring. This Function supports successful incident response and recovery activities.",
+      "evidence": "DETECT (DE)  \u2014 Possible cybersecurity attacks and compromises  are found and analyzed. DETECT  enables the timely discovery and analysis of anomalies, indicators of compromise, and other potentially adverse events  that may indicate that cybersecurity attacks and incidents  are occurring . This Function supports success ful incident response and recovery activities .",
+      "question_type": "definitional",
+      "qa_id": "nist_csf_018"
+    },
+    {
+      "question": "What is the purpose of the RECOVER Function?",
+      "answer": "The RECOVER Function focuses on restoring assets and operations affected by a cybersecurity incident. It supports the timely restoration of normal operations to reduce the effects of cybersecurity incidents and enable appropriate communication during recovery efforts.",
+      "evidence": "RECOVER (RC)  \u2014 Assets and operations  affected by a cybersecurity incident  are restored . RECOVER  supports the timely restoration of  normal operations to reduce the effects  of cybersecurity incidents  and enable  appropriate communication  during recovery efforts .",
+      "question_type": "definitional",
+      "qa_id": "nist_csf_020"
+    },
+    {
+      "question": "Why is the GOVERN Function placed in the center of the CSF Functions wheel?",
+      "answer": "GOVERN is placed in the center of the wheel because it informs how an organization will implement the other five Functions. Governance activities are critical for incorporating cybersecurity into an organization's broader enterprise risk management strategy, making it central to the effective operation of all other Functions.",
+      "evidence": "GOVERN  is in the center of the wheel because it informs how an organization will implement the other five Functions.",
+      "question_type": "causal",
+      "qa_id": "nist_csf_021"
+    },
+    {
+      "question": "What types of technology environments do the CSF Functions, Categories, and Subcategories apply to?",
+      "answer": "The Functions, Categories, and Subcategories apply to all ICT used by an organization, including information technology (IT), the Internet of Things (IoT), and operational technology (OT). They also apply to all types of technology environments, including cloud, mobile, and artificial intelligence systems. The CSF Core is forward-looking and intended to apply to future changes in technologies and environments.",
+      "evidence": "The Functions, Categories, and Subcategories  appl y to al l ICT  used by an organization, including information technology (IT), the Internet of Things (IoT), and operational technology (OT). They also apply to all types of technology environments, including cloud, mobile, and artificial intelligence systems.",
+      "question_type": "factual",
+      "qa_id": "nist_csf_023"
+    },
+    {
+      "question": "What is a Community Profile in the CSF?",
+      "answer": "A Community Profile is a baseline of CSF outcomes that is created and published to address shared interests and goals among a number of organizations. It is typically developed for a particular sector, subsector, technology, threat type, or other use case. An organization can use a Community Profile as the basis for its own Target Profile.",
+      "evidence": "A Community P rofile  is a baseline of CSF outcomes that is created  and published to address shared intere sts and goals  among a number of organizations . A Community Profile  is typically developed for a particular sector , subsector, technology , threat type, or other use case . An organization can use a Community Profile  as the basis for its own Target Profile .",
+      "question_type": "definitional",
+      "qa_id": "nist_csf_025"
+    },
+    {
+      "question": "What are the five steps for creating and using a CSF Organizational Profile?",
+      "answer": "The five steps are: (1) Scope the Organizational Profile by documenting high-level facts and assumptions; (2) Gather the information needed to prepare the profile, such as policies and risk management priorities; (3) Create the Organizational Profile by determining what types of information to include; (4) Analyze the gaps between the Current and Target Profiles and create an action plan; (5) Implement the action plan and update the Organizational Profile.",
+      "evidence": "information may include organizational policies, risk management priorities and\nresources, enterprise risk profiles, business impact analysis (BIA)  registers, cybersecurity\nrequirements and standards followed  by the organization, practices  and tools  (e.g.,\nprocedures and safeguards), and work roles.\n3. Create the Organizational  Profile.  Determine what types of information the Profile\nshould include for the selected CSF outcomes, and document the needed information.\nConsider the risk implications of the Current Profile to inform Target Profile planning and prioritization. Also, consider using a Community Profile as the basis for  the Target\nProfile.\n4. Analyze the gaps between the Current and Target Profiles , and create an action plan.\nConduct a gap analysis to i dentify and analyz e the differences between the Current and\nTarget  Profiles , and develop a  prioritized  action plan (e.g., r isk register, risk detail report,\nPlan of Action and Milestones [POA&M]) to  address those gaps.\n5. Implement the action plan, and update the Organizational Profile.  Follow the action\nplan to address the gaps and move the organization toward the Target  Profile . An action\nplan may have an overall deadline or be ongoing.",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_026"
+    },
+    {
+      "question": "How can an Organizational Profile be scoped?",
+      "answer": "An organization can have as many Organizational Profiles as desired, each with a different scope. For example, a Profile could address an entire organization or be scoped to an organization's financial systems, or to countering ransomware threats and handling ransomware incidents involving those financial systems.",
+      "evidence": "Organizational Profiles  as desired , each with a different scope . For example, a Profile\ncould address an entire organization or be scoped to an organization\u2019s  financial systems\nor to countering ransomware threats  and handling ransomware incidents involving\nthose  financial systems.",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_027"
+    },
+    {
+      "question": "What information is needed to prepare an Organizational Profile?",
+      "answer": "Examples of information needed include organizational policies, risk management priorities and resources, enterprise risk profiles, business impact analysis (BIA) registers, cybersecurity requirements and standards followed by the organization, practices and tools (such as procedures and safeguards), and work roles.",
+      "evidence": "Gather the information needed to prepare the Organizational Profile.  Examples of information may include organizational policies, risk management priorities and resources, enterprise risk profiles, business impact analysis (BIA)  registers, cybersecurity requirements and standards followed  by the organization, practices  and tools  (e.g., procedures and safeguards), and work roles.",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_028"
+    },
+    {
+      "question": "What is the purpose of gap analysis between Current and Target Profiles?",
+      "answer": "The purpose is to identify and analyze the differences between the Current and Target Profiles, and then develop a prioritized action plan (such as a risk register, risk detail report, or Plan of Action and Milestones) to address those gaps. This helps move the organization toward the Target Profile.",
+      "evidence": "Analyze the gaps between the Current and Target Profiles , and create an action plan. Conduct a gap analysis to i dentify and analyz e the differences between the Current and Target  Profiles , and develop a  prioritized  action plan (e.g., r isk register, risk detail report, Plan of Action and Milestones [POA&M]) to  address those gaps.",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_029"
+    },
+    {
+      "question": "When is progression to higher Tiers encouraged?",
+      "answer": "Progression to higher Tiers is encouraged when risks or mandates are greater or when a cost-benefit analysis indicates a feasible and cost-effective reduction of negative cybersecurity risks. Tiers should complement an organization's cybersecurity risk management methodology rather than replace it.",
+      "evidence": "Progression to higher Tiers is encouraged when risks or mandates are greater or when a cost -benefit analysis indicates a feasible and cost -effective reduction of negative cybersecurity risk s.",
+      "question_type": "causal",
+      "qa_id": "nist_csf_031"
+    },
+    {
+      "question": "What are Implementation Examples in the CSF?",
+      "answer": "Implementation Examples provide notional examples of concise, action-oriented steps to help achieve the outcomes of the Subcategories. Verbs used to express Examples include share, document, develop, perform, monitor, analyze, assess, and exercise. They are not a comprehensive list of all actions and do not represent a baseline of required actions to address cybersecurity risks.",
+      "evidence": "Implementation Examples  provide notional examples of concise, action- oriented steps to help achieve the outcomes of the Subcategories. Verbs used to express Examples include s hare, document, develop, perform , monitor, analyze, assess, and exercise . The Examples are not a comprehensive list of all actions that could be taken by an organization to achieve an outcome, nor do they re present a baseline of required actions to address cybersecurity risk s.",
+      "question_type": "definitional",
+      "qa_id": "nist_csf_033"
+    },
+    {
+      "question": "What are Quick-Start Guides (QSGs) in the CSF?",
+      "answer": "Quick-Start Guides are brief documents on specific CSF-related topics that are often tailored to specific audiences. They can help an organization implement the CSF because they distill specific portions of the CSF into actionable 'first steps' that an organization can consider on the path to improving their cybersecurity posture and management of associated risks.",
+      "evidence": "Quick -Start Guides (QSGs)  are brief documents on specific CSF -related topics  and are often\ntailored to specific  audiences . QSGs  can help an organization implement the CSF because they\ndistill specific portions of the CSF into actionable \u201c first steps \u201d that an organization can consider\non the path to impr oving their cybersecurity posture and management of associated risks. The",
+      "question_type": "definitional",
+      "qa_id": "nist_csf_034"
+    },
+    {
+      "question": "What role do executives play in cybersecurity risk management according to the CSF?",
+      "answer": "Executives establish cybersecurity priorities and objectives based on organizational needs and communicate expectations about risk appetite, accountability, and resources. They are also responsible for integrating cybersecurity risk management with ERM programs and lower-level risk management programs. Executives combine cybersecurity risk data with information about other types of risk from across the organization.",
+      "evidence": "As  executives establish cybersecurity priorities and objectives  based  on those  needs,  they  communicate expectations about risk appetite, accountability , and resources . Executives are also responsible for integrating cybersecurity risk management with ERM programs  and lower -level risk management programs",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_036"
+    },
+    {
+      "question": "How can the CSF be integrated with Enterprise Risk Management (ERM)?",
+      "answer": "Organizations can employ an ERM approach to balance a portfolio of risk considerations, including cybersecurity, and make informed decisions. The CSF helps organizations translate their terminology for cybersecurity and cybersecurity risk management into general risk management language that executives will understand. NIST provides several resources describing the mutual relationship between cybersecurity risk management and ERM.",
+      "evidence": "Organizations can employ an ERM approach to balance a portfolio of risk considerations, including cybersecurity , and make informed decisions . Executives  receive s ignificant input about current and planned risk activities as they integrate governance and risk strateg ies with results from previous uses of the CSF . The CSF helps organizations to translate their terminology for cybersecurity and cybersecurity risk management into general risk management language that executives will understand.",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_038"
+    },
+    {
+      "question": "What NIST resources describe the relationship between cybersecurity risk management and ERM?",
+      "answer": "NIST resources include the CSF 2.0 Enterprise Risk Management Quick-Start Guide; IR 8286, Integrating Cybersecurity and Enterprise Risk Management; IR 8286A through 8286D covering identifying, prioritizing, staging, and using business impact analysis for cybersecurity risks; and SP 800-221 and SP 800-221A covering enterprise impact of ICT risk.",
+      "evidence": "\u2022 NIST Cybersecurity Framework 2.0 \u2013 Enterprise Risk Management Quick -Start Guide\n\u2022 NIST  Interagency Report  (IR) 8286, Integrating Cybersecurity and Enterprise Risk\nManagement (ERM)\n\u2022 IR 8286A, Identifying and Estimating Cybersecurity Risk for E nterprise Risk Management\n\u2022 IR 8286B, Prioritizing Cybersecurity Risk for Enterprise Risk Management\n\u2022 IR 8286C , Staging Cybersecurity Risks for Enterprise Risk Management and Governance\nOversight\n\u2022 IR 8286D, Using Business Impact Analysis to Inform Risk Prioritization and Response",
+      "question_type": "factual",
+      "qa_id": "nist_csf_039"
+    },
+    {
+      "question": "How do cybersecurity and privacy risks overlap according to the CSF?",
+      "answer": "While cybersecurity and privacy are independent disciplines, their objectives overlap in certain circumstances. Cybersecurity risk management is essential for addressing privacy risks related to the loss of confidentiality, integrity, and availability of individuals' data (e.g., data breaches leading to identity theft). However, privacy risks can also arise by means that are unrelated to cybersecurity incidents.",
+      "evidence": "Fig. 6. Cybersecurity and privacy risk relationship\nCybersecurity risk management is essential for addressing privacy risks related to the\nloss of the confidentiality, integrity, and availability of individuals\u2019 data. For example,\ndata breaches could lead to identity theft. However, privacy risks can also arise by means that are unrelated to cybersecurity incidents .",
+      "question_type": "comparative",
+      "qa_id": "nist_csf_041"
+    },
+    {
+      "question": "How does NIST describe privacy-related problems that individuals may experience?",
+      "answer": "NIST describes privacy-related problems as ranging from dignity-type effects (such as embarrassment or stigma) to more tangible harms (such as discrimination, economic loss, or physical harm). These problems can arise when an organization processes data to achieve mission or business purposes, potentially giving rise to privacy events.",
+      "evidence": "The se problems can be expressed in various ways, but NIST describes them as ranging from dignity -type effects (e.g., embarrassment or stigma ) to more tangible harms (e.g., discrimination, economic loss, or physical harm) .",
+      "question_type": "factual",
+      "qa_id": "nist_csf_042"
+    },
+    {
+      "question": "What is Cybersecurity Supply Chain Risk Management (C-SCRM)?",
+      "answer": "Cybersecurity Supply Chain Risk Management (C-SCRM) is a systematic process for managing exposure to cybersecurity risk throughout supply chains and developing appropriate response strategies, policies, processes, and procedures. The Subcategories within the CSF C-SCRM Category (GV.SC) provide a connection between outcomes that focus purely on cybersecurity and those that focus on C-SCRM.",
+      "evidence": "management (SCRM) is critical for organizations. Cybersecurity  SCRM (C- SCRM) is a\nsystematic process  for managing exposure to cybersecurity risk throughout supply\nchain s and developing appropriate response strategies, policies, processes, and\nprocedures.  The Subcategories within the CSF C-SCRM Category [GV.SC] provide a\nconnection between outcomes that f ocus purely on cybersecurity and those that focus",
+      "question_type": "definitional",
+      "qa_id": "nist_csf_043"
+    },
+    {
+      "question": "What NIST publication provides in-depth information on C-SCRM?",
+      "answer": "SP 800-161r1 (Revision 1), Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations, provides in-depth information on C-SCRM. This publication complements the CSF's C-SCRM Category (GV.SC) with more detailed guidance.",
+      "evidence": "SP 800- 161r1  (Revision 1 ), Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations , p rovides in -depth information on C -SCRM.",
+      "question_type": "factual",
+      "qa_id": "nist_csf_044"
+    },
+    {
+      "question": "What Categories fall under the GOVERN Function?",
+      "answer": "The GOVERN Function includes six Categories: Organizational Context (GV.OC), Risk Management Strategy (GV.RM), Roles, Responsibilities, and Authorities (GV.RR), Policy (GV.PO), Oversight (GV.OV), and Cybersecurity Supply Chain Risk Management (GV.SC).",
+      "evidence": "Govern (GV)  Organizational Context  GV.OC Risk Management Strategy  GV.RM Roles , Responsibilities , and Authorities  GV.RR Policy  GV.PO Oversight  GV.OV Cybersecurity Supply Chain Risk Management  GV.SC",
+      "question_type": "factual",
+      "qa_id": "nist_csf_046"
+    },
+    {
+      "question": "What Categories fall under the IDENTIFY Function?",
+      "answer": "The IDENTIFY Function includes three Categories: Asset Management (ID.AM), Risk Assessment (ID.RA), and Improvement (ID.IM). These Categories collectively help an organization understand its current cybersecurity risks by managing assets, assessing risks, and identifying improvement opportunities.",
+      "evidence": "Identify (ID)  Asset Management  ID.AM Risk Assessment  ID.RA Improvement  ID.IM",
+      "question_type": "factual",
+      "qa_id": "nist_csf_047"
+    },
+    {
+      "question": "What Categories fall under the PROTECT Function?",
+      "answer": "The PROTECT Function includes five Categories: Identity Management, Authentication, and Access Control (PR.AA); Awareness and Training (PR.AT); Data Security (PR.DS); Platform Security (PR.PS); and Technology Infrastructure Resilience (PR.IR).",
+      "evidence": "Protect (PR)  Identity Management, Authentication, and Access Control  PR.AA Awareness and Training  PR.AT Data Security  PR.DS Platform Security  PR.PS Technology Infrastructure Resilience  PR.IR",
+      "question_type": "factual",
+      "qa_id": "nist_csf_048"
+    },
+    {
+      "question": "What Categories fall under the RESPOND Function?",
+      "answer": "The RESPOND Function includes four Categories: Incident Management (RS.MA), Incident Analysis (RS.AN), Incident Response Reporting and Communication (RS.CO), and Incident Mitigation (RS.MI). These Categories cover managing, analyzing, communicating about, and mitigating cybersecurity incidents.",
+      "evidence": "Respond (RS)  Incident Management  RS.MA Incident Analysis  RS.AN Incident Response Reporting and Communication  RS.CO Incident Mitigation  RS.MI",
+      "question_type": "factual",
+      "qa_id": "nist_csf_050"
+    },
+    {
+      "question": "What Categories fall under the RECOVER Function?",
+      "answer": "The RECOVER Function includes two Categories: Incident Recovery Plan Execution (RC.RP), which covers restoration activities to ensure operational availability, and Incident Recovery Communication (RC.CO), which covers coordinating restoration activities with internal and external parties.",
+      "evidence": "Recover (RC)  Incident Recovery Plan Execution  RC.RP Incident Recovery Communication  RC.CO",
+      "question_type": "factual",
+      "qa_id": "nist_csf_051"
+    },
+    {
+      "question": "What does the Organizational Context Category (GV.OC) address?",
+      "answer": "The Organizational Context Category addresses the circumstances surrounding the organization's cybersecurity risk management decisions, including mission, stakeholder expectations, dependencies, and legal, regulatory, and contractual requirements. It ensures these factors are understood and inform cybersecurity risk management.",
+      "evidence": "Organizational Context (GV.OC): The circumstances \u2014 mission, stakeholder expectations, dependencies, and legal, regulatory, and contractual requirements \u2014 surrounding the organization\u2019s cybersecurity risk management decisions are understood",
+      "question_type": "factual",
+      "qa_id": "nist_csf_052"
+    },
+    {
+      "question": "What does subcategory GV.OC-03 require regarding legal and regulatory requirements?",
+      "answer": "GV.OC-03 requires that legal, regulatory, and contractual requirements regarding cybersecurity, including privacy and civil liberties obligations, are understood and managed. This ensures organizations are aware of and compliant with their legal obligations related to cybersecurity.",
+      "evidence": "GV.OC -03: Legal, regulatory, and contractual requirements regarding cybersecurity \u2014 including privacy and civil liberties obligations \u2014 are understood and managed",
+      "question_type": "factual",
+      "qa_id": "nist_csf_053"
+    },
+    {
+      "question": "What does the Risk Management Strategy Category (GV.RM) establish?",
+      "answer": "The Risk Management Strategy Category establishes the organization's priorities, constraints, risk tolerance and appetite statements, and assumptions. These are communicated and used to support operational risk decisions, ensuring that cybersecurity risk management aligns with the organization's strategic objectives.",
+      "evidence": "Risk Management Strategy (GV.RM): The organization\u2019s priorities, constraints, risk tolerance and appetite statements,  and assumptions are established, communicated, and used to support operational risk decisions",
+      "question_type": "factual",
+      "qa_id": "nist_csf_054"
+    },
+    {
+      "question": "What does GV.RM-07 address regarding strategic opportunities?",
+      "answer": "GV.RM-07 addresses that strategic opportunities (i.e., positive risks) are characterized and are included in organizational cybersecurity risk discussions. This recognizes that risk management is not solely about negative outcomes but also about identifying and capitalizing on beneficial opportunities.",
+      "evidence": "GV.RM -07: Strategic opportunities (i.e., positive risks) are characterized  and are included in organizational cybersecurity risk discussions",
+      "question_type": "factual",
+      "qa_id": "nist_csf_055"
+    },
+    {
+      "question": "What does the Roles, Responsibilities, and Authorities Category (GV.RR) establish?",
+      "answer": "The GV.RR Category establishes and communicates cybersecurity roles, responsibilities, and authorities to foster accountability, performance assessment, and continuous improvement. It includes requirements for organizational leadership accountability, adequate resource allocation, and inclusion of cybersecurity in human resources practices.",
+      "evidence": "Roles, Responsibilities, and Authorities (GV.RR): Cybersecurity roles, responsibilities, and authorities to foster accountability, performance assessment, and continuous improvement are established and communicated",
+      "question_type": "factual",
+      "qa_id": "nist_csf_056"
+    },
+    {
+      "question": "What does the Policy Category (GV.PO) require?",
+      "answer": "The Policy Category requires that organizational cybersecurity policy is established, communicated, and enforced. It includes two subcategories: one for establishing policy based on organizational context, cybersecurity strategy, and priorities; and another for reviewing and updating policy to reflect changes in requirements, threats, technology, and organizational mission.",
+      "evidence": "Policy  (GV.PO): Organizational cybersecurity polic y is established, communicated, and enforced",
+      "question_type": "factual",
+      "qa_id": "nist_csf_058"
+    },
+    {
+      "question": "What does the Oversight Category (GV.OV) focus on?",
+      "answer": "The Oversight Category focuses on using results of organization-wide cybersecurity risk management activities and performance to inform, improve, and adjust the risk management strategy. It includes subcategories for reviewing risk management strategy outcomes, ensuring coverage of organizational requirements and risks, and evaluating organizational cybersecurity risk management performance.",
+      "evidence": "Oversight (GV.OV): Results of organization- wide cybersecurity risk management activities and performance are used to i nform, improve, and adjust the risk management strategy",
+      "question_type": "factual",
+      "qa_id": "nist_csf_060"
+    },
+    {
+      "question": "What does GV.SC-06 require before entering into supplier relationships?",
+      "answer": "GV.SC-06 requires that planning and due diligence are performed to reduce risks before entering into formal supplier or other third-party relationships. This proactive approach helps organizations identify and mitigate potential supply chain cybersecurity risks before they become embedded in formal agreements.",
+      "evidence": "GV.SC -06: Planning and due diligence are performed to reduce risks before entering into formal supplier or other third -party relationships",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_062"
+    },
+    {
+      "question": "What does GV.SC-10 require regarding the end of partnerships or service agreements?",
+      "answer": "GV.SC-10 requires that cybersecurity supply chain risk management plans include provisions for activities that occur after the conclusion of a partnership or service agreement. This ensures that cybersecurity considerations extend beyond the active period of a relationship.",
+      "evidence": "GV.SC -10: Cybersecurity supply chain risk management plan s include provisions for activities that occur after the conclusion of a partnership or service agreement",
+      "question_type": "factual",
+      "qa_id": "nist_csf_063"
+    },
+    {
+      "question": "What types of inventories does Asset Management require organizations to maintain?",
+      "answer": "Asset Management requires organizations to maintain inventories of hardware managed by the organization (ID.AM-01), software, services, and systems (ID.AM-02), representations of authorized network communication and data flows (ID.AM-03), services provided by suppliers (ID.AM-04), and data and corresponding metadata for designated data types (ID.AM-07).",
+      "evidence": "o ID.AM -01: Inventories of hardware managed by the organization are maintained\no ID.AM -02: Inventories of software, services, and systems managed by the organization\nare maintained\no ID.AM -03: Representations of the organization\u2019s authorized network communication\nand internal and external network data flows are maintained\no ID.AM -04: Inventories of services provided by suppliers are maintained",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_065"
+    },
+    {
+      "question": "How should assets be prioritized according to ID.AM-05?",
+      "answer": "According to ID.AM-05, assets are prioritized based on classification, criticality, resources, and impact on the mission. This prioritization helps organizations focus their cybersecurity efforts on the most important assets first.",
+      "evidence": "ID.AM -05: Assets are prioritized based on classification, criticality, resources, and impact on the mission",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_066"
+    },
+    {
+      "question": "What does the Risk Assessment Category (ID.RA) address?",
+      "answer": "The Risk Assessment Category addresses understanding the cybersecurity risk to the organization, assets, and individuals. It includes subcategories for identifying vulnerabilities, receiving cyber threat intelligence, identifying threats, assessing impacts and likelihoods, understanding inherent risk, choosing risk responses, managing changes, handling vulnerability disclosures, and assessing hardware and software integrity.",
+      "evidence": "sk Assessment (ID.RA): T he cybersecurity risk to the organization, assets, and individuals is understood by the organization",
+      "question_type": "factual",
+      "qa_id": "nist_csf_067"
+    },
+    {
+      "question": "What does ID.RA-05 require regarding threats and vulnerabilities?",
+      "answer": "ID.RA-05 requires that threats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and inform risk response prioritization. This ensures that organizations have a comprehensive understanding of their risk landscape to make informed decisions about where to focus their cybersecurity efforts.",
+      "evidence": "ID.RA -05: Threats, vulne rabilities, likelihoods, and impacts are used to understand inherent  risk and inform risk response prioritization",
+      "question_type": "factual",
+      "qa_id": "nist_csf_068"
+    },
+    {
+      "question": "What does ID.RA-09 require regarding hardware and software?",
+      "answer": "ID.RA-09 requires that the authenticity and integrity of hardware and software are assessed prior to acquisition and use. This helps prevent the introduction of compromised or counterfeit components into the organization's technology infrastructure.",
+      "evidence": "ID.RA -09: The authenticity and integrity of hardware and software are assessed prior to acquisition and use",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_069"
+    },
+    {
+      "question": "What does the Improvement Category (ID.IM) cover?",
+      "answer": "The Improvement Category covers identifying improvements to organizational cybersecurity risk management processes, procedures, and activities across all CSF Functions. Improvements are identified from evaluations, security tests and exercises (including those done with suppliers), execution of operational processes, and through established incident response plans.",
+      "evidence": "Im provement (ID.IM): Improvements to organizational cybersecurity risk management processes, procedures and activities are identified across all CSF  Functions",
+      "question_type": "factual",
+      "qa_id": "nist_csf_070"
+    },
+    {
+      "question": "What does the Identity Management, Authentication, and Access Control Category (PR.AA) address?",
+      "answer": "The PR.AA Category addresses limiting access to physical and logical assets to authorized users, services, and hardware, managed commensurate with the assessed risk of unauthorized access. It covers managing identities and credentials, identity proofing, authentication, identity assertions, access permissions with least privilege and separation of duties, and physical access management.",
+      "evidence": "Identity Management, Authentication, and Access Control (PR.AA): Access to physical and logical assets is limited to authorized users, services, and hardware and managed commensurate with the assessed risk of unauthorized access",
+      "question_type": "factual",
+      "qa_id": "nist_csf_071"
+    },
+    {
+      "question": "What principles should access permissions incorporate according to PR.AA-05?",
+      "answer": "According to PR.AA-05, access permissions, entitlements, and authorizations should be defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties. These principles help minimize the potential damage from unauthorized access or insider threats.",
+      "evidence": "PR.AA -05: Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of le ast privilege and separation of duties",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_072"
+    },
+    {
+      "question": "What three states of data does the Data Security Category (PR.DS) protect?",
+      "answer": "The Data Security Category protects data in three states: data-at-rest (PR.DS-01), data-in-transit (PR.DS-02), and data-in-use (PR.DS-10). For each state, the confidentiality, integrity, and availability of the data must be protected. Additionally, PR.DS-11 requires that backups of data are created, protected, maintained, and tested.",
+      "evidence": "o P R.DS- 01: The confidentiality, integrity, and availability of data- at-rest are protected\no PR.DS- 02: The confidentiality, integrity, and availability of data- in-transit are protected\no PR.DS- 10: The co nfidentiality, integrity, and availability of data- in-use are protected",
+      "question_type": "factual",
+      "qa_id": "nist_csf_074"
+    },
+    {
+      "question": "What does PR.PS-06 require regarding software development?",
+      "answer": "PR.PS-06 requires that secure software development practices are integrated, and their performance is monitored throughout the software development life cycle. This ensures that security is built into software from the beginning rather than being added as an afterthought.",
+      "evidence": "PR.PS -06: Secure software development practices are integrated , and their performance is monitored throughout  the software development life cycle",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_076"
+    },
+    {
+      "question": "What does the Adverse Event Analysis Category (DE.AE) require?",
+      "answer": "The DE.AE Category requires that anomalies, indicators of compromise, and other potentially adverse events are analyzed to characterize the events and detect cybersecurity incidents. It includes analyzing adverse events, correlating information from multiple sources, understanding impact and scope, providing information to authorized staff, integrating threat intelligence, and declaring incidents when criteria are met.",
+      "evidence": "A dverse Event Analysis (DE.AE): Anomalies, indicators of compromise, and other potentially adverse events are analyzed to characterize the events and detect cybersecurity incidents",
+      "question_type": "factual",
+      "qa_id": "nist_csf_079"
+    },
+    {
+      "question": "When should incidents be declared according to DE.AE-08?",
+      "answer": "According to DE.AE-08, incidents are declared when adverse events meet the defined incident criteria. This means organizations must have pre-established criteria for what constitutes an incident, and adverse events are formally declared as incidents only when they meet those criteria.",
+      "evidence": "DE.AE- 08: Incidents are declared when adverse events meet the defined incident criteria",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_080"
+    },
+    {
+      "question": "What does the Incident Management Category (RS.MA) cover?",
+      "answer": "The Incident Management Category covers managing responses to detected cybersecurity incidents. It includes executing the incident response plan in coordination with relevant third parties, triaging and validating incident reports, categorizing and prioritizing incidents, escalating incidents as needed, and applying criteria for initiating incident recovery.",
+      "evidence": "Incident Management (RS.MA): Responses to det ected cybersecurity incidents are managed",
+      "question_type": "factual",
+      "qa_id": "nist_csf_081"
+    },
+    {
+      "question": "What does RS.MA-01 require when an incident is declared?",
+      "answer": "RS.MA-01 requires that the incident response plan is executed in coordination with relevant third parties once an incident is declared. This ensures a coordinated and planned response rather than an ad hoc reaction to cybersecurity incidents.",
+      "evidence": "RS.MA -01: The incident response plan is executed in coordination with relevant third parties once an incident is declared",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_082"
+    },
+    {
+      "question": "What does the Incident Analysis Category (RS.AN) focus on?",
+      "answer": "The Incident Analysis Category focuses on conducting investigations to ensure effective response and support forensics and recovery activities. It includes analyzing what has taken place and root causes, recording actions during investigations while preserving integrity and provenance, collecting incident data and metadata, and estimating and validating incident magnitude.",
+      "evidence": "Inc ident Analysis (RS.AN): Investigations are conducted to ensure effective response and support forensics and recovery activities",
+      "question_type": "factual",
+      "qa_id": "nist_csf_083"
+    },
+    {
+      "question": "What does RS.AN-03 require during an incident investigation?",
+      "answer": "RS.AN-03 requires that analysis is performed to establish what has taken place during an incident and the root cause of the incident. Understanding both the sequence of events and the root cause is essential for effective response and preventing future similar incidents.",
+      "evidence": "RS. AN -03: Analysis is performed to establish  what has taken place during an incident and the root cause of the incident",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_084"
+    },
+    {
+      "question": "What does the Incident Response Reporting and Communication Category (RS.CO) require?",
+      "answer": "The RS.CO Category requires that response activities are coordinated with internal and external stakeholders as required by laws, regulations, or policies. It includes notifying internal and external stakeholders of incidents and sharing information with designated stakeholders.",
+      "evidence": "Inc ident Response Reporting and Communication (RS.CO): Response activities are coordinated with internal and external stakeholders as required by laws, regulations, or policies",
+      "question_type": "factual",
+      "qa_id": "nist_csf_085"
+    },
+    {
+      "question": "What are the two subcategories of the Incident Mitigation Category (RS.MI)?",
+      "answer": "The Incident Mitigation Category has two subcategories: RS.MI-01 requires that incidents are contained, and RS.MI-02 requires that incidents are eradicated. These two activities form the core of incident mitigation, first stopping the spread and then eliminating the threat.",
+      "evidence": "o RS. MI -01: Incidents are contained\no RS.MI -02: Incidents are eradicated",
+      "question_type": "factual",
+      "qa_id": "nist_csf_086"
+    },
+    {
+      "question": "What does the Incident Recovery Plan Execution Category (RC.RP) cover?",
+      "answer": "The RC.RP Category covers restoration activities to ensure operational availability of systems and services affected by cybersecurity incidents. It includes executing the recovery portion of the incident response plan, selecting and prioritizing recovery actions, verifying backup integrity, considering critical mission functions for post-incident norms, verifying restored asset integrity, and declaring end of incident recovery.",
+      "evidence": "Incident Recovery Plan Execution (RC.RP):  Restoration activities are performed to ensure operational availability of systems and services affected by cybersecurity incidents",
+      "question_type": "factual",
+      "qa_id": "nist_csf_087"
+    },
+    {
+      "question": "Why must the integrity of backups be verified before using them for restoration according to RC.RP-03?",
+      "answer": "RC.RP-03 requires that the integrity of backups and other restoration assets is verified before using them for restoration. This is essential because compromised backups could reintroduce the same vulnerabilities or threats that caused the incident, potentially undermining the entire recovery effort.",
+      "evidence": "RC.RP -03: The integrity of backups and other restoration assets is verified before using them for restoration",
+      "question_type": "causal",
+      "qa_id": "nist_csf_088"
+    },
+    {
+      "question": "What must be confirmed at the end of recovery according to RC.RP-05?",
+      "answer": "According to RC.RP-05, the integrity of restored assets must be verified, systems and services must be restored, and normal operating status must be confirmed. This ensures that the organization has fully recovered from the incident and can resume normal operations with confidence.",
+      "evidence": "RC.RP -05: The integrity of restored assets is verified, systems and services are restored, and normal operating status is confirmed",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_089"
+    },
+    {
+      "question": "What does the Incident Recovery Communication Category (RC.CO) require?",
+      "answer": "The RC.CO Category requires that restoration activities are coordinated with internal and external parties. It includes communicating recovery activities and progress to designated stakeholders (RC.CO-03) and sharing public updates on incident recovery using approved methods and messaging (RC.CO-04).",
+      "evidence": "\u2022 Inc ident Recovery Communication (RC.CO):  Restoration activities are coordinated with\ninternal and external parties\no R C.CO -03: Recovery activities and progress in restoring operational capabilities are\ncommunicated to designated internal and external stakeholders\no RC.CO -04: Public updates on incident recovery are shared using approved methods and\nmessaging",
+      "question_type": "factual",
+      "qa_id": "nist_csf_090"
+    },
+    {
+      "question": "What characterizes Tier 1 (Partial) in terms of cybersecurity risk governance?",
+      "answer": "At Tier 1 (Partial), the application of the organizational cybersecurity risk strategy is managed in an ad hoc manner, and prioritization is ad hoc and not formally based on objectives or threat environment. There is limited awareness of cybersecurity risks at the organizational level, and the organization implements cybersecurity risk management on an irregular, case-by-case basis.",
+      "evidence": "Tier 1: Partial   Application of the organizational cybersecurity risk strategy is managed in an ad hoc manner. Prioritization is ad hoc and not formally based on objectives or threat environment.   There is limited awareness of cybersecurity risk s at the organizational level. The organization implements cybersecurity risk management on an irregular, case -by-case basis.",
+      "question_type": "factual",
+      "qa_id": "nist_csf_091"
+    },
+    {
+      "question": "How does Tier 2 (Risk Informed) differ from Tier 1 (Partial) in terms of risk management?",
+      "answer": "At Tier 2, risk management practices are approved by management but may not be established as organization-wide policy, and prioritization is directly informed by organizational risk objectives and threat environment. Unlike Tier 1, there is awareness of cybersecurity risks at the organizational level, though an organization-wide approach has not been established. The organization is aware of supply chain risks but does not act consistently.",
+      "evidence": "Tier 2: Risk Informed   Risk management practices are approved by management but may not be established as organization - wide policy. The p rioritization of cybersecurity activities and protection needs is directly informed by organizational risk objectives, the threat environment, or business/mission requirements.    There is an awareness of cybersecurity risk s at the organizational level, but an organization -wide approach to managing cybersecurity risk s has not been established.",
+      "question_type": "comparative",
+      "qa_id": "nist_csf_092"
+    },
+    {
+      "question": "What characterizes Tier 3 (Repeatable) in terms of risk management practices?",
+      "answer": "At Tier 3 (Repeatable), the organization's risk management practices are formally approved and expressed as policy. Risk-informed policies, processes, and procedures are defined, implemented as intended, and reviewed. Organizational cybersecurity practices are regularly updated based on changes in business/mission requirements, threats, and technological landscape. There is an organization-wide approach to managing cybersecurity risks.",
+      "evidence": "Tier 3:\nRepeatable  The organization\u2019s risk management\npractices are formally approved and expressed as policy.\nRisk-informed policies, processes, and\nprocedures are defined, implemented as intended, and reviewed.\nOrganizational cybersecurity practices are regularly updated based on the\napplication of risk management\nprocesses to changes in business/mission requirements ,\nthreat s, and technolog ical landscape.   There is an organization -wide approach to manag ing",
+      "question_type": "factual",
+      "qa_id": "nist_csf_093"
+    },
+    {
+      "question": "What distinguishes Tier 4 (Adaptive) from the other Tiers?",
+      "answer": "At Tier 4 (Adaptive), there is an organization-wide approach using risk-informed policies and procedures, and the relationship between cybersecurity risks and organizational objectives is clearly understood. Executives monitor cybersecurity risks in the same context as financial risks. Cybersecurity risk management is part of the organizational culture, and the organization can quickly account for changes. It uses real-time or near real-time information to act upon supply chain risks.",
+      "evidence": "Tier 4: Adaptive   There is an organization -wide approach to managing cybersecurity risks that uses risk -informed polici es, processes, and procedures to address potential cybersecurity events. The relationship between cybersecurity risks and organizational objectives is clearly understood and considered when making decisions. E xecutives monitor cybersecurity risk s in the same context as financial and other organizational risks.",
+      "question_type": "comparative",
+      "qa_id": "nist_csf_094"
+    },
+    {
+      "question": "How does the organization at Tier 4 handle supply chain cybersecurity risks?",
+      "answer": "At Tier 4 (Adaptive), the organization uses real-time or near real-time information to understand and consistently act upon the cybersecurity risks associated with its suppliers and the products and services it acquires and uses. Cybersecurity information is constantly shared throughout the organization and with authorized third parties.",
+      "evidence": "The organization uses real -time or near real -time information to understand and consistently act upon the cybersecurity risks associated with its suppliers and the products and services it acquires  and uses. Cybersecurity information is constantly shared throughout the organization and with authorized thir d parties.",
+      "question_type": "factual",
+      "qa_id": "nist_csf_095"
+    },
+    {
+      "question": "How do Tier 3 organizations handle supply chain cybersecurity risks compared to Tier 1 organizations?",
+      "answer": "At Tier 3, the organization risk strategy is informed by supply chain cybersecurity risks, and personnel formally act upon those risks through mechanisms such as written agreements, governance structures, and policy implementation and monitoring. In contrast, at Tier 1, the organization is generally unaware of the cybersecurity risks associated with its suppliers and the products and services it acquires and uses.",
+      "evidence": "The organization risk strategy is informed by the cybersecurity risks associ ated with its suppliers and the products and services it acquires  and uses.  Personnel formally act upon those risks through mechanisms such as written agreements to communicate baseline requirements, governance structures (e.g., risk councils), and policy implementation and monitoring.",
+      "question_type": "comparative",
+      "qa_id": "nist_csf_096"
+    },
+    {
+      "question": "What ways can an organization choose to handle cybersecurity risks?",
+      "answer": "An organization may choose to handle risk in one or more ways, including mitigating, transferring, avoiding, or accepting negative risks, and realizing, sharing, enhancing, or accepting positive risks, depending on the potential impacts and likelihoods. The organization can use the CSF both internally to manage its cybersecurity capabilities and externally to communicate with third parties.",
+      "evidence": "An o rganization  may  choose  to handle  risk in one or more ways  \u2014 including  mitigating , transferring,  avoiding,  or accepting  negative risks and realizing, sharing, enhancing, or accepting positive risks  \u2014 depending  on the potential  impact s and likelihoods .",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_097"
+    },
+    {
+      "question": "Why are the Subcategory numbers in the CSF Core not sequential?",
+      "answer": "The numbering of the Subcategories is intentionally not sequential; gaps in numbering indicate CSF 1.1 Subcategories that were relocated in CSF 2.0. This preserves backward traceability to the previous version while reflecting the restructuring that occurred in the update.",
+      "evidence": "The numbering of the Subcategories is intentionally not sequential; gaps in numbering indicate CSF 1.1 Subcategories that were relocated in CSF 2.0.",
+      "question_type": "causal",
+      "qa_id": "nist_csf_098"
+    },
+    {
+      "question": "Why can cybersecurity risk management activities also benefit an organization beyond just preventing negative events?",
+      "answer": "Actions to reduce cybersecurity risk might benefit an organization in other ways, like increasing revenue. For example, an organization could first offer excess facility space to a commercial hosting provider, then move a major financial system from its in-house data center to the hosting provider to reduce cybersecurity risks, achieving both risk reduction and business benefits.",
+      "evidence": "While many cybersecurity risk management activities focus on pre venting  negative events from occurring , they  may also support taking advantage of positive opportunities . Actions to reduce cybersecurity risk might benefit an  organization in other ways, like  increasing revenue",
+      "question_type": "causal",
+      "qa_id": "nist_csf_099"
+    },
+    {
+      "question": "How does the GOVERN Function support risk communication with executives?",
+      "answer": "The GOVERN Function supports organizational risk communication with executives through discussions involving strategy, particularly how cybersecurity-related uncertainties might affect organizational objectives. These governance discussions support dialogue and agreement about risk management strategies, roles, responsibilities, authorities, policies, and oversight. Executives establish priorities and communicate expectations about risk appetite, accountability, and resources.",
+      "evidence": "The GOVERN  Function supports organizational risk communication with  executives . Executives\u2019\ndiscussion s involve strategy,  particularly  how  cybersecurity- related uncertainties  might  affect\nthe achievement of organizationa l objectives.  These governance discussions support dialogue\nand agreement about risk management strateg ies (including cybersecurity supply chain risk);\nroles , responsibilities, and authorities; policies; and oversight. As  executives establish",
+      "question_type": "causal",
+      "qa_id": "nist_csf_100"
+    },
+    {
+      "question": "How should the CSF and its supplementary resources from NIST and others be collectively viewed according to the framework guidance?",
+      "answer": "The CSF and the supplementary resources from NIST and others should be viewed as a 'CSF portfolio' to help manage and reduce risks. This portfolio approach recognizes that the CSF website and its associated resources work together as a comprehensive set of tools.",
+      "evidence": "the NIST CSF website , the CSF and these supplementary resources from NIST and others should\nbe viewed as a \u201cCSF portfolio\u201d to help manage and reduce risks.",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_101"
+    },
+    {
+      "question": "What does the CSF enable organizations to do in terms of assessing their security posture and implementing controls?",
+      "answer": "The CSF enables organizations to compare where they are versus where they want or need to be, and allows them to implement and assess security controls more quickly.",
+      "evidence": "organizations to compare where they are versus where they want or need to be and allows them to implement and assess security controls  more quickly .",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_102"
+    },
+    {
+      "question": "Why does the NIST CSF characterize cybersecurity risk management as a continuous process rather than a one-time activity?",
+      "answer": "Cybersecurity risks are expanding constantly, and therefore managing those risks must be a continuous process. This is true regardless of whether an organization is just beginning to confront its cybersecurity challenges or has a mature program already in place.",
+      "evidence": "Cybersecurity risks are expanding constantly, and managing those risks must be  a continuous\nprocess. Th is is true regardless of whether an organization is just beginning to confront its\ncybersecurity challenges or whether it has been active for many years with a sophisticated,\nwell- resourced cybersecurity team.",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_103"
+    },
+    {
+      "question": "What are the two types of profiles that an Organizational Profile may include, and what does a Current Profile specify?",
+      "answer": "Every Organizational Profile includes one or both of the following: a Current Profile and a Target Profile. A Current Profile specifies the Core outcomes that an organization is currently achieving.",
+      "evidence": "Every Organizational Profile includes one or both of the following :\n1. A Cur\nrent Profile  specifies the Core outcomes  that an organization is currently achieving\n(or attempting to achieve) and characterizes how or to what extent each outcome is\nbeing achieved.\n2. A Target  Profile  specifies the desired outcomes  that an organization has selected and\nprioritized for achieving its cybersecurity risk manageme nt objectives.",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_104"
+    },
+    {
+      "question": "What does subcategory RS.AN-06 require regarding actions taken during a cybersecurity incident investigation?",
+      "answer": "RS.AN-06 requires that actions performed during an investigation are recorded, and that the records' integrity and provenance are preserved. This supports effective forensics and accountability during incident response.",
+      "evidence": "RS.AN -06: Actions performed during an investigation are recorded , and the records\u2019\nintegrity and provenance are preserved",
+      "question_type": "causal",
+      "qa_id": "nist_csf_105"
+    },
+    {
+      "question": "What does subcategory PR.AA-01 require regarding identities and credentials in an organization?",
+      "answer": "PR.AA-01 requires that identities and credentials for authorized users, services, and hardware are managed by the organization. Access controls must be commensurate with the assessed risk of unauthorized access.",
+      "evidence": "PR.AA): Access to physical and\nlogical assets is limited to authorized users, services, and hardware and managed\ncommensurate with the assessed risk of unauthorized access\no PR.AA -01: Identities and credentials for authorized users, services, and hardware are\nmanaged by the organization",
+      "question_type": "causal",
+      "qa_id": "nist_csf_106"
+    },
+    {
+      "question": "How does an organization at the Adaptive tier adjust its cybersecurity practices according to the CSF Tiers?",
+      "answer": "At the Adaptive tier, the organization adapts its cybersecurity practices based on previous and current cybersecurity activities. This reflects the tier's approach to how risk is approached and communicated, incorporating lessons learned into ongoing risk management.",
+      "evidence": "The organization adapts its cybersecurity practices\nbased on previous and current cybersecurity activities,\nincluding lessons learned and predictive indicators.",
+      "question_type": "causal",
+      "qa_id": "nist_csf_107"
+    },
+    {
+      "question": "What are the first three major sections listed in the NIST CSF 2.0 document's table of contents?",
+      "answer": "The first three major sections are: (1) Cybersecurity Framework (CSF) Overview, (2) Introduction to the CSF Core, and (3) Introduction to CSF Profiles and Tiers.",
+      "evidence": "iii Table of Contents\n1. Cybersecurity Framewor k (CSF) Overview  .......................................................................................1\n2. Introduction to the CSF Core  ...........................................................................................................3\n3. Introduction to CSF Profiles and Tiers  .",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_108"
+    },
+    {
+      "question": "What section of the NIST CSF 2.0 document covers how to improve cybersecurity risk communication within an organization?",
+      "answer": "Section 5 of the NIST CSF 2.0, titled 'Improving Cybersecurity Risk Communication and Integration,' addresses how organizations can improve their cybersecurity risk communication. This section appears after Section 4, which introduces the online resources that supplement the CSF.",
+      "evidence": "6\n4. Introducti on to Online Resources That Supplement the CSF  ............................................................9\n5. Improving Cybersecurity Risk Communication and Integration  .",
+      "question_type": "procedural",
+      "qa_id": "nist_csf_109"
+    }
+  ]
+}

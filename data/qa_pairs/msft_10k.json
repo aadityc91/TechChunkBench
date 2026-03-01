@@ -1,0 +1,712 @@
+{
+  "corpus_id": "msft_10k",
+  "qa_pairs": [
+    {
+      "question": "When was Microsoft founded and what does it develop?",
+      "answer": "Microsoft was founded in 1975. The company develops and supports software, services, devices, and solutions that deliver new value for customers and help people and businesses realize their full potential.",
+      "evidence": "Founded in 1975, we develop and support software, services, devices, and solutions that deliver new value for customers and help people and businesses realize their full potential.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_002"
+    },
+    {
+      "question": "What is Copilot for Microsoft 365?",
+      "answer": "Copilot for Microsoft 365 combines AI with business data in the Microsoft Graph and Microsoft 365 applications. It provides AI-powered assistance integrated into the productivity suite that organizations already use.",
+      "evidence": "Copilot for Microsoft 365 combines AI with business data in the Microsoft Graph and Microsoft 365 applications.",
+      "question_type": "definitional",
+      "qa_id": "msft_10k_005"
+    },
+    {
+      "question": "What custom AI hardware has Microsoft introduced for cloud infrastructure?",
+      "answer": "Microsoft has introduced purpose-built cloud infrastructure for AI workloads including a custom AI accelerator called Azure Maia and a custom in-house central processing unit called Azure Cobalt. These complement the company's supercomputing power for AI at scale.",
+      "evidence": "We have introduced purpose-built cloud infrastructure for AI workloads including a custom AI accelerator, Azure Maia, and a custom in-house central processing unit, Azure Cobalt.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_007"
+    },
+    {
+      "question": "What is Microsoft's partnership with OpenAI and what role does Azure play?",
+      "answer": "Microsoft has a long-term partnership with OpenAI, a leading AI research and deployment company. Microsoft deploys OpenAI's models across its consumer and enterprise products. As OpenAI's exclusive cloud provider, Azure powers all of OpenAI's workloads, and Microsoft has increased investments in specialized supercomputing systems to accelerate OpenAI's research.",
+      "evidence": "We have a long-term partnership with OpenAI, a leading AI research and deployment company. We deploy OpenAI\u2019s models across our consumer and enterprise products. As OpenAI\u2019s exclusive cloud provider, Azure powers all of OpenAI's workloads. We have also increased our investments in the development and deployment of specialized supercomputing systems to accelerate OpenAI\u2019s research.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_008"
+    },
+    {
+      "question": "What is GitHub Copilot and what does it do for developers?",
+      "answer": "GitHub Copilot is at the forefront of AI-powered software development, giving developers a tool to write code easier and faster. It is part of Microsoft's developer tool chain available for everyone, regardless of technical experience, across all platforms.",
+      "evidence": "GitHub Copilot is at the forefront of AI-powered software development, giving developers a tool to write code easier and faster. From GitHub to Visual Studio, we provide a developer tool chain for everyone, no matter the technical experience, across all platforms.",
+      "question_type": "definitional",
+      "qa_id": "msft_10k_009"
+    },
+    {
+      "question": "What is Microsoft Fabric?",
+      "answer": "Microsoft Fabric is an end-to-end, unified analytics platform that brings together all the data and analytics tools that organizations need. It is part of the Microsoft Intelligent Data Platform, which fully integrates databases, analytics, and governance.",
+      "evidence": "The Microsoft Intelligent Data Platform fully integrates databases, analytics, and governance. Microsoft Fabric is an end-to-end, unified analytics platform that brings together all the data and analytics tools that organizations need.",
+      "question_type": "definitional",
+      "qa_id": "msft_10k_010"
+    },
+    {
+      "question": "What sustainability commitments did Microsoft make in 2020?",
+      "answer": "In 2020, Microsoft committed to being a carbon negative, water positive, and zero waste company by 2030. Since then, the company has seen major changes in the technology sector and its understanding of what it will take to meet these climate goals.",
+      "evidence": "In 2020, we committed to being a carbon negative, water positive, and zero waste company by 2030.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_011"
+    },
+    {
+      "question": "In which sustainability areas is Microsoft on track and in which areas is it not yet on track?",
+      "answer": "Microsoft is on track in four areas: reducing direct operational emissions (Scope 1 and 2), accelerating carbon removal, designing for circularity to minimize waste and reusing cloud hardware, and improving biodiversity. It is not yet on track in two areas: reducing indirect emissions (Scope 3) and reducing water use in datacenter operations.",
+      "evidence": "Reducing our direct operational emissions (Scope 1 and 2).\n\u2022\nAccelerating carbon removal.\n\u2022\nDesigning for circularity to minimize waste and reusing cloud hardware.\n\u2022\nImproving biodiversity and protecting more land than we use.\nAt the same time, there are two areas where we\u2019re not yet on track, and in each of these we are intensively engaged in work to identify and pursue additional breakthroughs. These are:\n\u2022\nReducing our indirect emissions (Scope 3).\n\u2022\nReducing our water use and replenishing more water than we consume in our datacenter operations.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_012"
+    },
+    {
+      "question": "What are Microsoft's three reportable operating segments?",
+      "answer": "Microsoft operates its business and reports its financial performance using three segments: Productivity and Business Processes, Intelligent Cloud, and More Personal Computing. These segments provide management with a comprehensive financial view of key businesses and enable alignment of strategies across the organization.",
+      "evidence": "We operate our business and report our financial performance using three segments: Productivity and Business Processes, Intelligent Cloud, and More Personal Computing. Our segments provide management with a comprehensive financial view of our key businesses.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_014"
+    },
+    {
+      "question": "What is Azure and how does it generate revenue?",
+      "answer": "Azure is a comprehensive set of cloud services that offer developers, IT professionals, and enterprises freedom to build, deploy, and manage applications on any platform or device. Azure revenue is mainly affected by infrastructure-as-a-service and platform-as-a-service consumption-based services, and per user-based services such as Enterprise Mobility + Security.",
+      "evidence": "Azure is a comprehensive set of cloud services that offer developers, IT professionals, and enterprises freedom to build, deploy, and manage applications on any platform or device. Customers can use Azure through our global network of datacenters for computing, networking, storage, mobile and web application services, AI, Internet of Things (\u201cIoT\u201d), cognitive services, and machine learning. Azure enables customers to devote more resources to development and use of applications that benefit their organizations, rather than managing on-premises hardware and software. Azure revenue is mainly affected by infrastructure-as-a-service and platform-as-a-service consumption-based services, and per user-based services such as Enterprise Mobility + Security.",
+      "question_type": "definitional",
+      "qa_id": "msft_10k_018"
+    },
+    {
+      "question": "Who are the main competitors to Azure?",
+      "answer": "Azure faces diverse competition from companies such as Amazon, Broadcom, Google, IBM, Oracle, and open source offerings. Microsoft's AI offerings also compete with products from hyperscalers like Amazon and Google, as well as emerging competitors including Anthropic, OpenAI, Meta, and other open source offerings.",
+      "evidence": "Azure faces diverse competition from companies such as Amazon, Broadcom, Google, IBM, Oracle, and open source offerings. Azure\u2019s competitive advantage includes enabling a hybrid cloud, allowing deployment of existing datacenters with our public cloud into a single, cohesive infrastructure, and the ability to run at a scale that meets the needs of businesses of all sizes and complexities. Our AI offerings compete with AI products from hyperscalers such as Amazon and Google, as well as products from other emerging competitors, including Anthropic, OpenAI, Meta, and other open source offerings, many of which are also current or potential partners. Our Azure Security offerings include our cloud security solution and security information and event management solution, which compete with companies such as Palo Alto Networks and Cisco. Our Enterprise Mobility + Security offerings also compete with products from a range of competitors including identity vendors, security solution vendors, and numerous other security point solution vendors. We believe our cloud\u2019s global scale, coupled with our broad portfolio of identity and security solutions, allows us to effectively solve complex cybersecurity challenges for our customers and differentiates us from the competition.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_019"
+    },
+    {
+      "question": "What does the More Personal Computing segment primarily comprise?",
+      "answer": "The More Personal Computing segment primarily comprises Windows (including OEM licensing and commercial offerings), Devices (including Surface, HoloLens, and PC accessories), Gaming (including Xbox hardware and content/services such as Activision Blizzard), and Search and news advertising (including Bing, Copilot, Microsoft News, and Microsoft Edge).",
+      "evidence": "Our More Personal Computing segment consists of products and services that put customers at the center of the experience with our technology. This segment primarily comprises:\n\u2022\nWindows, including Windows OEM licensing and other non-volume licensing of the Windows operating system; Windows Commercial, comprising volume licensing of the Windows operating system, Windows cloud services, and other Windows commercial offerings; patent licensing; and Windows Internet of Things.\n\u2022\nDevices, including Surface, HoloLens, and PC accessories.\n\u2022\nGaming, including Xbox hardware and Xbox content and services, comprising first-party content (such as Activision Blizzard) and third-party content, including games and in-game content; Xbox Game Pass and other subscriptions; Xbox Cloud Gaming; advertising; third-party disc royalties; and other cloud services.\n\u2022\nSearch and news advertising, comprising Bing (including Copilot), Microsoft News, Microsoft Edge, and third-party affiliates.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_020"
+    },
+    {
+      "question": "What are Copilot+ PCs?",
+      "answer": "Copilot+ PCs are a new class of Windows 11 PCs that are powered by a neural processing unit. These PCs use on-device AI for enhanced performance and features, representing a new category of computing devices focused on AI capabilities.",
+      "evidence": "Copilot+ PCs are a new class of Windows 11 PCs that are powered by a neural processing unit. These PCs use on-device AI for enhanced performance and features.",
+      "question_type": "definitional",
+      "qa_id": "msft_10k_021"
+    },
+    {
+      "question": "What is Xbox Game Pass?",
+      "answer": "Xbox Game Pass is a subscription service and gaming community with access to a curated library of over 400 first- and third-party console and PC titles. It represents the cornerstone of Microsoft's unique gaming experiences and is central to its gaming platform strategy.",
+      "evidence": "These unique gaming experiences are the cornerstone of Xbox Game Pass, a subscription service and gaming community with access to a curated library of over 400 first- and third-party console and PC titles.",
+      "question_type": "definitional",
+      "qa_id": "msft_10k_022"
+    },
+    {
+      "question": "When did Microsoft complete its acquisition of Activision Blizzard and what was the purchase price?",
+      "answer": "Microsoft completed its acquisition of Activision Blizzard on October 13, 2023, for a total purchase price of $75.4 billion, consisting primarily of cash. The financial results of Activision Blizzard have been included in Microsoft's consolidated financial statements since the acquisition date, and Activision Blizzard is reported as part of the More Personal Computing segment.",
+      "evidence": "On October 13, 2023, we completed our acquisition of Activision Blizzard for a total purchase price of $75.4 billion, consisting primarily of cash. The financial results of Activision Blizzard have been included in our consolidated financial statements since the date of the acquisition. Activision Blizzard is reported as part of our More Personal Computing segment.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_023"
+    },
+    {
+      "question": "How many patents does Microsoft hold?",
+      "answer": "Microsoft currently has a portfolio of over 63,000 U.S. and international patents issued and over 23,000 pending worldwide. The company is described as a leader among technology companies in pursuing patents.",
+      "evidence": "We are a leader among technology companies in pursuing patents and currently have a portfolio of over 63,000 U.S. and international patents issued and over 23,000 pending worldwide.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_024"
+    },
+    {
+      "question": "What are the two broad categories of OEMs through which Microsoft distributes products?",
+      "answer": "The two broad categories are direct OEMs and system builders. Direct OEMs have a relationship managed through a direct agreement between Microsoft and the OEM, including multinational OEMs like Dell, Hewlett-Packard, and Lenovo. System builders are lower-volume PC manufacturers that source Microsoft software primarily through the distributor channel rather than a direct relationship with Microsoft.",
+      "evidence": "There are two broad categories of OEMs. The largest category of OEMs are direct OEMs as our relationship with them is managed through a direct agreement between Microsoft and the OEM. We have distribution agreements covering one or more of our products with virtually all the multinational OEMs, including Dell, Hewlett-Packard, Lenovo, and with many regional and local OEMs. The second broad category of OEMs are system builders consisting of lower-volume PC manufacturers, which source Microsoft software for pre-installation and local redistribution primarily through the Microsoft distributor channel rather than through a direct agreement or relationship with Microsoft.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_025"
+    },
+    {
+      "question": "What is Software Assurance (SA)?",
+      "answer": "Software Assurance conveys rights to new software and upgrades for perpetual licenses released over the contract period. It also provides support, tools, training, and other licensing benefits to help customers deploy and use software efficiently. SA is required to be purchased with certain volume licensing agreements and is optional with others.",
+      "evidence": "Software Assurance (\u201cSA\u201d) conveys rights to new software and upgrades for perpetual licenses released over the contract period. It also provides support, tools, training, and other licensing benefits to help customers deploy and use software efficiently. SA is required to be purchased with certain volume licensing agreements and is an optional purchase with others.",
+      "question_type": "definitional",
+      "qa_id": "msft_10k_026"
+    },
+    {
+      "question": "What is an Enterprise Agreement and who is it designed for?",
+      "answer": "Enterprise Agreements offer large organizations a manageable volume licensing program with flexibility to buy cloud services and software licenses under one agreement. They are designed for medium or large organizations that want to license Microsoft products and services organization-wide over a three-year period, with options to purchase perpetual licenses with SA or subscribe to cloud services.",
+      "evidence": "Enterprise Agreements offer large organizations a manageable volume licensing program that gives them the flexibility to buy cloud services and software licenses under one agreement. Enterprise Agreements are designed for medium or large organizations that want to license Microsoft products and services organization-wide over a three-year period. Organizations can elect to purchase perpetual licenses (covered with SA) and/or subscribe to cloud services.",
+      "question_type": "definitional",
+      "qa_id": "msft_10k_027"
+    },
+    {
+      "question": "What is Microsoft's total revenue for fiscal year 2024 and how does it compare to fiscal year 2023?",
+      "answer": "Microsoft's total revenue for fiscal year 2024 was $245.1 billion, compared to $211.9 billion in fiscal year 2023, representing a 16% increase. The growth was driven by increases across each of the company's three segments.",
+      "evidence": "| Revenue |  | $ | 245,122 |  |  | $ | 211,915 |  |  |  | 16% |  |\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_028"
+    },
+    {
+      "question": "What was Microsoft Cloud revenue in fiscal year 2024?",
+      "answer": "Microsoft Cloud revenue increased 23% to $137.4 billion in fiscal year 2024. Microsoft Cloud revenue comprises revenue from Azure and other cloud services, Office 365 Commercial, the commercial portion of LinkedIn, Dynamics 365, and other commercial cloud properties.",
+      "evidence": "Microsoft Cloud revenue increased 23% to $137.4 billion.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_029"
+    },
+    {
+      "question": "What was Microsoft's net income for fiscal year 2024 compared to fiscal year 2023?",
+      "answer": "Microsoft's net income for fiscal year 2024 was $88.1 billion, compared to $72.4 billion in fiscal year 2023, representing a 22% increase. Diluted earnings per share also increased 22% from $9.68 to $11.80.",
+      "evidence": "| Net income |  |  | 88,136 |  |  |  | 72,361 |  |  |  | 22% |  |\n| Diluted earnings per share |  |  | 11.80 |  |  |  | 9.68 |  |  |  | 22% |  |",
+      "question_type": "factual",
+      "qa_id": "msft_10k_030"
+    },
+    {
+      "question": "What was Microsoft's operating income for fiscal year 2024?",
+      "answer": "Microsoft's operating income for fiscal year 2024 was $109.4 billion, an increase of $20.9 billion or 24% compared to $88.5 billion in fiscal year 2023. The growth was driven by increases across each of the company's three operating segments.",
+      "evidence": "| Operating income |  |  | 109,433 |  |  |  | 88,523 |  |  |  | 24% |  |\nOperating income increased $20.9 billion or 24% driven by growth across each of our segments.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_031"
+    },
+    {
+      "question": "How did the Productivity and Business Processes segment perform in fiscal year 2024?",
+      "answer": "The Productivity and Business Processes segment generated revenue of $77.7 billion in fiscal year 2024, a 12% increase from $69.3 billion. Operating income grew 19% to $40.5 billion. The growth was driven by Office 365 Commercial revenue growth of 16%, LinkedIn revenue growth of 9%, and Dynamics 365 revenue growth of 24%.",
+      "evidence": "| Productivity and Business Processes |  | $ | 77,728 |  |  | $ | 69,274 |  |  |  | 12% |  |\nProductivity and Business Processes\nRevenue increased $8.5 billion or 12%.\n\u2022\nOffice Commercial products and cloud services revenue increased $5.8 billion or 14%. Office 365 Commercial revenue grew 16% with seat growth of 7%, driven by small and medium business and frontline worker offerings, as well as growth in revenue per user. Office Commercial products revenue declined 16% driven by continued customer shift to cloud offerings.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_033"
+    },
+    {
+      "question": "How did the More Personal Computing segment perform in fiscal year 2024?",
+      "answer": "The More Personal Computing segment generated revenue of $62.0 billion in fiscal year 2024, a 13% increase from $54.7 billion in fiscal year 2023. Operating income grew 17% to $19.3 billion. Growth was driven primarily by Gaming revenue, which increased 39%, largely due to the Activision Blizzard acquisition.",
+      "evidence": "| More Personal Computing |  |  | 62,032 |  |  |  | 54,734 |  |  |  | 13% |  |\nGaming revenue increased $6.0 billion or 39% driven by growth in Xbox content and services. Xbox content and services revenue increased 50% driven by 44 points of net impact from the Activision Blizzard acquisition. Xbox hardware revenue decreased 13% driven by lower volume of consoles sold.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_034"
+    },
+    {
+      "question": "What happened to Devices revenue in fiscal year 2024?",
+      "answer": "Devices revenue decreased 15%, or $815 million, in fiscal year 2024 compared to fiscal year 2023. Despite this decline, the More Personal Computing segment's gross margin percentage increased, driven by sales mix shift to higher margin businesses and improvement in Devices margins.",
+      "evidence": "Devices revenue decreased $815 million or 15%.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_035"
+    },
+    {
+      "question": "How did Xbox content and services revenue change in fiscal year 2024 and what drove the change?",
+      "answer": "Xbox content and services revenue increased 50% in fiscal year 2024, driven by 44 points of net impact from the Activision Blizzard acquisition. The net impact reflects the change of Activision Blizzard content from third-party to first-party. However, Xbox hardware revenue decreased 13% due to lower volume of consoles sold.",
+      "evidence": "Xbox content and services revenue increased 50% driven by 44 points of net impact from the Activision Blizzard Inc. (\u201cActivision Blizzard\u201d) acquisition. The net impact reflects the change of Activision Blizzard content from third-party to first-party.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_036"
+    },
+    {
+      "question": "What was Microsoft's research and development expense in fiscal year 2024?",
+      "answer": "Microsoft's research and development expenses were $29.5 billion in fiscal year 2024, an increase of $2.3 billion or 9% compared to $27.2 billion in fiscal year 2023. The increase was driven by Gaming, with 7 points of growth from the Activision Blizzard acquisition, and investments in cloud engineering.",
+      "evidence": "Research and development expenses increased $2.3 billion or 9% driven by Gaming, with 7 points of growth from the Activision Blizzard acquisition, and investments in cloud engineering.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_037"
+    },
+    {
+      "question": "Why was Microsoft's effective tax rate lower than the U.S. federal statutory rate?",
+      "answer": "Microsoft's effective tax rate was lower than the U.S. federal statutory rate primarily due to earnings taxed at lower rates in foreign jurisdictions resulting from producing and distributing products and services through the company's foreign regional operations center in Ireland.",
+      "evidence": "Our effective tax rate was lower than the U.S. federal statutory rate, primarily due to earnings taxed at lower rates in foreign jurisdictions resulting from producing and distributing our products and services through our foreign regional operations center in Ireland.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_039"
+    },
+    {
+      "question": "What was Microsoft's cash flow from operations in fiscal year 2024?",
+      "answer": "Cash from operations increased $31.0 billion to $118.5 billion for fiscal year 2024, primarily due to an increase in cash received from customers. This represents a significant increase from $87.6 billion in fiscal year 2023.",
+      "evidence": "Cash from operations increased $31.0 billion to $118.5 billion for fiscal year 2024, primarily due to an increase in cash received from customers.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_041"
+    },
+    {
+      "question": "How much did Microsoft spend on share repurchases and dividends in fiscal year 2024?",
+      "answer": "During fiscal year 2024, Microsoft repurchased 32 million shares for $12.0 billion and declared dividends totaling $22.3 billion. In comparison, in fiscal year 2023, the company repurchased 69 million shares for $18.4 billion and declared dividends of $20.2 billion.",
+      "evidence": "During fiscal years 2024 and 2023, we repurchased 32 million shares and 69 million shares of our common stock for $12.0 billion and $18.4 billion, respectively, through our share repurchase program. All repurchases were made using cash resources. As of June 30, 2024, $10.3 billion remained of our $60 billion share repurchase program. Refer to Note 16 \u2013 Stockholders\u2019 Equity of the Notes to Financial Statements (Part II, Item 8 of this Form 10-K) for further discussion.\nDividends\nDuring fiscal years 2024 and 2023, our Board of Directors declared dividends totaling $22.3 billion and $20.2 billion, respectively. We intend to continue returning capital to shareholders in the form of dividends, subject to declaration by our Board of Directors. Refer to Note 16 \u2013 Stockholders\u2019 Equity of the Notes to Financial Statements (Part II, Item 8 of this Form 10-K) for further discussion.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_042"
+    },
+    {
+      "question": "What was the remaining authorization under Microsoft's share repurchase program as of June 30, 2024?",
+      "answer": "As of June 30, 2024, $10.3 billion remained of Microsoft's $60 billion share repurchase program. All repurchases were made using cash resources and may occur through open market purchases or pursuant to a Rule 10b5-1 trading plan.",
+      "evidence": "As of June 30, 2024, $10.3 billion remained of our $60 billion share repurchase program.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_043"
+    },
+    {
+      "question": "What were Microsoft's total assets as of June 30, 2024, compared to June 30, 2023?",
+      "answer": "Microsoft's total assets as of June 30, 2024 were $512.2 billion, up significantly from $412.0 billion as of June 30, 2023. The increase was driven largely by growth in goodwill (from $67.9 billion to $119.2 billion due to the Activision Blizzard acquisition), property and equipment (from $95.6 billion to $135.6 billion), and intangible assets (from $9.4 billion to $27.6 billion).",
+      "evidence": "| Property and equipment, net of accumulated depreciation of $76,421 and $68,251 |  |  | 135,591 |  |  |  | 95,641 |  |\n| Operating lease right-of-use assets |  |  | 18,961 |  |  |  | 14,346 |  |\n| Equity and other investments |  |  | 14,600 |  |  |  | 9,879 |  |\n| Goodwill |  |  | 119,220 |  |  |  | 67,886 |  |\n| Intangible assets, net |  |  | 27,597 |  |  |  | 9,366 |  |\n| Total assets |  | $ | 512,163 |  |  | $ | 411,976 |  |",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_044"
+    },
+    {
+      "question": "What was Microsoft's total stockholders' equity as of June 30, 2024?",
+      "answer": "Microsoft's total stockholders' equity as of June 30, 2024 was $268.5 billion, up from $206.2 billion as of June 30, 2023. This consisted of common stock and paid-in capital of $100.9 billion, retained earnings of $173.1 billion, and accumulated other comprehensive loss of $5.6 billion.",
+      "evidence": "| Common stock and paid-in capital \u2013 shares authorized 24,000; outstanding 7,434 and 7,432 |  |  | 100,923 |  |  |  | 93,718 |  |\n| Retained earnings |  |  | 173,144 |  |  |  | 118,848 |  |\n| Accumulated other comprehensive loss |  |  | (5,590 | ) |  |  | (6,343 | ) |\n|  | | | |  |  |  |  |  |\n|  | | | |  |  |  |  |  |\n| Total stockholders\u2019 equity |  |  | 268,477 |  |  |  | 206,223 |  |",
+      "question_type": "factual",
+      "qa_id": "msft_10k_045"
+    },
+    {
+      "question": "What was the total amount of cash, cash equivalents, and short-term investments as of June 30, 2024?",
+      "answer": "Cash, cash equivalents, and short-term investments totaled $75.5 billion as of June 30, 2024, compared to $111.3 billion as of June 30, 2023. The decrease was primarily due to the $75.4 billion Activision Blizzard acquisition and increased capital expenditures.",
+      "evidence": "Cash, cash equivalents, and short-term investments totaled $75.5 billion and $111.3 billion as of June 30, 2024 and 2023, respectively.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_046"
+    },
+    {
+      "question": "What was Microsoft's capital expenditure (additions to property and equipment) in fiscal year 2024?",
+      "answer": "Microsoft's additions to property and equipment were $44.5 billion in fiscal year 2024, up from $28.1 billion in fiscal year 2023, representing a $16.4 billion increase. The company expects capital expenditures to continue increasing to support growth in cloud offerings and investments in AI infrastructure and training.",
+      "evidence": "| Additions to property and equipment |  |  | (44,477 | ) |  |  | (28,107 | ) |  |  | (23,886 | ) |",
+      "question_type": "factual",
+      "qa_id": "msft_10k_047"
+    },
+    {
+      "question": "What was Microsoft's gross margin for fiscal year 2024 and what drove the change?",
+      "answer": "Microsoft's gross margin was $171.0 billion in fiscal year 2024, an increase of $25.0 billion or 17% from $146.1 billion in fiscal year 2023. The growth was driven by increases across all segments. Microsoft Cloud gross margin percentage decreased slightly to 71%, though excluding the change in accounting estimate for server equipment useful lives, it increased slightly.",
+      "evidence": "| Gross margin |  |  | 171,008 |  |  |  | 146,052 |  |  |  | 17% |  |\nMicrosoft Cloud gross margin percentage decreased slightly to 71%. Excluding the impact of the change in accounting estimate, Microsoft Cloud gross margin percentage increased slightly driven by improvements in Azure and Office 365 Commercial, inclusive of scaling our AI infrastructure, offset in part by sales mix shift to Azure.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_048"
+    },
+    {
+      "question": "What change in accounting estimate did Microsoft make regarding server and network equipment useful lives?",
+      "answer": "In July 2022, Microsoft completed an assessment and determined that the estimated useful lives of both server and network equipment should be increased from four years to six years. This was due to investments in software that increased efficiencies in operations and advances in technology. The change was effective beginning fiscal year 2023.",
+      "evidence": "In July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to investments in software that increased efficiencies in how we operate our server and network equipment, as well as advances in technology, we determined we should increase the estimated useful lives of both server and network equipment from four years to six years. This change in accounting estimate was effective beginning fiscal year 2023.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_049"
+    },
+    {
+      "question": "What is the Secure Future Initiative (SFI) and what are its three principles?",
+      "answer": "The Secure Future Initiative was launched in November 2023 and expanded in May 2024 in response to the evolving cybersecurity threat landscape. It is aligned around three security principles: Secure by Design (security comes first when designing any product or service), Secure by Default (security protections are enabled and enforced by default), and Secure Operations (security controls and monitoring will continuously be improved).",
+      "evidence": "Microsoft plays a central role in the world\u2019s digital ecosystem. We have made it the top corporate priority to protect the computing environment used by our customers and employees and to support the resiliency of our cloud infrastructure and services, products, devices, and our internal corporate resources from determined adversaries. In response to the evolving cybersecurity threat landscape, we launched the Secure Future Initiative (\u201cSFI\u201d) in November 2023 and expanded the scope of SFI in May 2024. The SFI focuses our business strategy and efforts on continual improvement in cybersecurity protection, and is aligned around three security principles:\n\u2022\nSecure by Design: Security comes first when designing any product or service.\n\u2022\nSecure by Default: Security protections are enabled and enforced by default, require no extra effort, and are not optional.\n\u2022\nSecure Operations: Security controls and monitoring will continuously be improved to meet current and future threats.",
+      "question_type": "definitional",
+      "qa_id": "msft_10k_050"
+    },
+    {
+      "question": "How does Microsoft monitor cybersecurity threats using AI and machine learning?",
+      "answer": "Microsoft utilizes machine learning and AI-powered security tools to gain insights from over 78 trillion signals per day and over 135 million managed devices. The company tracks over 300 unique threat actors, including 160 nation-state actors and 50 ransomware groups, and operates a Cyber Defense Operations Center connected to over 10,000 security and threat intelligence experts globally.",
+      "evidence": "We utilize machine learning and AI-powered security tools to gain insights from over 78 trillion signals per day and over 135 million managed devices. We track over 300 unique threat actors, including 160 nation-state actors and 50 ransomware groups. To support our efforts, we operate a Cyber Defense Operations Center connected to over 10,000 security and threat intelligence experts, including engineers, researchers, data scientists, cybersecurity experts, threat hunters, geopolitical analysts, investigators, and frontline responders across the globe.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_051"
+    },
+    {
+      "question": "How does Microsoft's Board of Directors oversee cybersecurity risk?",
+      "answer": "Cybersecurity reviews by the Board are scheduled to occur at least quarterly, with presentations by senior management including the CISO, EVP of Microsoft Security, and the head of Customer Security and Trust. Topics include cybersecurity threats, incidents, top risks, remediation efforts, assessment results, and regulatory developments. An escalation process exists to inform senior management and the Board of significant issues.",
+      "evidence": "Our Board of Directors oversees cybersecurity risk. Cybersecurity reviews by the Board are scheduled to occur at least quarterly, or more frequently as determined to be necessary or advisable. Presentations to the Board of Directors are made by senior management, including our Chief Information Security Officer (\u201cCISO\u201d), our EVP of Microsoft Security, and the head of our Customer Security and Trust organization. The presentations address topics such as cybersecurity threats, incidents, top risks and related remediation efforts, results from internal and third-party assessments, progress towards risk-mitigation goals, the functioning of our incident response program, regulatory developments, and digital diplomacy efforts. In addition, we have an escalation process in place to inform senior management and the Board of significant issues. Cybersecurity issues are also considered during separate Board meeting discussions regarding important matters like ERM, audit issues, operational budgeting, business continuity planning, mergers and acquisitions, brand management, and other relevant matters.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_052"
+    },
+    {
+      "question": "What is the total square footage of Microsoft's properties worldwide?",
+      "answer": "As of June 30, 2024, Microsoft had a total of approximately 85 million square feet of properties worldwide, consisting of 40 million square feet owned and 45 million square feet leased. In the U.S., the company had 50 million square feet (30 million owned and 20 million leased), and internationally, 35 million square feet (10 million owned and 25 million leased).",
+      "evidence": "| U.S. |  |  | 30 |  |  |  | 20 |  |  |  | 50 |  |\n| International |  |  | 10 |  |  |  | 25 |  |  |  | 35 |  |",
+      "question_type": "factual",
+      "qa_id": "msft_10k_055"
+    },
+    {
+      "question": "What role-based extensions of Microsoft Copilot are available?",
+      "answer": "Microsoft offers three role-based extensions of Copilot: Copilot for Sales, Copilot for Service, and Copilot for Finance. These bring together the power of Copilot for Microsoft 365 with role-specific insights and workflow assistance to streamline business processes. Additionally, Copilot Studio allows customers to customize Copilot for Microsoft 365 or build their own Copilot.",
+      "evidence": "Our role-based extensions of Microsoft Copilot \u2013 Copilot for Sales, Copilot for Service, and Copilot for Finance \u2013 bring together the power of Copilot for Microsoft 365 with role-specific insights and workflow assistance to streamline business processes. Copilot Studio allows customers to customize Copilot for Microsoft 365 or build their own Copilot.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_059"
+    },
+    {
+      "question": "What is Microsoft Power Platform?",
+      "answer": "Microsoft Power Platform helps domain experts drive productivity gains with low-code/no-code tools, robotic process automation, virtual agents, and business intelligence. It is part of Microsoft's broader ecosystem that brings AI offerings and collaborative applications to help businesses get insights and impact faster.",
+      "evidence": "Microsoft Power Platform helps domain experts drive productivity gains with low-code/no-code tools, robotic process automation, virtual agents, and business intelligence.",
+      "question_type": "definitional",
+      "qa_id": "msft_10k_060"
+    },
+    {
+      "question": "How does Microsoft describe the competitive landscape for its Office products?",
+      "answer": "Competitors to Office include Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors. Microsoft competes by providing powerful, flexible, secure, integrated, industry-specific, and easy-to-use productivity and collaboration tools that create comprehensive solutions working with existing customer technologies.",
+      "evidence": "Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified communications business. Google provides a hosted messaging and productivity suite. Meta offers communication tools to enable productivity and engagement within organizations. Proofpoint and Symantec provide security solutions across email security, information protection, and governance. Slack provides teamwork and collaboration software. Zoom offers videoconferencing and cloud phone solutions. Web-based offerings competing with individual applications have also positioned themselves as alternatives to our products and services. We compete by providing powerful, flexible, secure, integrated industry-specific, and easy-to-use productivity and collaboration tools and services that create comprehensive solutions and work well with technologies our customers already have both on-premises or in the cloud.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_061"
+    },
+    {
+      "question": "What competitors does the Dynamics business face?",
+      "answer": "Dynamics competes with cloud-based and on-premises business solution providers such as Oracle, Salesforce, SAP, Service Now, UI Path, and WorkDay. Dynamics provides solutions for financial management, ERP, CRM, supply chain management, and low-code application development.",
+      "evidence": "Dynamics competes with cloud-based and on-premises business solution providers such as Oracle, Salesforce, SAP, Service Now, UI Path, and WorkDay.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_062"
+    },
+    {
+      "question": "What engineering groups does Microsoft use to develop products and services internally?",
+      "answer": "Microsoft develops products through eight engineering groups: Cloud and AI, Strategic Missions and Technologies, Experiences and Devices, Microsoft AI, Microsoft Security, Technology and Research, LinkedIn, and Gaming. Each group focuses on different areas from cloud infrastructure to consumer experiences to security.",
+      "evidence": "We develop most of our products and services internally through the following engineering groups.\n\n\u2022\n\nCloud and AI \u2013 focuses on making IT professionals, developers, partners, independent software vendors, and their systems more productive and efficient through development of Azure AI platform and cloud infrastructure, server, database, CRM, ERP, software development tools and services, AI cognitive services, and other business process applications and services for enterprises.\n\n\u2022\n\nStrategic Missions and Technologies \u2013 focuses on incubating technical products and support solutions with transformative potential for the future of cloud computing and continued company growth, such as quantum computing and advanced AI for science.\n\n\u2022\n\nExperiences and Devices \u2013 focuses on delivering high value end-user experiences across our products, services, and devices, including Microsoft 365, Windows, Microsoft Teams, and the Surface line of devices.\n\n\u2022\n\nMicrosoft AI \u2013 focuses on delivering online experiences targeted at consumers (including Bing, Copilot, Start/MSN, and other advertising-based services) and developing advanced AI models.\n\n\u2022\n\nMicrosoft Security \u2013 focuses on delivering a comprehensive portfolio of services that protect our customers\u2019 digital infrastructure through cloud platform and application security, data protection and governance, identity and network access, and device management.\n\n\u2022\n\nTechnology and Research \u2013 focuses on fundamental research, product and business incubations, and forward-looking AI innovations that span infrastructure, services, and applications. This engineering group includes Microsoft Research, one of the world\u2019s largest corporate research organizations, which focuses on fundamental research in AI, computer science, and a broad range of other disciplines.\n\n\u2022\n\nLinkedIn \u2013 focuses on our services that transform the way professionals grow their network and find jobs and the way businesses hire, market, sell, and learn.\n\n\u2022\n\nGaming \u2013 focuses on developing hardware, content, and services across a large range of platforms to help grow our user base through game experiences and social interaction.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_065"
+    },
+    {
+      "question": "What does the Strategic Missions and Technologies engineering group focus on?",
+      "answer": "The Strategic Missions and Technologies engineering group focuses on incubating technical products and support solutions with transformative potential for the future of cloud computing and continued company growth, such as quantum computing and advanced AI for science.",
+      "evidence": "Strategic Missions and Technologies \u2013 focuses on incubating technical products and support solutions with transformative potential for the future of cloud computing and continued company growth, such as quantum computing and advanced AI for science.",
+      "question_type": "definitional",
+      "qa_id": "msft_10k_066"
+    },
+    {
+      "question": "What did Microsoft achieve through its Skills for Jobs initiative?",
+      "answer": "Microsoft's Skills for Jobs initiative aims to support a more skills-based labor market. The company's goal was to train and certify 10 million learners by 2025. As of May 2024, Microsoft surpassed that goal, training and certifying 12.6 million learners, using resources from LinkedIn, GitHub, and Microsoft Learn.",
+      "evidence": "Microsoft\u2019s Skills for Jobs initiative aims to support a more skills-based labor market, with greater flexibility and accessible learning paths to develop the right skills needed for the most in-demand jobs. This initiative brings together classes, Career Essentials Certificates, and other resources from LinkedIn, GitHub, and Microsoft Learn, and is built on data insights drawn from LinkedIn\u2019s Economic Graph. Our goal was to train and certify 10 million learners by 2025. As of May 2024, we have surpassed that goal, training and certifying 12.6 million learners. We also launched a campaign in the United States in 2021 to help skill and recruit 250,000 people into the nation\u2019s cybersecurity workforce by 2025, representing half of the country\u2019s workforce shortage. To that end, we are making curriculum available free of charge to all of the nation\u2019s higher education institutions, providing training for new and existing faculty, and providing scholarships and supplemental resources to 25,000 students. The cyber skills initiative has expanded to 27 additional countries that show elevated cyberthreat risks coupled with significant gaps in their cybersecurity workforces, where we\u2019ve partnered with nonprofits and other educational institutions to train the next generation of cybersecurity workers.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_067"
+    },
+    {
+      "question": "What progress has Microsoft made with its AI Skills initiative?",
+      "answer": "Microsoft launched an AI Skills initiative in June 2023 to help everyone learn how to harness the power of AI, including a new LinkedIn learning pathway on generative AI foundations. As of June 2024, Microsoft has helped more than 2.5 million people in 92% of the world's countries learn how to use AI.",
+      "evidence": "Generative AI is creating unparalleled opportunities to empower workers globally, but only if everyone has the skills to use it. In June 2023, we launched an AI Skills initiative to help everyone learn how to harness the power of AI. This includes a new LinkedIn learning pathway offering new coursework on learning the foundations of generative AI. We also launched a new global grant challenge to uncover new ways of training workers on generative AI and provide greater access to digital learning events and resources. Additionally, we extended our reach in rural communities, including through our TechSpark initiative in the United States. As of June 2024, we\u2019ve helped more than 2.5 million people in 92% of the world\u2019s countries learn how to use AI.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_068"
+    },
+    {
+      "question": "How does Microsoft address racial injustice through financial commitments?",
+      "answer": "Microsoft has committed $150 million in Minority Depository Institutions and funds supporting Black and African American-owned small businesses. The company achieved its goal to spend $500 million with double the number of Black- and African American-owned suppliers, and provided 162 low- or no-interest loans to partners through its Partner Capital Fund.",
+      "evidence": "We have committed $150 million in Minority Depository Institutions and funds supporting Black and African American-owned small businesses. These commitments drive sustained impact by directly enabling an increase of funds into local communities, improving diverse, small-business access to capital, and increasing skill development. We continue to partner with diverse-owned banking partners and asset managers to catalyze growth and industry participation. Additionally, we enriched our supplier pipeline, achieving our goal to spend $500 million with double the number of Black- and African American-owned suppliers. We have also provided 162 low- or no-interest loans to our small to medium-sized partners through our Partner Capital Fund.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_069"
+    },
+    {
+      "question": "How does the EU Digital Markets Act affect Microsoft?",
+      "answer": "The European Commission has designated Windows and LinkedIn as core platform services subject to obligations under the EU Digital Markets Act, which prohibits certain self-preferencing behaviors and places limitations on certain data use. The Commission also closely scrutinizes the design of high-volume Microsoft products and the terms for making technologies available to other companies.",
+      "evidence": "For example, the European Commission (\u201cthe Commission\u201d) has designated Windows and LinkedIn as core platform services subject to obligations under the EU Digital Markets Act, which prohibits certain self-preferencing behaviors and places limitations on certain data use among other obligations. The Commission also continues to closely scrutinize the design of high-volume Microsoft products and the terms on which we make certain technologies used in these products, such as file formats, programming interfaces, and protocols, available to other companies. Flagship product releases such as Microsoft 365 and Windows can receive significant scrutiny under EU or other competition laws.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_071"
+    },
+    {
+      "question": "What is the OECD Pillar Two global minimum tax and how might it affect Microsoft?",
+      "answer": "The OECD published model rules establishing a global minimum corporate tax rate of 15% for certain multinational enterprises, known as Pillar Two. Many countries are implementing this legislation, which will apply to Microsoft beginning in fiscal year 2025. While Microsoft does not currently estimate a material impact to its consolidated financial statements, it continues to monitor the situation.",
+      "evidence": "The Organisation for Economic Co-operation and Development (\u201cOECD\u201d) published its model rules \u201cTax Challenges Arising From the Digitalisation of the Economy - Global Anti-Base Erosion Model Rules (Pillar Two)\u201d which established a global minimum corporate tax rate of 15% for certain multinational enterprises. Many countries have implemented or are in the process of implementing the Pillar Two legislation, which will apply to Microsoft beginning in fiscal year 2025. While we do not currently estimate a material impact to our consolidated financial statements, we continue to monitor the impact as countries implement legislation and the OECD provides additional guidance.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_072"
+    },
+    {
+      "question": "What is Microsoft's approach to revenue seasonality?",
+      "answer": "Microsoft's revenue fluctuates quarterly and is generally higher in the fourth quarter of its fiscal year. Fourth quarter revenue is driven by a higher volume of multi-year contracts executed during the period.",
+      "evidence": "Our revenue fluctuates quarterly and is generally higher in the fourth quarter of our fiscal year. Fourth quarter revenue is driven by a higher volume of multi-year contracts executed during the period.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_073"
+    },
+    {
+      "question": "What was Microsoft's total unearned revenue as of June 30, 2024, and how is it expected to be recognized?",
+      "answer": "Microsoft's total unearned revenue as of June 30, 2024 was $60.2 billion. Of this amount, $22.5 billion is expected to be recognized in Q1 FY2025, $17.7 billion in Q2, $12.1 billion in Q3, $5.3 billion in Q4, and $2.6 billion thereafter. Unearned revenue is primarily related to volume licensing programs.",
+      "evidence": "| September 30, 2024 |  | $ | 22,529 |  |\n| December 31, 2024 |  |  | 17,664 |  |\n| March 31, 2025 |  |  | 12,076 |  |\n| June 30, 2025 |  |  | 5,313 |  |\n| Total |  | $ | 60,184 |  |",
+      "question_type": "factual",
+      "qa_id": "msft_10k_074"
+    },
+    {
+      "question": "What is the remaining TCJA transition tax liability for Microsoft?",
+      "answer": "As of June 30, 2024, Microsoft had a remaining transition tax liability of $7.6 billion related to the Tax Cuts and Jobs Act, of which $3.8 billion is short-term and payable in the first quarter of fiscal year 2025. The transition tax is payable in interest-free installments over eight years.",
+      "evidence": "As of June 30, 2024, we had a remaining transition tax liability of $7.6 billion, of which $3.8 billion is short-term and payable in the first quarter of fiscal year 2025.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_076"
+    },
+    {
+      "question": "How does Microsoft recognize revenue from Office 365?",
+      "answer": "Certain cloud services, primarily Office 365, depend on a significant level of integration, interdependency, and interrelation between the desktop applications and cloud services, and are accounted for together as one performance obligation. Revenue from Office 365 is recognized ratably over the period in which the cloud services are provided.",
+      "evidence": "Certain cloud services, primarily Office 365, depend on a significant level of integration, interdependency, and interrelation between the desktop applications and cloud services, and are accounted for together as one performance obligation. Revenue from Office 365 is recognized ratably over the period in which the cloud services are provided.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_077"
+    },
+    {
+      "question": "How does Microsoft recognize revenue from cloud services provided on a consumption basis?",
+      "answer": "Revenue related to cloud services provided on a consumption basis, such as the amount of storage used in a period, is recognized based on the customer utilization of such resources. This is different from subscription-based cloud services, where revenue is recognized ratably over the contract period.",
+      "evidence": "Cloud services, which allow customers to use hosted software over the contract period without taking possession of the software, are provided on either a subscription or consumption basis. Revenue related to cloud services provided on a subscription basis is recognized ratably over the contract period. Revenue related to cloud services provided on a consumption basis, such as the amount of storage used in a period, is recognized based on the customer utilization of such resources.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_078"
+    },
+    {
+      "question": "How does Microsoft determine the standalone selling price (SSP) for performance obligations?",
+      "answer": "Microsoft uses a single amount to estimate SSP for items not sold separately, including on-premises licenses sold with SA. For items sold separately, a range of amounts is used. When SSP is not directly observable, it is determined using market conditions and other observable inputs, with stratification by customer size and geographic region.",
+      "evidence": "Judgment is required to determine the SSP for each distinct performance obligation. We use a single amount to estimate SSP for items that are not sold separately, including on-premises licenses sold with SA or software updates provided at no additional charge. We use a range of amounts to estimate SSP when we sell each of the products and services separately and need to determine whether there is a discount to be allocated based on the relative SSP of the various products and services. In instances where SSP is not directly observable, such as when we do not sell the product or service separately, we determine the SSP using information that may include market conditions and other observable inputs.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_079"
+    },
+    {
+      "question": "How does Microsoft test goodwill for impairment?",
+      "answer": "Goodwill is tested for impairment at the reporting unit level on an annual basis (May 1) and between annual tests if events or circumstances change that would more likely than not reduce the fair value below carrying value. The fair value is estimated primarily through a discounted cash flow methodology, requiring significant judgments about future cash flows, growth rates, useful life, and weighted average cost of capital.",
+      "evidence": "We allocate goodwill to reporting units based on the reporting unit expected to benefit from the business combination. We evaluate our reporting units on an annual basis and, if necessary, reassign goodwill using a relative fair value allocation approach. Goodwill is tested for impairment at the reporting unit level (operating segment or one level below an operating segment) on an annual basis (May 1) and between annual tests if an event occurs or circumstances change that would more likely than not reduce the fair value of a reporting unit below its carrying value. These events or circumstances could include a significant change in the business climate, legal factors, operating performance indicators, competition, or sale or disposition of a significant portion of a reporting unit.\nApplication of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires significant judgments, including estimation of future cash flows, which is dependent on internal forecasts, estimation of the long-term rate of growth for our business, estimation of the useful life over which cash flows will occur, and determination of our weighted average cost of capital.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_080"
+    },
+    {
+      "question": "What is Microsoft's approach to stock-based compensation?",
+      "answer": "Compensation cost for stock awards (RSUs and PSUs) is measured at fair value on the grant date and recognized as expense over the service or performance period. RSU cost is recognized using the straight-line method, while PSU cost uses the accelerated method. PSUs are valued using a Monte Carlo valuation model. ESPP compensation is measured as the discount upon purchase.",
+      "evidence": "Compensation cost for stock awards, which include restricted stock units (\u201cRSUs\u201d) and performance stock units (\u201cPSUs\u201d), is measured at the fair value on the grant date and recognized as expense, net of estimated forfeitures, over the related service or performance period. The fair value of stock awards is based on the quoted price of our common stock on the grant date less the present value of expected dividends not received during the vesting period. We measure the fair value of PSUs using a Monte Carlo valuation model. Compensation cost for RSUs is recognized using the straight-line method and for PSUs is recognized using the accelerated method.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_083"
+    },
+    {
+      "question": "What was Microsoft's stock-based compensation expense in fiscal year 2024?",
+      "answer": "Microsoft's stock-based compensation expense was $10.7 billion in fiscal year 2024, up from $9.6 billion in fiscal year 2023 and $7.5 billion in fiscal year 2022. This represented a significant non-cash adjustment in the company's cash flow from operations.",
+      "evidence": "| Stock-based compensation expense |  |  | 10,734 |  |  |  | 9,611 |  |  |  | 7,502 |  |",
+      "question_type": "factual",
+      "qa_id": "msft_10k_084"
+    },
+    {
+      "question": "What was Microsoft's total long-term debt as of June 30, 2024?",
+      "answer": "Microsoft's long-term debt was $42.7 billion as of June 30, 2024, compared to $42.0 billion as of June 30, 2023. Additionally, the company had $2.2 billion in current portion of long-term debt and $6.7 billion in short-term debt (commercial paper) as of June 30, 2024.",
+      "evidence": "| Short-term debt |  |  | 6,693 |  |  |  | 0 |  |\n| Current portion of long-term debt |  |  | 2,249 |  |  |  | 5,247 |  |",
+      "question_type": "factual",
+      "qa_id": "msft_10k_085"
+    },
+    {
+      "question": "What drove the increase in operating expenses in fiscal year 2024?",
+      "answer": "Operating expenses increased $4.0 billion or 7% in fiscal year 2024, primarily driven by Gaming, with 7 points of growth from the Activision Blizzard acquisition, and investments in cloud engineering. This was offset in part by the prior year Q2 charge of $1.2 billion which included employee severance, hardware impairment, and lease consolidation costs.",
+      "evidence": "Operating expenses increased $4.0 billion or 7% driven by Gaming, with 7 points of growth from the Activision Blizzard acquisition, and investments in cloud engineering, offset in part by the prior year Q2 charge.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_086"
+    },
+    {
+      "question": "What was the Q2 charge in fiscal year 2023 and what did it include?",
+      "answer": "The Q2 charge in fiscal year 2023 was a $1.2 billion charge that included employee severance expenses, impairment charges resulting from changes to Microsoft's hardware portfolio, and costs related to lease consolidation activities. It negatively impacted gross margin by $152 million, operating income by $1.2 billion, and net income by $946 million.",
+      "evidence": "Adjusted gross margin, operating income, net income, and diluted earnings per share (\u201cEPS\u201d) are non-GAAP financial measures. Prior year non-GAAP financial measures exclude the impact of a $1.2 billion charge in the second quarter of fiscal year 2023 (\u201cQ2 charge\u201d), which included employee severance expenses, impairment charges resulting from changes to our hardware portfolio, and costs related to lease consolidation activities. Refer to the Non-GAAP Financial Measures section below for a reconciliation of our financial results reported in accordance with GAAP to non-GAAP financial results.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_087"
+    },
+    {
+      "question": "How does Microsoft use derivative instruments?",
+      "answer": "Microsoft uses derivative instruments to manage risks related to foreign currencies, interest rates, equity prices, and credit, as well as to enhance investment returns and facilitate portfolio diversification. Gains and losses from derivatives not designated as hedging instruments are primarily recognized in other income (expense), net.",
+      "evidence": "We use derivative instruments to manage risks related to foreign currencies, interest rates, equity prices, and credit; to enhance investment returns; and to facilitate portfolio diversification. Gains and losses from changes in fair values of derivatives that are not designated as hedging instruments are primarily recognized in other income (expense), net.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_088"
+    },
+    {
+      "question": "What are the principal foreign currency exposures that Microsoft faces?",
+      "answer": "Microsoft monitors its foreign currency exposures daily to maximize the economic effectiveness of its foreign currency positions. The principal currency exposures include the Euro, Japanese yen, British pound, Canadian dollar, and Australian dollar.",
+      "evidence": "We monitor our foreign currency exposures daily to maximize the economic effectiveness of our foreign currency positions, including hedges. Principal currency exposures include the Euro, Japanese yen, British pound, Canadian dollar, and Australian dollar.",
+      "question_type": "factual",
+      "qa_id": "msft_10k_089"
+    },
+    {
+      "question": "What would be the impact of a 10% decrease in foreign exchange rates on Microsoft's revenue?",
+      "answer": "According to Microsoft's sensitivity analysis, a 10% decrease in foreign exchange rates would result in a potential loss of $9.6 billion in earnings as of June 30, 2024. Additionally, a 10% decrease in foreign exchange rates would result in a $38 million decrease in fair value for foreign currency investments.",
+      "evidence": "| Foreign currency \u2013 Revenue |  | 10% decrease in foreign exchange rates |  | $ | (9,605 | ) |  |  | Earnings |  |\n| Foreign currency \u2013 Investments |  | 10% decrease in foreign exchange rates |  |  | (38 | ) |  |  | Fair Value |  |",
+      "question_type": "factual",
+      "qa_id": "msft_10k_090"
+    },
+    {
+      "question": "What was Microsoft's income before income taxes split between U.S. and foreign countries in fiscal year 2024?",
+      "answer": "In fiscal year 2024, Microsoft's U.S. income before income taxes was $62.9 billion and foreign income before income taxes was $44.9 billion. This compares to fiscal year 2023, where U.S. income was $52.9 billion and foreign income was $36.4 billion.",
+      "evidence": "In fiscal year 2024, our U.S. income before income taxes was $62.9 billion and our foreign income before income taxes was $44.9 billion. In fiscal year 2023, our U.S. income before income taxes was $52.9 billion and our foreign income before income taxes was $36.4 billion.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_091"
+    },
+    {
+      "question": "What is the Cybersecurity Governance Council (CGC) and what are its responsibilities?",
+      "answer": "The Cybersecurity Governance Council is an executive-level team of Deputy CISOs with cybersecurity expertise that supports the CISO. Its responsibilities include approving the enterprise security risk assessment process and results, determining appropriate cybersecurity risk levels and mitigations, reviewing NIST CSF alignment, and supporting compliance with cybersecurity regulations.",
+      "evidence": "Our CISO leads the strategy, engineering, and operations of cybersecurity across the company, and reports to the EVP of Microsoft Security. Our CISO has extensive experience assessing and managing cybersecurity programs and cybersecurity risk. Before joining Microsoft, our CISO served in a prior Chief Technology Officer role as well as in senior leadership, engineering, and operational roles within multiple organizations. In addition to the Board\u2019s oversight of cybersecurity risk, to support the CISO, we have established a Cybersecurity Governance Council (\u201cCGC\u201d) charged with overseeing initiatives that safeguard Microsoft\u2019s infrastructure. The CGC is comprised of an executive-level team of Deputy CISOs with cybersecurity backgrounds and expertise relevant to their roles. The CGC responsibilities include approving our enterprise security risk assessment process and results, determining the appropriate cybersecurity risk level and mitigations, reviewing the NIST CSF alignment, and supporting compliance with cybersecurity regulations. Our cybersecurity efforts are supported directly by Microsoft\u2019s security and threat intelligence experts and our employees across the company, all of whom receive cybersecurity awareness training and education and are expected to support our efforts.",
+      "question_type": "definitional",
+      "qa_id": "msft_10k_092"
+    },
+    {
+      "question": "What was Microsoft's total cost of revenue in fiscal year 2024 and what caused the increase?",
+      "answer": "Microsoft's total cost of revenue was $74.1 billion in fiscal year 2024, up from $65.9 billion in fiscal year 2023, an increase of $8.3 billion or 13%. The increase was driven by growth in Microsoft Cloud and Gaming, offset in part by a decline in Devices.",
+      "evidence": "Cost of revenue increased $8.3 billion or 13% driven by growth in Microsoft Cloud and Gaming, offset in part by a decline in Devices.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_096"
+    },
+    {
+      "question": "What is Microsoft's approach to product warranty?",
+      "answer": "Microsoft provides for estimated costs of fulfilling warranty obligations when related revenue is recognized. For hardware, costs are estimated based on historical and projected failure rates, repair costs, and knowledge of specific failures. Warranty terms vary by product and country, generally including parts and labor over 90 days to three years. For software, costs are estimated to provide bug fixes and security patches over the estimated life of the software.",
+      "evidence": "We provide for the estimated costs of fulfilling our obligations under hardware and software warranties at the time the related revenue is recognized. For hardware warranties, we estimate the costs based on historical and projected product failure rates, historical and projected repair costs, and knowledge of specific product failures (if any). The specific hardware warranty terms and conditions vary depending upon the product sold and the country in which we do business, but generally include parts and labor over a period generally ranging from 90 days to three years. For software warranties, we estimate the costs to provide bug fixes, such as security patches, over the estimated life of the software.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_097"
+    },
+    {
+      "question": "What are the estimated useful lives for Microsoft's property and equipment?",
+      "answer": "Microsoft's estimated useful lives are: computer software developed for internal use, three years; computer equipment, two to six years; buildings and improvements, five to 15 years; leasehold improvements, three to 20 years; and furniture and equipment, one to 10 years. Property is depreciated using the straight-line method. Land is not depreciated.",
+      "evidence": "Property and equipment is stated at cost less accumulated depreciation, and depreciated using the straight-line method over the shorter of the estimated useful life of the asset or the lease term. The estimated useful lives of our property and equipment are generally as follows: computer software developed or acquired for internal use, three years; computer equipment, two to six years; buildings and improvements, five to 15 years; leasehold improvements, three to 20 years; and furniture and equipment, one to 10 years. Land is not depreciated.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_098"
+    },
+    {
+      "question": "What was the dividend declared per common share for fiscal years 2024, 2023, and 2022?",
+      "answer": "Microsoft declared cash dividends per common share of $3.00 in fiscal year 2024, $2.72 in fiscal year 2023, and $2.48 in fiscal year 2022. This represents consistent year-over-year dividend growth, reflecting the company's commitment to returning capital to shareholders.",
+      "evidence": "| Cash dividends declared per common share |  | $ | 3.00 |  |  | $ | 2.72 |  |  | $ | 2.48 |  |",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_099"
+    },
+    {
+      "question": "Why does Microsoft invest significantly in cloud and AI infrastructure, and what impact does this have on margins?",
+      "answer": "Microsoft invests in cloud and AI infrastructure to meet the growing demand for its services, particularly AI services. However, the company acknowledges that these investments will continue to increase operating costs and may decrease operating margins. Datacenters depend on availability of buildable land, predictable energy, networking supplies, and servers including GPUs.",
+      "evidence": "The investments we are making in cloud and AI infrastructure and devices will continue to increase our operating costs and may decrease our operating margins. We continue to identify and evaluate opportunities to expand our datacenter locations and increase our server capacity to meet the evolving needs of our customers, particularly given the growing demand for AI services. Our datacenters depend on the availability of permitted and buildable land, predictable energy, networking supplies, and servers, including graphics processing units (\u201cGPUs\u201d) and other components. Our devices are primarily manufactured by third-party contract manufacturers. For the majority of our products, we have the ability to use other manufacturers if a current vendor becomes unavailable or unable to meet our requirements. However, some of our products contain certain components for which there are very few qualified suppliers. Extended disruptions at these suppliers could impact our ability to manufacture devices on time to meet consumer demand.\n\nOur success is highly dependent on our ability to attract and retain qualified employees. We hire a mix of university and industry talent worldwide. We compete for talented individuals globally by offering an exceptional working environment, broad customer reach, scale in resources, the ability to grow one\u2019s career across many different products and businesses, and competitive compensation and benefits.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_100"
+    },
+    {
+      "question": "Why does Microsoft state it undertakes no obligation to update forward-looking statements?",
+      "answer": "Microsoft undertakes no obligation to update or revise publicly any forward-looking statements, whether because of new information, future events, or otherwise. This is a standard legal disclaimer regarding the nature of forward-looking projections.",
+      "evidence": "We undertake no obligation to update or revise publicly any forward-looking statements, whether because of new information, future events, or otherwise.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_101"
+    },
+    {
+      "question": "What causes forward-looking statements to potentially differ from actual results?",
+      "answer": "Forward-looking statements are based on current expectations and assumptions that are subject to risks and uncertainties. These risks and uncertainties may cause actual results to differ materially from what was projected.",
+      "evidence": "Forward-looking statements are based on current expectations and assumptions that are subject to risks and uncertainties that may cause actual results to differ materially.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_102"
+    },
+    {
+      "question": "In which sections of the 10-K does Microsoft describe risks that could cause actual results to differ from forward-looking statements?",
+      "answer": "Microsoft describes risks and uncertainties that could cause actual results and events to differ materially in three sections: \"Risk Factors,\" \"Management's Discussion and Analysis of Financial Condition and Results of Operations,\" and \"Quantitative and Qualitative Disclosures About Market Risk\" (Part II, Item 7A).",
+      "evidence": "We describe risks and uncertainties that could cause actual results and events to differ materially in \u201cRisk Factors,\u201d \u201cManagement\u2019s Discussion and Analysis of Financial Condition and Results of Operations,\u201d and \u201cQuantitative and Qualitative Disclosures About Market Risk\u201d (Part II, Item 7A of this Form 10-K).",
+      "question_type": "causal",
+      "qa_id": "msft_10k_103"
+    },
+    {
+      "question": "How does Microsoft describe its commitment to responsible AI design?",
+      "answer": "Microsoft believes AI should be as empowering across communities as it is powerful, and the company is committed to ensuring it is responsibly designed and built with safety and security from the outset.",
+      "evidence": "We believe AI should be as empowering across communities as it is powerful, and we\u2019re committed to ensuring it is responsibly designed and built with safety and security from the outset.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_104"
+    },
+    {
+      "question": "What advantages does the Microsoft Cloud offer compared to other technology solutions?",
+      "answer": "The Microsoft Cloud provides the best integration across the technology stack while offering openness, improving time to value, reducing costs, and increasing agility.",
+      "evidence": "The Microsoft Cloud provides the best integration across the technology stack while offering openness, improving time to value, reducing costs, and increasing agility.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_105"
+    },
+    {
+      "question": "What is Microsoft's stated goal regarding its global performance and development approach?",
+      "answer": "Microsoft's intended result is a global performance and development approach that fosters its culture, drives company performance, and provides competitive compensation that ensures equitable pay by role while supporting pay for performance.",
+      "evidence": "Our intended result is a global performance and development approach that fosters our culture, drives company performance, and competitive compensation that ensures equitable pay by role while supporting pay for performance.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_106"
+    },
+    {
+      "question": "How does Microsoft describe its organizational culture in terms of business structure?",
+      "answer": "Microsoft describes its culture as one where everyone is on a continuous journey to learn and grow, operating as one company instead of multiple siloed businesses.",
+      "evidence": "This means everyone is on a continuous journey to learn and grow, operating as one company instead of multiple siloed businesses.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_107"
+    },
+    {
+      "question": "What programs has Microsoft introduced to support employee safety and hybrid work?",
+      "answer": "Microsoft's Occupational Health and Safety program helps protect employees' safety while they are working. Additionally, the company introduced Hybrid Workplace Flexibility guidance to better support leaders, managers, and employees in hybrid work scenarios.",
+      "evidence": "Our Occupational Health and Safety program helps to protect employees\u2019 safety while they are working. We also have introduced Hybrid Workplace Flexibility guidance to better support leaders, managers, and employees in hybrid work scenarios.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_108"
+    },
+    {
+      "question": "How does Azure benefit customers compared to managing on-premises infrastructure?",
+      "answer": "Azure enables customers to devote more resources to development and use of applications that benefit their organizations, rather than managing on-premises hardware and software. This shift allows organizations to focus on value-creating activities instead of infrastructure management.",
+      "evidence": "Azure enables customers to devote more resources to development and use of applications that benefit their organizations, rather than managing on-premises hardware and software.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_109"
+    },
+    {
+      "question": "What roles do Microsoft Edge and Bing with Copilot play in Microsoft's advertising strategy?",
+      "answer": "Microsoft Edge browser and Bing search engine with Copilot are key tools to enable user acquisition and engagement. Meanwhile, Microsoft's technology platform enables accelerated delivery of digital advertising solutions.",
+      "evidence": "Our Microsoft Edge browser and Bing search engine with Copilot are key tools to enable user acquisition and engagement, while our technology platform enables accelerated delivery of digital advertising solutions.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_110"
+    },
+    {
+      "question": "What supply chain risk does Microsoft face with certain product components?",
+      "answer": "Some of Microsoft's products contain certain components for which there are very few qualified suppliers. Extended disruptions at these suppliers could impact Microsoft's ability to manufacture devices on time to meet consumer demand.",
+      "evidence": "However, some of our products contain certain components for which there are very few qualified suppliers. Extended disruptions at these suppliers could impact our ability to manufacture devices on time to meet consumer demand.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_111"
+    },
+    {
+      "question": "How does Microsoft handle its intellectual property in terms of both internal use and licensing?",
+      "answer": "While Microsoft employs much of its internally-developed intellectual property in its own products and services, it also engages in outbound licensing of specific patented technologies that are incorporated into licensees' products.",
+      "evidence": "While we employ much of our internally-developed intellectual property in our products and services, we also engage in outbound licensing of specific patented technologies that are incorporated into licensees\u2019 products.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_112"
+    },
+    {
+      "question": "How does Microsoft's support of fundamental research contribute to its business?",
+      "answer": "Microsoft's continued support of fundamental research provides the company with a unique perspective on future trends and contributes to its innovation.",
+      "evidence": "This includes continuing to support fundamental research, which provides us with a unique perspective on future trends and contributes to our innovation.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_113"
+    },
+    {
+      "question": "How do lower-volume PC manufacturers (system builders) source Microsoft software compared to large OEMs?",
+      "answer": "System builders, consisting of lower-volume PC manufacturers, source Microsoft software for pre-installation and local redistribution primarily through the Microsoft distributor channel rather than through a direct agreement or relationship with Microsoft. This contrasts with larger OEMs who have direct relationships.",
+      "evidence": "The second broad category of OEMs are system builders consisting of lower-volume PC manufacturers, which source Microsoft software for pre-installation and local redistribution primarily through the Microsoft distributor channel rather than through a direct agreement or relationship with Microsoft.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_114"
+    },
+    {
+      "question": "What are Open Value agreements and who are they designed for?",
+      "answer": "Open Value agreements are described as a simple, cost-effective way to acquire the latest Microsoft technology. They are designed for small and medium organizations that want to license cloud services and on-premises software over a three-year period.",
+      "evidence": "Open Value\n\nOpen Value agreements are a simple, cost-effective way to acquire the latest Microsoft technology. These agreements are designed for small and medium organizations that want to license cloud services and on-premises software over a three-year period.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_115"
+    },
+    {
+      "question": "What type of organizations is a Select Plus agreement designed for and what advantage does it provide?",
+      "answer": "A Select Plus agreement is designed for government and academic organizations. It allows them to acquire on-premises licenses at any affiliate or department level while realizing advantages as one organization.",
+      "evidence": "A Select Plus agreement is designed for government and academic organizations to acquire on-premises licenses at any affiliate or department level, while realizing advantages as one organization.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_116"
+    },
+    {
+      "question": "Why is backlog not significant for Microsoft's product shipments?",
+      "answer": "Microsoft's practice is to ship its products promptly upon receipt of purchase orders from customers. As a consequence of this prompt fulfillment approach, backlog is not significant.",
+      "evidence": "Our practice is to ship our products promptly upon receipt of purchase orders from customers; consequently, backlog is not significant.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_117"
+    },
+    {
+      "question": "What role did Christopher Young hold before joining Microsoft and what positions did he hold at Intel?",
+      "answer": "Before joining Microsoft in November 2020, Christopher Young served as the Chief Executive Officer of McAfee, LLC from 2017 to 2020. Prior to that, he served as a Senior Vice President and General Manager of Intel Security Group from 2014 until 2017, when he led the initiative to spin out McAfee into a standalone company.",
+      "evidence": "Young has served as Executive Vice President, Business Development, Strategy, and Ventures since joining Microsoft in November 2020. Prior to Microsoft, he served as the Chief Executive Officer of McAfee, LLC from 2017 to 2020, and served as a Senior Vice President and General Manager of Intel Security Group from 2014 until 2017, when he led the initiative to spin out McAfee into a standalone company.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_118"
+    },
+    {
+      "question": "What must Microsoft do to compete effectively in enlisting developers for its platform?",
+      "answer": "To compete, Microsoft must successfully enlist developers to write applications for its platform and ensure that these applications have high quality, security, customer appeal, and value.",
+      "evidence": "To compete, we must successfully enlist developers to write applications for our platform and ensure that these applications have high quality, security, customer appeal, and value.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_119"
+    },
+    {
+      "question": "How could competitive pressures adversely affect Microsoft's financial performance?",
+      "answer": "Competitive pressures may cause decreased sales volumes, price reductions, and/or increased operating costs (such as for research and development, marketing, and sales incentives), which may adversely affect Microsoft's financial condition and results of operations.",
+      "evidence": "The competitive pressures described above may cause decreased sales volumes, price reductions, and/or increased operating costs, such as for research and development, marketing, and sales incentives, which may adversely affect our financial condition and results of operations.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_120"
+    },
+    {
+      "question": "What types of fraudulent or abusive activities might users engage in through Microsoft's cloud-based services?",
+      "answer": "Some users may engage in fraudulent or abusive activities through Microsoft's cloud-based services, such as unauthorized account access, payment fraud, or terms of service violations including cryptocurrency mining or launching cyberattacks.",
+      "evidence": "However, there may be instances where these systems are used in ways that are unintended or inappropriate. In addition, some users may also engage in fraudulent or abusive activities through our cloud-based services, such as unauthorized account access, payment fraud, or terms of service violations including cryptocurrency mining or launching cyberattacks.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_121"
+    },
+    {
+      "question": "What risks does Microsoft face when the expected benefits from acquisitions and business arrangements are not fully realized?",
+      "answer": "It may take longer than expected to realize the full benefits from transactions and arrangements, such as increased revenue or enhanced efficiencies, or the benefits may ultimately be smaller than expected. Additionally, if an arrangement fails to adequately anticipate changing circumstances and interests of a party, it may result in early termination or renegotiation.",
+      "evidence": "If an arrangement fails to adequately anticipate changing circumstances and interests of a party, it may result in early termination or renegotiation of the arrangement. We also have limited ability to control or influence third parties with whom we have arrangements, which may impact our ability to realize the anticipated benefits. The success of these transactions and arrangements depend in part on our ability to leverage them to enhance our existing products and services or develop compelling new ones, as well as the acquired companies\u2019 ability to meet our policies and processes in areas such as data governance, privacy, and cybersecurity. It may take longer than expected to realize the full benefits from these transactions and arrangements, such as increased revenue or enhanced efficiencies, or the benefits may ultimately be smaller than we expected.",
+      "question_type": "comparative",
+      "qa_id": "msft_10k_122"
+    },
+    {
+      "question": "What potential consequence could result from Microsoft not realizing economic benefits from acquisitions?",
+      "answer": "Microsoft acquires other companies and intangible assets and may not realize all the economic benefit from those acquisitions, which could cause an impairment of goodwill or intangibles.",
+      "evidence": "We acquire other companies and intangible assets and may not realize all the economic benefit from those acquisitions, which could cause an impairment of goodwill or intangibles.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_123"
+    },
+    {
+      "question": "What are the potential consequences of cyberattacks and security vulnerabilities for Microsoft?",
+      "answer": "Cyberattacks and security vulnerabilities could lead to reduced revenue, increased costs, liability claims, or harm to Microsoft's reputation or competitive position.",
+      "evidence": "Cyberattacks and security vulnerabilities could lead to reduced revenue, increased costs, liability claims, or harm to our reputation or competitive position.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_124"
+    },
+    {
+      "question": "What are the wide-ranging consequences that breaches of Microsoft's network or data security can cause?",
+      "answer": "Breaches can disrupt system and business application security, impair Microsoft's ability to provide services and protect customer data privacy, result in product development delays, compromise confidential business information, result in intellectual property theft, subject the company to ransomware attacks, require additional resources for remediation, or otherwise adversely affect the business.",
+      "evidence": "Breaches of our facilities, network, or data security can disrupt the security of our systems and business applications, impair our ability to provide services to our customers and protect the privacy of their data, result in product development delays, compromise confidential or technical business information, result in theft or misuse of our intellectual property or other assets, subject us to ransomware attacks, require us to allocate more resources to improve technologies or remediate the impacts of attacks, or otherwise adversely affect our business.",
+      "question_type": "causal",
+      "qa_id": "msft_10k_125"
+    },
+    {
+      "question": "What steps must Microsoft take to defend against security threats across its products and cloud services?",
+      "answer": "Microsoft must continuously engineer more secure products and services, enhance security and threat detection features, improve deployment of software updates, develop mitigation technologies, maintain digital security infrastructure, and provide security tools such as firewalls and anti-virus software along with information about the need to deploy security measures.",
+      "evidence": "To defend against security threats to our internal IT systems, our cloud-based services, and our customers\u2019 systems, we must continuously engineer more secure products and services, enhance security, threat detection, and reliability features, escalate and improve the deployment of software updates to address security vulnerabilities in our own products as well as those provided by others in a timely manner, develop mitigation technologies that help to secure customers from attacks even when software updates are not deployed, maintain the digital security infrastructure that protects the integrity of our network, products, and services, and provide security tools such as firewalls, anti-virus software, and advanced security and information about the need to deploy security measures and the impact of doing so.",
+      "question_type": "procedural",
+      "qa_id": "msft_10k_126"
+    }
+  ]
+}

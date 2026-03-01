@@ -1,0 +1,705 @@
+{
+  "corpus_id": "nasa_std_2",
+  "qa_pairs": [
+    {
+      "question": "What is the purpose of NPR 7123.1C?",
+      "answer": "NPR 7123.1C establishes the NASA processes and requirements for implementation of Systems Engineering (SE) by programs and projects. It defines a logical systems approach performed by multidisciplinary teams to engineer and integrate NASA's systems to ensure NASA products meet customer needs, while enhancing core engineering capabilities and improving safety, mission success, and affordability.",
+      "evidence": "This document establishes the NASA processes and requirements for implementation of Systems Engineering (SE) by programs/projects. NASA SE is a logical systems approach performed by multidisciplinary teams to engineer and integrate NASA's systems to ensure NASA products meet the customer's needs. Implementation of this systems approach will enhance NASA's core engineering capabilities while improving safety, mission success, and affordability.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_001"
+    },
+    {
+      "question": "What does systems engineering at NASA require according to Section 1.1.1?",
+      "answer": "Systems engineering at NASA requires the application of a systematic, disciplined engineering approach that is quantifiable, recursive, iterative, and repeatable for the development, operation, maintenance, and disposal of systems integrated into a whole throughout the life cycle. The emphasis is on safely achieving stakeholder functional, physical, operational, and performance requirements in the intended use environments over the system's planned life within cost and schedule constraints.",
+      "evidence": "Systems engineering at NASA requires the application of a systematic, disciplined engineering approach that is quantifiable, recursive, iterative, and repeatable for the development, operation, maintenance, and disposal of systems integrated into a whole throughout the life cycle of a project or program. The emphasis of SE is on safely achieving stakeholder functional, physical, operational, and performance (including human performance) requirements in the intended use environments over the system's planned life within cost and schedule constraints.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_003"
+    },
+    {
+      "question": "What is the order of precedence in case of conflict between requirements?",
+      "answer": "The order of precedence in case of conflict is: 51 U.S.C. Section 20113(a)(1), National Aeronautics and Space Act; NPD 1000.0, NASA Governance and Strategic Management Handbook; NPD 1000.3, The NASA Organization; NPD 7120.4, NASA Engineering and Program/Project Management Policy; and NPR 7123.1, NASA Systems Engineering Processes and Requirements.",
+      "evidence": "The order of precedence in case of conflict between requirements is 51 U.S.C. \u00a7 20113(a)(1), National Aeronautics and Space Act; NPD 1000.0, NASA Governance and Strategic Management Handbook; NPD 1000.3, The NASA Organization; NPD 7120.4, NASA Engineering and Program/Project Management Policy; and NPR 7123.1, NASA Systems Engineering Processes and Requirements.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_004"
+    },
+    {
+      "question": "What are the four pillars of technical excellence at NASA?",
+      "answer": "The four pillars of technical excellence are: (1) Clearly Documented Requirements, Policies, and Procedures; (2) Effective Training and Development; (3) Balancing Risk; and (4) Continuous Communications. These pillars are intended to ensure that every NASA program and project meets the highest possible technical excellence.",
+      "evidence": "As depicted in Figure 1-3, there are four pillars to achieving technical excellence and strengthening the SE capability. These pillars are intended to ensure that every NASA program and project meets the highest possible technical excellence.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_005"
+    },
+    {
+      "question": "What is the definition of 'tailoring' as it relates to SE requirements?",
+      "answer": "Tailoring is removing requirements by use of waiver or deviation. It is the process used to seek relief from SE NPR requirements when that relief is consistent with program or project objectives, acceptable risk, and constraints. The tailoring process results in deviations or waivers to requirements depending on the timing of the request.",
+      "evidence": "Tailoring can be differentiated from customizing as described in NASA/SP-2016-6105. Tailoring is removing requirements by use of waiver or deviation. Customizing is meeting the intent of the requirement through alternative approaches and does not require waivers or deviations.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_008"
+    },
+    {
+      "question": "How does customizing differ from tailoring of SE requirements?",
+      "answer": "Customizing is the adaptation of SE practices that are used to accomplish the SE requirements as appropriate to the size, complexity, and acceptable risk of the program/project, and it does not require waivers or deviations. Tailoring, on the other hand, is removing requirements by use of waiver or deviation. Customizing meets the intent of the requirement through alternative approaches.",
+      "evidence": "Tailoring is removing requirements by use of waiver or deviation. Customizing is meeting the intent of the requirement through alternative approaches and does not require waivers or deviations.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_2_009"
+    },
+    {
+      "question": "What is the role of the NASA Chief Engineer?",
+      "answer": "The NASA Chief Engineer is responsible for policy, oversight, and assessment of the NASA engineering and program/project management process; implements the ETA process; and serves as principal advisor to the Administrator and other senior officials on matters pertaining to the Agency's technical capability and readiness to execute NASA programs and projects. The NASA Chief Engineer also provides overall leadership for the ETA process and hears appeals of engineering decisions when they cannot be resolved at lower levels.",
+      "evidence": "The NASA Chief Engineer is responsible for policy, oversight, and assessment of the NASA engineering and program/project management process; implements the ETA process; and serves as principal advisor to the Administrator and other senior officials on matters pertaining to the Agency's technical capability and readiness to execute NASA programs and projects.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_010"
+    },
+    {
+      "question": "What are the responsibilities of Center Directors relative to SE practices?",
+      "answer": "The Center Director is responsible for establishing, developing, and maintaining the Institutional Authority required to execute programs and projects assigned to their Center. This includes ensuring the Center is capable of accomplishing assigned programs, performing periodic program and project reviews, working with Mission Directorates to assemble teams and provide resources, and providing support in resolving technical and programmatic issues.",
+      "evidence": "The Center Director is responsible for establishing, developing, and maintaining the Institutional Authority (e.g., processes and procedures, human capital, facilities, and infrastructure) required to execute programs and projects assigned to their Center.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_011"
+    },
+    {
+      "question": "What does 'identify' mean in the context of Chapter 3 processes?",
+      "answer": "In Section 3.2, 'identify' means to either use an approved process or a customized process that is approved by the ETA or their delegate. 'Implement' includes documenting and communicating the approved process, providing resources to execute the process, providing training on the process, and monitoring and controlling the process.",
+      "evidence": "For Section 3.2, \"identify\" means to either use an approved process or a customized process that is approved by the ETA or their delegate. \"Implement\" includes documenting and communicating the approved process, providing resources to execute the process, providing training on the process, and monitoring and controlling the process.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_012"
+    },
+    {
+      "question": "What are the five product realization processes?",
+      "answer": "The five product realization processes are: (a) Product Implementation for the lowest level or Product Integration for subsequent levels, (b) Product Verification, (c) Product Validation, and (d) Product Transition. Four of these are applied to each end product of a product layer from the bottom to the top of the system structure.",
+      "evidence": "There are five product realization processes. Four of the product realization processes are applied to each end product of a product layer from the bottom to the top of the system structure: a. Either Product Implementation for the lowest level or Product Integration for subsequent levels. b. Product Verification. c. Product Validation. d. Product Transition.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_015"
+    },
+    {
+      "question": "What are the eight technical management processes?",
+      "answer": "The eight technical management processes are Technical Planning, Technical Requirements Management, Interface Management, Technical Risk Management, Configuration Management, Technical Data Management, Technical Assessment, and Decision Analysis. These processes supplement the program and project management directives.",
+      "evidence": "There are eight technical management processes\u2014Technical Planning, Technical Requirements Management, Interface Management, Technical Risk Management, Configuration Management, Technical Data Management, Technical Assessment, and Decision Analysis.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_016"
+    },
+    {
+      "question": "What is the purpose of the Technical Requirements Definition process?",
+      "answer": "The technical requirements definition process is used to transform the baselined stakeholder expectations into unique, quantitative, and measurable technical requirements expressed as 'shall' statements that can be used for defining a design solution. This process also includes validation of the requirements to ensure they are well-formed, complete, consistent, and individually verifiable and traceable.",
+      "evidence": "The technical requirements definition process is used to transform the baselined stakeholder expectations into unique, quantitative, and measurable technical requirements expressed as \"shall\" statements that can be used for defining a design solution for the product layer end product and related enabling products.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_018"
+    },
+    {
+      "question": "What is the Logical Decomposition process used for?",
+      "answer": "The logical decomposition process is used to improve understanding of the defined technical requirements and the relationships among the requirements (e.g., functional, behavioral, performance, and temporal) and to transform the defined set of technical requirements into a set of logical decomposition models and their associated set of derived technical requirements for lower levels of the system.",
+      "evidence": "The logical decomposition process is used to improve understanding of the defined technical requirements and the relationships among the requirements (e.g., functional, behavioral, performance, and temporal) and to transform the defined set of technical requirements into a set of logical decomposition models and their associated set of derived technical requirements for lower levels of the system and for input to the design solution definition process.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_019"
+    },
+    {
+      "question": "What is the Design Solution Definition process used for?",
+      "answer": "The Design Solution Definition process is used to translate the outputs of the logical decomposition process into a design solution definition that is in a form consistent with the product life-cycle phase and product layer location. This includes transforming logical decomposition models and derived technical requirements into alternative solutions, analyzing each alternative, selecting a preferred alternative, and fully defining it into a final design solution.",
+      "evidence": "The Design Solution Definition process is used to translate the outputs of the logical decomposition process into a design solution definition that is in a form consistent with the product life-cycle phase and product layer location in the system structure and that will satisfy phase success criteria.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_020"
+    },
+    {
+      "question": "How does Product Verification differ from Product Validation?",
+      "answer": "Product Verification is used to demonstrate that an end product conforms to its requirements as defined in the design solution definition, answering 'Did I build the product right?' Product Validation is used to confirm that a verified end product fulfills its intended use when placed in its intended environment against baselined stakeholder expectations, answering 'Am I building the right product?'",
+      "evidence": "The Product Verification process is used to demonstrate that an end product generated from product implementation or product integration conforms to its requirements as a function of the product life-cycle phase and the location of the product layer end product in the system structure.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_2_022"
+    },
+    {
+      "question": "What is the Product Transition process used for?",
+      "answer": "The Product Transition process is used to transition a verified and validated end product that has been generated by product implementation or product integration to the customer at the next level in the system structure for integration into an end product or, for the top-level end product, transitioned to the intended end user.",
+      "evidence": "The Product Transition process is used to transition a verified and validated end product that has been generated by product implementation or product integration to the customer at the next level in the system structure for integration into an end product or, for the top-level end product, transitioned to the intended end user.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_023"
+    },
+    {
+      "question": "What key document is generated by the Technical Planning process?",
+      "answer": "A key document generated by the Technical Planning process is the Systems Engineering Management Plan (SEMP). The process is used to plan for the application and management of each common technical process, including tailoring of organizational requirements and requirements specified in this NPR, and to identify, define, and plan the technical effort applicable to the product life-cycle phase.",
+      "evidence": "The Technical Planning process is used to plan for the application and management of each common technical process, including tailoring of organizational requirements and requirements specified in this NPR. It is also used to identify, define, and plan the technical effort applicable to the product life-cycle phase for product layer location within the system structure and to meet program/project objectives and product life-cycle phase success criteria. A key document generated by this process is the SEMP (See Chapter 6).",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_024"
+    },
+    {
+      "question": "What are the three uses of the Requirements Management process?",
+      "answer": "The Requirements Management process is used to: (a) manage the product requirements identified, baselined, and used in the definition of the product layer products during system design; (b) provide bidirectional traceability back to the top product layer requirements; and (c) manage the changes to established requirement baselines over the life-cycle of the system products.",
+      "evidence": "The Requirements Management process is used to: a. Manage the product requirements identified, baselined, and used in the definition of the product layer products during system design. b. Provide bidirectional traceability back to the top product layer requirements. c. Manage the changes to established requirement baselines over the life-cycle of the system products.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_025"
+    },
+    {
+      "question": "What is the Technical Risk Management process used for?",
+      "answer": "The Technical Risk Management process is used to make risk-informed decisions and examine, on a continuing basis, the potential for deviations from the program/project plan and the consequences that could result should they occur. This enables risk-handling activities to be planned and invoked as needed across the life of the program or project to mitigate impacts on achieving product life-cycle phase success criteria.",
+      "evidence": "The Technical Risk Management process is used to make risk-informed decisions and examine, on a continuing basis, the potential for deviations from the program/project plan and the consequences that could result should they occur. This enables risk-handling activities to be planned and invoked as needed across the life of the program or project to mitigate impacts on achieving product life-cycle phase success criteria and meeting technical objectives.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_026"
+    },
+    {
+      "question": "What are the five uses of the Configuration Management process?",
+      "answer": "The Configuration Management process is used to: (a) identify items to be placed under configuration control; (b) identify the configuration at various points in time; (c) systematically control changes to the configuration; (d) maintain the integrity and traceability of the configuration throughout its life; and (e) preserve records of the configuration throughout its life-cycle.",
+      "evidence": "The Configuration Management process for end products, enabling products, and other work products placed under configuration control is used to: a. Identify the items to be placed under configuration control. b. Identify the configuration of the product or work product at various points in time. c. Systematically control changes to the configuration of the product or work product. d. Maintain the integrity and traceability of the configuration of the product or work product throughout its life. e. Preserve the records of the product or end product configuration throughout its life-cycle, dispositioning them in accordance with NPR 1441.1, NASA Records Management Program Requirements.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_027"
+    },
+    {
+      "question": "What is the Decision Analysis process used for?",
+      "answer": "The Decision Analysis process, including processes for identification of decision criteria, identification of alternatives, analysis of alternatives, and alternative selection, is applied to technical issues to support their resolution. It considers relevant data such as engineering performance, quality, and reliability and associated uncertainties, and is used throughout the system life-cycle to formulate candidate decision alternatives and evaluate their impacts.",
+      "evidence": "The Decision Analysis process, including processes for identification of decision criteria, identification of alternatives, analysis of alternatives, and alternative selection, is applied to technical issues to support their resolution. It considers relevant data (e.g., engineering performance, quality, and reliability) and associated uncertainties.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_028"
+    },
+    {
+      "question": "What inputs or requirements typically support a solicitation for contracted work?",
+      "answer": "Inputs or requirements in support of a solicitation typically include a Statement of Work, product requirements, Independent Government Estimate, Data Requirements List, Deliverables List, and Surveillance Plan. These should be developed considering the risk posture of the program/project and fit within cost and schedule constraints.",
+      "evidence": "Inputs or requirements in support of a solicitation (such as Requests for Proposals (RFP)) typically include a Statement of Work, product requirements, Independent Government Estimate, Data Requirements List, Deliverables List, and Surveillance Plan. These should be developed considering the risk posture of the program/project and fit within the cost and schedule constraints.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_029"
+    },
+    {
+      "question": "How does 'insight' differ from 'oversight' in the context of contracted projects?",
+      "answer": "Insight is a monitoring activity that monitors contractor compliance using Government-identified metrics and contracted milestones. Oversight is an exercise of authority by the Government in which the Government retains and exercises the right to concur or non-concur with the contractor's decisions. Authority to interface with the contractor can be delegated only by the contracting officer.",
+      "evidence": "\"Insight\" is a monitoring activity, whereas \"oversight\" is an exercise of authority by the Government. The Federal Acquisition Regulation and the NASA Supplement to the Federal Acquisition Regulation govern the acquisition planning, contract formation, and contract administration process. Authority to interface with the contractor can be delegated only by the contracting officer.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_2_030"
+    },
+    {
+      "question": "What must the NASA technical team establish for the solicitation according to SE-25?",
+      "answer": "The NASA technical team shall establish the technical inputs to the solicitation appropriate for the product(s) to be developed, including product requirements and Statement of Work tasks. The technical team uses knowledge of the 17 common technical processes to identify products and desired practices to include in the solicitation.",
+      "evidence": "The NASA technical team shall establish the technical inputs to the solicitation appropriate for the product(s) to be developed, including product requirements and Statement of Work tasks [SE-25].",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_032"
+    },
+    {
+      "question": "What is the basis for life-cycle reviews to occur?",
+      "answer": "Life-cycle reviews are event based and occur when the entrance criteria for the applicable review are satisfied. They occur based on the maturity of the relevant technical baseline as opposed to calendar milestones such as quarterly progress reviews or yearly summaries.",
+      "evidence": "Life-cycle reviews are event based and occur when the entrance criteria for the applicable review are satisfied. (Appendix G provides guidance.) They occur based on the maturity of the relevant technical baseline as opposed to calendar milestones (e.g., the quarterly progress review, the yearly summary).",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_034"
+    },
+    {
+      "question": "What is the purpose of Technology Readiness Levels (TRLs)?",
+      "answer": "Technology Readiness Levels are used to assess the maturity of technology throughout the life-cycle of the program/project. Accurate assessment of technology maturity is critical to technology advancement and its subsequent incorporation into operational products. TRLs range from 1 (Basic Technology Research) to 9 (Systems Test, Launch, and Operations), and moving to higher levels requires an assessment of capabilities for design, analysis, manufacture, and test.",
+      "evidence": "Accurate assessment of technology maturity is critical to technology advancement and its subsequent incorporation into operational products. The program/project ensures that Technology Readiness Levels (TRLs) and/or other measures of technology maturity are used to assess maturity throughout the life-cycle of the program/project.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_035"
+    },
+    {
+      "question": "What happens at a Key Decision Point (KDP)?",
+      "answer": "At each KDP, management examines the maturity of the technical aspects of the program/project, evaluating the adequacy of resources allocated, technical maturity of the product, management of technical issues and risks, and responsiveness to changes in stakeholder expectations. If satisfactory, including implementation of corrective actions, the program/project can be approved to proceed to the next phase.",
+      "evidence": "At each KDP, management examines the maturity of the technical aspects of the program/project. For example, management evaluates the adequacy of the resources (staffing and funding) allocated to the planned technical effort, the technical maturity of the product, the management of technical and nontechnical internal issues and risks, and the responsiveness to any changes in stakeholder expectations. If the technical and management aspects of the program/project are satisfactory, including the implementation of corrective actions, then the program/project can be approved by the designated Decision Authority to proceed to the next phase.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_036"
+    },
+    {
+      "question": "What products must be provided at the Mission Concept Review (MCR)?",
+      "answer": "At the MCR, three required minimum products must be provided: (1) Baselined stakeholder identification and expectation definitions [SE-35]; (2) Baselined concept definition [SE-36]; and (3) Approved MOE definition [SE-37]. These are the primary technical products that the technical team must deliver.",
+      "evidence": "Mission Concept Review (MCR): (1) Baselined stakeholder identification and expectation definitions [SE-35]. (2) Baselined concept definition [SE-36]. (3) Approved MOE definition [SE-37].",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_037"
+    },
+    {
+      "question": "What products must be provided at the System Requirements Review (SRR)?",
+      "answer": "At the SRR, two required minimum products must be provided: (1) Baselined SEMP (or other equivalent program/project documentation) for projects, single-project programs, and one-step AO programs [SE-38]; and (2) Baselined requirements [SE-39].",
+      "evidence": "System Requirements Review (SRR): (1) Baselined SEMP (or other equivalent program/project documentation) for projects, single-project programs, and one-step AO programs [SE-38]. (2) Baselined requirements [SE-39].",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_038"
+    },
+    {
+      "question": "What products must be provided at the MDR/SDR?",
+      "answer": "At the MDR/SDR, five required minimum products must be provided: (1) Approved TPM definitions [SE-40]; (2) Baselined architecture definition [SE-41]; (3) Baselined allocation of requirements to next lower level [SE-42]; (4) Initial trend of required leading indicators [SE-43]; and (5) Baseline SEMP for uncoupled, loosely coupled, tightly coupled, and two-step AO programs [SE-44].",
+      "evidence": "Mission Definition Review/System Definition Review (MDR/SDR): (1) Approved TPM definitions [SE-40]. (2) Baselined architecture definition [SE-41]. (3) Baselined allocation of requirements to next lower level [SE-42]. (4) Initial trend of required leading indicators [SE-43]. (5) Baseline SEMP (or other equivalent program/project documentation) for uncoupled, loosely coupled, tightly coupled, and two-step AO programs [SE-44].",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_039"
+    },
+    {
+      "question": "What is the required product at the Preliminary Design Review (PDR)?",
+      "answer": "At the PDR, the required minimum product is the preliminary design solution definition [SE-45]. This is the key product that demonstrates the preliminary design meets all system of interest requirements with acceptable risk and within cost and schedule constraints.",
+      "evidence": "Preliminary Design Review (PDR): (1) Preliminary design solution definition [SE-45].",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_040"
+    },
+    {
+      "question": "What is the function of the Systems Engineering Management Plan (SEMP)?",
+      "answer": "The SEMP is used to establish the technical content of the engineering work early in the Formulation phase for each program/project and is updated as needed throughout the life-cycle. It provides the specifics of the technical effort, describes what common technical processes will be used, how they will be applied, how the program/project will be organized, and the technical resources required.",
+      "evidence": "A Systems Engineering Management Plan (SEMP) is used to establish the technical content of the engineering work early in the Formulation phase for each program/project and updated as needed throughout the program/project life-cycle.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_043"
+    },
+    {
+      "question": "What communication function does the SEMP serve?",
+      "answer": "The SEMP provides the communication bridge between the program/project management team and the executing technical team, and it also facilitates effective communication within the technical team. It documents and communicates the technical approach, resources to be used, key technical tasks, activities, and events along with their metrics and success criteria.",
+      "evidence": "The SEMP provides the communication bridge between the program/project management team and the executing technical team. It also facilitates effective communication within the technical team.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_044"
+    },
+    {
+      "question": "What must the ETA approve according to requirement SE-06?",
+      "answer": "The ETA shall approve the SEMP, waiver or deviation authorizations, and other key technical documents to ensure independent assessment of technical content. This requirement ensures that the ETA has reviewed and approved key systems engineering documents.",
+      "evidence": "The ETA shall approve the SEMP, waiver or deviation authorizations, and other key technical documents to ensure independent assessment of technical content [SE-06].",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_046"
+    },
+    {
+      "question": "What are the two required leading indicators that must be included in TPMs?",
+      "answer": "The technical team shall ensure that the set of TPMs include mass margins for projects involving hardware [SE-62] and power margins for projects that are powered [SE-63]. These are required leading indicators that provide insight into potential future states of the project.",
+      "evidence": "The technical team shall ensure that the set of TPMs include the following leading indicators: a. Mass margins for projects involving hardware [SE-62]. b. Power margins for projects that are powered [SE-63].",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_047"
+    },
+    {
+      "question": "What is the definition of 'Acceptable Risk' in the context of this NPR?",
+      "answer": "Acceptable Risk is defined as the risk that is understood and agreed to by the program/project, governing PMC, Mission Directorate, and other customers such that no further specific mitigating action is required. Some mitigating actions might have already occurred prior to the risk being deemed acceptable.",
+      "evidence": "Acceptable Risk: The risk that is understood and agreed to by the program/project, governing PMC, Mission Directorate, and other customers such that no further specific mitigating action is required. (Some mitigating actions might have already occurred.)",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_048"
+    },
+    {
+      "question": "What is the definition of 'Baseline' in this document?",
+      "answer": "A baseline is defined as an agreed-to set of requirements, designs, or documents that will have changes controlled through a formal approval and monitoring process. With respect to technology maturation products, baselining indicates putting the product under configuration control so that changes can be tracked, approved, and communicated to the team and relevant stakeholders.",
+      "evidence": "Baseline: An agreed-to set of requirements, designs, or documents that will have changes controlled through a formal approval and monitoring process.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_049"
+    },
+    {
+      "question": "What is a Concept of Operations (ConOps)?",
+      "answer": "A ConOps is developed early in Pre-Phase A and describes the overall high-level concept of how the system will be used to meet stakeholder expectations, usually in a time sequenced manner. It describes the system from an operational perspective, helps facilitate understanding of system goals, stimulates requirements development, serves as the basis for long-range operational planning, and provides criteria for system validation.",
+      "evidence": "Concept of Operations (ConOps): Developed early in Pre-Phase A, describes the overall high-level concept of how the system will be used to meet stakeholder expectations, usually in a time sequenced manner. It describes the system from an operational perspective and helps facilitate an understanding of the system goals.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_050"
+    },
+    {
+      "question": "What are 'Enabling Products' as defined in this NPR?",
+      "answer": "Enabling Products are the life-cycle support products and services (e.g., production, test, deployment, training, maintenance, and disposal) that facilitate the progression and use of the operational end product through its life-cycle. Since the end product and its enabling products are interdependent, they are viewed as a system, and program/project responsibility extends to acquiring services from the relevant enabling products.",
+      "evidence": "Enabling Products: The life-cycle support products and services (e.g., production, test, deployment, training, maintenance, and disposal) that facilitate the progression and use of the operational end product through its life-cycle. Since the end product and its enabling products are interdependent, they are viewed as a system.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_052"
+    },
+    {
+      "question": "What is an Engineering Unit?",
+      "answer": "An engineering unit is a high fidelity unit that demonstrates critical aspects of the engineering processes involved in the development of the operational unit. Engineering test units are intended to closely resemble the final product to the maximum extent possible and are built and tested to establish confidence that the design will function in the expected environments. In some cases, the engineering unit can become the final product.",
+      "evidence": "Engineering Unit: A high fidelity unit that demonstrates critical aspects of the engineering processes involved in the development of the operational unit. Engineering test units are intended to closely resemble the final product (hardware/software) to the maximum extent possible and are built and tested so as to establish confidence that the design will function in the expected environments.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_053"
+    },
+    {
+      "question": "What does TRL 4 represent?",
+      "answer": "TRL 4 represents 'Component and/or breadboard validation in a laboratory environment.' A low fidelity system/component breadboard is built and operated to demonstrate basic functionality in a laboratory environment. The success criteria is documented test performance demonstrating agreement with analytical predictions and documented definition of potentially relevant environment.",
+      "evidence": "4 | Component and/or breadboard validation in a laboratory environment. | A low fidelity system/component breadboard is built and operated to demonstrate basic functionality in a laboratory environment. | Key, functionality critical software components are integrated and functionally validated to establish interoperability and begin architecture development. Relevant environments defined and performance in the environment predicted. | Documented test performance demonstrating agreement with analytical predictions. Documented definition of potentially relevant environment.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_055"
+    },
+    {
+      "question": "What does TRL 9 represent?",
+      "answer": "TRL 9 represents 'Actual system flight proven through successful mission operations.' The final product is successfully operated in an actual mission. For software, all software has been thoroughly debugged, fully integrated with all operational hardware and software systems, all documentation has been completed, sustaining software support is in place, and the system has been successfully operated in the operational environment.",
+      "evidence": "9 | Actual system flight proven through successful mission operations. | The final product is successfully operated in an actual mission. | All software has been thoroughly debugged and fully integrated with all operational hardware and software systems. All documentation has been completed. Sustaining software support is in place. System has been successfully operated in the operational environment. | Documented mission operational results.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_057"
+    },
+    {
+      "question": "What is the difference between a relevant environment and an operational environment?",
+      "answer": "The operational environment is the environment in which the final product will be operated, such as space for flight hardware/software. The relevant environment is the specific subset of the operational environment required to demonstrate critical 'at risk' aspects of the final product performance, focusing specifically on stressing the technology advance in question. Not all systems need to be operated in the full operational environment to satisfactorily address performance margin requirements.",
+      "evidence": "**Relevant Environment:** Not all systems, subsystems, and/or components need to be operated in the operational environment in order to satisfactorily address performance margin requirements. Consequently, the relevant environment is the specific subset of the operational environment that is required to demonstrate critical \u201cat risk\u201d aspects of the final product performance in an operational environment. It is an environment that focuses specifically on \u201cstressing\u201d the technology advance in question.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_2_059"
+    },
+    {
+      "question": "What is the SE Engine?",
+      "answer": "The SE Engine is the common technical processes model referred to in the NPR to stress that these common technical processes are used to drive the development of system products and associated work products required by management. It is a highly versatile representation of the core SE processes that can be used for any type of life-cycle including waterfall, spiral, and agile, and allows for use in very simple to highly complex systems.",
+      "evidence": "The SE common technical processes model is referred to as an \"SE engine\" in this NPR to stress that these common technical processes are used to drive the development of the system products and associated work products required by management to satisfy the applicable product life-cycle phase success criteria while meeting stakeholder expectations within cost, schedule, and risk constraints.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_062"
+    },
+    {
+      "question": "What is a 'product layer' as defined in this document?",
+      "answer": "A product layer is a horizontal slice of the product breakdown hierarchy and includes both the end product and its associated enabling products. The enabling products facilitate activities of system design, product realization, operations and mission support, sustainment, and end-of-product-life disposal or recycling.",
+      "evidence": "In this document, a product layer is a horizontal slice of the product breakdown hierarchy and includes both the end product and its associated enabling products. The enabling products facilitate the activities of system design, product realization, operations and mission support, sustainment, and end-of-product-life disposal or recycling by having the products and services available when needed.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_063"
+    },
+    {
+      "question": "What considerations should be evaluated when tailoring or customizing SE requirements?",
+      "answer": "Considerations for tailoring or customizing should include but are not limited to: scope and visibility, risk tolerance and failure consequences, system size and complexity, human involvement, impact on Agency IT security, impact on other systems, longevity, serviceability, constraints including cost and schedule, safety and quality, current level of technology available, and availability of industrial capacity.",
+      "evidence": "Considerations for tailoring or customizing should include but are not limited to: a. Scope and visibility (e.g., organizations and partnerships involved, international agreements, amount of effort required). b. Risk tolerance and failure consequences. c. System size, functionality, and complexity (e.g., human space flight/flagship science vs. subscale technology demonstration).",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_065"
+    },
+    {
+      "question": "What is the MDAA responsible for?",
+      "answer": "The Mission Directorate Associate Administrator (MDAA) is responsible for establishing, developing, and maintaining the Programmatic Authority (i.e., policy and procedures, programs, projects, budgets, and schedules) in managing programs and projects within their Mission Directorate.",
+      "evidence": "The Mission Directorate Associate Administrator (MDAA) is responsible for establishing, developing, and maintaining the Programmatic Authority (i.e., policy and procedures, programs, projects, budgets, and schedules) in managing programs and projects within their Mission Directorate.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_066"
+    },
+    {
+      "question": "What are the roles of ETAs or their delegates at the program or project level?",
+      "answer": "ETAs or their delegates at the program or project level serve as members of control boards and review boards; work with Center management to ensure quality and integrity; ensure waivers or deviations are properly submitted; assist in making risk-informed decisions; provide the ETA view of matters and raise dissenting opinions; and serve as an effective part of NASA's system of checks and balances.",
+      "evidence": "ETAs or their delegates at the program or project level: a. Serve as members of program or project control boards, change boards, and internal review boards. b. Work with the Center management and other TA personnel to ensure that the quality and integrity of program or project processes, products, and standards of performance related to engineering, SMA, and health and medical reflect the level of excellence expected by the Center and the TA community.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_067"
+    },
+    {
+      "question": "What cannot the ETA approve in terms of waivers?",
+      "answer": "The ETA cannot approve a request for a waiver or deviation from a non-technical derived requirement established by a Programmatic Authority. However, the ETA may approve a request for a waiver or deviation from a technical derived requirement if they ensure that the appropriate independent Institutional Authority subject matter expert has concurred in the decision.",
+      "evidence": "Cannot approve a request for a waiver or deviation from a non-technical derived requirement established by a Programmatic Authority.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_068"
+    },
+    {
+      "question": "What is the relationship between the SEMP and higher level SEMPs?",
+      "answer": "The SEMP is consistent with higher level SEMPs and the Program/Project Plan, allowing for tailoring and customization. For example, a Project level SEMP would be consistent with the Program level SEMP and the Project Plan.",
+      "evidence": "The SEMP is consistent with higher level SEMPs and the Program/Project Plan, allowing for tailoring and customization. For example, a Project level SEMP would be consistent with the Program level SEMP and the Project Plan.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_069"
+    },
+    {
+      "question": "How should the SEMP for an external technical effort differ from an internal one?",
+      "answer": "The content of a SEMP for an in-house technical effort may differ from an external technical effort. For an external technical effort, the NASA SEMP should include details on developing requirements for source selection, monitoring performance, and transferring and integrating externally produced products to NASA.",
+      "evidence": "The content of a SEMP for an in-house technical effort may differ from an external technical effort. For an external technical effort, the NASA SEMP should include details on developing requirements for source selection, monitoring performance, and transferring and integrating externally produced products to NASA.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_2_070"
+    },
+    {
+      "question": "What must the technical teams define in the SEMP according to SE-58?",
+      "answer": "The technical teams shall define in the program/project SEMP how the required 17 common technical processes, as tailored, will be recursively applied to the various levels of program/project product layer system structure during each applicable life-cycle phase. This ensures each process is addressed and its application to product hierarchy levels is documented.",
+      "evidence": "The technical teams shall define in the program/project SEMP how the required 17 common technical processes, as tailored, will be recursively applied to the various levels of program/project product layer system structure during each applicable life-cycle phase [SE-58].",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_071"
+    },
+    {
+      "question": "How is the 'Comply?' column in the Compliance Matrix filled in?",
+      "answer": "The 'Comply?' column is filled in to identify the program/project's approach to the requirement. An 'FC' is inserted for 'fully compliant,' 'T' for 'tailored,' or 'NA' for a requirement that is 'not applicable.' The 'Justification' column documents the rationale for tailoring or justifies why the requirement is not applicable.",
+      "evidence": "The \u201cComply?\u201d column is filled in to identify the program/projects approach to the requirement. An \u201cFC\u201d is inserted for \u201cfully compliant,\u201d \u201cT\u201d for \u201ctailored,\u201d or \u201cNA\u201d for a requirement that is \u201cnot applicable.\u201d The column titled \u201cJustification\u201d documents the rationale for tailoring, documents how the requirement will be tailored, or justifies why the requirement is not applicable.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_073"
+    },
+    {
+      "question": "Why were requirements SE-49 and SE-50 deleted?",
+      "answer": "Requirements SE-49 and SE-50, which pertained to updated operational plans and updated operational procedures at the ORR, were deleted because operational plans are optional and may be outside the purview of systems engineering to develop.",
+      "evidence": "Operational plans are optional and may be outside the purview of systems engineering to develop.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_2_075"
+    },
+    {
+      "question": "What is a Measure of Effectiveness (MOE)?",
+      "answer": "A Measure of Effectiveness (MOE) is a measure by which a stakeholder's expectations will be judged in assessing satisfaction with products or systems produced and delivered. An MOE is critical to both the acceptability of the product by the stakeholder and to operational/mission usage. An MOE is typically qualitative in nature or not directly usable as a 'design-to' requirement.",
+      "evidence": "**Measure of Effectiveness (MOE):** A measure by which a stakeholder\u2019s expectations will be judged in assessing satisfaction with products or systems produced and delivered in accordance with the associated technical effort. An MOE is deemed to be critical to not only the acceptability of the product by the stakeholder but also critical to operational/mission usage. An MOE is typically qualitative in nature or not able to be used directly as a \u201cdesign-to\u201d requirement.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_076"
+    },
+    {
+      "question": "What is the definition of 'Validation' of a product?",
+      "answer": "Validation of a product is the process of showing proof that the product accomplishes the intended purpose based on stakeholder expectations and the Concept of Operations. It may be determined by a combination of test, analysis, demonstration, and inspection. It answers the question, 'Am I building the right product?'",
+      "evidence": "**Validation (of a product):** The process of showing proof that the product accomplishes the intended purpose based on stakeholder expectations and the Concept of Operations. May be determined by a combination of test, analysis, demonstration, and inspection. (Answers the question, \u201cAm I building the right product?\u201d)",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_2_079"
+    },
+    {
+      "question": "What is the purpose of the CDR?",
+      "answer": "The CDR demonstrates that the maturity of the design is appropriate to support proceeding with full-scale fabrication, assembly, integration, and test. The CDR determines that the technical effort is on track to complete the system development, meeting functional and performance requirements within the identified cost and schedule constraints at an acceptable risk.",
+      "evidence": "The CDR demonstrates that the maturity of the design is appropriate to support proceeding with full-scale fabrication, assembly, integration, and test. The CDR determines that the technical effort is on track to complete the system development, meeting functional and performance requirements within the identified cost and schedule constraints at an acceptable risk.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_081"
+    },
+    {
+      "question": "What is the purpose of the System Integration Review (SIR)?",
+      "answer": "An SIR ensures segments, components, and subsystems are on schedule to be integrated into the system of interest, and integration facilities, support personnel, and integration plans and procedures are on schedule to support integration. The required products at SIR include updated integration plans and preliminary V&V results.",
+      "evidence": "An SIR ensures segments, components, and subsystems are on schedule to be integrated into the system of interest, and integration facilities, support personnel, and integration plans and procedures are on schedule to support integration.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_082"
+    },
+    {
+      "question": "What is the purpose of the Test Readiness Review (TRR)?",
+      "answer": "A TRR for each planned test or series of tests ensures that the test article (hardware/software), test facility, support personnel, and test procedures are ready for testing and data acquisition, reduction, and control. It ensures adequate test plans are completed and approved, test resources are identified, and risks have been assessed and mitigated.",
+      "evidence": "A TRR for each planned test or series of tests ensures that the test article (hardware/software), test facility, support personnel, and test procedures are ready for testing and data acquisition, reduction, and control.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_083"
+    },
+    {
+      "question": "What does the System Acceptance Review (SAR) verify?",
+      "answer": "The SAR verifies the completeness of the specific end products in relation to their expected maturity level, requirement verification, compliance to stakeholder expectations, and ensures that the system of interest has sufficient technical maturity to authorize its acceptance for operational use or delivery to the launch site or operational environment.",
+      "evidence": "The SAR verifies the completeness of the specific end products in relation to their expected maturity level, requirement verification, compliance to stakeholder expectations, and ensures that the system of interest has sufficient technical maturity to authorize its acceptance for operational use or delivery to the launch site or operational environment.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_084"
+    },
+    {
+      "question": "What does the Operational Readiness Review (ORR) ensure?",
+      "answer": "The ORR ensures that all system and support (flight and ground) hardware, software, personnel, procedures, supporting capabilities, and user documentation accurately reflect the deployed state of the system and are operationally ready. The system, including all enabling products, must be determined ready to be placed in operational status.",
+      "evidence": "The ORR ensures that all system and support (flight and ground) hardware, software, personnel, procedures, supporting capabilities, and user documentation accurately reflect the deployed state of the system and are operationally ready.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_085"
+    },
+    {
+      "question": "What does the MRR/FRR examine?",
+      "answer": "The MRR/FRR examines tests, demonstrations, analyses, and audits that determine the system's readiness for a safe and successful flight or launch and for subsequent flight operations. The MRR/FRR also ensures that all flight and ground hardware, software, personnel, and procedures are operationally ready.",
+      "evidence": "The MRR/FRR examines tests, demonstrations, analyses, and audits that determine the system\u2019s readiness for a safe and successful flight or launch and for subsequent flight operations. The MRR/FRR also ensures that all flight and ground hardware, software, personnel, and procedures are operationally ready.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_086"
+    },
+    {
+      "question": "What is a Post-Launch Assessment Review (PLAR)?",
+      "answer": "A PLAR evaluates the readiness of the spacecraft systems to proceed with full, routine operations after post-launch deployment. The review also evaluates the status of the project plans and the capability to conduct the mission with emphasis on near-term operations and mission-critical events.",
+      "evidence": "A PLAR evaluates the readiness of the spacecraft systems to proceed with full, routine operations after post-launch deployment. The review also evaluates the status of the project plans and the capability to conduct the mission with emphasis on near-term operations and mission-critical events.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_087"
+    },
+    {
+      "question": "What is a Critical Event Readiness Review (CERR)?",
+      "answer": "A CERR evaluates the readiness of the project and the flight system to execute a critical event during flight operation. A critical event is defined as an event in the operations phase of the mission that is time sensitive and is required to be accomplished successfully in order to achieve mission success.",
+      "evidence": "A CERR evaluates the readiness of the project and the flight system to execute the critical event during flight operation.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_088"
+    },
+    {
+      "question": "What is the purpose of the Decommissioning Review (DR)?",
+      "answer": "A DR confirms the decision to terminate or decommission the system and assesses the readiness of the system for the safe decommissioning and disposal of system assets. This review can be applied for the system deployed through earlier efforts of the program/project or for a legacy capability that will be replaced by the system being deployed.",
+      "evidence": "A DR confirms the decision to terminate or decommission the system and assesses the readiness of the system for the safe decommissioning and disposal of system assets. This review can be applied for the system that was deployed through earlier efforts of this program/project or for a legacy capability that will be replaced by the system being deployed.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_089"
+    },
+    {
+      "question": "What is the purpose of peer reviews?",
+      "answer": "Peer reviews provide the technical insight essential to ensure product and process quality. They are focused, in-depth technical reviews that support the evolving design and development of a product. Another purpose is to add value and reduce risk through expert knowledge infusion, confirmation of approach, identification of defects, and specific suggestions for product improvements.",
+      "evidence": "Peer reviews provide the technical insight essential to ensure product and process quality. Peer reviews are focused, in-depth technical reviews that support the evolving design and development of a product, including critical documentation or data packages. The participants in a peer review are the technical experts and key stakeholders for the scope of the review. Another purpose of the peer review is to add value and reduce risk through expert knowledge infusion, confirmation of approach, identification of defects, and specific suggestions for product improvements.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_091"
+    },
+    {
+      "question": "What is the purpose of the Design Certification Review (DCR)?",
+      "answer": "The DCR ensures that the design complies with functional and performance requirements, as demonstrated in verification, validation, and qualification evidence. The certified design forms the basis from which system acceptance will be assessed. A DCR should ideally be held after a CDR and before a SAR, and is not depicted in the standard life-cycle review figures.",
+      "evidence": "The DCR ensures that the design complies with functional and performance requirements, as demonstrated in verification, validation, and qualification evidence. The certified design forms the basis from which system acceptance will be assessed. A DCR should, ideally, be held after a CDR and before a SAR.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_092"
+    },
+    {
+      "question": "What does the Post-Flight Assessment Review (PFAR) evaluate?",
+      "answer": "The PFAR evaluates how well mission objectives were met during a mission and identifies all flight and ground system anomalies that occurred during the flight. It determines the actions necessary to mitigate or resolve the anomalies for future flights of the same spacecraft design.",
+      "evidence": "The PFAR evaluates how well mission objectives were met during a mission and identifies all flight and ground system anomalies that occurred during the flight and determines the actions necessary to mitigate or resolve the anomalies for future flights of the same spacecraft design.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_093"
+    },
+    {
+      "question": "What is the Production Readiness Review (PRR) used for?",
+      "answer": "The PRR is for projects developing or acquiring multiple systems/units (typically greater than three). It determines the readiness of the system developers to efficiently produce the required number of systems. It ensures that production plans, fabrication, assembly, integration enabling products, operational support, and personnel are in place and ready to begin production.",
+      "evidence": "For projects developing or acquiring multiple systems/units (typically greater than three or as determined by the project). The PRR determines the readiness of the system developers to efficiently produce the required number of systems. It ensures that the production plans, fabrication, assembly, integration enabling products, operational support, and personnel are in place and ready to begin production.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_2_094"
+    },
+    {
+      "question": "What does the expectation for 'baselined' work products mean?",
+      "answer": "The expectation for work products identified as 'baselined' is that they will be at least final drafts going into the designated life-cycle review. Subsequent to the review, the final draft will be updated in accordance with approved review comments, Review Item Discrepancies (RID), or Requests for Action (RFA) and formally baselined.",
+      "evidence": "The expectation for work products identified as \"baselined\" in Section 5.2.2.2 and Table 5-1 is that they will be at least final drafts going into the designated life-cycle review. Subsequent to the review, the final draft will be updated in accordance with approved review comments, Review Item Discrepancies (RID), or Requests for Action (RFA) and formally baselined.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_095"
+    },
+    {
+      "question": "What must technical teams monitor according to SE-57?",
+      "answer": "Technical teams shall monitor technical effort through periodic technical reviews [SE-57]. These technical reviews assess the status and progress toward accomplishing planned activities, validate technical tradeoffs, identify weaknesses or potential problems, make judgments on readiness for follow-on events, and provide a historical record of decisions.",
+      "evidence": "Technical teams shall monitor technical effort through periodic technical reviews [SE-57].",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_096"
+    },
+    {
+      "question": "Why does NASA emphasize continuous communications as a pillar of technical excellence?",
+      "answer": "Communication lies at the heart of all leadership and management challenges, and most major failures in NASA's history have stemmed in part from poor communication. The complexity of NASA's programs and projects demands a rigorous culture of continuous and open communication that empowers individuals at all levels to raise concerns without fear of adverse consequences.",
+      "evidence": "Communication lies at the heart of all leadership and management challenges. Most major failures in NASA's history have stemmed in part from poor communication. Among the Agency's technical workforce, communication takes a myriad of forms: continuous risk management (CRM)/risk-informed decision making (RIDM), data sharing, knowledge management, knowledge sharing, dissemination of best practices and lessons learned, and continuous learning to name but a few. The complexity of NASA's programs and projects demands a rigorous culture of continuous and open communication that flourishes within the context of policies and procedures and knowledge transfer, while empowering individuals at all levels to raise concerns without fear of adverse consequences.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_2_097"
+    },
+    {
+      "question": "Why does the NPR emphasize personal accountability as a foundation for technical excellence?",
+      "answer": "Personal accountability means that each individual understands they are responsible for the success of the mission. What NASA does is so complex and interdependent that every component needs to work for the Agency to be successful. All members of NASA's technical community need to possess the knowledge and confidence to speak up when something is amiss to ensure mission success.",
+      "evidence": "Personal Accountability. Personal accountability means that each individual understands that he or she is responsible for the success of the mission. Each person, regardless of position or area of responsibility, contributes to success. What NASA does is so complex and interdependent that every component needs to work for the Agency to be successful. All of those who constitute NASA's technical community need to possess the knowledge and confidence to speak up when something is amiss in their or anyone else's area of responsibility to ensure mission success.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_2_098"
+    },
+    {
+      "question": "Why is tailoring of SE requirements necessary and expected?",
+      "answer": "Tailoring is necessary and expected because SE requirements need to be adapted based on criteria such as system/product size, complexity, criticality, acceptable risk posture, and architectural level. The processes described in the document build upon best practices and lessons learned, and the established requirements should be tailored and customized to reduce program and technical risk and increase mission success likelihood.",
+      "evidence": "Tailoring the requirements in this NPR and customizing practices, based on criteria such as system/product size, complexity, criticality, acceptable risk posture, and architectural level, is necessary and expected.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_2_099"
+    },
+    {
+      "question": "Why are the common technical processes applied recursively across the system structure?",
+      "answer": "The common technical processes are applied recursively to design a system solution definition for each product layer down and across each level of the system structure and to realize the product layer end products up and across the system structure. This recursive approach adds value to the system by the repeated application of processes to design next lower layer system products or to realize next upper layer end products, ensuring comprehensive engineering at all levels.",
+      "evidence": "Recursive: Value that is added to the system by the repeated application of processes to design next lower layer system products or to realize next upper layer end products within the system structure. This also applies to repeating application of the same processes to the system structure in the next life-cycle phase to mature the system definition and satisfy phase success criteria.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_2_100"
+    },
+    {
+      "question": "What three areas does NASA's systems approach enhance according to the Purpose section?",
+      "answer": "Implementation of NASA's systems approach enhances safety, mission success, and affordability, while also enhancing NASA's core engineering capabilities.",
+      "evidence": "Implementation of this systems approach will enhance NASA's core engineering capabilities while improving safety, mission success, and affordability. This systems approach is applied to all elements of a system (i.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_2_101"
+    },
+    {
+      "question": "Why do other discipline areas need to be integrated into the SE processes during the program/project life cycle?",
+      "answer": "Many other discipline areas perform functions during the program/project life cycle and influence or are influenced by the engineering functions performed, and therefore need to be fully integrated into the SE processes.",
+      "evidence": "Many other discipline areas perform functions during the program/project life cycle and influence or are influenced by the engineering functions performed and, therefore, need to be fully integrated into the SE processes.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_102"
+    },
+    {
+      "question": "What criteria should be used when tailoring and customizing the requirements established in this NPR?",
+      "answer": "The requirements should be tailored and customized for criteria such as system/product size, complexity, criticality, acceptable risk posture, architectural level, development plans, and schedule, following the guidance of Section 2.",
+      "evidence": "The requirements established in this NPR should be tailored and customized for criteria such as system/product size, complexity, criticality, acceptable risk posture, architectural level, development plans, and schedule following the guidance of Section 2.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_103"
+    },
+    {
+      "question": "What responsibility does NASA's technical community have when something is wrong in any area of the program or project?",
+      "answer": "All members of NASA's technical community need to possess the knowledge and confidence to speak up when something is amiss in their or anyone else's area of responsibility to ensure mission success.",
+      "evidence": "All of those who constitute NASA's technical community need to possess the knowledge and confidence to speak up when something is amiss in their or anyone else's area of responsibility to ensure mission success.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_104"
+    },
+    {
+      "question": "What kind of communication culture does NASA require given the complexity of its programs and projects?",
+      "answer": "NASA demands a rigorous culture of continuous and open communication that flourishes within the context of policies, procedures, and knowledge transfer, while empowering individuals at all levels to raise concerns without fear of adverse consequences.",
+      "evidence": "The complexity of NASA's programs and projects demands a rigorous culture of continuous and open communication that flourishes within the context of policies and procedures and knowledge transfer, while empowering individuals at all levels to raise concerns without fear of adverse consequences.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_2_105"
+    },
+    {
+      "question": "How does NASA address career satisfaction for technical staff who do not wish to move into management?",
+      "answer": "NASA requires ensuring that those who prefer to remain in the technical field instead of management have a satisfying and rewarding career track.",
+      "evidence": "It also requires ensuring that those who prefer to remain in the technical field (instead of management) have a satisfying and rewarding career track (e.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_2_106"
+    },
+    {
+      "question": "How should compliance to this NPR be handled for Centers in supporting roles?",
+      "answer": "For Centers in supporting roles, compliance to this NPR should be jointly negotiated and documented in the lead Center's program/project SEMP or other equivalent program/project documentation, along with approval through the lead Center's ETA process.",
+      "evidence": "For Centers in supporting roles, compliance to this NPR should be jointly negotiated and documented in the lead Center's program/project SEMP or other equivalent program/project documentation along with approval through the lead Center's ETA process.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_107"
+    },
+    {
+      "question": "Why was the original requirement numbering retained even after some requirements were deleted?",
+      "answer": "Rather than resequence the remaining requirements, the original requirement numbering was left intact in case Centers or other organizations refer to these requirement numbers in their flow-down requirement documents.",
+      "evidence": "*Note: Rather than resequence the remaining requirements, the original requirement numbering was left intact in case Centers or other organizations refer to these requirement numbers in their flow-down requirement documents.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_2_108"
+    },
+    {
+      "question": "Why are working-level engineers unable to serve in an ETA capacity?",
+      "answer": "Working-level engineers do not have formally delegated Technical Authority and consequently may not serve in an ETA capacity. They perform the detailed engineering and analysis for the program/project with guidance from their Center management and/or lead discipline engineers and support from the Center engineering infrastructure.",
+      "evidence": "The working-level engineers do not have formally delegated Technical Authority and consequently may not serve in an ETA capacity. These engineers perform the detailed engineering and analysis for the program/project with guidance from their Center management and/or lead discipline engineers and support from the Center engineering infrastructure.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_2_109"
+    },
+    {
+      "question": "Do the results of customizing SE requirements require waivers or deviations?",
+      "answer": "No, the results of customization do not require waivers or deviations but should be documented in the program/project SEMP or other equivalent program/project documentation.",
+      "evidence": "The results of this customization do not require waivers or deviations but should be documented in the program/project SEMP or other equivalent program/project documentation.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_110"
+    },
+    {
+      "question": "What does the tailoring process result in, and when can it occur during a program's life cycle?",
+      "answer": "The tailoring process, which can occur at any time in the program or project life cycle, results in deviations or waivers to requirements depending on the timing of the request.",
+      "evidence": "2 The tailoring process (which can occur at any time in the program or project life cycle) results in deviations or waivers to requirements depending on the timing of the request (see Appendix A for definition of deviation and waiver).",
+      "question_type": "causal",
+      "qa_id": "nasa_std_2_111"
+    },
+    {
+      "question": "Do the practices documented in the SE handbook represent additional requirements for the technical team?",
+      "answer": "No, the practices documented in the handbook do not represent additional requirements that need to be executed by the technical team but instead provide best practices associated with the 17 common technical processes.",
+      "evidence": "It should be emphasized that the practices documented in the handbook do not represent additional requirements that need to be executed by the technical team but provide best practices associated with the 17 common technical processes.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_112"
+    },
+    {
+      "question": "What sources of guidance should the technical team consider when developing a tailored approach for SE processes?",
+      "answer": "As the technical team develops a tailored and customized approach for the application of these processes, sources of SE guidance and technical standards such as NASA/SP-2016-6105 and endorsed industry standards should be considered.",
+      "evidence": "As the technical team develops a tailored and customized approach for the application of these processes, sources of SE guidance and technical standards, such as NASA/SP-2016-6105 and endorsed industry standards, should be considered.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_113"
+    },
+    {
+      "question": "What must Program/Project Managers implement for the Stakeholder Expectations Definition process according to SE-07?",
+      "answer": "Program/Project Managers shall identify and implement an ETA-approved Stakeholder Expectations Definition process to include activities, requirements, guidelines, and documentation, as tailored and customized for the definition of stakeholder expectations for the applicable product layer.",
+      "evidence": "1 Program/Project Managers shall identify and implement an ETA-approved Stakeholder Expectations Definition process to include activities, requirements, guidelines, and documentation, as tailored and customized for the definition of stakeholder expectations for the applicable product layer [SE-07].",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_114"
+    },
+    {
+      "question": "How are design solution definitions used in the product generation workflow?",
+      "answer": "Design solution definitions are used for generating end products, either by using the product implementation process or product integration process, as a function of the position of the product layer in the system structure and whether there are additional subsystems of the end product that need to be defined.",
+      "evidence": "3 These design solution definitions will be used for generating end products, either by using the product implementation process or product integration process, as a function of the position of the product layer in the system structure and whether there are additional subsystems of the end product that need to be defined.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_115"
+    },
+    {
+      "question": "What critical aspect of the solicitation must the technical team define beyond product requirements?",
+      "answer": "In addition to developing the product requirements, a critical aspect of the solicitation is for the technical team to define the insight and oversight requirements. These should be developed considering the risk posture of the program/project and fit within the cost and schedule constraints.",
+      "evidence": "These should be developed considering the risk posture of the program/project and fit within the cost and schedule constraints. In addition to developing the product requirements, a critical aspect of the solicitation is for the technical team to define the insight and oversight requirements.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_116"
+    },
+    {
+      "question": "What engineering activity periods must the NASA technical team define in the SEMP before contract award?",
+      "answer": "The NASA technical team shall define the engineering activities for the periods before contract award, during contract performance, and upon contract completion in the SEMP or other equivalent program/project documentation.",
+      "evidence": "1 The NASA technical team shall define the engineering activities for the periods before contract award, during contract performance, and upon contract completion in the SEMP or other equivalent program/project documentation [SE-24].",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_117"
+    },
+    {
+      "question": "What document should be used as a guide when developing the SEMP for contracted engineering work?",
+      "answer": "The content of Appendix J of NASA/SP-2016-6105 should be used as a guide in the development of the SEMP or other equivalent program/project documentation.",
+      "evidence": "2 The content of Appendix J of NASA/SP-2016-6105 should be used as a guide in the development of the SEMP or other equivalent program/project documentation.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_118"
+    },
+    {
+      "question": "Under whose authority does the NASA technical team perform insight and oversight activities during contract performance?",
+      "answer": "The NASA technical team, under the authority of the contracting officer, shall perform the technical insight and oversight activities established in the contract including modifications to the original contract.",
+      "evidence": "1 The NASA technical team, under the authority of the contracting officer, shall perform the technical insight and oversight activities established in the contract including modifications to the original contract [SE-29].",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_119"
+    },
+    {
+      "question": "What should be done when alternative measures of technology maturity other than TRLs are used?",
+      "answer": "When other measures of technology maturity are used, they should be mapped back to TRLs. The definition of the TRLs for hardware and software are defined in Appendix E.",
+      "evidence": "When other measures of technology maturity are used, they should be mapped back to TRLs. The definition of the TRLs for hardware and software are defined in Appendix E.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_2_120"
+    },
+    {
+      "question": "How do technical reviews differ from calendar-based milestone reviews in terms of their scheduling basis?",
+      "answer": "Technical reviews occur based on the maturity of the relevant technical baseline as opposed to calendar milestones such as quarterly progress reviews or yearly summaries.",
+      "evidence": "Life-cycle reviews are event based and occur when the entrance criteria for the applicable review are satisfied. (Appendix G provides guidance.) They occur based on the maturity of the relevant technical baseline as opposed to calendar milestones (e.g., the quarterly progress review, the yearly summary).",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_2_121"
+    },
+    {
+      "question": "What conditions must be met for a program/project to be approved to proceed to the next phase at a Key Decision Point?",
+      "answer": "If the technical and management aspects of the program/project are satisfactory, including the implementation of corrective actions, then the program/project can be approved by the designated Decision Authority to proceed to the next phase.",
+      "evidence": "If the technical and management aspects of the program/project are satisfactory, including the implementation of corrective actions, then the program/project can be approved by the designated Decision Authority to proceed to the next phase.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_2_122"
+    },
+    {
+      "question": "What happens when a life-cycle review is held but combined with other reviews or resequenced?",
+      "answer": "If the associated life-cycle review is held but combined with other life-cycle reviews or resequenced, this is considered customization and therefore no waiver is required, but the approach should still be documented in the SEMP or Review Plan for clarity.",
+      "evidence": "If the associated life-cycle review is held but combined with other life-cycle reviews or resequenced, this is considered customization and therefore no waiver is required (but approach should still be documented in the SEMP or Review Plan for clarity).",
+      "question_type": "causal",
+      "qa_id": "nasa_std_2_123"
+    },
+    {
+      "question": "What action is required when a life-cycle review is not held at all?",
+      "answer": "If the associated life-cycle review is not held, the technical team will need to seek a waiver or deviation to tailor these requirements.",
+      "evidence": "If the associated life-cycle review is not held, the technical team will need to seek a waiver or deviation to tailor these requirements.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_2_124"
+    },
+    {
+      "question": "Why does program/project responsibility extend to acquiring services from enabling products in each life-cycle phase?",
+      "answer": "Since the end product and its enabling products are interdependent, they are viewed as a system, and therefore program/project responsibility extends to responsibility for acquiring services from the relevant enabling products in each life-cycle phase.",
+      "evidence": "Since the end product and its enabling products are interdependent, they are viewed as a system. Program/project responsibility thus extends to responsibility for acquiring services from the relevant enabling products in each life-cycle phase.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_2_125"
+    }
+  ]
+}

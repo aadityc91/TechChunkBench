@@ -1,0 +1,13 @@
+# Regenerable caches
+data/raw/
+data/embeddings/
+data/chunk_cache/
+
+# Logs
+*.log
+
+# OS / IDE
+.DS_Store
+.claude/
+__pycache__/
+*.pyc

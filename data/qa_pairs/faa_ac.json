@@ -1,0 +1,712 @@
+{
+  "corpus_id": "faa_ac",
+  "qa_pairs": [
+    {
+      "question": "What is the purpose of FAA Advisory Circular 25.1309-1B?",
+      "answer": "AC 25.1309-1B describes acceptable means for showing compliance with the requirements of 14 CFR 25.1309, Equipment, systems, and installations. These means provide guidance to supplement the engineering and operational judgment that form the basis of any showing of compliance.",
+      "evidence": "This advisory circular (AC) describes acceptable means , but not the only means, for showing compliance with the requirements of title 14, Code of Federal Regulations (14 CFR)  25.1309, Equipment, systems, and installations . These means are intended to provide guidance to supplement the engineering and operational judgment that form the basis of any showing of compliance.",
+      "question_type": "definitional",
+      "qa_id": "faa_ac_001"
+    },
+    {
+      "question": "What does Revision B of AC 25.1309 contain compared to previous versions?",
+      "answer": "Revision B contains new guidance based on proposed rule changes to section 25.1309, and it improves upon the materials published in AC 25.1309-1A by providing more substantive guidance on safety analysis methods.",
+      "evidence": "Revision B of this AC contains new guidance based on proposed rule changes to \u00a7 25.1309, which the Federal Aviation Administration (FAA)  published in the Federal Register  as NPRM Notice No.  **, System Safety Assessment  (** FR **). This revision also improves upon the materials published in  AC 25.1309-1A by providing more substantive guidance on saf ety analysis methods.",
+      "question_type": "comparative",
+      "qa_id": "faa_ac_002"
+    },
+    {
+      "question": "Who is the guidance in AC 25.1309-1B intended for?",
+      "answer": "The guidance is for airplane manufacturers, modifiers, foreign regulatory authorities, and FAA Aircraft Certification Service engineers and the Administrator's designees.",
+      "evidence": "The guidance in this AC is for airplane manufacturers, modifiers, foreign regulatory authorities, and FAA Aircraft C ertification Service engineers and the Administrator's designees.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_003"
+    },
+    {
+      "question": "What is the exception for single failures in the brake system under section 25.735(b)(1)?",
+      "answer": "Single failures covered by section 25.735(b)(1) are excepted from section 25.1309(b) because that section limits the effect of a single failure in the brake system to doubling the brake roll stopping distance. However, section 25.1309(b) does apply to single failures in brake systems if the failures affect functions other than braking.",
+      "evidence": "Single failures covered by \u00a7  25.735(b)(1) are excepted from the requirements of \u00a7 25.1309(b) because \u00a7 25.735(b)(1) limits the effect of a single failure in the brake system to doubling the  brake roll stopping distance. The diverse circumstances under which such a failure could occur make any structured determination of its  outcome or frequency indeterminate . However, \u00a7 25.1309(b) does apply to single failures in the brake systems if the fai lures affect  functions other than braking. For example, if a hydraulic brake line failure in the brake system also affects ground spoiler deployment , then \u00a7 25.1309(b) applies  to that failure .",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_005"
+    },
+    {
+      "question": "When is section 25.1309 applicable to ground operating conditions?",
+      "answer": "Section 25.1309 is applicable to ground operating conditions when the airplane is in service, from the time the airplane arrives at a gate or other location for pre-flight preparations, until it is removed from service for shop maintenance, storage, etc. It does not include periods of shop maintenance, storage, or other out-of-service activities.",
+      "evidence": "\u00a7 25.1309 is always applicable to all operating conditions (on ground and in flight)  of the airplane or system proposed for certification, it is only applicable to ground operating conditions when the  airplane is in service (that is, from the time the airplane arrives at a gate or other location for pre -flight preparations, until it is removed from service for shop maintenance, storage, etc.).",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_006"
+    },
+    {
+      "question": "What AC does AC 25.1309-1B cancel?",
+      "answer": "AC 25.1309-1B cancels AC 25.1309-1A, dated June 21, 1988.",
+      "evidence": "This AC cancels AC  25.1309- 1A, dated June 21, 1988.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_007"
+    },
+    {
+      "question": "What is the definition of 'average probability per flight hour' in AC 25.1309-1B?",
+      "answer": "Average probability per flight hour is the quotient of the number of times the subject failure condition is predicted to occur during the entire operating life of all airplanes of the type divided by the anticipated total operating hours of all airplanes of that type. It is normally calculated as the probability of a failure condition occurring during a typical flight of mean duration divided by that mean duration.",
+      "evidence": "For the purpose of this AC, this term is the quotient of the number of times the subject failure condition is predicted to occur during the entire operating life of all airplanes of the type divided by the anticipated total operating hours of all airplanes of that type. Please n ote that  the average probability p er flight hour is normally calculated as the probability of a failure condition occurr ing during a typical flight of mean duration divided by that mean duration.",
+      "question_type": "definitional",
+      "qa_id": "faa_ac_009"
+    },
+    {
+      "question": "What is a Certification Maintenance Requirement (CMR)?",
+      "answer": "A CMR is a required scheduled maintenance task established during the design certification of the airplane systems as an airworthiness limitation of the type certificate or supplemental type certificate.",
+      "evidence": "A required scheduled maintenance task established during the design certification of the airplane systems as an airworthiness limitation of the type certificate or supplemental type certificate (as defined in \u00a7 25.4 and applic able to all of part  25).",
+      "question_type": "definitional",
+      "qa_id": "faa_ac_010"
+    },
+    {
+      "question": "When is a system considered 'complex' according to AC 25.1309-1B?",
+      "answer": "A system is complex when its operation, failure modes, or failure effects are difficult to comprehend without the aid of analytical methods.",
+      "evidence": "A system is complex when its operation, failure modes, or failure effects are difficult to comprehend without the aid of analytical methods.",
+      "question_type": "definitional",
+      "qa_id": "faa_ac_011"
+    },
+    {
+      "question": "How does AC 25.1309-1B define 'conventional' in the context of systems?",
+      "answer": "A system is conventional if its functionality, the technological means used to implement its functionality, and its intended usage are all the same as, or closely similar to, that of previously approved systems that are commonly used.",
+      "evidence": "A system is conventional if its functionality, the technological means used to implement its functionality, and its intended usage are all the same as, or closely similar to, that of previously approved systems that are commonly used.",
+      "question_type": "definitional",
+      "qa_id": "faa_ac_012"
+    },
+    {
+      "question": "What is the difference between a 'failure' and an 'event' in the context of AC 25.1309-1B?",
+      "answer": "A failure is an occurrence that affects the operation of a component, part, or element such that it no longer functions as intended, including both loss of function and malfunction. An event is an occurrence that has its origin distinct from the airplane, such as atmospheric conditions, runway conditions, or bird strikes. Events may cause failures but are not considered failures themselves.",
+      "evidence": "An occurrence that  has its origin distinct from the airplane, such as atmospheric\nconditions ( e.g., gusts, temperature variations, icing, and lightning strikes); runway\nconditions; conditions of communication, navigation, and surveillance services; bird-strike ; and cabin and baggage fires (not initiated by features installed on the\nairplane) ; etc. The term does not cover sabotage or other similar intentional acts .\n## 1.5.12 Failure .\nAn occurrence that  affects the operation of a component, part, or element such that it no\nlonger functions as intended . This includes both loss of function and malfunction.\nNote:  Errors and events may cause failures  or influence their effects , but are not\nconsidered to be failures.",
+      "question_type": "comparative",
+      "qa_id": "faa_ac_013"
+    },
+    {
+      "question": "What is a Significant Latent Failure (SLF)?",
+      "answer": "A significant latent failure is a latent failure that, in combination with one or more specific failures or events, would result in a hazardous or catastrophic failure condition.",
+      "evidence": "A latent failure  that, in combination with one or more specific failures or events, would result in a hazardous or c atastrophic f ailure condition.",
+      "question_type": "definitional",
+      "qa_id": "faa_ac_014"
+    },
+    {
+      "question": "What is the definition of a 'single failure' in system safety?",
+      "answer": "A single failure is any occurrence, or set of occurrences, that cannot be shown to be independent from each other (e.g., failures due to a common cause), that affect the operation of components, parts, or elements such that they no longer function as intended.",
+      "evidence": "Any occurrence, or set of occurrences , that cannot be shown to be independent from each other (e.g., failures due to a common cause), that affect the operation of components, parts, or elements such that they no longer function as intended.",
+      "question_type": "definitional",
+      "qa_id": "faa_ac_015"
+    },
+    {
+      "question": "What are the characteristics of a minor failure condition?",
+      "answer": "A minor failure condition would not significantly reduce airplane safety and would only involve flightcrew actions that are well within their capabilities. It may result in a slight reduction in safety margins or functional capabilities, a slight increase in flight crew workload, some physical discomfort to passengers or flight attendants, or an effect of similar severity.",
+      "evidence": "A failure condition that  would not significantly reduce airplane safety and would only involve flightcrew actions that are w ell within their capabilities. Minor f ailure conditions may result in , for example\u2014 \u2022 A slight reduction in safety margins or functional capabilities, \u2022 A slight increase in flight crew workload, such as routine flight plan changes, \u2022 Some physical discomfort to passengers or flight attendants",
+      "question_type": "factual",
+      "qa_id": "faa_ac_019"
+    },
+    {
+      "question": "What distinguishes a hazardous failure condition from a catastrophic one?",
+      "answer": "A hazardous failure condition results in a large reduction in safety margins or functional capabilities, physical distress or excessive workload preventing reliable crew performance, or serious or fatal injuries to a relatively small number of persons other than the flightcrew. A catastrophic failure condition would result in multiple fatalities, usually with the loss of the airplane. For safety assessments, 'small number' of fatal injuries means one such injury, while 'multiple fatalities' means two or more.",
+      "evidence": "A failure condition that  would reduce the capability of the airplane or the ability of the\nflightcrew to cope with adverse operating conditions to the extent that there would be\u2014 \u2022 A large reduction in safety margins or f unctional capabilities ,\n\u2022 Physical distress or excessive workload such that the flightcrew cannot be relied\nupon to perform their tasks accurately or completely, or\n# MM/DD/YY D R A F T  AC 25.1309-1B\n3-2 \u2022 Serious or fatal injuries to a relatively small number of persons other than the\nflightcrew.\nNote:  For the purpose of performing a safety assessment, a \u201csmall number\u201d of fatal\ninjuries mean s one such injury.\n## 3.1.5 Catastrophic.\nA failure condition that would result in multiple fatalities, usually with the loss of the\nairplane.\nNote:  A catastrophic failure condition was defined in previous versions of the rule and\nadvisory material as a failure condition that  would prevent continued safe flight and",
+      "question_type": "comparative",
+      "qa_id": "faa_ac_021"
+    },
+    {
+      "question": "What does 'catastrophic failure condition' mean in AC 25.1309-1B, and how has the definition changed?",
+      "answer": "A catastrophic failure condition would result in multiple fatalities, usually with the loss of the airplane. Previous versions defined it as a failure condition that would prevent continued safe flight and landing. For the purpose of performing a safety assessment, 'multiple fatalities' means two or more fatalities.",
+      "evidence": "A failure condition that would result in multiple fatalities, usually with the loss of the airplane. Note:  A catastrophic failure condition was defined in previous versions of the rule and advisory material as a failure condition that  would prevent continued safe flight and landing.",
+      "question_type": "definitional",
+      "qa_id": "faa_ac_022"
+    },
+    {
+      "question": "How is a 'remote failure condition' defined qualitatively?",
+      "answer": "A remote failure condition is one that is not anticipated to occur to each airplane of a given type during its entire operational life, but which may occur several times during the total operational life of a number of airplanes of a given type.",
+      "evidence": "A failure condition that is not anticipated to occur to each airplane of a given type during its entire operational life, but which  may occur several times during the total operational life of a number of airplanes of a given  type.",
+      "question_type": "definitional",
+      "qa_id": "faa_ac_024"
+    },
+    {
+      "question": "What is the quantitative probability range for a remote failure condition?",
+      "answer": "A remote failure condition has an average probability per flight hour on the order of 1 x 10^-5 or less, but greater than the order of 1 x 10^-7.",
+      "evidence": "A failure condition having an average probability per flight hour on the order of 1  x 10\n-5 or less, but greater than the order of 1 x  10-7.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_026"
+    },
+    {
+      "question": "What is the relationship between failure condition severity and allowable probability?",
+      "answer": "There is an inverse relationship: failure conditions with no safety effect have no probability requirement; minor failure conditions may be probable; major failure conditions must be remote; hazardous failure conditions must be extremely remote; catastrophic failure conditions must be extremely improbable.",
+      "evidence": "## 4.1.1 Failure conditions with no safety effect have no probability requirement.\n## 4.1.2 Minor failure conditions may be probable.\n## 4.1.3 Major failure conditions must be remote.\n## 4.1.4 Hazardous failure conditions must be extremely remote.\n## 4.1.5 Catastrophic failure conditions must be extremely improbable.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_028"
+    },
+    {
+      "question": "What are the three safety requirements for catastrophic failure conditions?",
+      "answer": "The three requirements are: (1) No single failure will result in a catastrophic failure condition; (2) Each catastrophic failure condition is extremely improbable; and (3) Each catastrophic failure condition is remote following any single latent failure in a CSL+1 failure condition, with the probability of the latent failure not exceeding 1/1000.",
+      "evidence": "## 4.3.1 No single failure will result in a c atastrophic f ailure c ondition;\n## 4.3.2 Each c atastrophic f ailure condition is extremely improbable ; and\n## 4.3.3 Each catastrophic failure condition is remote following any single latent failure  in a\ncatastrophic single latent plus one ( CSL+1 ) failure  condition. The probability of the\nlatent failure must not exceed 1/1000.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_029"
+    },
+    {
+      "question": "What is CSL+1 in the context of system safety?",
+      "answer": "CSL+1 stands for Catastrophic Single Latent Failure Plus One. It is a catastrophic failure condition that results from a combination of two failures, either of which could be latent for more than one flight.",
+      "evidence": "A catastrophic failure condition that results from a combination of two failures, either of which could be latent for more than one flight.",
+      "question_type": "definitional",
+      "qa_id": "faa_ac_030"
+    },
+    {
+      "question": "Why does the FAA not consider a single system failure to be extremely improbable?",
+      "answer": "The FAA does not consider failure conditions arising from a single system failure to be extremely improbable, unless the conditions under which the failure must occur to produce a catastrophe are in and of themselves extremely remote, or the physics of a theoretically possible failure is so implausible that it is not anticipated to ever actually occur. Probability assessments for catastrophic outcomes normally involve conditions arising from multiple failures.",
+      "evidence": "The FAA does not consider failure conditions arising from a s ingle system failure to be extremely improbable, unless the conditions under which the failure must occur to produce a catastrophe are in and of themselves extremely remote, or the physics of a theoretically possible failure is so implausible that the FAA can agree it is not anticipated to ever actually occur.",
+      "question_type": "causal",
+      "qa_id": "faa_ac_031"
+    },
+    {
+      "question": "What does section 25.1309(a)(1) require regarding equipment and systems?",
+      "answer": "Equipment, systems, and installations must be shown to function properly when installed. The airplane operating and environmental conditions that must be considered include the full normal operating envelope and any modification associated with abnormal or emergency procedures, plus external environmental conditions like atmospheric turbulence, high-intensity radiated fields, lightning, and precipitation.",
+      "evidence": "## 5.2.1 Equipment, systems, and installation s regulated by \u00a7 25.1309(a)(1) must be shown to\nfunction properly when installed. The \u201c airplane o perating and environmental\nconditions \u201d that must be considered under that regulation include the full normal\noperating envelope of the airplane as defined by the a irplane flight m anual  (AFM)\ntogether with any modification to that envelope associated with a bnormal or emergency",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_032"
+    },
+    {
+      "question": "What types of systems are addressed by section 25.1309(a)(2)?",
+      "answer": "Section 25.1309(a)(2) addresses systems intended for convenience, such as passenger amenities, entertainment systems, and in-flight telephones, whose failure or improper functioning should not affect the safety of the airplane. These systems should be designed so that their functional failures are 'no safety effect.'",
+      "evidence": "The equipment, systems, and installations addressed  by \u00a7  25.1309(a)(2) are typically those associated with miscellaneous systems intended for convenience, such as passenger  amenities,  passenger entertainment systems, in -flight telephones, and so forth , whose failure or improper functioning should not affe ct the safety of the airplane.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_033"
+    },
+    {
+      "question": "What considerations should any analysis of compliance with section 25.1309(b) include?",
+      "answer": "The analysis should consider: possible failure conditions and their causes; the possibility of multiple failures due to common cause and undetected failures; the possibility of requirement, design, and implementation errors; the effect of crew errors after failure occurrence; the effect of maintenance errors; crew alerting cues, corrective action, and fault detection capability; and the resulting effects on the airplane and occupants.",
+      "evidence": "5-3 5.3.1.1 Possible failure conditions and their causes, modes of failure, and damage\nfrom sources external to the system.\n5.3.1.2 The possibility of multiple failures  due to a common cause, multiple\nindependent failures, and undetected failures.\n5.3.1.3 The possibility of requirement, design, and implementation errors.\n5.3.1.4 The effect of reasonably anticipated crew errors after the occurrence of a failure or failure condition.\n5.3.1.5 The effect of reasonably anticipated errors when performing maintenance actions.\n5.3.1.6 The crew alerting cues, corrective action required, and the capability of detecting faults.\n5.3.1.7 The resulting effects on the airplane and occupants, considering the stage of flight, the operational sequences (sequence of system responses or expected crew actions following a failure(s)), and operating and environmental conditions.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_034"
+    },
+    {
+      "question": "What are the acceptable flightcrew awareness means for compliance with section 25.1309(c)?",
+      "answer": "Acceptable means include: (1) A warning, if immediate crew awareness and immediate response is required; (2) A caution, if immediate crew awareness is required and subsequent action will be required; (3) An advisory, if crew awareness is required and subsequent action might be required; (4) Other appropriate forms, such as a message, for other cases.",
+      "evidence": "5.4.2.1 A warning, if immediate flightcrew awareness and immediate flightcrew response is required;\n5.4.2.2 A caution, if immediate flightcrew awareness is required and subsequent\ncrew action will be required;\n5.4.2.3 An advisory, if flightcrew awareness is required and subseque nt crew\naction might be required; or\n5.4.2.4 Other appropriate forms, such as a message, for other cases.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_037"
+    },
+    {
+      "question": "Why is using periodic maintenance checks to detect SLFs considered undesirable?",
+      "answer": "Periodic maintenance or flightcrew checks to detect significant latent failures after they occur are undesirable and should not be used in place of practical and reliable failure monitoring and indications. Dedicated monitoring and indication systems are preferred because they provide more timely and reliable failure detection.",
+      "evidence": "The use of periodic maintena nce or flightcrew checks to detect SLFs  after  they occur is undesirable and should not be used in place of practical and reliable failure monitoring and indications .",
+      "question_type": "causal",
+      "qa_id": "faa_ac_038"
+    },
+    {
+      "question": "What does section 25.1309(d) require regarding certification maintenance requirements?",
+      "answer": "Section 25.1309(d) requires that certification maintenance requirements be established as necessary to prevent development of failure conditions described in section 25.1309(b), and that these requirements be included in the Airworthiness Limitations section (ALS) of the Instructions for Continued Airworthiness required by section 25.1529.",
+      "evidence": "Section 25.1309(d) requires tha t certification maintenance requirements  be established, as necessary, to prevent development of failure conditions described in \u00a7 25.1309(b), and that these requirements  be included in the Airworthiness Limitations section (ALS) of the ICA required by \u00a7 25.1529.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_039"
+    },
+    {
+      "question": "What is a Functional Hazard Assessment (FHA)?",
+      "answer": "An FHA is a systematic, comprehensive examination of airplane and system functions to identify potential minor, major, hazardous, and catastrophic failure conditions that may arise as a result of malfunctions or failure to function as intended. It considers normal responses to unusual and abnormal external factors and involves operational vulnerabilities rather than detailed analysis of actual implementation.",
+      "evidence": "A n FHA  is a systematic, comprehensive examination of airplane and system functions to identify potential m inor, m ajor, hazardous, and catastrophic f ailure c onditions that  may arise as a result of malfunctions or failure to function as intended .",
+      "question_type": "definitional",
+      "qa_id": "faa_ac_041"
+    },
+    {
+      "question": "When should the Functional Hazard Assessment be performed?",
+      "answer": "The FHA should be performed early in the design of the project and updated as necessary as the design develops. It is used to define airplane-level or system-level safety objectives and to determine development assurance levels for the systems.",
+      "evidence": "The FHA  should be performed early in the d esign of the project  and updat ed as necessary  as the design develops . It is used to define the airplane -level  or system -level safety objectives that must be considered in the  proposed airplane or system architectures.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_042"
+    },
+    {
+      "question": "What depth of analysis is required for minor failure conditions?",
+      "answer": "For minor failure conditions, an FHA with a design and installation appraisal to establish independence from other functions is necessary. If the applicant chooses not to do an FHA, then the safety effects may be derived from the design and installation appraisal performed by the applicant, and the result should be documented.",
+      "evidence": "An FHA  with a design and installation appraisal to establish independence from other functions is necessary for the safety assessment of these f ailure conditions. If the applicant chooses not to do an FHA, then the safety effects may be derived from the design and installation appraisal performed by the applicant. The applicant should document the result of the appraisal .",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_043"
+    },
+    {
+      "question": "Why is generally performing only a quantitative analysis insufficient to show that a failure condition is extremely improbable?",
+      "answer": "Performing only a quantitative analysis is insufficient due to the variability and uncertainty in the analytical process. Any analysis used as evidence that a failure condition is extremely improbable should include justification of assumptions made, data sources, and analytical techniques to account for this variability and uncertainty.",
+      "evidence": "Generally, performing only a quantitative analysis to show  that a failure condition is extremely improbable is insufficient, due to the variability and uncertainty  in the analytical process.",
+      "question_type": "causal",
+      "qa_id": "faa_ac_045"
+    },
+    {
+      "question": "What probability should usually be used for encountering a discrete condition for which the airplane is designed?",
+      "answer": "A probability of 1 should usually be used for encountering a discrete condition for which the airplane is designed, such as instrument meteorological conditions or Category III weather operations.",
+      "evidence": "A probability of 1 should usually be used for encountering a discrete condition for which the airplane is designed, such as instrument meteorological conditions or Category III weather operations",
+      "question_type": "factual",
+      "qa_id": "faa_ac_046"
+    },
+    {
+      "question": "What is the accepted probability for limit design gust and turbulence?",
+      "answer": "The accepted probability for limit design gust and turbulence is 10^-5 per flight hour.",
+      "evidence": "Limit design gust and turbulence . \u00a7 25.341 10\n-5 per flight hour",
+      "question_type": "factual",
+      "qa_id": "faa_ac_047"
+    },
+    {
+      "question": "What is the accepted probability per flight for headwind greater than 25 knots during takeoff and landing?",
+      "answer": "The accepted probability for headwind greater than 25 knots during takeoff and landing is 10^-2 per flight.",
+      "evidence": "Head wind greater than  25 knots during takeoff and landing . AC 120- 28D CS-AWO  10-2 per flight",
+      "question_type": "factual",
+      "qa_id": "faa_ac_048"
+    },
+    {
+      "question": "What is a Failure Modes and Effects Analysis (FMEA)?",
+      "answer": "An FMEA is a structured, inductive, bottom-up analysis used to evaluate the effects on the system and airplane of each foreseeable element or component failure. When properly formatted, it aids in identifying latent failures and possible causes of each failure mode.",
+      "evidence": "This is a structured, inductive, bottom-up analysis that is used to evaluate the effects on the system and airplane of each foreseeable element or co mponent failure. When properly formatted, the FMEA should aid in identifying latent failures and possible causes of each failure mode.",
+      "question_type": "definitional",
+      "qa_id": "faa_ac_049"
+    },
+    {
+      "question": "What is the difference between fault tree analysis and FMEA?",
+      "answer": "FMEA is a structured, inductive, bottom-up analysis that evaluates the effects of each component failure. Fault tree (or dependence diagram) analysis is a structured, deductive, top-down analysis used to identify the conditions, failures, and events that would cause each defined failure condition. An FMEA may be used as the source document for the primary failures in a fault tree.",
+      "evidence": "These are s tructured, deductive, top-down analyses used to identify the conditions, failures, and events that would cause each defined f ailure condition. They are graphical methods of identifying the logical relationship between each particular failure condition and the primary element or component failures, other events, or combinations thereof that can cause it . An FMEA  may be used as the source document for those primary failures or other events.",
+      "question_type": "comparative",
+      "qa_id": "faa_ac_050"
+    },
+    {
+      "question": "When is Markov analysis recommended over fault tree analysis?",
+      "answer": "The FAA recommends using Markov analysis when fault tree or dependence diagrams are not easily usable, namely to account for complex transition states of systems that are difficult to represent and handle with classic fault tree or dependence diagram analysis.",
+      "evidence": "The FAA recommend s using Markov analysis when fault tree or dependence diagrams are not easily usable, namely to account for complex transition states of systems that  are difficult to represent an d handle with classic fault tree or dependence diagram analysis.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_051"
+    },
+    {
+      "question": "How many failure condition classifications does AC 25.1309-1B address?",
+      "answer": "AC 25.1309-1B addresses five failure condition classifications: no safety effect, minor, major, hazardous, and catastrophic. These terms are harmonized with EASA Acceptable Means of Compliance (AMC) 25.1309.",
+      "evidence": "\u201chazardous\u201d category. In this AC, the FAA addresses five failure condition classifications (no safety effe ct, minor, major, hazardous, and catastrophic) and their\nassociated qualitative and quantitative probabilities. These terms are harmonized with European Union Aviation Safety Agency (EASA) Acceptable Means of Compliance (AMC) 25.1309.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_054"
+    },
+    {
+      "question": "What are the four steps for calculating the average probability per flight hour?",
+      "answer": "The four steps are: (1) Determine the average flight duration and profile; (2) Calculate the probability of a failure condition for a certain average flight; (3) Calculate the average probability per flight of a failure condition by summing probabilities over all flights and dividing by the number of flights; (4) Calculate the average probability per flight hour by dividing the average probability per flight by the average flight duration.",
+      "evidence": "\u2022 Step 1: Determine the average flight.\n\u2022 Step 2: Calculate the probability of a failure condition for a certain average flight.\n\u2022 Step 3: Calculate the average probability per flight of a failure condition.\n\u2022 Step 4: Calculate the average probability per flight hour of a failure condition.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_055"
+    },
+    {
+      "question": "What examples of potential sources of common cause failures are listed in AC 25.1309-1B?",
+      "answer": "Examples include: rapid release of energy from concentrated sources (such as uncontained failures of rotating parts), pressure differentials, non-catastrophic structural failures, loss of environmental conditioning, disconnection of subsystems by overtemperature protection devices, contamination by fluids, damage from localized fires, loss of power supply, failure of sensors providing data to multiple systems, excessive voltage, physical or environmental interactions among parts, specification/design/implementation/installation/maintenance/manufacturing errors, and events external to the system or airplane.",
+      "evidence": "7-3 \u2022 Rapid release of energy from concentrated sources, such as uncontained failures of\nrotating parts (other than engines and propellers) or pressure vessels,\n\u2022 Pressure differentials,\n\u2022 Non-catastrophic structural failures,\n\u2022 Loss of environmental conditioning,\n\u2022 Disconnection of more than one subsystem or component by overtemperature protection devices,\n\u2022 Contamination by fluids,\n\u2022 Damage from localiz ed fires,\n\u2022 Loss of power supply or return (for example, mechanical damage or deterioration of connections),\n\u2022 Failure of sensors that provide data to multiple systems,\n\u2022 Excessive voltage,\n\u2022 Physical or environmental interactions among parts,\n\u2022 Specification, design, implementation, installation, maintenance, and manufacturing errors, or\n\u2022 Events external to the system or to the airplane.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_056"
+    },
+    {
+      "question": "What does section 25.601 require regarding airplane design?",
+      "answer": "Section 25.601 requires that the airplane may not have design features or details that experience has shown to be hazardous or unreliable. The suitability of each questionable design detail and part must be established by tests.",
+      "evidence": "The airplane may not have design features or details that experience has shown to be hazardous or unreliable. The suitability of each questionable design detail and part must be established by tests.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_057"
+    },
+    {
+      "question": "What probability levels must material design values meet for single member vs redundant structures?",
+      "answer": "For applied loads distributed through a single member whose failure would result in loss of structural integrity, material design values must assure material strength with 99 percent probability with 95 percent confidence. For redundant structure where failure of individual elements would distribute loads to other members, 90 percent probability with 95 percent confidence is required.",
+      "evidence": "(1) Where applied loads are eventually distributed through a single member within an assembly, the failure of which would result in loss of structural integrity of the component, 99 percent probability with 95 percent confidence.\n(2) For redundant structure, in which the failure of individual elements would result in applied loads being safely distributed to other load carrying members, 90 percent probability with 95 percent confidence.",
+      "question_type": "comparative",
+      "qa_id": "faa_ac_058"
+    },
+    {
+      "question": "What special factor of safety is required for control system joints in push-pull systems?",
+      "answer": "Control system joints in push-pull systems that are subject to angular motion, except those in ball and roller bearing systems, must have a special factor of safety of not less than 3.33 with respect to the ultimate bearing strength of the softest material used as a bearing. This factor may be reduced to 2.0 for joints in cable control systems.",
+      "evidence": "Control system joints (in push-pull systems) that are subject to angular motion, except those in ball and roller bearing systems, must have a special factor of safety of not less than 3.33 with respect to the ultimate bearing strength of the softest material used as a bearing. This factor may be reduced to 2.0 for joints in cable control systems.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_060"
+    },
+    {
+      "question": "What bird impact must the empennage structure be designed to withstand?",
+      "answer": "The empennage structure must be designed to assure capability of continued safe flight and landing after impact with an 8-pound bird when the velocity of the airplane relative to the bird along the flight path is equal to VC at sea level.",
+      "evidence": "The empennage structure must be designed to assure capability of continued safe flight and landing of the airplane after impact with an 8-pound bird when the velocity of the airplane (relative to the bird along the airplane's flight path) is equal to *V**C* at sea level, selected under \u00a7 25.335(a). Compliance with this section by provision of redundant structure and protected location of control system elements or protective devices such as splitter plates or energy absorbing material is acceptable. Where compliance is shown by analysis, tests, or both, use of data on airplanes having similar structural design is acceptable.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_061"
+    },
+    {
+      "question": "What minimum cable diameter is allowed in aileron, elevator, or rudder systems?",
+      "answer": "No cable smaller than 1/8 inch in diameter may be used in the aileron, elevator, or rudder systems.",
+      "evidence": "No cable smaller than 1\u20448 inch in diameter may be used in the aileron, elevator, or rudder systems",
+      "question_type": "factual",
+      "qa_id": "faa_ac_062"
+    },
+    {
+      "question": "What must the takeoff warning system alert pilots about?",
+      "answer": "The takeoff warning system must provide an aural warning that is automatically activated during the initial portion of the takeoff roll if the airplane is in a configuration that would not allow a safe takeoff, including: wing flaps or leading edge devices not within approved takeoff positions, or wing spoilers, speed brakes, or longitudinal trim devices in a position that would not allow safe takeoff.",
+      "evidence": "The system must provide to the pilots an aural warning that is automatically activated during the initial portion of the takeoff roll if the airplane is in a configuration, including any of the following, that would not allow a safe takeoff: (1) The wing flaps or leading edge devices are not within the approved range of takeoff positions. (2) Wing spoilers (except lateral control spoilers meeting the requirements of \u00a7 25.671), speed brakes, or longitudinal trim devices are in a position that would not allow a safe takeoff.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_064"
+    },
+    {
+      "question": "What happens when the takeoff warning continues according to section 25.703?",
+      "answer": "The takeoff warning must continue until one of four conditions is met: (1) the configuration is changed to allow a safe takeoff; (2) action is taken by the pilot to terminate the takeoff roll; (3) the airplane is rotated for takeoff; or (4) the warning is manually deactivated by the pilot.",
+      "evidence": "The warning required by paragraph (a) of this section must continue until\u2014 (1) The configuration is changed to allow a safe takeoff; (2) Action is taken by the pilot to terminate the takeoff roll; (3) The airplane is rotated for takeoff; or (4) The warning is manually deactivated by the pilot.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_065"
+    },
+    {
+      "question": "What is the landing gear designed to prevent when it fails due to overloads?",
+      "answer": "The landing gear system must be designed so that when it fails due to overloads during takeoff and landing, the failure mode is not likely to cause spillage of enough fuel to constitute a fire hazard. The overloads must be assumed to act in the upward and aft directions in combination with side loads acting inboard and outboard.",
+      "evidence": "The landing gear system must be designed so that when it fails due to overloads during takeoff and landing, the failure mode is not likely to cause spillage of enough fuel to constitute a fire hazard. The overloads must be assumed to act in the upward and aft directions in combination with side loads acting inboard and outboard.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_066"
+    },
+    {
+      "question": "What are the conditions for a wheels-up landing design according to section 25.721(b)?",
+      "answer": "The airplane must be designed to avoid any rupture leading to fuel spillage sufficient to constitute a fire hazard from a wheels-up landing on a paved runway, including: impact at 5 feet-per-second vertical velocity with gear fully retracted and with any one or more gear legs not extended, and sliding on the ground with gear fully retracted with up to a 20-degree yaw angle.",
+      "evidence": "Impact at 5 feet-per-second vertical velocity, with the airplane under control, at Maximum Design Landing Weight\u2014 (i) With the landing gear fully retracted; and (ii) With any one or more landing gear legs not extended. (2) Sliding on the ground, with\u2014 (i) The landing gear fully retracted and with up to a 20\u00b0 yaw angle",
+      "question_type": "factual",
+      "qa_id": "faa_ac_067"
+    },
+    {
+      "question": "What is the reserve energy absorption capacity requirement for landing gear tests?",
+      "answer": "The landing gear may not fail in a test demonstrating its reserve energy absorption capacity, simulating a descent velocity of 12 feet per second at design landing weight, assuming airplane lift not greater than airplane weight acting during the landing impact.",
+      "evidence": "The landing gear may not fail in a test, demonstrating its reserve energy absorption capacity, simulating a descent velocity of 12 f.p.s. at design landing weight, assuming airplane lift not greater than airplane weight acting during the landing impact.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_068"
+    },
+    {
+      "question": "What must be provided for each braked wheel regarding wear indicators?",
+      "answer": "Means must be provided for each brake assembly to indicate when the heat sink is worn to the permissible limit. The means must be reliable and readily visible.",
+      "evidence": "Means must be provided for each brake assembly to indicate when the heat sink is worn to the permissible limit. The means must be reliable and readily visible.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_069"
+    },
+    {
+      "question": "What is the mean deceleration requirement for a design landing stop?",
+      "answer": "The mean deceleration for a design landing stop must not be less than 10 feet per second squared.",
+      "evidence": "The mean deceleration must not be less than 10 fps2.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_070"
+    },
+    {
+      "question": "What is the mean deceleration requirement for a maximum kinetic energy accelerate-stop?",
+      "answer": "The mean deceleration for a maximum kinetic energy accelerate-stop must not be less than 6 feet per second squared.",
+      "evidence": "The mean deceleration must not be less than 6 fps2.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_071"
+    },
+    {
+      "question": "How must a parking brake control be designed?",
+      "answer": "The parking brake control, when selected on, must prevent the airplane from rolling on a dry and level paved runway when the most adverse combination of maximum thrust on one engine and up to maximum ground idle thrust on any or all other engines is applied. The control must be suitably located or adequately protected to prevent inadvertent operation, and there must be indication in the cockpit when the parking brake is not fully released.",
+      "evidence": "The airplane must have a parking brake control that, when selected on, will, without further attention, prevent the airplane from rolling on a dry and level paved runway when the most adverse combination of maximum thrust on one engine and up to maximum ground idle thrust on any, or all, other engine(s) is applied.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_072"
+    },
+    {
+      "question": "What is the maximum number of seats abreast allowed on each side of a single-aisle airplane?",
+      "answer": "On airplanes having only one passenger aisle, no more than three seats abreast may be placed on each side of the aisle in any one row.",
+      "evidence": "On airplanes having only one passenger aisle, no more than three seats abreast may be placed on each side of the aisle in any one row.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_073"
+    },
+    {
+      "question": "How much fresh air must the ventilation system provide to each occupant?",
+      "answer": "Under normal operating conditions, the ventilation system must provide each occupant with an airflow containing at least 0.55 pounds of fresh air per minute.",
+      "evidence": "For normal operating conditions, the ventilation system must be designed to provide each occupant with an airflow containing at least 0.55 pounds of fresh air per minute.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_074"
+    },
+    {
+      "question": "What is the maximum allowable carbon dioxide concentration during flight?",
+      "answer": "Carbon dioxide concentration during flight must be shown not to exceed 0.5 percent by volume (sea level equivalent) in compartments normally occupied by passengers or crewmembers.",
+      "evidence": "Carbon dioxide concentration during flight must be shown not to exceed 0.5 percent by volume (sea level equivalent) in compartments normally occupied by passengers or crewmembers.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_076"
+    },
+    {
+      "question": "What are the cabin ozone concentration limits above flight level 320?",
+      "answer": "The airplane cabin ozone concentration during flight must not exceed 0.25 parts per million by volume (sea level equivalent) at any time above flight level 320, and 0.1 parts per million by volume (sea level equivalent) time-weighted average during any 3-hour interval above flight level 270.",
+      "evidence": "0.25 parts per million by volume, sea level equivalent, at any time above flight level 320; and (2) 0.1 parts per million by volume, sea level equivalent, time-weighted average during any 3-hour interval above flight level 270.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_079"
+    },
+    {
+      "question": "How many pressure relief valves are required for pressurized cabins and what are their specifications?",
+      "answer": "Two pressure relief valves are required to automatically limit the positive pressure differential to a predetermined value at the maximum rate of flow delivered by the pressure source. The combined capacity must be large enough so that the failure of any one valve would not cause an appreciable rise in the pressure differential.",
+      "evidence": "Two pressure relief valves to automatically limit the positive pressure differential to a predetermined value at the maximum rate of flow delivered by the pressure source. The combined capacity of the relief valves must be large enough so that the failure of any one valve would not cause an appreciable rise in the pressure differential.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_080"
+    },
+    {
+      "question": "What is the maximum number of passenger seats permitted for each Type A exit?",
+      "answer": "The maximum number of passenger seats permitted for each Type A exit installed in each side of the fuselage is 110 seats.",
+      "evidence": "Type A | 110",
+      "question_type": "factual",
+      "qa_id": "faa_ac_082"
+    },
+    {
+      "question": "How quickly must emergency exits be openable when there is no fuselage deformation?",
+      "answer": "Each emergency exit must be capable of being opened within 10 seconds measured from the time when the opening means is actuated to the time when the exit is fully opened.",
+      "evidence": "Within 10 seconds measured from the time when the opening means is actuated to the time when the exit is fully opened.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_083"
+    },
+    {
+      "question": "What is the maximum evacuation time required for airplanes with more than 44 passenger seats?",
+      "answer": "For airplanes having a seating capacity of more than 44 passengers, it must be shown that the maximum seating capacity, including required crewmembers, can be evacuated from the airplane to the ground under simulated emergency conditions within 90 seconds.",
+      "evidence": "For airplanes having a seating capacity of more than 44 passengers, it must be shown that the maximum seating capacity, including the number of crewmembers required by the operating rules for which certification is requested, can be evacuated from the airplane to the ground under simulated emergency conditions within 90 seconds.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_084"
+    },
+    {
+      "question": "What minimum number of hand fire extinguishers are required for a passenger capacity of 201 through 300?",
+      "answer": "Four hand fire extinguishers must be conveniently located and evenly distributed in passenger compartments for a capacity of 201 through 300 passengers.",
+      "evidence": "201 through 300 | 4",
+      "question_type": "factual",
+      "qa_id": "faa_ac_086"
+    },
+    {
+      "question": "What must lavatory fire protection include for airplanes with passenger capacity of 20 or more?",
+      "answer": "Each lavatory must be equipped with a smoke detector system providing warning to the cockpit or an audible warning in the passenger cabin, and each lavatory must have a built-in fire extinguisher for each disposal receptacle for towels, paper, or waste that discharges automatically upon occurrence of a fire.",
+      "evidence": "(a) Each lavatory must be equipped with a smoke detector system or equivalent that provides a warning light in the cockpit, or provides a warning light or audible warning in the passenger cabin that would be readily detected by a flight attendant; and\n(b) Each lavatory must be equipped with a built-in fire extinguisher for each disposal receptacle for towels, paper, or waste, located within the lavatory. The extinguisher must be designed to discharge automatically into each disposal receptacle upon occurrence of a fire in that receptacle.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_087"
+    },
+    {
+      "question": "What minimum aisle width is required for airplanes with 20 or more passengers at 25 inches and more from the floor?",
+      "answer": "For airplanes with a passenger seating capacity of 20 or more, the minimum passenger aisle width at 25 inches and more from the floor is 20 inches.",
+      "evidence": "20 or more | 15 | 20",
+      "question_type": "factual",
+      "qa_id": "faa_ac_088"
+    },
+    {
+      "question": "What is the minimum emergency lighting illumination for general cabin illumination along the centerline of main aisles?",
+      "answer": "When measured along the centerline of main passenger aisles at seat arm-rest height and at 40-inch intervals, the average illumination must be not less than 0.05 foot-candle, and the illumination at each 40-inch interval must be not less than 0.01 foot-candle.",
+      "evidence": "General illumination in the passenger cabin must be provided so that when measured along the centerline of main passenger aisle(s), and cross aisle(s) between main aisles, at seat arm-rest height and at 40-inch intervals, the average illumination is not less than 0.05 foot-candle and the illumination at each 40-inch interval is not less than 0.01 foot-candle.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_089"
+    },
+    {
+      "question": "What ballistic resistance standard must the flightdeck boundary meet?",
+      "answer": "The bulkhead, door, and any other boundary separating the flightcrew compartment from occupied areas must be designed to resist penetration by small arms fire and fragmentation devices to a level equivalent to level IIIa of the National Institute of Justice Standard 0101.04.",
+      "evidence": "must be designed to resist penetration by small arms fire and fragmentation devices to a level equivalent to level IIIa of the National Institute of Justice (NIJ) Standard 0101.04.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_092"
+    },
+    {
+      "question": "What is required of an installed physical secondary barrier (IPSB) when deployed?",
+      "answer": "When deployed, the IPSB must: resist a 250-pound static load in the direction of the passenger cabin; resist a 600-pound static load in the direction of the flightdeck; delay a person attempting to access the flightdeck by at least the time required to open and reclose the flightdeck door but no less than 5 seconds; prevent reaching through to touch the flightdeck door; allow necessary crewmember activities; and provide line-of-sight visibility between the flightdeck door and cabin.",
+      "evidence": "(i) Resist a 250 pound (1113 Newtons) static load in the direction of the passenger cabin applied at the most critical locations on the IPSB;\n(ii) Resist a 600 pound (2669 Newtons) static load in the direction of the flightdeck applied at the most critical locations on the IPSB;\n(iii) Delay a person attempting to access the flightdeck by at least the time required for a crewmember to open and reclose the flightdeck door, but no less than 5 seconds;",
+      "question_type": "factual",
+      "qa_id": "faa_ac_093"
+    },
+    {
+      "question": "What is a Class C cargo compartment?",
+      "answer": "A Class C cargo compartment is one that has a separate approved smoke or fire detector system providing warning to the pilot station, an approved built-in fire extinguishing or suppression system controllable from the cockpit, means to exclude hazardous quantities of smoke/flames/agent from occupied compartments, and means to control ventilation so the extinguishing agent can control any fire.",
+      "evidence": "(c) *Class C.* A Class C cargo or baggage compartment is one not meeting the requirements for either a Class A or B compartment but in which\u2014\n(1) There is a separate approved smoke detector or fire detector system to give warning at the pilot or flight engineer station;\n(2) There is an approved built-in fire extinguishing or suppression system controllable from the cockpit.\n(3) There are means to exclude hazardous quantities of smoke, flames, or extinguishing agent, from any compartment occupied by the crew or passengers;",
+      "question_type": "definitional",
+      "qa_id": "faa_ac_094"
+    },
+    {
+      "question": "How quickly must a cargo compartment smoke or fire detection system provide a visual indication to the flight crew?",
+      "answer": "The detection system must provide a visual indication to the flight crew within one minute after the start of a fire.",
+      "evidence": "The detection system must provide a visual indication to the flight crew within one minute after the start of a fire.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_095"
+    },
+    {
+      "question": "What casting factor and inspection requirements apply to critical castings at a factor of 1.25?",
+      "answer": "A casting factor of 1.25 or greater requires: inspection of 100% of the surface using visual and liquid penetrant or equivalent methods; inspection of structurally significant internal areas using radiographic or equivalent methods; and three castings undergoing static tests meeting strength requirements at ultimate load corresponding to a 1.25 factor and deformation requirements at 1.15 times limit load.",
+      "evidence": "A casting factor of 1.25 or greater may be used, provided that\u2014 (i) Each casting receives: (A) Inspection of 100 percent of its surface, using visual inspection and liquid penetrant or equivalent inspection methods; and (B) Inspection of structurally significant internal areas and areas where defects are likely to occur, using radiographic or equivalent inspection methods. (ii) Three castings undergo static tests",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_096"
+    },
+    {
+      "question": "What is the purpose of the Safety Assessment Process overview in Appendix C?",
+      "answer": "Appendix C is primarily for applicants who are unfamiliar with the various methods and procedures typically used in the industry to conduct safety assessments. It illustrates a systematic approach to safety assessments, enhances understanding and communication, and provides suggestions on documentation. It is not a certification checklist.",
+      "evidence": "The FAA  has provided t his appendix primarily for applicants who are  unfamiliar with the various methods and procedures typically used in the industry to conduct safety assessments. T his guide and figures  C-1 and  C-2 are not certification checklists",
+      "question_type": "factual",
+      "qa_id": "faa_ac_097"
+    },
+    {
+      "question": "What is the 'V' shape of the safety assessment process?",
+      "answer": "Consistent with SAE ARP4754A and ARP4761, the safety assessment process is presented in a V shape. On the left side are the activities to evaluate the preliminary systems designs (FHA, PSSA). On the right side are the activities to evaluate the final designs (SSA, Assessment of Multiple SSAs).",
+      "evidence": "SAE  ARP4761 for details of a  complete process . Consistent with the system\nengineering practice in SAE ARP4754A and ARP4761, the process is presented  in a\n\u201cV\u201d shape. On t he left side of the \u201cV\u201d are the activities to evaluate the preliminary\nsystems designs. On the right side are the activities to evaluate the final designs.",
+      "question_type": "factual",
+      "qa_id": "faa_ac_098"
+    },
+    {
+      "question": "What windshield bird impact resistance is required for transport category airplanes?",
+      "answer": "Windshield panes directly in front of the pilots in the normal conduct of their duties, and their supporting structures, must withstand without penetration the impact of a four-pound bird when the velocity of the airplane relative to the bird along the flight path is equal to VC at sea level.",
+      "evidence": "(b) Windshield panes directly in front of the pilots in the normal conduct of their duties, and the supporting structures for these panes, must withstand, without penetration, the impact of a four-pound bird when the velocity of the airplane (relative to the bird along the airplane's flight path) is equal to the value of *V**C,* at sea level, selected under \u00a7 25.335(a).",
+      "question_type": "factual",
+      "qa_id": "faa_ac_100"
+    },
+    {
+      "question": "What does the FAA recommend reviewing before reading and commenting on the proposed AC?",
+      "answer": "The FAA recommends that you refer to the NPRM (FAA-2022-1544) before reading and commenting on the proposed AC.",
+      "evidence": "FAA-2022-\n1544. The FAA  recommend s that you ref er to that NPRM before reading and commenting on\nthis proposed AC.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_101"
+    },
+    {
+      "question": "What is the legal standing of Advisory Circulars with respect to binding the public?",
+      "answer": "Advisory Circulars do not have the force and effect of law and are not meant to bind the public in any way. The document is intended only to provide clarity to the public regarding existing requirements under the law or agency policies.",
+      "evidence": "force and effect of law and are not meant  to bind the public in any way. This document\nis intended only to provide clarity to the public regarding existing requirements under the law or agency policies.",
+      "question_type": "causal",
+      "qa_id": "faa_ac_102"
+    },
+    {
+      "question": "What action may the FAA take if following the AC would not result in compliance with applicable regulations?",
+      "answer": "If the FAA becomes aware of circumstances in which following the AC would not result in compliance with the applicable regulations, the agency may require additional measures beyond what the AC recommends.",
+      "evidence": "If the FAA becomes aware of circumstances  in which following this AC  would not result in compliance\nwith the applicable regulations, the agency  may require additional",
+      "question_type": "causal",
+      "qa_id": "faa_ac_103"
+    },
+    {
+      "question": "Does the applicant need to account for section 25.1309 when showing compliance with performance and flight characteristics?",
+      "answer": "Although the applicant does not need to account for section 25.1309 when showing compliance with the performance and flight characteristics requirements, the regulation does apply in other contexts.",
+      "evidence": "2 Although the applicant does not need to  account for \u00a7 25.1309 when\nshowing compliance with  the performance and flight characteristics",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_104"
+    },
+    {
+      "question": "Under what condition does section 25.1309(b) apply to single failures in the brake systems?",
+      "answer": "Section 25.1309(b) applies to single failures in the brake systems if the failures affect functions other than braking.",
+      "evidence": "However, \u00a7 25.1309(b) does apply to single failures in the\nbrake systems if the fai lures affect  functions other than braking.",
+      "question_type": "comparative",
+      "qa_id": "faa_ac_105"
+    },
+    {
+      "question": "Beyond airplane occupants, whose risks should applicants account for when assessing systems failure?",
+      "answer": "Applicants should also account for risks to persons other than airplane occupants, such as ground crew, when assessing systems failure.",
+      "evidence": "12 Applicants should also account for r isks to persons other than airplane\noccupants , such as ground crew, when assessing systems failure",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_106"
+    },
+    {
+      "question": "Why has the FAA not typically required applicants to address risks to individuals on the ground in compliance demonstrations?",
+      "answer": "Because such risks to individuals are usually less significant in comparison with the risk to the airplane and its larger number of occupants, the FAA has not typically required applicants to address these risks in demonstrating compliance.",
+      "evidence": "Because such risks to individuals are usually less signif icant in comparison with the\nrisk to the airplane and its larger number of occupants, the FAA has not typically required applicants to address these risks in demonstrating",
+      "question_type": "comparative",
+      "qa_id": "faa_ac_107"
+    },
+    {
+      "question": "Can the definitions in AC 25.1309-1B be assumed to apply to the same terms in other regulations or ACs?",
+      "answer": "No, you should not assume that the definitions in AC 25.1309-1B apply to the same or similar terms used in other regulations or ACs.",
+      "evidence": "You should not assume that these definitions apply to the same or similar terms use d in other regulations or ACs.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_108"
+    },
+    {
+      "question": "How does the term 'analysis' differ from 'assessment' in the context of AC 25.1309-1B?",
+      "answer": "'Analysis' generally implies a more specific, more detailed evaluation, while 'assessment' may be a more general or broader evaluation.",
+      "evidence": "However, \u201c analysis \u201d generally implies a more specific,\nmore detailed evaluation, while \u201c assessment \u201d may be a more general or broader",
+      "question_type": "comparative",
+      "qa_id": "faa_ac_109"
+    },
+    {
+      "question": "When should failure condition probability be evaluated per flight rather than per flight hour?",
+      "answer": "The probability should be evaluated per flight, rather than per flight hour, for failure conditions that are only relevant during a specific flight phase.",
+      "evidence": "Evaluate the probability per flight, rather than per flight hour, for failure conditions that are only relevant during a specific flight phase.",
+      "question_type": "comparative",
+      "qa_id": "faa_ac_110"
+    },
+    {
+      "question": "What is the intended role of numerical probability values relative to qualitative methods in safety assessment?",
+      "answer": "Numerical values were intended to supplement, not replace, qualitative methods based on engineering and operational judgment.",
+      "evidence": "However,  numerical values were intended to supplement, not replace,\nqualitative methods based on engineering and operational judgment. See appendix  A for",
+      "question_type": "comparative",
+      "qa_id": "faa_ac_111"
+    },
+    {
+      "question": "What must be assumed about single element failures in fail-safe design?",
+      "answer": "In fail-safe design, the failure of any single element, component, or connection during any one flight must be assumed in any system or subsystem, regardless of its probability.",
+      "evidence": "1 In any system or subsystem, the failure of any single element, component, or connection during any one flight must  be assumed,  regardless of its",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_112"
+    },
+    {
+      "question": "What is the requirement for the severity of single failures in fail-safe design?",
+      "answer": "Single failures must not be catastrophic. The definition of 'catastrophic' is provided in paragraph 3.1.5 of the AC.",
+      "evidence": "Such single failures must not be catastrophic.  See definition of\n\u201ccatastrophic\u201d in paragraph 3.1.5 of this AC.\n2.2.1.2 Subsequent failures during the same flight, whether detected or latent, and",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_113"
+    },
+    {
+      "question": "What is the purpose of isolation in fail-safe design principles?",
+      "answer": "Isolation in fail-safe design ensures that the failure of one component does not cause the failure of another. Proven reliability is also applied so that multiple, independent failures are unlikely to occur.",
+      "evidence": "that the failure of one does not cause the failure of another.\n2.2.2.4 P roven R eliability  so that multiple, independent failures are unlikely to",
+      "question_type": "causal",
+      "qa_id": "faa_ac_114"
+    },
+    {
+      "question": "What design concept should applicants emphasize for highly integrated systems?",
+      "answer": "Applicants should emphasize the fail-safe design concept discussed in paragraph 2.2 of the AC in the development and assurance of highly integrated systems.",
+      "evidence": "Applicants should emphasize t he fail -safe design concept discussed in\nparagraph  2.2 of this AC in the development and assurance of highly integrated",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_115"
+    },
+    {
+      "question": "What role do qualitative and quantitative methods play in the development and safety assessment processes?",
+      "answer": "Qualitative and quantitative methods are used in determining when, or if, particular analyses or development assurance activities should be conducted in the frame of the development and safety assessment processes.",
+      "evidence": "determining when, or if, particular analyses or development assurance activities  should\nbe conducted in the frame of the development and safety assessment processes.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_116"
+    },
+    {
+      "question": "What outcome defines a catastrophic failure condition according to AC 25.1309-1B?",
+      "answer": "A catastrophic failure condition is one that would result in multiple fatalities, usually with the loss of the airplane.",
+      "evidence": "A failure condition that would result in multiple fatalities, usually with the loss of the\nairplane.\nNote:  A catastrophic failure condition was defined in previous versions of the rule and",
+      "question_type": "causal",
+      "qa_id": "faa_ac_117"
+    },
+    {
+      "question": "What must an applicant demonstrate regarding extremely improbable failure conditions over the operational life of an airplane?",
+      "answer": "The applicant should provide a sufficiently conservative demonstration that a condition is not anticipated to occur in service during the entire operational life of all airplanes under a type certificate application.",
+      "evidence": "Consequently, in practice, the applicant should provide a sufficiently conservative demonstration that a condition is not anticipated to occur in service during the entire operational life of all airplanes under  a type certificate application being",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_118"
+    },
+    {
+      "question": "Does the method for showing an event is extremely improbable depend on the type of system?",
+      "answer": "Yes, the means of showing that the occurrence of an event is extremely improbable varies widely, depending on the type of system, component, or element that must be assessed.",
+      "evidence": "2 The means of showing that the occurrence of an event is extremely improbable varies widely, depending on the type of system, component, or element that must be assessed.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_119"
+    },
+    {
+      "question": "What types of external environmental conditions should be considered when evaluating equipment under section 25.1309(a)(1)?",
+      "answer": "External environmental conditions that the airplane is likely to encounter should be considered, such as atmospheric turbulence, high-intensity radiated fields, lightning, and precipitation.",
+      "evidence": "to encounter should be considered, such as atmospheric turbulence,  high -intensity\nradiated fields , lightning, and precipitation. The severity of the  external environmental",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_120"
+    },
+    {
+      "question": "What is the requirement for operating conditions relative to equipment qualification environment?",
+      "answer": "The conditions under which the installed equipment will be operated should be equal to or less severe than the environment for which the equipment is qualified.",
+      "evidence": "The conditions under which the install ed equipment will be operated should be equal to\nor less severe than the environment for which the equipment is qualified.",
+      "question_type": "procedural",
+      "qa_id": "faa_ac_121"
+    },
+    {
+      "question": "What internal environmental factors can cause contamination that affects installed equipment?",
+      "answer": "Fluid or vapor contamination due to either the normal environment or accidental leaks or spillage and handling by personnel can affect installed equipment, along with variations in fluid pressure and electrical power.",
+      "evidence": "variations in fluid pressure and electrical power, fluid or vapor contamination due to\neither the normal environment or accidental leaks or spillage and handling by personnel ,",
+      "question_type": "causal",
+      "qa_id": "faa_ac_122"
+    },
+    {
+      "question": "What types of multiple failure scenarios must be considered in a safety analysis under section 25.1309(b)?",
+      "answer": "The analysis must consider the possibility of multiple failures due to a common cause, multiple independent failures, and undetected failures, as well as the possibility of requirement, design, and implementation errors.",
+      "evidence": "2 The possibility of multiple failures  due to a common cause, multiple\nindependent failures, and undetected failures.\n5.3.1.3 The possibility of requirement, design, and implementation errors.",
+      "question_type": "causal",
+      "qa_id": "faa_ac_123"
+    },
+    {
+      "question": "What human error factors must be considered in the safety assessment of failure conditions?",
+      "answer": "The safety assessment must consider the effect of reasonably anticipated crew errors after the occurrence of a failure or failure condition, as well as the effect of reasonably anticipated errors when performing maintenance actions.",
+      "evidence": "4 The effect of reasonably anticipated crew errors after the occurrence of a failure or failure condition.\n5.3.1.5 The effect of reasonably anticipated errors when performing maintenance actions.",
+      "question_type": "causal",
+      "qa_id": "faa_ac_124"
+    },
+    {
+      "question": "Are quantitative assessments of crew or maintenance error probabilities considered feasible?",
+      "answer": "No, quantitative assessments of the probabilities of crew or maintenance errors are not currently considered feasible.",
+      "evidence": "However,\nquantitative assessments of the probabilities of crew or maintenance errors are not currently considered feasible. If the failure indications are",
+      "question_type": "comparative",
+      "qa_id": "faa_ac_125"
+    },
+    {
+      "question": "Why might the FAA determine it is not practical for an applicant to meet the 1/1000 latent failure detection threshold?",
+      "answer": "The FAA may find it is not practical for the applicant to meet the 1/1000 threshold if meeting it would result in performing complex or invasive maintenance tasks on the flight line, thereby increasing the risk of incorrect maintenance and associated cost.",
+      "evidence": "For example, if meeting it would result in performing complex or invasive maintenance tasks on the flight line, thereby increasing the risk of incorrect maintenance and associated cost, the agency  may find it is not practical  for the applicant to meet the 1/1000",
+      "question_type": "causal",
+      "qa_id": "faa_ac_126"
+    }
+  ]
+}

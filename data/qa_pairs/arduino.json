@@ -1,0 +1,705 @@
+{
+  "corpus_id": "arduino",
+  "qa_pairs": [
+    {
+      "question": "What is Arduino as a platform?",
+      "answer": "Arduino is an open-source platform that combines hardware and software for designing and building electronic projects.",
+      "evidence": "Arduino is an open-source platform that combines hardware and software in designing and building electronic projects.",
+      "question_type": "definitional",
+      "qa_id": "arduino_001"
+    },
+    {
+      "question": "What is an Arduino sketch?",
+      "answer": "A sketch is a program written with the Arduino programming language, serving as another way to refer to a code file written for Arduino projects.",
+      "evidence": "A sketch is a program written with the Arduino programming language. It\u2019s another way of referring to a code file written for Arduino projects.",
+      "question_type": "definitional",
+      "qa_id": "arduino_004"
+    },
+    {
+      "question": "What is the range of integer values that the int data type can store on an Arduino Uno board?",
+      "answer": "The Uno board has a 16-bit integer capacity, allowing it to store values from -32,768 to 32,767.",
+      "evidence": "The `int` data type is used to store integer values. The Uno board has a 16-bit integer capacity so it can store values that fall within the range of -32,768 to 32,767.",
+      "question_type": "factual",
+      "qa_id": "arduino_005"
+    },
+    {
+      "question": "How does the long data type differ from int in Arduino?",
+      "answer": "The long data type is similar to int but has a wider range. It has a 32-bit integer limit ranging from -2,147,483,648 to 2,147,483,647, compared to int's 16-bit limit of -32,768 to 32,767.",
+      "evidence": "The `long` data type is similar to `int` but has a wider range of integer values. It has a 32-bit integer limit which falls within the range of -2,147,483,648 to 2,147,483,647.",
+      "question_type": "comparative",
+      "qa_id": "arduino_006"
+    },
+    {
+      "question": "What are the two main differences between the char and String data types in Arduino?",
+      "answer": "The two differences are: char uses single quotes while String uses double quotes, and char stores single characters while String stores multiple characters.",
+      "evidence": "There are two main differences between `char` and `String`:\n\n* `char` uses single quotes ('A') while `string` uses double quotes (\"Arduino\").\n* `char` stores single characters while `string` stores multiple characters.",
+      "question_type": "comparative",
+      "qa_id": "arduino_007"
+    },
+    {
+      "question": "What is the byte data type in Arduino and what is its range?",
+      "answer": "The byte data type has an 8-bit unsigned integer limit ranging from 0 to 255. Unsigned means it cannot store negative values.",
+      "evidence": "The `byte` data type has an 8-bit unsigned integer limit that ranges from 0 to 255. Unsigned means that it can't store negative values.",
+      "question_type": "definitional",
+      "qa_id": "arduino_008"
+    },
+    {
+      "question": "What do comparison operators return in Arduino?",
+      "answer": "Comparison operators return either true (1) or false (0), depending on the relationship between the operands being compared.",
+      "evidence": "You can use comparison operators to compare two values/operands. Comparison operators return either `true` (1) or `false` (0) depending on the relationship between operands.",
+      "question_type": "factual",
+      "qa_id": "arduino_009"
+    },
+    {
+      "question": "How does the do-while loop differ from a regular while loop in Arduino?",
+      "answer": "The do-while loop executes its code block first before checking the condition, meaning it always runs at least once regardless of the condition. A regular while loop checks the condition before executing.",
+      "evidence": "The `do-while` loop is just like the `while` loop, but it executes its code block first before checking the validity of the condition given. That is, at the beginning of the loop, the code in curly brackets will run first even if the condition is `false`. After that, it starts checking if the condition is `true` or `false`, just like a normal loop.",
+      "question_type": "comparative",
+      "qa_id": "arduino_011"
+    },
+    {
+      "question": "What are the four main parts of a function in Arduino?",
+      "answer": "The four main parts are: the type of data the function returns, the name of the function, the function parameter(s) which is optional, and the body of the function.",
+      "evidence": "There are four main parts of a function in Arduino:\n\n* The type of data the function returns.\n* The name of the function.\n* The function parameter(s) which is optional.\n* The body of the function.",
+      "question_type": "factual",
+      "qa_id": "arduino_013"
+    },
+    {
+      "question": "What happens when you use the return statement in a function?",
+      "answer": "The return keyword returns a value from the function and then terminates the function. Any code that comes after the return statement will not be executed.",
+      "evidence": "The main use of the `return` keyword is to return a value from the function, and then terminate the function.",
+      "question_type": "factual",
+      "qa_id": "arduino_014"
+    },
+    {
+      "question": "What does the setup() function do and how often does it run?",
+      "answer": "The setup() function is used to configure analog and digital pins, initialize variables, and perform other setup functionalities. It is executed once when the board is powered on or reset.",
+      "evidence": "You can use the `setup()` function to configure analog and digital pins, initialize variables, and do other setup functionalities. The `setup()` function is executed once \u2014 when the board is powered on or reset.",
+      "question_type": "definitional",
+      "qa_id": "arduino_015"
+    },
+    {
+      "question": "What is the baud rate in the context of the Serial.begin() function?",
+      "answer": "The baud rate represents the speed of data transfer between the Arduino board and the computer or other devices communicating through the serial monitor. The most commonly used baud rate is 9600.",
+      "evidence": "The baud rate is the speed of data transfer between the Arduino board and the computer or any other device communicating with the Arduino board through the serial monitor.",
+      "question_type": "definitional",
+      "qa_id": "arduino_017"
+    },
+    {
+      "question": "How are digital pin states represented in Arduino?",
+      "answer": "Digital pin states can be represented in three ways: HIGH and LOW, as numbers (1 for HIGH and 0 for LOW), or in volts (5V for HIGH and 0V for LOW).",
+      "evidence": "Digital pins are used to send and receive digital signals in two states \u2014 `HIGH` and `LOW`. The digital pins on a Arduino board can be configured as either input or output pins.\n\nThese states can also be represented using numbers (1 for `HIGH` and 0 for `LOW`), or in volts (V) (5V for `HIGH` and 0V for `LOW`).",
+      "question_type": "factual",
+      "qa_id": "arduino_018"
+    },
+    {
+      "question": "How many digital pins does the Arduino Uno board have and what extra functionalities do some of them provide?",
+      "answer": "The Uno board has 14 digital pins numbered 0 to 13. Pins 0 and 1 enable serial communication, pins with the tilde symbol support PWM signals, and pins 2 and 3 can be used for interrupt-based functionalities.",
+      "evidence": "The Uno board has 14 digital pins numbered from 0 to 13. Although each pin can be configured to serve as either a digital input or output pin, some of them come with extra functionalities like:\n\n* Pins 0 (RX) and 1 (TX) enable the Arduino board to communicate serially. RX receives while TX sends.\n* Pins that have the tilde (~) symbol beside them support PWM (Pulse Width Modulation) signals. This means that you can use these pins like analog pins (to receive analog values).\n* Pins 2 and 3 can be used for interrupt-based functionalities.",
+      "question_type": "factual",
+      "qa_id": "arduino_019"
+    },
+    {
+      "question": "What does the analogWrite() function actually do in terms of pin output?",
+      "answer": "The analogWrite() function does not write analog values to analog pins. Instead, it sends analog voltage values converted to digital signals to digital pins that support PWM (Pulse Width Modulation).",
+      "evidence": "Note that the `analogWrite()` function doesn't write or send analog values to analog pins. It sends analog voltage values (that get converted to digital signals) to digital pins that support PWM (Pulse Width Modulation).",
+      "question_type": "factual",
+      "qa_id": "arduino_022"
+    },
+    {
+      "question": "What is a sensor in the context of Arduino?",
+      "answer": "A sensor is a device that detects changes in the environment and converts the information into electrical signals, which are sent to the microcontroller for processing.",
+      "evidence": "A sensor is a device that listens for or detects changes in the environment. Sensors convert the information they detect in the physical environment to electrical signals which are then sent to the microcontroller (the brain of the board).",
+      "question_type": "definitional",
+      "qa_id": "arduino_023"
+    },
+    {
+      "question": "What are the four pins on the HC-SR04 ultrasonic sensor and what do they connect to?",
+      "answer": "The sensor has VCC (connected to 5V), Trig (connected to a digital pin), Echo (connected to a digital pin), and GND (connected to ground).",
+      "evidence": "The sensor has four pins \u2014 VCC, Trig, Echo, and GND.\n\n* The VCC pin is connected to 5V on the Uno board\n* The Trig pin is connected to digital pin 9.\n* The Echo pin is connected to digital pin 10.\n* The GND pin is connected to GND on the Uno board.",
+      "question_type": "factual",
+      "qa_id": "arduino_025"
+    },
+    {
+      "question": "What are actuators in Arduino?",
+      "answer": "Actuators are components that convert electrical signals into physical or mechanical motion.",
+      "evidence": "Actuators in Arduino are components that convert electrical signals into physical/mechanical motion.",
+      "question_type": "definitional",
+      "qa_id": "arduino_026"
+    },
+    {
+      "question": "What is the difference between the print() and println() serial functions?",
+      "answer": "Both functions print data to the serial monitor, but print() prints data on the same line, while println() prints each data on a new line.",
+      "evidence": "The `print()` and `println()` functions both print data to the serial monitor. The difference between the two is that `print()` prints data on the same line while `println()` prints each data on a new line.",
+      "question_type": "comparative",
+      "qa_id": "arduino_028"
+    },
+    {
+      "question": "What does the Serial.available() function check for?",
+      "answer": "The Serial.available() function checks the number of characters in the serial port. It is mostly used to run code only when data is available in the serial monitor.",
+      "evidence": "The `Serial.available()` function checks the number of characters in the serial port. It is mostly use to run code only when data is available in the serial monitor.",
+      "question_type": "definitional",
+      "qa_id": "arduino_029"
+    },
+    {
+      "question": "What does the parseInt() function return for non-integer values in serial data?",
+      "answer": "The parseInt() function returns valid integer values from incoming serial data, and non-integer values will be returned as 0.",
+      "evidence": "The `parseInt()` function returns valid integer values from incoming serial data. Non integer values will be returned as 0.",
+      "question_type": "factual",
+      "qa_id": "arduino_030"
+    },
+    {
+      "question": "How do you initialize the LCD object with pin numbers when using the LiquidCrystal library?",
+      "answer": "You initialize the lcd object with pin numbers where the first number is the RS pin, the second is the E pin, and the last four are the data pins (D4 to D7).",
+      "evidence": "We then initialized the `lcd` object with the required pin numbers: `LiquidCrystal lcd(4, 5, 6, 7, 8, 9)`. The first number denotes the RS pin. The second number denotes the E pin. The last four numbers denote the data pins (D4 to D7).",
+      "question_type": "procedural",
+      "qa_id": "arduino_031"
+    },
+    {
+      "question": "What does the lcd.setCursor() function do?",
+      "answer": "The lcd.setCursor() function sets the cursor position on the LCD. The first parameter is the column and the second is the row, so lcd.setCursor(0, 1) moves the cursor to the first column, second row.",
+      "evidence": "This was followed by the `lcd.setCursor(0, 1)` function which has two parameters \u2014 0 and 1. 0 represents first column on the left while 1 represents the second row. So the cursor will be set to the second line of the LCD.",
+      "question_type": "procedural",
+      "qa_id": "arduino_032"
+    },
+    {
+      "question": "What is the SparkFun Inventor's Kit and what does it aim to teach?",
+      "answer": "The SparkFun Inventor's Kit is a guide for beginning embedded electronics that contains information to build five projects encompassing 16 circuits, based on the philosophy that anyone can and should play around with electronics.",
+      "evidence": "The SparkFun Inventor's Kit (SIK) is your map for navigating the waters of beginning embedded electronics. This guide contains all the information you will need to build five projects encompassing the 16 circuits of the SIK. At the center of this guide is one core philosophy: that anyone can (and should) play around with electronics.",
+      "question_type": "definitional",
+      "qa_id": "arduino_033"
+    },
+    {
+      "question": "What is the difference between analog and digital signals?",
+      "answer": "Analog signals have infinite possibilities, while digital signals deal in the realm of the discrete or finite, meaning there is a limited set of values they can be.",
+      "evidence": "The common theme among all of these **analog** signals is their **infinite** possibilities.\n\n**Digital** signals deal in the realm of the **discrete** or **finite**, meaning there is a limited set of values they can be.",
+      "question_type": "comparative",
+      "qa_id": "arduino_034"
+    },
+    {
+      "question": "How does Analog to Digital Conversion work on the RedBoard?",
+      "answer": "The six analog inputs use an ADC that samples the analog signal and creates a digital signal. With a 10-bit ADC resolution, there are 2^10 = 1024 possible values, which is why the analog signal varies between 0 and 1023.",
+      "evidence": "The six analog inputs (A0--A5) covered in the last circuit all use an ADC. These pins \"sample\" the analog signal and create a digital signal for the microcontroller to interpret. The \"resolution\" of this signal is based on the resolution of the ADC. In the case of the RedBoard, that resolution is 10-bit. With a 10-bit ADC, we get 2 ^ 10 = 1024 possible values, which is why the analog signal varies between 0 and 1023.",
+      "question_type": "procedural",
+      "qa_id": "arduino_035"
+    },
+    {
+      "question": "How does the analogWrite() function simulate analog output using PWM?",
+      "answer": "The analogWrite() function rapidly switches digital pins on and off to simulate analog output. For example, to output 2.5V, it switches a pin on and off so it is only on 50% of the time (50% of 5V is 2.5V).",
+      "evidence": "The RedBoard doesn't have an Analog Output, but it is really good at switching some digital pins on and off fast enough to simulate an analog output. `analogWrite()` can output 2.5 volts by quickly switching a pin on and off so that the pin is only on 50 percent of the time (50% of 5V is 2.5V).",
+      "question_type": "procedural",
+      "qa_id": "arduino_036"
+    },
+    {
+      "question": "What is a pull-up resistor and what does it do?",
+      "answer": "A pull-up resistor is a small circuit that holds the voltage HIGH (5V) on a pin until a button is pressed, pulling the voltage LOW (0V). The RedBoard has built-in pull-up resistors.",
+      "evidence": "A pull-up resistor is a small circuit that holds the voltage HIGH (5V) on a pin until a button is pressed, pulling the voltage LOW (0V). The most common place you will see a pull-up resistor is when working with buttons. A pull-up resistor keeps the button in one state until it is pressed. The RedBoard has built-in pull-up resistors, but they can also be added to a circuit externally.",
+      "question_type": "definitional",
+      "qa_id": "arduino_037"
+    },
+    {
+      "question": "How do servo motors differ from regular DC motors?",
+      "answer": "Regular DC motors have two wires and spin continuously when powered. Servo motors have three wires (power, ground, signal) and can be told to move to a specific angle between 0 and 180 degrees and stay there.",
+      "evidence": "Regular DC motors have two wires. When you hook the wires up to power, the motor spins around and around. Servo motors, on the other hand, have three wires: one for power, one for ground and one for signal. When you send the right signal through the signal wire, the servo will move to a specific angle and stay there.",
+      "question_type": "comparative",
+      "qa_id": "arduino_038"
+    },
+    {
+      "question": "What is the map() function used for in Arduino?",
+      "answer": "The map() function takes a range of values and outputs a different range of values. For example, it can map analog pin values (0-1023) to a servo motor range (20-160).",
+      "evidence": "The `map()` function takes a range of values and outputs a different range of values that can contain more or less values than the original. In this case, we are taking the range 0-1023 and mapping it to the range 20-160.",
+      "question_type": "procedural",
+      "qa_id": "arduino_039"
+    },
+    {
+      "question": "What types of projects can Arduino be applied to?",
+      "answer": "Arduino can be applied in home automation, Internet of Things (IoT), audio and music, automated and remote controlled systems, automation in agriculture, electronic prototyping, and wearable devices.",
+      "evidence": "Arduino can be applied in a variety of projects like:\n\n* Home automation.\n* Internet of Things (IoT).\n* Audio and music.\n* Automated and remote controlled systems.\n* Automation in agriculture.\n* Electronic prototyping.\n* Wearable devices, and so much more.",
+      "question_type": "factual",
+      "qa_id": "arduino_041"
+    },
+    {
+      "question": "What microcontroller does the Arduino Uno R3 board use?",
+      "answer": "The Arduino Uno R3 board uses the ATmega328 microcontroller.",
+      "evidence": "Here are some of the components you'll find on the Uno R3 board:\n\n* A power port.\n* USB connector.\n* Microcontroller (ATmega328).",
+      "question_type": "factual",
+      "qa_id": "arduino_042"
+    },
+    {
+      "question": "What are the components found on the Arduino Uno R3 board?",
+      "answer": "The Uno R3 board has a power port, USB connector, microcontroller (ATmega328), analog pins, digital pins, reset button, and TX and RX indicators.",
+      "evidence": "Here are some of the components you'll find on the Uno R3 board:\n\n* A power port.\n* USB connector.\n* Microcontroller (ATmega328).\n* Analog pins.\n* Digital pins.\n* Reset button.\n* TX and RX indicators.",
+      "question_type": "factual",
+      "qa_id": "arduino_043"
+    },
+    {
+      "question": "What does the float data type store in Arduino and what is its range?",
+      "answer": "The float data type stores numbers with decimals. Float variables can store values up to 3.4028235E+38 and values as low as -3.4028235E+38.",
+      "evidence": "The `float` data type can be used to store numbers with decimals. Float variables can store values up to 3.4028235E+38 and values as low as -3.4028235E+38.",
+      "question_type": "factual",
+      "qa_id": "arduino_044"
+    },
+    {
+      "question": "What happens when you store an integer in a float variable in Arduino?",
+      "answer": "Although the float data type is mainly used for decimal numbers, it can accept whole numbers, but it will always return a float value. So if you store 10 in a float, it will return 10.00.",
+      "evidence": "Although the `float` data type is mainly used for decimal numbers, it can also accept whole numbers (integers without decimals). But it'll always return a float value. So if you store 10 in a `float`, it'll return 10.00.",
+      "question_type": "causal",
+      "qa_id": "arduino_045"
+    },
+    {
+      "question": "What values can the bool and boolean data types store in Arduino?",
+      "answer": "Both bool and boolean data types store boolean values of either true or false. They are mostly used with logical and comparison operators, and conditional statements.",
+      "evidence": "You can use both `bool` and `boolean` to store/denote boolean values of either `true` or `false`.",
+      "question_type": "definitional",
+      "qa_id": "arduino_046"
+    },
+    {
+      "question": "What are compound assignment operators in Arduino?",
+      "answer": "Compound assignment operators combine arithmetic operators and the assignment (=) operator, providing a shorter way of writing code. For example, x += 5 is the same as x = x + 5.",
+      "evidence": "Compound assignment operators let you combine arithmetic operators and the `=` operator. This method provides a shorter way of writing code.",
+      "question_type": "definitional",
+      "qa_id": "arduino_048"
+    },
+    {
+      "question": "How does the logical NOT (!) operator work in Arduino?",
+      "answer": "The NOT operator negates or reverses the value of its operand. If the operand statement is true, it returns false, and if the operand is true, it returns false.",
+      "evidence": "The NOT (`!`) operator negates or reverses the value of its operand. If the operand statement is true, it returns false, and returns false if the operand is true.",
+      "question_type": "definitional",
+      "qa_id": "arduino_049"
+    },
+    {
+      "question": "How does the else statement work in Arduino conditional logic?",
+      "answer": "The else statement executes code when the if condition is false. The code for the else statement only runs when the condition is false; if the condition is true, the code for the if statement is executed instead.",
+      "evidence": "The `else` statement is used to execute code if a condition is `false`.",
+      "question_type": "definitional",
+      "qa_id": "arduino_050"
+    },
+    {
+      "question": "What does the break keyword do in a switch-case statement?",
+      "answer": "The break keyword stops the switch statement's iteration once a match for the expression has been found.",
+      "evidence": "The `break` keyword stops the `switch` statement's iteration once a match for the `expression` has been found.",
+      "question_type": "definitional",
+      "qa_id": "arduino_051"
+    },
+    {
+      "question": "What happens when none of the cases match the expression in a switch-case statement?",
+      "answer": "When none of the cases match the expression, the code for the default keyword is executed.",
+      "evidence": "The code for the `default` keyword is executed if none of the cases match the `expression`.",
+      "question_type": "causal",
+      "qa_id": "arduino_052"
+    },
+    {
+      "question": "When is the for loop commonly used compared to the while loop in Arduino?",
+      "answer": "The for loop is commonly used when you know the number of times the loop is supposed to run, while the while loop is often used when the number of times the loop is supposed to run is unknown.",
+      "evidence": "You can use the `for loop` to iterate through a collection or execute code until a certain condition is met. It is commonly used when you know the number of times the loop is supposed to run.",
+      "question_type": "comparative",
+      "qa_id": "arduino_053"
+    },
+    {
+      "question": "What are the three parameters of a for loop in Arduino?",
+      "answer": "The three parameters are: initialization (starting point variable), condition (controls when the loop stops), and increment/decrement (changes the variable after each iteration).",
+      "evidence": "There are three important keywords in the syntax above:\n\n* **initialization** denotes an initial variable (usually an integer) which specifies the starting point of the loop.\n* **condition** is used to control the number of times the loop is expected to run for. The loop stops when the condition is `false`.\n* **increment/decrement** increases/decreases the value of the initial variable after every iteration.",
+      "question_type": "factual",
+      "qa_id": "arduino_054"
+    },
+    {
+      "question": "How do you declare an array in Arduino?",
+      "answer": "You declare an array using the syntax: dataType arrayName[arraySize], where dataType is the type of data stored, arrayName is the name, and arraySize is the number of elements that can be stored.",
+      "evidence": "Declaring an array simply means to create one. You can do that in Arduino using the syntax below:\n\n```\ndataType arrayName[arraySize]\n```",
+      "question_type": "procedural",
+      "qa_id": "arduino_055"
+    },
+    {
+      "question": "What does the loop() function do in an Arduino sketch?",
+      "answer": "The loop() function runs continuously and is where you write all the code logic. It gives the Arduino board instructions on different components and sensors.",
+      "evidence": "The `loop()` function runs continuously. This part of the sketch is where you write all the code logic. You can use the `loop()` function to give the Arduino board instructions on different components and sensors.",
+      "question_type": "definitional",
+      "qa_id": "arduino_057"
+    },
+    {
+      "question": "What are the three possible modes for the pinMode() function?",
+      "answer": "The three possible modes for the pinMode() function are INPUT, OUTPUT, and INPUT_PULLUP.",
+      "evidence": "`mode` denotes the configuration of the `pin` which can be INPUT, OUTPUT, or INPUT\\_PULLUP.",
+      "question_type": "factual",
+      "qa_id": "arduino_058"
+    },
+    {
+      "question": "What does the delay() function do and what unit does its parameter use?",
+      "answer": "The delay() function pauses the Arduino program for a specified amount of time. The parameter specifies the time in milliseconds.",
+      "evidence": "You can use the `delay()` function to pause the Arduino program for a specified amount of time. Here's what the syntax looks like:\n\n```\ndelay(ms)\n```\n\nIn the code above, `ms` denotes the specified time in milliseconds.",
+      "question_type": "definitional",
+      "qa_id": "arduino_060"
+    },
+    {
+      "question": "What is the default state of pins on the Arduino Uno board?",
+      "answer": "The pins on an Uno board are set to INPUT by default, so if you don't specify prior to using them, they will serve as input pins.",
+      "evidence": "Note that the pins on an Uno board are set to INPUT by default so if you don't specify prior to using them, they'll serve as input pins.",
+      "question_type": "factual",
+      "qa_id": "arduino_061"
+    },
+    {
+      "question": "What is the initial state of a pushbutton when configured with a pull-up resistor, and what happens when you press it?",
+      "answer": "With a pull-up resistor, the pushbutton initially reads 1 (HIGH). When you press the button, the value becomes 0 (LOW), and when you release it, the value returns to 1.",
+      "evidence": "When you open the serial monitor, you'll see 1 being printed out repeatedly. This is the initial state of the pushbutton using a pull-up resistor. When you press down the pushbutton, the value will become 0. When you release the button, the value will become 1.",
+      "question_type": "causal",
+      "qa_id": "arduino_062"
+    },
+    {
+      "question": "How do you make an LED blink using Arduino digital output?",
+      "answer": "You configure the LED pin as OUTPUT using pinMode(), then use digitalWrite() to send HIGH (5V, LED on) and LOW (0V, LED off) signals alternately with delay() between each state change.",
+      "evidence": "With the `HIGH` parameter, we send 5V to the pin which makes the LED come on. With `LOW`, we send 0V which turns the LED off. So the LED comes on and off continuously with a delay of 1000 milliseconds. This example is commonly known as the \"BLINK\" example.",
+      "question_type": "procedural",
+      "qa_id": "arduino_063"
+    },
+    {
+      "question": "Which digital pins on the Uno board support PWM, and how can they be identified?",
+      "answer": "The PWM digital pins on the Uno board are pins 3, 5, 6, 9, 10, and 11. They can be identified by the tilde (~) symbol beside them on the board.",
+      "evidence": "You can find PWM digital pins on the Arduino board by the (~) symbol beside them. On the Uno board, there are pins 3, 5, 6, 9, 10, and 11.",
+      "question_type": "factual",
+      "qa_id": "arduino_064"
+    },
+    {
+      "question": "How do you convert a potentiometer's analog value range to the PWM range for analogWrite()?",
+      "answer": "You multiply the potentiometer value by (255.0 / 1023.0) to convert from the 0-1023 analog range to the 0-255 PWM range that analogWrite() requires.",
+      "evidence": "Using the `analogRead()` function, we got the value of the potentiometer and stored it in a variable called `pot_value`. The potentiometer returns values from 0 to 1023. We then converted the values returned by the potentiometer to a range of 0 to 255 which corresponds with PWM values. This is because the `analogWrite()` function sends PWM values that fall within that range (0 to 255).",
+      "question_type": "procedural",
+      "qa_id": "arduino_065"
+    },
+    {
+      "question": "What range of values does the analogWrite() function accept?",
+      "answer": "The analogWrite() function accepts values in the range from 0 to 255.",
+      "evidence": "* `value` denotes the value to be assigned to `pin`. Range from 0 to 255.",
+      "question_type": "factual",
+      "qa_id": "arduino_066"
+    },
+    {
+      "question": "How is the ultrasonic sensor triggered to take a distance measurement?",
+      "answer": "The sensor is triggered by sending a HIGH signal to the trigger pin for 10 microseconds, then setting it LOW. Without this triggering step, the sensor might not work.",
+      "evidence": "We triggered the sensor by sending the `HIGH` signal to the trigger pin for 10 microseconds. Without this, the sensor might not work:\n\n```\n  digitalWrite(trigPin, HIGH);\n  delayMicroseconds(10);\n  digitalWrite(trigPin, LOW);\n```",
+      "question_type": "procedural",
+      "qa_id": "arduino_068"
+    },
+    {
+      "question": "How is the distance calculated from the ultrasonic sensor's echo duration?",
+      "answer": "The distance in centimeters is calculated by dividing the duration by 2 and multiplying by 0.0343, using the formula: distance = (duration / 2) * 0.0343.",
+      "evidence": "distance = (duration / 2) * 0.0343;",
+      "question_type": "procedural",
+      "qa_id": "arduino_069"
+    },
+    {
+      "question": "What are some examples of actuators used in Arduino projects?",
+      "answer": "Actuators include LEDs (light/visual indicators), buzzers (sound production), relay modules (controlling high voltage devices), LCDs (visual display), and servo motors (controlling angular or rotational motion).",
+      "evidence": "Here are some actuators:\n* LED (Light Emitting Diode): Used as light/visual indicators.\n* Buzzer: Used to produce sound.\n* Relay modules: Used to control high voltage devices.\n* LCD (Liquid Crystal Display): Used as visual display for text, images, sensor data, and so on. We'll dedicate a separate chapter to displays.\n* Servo motors: Used to control angular or rotational motion (an example is the movement of a robotic arm).",
+      "question_type": "factual",
+      "qa_id": "arduino_070"
+    },
+    {
+      "question": "Which leg of an LED is the anode and which is the cathode?",
+      "answer": "The longer leg of the LED is the anode (positive leg) and the shorter leg is the cathode (negative leg).",
+      "evidence": "In the circuit above, the longer leg of the LED (the anode or positive leg) is connected to digital pin 7.\n\nThe shorter leg (cathode) is connected to ground.",
+      "question_type": "factual",
+      "qa_id": "arduino_071"
+    },
+    {
+      "question": "How do sensors and actuators work together in an Arduino project?",
+      "answer": "A sensor detects changes in the environment and sends signals to the microcontroller. The microcontroller processes the signals and, based on programmed logic, sends signals to the actuator. The actuator then converts the signals into physical/mechanical motion.",
+      "evidence": "* A sensor detects/senses changes in the environment, and sends signals to the microcontroller to notify it of the detected changes.\n* The microcontroller processes the signals from the sensor. Depending on the existing logic (defined in the code), it sends signals to the actuator.\n* The actuator converts the signal from the microcontroller to physical/mechanical motion.",
+      "question_type": "procedural",
+      "qa_id": "arduino_074"
+    },
+    {
+      "question": "What does the readString() function return when used with the serial monitor?",
+      "answer": "The readString() function reads characters from the serial monitor and returns a string object, so whatever values or characters you input will be seen as string values.",
+      "evidence": "You can use the `readString()` function to read characters from the serial monitor. It returns a string object so whatever values/characters you input in the serial monitor will be seen as string values when using the `readString()` function.",
+      "question_type": "factual",
+      "qa_id": "arduino_075"
+    },
+    {
+      "question": "What does the parseFloat() function do with serial data?",
+      "answer": "The parseFloat() function returns valid floating point numbers from incoming serial data.",
+      "evidence": "The `parseFloat()` function returns valid floating point numbers from incoming serial data.",
+      "question_type": "definitional",
+      "qa_id": "arduino_076"
+    },
+    {
+      "question": "What does the lcd.begin() function do when initializing an LCD?",
+      "answer": "The lcd.begin() function initializes the LCD by setting the number of columns and rows. For a 16x2 LCD, you would use lcd.begin(16, 2) to indicate 16 columns and 2 rows.",
+      "evidence": "Next, we initialized the number of columns and rows using the `lcd.begin()` function: `lcd.begin(16, 2)`. We have 16 columns and 2 rows.",
+      "question_type": "procedural",
+      "qa_id": "arduino_079"
+    },
+    {
+      "question": "What is the purpose of the V0 pin on an LCD?",
+      "answer": "The V0 pin is used to adjust the contrast of the LCD. It is connected to a potentiometer, and tuning the potentiometer changes the contrast of the data being displayed.",
+      "evidence": "The V0 pin is used to adjust the contrast of the LCD. It is connected to a potentiometer. Tuning the potentiometer changes the contrast of the data being displayed.",
+      "question_type": "definitional",
+      "qa_id": "arduino_081"
+    },
+    {
+      "question": "What does the RW pin on an LCD do, and what mode is it usually set to?",
+      "answer": "The RW (Read/Write) pin controls whether data is written or read to the LCD. It is usually connected to ground (GND), which sets the LCD to write mode, enabling you to send and display data.",
+      "evidence": "The RW (Read/Write) pin controls whether data is written or read to the LCD. It is usually connected to ground (GND) which sets the LCD to write mode \u2014 this enables you to send and display data with the LCD.",
+      "question_type": "definitional",
+      "qa_id": "arduino_082"
+    },
+    {
+      "question": "What is a breadboard used for in Arduino projects?",
+      "answer": "A breadboard is a circuit-building platform that allows you to connect multiple components without using a soldering iron.",
+      "evidence": "A breadboard is a circuit-building platform that allows you to connect multiple components without using a soldering iron.",
+      "question_type": "definitional",
+      "qa_id": "arduino_083"
+    },
+    {
+      "question": "What is polarity in the context of electronic components?",
+      "answer": "Polarity means electricity can only flow through a component in one direction. Components like resistors do not have polarity, but components like LEDs that do have polarity only work when electricity flows through them in one direction.",
+      "evidence": "Many electronics components have polarity, meaning electricity can only flow through them in one direction. Components like resistors do not have polarity; electricity can flow through them in either direction. However, components like an LED that do have polarity only work when electricity flows through them in one direction.",
+      "question_type": "definitional",
+      "qa_id": "arduino_085"
+    },
+    {
+      "question": "What is Ohm's Law and what three elements does it describe?",
+      "answer": "Ohm's Law describes the relationship between voltage, resistance, and current. It is used to calculate what resistor values are suitable to limit current flowing to an LED.",
+      "evidence": "Ohm's law describes the relationship between the three fundamental elements of electricity: **voltage**, **resistance** and **current**.",
+      "question_type": "definitional",
+      "qa_id": "arduino_086"
+    },
+    {
+      "question": "What is an RGB LED and how does it work?",
+      "answer": "An RGB LED contains three small LEDs -- one red, one green, and one blue -- inside a normal LED housing. They share the same ground wire (four legs total), and turning on more than one color at a time causes the colors to blend together to form a new color.",
+      "evidence": "An RGB LED is actually three small LEDs --- one red, one green and one blue --- inside a normal LED housing. The RGB LED included in this kit has all the internal LEDs share the same ground wire, so there are four legs in total.",
+      "question_type": "definitional",
+      "qa_id": "arduino_087"
+    },
+    {
+      "question": "What is a potentiometer and how does it work?",
+      "answer": "A potentiometer is a variable resistor. When powered with 5V, the middle pin outputs a voltage between 0V and 5V depending on the position of the knob. It contains a single resistor and a wiper that adjusts the ratio between two halves of the resistor.",
+      "evidence": "A potentiometer (trimpot for short) is a variable resistor. When powered with 5V, the middle pin outputs a voltage between 0V and 5V, depending on the position of the knob on the potentiometer. Internal to the trimpot is a single resistor and a wiper, which cuts the resistor in two and moves to adjust the ratio between both halves.",
+      "question_type": "definitional",
+      "qa_id": "arduino_088"
+    },
+    {
+      "question": "What is a photoresistor and how does it sense light?",
+      "answer": "Photoresistors are light-sensitive, variable resistors. As more light shines on the sensor's head, the resistance between its two terminals decreases, making them useful for projects requiring ambient-light sensing.",
+      "evidence": "Photoresistors, or photocells, are light-sensitive, variable resistors. As more light shines on the sensor\u2019s head, the resistance between its two terminals decreases. They\u2019re an easy-to-use component in projects that require ambient-light sensing.",
+      "question_type": "definitional",
+      "qa_id": "arduino_089"
+    },
+    {
+      "question": "Why is a voltage divider needed when using a photoresistor with the RedBoard?",
+      "answer": "Since the RedBoard cannot directly interpret resistance (it reads voltage), a voltage divider is needed to convert the photoresistor's changing resistance into changing voltage values that can be read on an analog pin.",
+      "evidence": "Since the RedBoard can\u2019t directly interpret resistance (rather, it reads voltage), we need to use a voltage divider to use our photoresistor, a part that doesn't output voltage. The resistance of the photoresistor changes as it gets darker or lighter. That changes the amount of voltage that is read on the analog pin, which \"divides\" the voltage, 5V in this case. That divided voltage is then read on the analog to digital converter.",
+      "question_type": "causal",
+      "qa_id": "arduino_090"
+    },
+    {
+      "question": "How does the buzzer in the SparkFun kit produce different sounds?",
+      "answer": "The buzzer uses a small magnetic coil to vibrate a metal disc inside a plastic housing. By pulsing electricity through the coil at different rates, different frequencies (pitches) of sound can be produced.",
+      "evidence": "The buzzer uses a small magnetic coil to vibrate a metal disc inside a plastic housing. By pulsing electricity through the coil at different rates, different frequencies (pitches) of sound can be produced.",
+      "question_type": "causal",
+      "qa_id": "arduino_091"
+    },
+    {
+      "question": "What is pulse-width modulation (PWM) duty cycle?",
+      "answer": "Duty cycle is the percentage of time a digital signal is on over an interval or period of time. The variation in duty cycle tells a servo which position to go to in its rotation.",
+      "evidence": "Duty cycle is measured in percentage. The percentage of duty cycle specifically describes the percentage of time a digital signal is on over an interval or period of time. The variation in the duty cycle tells the servo which position to go to in its rotation.",
+      "question_type": "definitional",
+      "qa_id": "arduino_093"
+    },
+    {
+      "question": "What does the millis() function return in Arduino?",
+      "answer": "The millis() function returns the number of milliseconds that have passed since the RedBoard was last powered on. It can be used to measure elapsed time for events.",
+      "evidence": "The RedBoard has a built-in clock that keeps accurate time. You can use the `millis()` command to see how many milliseconds have passed since the RedBoard was last powered. By storing the time when an event happens and then subtracting the current time, you can measure the number of milliseconds (and thus seconds) that have passed.",
+      "question_type": "definitional",
+      "qa_id": "arduino_095"
+    },
+    {
+      "question": "What is a constant variable in Arduino and why is it useful?",
+      "answer": "Constants are variables marked as read-only using the const keyword, meaning their value cannot be changed as the program progresses. They are useful for declaring pin number variables that will not change throughout the program.",
+      "evidence": "Constants are variables that have been marked as \"read-only\" and cannot have their value changed as the program progresses. Constants are great for declaring pin number variables that will not change throughout the program.",
+      "question_type": "definitional",
+      "qa_id": "arduino_097"
+    },
+    {
+      "question": "What is the VIN pin on the RedBoard and how does its voltage vary?",
+      "answer": "The VIN pin outputs a voltage that varies based on the power source. If powered through USB, VIN outputs about 4.6-5V. If powered through the barrel jack (e.g., with 9V), VIN will reflect that voltage.",
+      "evidence": "The VIN pin outputs a voltage that varies based on whatever voltage the RedBoard is powered with. If the RedBoard is powered through the USB port, then the voltage on VIN will be about 4.6--5V. However, if you power the RedBoard through the barrel jack (highlighted in the picture below), the VIN pin will reflect that voltage.",
+      "question_type": "factual",
+      "qa_id": "arduino_099"
+    },
+    {
+      "question": "What are the common Arduino boards that beginners typically encounter?",
+      "answer": "The common boards beginners will come across are the Nano, Uno, and Mega boards. Each board varies in size and shape, and usually has more or fewer components compared to other boards.",
+      "evidence": "Each board varies in size and shape, and usually has more or fewer components when compared to other boards.\n\nThe common boards you\u2019ll come across as a beginner are the Nano, Uno, and Mega boards.",
+      "question_type": "comparative",
+      "qa_id": "arduino_100"
+    },
+    {
+      "question": "How do you launch the Arduino IDE after downloading and extracting the files?",
+      "answer": "After unzipping the downloaded file, you launch the Arduino IDE by clicking on the file that says \"Arduino IDE\" from among the extracted files.",
+      "evidence": "After unzipping the file, you should see files like these:\n\n*Image showing the files you should see*\n\nTo launch the Arduino IDE, click on the file that says \u201cArduino IDE\u201d.",
+      "question_type": "procedural",
+      "qa_id": "arduino_101"
+    },
+    {
+      "question": "Which pin is the built-in LED connected to on the Arduino Uno board?",
+      "answer": "The built-in LED on the Uno board is connected to pin 13 by design. When code is uploaded to blink this LED, it will blink on the board without any external wiring.",
+      "evidence": "If you've uploaded the code above, you should have the built-in LED (it is connected to pin 13 by design) on the Uno board blinking.",
+      "question_type": "procedural",
+      "qa_id": "arduino_102"
+    },
+    {
+      "question": "What programming language is the Arduino language built upon?",
+      "answer": "The Arduino programming language is built upon C/C++. To create sketches and work with Arduino boards, you need to know how to code using this language.",
+      "evidence": "To do that, you\u2019ll have to know how to code using the Arduino programming language.\n\nAs discussed in the last chapter, the Arduino language is built upon C/C++.",
+      "question_type": "procedural",
+      "qa_id": "arduino_103"
+    },
+    {
+      "question": "What is the required syntax for declaring a variable in Arduino programming?",
+      "answer": "In Arduino programming, you must specify the data type of a variable before using it, following the syntax: dataType variableName = variableValue.",
+      "evidence": "In Arduino programming, you must specify the data type of a variable before using it. That is:\n\n```\ndataType variableName = variableValue",
+      "question_type": "procedural",
+      "qa_id": "arduino_104"
+    },
+    {
+      "question": "Besides storing characters, what other type of values can the char data type accept in Arduino?",
+      "answer": "The char data type can also accept integer values that are equivalent to the ASCII value of letters, in addition to storing single characters.",
+      "evidence": "* `char` stores single characters while `string` stores multiple characters.\n\n`char` can also accept integer values equivalent to the ASCII value of letters:",
+      "question_type": "comparative",
+      "qa_id": "arduino_105"
+    },
+    {
+      "question": "Why should the assignment operator (=) not be confused with the equal to operator (==) in Arduino?",
+      "answer": "The = operator is the assignment operator and should not be confused for \"equal to\" because they are not the same. The equal to comparison is performed using the == operator instead.",
+      "evidence": "The `=` operator should not be confused for \"equal to\" \u2014 they aren't the same. We'll talk about the equal to (`==`) operator in the Comparison Operators section.",
+      "question_type": "procedural",
+      "qa_id": "arduino_106"
+    },
+    {
+      "question": "How does the greater than (>) operator work in Arduino and what values does it return?",
+      "answer": "The greater than operator checks if the operand on the left is greater than the operand on the right. If the left operand is greater, it returns 1; if the left operand is smaller, it returns 0.",
+      "evidence": "The greater than (`>`) operator checks if the operand on the left is greater than the operand on the right. If the left operand is greater, it returns 1.",
+      "question_type": "causal",
+      "qa_id": "arduino_107"
+    },
+    {
+      "question": "What does the greater than or equal to (>=) operator return when the two operands are equal?",
+      "answer": "If the left operand is not greater than the right operand but is equal to it, the >= operator will still return a value of 1, since equality satisfies the condition.",
+      "evidence": "If the left operand is not greater than the right operand but is equal to the right operand, you'll still get a value of 1.",
+      "question_type": "causal",
+      "qa_id": "arduino_108"
+    },
+    {
+      "question": "What does the less than or equal to (<=) operator check and what values does it return?",
+      "answer": "The <= operator checks if the left operand is either less than or equal to the right operand. It returns 1 if the left operand is less than or equal to the right operand, and returns 0 if the left operand is neither less than nor equal to the right operand.",
+      "evidence": "The `<=` operator checks if the left operand is either less than or equal to the right operand. If the left operand is less than or equal to the right operand, it returns 1, and returns 0 if the left operand is neither less than nor equal to the right operand.",
+      "question_type": "causal",
+      "qa_id": "arduino_109"
+    },
+    {
+      "question": "Why does the logical AND (&&) expression (x > 5) && (x > 3) return 1?",
+      "answer": "The expression returns 1 because both statements are true. The logical AND operator requires both operand conditions to evaluate to true in order to return 1.",
+      "evidence": "The expression above \u2014 `(x > 5) && (x > 3)` \u2014 returns 1 because both statements are true. That is, `x > 3` and `x > 3`.",
+      "question_type": "causal",
+      "qa_id": "arduino_110"
+    },
+    {
+      "question": "How does a switch-case statement evaluate which code block to execute?",
+      "answer": "In a switch-case statement, the expression is compared to the value of each case. When a case matches the expression, the code for that particular case is executed.",
+      "evidence": "* The `expression` is compared to the value of each `case`.\n* When a `case` matches the `expression`, the code for that case is executed.",
+      "question_type": "comparative",
+      "qa_id": "arduino_111"
+    },
+    {
+      "question": "What types of loops are available in Arduino programming?",
+      "answer": "There are three different types of loops available in Arduino: the for loop, while loop, and do-while loop.",
+      "evidence": "There are different type of loops you can use in Arduino like the `for loop`, `while loop`, and `do-while` loop.",
+      "question_type": "comparative",
+      "qa_id": "arduino_112"
+    },
+    {
+      "question": "Why does a for loop terminate after printing numbers up to 10 when the condition is i < 11?",
+      "answer": "The loop terminates because after the number 10, the variable i is no longer less than 11 (the condition given), so the loop stops executing.",
+      "evidence": "This is because after the number 10, `i` is no longer less than 11 (the condition given), so the loop terminates.",
+      "question_type": "causal",
+      "qa_id": "arduino_113"
+    },
+    {
+      "question": "What guarantees that a do-while loop's code block will always execute at least once?",
+      "answer": "The do-while loop executes its code block first before checking the validity of the condition given. This means the code runs at least once, irrespective of whether the condition is true or false.",
+      "evidence": "In summary, the code for a `do-while` loop will run at least once, irrespective of the condition given. Here's an example:",
+      "question_type": "comparative",
+      "qa_id": "arduino_114"
+    },
+    {
+      "question": "Why can only integers be stored in an array declared with the int data type in Arduino?",
+      "answer": "The data type specified in an array declaration constrains what values can be stored. For instance, if the data type is int, then only integers can be stored in the array.",
+      "evidence": "For instance, if the data type is `int`, then only integers can be stored in the array.\n* `arrayName` denotes the name of the array.",
+      "question_type": "causal",
+      "qa_id": "arduino_115"
+    },
+    {
+      "question": "What happens when you try to assign more elements to an array than its declared size allows?",
+      "answer": "Assigning an element beyond the declared array size would throw an error. For example, assigning a fifth element to an array declared with int ages[4] would fail because it can only hold four integer elements.",
+      "evidence": "Assigning a fifth element would throw an error because we specified that the array can only have for integer elements: `int ages[4];`.",
+      "question_type": "causal",
+      "qa_id": "arduino_116"
+    },
+    {
+      "question": "Why are functions important in Arduino programming and what problem do they solve?",
+      "answer": "Functions prevent you from having to reinvent the wheel. Without functions, you would have to write the same lines of code every time you wanted to perform a task like sending values to digital pins.",
+      "evidence": "Without functions, you'll have to write those hundred lines every time you wanted to send values to digital pins.\n\nFunctions prevent you from having to reinvent the wheel.",
+      "question_type": "procedural",
+      "qa_id": "arduino_117"
+    },
+    {
+      "question": "How do you call a function in Arduino, and how do you pass arguments to it?",
+      "answer": "To call a function, you write the name of the function followed by parentheses, such as printName(). When the function requires parameters, you pass them inside the parentheses, for example printName(\"Ihechikara\").",
+      "evidence": "To call a function, all you have to do is write the name of the function with parenthesis: `printName()`. Remember to pass in parameters when required: `printName(\"Ihechikara\")`.",
+      "question_type": "procedural",
+      "qa_id": "arduino_118"
+    },
+    {
+      "question": "Why are some Arduino functions defined using the void keyword?",
+      "answer": "Functions are defined using the void keyword because they return nothing. The void type indicates that the function performs an action but does not produce a return value.",
+      "evidence": "These functions are defined using the `void` keyword because they return nothing\n\nHere's what the syntax looks like for functions that use the `void` type:",
+      "question_type": "causal",
+      "qa_id": "arduino_119"
+    },
+    {
+      "question": "Is it possible to use the return statement in void functions, and what is the convention?",
+      "answer": "You can technically use the return statement in void functions, but it is a convention not to. Anything that comes after the return statement will be ignored regardless.",
+      "evidence": "So you should always remember that anything that comes after the `return` statement will be ignored.\n\nYou can use the `return` statement in `void` functions but it is a convention not to.",
+      "question_type": "procedural",
+      "qa_id": "arduino_120"
+    },
+    {
+      "question": "What is the difference between the RX and TX digital pins on an Arduino board?",
+      "answer": "RX receives data while TX sends data. These are specialized digital pins used for serial communication on the Arduino board.",
+      "evidence": "RX receives while TX sends.\n* Pins that have the tilde (~) symbol beside them support PWM (Pulse Width Modulation) signals.",
+      "question_type": "comparative",
+      "qa_id": "arduino_121"
+    },
+    {
+      "question": "What voltage levels correspond to HIGH and LOW when sending digital output signals?",
+      "answer": "When working with digital output, HIGH corresponds to 5V and LOW corresponds to 0V. These signals can be sent to digital pins using the digitalWrite() function.",
+      "evidence": "Since we're working with digital output, we can send either `HIGH` (5V) or `LOW` (0V) signals. We can do this for digital pins using the `digitalWrite()` function.",
+      "question_type": "causal",
+      "qa_id": "arduino_122"
+    },
+    {
+      "question": "What is the range of analog values compared to digital signal states in Arduino?",
+      "answer": "Unlike digital signals that only have two states of 0 (LOW) and 1 (HIGH), analog values have a much wider range from 0 to 1023.",
+      "evidence": "Unlike digital signals that fall within two states of 0 (`LOW`) and 1 (`HIGH`), analog values have a wider range of values from 0 to 1023.",
+      "question_type": "comparative",
+      "qa_id": "arduino_123"
+    },
+    {
+      "question": "What are the two main functions used to interact with analog pins in Arduino?",
+      "answer": "The analogRead() function is used to read and receive analog values from pins, while the analogWrite() function is used to write values to specific pins.",
+      "evidence": "You can use the `analogRead()` function to read/receive analog values from pins while the `analogWrite()` function can be used to write to specific pins.",
+      "question_type": "comparative",
+      "qa_id": "arduino_124"
+    }
+  ]
+}

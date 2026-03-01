@@ -1,0 +1,747 @@
+{
+  "corpus_id": "raspberry_pi",
+  "qa_pairs": [
+    {
+      "question": "What is a headless Raspberry Pi setup?",
+      "answer": "A headless Raspberry Pi setup is one where the Raspberry Pi is configured as a computer accessible only over the network, without connecting a display, keyboard, or mouse. You can preconfigure a hostname, user account, network connection, and SSH when installing the operating system for headless use.",
+      "evidence": "You can set up your Raspberry Pi as an interactive computer with a desktop, or as a _headless_ computer accessible only over the network. To set your Raspberry Pi up headless, you don't need any additional peripherals: you can preconfigure a hostname, user account, network connection, and SSH when you xref:getting-started.adoc#installing-the-operating-system[install an operating system].",
+      "question_type": "definitional",
+      "qa_id": "raspberry_pi_002"
+    },
+    {
+      "question": "What power supply is recommended for Raspberry Pi 4 Model B and Raspberry Pi 400?",
+      "answer": "The recommended power supply for the Raspberry Pi 4 Model B and Raspberry Pi 400 is 5V/3A, which corresponds to the 15W USB-C power supply.",
+      "evidence": "Raspberry Pi 4 Model B and Raspberry Pi 400\n|5V/3A\n|https://www.raspberrypi.com/products/type-c-power-supply/[15 W USB-C power supply]",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_004"
+    },
+    {
+      "question": "What is the recommended minimum SD card storage for Raspberry Pi OS and Raspberry Pi OS Lite?",
+      "answer": "For a full Raspberry Pi OS installation, an SD card with at least 32 GB of storage is recommended. For Raspberry Pi OS Lite, at least 16 GB is recommended. Any SD card with a capacity of less than 2 TB can be used.",
+      "evidence": "We recommend using an SD card with at least 32 GB of storage for Raspberry Pi OS installations. For Raspberry Pi OS Lite, we recommend at least 16 GB. You can use any SD card with a capacity of less than 2 TB.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_005"
+    },
+    {
+      "question": "Why are SD cards above 2 TB not supported as boot media for Raspberry Pi?",
+      "answer": "SD card capacities above 2 TB are currently not supported due to limitations in the MBR (Master Boot Record) format. This is a technical constraint of the partitioning scheme used by the Raspberry Pi boot process.",
+      "evidence": "Capacities above 2 TB are currently not supported due to limitations in the https://en.wikipedia.org/wiki/Master_boot_record[MBR].",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_006"
+    },
+    {
+      "question": "Which early Raspberry Pi devices have a boot partition size limitation of 256 GB or less?",
+      "answer": "Due to a hardware limitation, the Raspberry Pi Zero, Raspberry Pi 1, and early Raspberry Pi 2 models with the BCM2836 SoC can only boot from a boot partition of 256 GB or less.",
+      "evidence": "Because of a hardware limitation, the following devices will only boot from a boot partition of 256 GB or less:\n\n* Raspberry Pi Zero\n* Raspberry Pi 1\n* early Raspberry Pi 2 models with the BCM2836 SoC",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_007"
+    },
+    {
+      "question": "Do any Raspberry Pi models support video output over USB-C?",
+      "answer": "No, no Raspberry Pi models support video over USB-C (DisplayPort alt mode). Display output is provided through HDMI, micro HDMI, or mini HDMI ports depending on the model.",
+      "evidence": "NOTE: No Raspberry Pi models support video over USB-C (DisplayPort alt mode).",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_009"
+    },
+    {
+      "question": "Which Raspberry Pi models come with built-in Wi-Fi and Bluetooth connectivity?",
+      "answer": "Wi-Fi and Bluetooth connectivity is included in flagship models since Raspberry Pi 3 Model B, all Keyboard models, all Zero W models, all Pico W models, and Compute Modules configured with wireless (available since CM4).",
+      "evidence": "The following Raspberry Pi models come with Wi-Fi and Bluetooth connectivity:\n\n* Flagship models since Raspberry Pi 3 Model B\n* All Keyboard models\n* All Zero W models\n* All Pico W models\n* Compute Modules configured with wireless (available since CM4)",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_010"
+    },
+    {
+      "question": "How should you set up your Raspberry Pi after installing an operating system?",
+      "answer": "After installing an operating system, first unplug the power supply to ensure the Pi is powered down. Then connect your storage device (such as inserting the microSD card). Next, plug in peripherals such as mouse, keyboard, and monitor. Finally, connect the power supply to turn on the Raspberry Pi.",
+      "evidence": "First, unplug your Raspberry Pi's power supply to ensure that the Raspberry Pi is powered down while you connect peripherals.\nIf you installed the operating system on a microSD card, you can plug it into your Raspberry Pi's card slot now.\nIf you installed the operating system on any other storage device, you can connect it to your Raspberry Pi now.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_012"
+    },
+    {
+      "question": "What should you do if your Raspberry Pi does not boot within 5 minutes?",
+      "answer": "If your Raspberry Pi does not boot within 5 minutes, check the status LED. If it is flashing, consult the LED warning flash codes. If the Pi refuses to boot, try booting from an SD card instead, re-image your SD card (completing the verify step in Imager), or update the bootloader and then re-image.",
+      "evidence": "If your Raspberry Pi does not boot within 5 minutes, check the status LED. If it's flashing, see the xref:configuration.adoc#led-warning-flash-codes[LED warning flash codes for more information]. If your Pi refuses to boot, try the following mitigation steps:\n\n* if you used a boot device other than an SD card, try booting from an SD card\n* xref:getting-started.adoc#installing-the-operating-system[re-image your SD card]; be sure to complete the entire verify step in Imager\n* xref:raspberry-pi.adoc#bootloader_update_stable[update the bootloader] on your Raspberry Pi, then xref:getting-started.adoc#installing-the-operating-system[re-image your SD card]",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_013"
+    },
+    {
+      "question": "What browser options are available during the first boot configuration wizard?",
+      "answer": "During the first boot configuration wizard, you can select either Firefox or Chromium as your default internet browser. You can also optionally uninstall the browser you don't set as default.",
+      "evidence": "This page lets you select Firefox or Chromium as your default internet browser. You can optionally uninstall the browser you don't set as default.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_015"
+    },
+    {
+      "question": "What is Raspberry Pi Connect?",
+      "answer": "Raspberry Pi Connect is a service that provides the ability to access your Raspberry Pi remotely with no manual network configuration. It can be enabled during the first boot configuration wizard or through Imager's OS customisation settings.",
+      "evidence": "This page lets you enable xref:../services/connect.adoc[Raspberry Pi Connect], which provides the ability to access your Raspberry Pi remotely with no manual network configuration.",
+      "question_type": "definitional",
+      "qa_id": "raspberry_pi_016"
+    },
+    {
+      "question": "How long can the first software update take on a Raspberry Pi 500+?",
+      "answer": "When updating a Raspberry Pi 500+ for the first time, the process can take up to half an hour. The documentation suggests grabbing a cup of coffee or going for a walk while waiting.",
+      "evidence": "NOTE: If you are updating your Raspberry Pi 500+ for the first time, this can take up to half an hour. Grab a cup of coffee or go for a walk while you wait.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_017"
+    },
+    {
+      "question": "What is Raspberry Pi Imager and what platforms does it run on?",
+      "answer": "Raspberry Pi Imager is a tool available on macOS, Windows, and Linux that helps you download operating system images and write them to a storage device. It includes many popular operating system images and supports preconfiguring credentials and remote access settings for your Raspberry Pi.",
+      "evidence": "Raspberry Pi Imager is a tool, available on macOS, Windows, and Linux, that helps you download images and write them to a storage device. Imager includes many popular operating system images for Raspberry Pi.",
+      "question_type": "definitional",
+      "qa_id": "raspberry_pi_018"
+    },
+    {
+      "question": "What image formats does Raspberry Pi Imager support?",
+      "answer": "Raspberry Pi Imager supports images packaged in the .img format as well as container formats like .zip or .xz. It also supports loading images downloaded directly from the Raspberry Pi website or third-party vendors such as Ubuntu.",
+      "evidence": "Imager supports images packaged in the `.img` format as well as container formats like `.zip` or `.xz`.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_019"
+    },
+    {
+      "question": "How do you install Raspberry Pi Imager on Raspberry Pi OS?",
+      "answer": "On Raspberry Pi OS, you can install Raspberry Pi Imager by running the command 'sudo apt install rpi-imager' in the terminal. On Windows and Mac, you download the latest version from the Raspberry Pi website and run the installer.",
+      "evidence": "On Raspberry Pi OS, run `sudo apt install rpi-imager`.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_020"
+    },
+    {
+      "question": "What settings can you preconfigure using Raspberry Pi Imager's OS customisation?",
+      "answer": "Using Imager's OS customisation, you can preconfigure the device hostname, time zone, keyboard layout, a username and password, Wi-Fi credentials, remote connectivity (SSH), and Raspberry Pi Connect. These customisation steps are optional but strongly recommended.",
+      "evidence": "You can preconfigure:\n\n* The device hostname\n* The time zone\n* Your keyboard layout\n* A username and password\n* Wi-Fi credentials\n* Remote connectivity\n* Raspberry Pi Connect",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_021"
+    },
+    {
+      "question": "How does the hostname you set in Imager work on the network?",
+      "answer": "Your Raspberry Pi broadcasts the hostname to the network using mDNS (multicast DNS). When connected to your network, other devices on the network can communicate with your computer using <hostname>.local or <hostname>.lan.",
+      "evidence": "Your Raspberry Pi broadcasts this host name to the network using https://en.wikipedia.org/wiki/Multicast_DNS[mDNS]. When you connect your Raspberry Pi to your network, other devices on the network can communicate with your computer using `<hostname>.local` or `<hostname>.lan`.",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_022"
+    },
+    {
+      "question": "What SSH authentication methods can you configure in Raspberry Pi Imager?",
+      "answer": "In Raspberry Pi Imager, you can choose between two SSH authentication methods: password authentication (which uses the username and password you provided in the User tab) and public key authentication (which configures SSH key-based authentication). If you already have a public RSA key in your SSH configuration, Imager will automatically use that key.",
+      "evidence": "If you enable SSH, choose the authentication method to use:\n* Choose *Use password authentication* to log in to your Raspberry Pi over the network using the username and password you provided in the *Customisation > User* tab.\n* Choose *Use public key authentication* to configure your Raspberry Pi to use SSH key-based authentication.",
+      "question_type": "comparative",
+      "qa_id": "raspberry_pi_023"
+    },
+    {
+      "question": "What is the auth key in Raspberry Pi Connect setup via Imager?",
+      "answer": "The auth key is a single-use, temporary token used during Raspberry Pi Connect setup. The Raspberry Pi Connect website displays how long after its creation the token expires. To use the token, you must boot your Raspberry Pi and connect it to the internet before the expiry time.",
+      "evidence": "The auth key is a single-use, temporary token. The Raspberry Pi Connect website displays how long after its creation the token expires. To use the token, ensure that you boot your Raspberry Pi and connect it to the internet before the expiry time.",
+      "question_type": "definitional",
+      "qa_id": "raspberry_pi_024"
+    },
+    {
+      "question": "What happens after Imager finishes writing an image to storage media?",
+      "answer": "After writing the image, Imager verifies that the image is correctly written to the storage media. You can optionally skip verification by selecting 'Skip verification'. After verification completes, Imager shows the Done tab and you can select Finish to exit.",
+      "evidence": "After writing the image, Imager verifies that the image is correctly written. We recommend that you complete the verification step. However, if you want to cancel verification, select *Skip verification*.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_026"
+    },
+    {
+      "question": "Which Raspberry Pi models support Network Install?",
+      "answer": "Network Install only runs on Flagship models since Raspberry Pi 4B and Keyboard models. If the Raspberry Pi runs an older bootloader, you may need to update the bootloader to use Network Install.",
+      "evidence": "Network Install only runs on Flagship models since Raspberry Pi 4B and Keyboard models. If your Raspberry Pi runs an older bootloader, you may need to xref:raspberry-pi.adoc#bootloader_update_stable[update the bootloader] to use Network Install.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_028"
+    },
+    {
+      "question": "How do you launch Network Install on a Raspberry Pi?",
+      "answer": "To launch Network Install, power on your Raspberry Pi while pressing and holding the SHIFT key. The Pi must have no bootable storage device, an attached keyboard, and an attached compatible storage device such as an SD card or USB storage. A wired internet connection is also required.",
+      "evidence": "To launch Network Install, power on your Raspberry Pi _while pressing and holding the *SHIFT* key_ in the following configuration:\n\n* no bootable storage device\n* attached keyboard\n* attached compatible storage device, such as an SD card or USB storage",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_029"
+    },
+    {
+      "question": "What does raspi-config do and what files does it modify?",
+      "answer": "raspi-config is a configuration tool that helps you configure your Raspberry Pi. Changes made through raspi-config modify /boot/firmware/config.txt and other configuration files on the system.",
+      "evidence": "`raspi-config` helps you configure your Raspberry Pi. Changes to `raspi-config` will modify xref:config_txt.adoc#what-is-config-txt[`/boot/firmware/config.txt`] and other configuration files.",
+      "question_type": "definitional",
+      "qa_id": "raspberry_pi_030"
+    },
+    {
+      "question": "How do you open raspi-config from the desktop GUI?",
+      "answer": "To open the configuration tool from the desktop GUI, go to Preferences > Control Centre. In previous versions of Raspberry Pi OS, the Control Centre application was called Raspberry Pi Configuration. You can also access it via terminal with the command 'sudo raspi-config'.",
+      "evidence": "To open the configuration tool from the desktop GUI, go to **Preferences** > **Control Centre**.\n\nNOTE: In previous versions of Raspberry Pi OS, the Control Centre application was called Raspberry Pi Configuration.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_031"
+    },
+    {
+      "question": "How do you navigate raspi-config in the terminal?",
+      "answer": "To navigate raspi-config in the terminal, use the up and down arrow keys to scroll through settings. Access the Select or Finish options using the Right arrow or Tab key. Return to the settings list using the Left arrow or Tab. You can type a letter to jump ahead alphabetically in a list.",
+      "evidence": "To navigate the configuration tool from the terminal:\n\n* Use the up and down arrow keys to scroll through the settings list.\n* Access the `<Select>` or `<Finish>` options using the **Right** arrow or **Tab**.\n* Return to the settings list using the **Left** arrow or **Tab**.\n* Type a letter to jump ahead alphabetically. For example, type `E` to jump ahead to 'Europe' in the time zone list.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_032"
+    },
+    {
+      "question": "What system options are available in raspi-config?",
+      "answer": "The system options in raspi-config include Wireless LAN, Audio, Password, Hostname, Boot/Auto login, Network at boot, Splash screen, Power LED, and Browser. These allow configuring parts of the boot, login, and networking process along with other system-level changes.",
+      "evidence": "Configure parts of the boot, login, and networking process, along with other system level changes.\n==== Wireless LAN\n==== Audio\n==== Password\n==== Hostname\n==== Boot/Auto login\n==== Network at boot\n==== Splash screen\n==== Power LED\n==== Browser",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_033"
+    },
+    {
+      "question": "What is the underscan option in raspi-config used for?",
+      "answer": "The underscan option is used to adjust the display border. If the initial text shown on the screen disappears off the edge, enabling overscan adjusts the border. On some displays, particularly monitors, disabling overscan makes the picture fill the whole screen and removes the black border. This option is unavailable when running Wayland.",
+      "evidence": "If the initial text shown on the screen disappears off the edge, enable overscan to adjust the border. On some displays, particularly monitors, disabling overscan will make the picture fill the whole screen and remove the black border.",
+      "question_type": "definitional",
+      "qa_id": "raspberry_pi_035"
+    },
+    {
+      "question": "What interface options can be configured through raspi-config?",
+      "answer": "The interface options in raspi-config include SSH, RPi Connect, VNC, SPI, I2C, Serial port, 1-Wire, and Remote GPIO. These allow enabling and disabling various physical and virtual interfaces on the Raspberry Pi.",
+      "evidence": "Enable or disable the WayVNC or RealVNC virtual network computing server.\n[[spi]]\n==== SPI\nEnable or disable SPI interfaces and automatic loading of the SPI kernel module.\n[[i2c]]\n==== I2C\nEnable or disable I2C interfaces and automatic loading of the I2C kernel module.\n[[serial]]\n==== Serial port\nEnable or disable shell and kernel messages on the serial connection.\n[[one-wire]]\n==== 1-Wire\nEnable or disable the Dallas 1-wire interface, often used for DS18B20 temperature sensors.\n==== Remote GPIO\nEnable or disable remote access to the GPIO pins.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_037"
+    },
+    {
+      "question": "What is the 1-Wire interface in raspi-config typically used for?",
+      "answer": "The 1-Wire interface, also known as the Dallas 1-wire interface, is typically used for DS18B20 temperature sensors. It can be enabled or disabled through raspi-config's interface options.",
+      "evidence": "Enable or disable the Dallas 1-wire interface, often used for DS18B20 temperature sensors.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_038"
+    },
+    {
+      "question": "What are the risks of overclocking a Raspberry Pi?",
+      "answer": "Overclocking may reduce the lifetime of your Raspberry Pi and can cause system instability if set too high. The overclocking potential varies between individual Raspberry Pi devices, even within the same model. If overclocking causes instability, you should try a more modest overclock, and you can hold down the Shift key during boot to temporarily disable overclocking.",
+      "evidence": "WARNING: *Overclocking may reduce the lifetime of your Raspberry Pi.* If overclocking at a certain level causes system instability, try a more modest overclock. Hold down the *Shift* key during boot to temporarily disable overclocking.",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_039"
+    },
+    {
+      "question": "What are the available overclock settings in raspi-config's non-interactive mode?",
+      "answer": "The available overclock settings are: None (no overclock, the default), Modest (overclock to 50% of the maximum), Medium (overclock to 75% of the maximum), High (overclock to 100% of the maximum), and Turbo (overclock to 125% of the maximum).",
+      "evidence": "This command accepts the following `<setting>` values:\n\n* `None`: no overclock (default)\n* `Modest`: overclock to 50% of the maximum\n* `Medium`: overclock to 75% of the maximum\n* `High`: overclock to 100% of the maximum\n* `Turbo`: overclock to 125% of the maximum",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_040"
+    },
+    {
+      "question": "Which display backend does Raspberry Pi OS Bookworm use by default?",
+      "answer": "Since Raspberry Pi OS Bookworm, all Raspberry Pi models run Wayland using the labwc window manager by default. For Raspberry Pi models prior to Raspberry Pi 4 running an earlier version of Raspberry Pi OS, you need to add 'wayland=on' to /boot/firmware/cmdline.txt to use Wayland.",
+      "evidence": "Since Raspberry Pi OS _Bookworm_, all Raspberry Pi models run Wayland using labwc by default.\n\nNOTE: To use Wayland on Raspberry Pi models prior to Raspberry Pi 4 running a version of Raspberry Pi OS earlier than _Bookworm_, add `wayland=on` to `/boot/firmware/cmdline.txt`.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_042"
+    },
+    {
+      "question": "What audio backends can you switch between in raspi-config?",
+      "answer": "In raspi-config, you can switch between the PulseAudio and PipeWire audio backends. Prior to Raspberry Pi OS Bookworm, Raspberry Pi OS used PulseAudio. The non-interactive command uses value 1 for PulseAudio and 2 for PipeWire.",
+      "evidence": "Switch between the PulseAudio and PipeWire audio backends. Prior to Raspberry Pi OS _Bookworm_, Raspberry Pi OS used PulseAudio.",
+      "question_type": "comparative",
+      "qa_id": "raspberry_pi_043"
+    },
+    {
+      "question": "How do you configure Wi-Fi for a hidden network using raspi-config non-interactively?",
+      "answer": "To connect to a hidden network using raspi-config non-interactively, use the command 'sudo raspi-config nonint do_wifi_ssid_passphrase myssid mypassphrase 1'. The third parameter set to 1 indicates that the SSID is hidden. Omitting this parameter or passing 0 indicates a visible network.",
+      "evidence": "* hidden network named `myssid` with the passphrase `mypassphrase`:\n+\n[source,console]\n----\n$ sudo raspi-config nonint do_wifi_ssid_passphrase myssid mypassphrase 1\n----",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_045"
+    },
+    {
+      "question": "How do you enable SSH non-interactively using raspi-config?",
+      "answer": "To enable SSH non-interactively, run the command 'sudo raspi-config nonint do_ssh 0'. Note that the value 0 enables SSH and 1 disables SSH, which is the opposite of what many might expect. The meaning of 0 and 1 varies between raspi-config options.",
+      "evidence": "$ sudo raspi-config nonint do_ssh <0/1>\n----\n* `0`: enable SSH",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_046"
+    },
+    {
+      "question": "What are the boot order options available in raspi-config for Raspberry Pi 4 and later?",
+      "answer": "On Raspberry Pi 4 and later, the boot order options are: B1 (SD card boot - boot from SD card if available, otherwise NVMe, otherwise USB), B2 (NVMe/USB boot - boot from NVMe if available, otherwise USB, otherwise SD card), and B3 (Network boot - boot from SD card if inserted, otherwise boot from network).",
+      "evidence": "* `B1`: SD card boot - boot from SD card if available, otherwise boot from NVMe, otherwise boot from USB\n* `B2`: NVMe/USB boot - boot from NVMe if available, otherwise boot from USB if available, otherwise boot from SD card\n* `B3`: Network boot - boot from SD card _if inserted_, otherwise boot from network",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_047"
+    },
+    {
+      "question": "What Wayland and X11 options are available non-interactively in raspi-config?",
+      "answer": "Using the non-interactive raspi-config command 'sudo raspi-config nonint do_wayland <W1/W2>', you can choose W1 to use the Openbox window manager with X11 backend or W2 to use the labwc window manager with Wayland backend.",
+      "evidence": "* `W1`: use the Openbox window manager with X11 backend\n* `W2`: use the labwc window manager with Wayland backend",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_048"
+    },
+    {
+      "question": "What default values does the fan control use in raspi-config?",
+      "answer": "In raspi-config's fan control settings, the GPIO pin defaults to 14 and the onTemp (the temperature at which the fan turns on) defaults to 80 degrees Celsius. This setting applies specifically to the GPIO-connected Raspberry Pi 4 Case Fan and is not applicable to other fan models.",
+      "evidence": "`gpio` defaults to `14`.\n\n`onTemp` defaults to `80` **degrees Celsius**.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_049"
+    },
+    {
+      "question": "What are the five series of Raspberry Pi computers?",
+      "answer": "Raspberry Pi makes computers in five series: Single-board computers (SBCs) which are the flagship series, Keyboard computers (X00), Zero series for small and affordable devices, Compute Module (CM) series for embedded and industrial applications, and Pico microcontroller boards for real-time control and lightweight embedded projects.",
+      "evidence": "Raspberry Pi makes computers in several different **series**:\n* **<<flagship-series, Single-board computers (SBCs)>>.** The flagship Raspberry Pi series offers high-performance hardware, a full Linux operating system, and a variety of common ports in a form factor roughly the size of a credit card.\n* **<<keyboard-computers, Keyboard computers (X00)>>.** Raspberry Pi keyboard computers combine SBC hardware, a full Linux operating system, and common ports inside a compact keyboard case.\n* **<<zero-series, Zero>>.** Small and affordable models in a minimal form factor that provide a full Linux operating system and essential ports with low power consumption.\n* **<<compute-module-series, Compute Module (CM)>>.** Boards designed for embedded and industrial applications that provide the same hardware as flagship SBCs but in a smaller form factor with no on-board connectors. Instead, they connect to a separate baseboard that supplies the necessary ports and pins.\n* **<<pico-series, Pico (microcontroller boards)>>.** Small and versatile microcontroller boards that don't run Linux. Instead of removable storage, programs are flashed directly onto on-board memory. Pico microcontrollers are ideal for real-time control and lightweight embedded projects.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_050"
+    },
+    {
+      "question": "How do Pico microcontroller boards differ from other Raspberry Pi series?",
+      "answer": "Pico microcontroller boards differ from other Raspberry Pi series in that they do not run Linux. Instead of using removable storage, programs are flashed directly onto on-board memory. Pico microcontrollers are ideal for real-time control and lightweight embedded projects.",
+      "evidence": "**<<pico-series, Pico (microcontroller boards)>>.** Small and versatile microcontroller boards that don't run Linux. Instead of removable storage, programs are flashed directly onto on-board memory. Pico microcontrollers are ideal for real-time control and lightweight embedded projects.",
+      "question_type": "comparative",
+      "qa_id": "raspberry_pi_051"
+    },
+    {
+      "question": "What is a Compute Module and how does it differ from a flagship SBC?",
+      "answer": "Compute Modules are boards designed for embedded and industrial applications that provide the same hardware as flagship SBCs but in a smaller form factor with no on-board connectors. Instead, they connect to a separate baseboard that supplies the necessary ports and pins.",
+      "evidence": "**<<compute-module-series, Compute Module (CM)>>.** Boards designed for embedded and industrial applications that provide the same hardware as flagship SBCs but in a smaller form factor with no on-board connectors. Instead, they connect to a separate baseboard that supplies the necessary ports and pins.",
+      "question_type": "comparative",
+      "qa_id": "raspberry_pi_052"
+    },
+    {
+      "question": "What SoC does the Raspberry Pi 5 use and what memory options are available?",
+      "answer": "The Raspberry Pi 5 uses the BCM2712 SoC. It is available with 1 GB, 2 GB, 4 GB, 8 GB, or 16 GB of memory. It features a 40-pin GPIO header and uses USB-C power at 5V/5A (25W) or 5V/3A (15W) with a 600mA peripheral limit.",
+      "evidence": "| xref:processors.adoc#bcm2712[BCM2712]\na|\n1 GB\n\n2 GB\n\n4 GB\n\n8 GB\n\n16 GB | 40-pin GPIO header",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_053"
+    },
+    {
+      "question": "What connectivity options does the Raspberry Pi 5 provide?",
+      "answer": "The Raspberry Pi 5 provides 2x micro-HDMI, 2x USB 2.0, 2x USB 3.0, 2x mini CSI/DSI ports, a single-lane PCIe FFC connector, a UART connector, an RTC battery connector, a four-pin JST-SH PWM fan connector, Gigabit Ethernet with PoE+ support, dual-band 802.11ac Wi-Fi 5, Bluetooth 5 with BLE, a microSD card slot, and USB-C power.",
+      "evidence": "* 2 \u00d7 micro-HDMI\n* 2 \u00d7 USB 2.0\n* 2 \u00d7 USB 3.0\n* 2 \u00d7 mini 22-pin, 0.5 mm (fine) pitch, 11.5 mm width, combined CSI (camera)/DSI (display) ports\n* single-lane https://pip.raspberrypi.com/documents/RP-008298-DS[PCIe FFC connector]\n* https://pip.raspberrypi.com/documents/RP-008189-DS[UART connector]\n* RTC battery connector\n* xref:raspberry-pi.adoc#raspberry-pi-5-fan-connector-pinout[four-pin JST-SH PWM fan connector]\n* Gigabit (1 Gb/s) Ethernet RJ45 with PoE+ support\n* 2.4/5 GHz dual-band 802.11ac Wi-Fi 5 (300 Mb/s)\n* Bluetooth 5, Bluetooth Low Energy (BLE)\n* microSD card slot\n* USB-C power; 5 V at 5 A (25W); or 5 V at 3 A (15 W) with a 600 mA peripheral limit",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_054"
+    },
+    {
+      "question": "What SoC does the Raspberry Pi 4 Model B use and what memory options are available?",
+      "answer": "The Raspberry Pi 4 Model B uses the BCM2711 SoC. It is available in 1 GB, 2 GB, 4 GB, and 8 GB memory configurations. It features a 40-pin GPIO header and uses USB-C power at 5V/3A (15W).",
+      "evidence": "| xref:processors.adoc#bcm2711[BCM2711]\na|\n1 GB\n\n2 GB\n\n4 GB\n\n8 GB | 40-pin GPIO header",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_055"
+    },
+    {
+      "question": "What is the keyboard computer naming convention for Raspberry Pi?",
+      "answer": "Keyboard series devices use model identifiers of the form <X00>, where X indicates the corresponding flagship single-board computer series device. For example, Raspberry Pi 400 is the keyboard version of Raspberry Pi 4, and Raspberry Pi 500 is the keyboard version of Raspberry Pi 5.",
+      "evidence": "Keyboard series devices use model identifiers of the form `<X00>`, where `X` indicates the corresponding flagship single-board computer (SBC) series device. For example, Raspberry Pi 400 is the keyboard version of Raspberry Pi 4.",
+      "question_type": "definitional",
+      "qa_id": "raspberry_pi_057"
+    },
+    {
+      "question": "What SoC and memory does the Raspberry Pi 400 have?",
+      "answer": "The Raspberry Pi 400 uses the BCM2711 SoC and comes with 4 GB of memory. It includes a 40-pin GPIO header and provides connectivity including 2x micro-HDMI, USB 2.0, 2x USB 3.0, Gigabit Ethernet, dual-band Wi-Fi, and Bluetooth 5.",
+      "evidence": "image::images/400.jpg[alt=\"Raspberry Pi 400\"]\n| xref:processors.adoc#bcm2711[BCM2711] | 4 GB | 40-pin GPIO header",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_058"
+    },
+    {
+      "question": "What does the 'H' suffix mean on Raspberry Pi Zero boards?",
+      "answer": "The 'H' suffix on Raspberry Pi Zero boards indicates that the board has header pins pre-soldered to the GPIO header. Models without the H suffix don't come with header pins attached, and users must solder pins manually or attach a third-party pin kit. For the Raspberry Pi Zero 2, the designation 'with headers' is used instead of the H suffix.",
+      "evidence": "The first generation of Raspberry Pi Zero that include the *H* suffix have header pins pre-soldered to the GPIO header. Raspberry Pi Zero 2 specifies *with headers* instead of using the *H* suffix. Models that lack the *H* or *with headers* suffix don't come with header pins attached to the GPIO header; the user must solder pins manually or attach a third-party pin kit.",
+      "question_type": "definitional",
+      "qa_id": "raspberry_pi_060"
+    },
+    {
+      "question": "What does the 'W' suffix mean on Raspberry Pi Zero models?",
+      "answer": "The 'W' suffix on Raspberry Pi Zero boards indicates that the model comes with wireless connectivity (Wi-Fi and Bluetooth). Models without the W suffix lack wireless connectivity. All Zero models share common connectivity including a microSD card slot, mini HDMI port, and 2x micro-USB ports.",
+      "evidence": "Raspberry Pi Zero boards that include the *W* suffix come with wireless connectivity. Aside from wireless, all Zero models have the following connectivity:\n\n* A microSD card slot\n* A mini HDMI port\n* 2 \u00d7 micro-USB ports (one for input power, one for external devices)",
+      "question_type": "definitional",
+      "qa_id": "raspberry_pi_061"
+    },
+    {
+      "question": "What SoC does the Raspberry Pi Zero 2 W use and how much memory does it have?",
+      "answer": "The Raspberry Pi Zero 2 W uses the RP3A0 SoC and has 512 MB of memory. It provides 2.4 GHz single-band 802.11n Wi-Fi at 35 Mb/s and Bluetooth 4.2 with BLE, along with a 40-pin GPIO header (unpopulated).",
+      "evidence": "| xref:processors.adoc#rp3a0[RP3A0] | 512 MB | 40-pin GPIO header (unpopulated)\na|\n* 2.4 GHz single-band 802.11n Wi-Fi (35 Mb/s)\n* Bluetooth 4.2, Bluetooth Low Energy (BLE)\n^.^a|\n.Raspberry Pi Zero 2 W with headers",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_062"
+    },
+    {
+      "question": "What happened to Raspberry Pi Compute Module 3 regarding End-of-Life?",
+      "answer": "Raspberry Pi Compute Module 3 (CM3) and Compute Module 3 Lite (CM3Lite) have reached End-of-Life (EoL) due to the discontinuation of the core SoC used in these products. The official EoL date was 16 October 2025. The closest equivalent is Raspberry Pi Compute Module 3+, which offers the same mechanical footprint, improved thermal design, and a BCM2837B0 processor.",
+      "evidence": "Raspberry Pi Compute Module 3 (CM3) and Compute Module 3 Lite (CM3Lite) have reached End-of-Life (EoL) due to the discontinuation of the core SoC used in these products. The official EoL date was 16 October 2025. The closest equivalent to CM3 is Raspberry Pi Compute Module 3+, which offers the same mechanical footprint, improved thermal design, and a BCM2837B0 processor, and so is recommended for existing designs.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_063"
+    },
+    {
+      "question": "What form factors do the Compute Module models use?",
+      "answer": "Compute Modules 1 through 4S use the DDR2 SODIMM form factor, though they are not compatible with DDR2 SODIMM electrical specifications. Compute Modules 4 and 5 use dual 100-pin high density connectors instead of the SODIMM form factor.",
+      "evidence": "Compute Modules that use the physical DDR2 SODIMM form factor are *not* compatible with DDR2 SODIMM electrical specifications.\n| DDR2 SODIMM\n| dual 100-pin high density connectors",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_064"
+    },
+    {
+      "question": "What SoC and storage options does the Raspberry Pi Compute Module 5 have?",
+      "answer": "The Raspberry Pi Compute Module 5 uses the BCM2712 SoC. It comes in memory options of 2 GB, 4 GB, 8 GB, or 16 GB, and storage options of 0 GB (Lite), 16 GB, 32 GB, or 64 GB. It uses dual 100-pin high density connectors and has optional Wi-Fi 5 and Bluetooth 5.",
+      "evidence": "| xref:processors.adoc#bcm2712[BCM2712]\na|\n2 GB\n\n4 GB\n\n8 GB\n\n16 GB\na|\n0 GB (Lite)\n\n16 GB\n\n32 GB\n\n64 GB\n| dual 100-pin high density connectors",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_065"
+    },
+    {
+      "question": "What SoC does the Raspberry Pi Pico use and how much memory and storage does it have?",
+      "answer": "The Raspberry Pi Pico uses the RP2040 SoC and has 264 kB of memory and 2 MB of storage. It features two 20-pin GPIO headers (unpopulated) and does not include wireless connectivity.",
+      "evidence": "| xref:../microcontrollers/microcontroller-chips.adoc#rp2040[RP2040] | 264 kB | 2 MB | two 20-pin GPIO headers (unpopulated) ^| none\n|\n.Raspberry Pi Pico H",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_066"
+    },
+    {
+      "question": "How does the Raspberry Pi Pico 2 differ from the original Raspberry Pi Pico?",
+      "answer": "The Raspberry Pi Pico 2 uses the RP2350 SoC instead of the RP2040 used in the original Pico. It has 520 kB of memory (compared to 264 kB) and 4 MB of storage (compared to 2 MB). Both boards share the two 20-pin GPIO header design.",
+      "evidence": "| xref:../microcontrollers/microcontroller-chips.adoc#rp2350[RP2350] | 520 kB | 4 MB | two 20-pin GPIO headers (unpopulated) ^| none\n|\n.Raspberry Pi Pico 2 W",
+      "question_type": "comparative",
+      "qa_id": "raspberry_pi_067"
+    },
+    {
+      "question": "What wireless connectivity does the Raspberry Pi Pico W support?",
+      "answer": "The Raspberry Pi Pico W supports 2.4 GHz single-band 802.11n Wi-Fi at 10 Mb/s and Bluetooth 5.2 with Bluetooth Low Energy (BLE). This wireless capability is shared by the Pico WH, Pico 2 W, and Pico 2 W with headers variants.",
+      "evidence": "* 2.4 GHz single-band 802.11n Wi-Fi (10 Mb/s)\n* Bluetooth 5.2, Bluetooth Low Energy (BLE)\n|\n.Raspberry Pi Pico WH",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_068"
+    },
+    {
+      "question": "How do you download the Raspberry Pi kernel source code?",
+      "answer": "First install Git with 'sudo apt install git', then download the source code using 'git clone --depth=1 https://github.com/raspberrypi/linux'. The --depth=1 flag downloads the current active branch without history. Omitting this flag downloads the entire repository with full history, which takes longer and uses more storage.",
+      "evidence": "Next, download the source code for the latest Raspberry Pi kernel:\n[source,console]\n----\n$ git clone --depth=1 https://github.com/raspberrypi/linux",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_070"
+    },
+    {
+      "question": "What does the --depth=1 flag do when cloning the kernel repository?",
+      "answer": "The --depth=1 flag downloads the current active branch without any history, which is the branch used to build Raspberry Pi OS images. Omitting --depth=1 downloads the entire repository including the full history of all branches, which takes much longer and occupies much more storage.",
+      "evidence": "The `git clone` command above downloads the current active branch, which we build Raspberry Pi OS images from, without any history. Omit `--depth=1` to download the entire repository, including the full history of all branches. This takes much longer and occupies much more storage.",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_071"
+    },
+    {
+      "question": "What is LOCALVERSION and why should you customize it?",
+      "answer": "LOCALVERSION is a kernel configuration setting that appends a custom string to the kernel version. You should adjust it to prevent the kernel from overwriting existing modules in /lib/modules and to clarify in uname output that you are running your own custom kernel rather than the stock one.",
+      "evidence": "To prevent the kernel from overwriting existing modules in `/lib/modules` and to clarify that you run your own kernel in `uname` output, adjust `LOCALVERSION`.\nTIP: You can also change this setting graphically with `menuconfig` at *General setup* > *Local version - append to kernel release*.",
+      "question_type": "definitional",
+      "qa_id": "raspberry_pi_074"
+    },
+    {
+      "question": "What command builds a 64-bit kernel natively and what does the -j6 flag do?",
+      "answer": "The command to build a 64-bit kernel natively is 'make -j6 Image.gz modules dtbs'. The -j6 flag distributes work between 6 cores to speed up compilation. The recommendation is to pass a number 1.5x your number of processors, which you can check by running 'nproc'.",
+      "evidence": "$ make -j6 Image.gz modules dtbs\n----\nTIP: On multi-core Raspberry Pi models, the `make -j<n>` option distributes work between cores. This can speed up compilation significantly. Run `nproc` to see how many processors you have; we recommend passing a number 1.5x your number of processors.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_075"
+    },
+    {
+      "question": "How do you install a natively built 64-bit kernel?",
+      "answer": "First install the kernel modules with 'sudo make -j6 modules_install'. Then create a backup of the current kernel, copy the new kernel image, Device Tree blobs, overlays, and README to /boot/firmware/. Finally reboot with 'sudo reboot' to run the freshly compiled kernel.",
+      "evidence": "$ sudo make -j6 modules_install\n----\nThen, install the kernel and Device Tree blobs into the boot partition, backing up your original kernel.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_076"
+    },
+    {
+      "question": "How can you keep a custom kernel separate from the stock kernel?",
+      "answer": "You can copy the kernel with a different filename (e.g. kernel-myconfig.img) instead of overwriting the kernel.img file. Then edit config.txt in the boot partition to select your kernel using 'kernel=kernel-myconfig.img'. Combined with a custom LOCALVERSION, this allows you to quickly revert to the stock kernel if the custom one cannot boot.",
+      "evidence": "Alternatively, copy the kernel with a different filename (e.g. `kernel-myconfig.img`) instead of overwriting the `kernel.img` file. Then, edit `config.txt` in the boot partition to select your kernel:\n[source,ini]\n----\nkernel=kernel-myconfig.img\n----\nCombine this approach with a custom `LOCALVERSION` to keep your custom kernel separate from the stock kernel image managed by the system. With this arrangement, you can quickly revert to a stock kernel in the event that your kernel cannot boot.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_077"
+    },
+    {
+      "question": "What command is used to build a 64-bit cross-compiled kernel?",
+      "answer": "The command to build a 64-bit cross-compiled kernel is 'make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs'. This differs from the native build command by specifying the ARCH and CROSS_COMPILE environment variables for the target platform.",
+      "evidence": "$ make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_081"
+    },
+    {
+      "question": "What command is used to build a 32-bit cross-compiled kernel?",
+      "answer": "The command to build a 32-bit cross-compiled kernel is 'make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs'. This uses the ARM architecture specification and the arm-linux-gnueabihf cross-compiler prefix, and builds zImage instead of Image.",
+      "evidence": "$ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_082"
+    },
+    {
+      "question": "Why might you need to access a Raspberry Pi remotely?",
+      "answer": "You might need remote access when the Raspberry Pi is embedded in a robot, mounted in an inconvenient location, or when you don't have a spare monitor available. Remote access eliminates the need to connect a monitor, keyboard, and mouse directly to the device.",
+      "evidence": "Sometimes you need to access a Raspberry Pi without connecting it to a monitor, keyboard, and mouse. Perhaps the Raspberry Pi is embedded in a robot or mounted in an inconvenient location. Or maybe you don't have a spare monitor.",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_084"
+    },
+    {
+      "question": "What services can be used for remote control of a Raspberry Pi over the local network?",
+      "answer": "For remote control over the local network, you can use SSH (Secure Shell) for terminal access, VNC (Virtual Network Computing) for desktop screen sharing, or Raspberry Pi Connect for screen sharing without needing to determine your local IP address. SSH and VNC require knowing the local IP address of your Raspberry Pi.",
+      "evidence": "To remotely control your Raspberry Pi from another device on your local network, use one of the following services:\n\n* xref:remote-access.adoc#ssh[SSH]\n* xref:remote-access.adoc#vnc[VNC]\n* xref:remote-access.adoc#raspberry-pi-connect[Raspberry Pi Connect]",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_085"
+    },
+    {
+      "question": "What is VNC in the context of Raspberry Pi?",
+      "answer": "VNC (Virtual Network Computing) provides secure access to a desktop screen share on your Raspberry Pi. It allows you to remotely view and control your Raspberry Pi's desktop from another computer on the network. It can be enabled through raspi-config using the WayVNC or RealVNC virtual network computing server.",
+      "evidence": "VNC (Virtual Network Computing) provides secure access to a desktop screen share on your Raspberry Pi.",
+      "question_type": "definitional",
+      "qa_id": "raspberry_pi_086"
+    },
+    {
+      "question": "What file sharing services can you use between devices on a local network with Raspberry Pi?",
+      "answer": "You can share files between devices on the local network using NFS (Network File System), SCP (Secure Copy Protocol), Samba, and rsync. These services allow accessing data stored on one device from another device without directly controlling the remote device.",
+      "evidence": "Services like xref:remote-access.adoc#nfs[NFS] (Network File System), xref:remote-access.adoc#scp[SCP] (Secure Copy Protocol), xref:remote-access.adoc#samba[Samba], and xref:remote-access.adoc#rsync[`rsync`] enable you to share files between devices on the local network without directly controlling the remote device.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_087"
+    },
+    {
+      "question": "How can you remotely control your Raspberry Pi over the Internet?",
+      "answer": "To remotely control your Raspberry Pi over the Internet, you can either expose SSH or VNC over the open internet, within a VPN, or using an external service like RealVNC's cloud VNC Viewer. Alternatively, you can use Raspberry Pi Connect, a free screen sharing and remote shell service provided by Raspberry Pi.",
+      "evidence": "To remotely control your Raspberry Pi from any device connected to the Internet, you can:\n\n* Expose xref:remote-access.adoc#ssh[SSH] or xref:remote-access.adoc#vnc[VNC] on your Raspberry Pi over the open internet, within a VPN, or using an external service like RealVNC's cloud https://www.realvnc.com/download/viewer/[VNC Viewer].\n* Use xref:remote-access.adoc#raspberry-pi-connect[Raspberry Pi Connect], a free screen sharing and remote shell service provided by Raspberry Pi.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_088"
+    },
+    {
+      "question": "What SoC does the original Raspberry Pi Model B use?",
+      "answer": "The original Raspberry Pi Model B uses the BCM2835 SoC. It came with either 256 MB or 512 MB of memory and featured a 26-pin GPIO header, HDMI, 2x USB 2.0, 3.5mm audio jack, RCA composite video, 100 Mb/s Ethernet, and micro-USB power.",
+      "evidence": "| xref:processors.adoc#bcm2835[BCM2835]\na|\n256 MB\n512 MB | 26-pin GPIO header",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_089"
+    },
+    {
+      "question": "Which HDMI port should you plug your primary monitor into on a multi-HDMI Raspberry Pi?",
+      "answer": "If your Raspberry Pi has more than one HDMI port, you should plug your primary monitor into the port marked HDMI0. This ensures proper display output configuration, especially when using dual monitors.",
+      "evidence": "If your Raspberry Pi has more than one HDMI port, plug your primary monitor into the port marked `HDMI0`.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_094"
+    },
+    {
+      "question": "What power supply does the Raspberry Pi 3 series use?",
+      "answer": "The Raspberry Pi 3 (all models) uses a 5V/2.5A power supply, specifically the 12.5W Micro USB power supply. This is the same power requirement as the Raspberry Pi 2 Model B, Raspberry Pi 1 (all models), and Raspberry Pi Zero (all models).",
+      "evidence": "Raspberry Pi 3 (all models)\n|5V/2.5A\n|https://www.raspberrypi.com/products/micro-usb-power-supply/[12.5 W Micro USB power supply]",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_095"
+    },
+    {
+      "question": "What happens during the Bluetooth step of the first boot configuration wizard?",
+      "answer": "During the Bluetooth step of the first boot configuration wizard, the Raspberry Pi scans for pairable Bluetooth devices and connects to the first device it finds for each item (keyboard or mouse). This process works with both built-in and external USB Bluetooth adapters, but USB adapters must be plugged in before booting.",
+      "evidence": "If you're using a Bluetooth keyboard or mouse, this step will walk you through device pairing. Your Raspberry Pi will scan for pairable devices and connect to the first device it finds for each item.\n\nThis process works with built-in or external USB Bluetooth adapters. If you use a USB adapter, plug it in before booting your Raspberry Pi.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_096"
+    },
+    {
+      "question": "What is the recommended replacement for the Raspberry Pi 2 Model B revisions 1.1 and 1.2 that reached End-of-Life?",
+      "answer": "The Raspberry Pi 2 Model B revision 1.3 is recommended as a replacement for the End-of-Life revisions 1.1 and 1.2. Revision 1.3 offers the same mechanical footprint and uses a BCM2837B0 processor. The official End-of-Life date was 16 October 2025.",
+      "evidence": "Raspberry Pi 2 Model B revisions 1.1 and 1.2 have reached End-of-Life (EoL) due to the discontinuation of the core SoC used in these products. The official EoL date was 16 October 2025. Raspberry Pi 2 Model B revision 1.3 offers the same mechanical footprint and a BCM2837B0 processor, and so is recommended for existing designs.",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_097"
+    },
+    {
+      "question": "Why is it important to select the correct power port on your Raspberry Pi?",
+      "answer": "It is important to select the correct power port because some Raspberry Pi models, such as the Zero series, have output USB ports with the same form factor as the power port. Plugging the power supply into the wrong port could result in the Pi not powering on correctly or potentially damaging connected devices.",
+      "evidence": "Plug your power supply into the port marked \"POWER IN\", \"PWR IN\", or \"PWR\". Some Raspberry Pi models, such as the Zero series, have output USB ports with the same form factor as the power port. Be sure to use the correct port on your Raspberry Pi!",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_098"
+    },
+    {
+      "question": "What are the different SoC revisions used in the Raspberry Pi 2 Model B?",
+      "answer": "The Raspberry Pi 2 Model B has been produced in three revisions with different SoCs: revision 1.1 uses the BCM2836, revision 1.2 uses the BCM2837, and revision 1.3 uses the BCM2837B0. All revisions have 1 GB of memory and a 40-pin GPIO header.",
+      "evidence": "image::images/2-model-b.jpg[alt=\"Raspberry Pi 2 Model B\"]\na|\n* revision 1.1: xref:processors.adoc#bcm2836[BCM2836]\n* revision 1.2: xref:processors.adoc#bcm2837[BCM2837]\n* revision 1.3: xref:processors.adoc#bcm2837b0[BCM2837B0]\n| 1 GB | 40-pin GPIO header",
+      "question_type": "factual",
+      "qa_id": "raspberry_pi_099"
+    },
+    {
+      "question": "What additional accessories are needed to use a Raspberry Pi directly as a desktop computer?",
+      "answer": "To use a Raspberry Pi directly, you need a display and a cable to connect your Raspberry Pi to your display.",
+      "evidence": "If you want to use your Raspberry Pi directly, you'll need the following additional accessories:\n\n* a display\n* a cable to connect your Raspberry Pi to your display",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_100"
+    },
+    {
+      "question": "Why do Raspberry Pi models require external storage to operate?",
+      "answer": "Raspberry Pi models lack onboard storage, so you must supply it yourself. You can boot from an operating system image installed on supported media such as microSD cards, USB storage, network storage, or storage connected via a PCIe HAT.",
+      "evidence": "Raspberry Pi models lack onboard storage, so you have to supply it. You can boot your Raspberry Pi from an operating system image installed on any supported media: microSD cards are used commonly, but USB storage, network storage, and storage connected via a PCIe HAT are also available.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_101"
+    },
+    {
+      "question": "Which Raspberry Pi models support a microSD slot, and do all models support every boot media type?",
+      "answer": "All Raspberry Pi consumer models since the Raspberry Pi 1 Model A+ feature a microSD slot. However, only recent Raspberry Pi models support all of the available media types (microSD, USB, network, PCIe HAT).",
+      "evidence": "However, only recent Raspberry Pi models support all of these media types.\n\nAll Raspberry Pi consumer models since the Raspberry Pi 1 Model A+ feature a microSD slot.",
+      "question_type": "comparative",
+      "qa_id": "raspberry_pi_102"
+    },
+    {
+      "question": "What happens automatically when a microSD card is inserted into a Raspberry Pi's microSD slot?",
+      "answer": "The Raspberry Pi automatically boots from the microSD slot when the slot contains a card. All consumer models since the Raspberry Pi 1 Model A+ include a microSD slot.",
+      "evidence": "All Raspberry Pi consumer models since the Raspberry Pi 1 Model A+ feature a microSD slot. Your Raspberry Pi automatically boots from the microSD slot when the slot contains a card.",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_103"
+    },
+    {
+      "question": "What types of HDMI adapter cables can be used to connect a Raspberry Pi to a display?",
+      "answer": "You can use a micro-HDMI-to-HDMI cable or a mini-HDMI-to-HDMI cable to connect those ports on your Raspberry Pi to any HDMI display.",
+      "evidence": "However, you can use a https://www.raspberrypi.com/products/micro-hdmi-to-standard-hdmi-a-cable/[micro-HDMI-to-HDMI cable] or https://www.raspberrypi.com/products/standard-hdmi-a-male-to-mini-hdmi-c-male-cable/[mini-HDMI-to-HDMI cable] to connect those ports on your Raspberry Pi to any HDMI display.",
+      "question_type": "comparative",
+      "qa_id": "raspberry_pi_104"
+    },
+    {
+      "question": "How can you verify that a Raspberry Pi has powered on successfully?",
+      "answer": "You should see the status LED light up when your Pi powers on. If your Pi is connected to a display, you should see the boot screen within minutes.",
+      "evidence": "You should see the status LED light up when your Pi powers on. If your Pi is connected to a display, you should see the boot screen within minutes.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_105"
+    },
+    {
+      "question": "Why should you unplug the Raspberry Pi's power supply before connecting peripherals?",
+      "answer": "You should unplug the power supply first to ensure that the Raspberry Pi is powered down while you connect peripherals, preventing potential hardware issues during the connection process.",
+      "evidence": "First, unplug your Raspberry Pi's power supply to ensure that the Raspberry Pi is powered down while you connect peripherals.",
+      "question_type": "comparative",
+      "qa_id": "raspberry_pi_106"
+    },
+    {
+      "question": "What happens if you skip the OS customisation options in Raspberry Pi Imager?",
+      "answer": "If you chose to skip the customisation options in Imager, your Raspberry Pi runs a configuration wizard on first boot, which will prompt you to configure the same settings.",
+      "evidence": "If you chose to skip the customisation options in Imager, your Raspberry Pi runs a configuration wizard on first boot. You need a monitor and keyboard to navigate through the wizard; a mouse is optional.",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_107"
+    },
+    {
+      "question": "Is the Raspberry Pi immediately ready to use if you customised the OS during installation in Imager?",
+      "answer": "Yes, if you customised your Raspberry Pi's operating system as part of the installation process in Imager, your device is ready to use right away without requiring further configuration.",
+      "evidence": "If you customised your Raspberry Pi's operating system as part of the installation process in Imager, congratulations, your device is ready to use.",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_108"
+    },
+    {
+      "question": "What storage devices besides microSD cards can a Raspberry Pi boot from?",
+      "answer": "Depending on your Raspberry Pi model, you can also boot an operating system from USB drives, storage connected through a HAT, and network storage.",
+      "evidence": "Depending on your Raspberry Pi model, you can also boot an operating system from other storage devices, including USB drives, storage connected through a HAT, and network storage.\n\nTo install an operating system on a storage device for your Raspberry Pi, you'll need:",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_109"
+    },
+    {
+      "question": "How does Raspberry Pi Imager determine which OS version to recommend for your device?",
+      "answer": "Imager shows the recommended version of Raspberry Pi OS for your device at the top of the list. To install an operating system from a custom image on your computer, you can select the 'Use Custom' option.",
+      "evidence": "Imager shows the recommended version of Raspberry Pi OS for your device at the top of the list.\nTo install an operating system from an image on your computer, select the *Use Custom* option.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_110"
+    },
+    {
+      "question": "Why does Raspberry Pi documentation strongly recommend setting up the device before first boot using Imager?",
+      "answer": "The documentation strongly recommends using the customisation settings in Imager before first boot. If you don't configure your Raspberry Pi with these OS customisation settings, your operating system asks you for the same information after first boot, adding an extra step.",
+      "evidence": "However, we strongly recommend that you set up your Raspberry Pi before first boot by using the customisation settings in Imager.\n\nYou can preconfigure:\n\n* The device hostname\n* The time zone\n* Your keyboard layout\n* A username and password\n* Wi-Fi credentials\n* Remote connectivity\n* Raspberry Pi Connect\n\nIf you've already completed the customisation steps previously with Imager, the values you chose are pre-filled in the following steps.\n\nIf you don't configure your Raspberry Pi with these OS customisation settings, your operating system asks you for the same information after first boot.",
+      "question_type": "comparative",
+      "qa_id": "raspberry_pi_111"
+    },
+    {
+      "question": "What happens if you do not configure OS customisation settings before first boot on a Raspberry Pi?",
+      "answer": "If you don't configure your Raspberry Pi with the OS customisation settings, your operating system asks you for the same information after first boot, requiring you to set it up at that time instead.",
+      "evidence": "If you don't configure your Raspberry Pi with these OS customisation settings, your operating system asks you for the same information after first boot.",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_112"
+    },
+    {
+      "question": "How do you enable SSH for remote access when configuring a Raspberry Pi in Imager?",
+      "answer": "To use your Raspberry Pi remotely over your network, toggle the 'Enable SSH' switch to the active position in Imager's OS customisation settings.",
+      "evidence": ". To use your Raspberry Pi remotely over your network, toggle the *Enable SSH* switch to the active position.\n+",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_113"
+    },
+    {
+      "question": "What two options does a user have for enabling remote access on a headless Raspberry Pi?",
+      "answer": "If you plan to run a headless Raspberry Pi, you should either enable SSH or configure Raspberry Pi Connect for your device to allow remote access.",
+      "evidence": "If you plan to run a headless Raspberry Pi, either enable this option or configure Raspberry Pi Connect for your device.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_114"
+    },
+    {
+      "question": "What must you do before a Raspberry Pi Connect token expires?",
+      "answer": "The Raspberry Pi Connect website displays how long after its creation the token expires. You must boot your Raspberry Pi and connect it to the internet before the expiry time for the token to work.",
+      "evidence": "The Raspberry Pi Connect website displays how long after its creation the token expires. To use the token, ensure that you boot your Raspberry Pi and connect it to the internet before the expiry time.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_115"
+    },
+    {
+      "question": "How can you manually enter a Raspberry Pi Connect token if it is not automatically copied to Imager?",
+      "answer": "If the token isn't copied across, you can open the 'Having trouble?' section of the Raspberry Pi Connect web page, copy the token, and paste it into the token field in Imager manually.",
+      "evidence": "If the token isn't copied across, you can copy it into Imager manually. Open the *Having trouble?* section of the Raspberry Pi Connect web page, copy the token, and paste it into the token field in Imager.",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_116"
+    },
+    {
+      "question": "What might be required before using Network Install on a Raspberry Pi with an older bootloader?",
+      "answer": "If your Raspberry Pi runs an older bootloader, you may need to update the bootloader before you can use Network Install.",
+      "evidence": "If your Raspberry Pi runs an older bootloader, you may need to xref:raspberry-pi.adoc#bootloader_update_stable[update the bootloader] to use Network Install.\n\n////",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_117"
+    },
+    {
+      "question": "How can you skip the image verification step after Raspberry Pi Imager writes an image?",
+      "answer": "After Imager writes the image, it verifies it automatically. However, if you want to cancel verification, you can select 'Skip verification'.",
+      "evidence": "However, if you want to cancel verification, select *Skip verification*.\n\n.After writing the image, Imager verifies it.\nimage::images/imager/verify.png[alt=\"Verifying an image on a device in Imager.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_118"
+    },
+    {
+      "question": "What is the difference between using raspi-config via the terminal versus the desktop GUI?",
+      "answer": "You can access the configuration tool via the terminal by running 'sudo raspi-config'. Some advanced configuration is available in the raspi-config CLI but not in the Control Centre GUI.",
+      "evidence": "Alternatively, run the following command to access the configuration tool via the terminal:\n\n[source,console]\n----\n$ sudo raspi-config\n----\n\nTIP: Some advanced configuration is available in the `raspi-config` CLI, but not the Control Centre GUI.",
+      "question_type": "comparative",
+      "qa_id": "raspberry_pi_119"
+    },
+    {
+      "question": "What happens automatically after the Raspberry Pi Installer finishes downloading via Network Install?",
+      "answer": "Once you finish downloading Raspberry Pi Installer, your Raspberry Pi will automatically start Raspberry Pi Imager. If the download fails, you can repeat the process to try again.",
+      "evidence": "If the download fails, you can repeat the process to try again.\n\nimage::images/network-install-3.png[alt=\"Downloading Imager using Network Install.\",width=\"80%\"]\n\nOnce you finish downloading Raspberry Pi Installer, your Raspberry Pi will automatically start Raspberry Pi Imager.",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_120"
+    },
+    {
+      "question": "Do keyboard layout changes in raspi-config require a reboot to take effect?",
+      "answer": "Keyboard layout changes usually take effect immediately, but may require a reboot in some cases.",
+      "evidence": "==== Keyboard\n\nOpen a menu where you can select your keyboard layout. Changes usually take effect immediately, but may require a reboot.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_121"
+    },
+    {
+      "question": "How can you temporarily disable overclocking on a Raspberry Pi if it causes instability?",
+      "answer": "You can hold down the Shift key during boot to temporarily disable overclocking. If overclocking at a certain level causes system instability, you should try a more modest overclock setting.",
+      "evidence": "* If overclocking at a certain level causes system instability, try a more modest overclock. Hold down the *Shift* key during boot to temporarily disable overclocking.",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_122"
+    },
+    {
+      "question": "How do you enable Wayland on Raspberry Pi models prior to Raspberry Pi 4 running an OS older than Bookworm?",
+      "answer": "To use Wayland on Raspberry Pi models prior to Raspberry Pi 4 running a version of Raspberry Pi OS earlier than Bookworm, you need to add 'wayland=on' to /boot/firmware/cmdline. Since Bookworm, all Raspberry Pi models run Wayland using labwc by default.",
+      "evidence": "Since Raspberry Pi OS _Bookworm_, all Raspberry Pi models run Wayland using labwc by default.\n\nNOTE: To use Wayland on Raspberry Pi models prior to Raspberry Pi 4 running a version of Raspberry Pi OS earlier than _Bookworm_, add `wayland=on` to `/boot/firmware/cmdline.",
+      "question_type": "causal",
+      "qa_id": "raspberry_pi_123"
+    },
+    {
+      "question": "What boot-time behaviors can be configured through the Boot/Auto login option in raspi-config?",
+      "answer": "The Boot/Auto login option lets you select whether to boot to console or desktop, and whether your Raspberry Pi automatically logs into your current user account when powered on.",
+      "evidence": "==== Boot/Auto login\n\nSelect the following behaviour at boot time:\n\n* whether to boot to console or desktop\n* whether your Raspberry Pi automatically logs into your current user account when powered on",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_124"
+    },
+    {
+      "question": "How do Raspberry Pi Pico microcontrollers handle storage differently from other Raspberry Pi models?",
+      "answer": "Instead of removable storage, Pico microcontrollers have programs flashed directly onto on-board memory. This makes them ideal for real-time control and lightweight embedded projects.",
+      "evidence": "Instead of removable storage, programs are flashed directly onto on-board memory. Pico microcontrollers are ideal for real-time control and lightweight embedded projects.",
+      "question_type": "comparative",
+      "qa_id": "raspberry_pi_125"
+    },
+    {
+      "question": "What must users do with Raspberry Pi models that lack the 'H' or 'with headers' suffix?",
+      "answer": "Models that lack the 'H' or 'with headers' suffix don't come with header pins attached to the GPIO header. The user must solder pins manually or attach a third-party pin kit.",
+      "evidence": "Models that lack the *H* or *with headers* suffix don't come with header pins attached to the GPIO header; the user must solder pins manually or attach a third-party pin kit.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_126"
+    },
+    {
+      "question": "What is the alternative to building a Raspberry Pi kernel natively on the device itself?",
+      "answer": "You can cross-compile a 32-bit or 64-bit Raspberry Pi kernel from a device other than a Raspberry Pi, as an alternative to building it natively on the Pi itself.",
+      "evidence": "Alternatively, you can cross-compile a 32-bit or 64-bit Raspberry Pi kernel from a device other than a Raspberry Pi.\n\nThe instructions below are divided into native builds and cross-compilation.",
+      "question_type": "comparative",
+      "qa_id": "raspberry_pi_127"
+    },
+    {
+      "question": "What kernel architecture does the 32-bit distribution of Raspberry Pi OS use on 4-series devices?",
+      "answer": "The 32-bit distribution of Raspberry Pi OS on 4-series devices uses a 32-bit userland but a 64-bit kernel. To build a 32-bit kernel instead, you must set ARCH=arm.",
+      "evidence": "The 32-bit distribution of Raspberry Pi OS on 4-series devices uses a 32-bit userland, but a _64-bit kernel_. To build a 32-bit kernel, set `ARCH=arm`.",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_128"
+    },
+    {
+      "question": "How can you install a freshly compiled kernel to a separate boot media instead of the current Raspberry Pi?",
+      "answer": "If you don't want to install the freshly compiled kernel onto the Raspberry Pi where you run the command, you can copy the compiled kernel to the boot partition of a separate boot media instead of /boot/firmware/.",
+      "evidence": "TIP: If you don't want to install the freshly-compiled kernel onto the Raspberry Pi where you run this command, copy the compiled kernel to the boot partition of a separate boot media instead of `/boot/firmware/`.\n\nTo install the 64-bit kernel:",
+      "question_type": "procedural",
+      "qa_id": "raspberry_pi_129"
+    },
+    {
+      "question": "How can you keep a custom-compiled kernel alongside the stock kernel without overwriting it?",
+      "answer": "You can copy the kernel with a different filename (e.g., kernel-myconfig.img) instead of overwriting the kernel.img file. Then, edit config.txt in the boot partition to select your custom kernel.",
+      "evidence": "Alternatively, copy the kernel with a different filename (e.g. `kernel-myconfig.img`) instead of overwriting the `kernel.img` file. Then, edit `config.txt` in the boot partition to select your kernel:",
+      "question_type": "comparative",
+      "qa_id": "raspberry_pi_130"
+    }
+  ]
+}

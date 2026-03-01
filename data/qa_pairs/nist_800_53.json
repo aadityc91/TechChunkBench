@@ -1,0 +1,705 @@
+{
+  "corpus_id": "nist_800_53",
+  "qa_pairs": [
+    {
+      "question": "What is the stated purpose of NIST SP 800-53 as described in its abstract?",
+      "answer": "NIST SP 800-53 provides a catalog of security and privacy controls for information systems and organizations to protect against a diverse set of threats and risks, including hostile attacks, human errors, natural disasters, structural failures, foreign intelligence entities, and privacy risks.",
+      "evidence": "This publicati on provides a catalog of security and privacy c ontrols for information systems and\norgan izations to protect organizational operations and assets, individuals, other organizations,\nand the Nation from a diverse set of threats  and risks , including hostile attacks , human errors,\nnatural disa sters, structural failures, foreign intelligence entities, and privacy risks .",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_001"
+    },
+    {
+      "question": "How does NIST SP 800-53 define privacy controls?",
+      "answer": "Privacy controls are the administrative, technical, and physical safeguards employed within a system or an organization to manage privacy risks and to ensure compliance with applicable privacy requirements.",
+      "evidence": "Privacy controls are the administrative,\ntechnical, and physical safe guards employed within a system or an organization  to manage\nprivacy risks and to ensure compliance with applicable privacy requirements .",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_003"
+    },
+    {
+      "question": "What does NIST SP 800-53 establish for systems and organizations?",
+      "answer": "NIST SP 800-53 establishes controls for systems and organizations that can be implemented within any organization or system that processes, stores, or transmits information.",
+      "evidence": "This publication establishes  controls for systems and organizations .",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_004"
+    },
+    {
+      "question": "What is the relationship between control enhancements and base controls?",
+      "answer": "Control enhancements either add functionality or specificity to a base control or increase the strength of a base control. They augment a base control and cannot be selected independently without also selecting the base control.",
+      "evidence": "Control enhancements either add functionality or specificity to a base\ncontrol or increase the strength of a base control.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_006"
+    },
+    {
+      "question": "How do common controls benefit multiple systems or programs?",
+      "answer": "Common controls are controls whose implementation results in a capability that is inheritable by multiple systems or programs, meaning they can be developed, implemented, assessed, and monitored by one entity and provide protection to other systems or programs.",
+      "evidence": "Common controls are controls whose implementation results  in a capability that is inherit able\nby multiple systems  or programs .",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_007"
+    },
+    {
+      "question": "Who bears the primary responsibility for system-specific controls?",
+      "answer": "System-specific controls are the primary responsibility of the system owner and the authorizing official for a given system.",
+      "evidence": "controls.  System -specific controls are the primary responsibility of the system owner and the\nauthorizing official for a given  system . Implementing system -specific controls can introduce risk",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_008"
+    },
+    {
+      "question": "How do functionality and assurance differ as concepts in NIST SP 800-53?",
+      "answer": "Functionality is defined in terms of the security and privacy features, functions, mechanisms, services, procedures, and architectures implemented within organizational systems, while assurance is the measure of confidence that those features are implemented correctly and producing desired outcomes.",
+      "evidence": "Functionality is defined in terms of the security and privacy features, functions,\nmechanisms, services, procedures, and architectures implemented within organizational\nsystems and programs and the environments in which those systems and programs operate.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_010"
+    },
+    {
+      "question": "What is assurance as defined in NIST SP 800-53?",
+      "answer": "Assurance is the measure of confidence that the system functionality is implemented correctly, operating as intended, and producing the desired outcome with respect to meeting the security and privacy requirements for the system.",
+      "evidence": "Assurance is the measure of confidence that the system functionality is implemented correctly,\noperating as intended, and producing the desired outcome with respect to meeting the secur ity\nand privacy requirements for the system",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_011"
+    },
+    {
+      "question": "What risk does the separation of duties control address?",
+      "answer": "Separation of duties addresses the potential for abuse of authorized privileges and helps to reduce the risk of malevolent activity without collusion by dividing mission or business functions among different individuals.",
+      "evidence": "Separation of duties addresses the potential for abuse of authorized privileges and\nhelps to reduce the risk of malevolent activity without collusion.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_012"
+    },
+    {
+      "question": "What is role-based access control (RBAC) according to NIST SP 800-53?",
+      "answer": "RBAC is an access control policy that enforces access to objects and system functions based on the defined role (i.e., job function) of the subject, simplifying privilege administration by assigning authorizations through role assignments.",
+      "evidence": "Role -based access control (RBAC) is an access control policy that enforces access\nto objects and system functions based on the defined role (i.e., job function) of the subject.",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_014"
+    },
+    {
+      "question": "How does attribute-based access control differ from role-based access control?",
+      "answer": "Attribute-based access control restricts system access based on organizational attributes (e.g., job function, identity), action attributes (e.g., read, write, delete), environmental attributes (e.g., time of day, location), and resource attributes (e.g., classification of a document), whereas RBAC is based solely on defined roles.",
+      "evidence": "Attribute -based access control  is an access control policy that restricts system\naccess to authorized users based on specified  organizational attributes  (e.g. , job function ,\nidentity ), action attributes (e.g., read, write, delete) , environmental attributes  (e.g. , time of\nday, location ), and resource attributes  (e.g. , classification of a document) .",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_015"
+    },
+    {
+      "question": "How does information flow control differ from access control in NIST SP 800-53?",
+      "answer": "Information flow control regulates where information can travel within a system and between systems, in contrast to who is allowed to access the information, and operates without regard to subsequent accesses to that information.",
+      "evidence": "Information flow control regulates where information can travel within a system and\nbetween systems ( in contrast to who is allowed to access the information) and without regard to\nsubsequent accesses to that information.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_016"
+    },
+    {
+      "question": "How does dual authorization reduce insider threat risk?",
+      "answer": "Dual authorization, also known as two-person control, reduces risk related to insider threats by requiring the approval of two authorized individuals to execute certain actions. Organizations consider rotating dual authorization duties to reduce the risk of collusion.",
+      "evidence": "Dual authorization , also known as two -person control , reduce s risk related to\ninsider threat s.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_017"
+    },
+    {
+      "question": "What type of access control is mandatory access control?",
+      "answer": "Mandatory access control is a type of nondiscretionary access control that constrains what actions subjects can take with information obtained from objects for which they have already been granted access.",
+      "evidence": "Mandatory access co ntrol is a type of nondiscretionary access  control .",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_018"
+    },
+    {
+      "question": "What is a reference monitor as described in NIST SP 800-53?",
+      "answer": "A reference monitor is a set of design requirements on a reference validation mechanism that, as a key component of an operating system, enforces an access control policy over all subjects and objects. It must be tamperproof, always invoked, and small enough to be subject to analysis and testing.",
+      "evidence": "A reference monitor is a set of design requirements on a reference validation\nmechanism that , as a key component of an operating system, enforces an access control policy\nover all subjects and objects.",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_019"
+    },
+    {
+      "question": "Does the unsuccessful logon attempts control apply only to network connections?",
+      "answer": "No, the need to limit unsuccessful logon attempts and take subsequent action applies regardless of whether the logon occurs via a local or network connection.",
+      "evidence": "The need to limit unsuccessful logon attempts and take subsequent action when the\nmaximum number of attempts is exceeded  applies regardless of whether the logon occurs via a\nlocal or network connection.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_020"
+    },
+    {
+      "question": "When should device locks be used instead of logging out according to NIST SP 800-53?",
+      "answer": "Device locks are temporary actions taken to prevent logical access when users stop work and move away from the immediate vicinity of systems but do not want to log out because of the temporary nature of their absences. They are not an acceptable substitute for logging out at the end of workdays.",
+      "evidence": "Device locks are temporary actions taken to prevent logical access to organizational\nsystems when users stop work and move away from the immediate vicinity of  those systems but\ndo not want to log out because of the temporary nature of their absences.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_021"
+    },
+    {
+      "question": "How does session termination differ from network disconnect in NIST SP 800-53?",
+      "answer": "Session termination (AC-12) addresses the termination of user-initiated logical sessions, in contrast to SC-10 which addresses the termination of network connections associated with communications sessions (i.e., network disconnect).",
+      "evidence": "Session termination addresses the termination of user- initiated logical sessions (in\ncontrast to SC-10, which addresses the termination of network connections associated with\ncommunications sessions (i.e., network disconnect) ).",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_022"
+    },
+    {
+      "question": "How does remote access differ from local access according to NIST SP 800-53?",
+      "answer": "Remote access is access to organizational systems (or processes acting on behalf of users) that communicate through external networks such as the Internet, in contrast to local access where the user is physically present at the device. Types include dial-up, broadband, and wireless.",
+      "evidence": "Discussion :  Remote access is access to organizational systems (or processes acting on behalf of\nusers) that communicat e through external networks such as the Internet. Types of remote access\ninclude  dial-up, broadband, and wireless. Organizations use  encr ypted virtual private networks",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_023"
+    },
+    {
+      "question": "What characteristics define a mobile device according to NIST SP 800-53?",
+      "answer": "A mobile device is a computing device that has a small form factor such that it can easily be carried by a single individual, is designed to operate without a physical connection, possesses local non-removable or removable data storage, and includes a self-contained power source.",
+      "evidence": "A mobile device is a computing device that has a small form factor such that it can\neasily be carried by a single individual; is designed to  operate without a physical connection;\npossesses local, non -removable or removable data storage; and includes a self- contained power\nsource.",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_024"
+    },
+    {
+      "question": "What is data mining as described in the AC-23 control?",
+      "answer": "Data mining is an analytical process that attempts to find correlations or patterns in large data sets for the purpose of data or knowledge discovery. Sensitive information can be extracted from data mining operations.",
+      "evidence": "Data mining is an analytical process that attempts to find correlations or patterns in\nlarge data sets for the purpose of data or knowledge discovery.",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_026"
+    },
+    {
+      "question": "What information must audit records contain according to the AU-3 control?",
+      "answer": "Audit records must contain information establishing: what type of event occurred, when the event occurred, where the event occurred, the source of the event, the outcome of the event, and the identity of any individuals, subjects, or objects/entities associated with the event.",
+      "evidence": "Ensure that audit records contain information that establishes the following:\na. What type of event occurred;\nb. When the event occurred;\nc. Where the event occurred ;\nd. Source of the event ;\ne. Outcome of the event ; and\nf. Identity of any individuals, subjects , or objects/entities associated with the event.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_028"
+    },
+    {
+      "question": "What types of individual actions does non-repudiation cover?",
+      "answer": "Non-repudiation covers creating information, sending and receiving messages, and approving information. It protects against claims by authors of not having authored certain documents, senders of not having transmitted messages, and receivers of not having received messages.",
+      "evidence": "Types of individual actions covered by non -repudiation include  creating information,\nsending and receiving messages, and approving information.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_029"
+    },
+    {
+      "question": "What is chain of custody according to the AU-10(3) control enhancement?",
+      "answer": "Chain of custody is a process that tracks the movement of evidence through its collection, safeguarding, and analysis life cycle by documenting each individual who handled the evidence, the date and time the evidence was collected or transferred, and the purpose for the transfer.",
+      "evidence": "Chain of custody is a process that tracks the movement of evidence through its\ncollection, safeguarding, and analysis life cycle by documenting each individual  who handled\nthe evidence, the date and time the evidence  was collected or transferred, and th e purpose\nfor the transfer.",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_030"
+    },
+    {
+      "question": "How are time stamps expressed in audit records according to NIST SP 800-53?",
+      "answer": "Time stamps generated by the system include date and time. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC.",
+      "evidence": "Time stamps generated by the system include date and time. Time is commonly\nexpressed in Coordinated Universal Time  (UTC), a modern continuation of Greenwich Mean Time\n(GMT), or local time with an offset from UTC.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_031"
+    },
+    {
+      "question": "What is social engineering and how does it threaten systems?",
+      "answer": "Social engineering is an attempt to trick an individual into revealing information or taking an action that can be used to breach, compromise, or otherwise adversely impact a system. It includes phishing, pretexting, impersonation, baiting, and other techniques.",
+      "evidence": "Social engineering is an attempt to trick an individual  into revealing information\nor taking an action that can be used to breach , compromise , or otherwise adversely impact  a\nsystem.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_033"
+    },
+    {
+      "question": "What approach does NIST SP 800-53 recommend for detecting advanced persistent threats?",
+      "answer": "NIST SP 800-53 recommends providing specific literacy training for individuals as an effective way to detect APTs and preclude successful attacks, including educating individuals on the various ways APTs can infiltrate the organization.",
+      "evidence": "An effective way to detect advanced persistent threats (APT)  and to preclude\nsuccess ful attacks  is to provide specific literacy  training for individuals.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_034"
+    },
+    {
+      "question": "What wireless technologies are mentioned in the AC-18 control?",
+      "answer": "The AC-18 (Wireless Access) control mentions microwave, packet radio (ultra-high frequency or very high frequency), 802.11x, and Bluetooth as wireless technologies.",
+      "evidence": "Wireless technologies include  microwave, packet radio (ultra -high frequency or very\nhigh frequency), 802.11x, and Bluetooth.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_035"
+    },
+    {
+      "question": "What skills are required of control assessors according to the CA-2 control?",
+      "answer": "Organizations must ensure that control assessors possess the required skills and technical expertise to develop effective assessment plans and to conduct assessments of system-specific, hybrid, common, and program management controls.",
+      "evidence": "Organizations ensure that control assessors possess the required skills and technical\nexpertise to develop effective assessment plans and to conduct assessments of system -specific,\nhybrid, common, and program management  controls, as ap propriate.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_036"
+    },
+    {
+      "question": "What is the purpose of plans of action and milestones?",
+      "answer": "Plans of action and milestones are useful for any type of organization to track planned remedial actions, documenting the planned remediation actions to correct weaknesses or deficiencies noted during control assessments and to reduce or eliminate known vulnerabilities.",
+      "evidence": "Plans of action and milestones are useful for any type of organization to track\nplanned remedial actions.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_037"
+    },
+    {
+      "question": "What does NIST SP 800-53 state about organizational due diligence regarding risk management?",
+      "answer": "Organizations must exercise due diligence in managing information security and privacy risk, accomplished in part by establishing a comprehensive risk management program using the flexibility inherent in NIST publications.",
+      "evidence": "Organizations must exercise  due diligence in managing information security  and privacy risk.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_038"
+    },
+    {
+      "question": "How does NIST SP 800-53 describe the policy-neutrality of its controls?",
+      "answer": "The security and privacy controls in the catalog are policy-, technology-, and sector-neutral, meaning they focus on the fundamental measures necessary to protect information and the privacy of individuals across the information life cycle.",
+      "evidence": "the security and privacy controls in the catalog  are policy -,\ntechnolog y-, and sector -neutral , meaning that the controls focus on the fundamental measures\nnecessary to protect information and the privacy of individuals across the information life cycle .",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_039"
+    },
+    {
+      "question": "What examples of system account types does NIST SP 800-53 provide?",
+      "answer": "NIST SP 800-53 provides examples of system account types including individual, shared, group, system, guest, anonymous, emergency, developer, temporary, and service accounts.",
+      "evidence": "Examples of system account types include individual, shared, group, system, guest,\nanonymous, emergency, developer, temporary, and service.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_040"
+    },
+    {
+      "question": "Under what statutory authority was NIST SP 800-53 developed?",
+      "answer": "NIST SP 800-53 was developed under NIST's statutory responsibilities under the Federal Information Security Modernization Act (FISMA), 44 U.S.C. Section 3551 et seq., Public Law 113-283.",
+      "evidence": "This publication has been developed by NIST to further its statutory responsibilities under the\nFederal Information Security Modernization Act (FISMA), 44 U.S.C. \u00a7 3551 et seq. , Public Law\n(P.L.) 113 -283.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_041"
+    },
+    {
+      "question": "What are the three approaches to implementing controls described in NIST SP 800-53?",
+      "answer": "The three approaches to implementing controls are: (1) a common (inheritable) control implementation approach, (2) a system-specific control implementation approach, and (3) a hybrid control implementation approach.",
+      "evidence": "There are three approaches to implementing the controls in Chapter Three : (1) a  common\n(inheritable) control  implementation approach , (2) a  system -specific control  implementation\napproach , and (3) a  hybrid  control  implementation approach .",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_043"
+    },
+    {
+      "question": "What risk is introduced when controls are implemented as common controls?",
+      "answer": "Implementing controls as common controls can introduce the risk of a single point of failure, since a compromise of the common control could affect all systems that inherit from it.",
+      "evidence": "Implementing controls as common controls can introduce the risk of a single point of failure.",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_044"
+    },
+    {
+      "question": "What is a hybrid control and how is it implemented?",
+      "answer": "A hybrid control is one where one part of the control is common (inheritable) and the other part is system-specific. The common control provider is responsible for the common part, and the system owner is responsible for the system-specific part.",
+      "evidence": "Organizations can\nimplement  a control as  hybrid if one part of the control is common  (inheritable) and the other\npart is system -specific.",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_045"
+    },
+    {
+      "question": "What five sections make up the structure of a security or privacy control?",
+      "answer": "Security and privacy controls have the following structure: a base control section, a discussion section, a related controls section, a control enhancements section, and a references section.",
+      "evidence": "Security and privacy control s have the following  structure : a base control  section , a discussion\nsection,  a related controls  section , a control enhancements  section,  and a references  section .",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_046"
+    },
+    {
+      "question": "How do assignment and selection operations provide flexibility in controls?",
+      "answer": "Assignment operations allow complete flexibility in the designation of parameter values, while selection operations narrow the range of potential values by providing a specific list of items from which organizations choose. Both are enclosed by brackets within controls.",
+      "evidence": "In contrast to\nassignment operations  which allow complete flexibility in the designation of parameter values,\nselection operati ons narrow the range of potential values by providing a specific list of items\nfrom which organizations choose.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_047"
+    },
+    {
+      "question": "What is the purpose of iteration in the context of security controls?",
+      "answer": "Iteration allows organizations to use a control multiple times with different assignment and selection values, perhaps being applied in different situations or when implementing multiple policies, such as addressing different risks for each system and environment of operation.",
+      "evidence": "Iteration allows organizations to use a\ncontrol multiple times with different assignment and selection values, perhaps being applied in\ndifferent situations or when implementing multiple policies.",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_048"
+    },
+    {
+      "question": "What were the most significant changes made in NIST SP 800-53 Revision 5?",
+      "answer": "Key changes include making controls more outcome-based by removing the responsible entity from control statements, integrating security and privacy controls into a seamless catalog, establishing a new supply chain risk management control family, separating control selection processes from controls, and removing control baselines to SP 800-53B.",
+      "evidence": "Making the controls more outcome -based  by removing the entity responsible for satisfying\nthe control (i.e ., information system, organization) from the control statement;\n\u2022 Integrating information security and privacy controls into a seamless, consolidated control\ncatalog for information systems and organizations;\n\u2022 Establishing a new supply chain risk management control family;",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_050"
+    },
+    {
+      "question": "Where were the control baselines relocated to in Revision 5?",
+      "answer": "The control baselines previously included in NIST SP 800-53 were relocated to NIST Special Publication 800-53B, which contains security and privacy control baselines for federal information systems and organizations.",
+      "evidence": "The control baselines that have previously been included in NIST Special Publication 800- 53 have\nbeen relocated to NIST Special Publication 800 -53B. SP 800- 53B contains security and privacy\ncontrol baselines for federal information systems and organizations.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_051"
+    },
+    {
+      "question": "How do temporary and emergency accounts differ from infrequently used accounts?",
+      "answer": "Temporary and emergency accounts are intended for short-term use with automatic disabling or removal dates. Emergency accounts may bypass normal authorization processes for rapid activation. In contrast, infrequently used accounts (including local logon accounts for special tasks) remain available and are not subject to automatic disabling or removal dates.",
+      "evidence": "Emergency and temporary accounts are not to be confused with infrequently used\naccounts, including local logon accounts used for special tasks or when network resources are\nunavailable (may also be known as accounts of last resort). Such accounts remain available and\nare not subject to automatic disabling or removal dates.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_053"
+    },
+    {
+      "question": "What is dynamic privilege management and how does it contrast with static access control?",
+      "answer": "Dynamic privilege management relies on runtime access control decisions, such as attribute-based access control, rather than static accounts and predefined user privileges. It can include mechanisms like immediate revocation of privileges and automatic adjustments based on dynamic rules, rather than requiring users to restart sessions.",
+      "evidence": "In contrast to access control approaches that employ static accounts and\npredefined user privileges, dynamic access control approaches rely on runtime access control decisions facilitated by dynamic privilege management , such as attribute -based\naccess co ntrol.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_054"
+    },
+    {
+      "question": "What types of privileged roles are identified in the AC-2(7) control enhancement?",
+      "answer": "Privileged roles include key management, account management, database administration, system and network administration, and web administration. These are organization-defined roles assigned to individuals that allow them to perform certain security-relevant functions.",
+      "evidence": "Privileged roles are organization -defined roles assigned to individuals that allow\nthose individuals to perform certain security -relevant functions that ordinary users are not\nauthorized to perform. Privileged roles include key management, account management,\ndatabase administration, system and network administration, and web administration.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_055"
+    },
+    {
+      "question": "Why does disabling expired and inactive accounts support security?",
+      "answer": "Disabling expired, inactive, or otherwise anomalous accounts supports the concepts of least privilege and least functionality, which reduce the attack surface of the system.",
+      "evidence": "Disabling expired, inactive, or otherwise anomalous accounts supports the\nconcept s of least privilege and least functionality which reduce the attack surface of the\nsystem.",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_056"
+    },
+    {
+      "question": "What does the AC-3 access enforcement control require?",
+      "answer": "The AC-3 control requires enforcing approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
+      "evidence": "Enforce approved authorizations for logical access to information and system resources\nin accordance with applicable access control policies.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_057"
+    },
+    {
+      "question": "What are active and passive entities in the context of access control?",
+      "answer": "Active entities (subjects) are typically associated with individuals, devices, or processes acting on behalf of individuals. Passive entities (objects) are typically associated with data structures such as records, buffers, tables, files, inter-process pipes, and communications ports.",
+      "evidence": "Active entities, also known as subjects, are associated with individuals, devices, or\nprocesses acting on behalf of individuals. Passive entities, also known as objects, are associated\nwith data structures , such as records, buffers, communications ports, tables, files,  and inter -\nprocess pipes.",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_058"
+    },
+    {
+      "question": "What is security-relevant information and when can it be accessed according to AC-3(5)?",
+      "answer": "Security-relevant information includes access control lists, filtering rules for routers or firewalls, configuration parameters for security services, and cryptographic key management information. It should only be accessed during secure, non-operable system states such as when systems are offline for maintenance, boot-up, troubleshooting, or shut down.",
+      "evidence": "Security- relevant information includes access control lists,\nfiltering rules for routers or firewalls, configuration parameters for security services , and\ncryptographic key management information. Secure, non- opera ble system states include  the\ntimes in which systems are not performing mission  or business -related processing , such as\nwhen  the system is offline for maintenance, boot- up, troubleshooting, or shut down.",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_059"
+    },
+    {
+      "question": "How does mandatory access control relate to discretionary access control?",
+      "answer": "Mandatory access control can operate in conjunction with discretionary access control, but mandatory access control policies take precedence over the less rigorous constraints of discretionary access control. A subject constrained by mandatory access control can still operate under discretionary access control constraints.",
+      "evidence": "A subject constrained in its operation by mandatory access control policies can still operate\nunder the les s rigorous constraints of AC- 3(4), but mandatory access control policies take\nprecedence over the less rigorous constraints of AC- 3(4).",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_060"
+    },
+    {
+      "question": "What examples of mandatory access control policies are mentioned in NIST SP 800-53?",
+      "answer": "Examples of mandatory access control policies include the Bell-LaPadula policy to protect confidentiality of information and the Biba policy to protect the integrity of information.",
+      "evidence": "Examples of mandatory access control policies include the Bell -LaPadula\npolicy to protect confidentiality of information and the Biba policy to protect the integrity of\ninformation.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_061"
+    },
+    {
+      "question": "What is the purpose of one-way flow mechanisms in information flow enforcement?",
+      "answer": "One-way flow mechanisms, also referred to as unidirectional networks, unidirectional security gateways, or data diodes, can be used to prevent data from being exported from a higher impact or classified domain while permitting data from a lower impact or unclassified domain to be imported.",
+      "evidence": "One-way flow mechanisms may also be referred to as a unidirectional network,\nunidirectional security gateway, or data diode. One -way flow mechanisms can be used to\nprevent data from being exported from a higher impact or classified domain or system while\npermitting data from a lower impact or unclassified domain or system to be imported .",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_062"
+    },
+    {
+      "question": "What is metadata and how does it relate to information flow control?",
+      "answer": "Metadata is information that describes the characteristics of data. It can include structural metadata describing data structures or descriptive metadata describing data content. Enforcement of allowed information flows based on metadata enables simpler and more effective flow control.",
+      "evidence": "Metadata is information that describe s the characteristics of data. Metadata can\ninclude  structural metadata describing data structures or descriptive m etadata describing\ndata content. Enforcement of  allowed information flows based on metadata enables simpler\nand more effective flow control.",
+      "question_type": "definitional",
+      "qa_id": "nist_800_53_063"
+    },
+    {
+      "question": "What system use notification information must be displayed to users according to AC-8?",
+      "answer": "System use notifications must inform users that they are accessing a U.S. Government system, that system usage may be monitored, recorded, and subject to audit, that unauthorized use is prohibited and subject to criminal and civil penalties, and that use of the system indicates consent to monitoring and recording.",
+      "evidence": "1. Users are accessing a U.S. Government  system;\n2. System usage may be monitored, recorded, and subject to audit;\n3. Unauthorized use of the system is prohibited and subject to criminal and civil penalties;\nand\n4. Use of the system indicates consent to monitoring and recording;",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_065"
+    },
+    {
+      "question": "What is information labeling and how does it differ from marking?",
+      "answer": "Labeling refers to the association of attributes with subjects and objects represented by internal data structures within systems, facilitating system-based enforcement. Marking refers to the association of attributes with objects in a human-readable form and displayed on system media, enabling manual, procedural, or process-based enforcement.",
+      "evidence": "Labeling refers to the association of attributes with the subjects\nand objects  represented by the internal data str uctures within systems. This facilitates system -\nbased enforcement of information security and privacy policies. Labels include  classification of\ninformation in accordance with legal and compliance requirements",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_070"
+    },
+    {
+      "question": "Why is reducing wireless transmission power levels recommended in AC-18(5)?",
+      "answer": "Reducing the power of wireless transmissions reduces the likelihood that signals from wireless access points can be received outside of organization-controlled boundaries, thereby limiting unauthorized use of wireless communications. Organizations can also employ directional or beamforming antennas and emissions security measures.",
+      "evidence": "Select radio antennas and calibrate transmission power levels to reduce the probability\nthat signals from wireless access points can be received outside of organization -controlled\nboundarie s.",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_071"
+    },
+    {
+      "question": "What types of VPN connections are discussed in the context of remote access?",
+      "answer": "Organizations use encrypted virtual private networks (VPNs) to enhance confidentiality and integrity for remote connections. The use of encrypted VPNs provides sufficient assurance to treat such connections as internal networks, though VPN connections still traverse external networks and do not enhance the availability of remote connections.",
+      "evidence": "Organizations use  encr ypted virtual private networks\n(VPNs) to enhance confidentiality and integrity for  remote connections. The use of encrypted\nVPNs provides sufficient assurance to the organization that it can effectively treat such\nconnections as internal networks if the cr yptographic mechanisms used are implemented in\naccordance with applicable laws",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_072"
+    },
+    {
+      "question": "What does the AC-22 publicly accessible content control require organizations to do?",
+      "answer": "AC-22 requires organizations to designate individuals authorized to make information publicly accessible, train them to ensure nonpublic information is excluded, review proposed content before posting, and periodically review posted content to remove any nonpublic information discovered.",
+      "evidence": "a. Designate individuals authorized to make  information publicly accessible;\nb. Train authorized individuals to ensure that publicly accessible information does not contain\nnonpublic information;\nc. Review the proposed content of information prior to posting onto the publicly accessible\nsystem to ensure that nonpublic information is not included; and\nd. Review the content on the publicly accessible system for nonpublic information [Assignment: organization- defined frequency ] and remove such information, if discovered.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_073"
+    },
+    {
+      "question": "What is the purpose of the AT-2 literacy training and awareness control?",
+      "answer": "AT-2 requires providing security and privacy literacy training to system users (including managers, senior executives, and contractors) as part of initial training for new users and periodically thereafter, employing awareness techniques, updating content regularly, and incorporating lessons learned from security incidents or breaches.",
+      "evidence": "Provide security and privacy literacy  training to system users (including managers, senior\nexecutives, and contractors):\n1. As part of initial training for new users  and [ Assignment: organization- defined\nfrequency ] thereafter; and\n2. When  required by system changes  or following [Assignment: organization- defined\nevents ];",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_076"
+    },
+    {
+      "question": "What awareness techniques does NIST SP 800-53 recommend for security and privacy?",
+      "answer": "Awareness techniques include displaying posters, offering supplies inscribed with security and privacy reminders, displaying logon screen messages, generating email advisories or notices from organizational officials, and conducting awareness events.",
+      "evidence": "Awareness techniques include  displaying posters, offering supplies inscribed with security and\nprivacy reminders, displaying logon screen messages, generating email advisories or notices from\norgani zational officials, and conducting awareness events.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_077"
+    },
+    {
+      "question": "What are potential indicators of insider threat according to NIST SP 800-53?",
+      "answer": "Potential indicators and possible precursors of insider threat include behaviors such as inordinate, long-term job dissatisfaction; attempts to gain access to information not required for job performance; unexplained access to financial resources; bullying or harassment of fellow employees; workplace violence; and other serious violations of policies.",
+      "evidence": "Potential indicators and possible precursors of insider threat can include\nbehaviors such as inordinate, long -term job dissatisfaction ; attempts to gain access to\ninformation not required for job performance ; unexplained access to financial resources ;\nbullying or harassment of fellow employees ; workplace violence ; and other serious violations\nof policies, procedures, directives, regulations, rules, or practices.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_078"
+    },
+    {
+      "question": "What social engineering methods does AT-2(3) identify?",
+      "answer": "AT-2(3) identifies social engineering methods including phishing, pretexting, impersonation, baiting, quid pro quo, thread-jacking, social media exploitation, and tailgating. Social mining is also mentioned as an attempt to gather information about the organization.",
+      "evidence": "Social engineering include s phishing, pretexting, impersonation, baiting, quid pro\nquo, thread -jacking, social media exploitation, and tailgating . Social mining is an attempt  to\ngather information about the organization that may be used to support future attacks.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_080"
+    },
+    {
+      "question": "What types of training are listed for role-based training in AT-3?",
+      "answer": "Types of role-based training include web-based and computer-based training, classroom-style training, and hands-on training (including micro-training). Training covers management, operational, and technical roles and responsibilities.",
+      "evidence": "Types  of training  include  web -based and computer -based training ,\nclassroom -style training , and ha nds-on training (including micro -training).",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_081"
+    },
+    {
+      "question": "What does the AT-4 training records control require?",
+      "answer": "AT-4 requires documenting and monitoring information security and privacy training activities, including both awareness training and specific role-based training, and retaining individual training records for an organization-defined time period.",
+      "evidence": "a. Document and monitor information security and privacy training activities , including security\nand privacy awareness training and specific role -based se curity and privacy training; and\nb. Retain individual training records for [ Assignment: organization- defined time  period ].",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_082"
+    },
+    {
+      "question": "What event types are examples of events that require logging according to AU-2?",
+      "answer": "Event types include password changes, failed logons or failed accesses related to systems, security or privacy attribute changes, administrative privilege usage, PIV credential usage, data action changes, query parameters, and external credential usage.",
+      "evidence": "Event\ntypes include  password changes , failed logons or failed accesses related to systems,  security or\nprivacy attribute changes , administrative privilege usage , PIV credential usage , data action\nchanges , query parameters , or external credential usage.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_084"
+    },
+    {
+      "question": "Why might organizations not activate all event logging capabilities at all times?",
+      "answer": "Organizations may not activate all logging capabilities due to the potential burden on system performance. To balance monitoring and auditing requirements with other system needs, event logging requires identifying the subset of event types that are logged at a given point in time.",
+      "evidence": "For example, organizations may determine that systems need the capability to log every file access\nsuccessful and unsuccessful, but not activate that capability except for specific circumstances due\nto the potential burden on system performance.",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_085"
+    },
+    {
+      "question": "What does the AU-9 protection of audit information control require?",
+      "answer": "AU-9 requires protecting audit information and audit logging tools from unauthorized access, modification, and deletion, and alerting designated personnel or roles upon detection of unauthorized access, modification, or deletion of audit information.",
+      "evidence": "a. Protect audit information and audit logging tools from unauthorized access, modification,\nand deletion ; and\nb. Alert [ Assignment: organization- defined personnel or roles ] upon detection of unauthorized\naccess, modification, or deletion of audit information.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_087"
+    },
+    {
+      "question": "What types of write-once media are mentioned for audit trails?",
+      "answer": "Write-once, read-many (WORM) media includes Compact Disc-Recordable (CD-R), Blu-Ray Disc Recordable (BD-R), and Digital Versatile Disc-Recordable (DVD-R). Switchable write-protection media like tape cartridges, USB drives, CD-RW, and DVD-RW result in write-protected but not write-once media.",
+      "evidence": "Write -once, read -\nmany (WORM) media includes  Compact Dis c-Recordable (C D-R), Blu -Ray Disc Recordable\n(BD-R), and Digital Versatile  Disc-Recordable (DVD- R). In contrast, the use of switchable\nwrite -protection media , such as tape cartridges , Universal Serial Bus (USB) drives , Compact\nDisc Re -Writeable (CD -RW), and Digital Versa tile Disc -Read Write (DVD- RW) results in write -\nprotected but not write -once media.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_088"
+    },
+    {
+      "question": "Why should audit records be stored on a physically separate system?",
+      "answer": "Storing audit records in a repository separate from the audited system helps ensure that a compromise of the system being audited does not also result in a compromise of the audit records. It also preserves the confidentiality and integrity of audit records and facilitates organization-wide management.",
+      "evidence": "Storing audit records  in a repository separate from the audited system or system\ncomponent helps to ensure that a compromise of the system being audited does not also\nresult in a compromise of the audit records. Storing audit records on separate physical\nsystems or components also preserves the confidentiality and integrity of audit records and\nfacilitates the  management of audit records as an organization -wide activity.",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_089"
+    },
+    {
+      "question": "What is the purpose of audit record retention according to AU-11?",
+      "answer": "Audit records are retained for an organization-defined time period to provide support for after-the-fact investigations of incidents and to meet regulatory and organizational information retention requirements, including FOIA requests, subpoenas, and law enforcement actions.",
+      "evidence": "Retain audit records for [ Assignment: organization- defined time  period consistent with\nrecords retention policy] to provide support for after -the-fact investigations of incidents and to\nmeet regulatory and organizational information retention requirements.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_090"
+    },
+    {
+      "question": "What are audit logging process failures and what actions can be taken in response?",
+      "answer": "Audit logging process failures include software and hardware errors, failures in audit log capturing mechanisms, and reaching or exceeding audit log storage capacity. Organization-defined actions include overwriting oldest audit records, shutting down the system, and stopping the generation of audit records.",
+      "evidence": "Discussion :  Audit logging process failures include  software and hardware errors , failures in audit\nlog capturing mechanisms , and reaching or exceeding audit log storage capacity. Organization -\ndefined actions include  overwriting oldest audit records , shutting down the system , and stopping",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_091"
+    },
+    {
+      "question": "How can correlating audit information with vulnerability scanning enhance security?",
+      "answer": "Correlating audit record information with vulnerability scanning information is important for determining the veracity of vulnerability scans and correlating attack detection events with scanning results. Correlation with performance data can also uncover denial-of-service attacks or other unauthorized use of resources.",
+      "evidence": "The correlation of audit record information  with vulnerability\nscanning information is important in determining the veracity of vulnerability scans of the system and in correlating attack detection events with scanning results. Correlation with\nperformance data can uncover denial -of-service attacks  or other types of attacks that result\nin the unauthorized use of resources.",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_093"
+    },
+    {
+      "question": "What does cross-organizational audit logging require?",
+      "answer": "Cross-organizational audit logging requires coordinated methods for handling audit information transmitted across organizational boundaries. It often captures the identity of individuals who issue requests at the initial system while subsequent systems record that the requests originated from authorized individuals.",
+      "evidence": "it is often the case that cross -organizational audit logging  simply\ncaptures the identity of individuals who issue requests at the initial system, and su bsequent\nsystems record that the requests originated  from authorized individuals.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_094"
+    },
+    {
+      "question": "What types of information exchange agreements are listed in the CA-3 control?",
+      "answer": "The CA-3 control lists interconnection security agreements, information exchange security agreements, memoranda of understanding or agreement, service level agreements, user agreements, and nondisclosure agreements as types of exchange agreements.",
+      "evidence": "a. Approve and manage the exchange of information between the system and other systems\nusing [ Selection (one or more): interconnection security agreements; information exchange\nsecurity agreements; memoranda of understanding or agreement; service level agreements;",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_097"
+    },
+    {
+      "question": "What is the role of nontechnical sources in audit record analysis?",
+      "answer": "Nontechnical sources include records that document organizational policy violations related to harassment incidents and the improper use of information assets. This information can lead to a directed analytical effort to detect potential malicious insider activity when correlated with audit record information.",
+      "evidence": "Nontechnical sources include  records that document organizational policy\nviolations related to harassment incidents and  the improper use of  information assets. Such\ninformation can lead to a directed analytical effort to detect potential malicious insider\nactivity.",
+      "question_type": "factual",
+      "qa_id": "nist_800_53_099"
+    },
+    {
+      "question": "Under what condition do NIST standards and guidelines not apply to national security systems?",
+      "answer": "NIST standards and guidelines shall not apply to national security systems without the express approval of the appropriate federal officials exercising policy authority over such systems.",
+      "evidence": "Such information security\nstandards and guidelines shall not apply to national security systems without the express\napproval of the appropriate federal officials exercising policy authority over such systems.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_100"
+    },
+    {
+      "question": "How should the NIST SP 800-53 guidelines be interpreted with respect to existing federal authorities?",
+      "answer": "The guidelines should not be interpreted as altering or superseding the existing authorities of the Secretary of Commerce, OMB Director, or any other federal official.",
+      "evidence": "Nor should these guidelines be interpreted as altering or superseding the existing\nauthorities of the Secretary of Commerce, OMB Director, or any other federal official.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_101"
+    },
+    {
+      "question": "Why do current requirements and procedures remain operative during the development of new NIST publications?",
+      "answer": "Until each publication is completed, current requirements, guidelines, and procedures remain operative because the new publications have not yet been finalized. Federal agencies may wish to closely follow the development of new publications for planning and transition purposes.",
+      "evidence": "Thus, until each publication is completed, current\nrequirements, guidelines, and procedures, where they exist, remain operative. For planning and\ntransition purposes, federa l agencies may wish to closely follow the development of these new\npublications by NIST.",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_102"
+    },
+    {
+      "question": "Which NIST SP 800-53 control families specifically address supply chain and system acquisition risks?",
+      "answer": "The publication provides controls in the System and Services Acquisition (SA) and Supply Chain Risk Management (SR) families that are specifically directed at addressing supply chain and acquisition-related risks.",
+      "evidence": "Accordingly, this publica tion provides controls in the System\nand Services Acquisition (SA) and Supply Chain Risk Management (SR) families that are directed\nat developers .",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_103"
+    },
+    {
+      "question": "What does NIST SP 800-53 identify as an urgent need regarding critical infrastructure systems and products?",
+      "answer": "There is an urgent need to further strengthen the underlying systems, products, and services that are depended upon in every sector of the critical infrastructure to ensure that those systems and products are sufficiently trustworthy and resilient.",
+      "evidence": "an urgent need to further strengthen the underlying systems, products, and services that we\ndepend on in every sector of the critical infrastructure to ensur e that  those systems, products ,\nand services are sufficiently trustworthy and provide the necessary resilience to support the\neconomic and national security interests of th e United States.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_104"
+    },
+    {
+      "question": "What must leaders consider through the process of risk management regarding cyberspace according to NIST SP 800-53?",
+      "answer": "Through the process of risk management, leaders must consider risk to US interests from adversaries using cyberspace to their advantage and from their own efforts to employ the global nature of cyberspace.",
+      "evidence": "\u201c\u2026Through the process of risk management, leaders must consider risk to US interests from\nadversaries using cyberspace to their advantage and from our own efforts to employ the global\nnature of cyberspace to achieve obje ctives in military, intelligence, and business operations\u2026 \u201c",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_105"
+    },
+    {
+      "question": "What combination of factors must be evaluated during operational plans development to identify important trends?",
+      "answer": "For operational plans development, the combination of threats, vulnerabilities, and impacts must be evaluated in order to identify important trends and decide where effort should be applied to eliminate or reduce threat capabilities and vulnerabilities.",
+      "evidence": "\u201c\u2026For operational plans development, the combination of threats, vulnerabilities, and impacts must be evaluated in order to identify important trends and decide where effort should be applied t o eliminate or reduce threat capabilities; eliminate or reduce vulnerabilities; and assess,\ncoordinate, and deconflict all cyberspace operations\u2026\u201d",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_106"
+    },
+    {
+      "question": "How should system designers account for individuals when developing privacy-respecting solutions?",
+      "answer": "System designers need to account for individuals as stakeholders in the overall development of the solution, and designing for privacy must connect individuals' privacy desires with system requirements and controls.",
+      "evidence": "System designers need to account for individuals as stakeholders in the overall development of\nthe solution.\u2026Designing for privacy must connect individuals\u2019 privacy desires with system\nrequirements and controls in a way that effectively bridges the aspirations wi th development\u2026.\u201d",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_107"
+    },
+    {
+      "question": "What trend regarding personal information collection has increased the challenge of privacy protection?",
+      "answer": "The vast increase in the quantity of personal information that is being collected and retained, combined with the increased ability to analyze and process that information, has heightened privacy challenges for organizations.",
+      "evidence": "However, the vast increase in the quantity\nof personal information that is being collected and retained, combined with the increased ability\nto analyze it and combine it with other information, is creat ing valid concerns about privacy and\nabout the ability of entities to manage these unprecedented volumes of data responsibly\u2026.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_108"
+    },
+    {
+      "question": "What key questions should organizations answer when addressing information security and privacy controls?",
+      "answer": "Organizations should answer several key questions, including what security and privacy controls are needed to satisfy security and privacy requirements for their systems and organization.",
+      "evidence": "Organizations should answer  several key questions  when\naddressing information security  and privac y controls :\n\u2022 What security and privacy controls are needed to satisfy security and privacy requirements\nand to adequately manage mission/business risks or risks to indiv iduals ?",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_109"
+    },
+    {
+      "question": "Can the controls in NIST SP 800-53 be applied to national security systems, and under what conditions?",
+      "answer": "Yes, the controls established in the publication may be selected for national security systems as otherwise required by law (e.g., the Privacy Act of 1974) or with the approval of federal officials exercising policy authority over such systems.",
+      "evidence": "However, the controls established in this publication may be selected\nfor national security systems as otherwise required (e.g., the Privacy Act of 1974) or with the approval of federal\nofficials exercising policy authority over such systems.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_110"
+    },
+    {
+      "question": "Are the controls in NIST SP 800-53 mandatory for non-federal organizations such as state and local governments?",
+      "answer": "While the controls are mandatory for federal information systems and organizations, other organizations such as state, local, and tribal governments as well as private sector organizations are encouraged to adopt them but are not required to do so.",
+      "evidence": "12 While the controls established in this publication are mandatory for federal information systems and organizations,\nother organizations such as state, local, and tribal governments as well as private secto r organizations are encouraged\nto consider using these guidelines, as appropriate.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_111"
+    },
+    {
+      "question": "What does the control selection process in NIST SP 800-53 produce as its outcome?",
+      "answer": "The selection process results in an agreed-upon set of security and privacy controls addressing specific mission or business needs consistent with organizational risk tolerance.",
+      "evidence": "The selection process results in an agreed-upon set of security and privacy\ncontrols addressing specifi c mission or business needs consistent with organizational risk\ntolerance.",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_112"
+    },
+    {
+      "question": "Under what circumstances might organizations need additions to base control functionality or assurance?",
+      "answer": "Organizations may need additions to the base control functionality or assurance based on assessments of risk, particularly due to the potential adverse organizational or individual impacts that could result.",
+      "evidence": "The need for organizations to select and implement control enhancements  is\ndue to the potential adverse organizational or individual imp acts or when organizations require\nadditions to the base control functionality or assurance based on assessments of risk.",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_113"
+    },
+    {
+      "question": "How are control families and individual controls organized within NIST SP 800-53?",
+      "answer": "The families are arranged in alphabetical order, while the controls and control enhancements within each family are in numerical order.",
+      "evidence": "The families are arranged in alphabetical order, while the controls and control enhancements\nwithin each family are in numerical order.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_114"
+    },
+    {
+      "question": "Can control enhancements have related controls that are not referenced in the base control?",
+      "answer": "Yes, there may be related controls identified for control enhancements that are not referenced in the base control, meaning the related control is only associated with the specific control enhancement rather than the base control itself.",
+      "evidence": "However, there may be related\ncontrols identified for control enhancements that are not referenced in the base control (i.e., the related control is only associated with the specific control enhancement).",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_115"
+    },
+    {
+      "question": "How do assignment operations differ from selection operations in NIST SP 800-53 control parameters?",
+      "answer": "Assignment operations allow complete flexibility in the designation of parameter values, while selection operations narrow the range of potential values by providing a specific list of items from which organizations can choose.",
+      "evidence": "In contrast to\nassignment operations  which allow complete flexibility in the designation of parameter values,\nselection operati ons narrow the range of potential values by providing a specific list of items\nfrom which organizations choose.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_116"
+    },
+    {
+      "question": "Why are incident response controls considered good candidates for common control status?",
+      "answer": "Incident response controls are inheritable and therefore are good candidates for common control status. Common controls can also include technology-based controls such as identification and authentication mechanisms.",
+      "evidence": "response controls \u2014are inheritable  and, therefore, are good candidates for common control\nstatus. Common controls  can also include technology -based controls , such as  identification and\nauthentication controls , boundary protection controls, audit and accountability controls,  and\naccess controls .",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_117"
+    },
+    {
+      "question": "What organizational benefits result from identifying the control implementation approach early?",
+      "answer": "Identifying the control implementation approach can result in significant savings to organizations in implementation and assessment costs and a more consistent application of controls across systems.",
+      "evidence": "Identifying the control implementation approach can result in significant savings to\norganizations in implementation and ass essment costs and a more consistent application of the\ncontrols organization -wide.",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_118"
+    },
+    {
+      "question": "Why are the controls selected to manage security risks generally the same regardless of their designation as security or privacy controls?",
+      "answer": "Due to the overlap in responsibilities between security and privacy programs, the controls that organizations select to manage these security risks will generally be the same regardless of their designation as security or privacy controls in control baselines.",
+      "evidence": "Due to this overlap in\nresponsibilities, the controls that organizations select to manage these security risks will\ngenerally be the same regardless of their designation as security or privacy controls in control\nbaselines or program or system plans.",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_119"
+    },
+    {
+      "question": "How can monitoring for unauthorized access inadvertently create privacy risks?",
+      "answer": "The implementation of the control with respect to monitoring for unauthorized access could involve the processing of PII, which may result in privacy risks and affect privacy program objectives.",
+      "evidence": "However, the implementation\nof the control with respect to monitoring for unauthorized access could involve the processing\nof PII which may result in privacy risks and affect privacy program objectives.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_120"
+    },
+    {
+      "question": "Why is close collaboration between information security and privacy programs necessary for systems processing PII?",
+      "answer": "Due to permutations in the relationship between information security and privacy program objectives and risk management, there is a need for close collaboration between programs to select and implement the appropriate controls for information systems processing PII.",
+      "evidence": "Due to permutations in the relationship between information security and privacy program objectives  and risk management , there is a need for close collaboration between programs to\nselect and implement the appropriate controls for information systems processing PII.",
+      "question_type": "procedural",
+      "qa_id": "nist_800_53_121"
+    },
+    {
+      "question": "How do controls in NIST SP 800-53 vary in their focus between functionality and assurance?",
+      "answer": "Certain controls focus primarily on functionality while other controls focus primarily on assurance, and some controls can support both functionality and assurance simultaneously.",
+      "evidence": "Certain  controls focus primarily on functionality  while o ther\ncontrols focus primarily on assurance. Some controls can support functionality and assurance.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_122"
+    },
+    {
+      "question": "How does evidence of control implementation support senior leadership decision-making?",
+      "answer": "Evidence that controls are operating correctly, as intended, and satisfying security and privacy policies provides essential information for senior leaders to make informed risk-based decisions.",
+      "evidence": "Such assessments help determine whether the controls are implemented\ncorrectly, operating as intended, and satisfying security and privacy policies\u2014 thus, providing\nessential information for senior leaders to make informed  risk-based decisions.",
+      "question_type": "causal",
+      "qa_id": "nist_800_53_123"
+    },
+    {
+      "question": "What does it mean that NIST SP 800-53 controls are policy-neutral but not policy-unaware?",
+      "answer": "While the security and privacy controls are largely policy-, technology-, and sector-neutral, meaning they are broadly applicable, that does not imply they are policy-, technology-, and sector-unaware. The controls still account for and are informed by relevant policies, technologies, and sector-specific considerations.",
+      "evidence": "While the security and privacy controls are largely policy -, technology -, and sec tor-neutral, that\ndoes not imply that the controls are policy -, technology -, and sector -unaware. Understanding\npolicies, technologies, and sectors is necessary so that the controls are relevant when they are\nimplemented.",
+      "question_type": "comparative",
+      "qa_id": "nist_800_53_124"
+    }
+  ]
+}

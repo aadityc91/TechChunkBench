@@ -1,0 +1,705 @@
+{
+  "corpus_id": "basel_iii",
+  "qa_pairs": [
+    {
+      "question": "What products does Apple Inc. design, manufacture, and market, and how is its fiscal year defined?",
+      "answer": "Apple designs, manufactures, and markets smartphones, personal computers, tablets, wearables and accessories, and sells related services. Its fiscal year is the 52- or 53-week period ending on the last Saturday of September.",
+      "evidence": "The Company designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories, and sells a variety of related services. The Company\u2019s fiscal year is the 52- or 53-week period that ends on the last Saturday of September.",
+      "question_type": "definitional",
+      "qa_id": "basel_iii_001"
+    },
+    {
+      "question": "What operating system does the Mac use, and what laptops and desktops are included in the Mac line?",
+      "answer": "Mac uses the macOS operating system. The Mac line includes laptops MacBook Air and MacBook Pro, as well as desktops iMac, Mac mini, Mac Studio and Mac Pro.",
+      "evidence": "Mac\u00ae is the Company\u2019s line of personal computers based on its macOS\u00ae operating system. The Mac line includes laptops MacBook Air\u00ae and MacBook Pro\u00ae, as well as desktops iMac\u00ae, Mac mini\u00ae, Mac Studio\u00ae and Mac Pro\u00ae.",
+      "question_type": "definitional",
+      "qa_id": "basel_iii_003"
+    },
+    {
+      "question": "What are Apple's reportable geographic segments and what regions does each include?",
+      "answer": "Apple's reportable segments are Americas (North and South America), Europe (European countries, India, Middle East, Africa), Greater China (China mainland, Hong Kong, Taiwan), Japan, and Rest of Asia Pacific (Australia and other Asian countries).",
+      "evidence": "The Company manages its business primarily on a geographic basis. The Company\u2019s reportable segments consist of the Americas, Europe, Greater China, Japan and Rest of Asia Pacific. Americas includes both North and South America. Europe includes European countries, as well as India, the Middle East and Africa. Greater China includes China mainland, Hong Kong and Taiwan. Rest of Asia Pacific includes Australia and those Asian countries not included in the Company\u2019s other reportable segments. Although the reportable segments provide similar hardware and software products and similar services, each one is managed separately to better align with the location of the Company\u2019s customers and distribution partners and the unique market dynamics of each geographic region.",
+      "question_type": "definitional",
+      "qa_id": "basel_iii_005"
+    },
+    {
+      "question": "What percentage of Apple's 2023 total net sales came from direct versus indirect distribution channels?",
+      "answer": "During 2023, Apple's net sales through direct distribution channels accounted for 37% and indirect distribution channels accounted for 63% of total net sales.",
+      "evidence": "The Company\u2019s customers are primarily in the consumer, small and mid-sized business, education, enterprise and government markets. The Company sells its products and resells third-party products in most of its major markets directly to customers through its retail and online stores and its direct sales force. The Company also employs a variety of indirect distribution channels, such as third-party cellular network carriers, wholesalers, retailers and resellers. During 2023, the Company\u2019s net sales through its direct and indirect distribution channels accounted for 37% and 63%, respectively, of total net sales.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_006"
+    },
+    {
+      "question": "What are the principal competitive factors important to Apple?",
+      "answer": "Principal competitive factors include price, product and service features (including security), relative price and performance, quality and reliability, design innovation, a strong third-party ecosystem, marketing and distribution capability, service and support, and corporate reputation.",
+      "evidence": "The Company\u2019s ability to compete successfully depends heavily on ensuring the continuing and timely introduction of innovative new products, services and technologies to the marketplace. The Company designs and develops nearly the entire solution for its products, including the hardware, operating system, numerous software applications and related services. Principal competitive factors important to the Company include price, product and service features (including security features), relative price and performance, product and service quality and reliability, design innovation, a strong third-party software and accessories ecosystem, marketing and distribution capability, service and support, and corporate reputation.",
+      "question_type": "definitional",
+      "qa_id": "basel_iii_007"
+    },
+    {
+      "question": "How many full-time equivalent employees did Apple have as of September 30, 2023?",
+      "answer": "As of September 30, 2023, Apple had approximately 161,000 full-time equivalent employees.",
+      "evidence": "The Company believes it has a talented, motivated and dedicated team, and works to create an inclusive, safe and supportive environment for all of its team members. As of September 30, 2023, the Company had approximately 161,000 full-time equivalent employees.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_008"
+    },
+    {
+      "question": "What were Apple's total net sales and net income during fiscal year 2023?",
+      "answer": "Apple's total net sales were $383.3 billion and net income was $97.0 billion during 2023.",
+      "evidence": "The Company's total net sales were $383.3 billion and net income was $97.0 billion during 2023.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_009"
+    },
+    {
+      "question": "What was the size of Apple's share repurchase program announced in May 2023, and how much did it actually repurchase during 2023?",
+      "answer": "Apple announced a new share repurchase program of up to $90 billion and raised its quarterly dividend to $0.24 per share. During 2023, it repurchased $76.6 billion of common stock and paid $15.0 billion in dividends and dividend equivalents.",
+      "evidence": "In May 2023, the Company announced a new share repurchase program of up to $90 billion and raised its quarterly dividend from $0.23 to $0.24 per share beginning in May 2023. During 2023, the Company repurchased $76.6 billion of its common stock and paid dividends and dividend equivalents of $15.0 billion.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_011"
+    },
+    {
+      "question": "How did iPhone net sales change in 2023 compared to 2022?",
+      "answer": "iPhone net sales decreased 2% or $4.9 billion during 2023 compared to 2022, due to lower net sales of non-Pro iPhone models partially offset by higher net sales of Pro iPhone models.",
+      "evidence": "iPhone net sales decreased 2% or $4.9 billion during 2023 compared to 2022 due to lower net sales of non-Pro iPhone models, partially offset by higher net sales of Pro iPhone models.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_012"
+    },
+    {
+      "question": "By how much did Mac net sales decline in 2023 compared to 2022 and what was the primary cause?",
+      "answer": "Mac net sales decreased 27% or $10.8 billion during 2023 compared to 2022, due primarily to lower net sales of laptops.",
+      "evidence": "Mac net sales decreased 27% or $10.8 billion during 2023 compared to 2022 due primarily to lower net sales of laptops.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_013"
+    },
+    {
+      "question": "What factors caused the decrease in Products gross margin in 2023 compared to 2022?",
+      "answer": "Products gross margin decreased due to the weakness in foreign currencies relative to the U.S. dollar and lower Products volume, partially offset by cost savings and a different Products mix.",
+      "evidence": "Products gross margin decreased during 2023 compared to 2022 due to the weakness in foreign currencies relative to the U.S. dollar and lower Products volume, partially offset by cost savings and a different Products mix.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_015"
+    },
+    {
+      "question": "What was the aggregate principal amount of Apple's outstanding fixed-rate notes as of September 30, 2023?",
+      "answer": "Apple had outstanding fixed-rate notes with an aggregate principal amount of $106.6 billion, with $9.9 billion payable within 12 months. Future interest payments totaled $41.1 billion.",
+      "evidence": "As of September 30, 2023, the Company had outstanding fixed-rate notes with varying maturities for an aggregate principal amount of $106.6 billion (collectively the \u201cNotes\u201d), with $9.9 billion payable within 12 months. Future interest payments associated with the Notes total $41.1 billion, with $2.9 billion payable within 12 months.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_017"
+    },
+    {
+      "question": "What were Apple's manufacturing purchase obligations as of September 30, 2023?",
+      "answer": "Apple had manufacturing purchase obligations of $53.1 billion, with $52.9 billion payable within 12 months. These obligations are primarily noncancelable.",
+      "evidence": "The Company utilizes several outsourcing partners to manufacture subassemblies for the Company\u2019s products and to perform final assembly and testing of finished products. The Company also obtains individual components for its products from a wide variety of individual suppliers. As of September\u00a030, 2023, the Company had manufacturing purchase obligations of $53.1 billion, with $52.9 billion payable within 12 months. The Company\u2019s manufacturing purchase obligations are primarily noncancelable.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_018"
+    },
+    {
+      "question": "How does Apple allocate revenue to multiple performance obligations?",
+      "answer": "Apple allocates revenue to all distinct performance obligations based on their relative stand-alone selling prices (SSPs). When observable prices are available, they are used; otherwise, SSPs are estimated based on what the selling prices would be on a stand-alone basis.",
+      "evidence": "For arrangements with multiple performance obligations, which represent promises within an arrangement that are distinct, the Company allocates revenue to all distinct performance obligations based on their relative stand-alone selling prices (\u201cSSPs\u201d). When available, the Company uses observable prices to determine SSPs. When observable prices are not available, SSPs are established that reflect the Company\u2019s best estimates of what the selling prices of the performance obligations would be if they were sold regularly on a stand-alone basis. The Company\u2019s process for estimating SSPs without observable prices considers multiple factors that may vary depending upon the unique facts and circumstances related to each performance obligation including, where applicable, prices charged by the Company for similar offerings, market trends in the pricing for similar offerings, product-specific business objectives and the estimated cost to provide the performance obligation.",
+      "question_type": "procedural",
+      "qa_id": "basel_iii_021"
+    },
+    {
+      "question": "What inventory measurement method does Apple use?",
+      "answer": "Apple measures inventories using the first-in, first-out (FIFO) method.",
+      "evidence": "Inventories are measured using the first-in, first-out method.",
+      "question_type": "procedural",
+      "qa_id": "basel_iii_022"
+    },
+    {
+      "question": "How does Apple define cash equivalents?",
+      "answer": "Apple treats all highly liquid investments with maturities of three months or less at the date of purchase as cash equivalents.",
+      "evidence": "All highly liquid investments with maturities of three months or less at the date of purchase are treated as cash equivalents.",
+      "question_type": "definitional",
+      "qa_id": "basel_iii_023"
+    },
+    {
+      "question": "What method does Apple use to determine the cost of securities sold?",
+      "answer": "Apple determines the cost of securities sold using the specific identification method.",
+      "evidence": "The cost of securities sold is determined using the specific identification method.",
+      "question_type": "procedural",
+      "qa_id": "basel_iii_024"
+    },
+    {
+      "question": "What was Apple's total deferred revenue as of September 30, 2023, and when does it expect to realize it?",
+      "answer": "Apple had total deferred revenue of $12.1 billion as of September 30, 2023. It expects 67% to be realized in less than a year, 25% within one-to-two years, 7% within two-to-three years, and 1% in greater than three years.",
+      "evidence": "As of September 30, 2023 and September 24, 2022, the Company had total deferred revenue of $12.1 billion and $12.4 billion, respectively. As of September 30, 2023, the Company expects 67% of total deferred revenue to be realized in less than a year, 25% within one-to-two years, 7% within two-to-three years and 1% in greater than three years.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_025"
+    },
+    {
+      "question": "How many RSUs were excluded from diluted earnings per share computation in 2023 and why?",
+      "answer": "Approximately 24 million RSUs were excluded from the computation of diluted earnings per share for 2023 because their effect would have been antidilutive.",
+      "evidence": "Approximately 24 million restricted stock units (\u201cRSUs\u201d) were excluded from the computation of diluted earnings per share for 2023 because their effect would have been antidilutive.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_026"
+    },
+    {
+      "question": "How does Apple classify its investments in marketable debt securities?",
+      "answer": "Apple classifies and accounts for its marketable debt securities as available-for-sale, and classifies them as current or non-current based solely on each instrument's underlying contractual maturity date.",
+      "evidence": "The Company's investments in marketable debt securities have been classified and accounted for as available-for-sale. The Company classifies marketable debt securities as either current or non-current based solely on each instrument's underlying contractual maturity date.",
+      "question_type": "procedural",
+      "qa_id": "basel_iii_028"
+    },
+    {
+      "question": "What was the European Commission's State Aid Decision regarding Apple?",
+      "answer": "In August 2016, the European Commission decided that Ireland granted state aid to Apple through tax opinions in 1991 and 2007 concerning tax allocation of profits of Irish branches of two Apple subsidiaries. It ordered Ireland to recover additional taxes for the period June 2003 through December 2014.",
+      "evidence": "On August 30, 2016, the European Commission announced its decision that Ireland granted state aid to the Company by providing tax opinions in 1991 and 2007 concerning the tax allocation of profits of the Irish branches of two subsidiaries of the Company (the \u201cState Aid Decision\u201d). The State Aid Decision ordered Ireland to calculate and recover additional taxes from the Company for the period June 2003 through December 2014.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_029"
+    },
+    {
+      "question": "What was the weighted-average interest rate on Apple's commercial paper as of September 30, 2023?",
+      "answer": "The weighted-average interest rate on Apple's commercial paper was 5.28% as of September 30, 2023, up from 2.31% as of September 24, 2022. The company had $6.0 billion of commercial paper outstanding with maturities generally less than nine months.",
+      "evidence": "The Company issues unsecured short-term promissory notes pursuant to a commercial paper program. The Company uses net proceeds from the commercial paper program for general corporate purposes, including dividends and share repurchases. As of September\u00a030, 2023 and September\u00a024, 2022, the Company had $6.0 billion and $10.0 billion of commercial paper outstanding, respectively, with maturities generally less than nine months. The weighted-average interest rate of the Company\u2019s commercial paper was 5.28% and 2.31% as of September\u00a030, 2023 and September\u00a024, 2022, respectively. The following table provides a summary of cash flows associated with the issuance and maturities of commercial paper for 2023, 2022 and 2021 (in millions):",
+      "question_type": "factual",
+      "qa_id": "basel_iii_031"
+    },
+    {
+      "question": "How do RSUs granted under Apple's 2022 Employee Stock Plan vest?",
+      "answer": "RSUs granted under the 2022 Plan generally vest over four years based on continued employment, are settled in shares on a one-for-one basis, and have dividend equivalent rights. A maximum of approximately 1.3 billion shares were authorized for issuance.",
+      "evidence": "The Apple Inc. 2022 Employee Stock Plan (the \u201c2022 Plan\u201d) is a shareholder-approved plan that provides for broad-based equity grants to employees, including executive officers, and permits the granting of RSUs, stock grants, performance-based awards, stock options and stock appreciation rights. RSUs granted under the 2022 Plan generally vest over four years, based on continued employment, and are settled upon vesting in shares of the Company\u2019s common stock on a one-for-one basis. All RSUs granted under the 2022 Plan have dividend equivalent rights, which entitle holders of RSUs to the same dividend value per share as holders of common stock. A maximum of approximately 1.3 billion shares were authorized for issuance pursuant to 2022 Plan awards at the time the plan was approved on March 4, 2022.",
+      "question_type": "procedural",
+      "qa_id": "basel_iii_033"
+    },
+    {
+      "question": "What was the total unrecognized compensation cost for outstanding RSUs as of September 30, 2023?",
+      "answer": "The total unrecognized compensation cost related to outstanding RSUs was $18.6 billion as of September 30, 2023, expected to be recognized over a weighted-average period of 2.5 years.",
+      "evidence": "As of September 30, 2023, the total unrecognized compensation cost related to outstanding RSUs was $18.6 billion, which the Company expects to recognize over a weighted-average period of 2.5 years.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_034"
+    },
+    {
+      "question": "How did Apple's Japan segment net sales change in 2023 compared to 2022?",
+      "answer": "Japan net sales decreased 7% or $1.7 billion in 2023 compared to 2022, driven by weakness in the yen relative to the U.S. dollar, with lower net sales of iPhone, Wearables, Home and Accessories and Mac.",
+      "evidence": "Japan net sales decreased 7% or $1.7 billion during 2023 compared to 2022. The weakness in the yen relative to the U.S. dollar accounted for more than the entire year-over-year decrease in Japan net sales, which consisted primarily of lower net sales of iPhone, Wearables, Home and Accessories and Mac.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_035"
+    },
+    {
+      "question": "How many weeks did Apple's fiscal year 2023 span and why was it different from prior years?",
+      "answer": "Fiscal year 2023 spanned 53 weeks, compared to 52 weeks for 2022 and 2021. An additional week was included in the first fiscal quarter to realign fiscal quarters with calendar quarters, which occurs every five or six years.",
+      "evidence": "The Company's fiscal year is the 52- or 53-week period that ends on the last Saturday of September. An additional week is included in the first fiscal quarter every five or six years to realign the Company's fiscal quarters with calendar quarters, which occurred in the first fiscal quarter of 2023. The Company's fiscal year 2023 spanned 53 weeks, whereas fiscal years 2022 and 2021 spanned 52 weeks each.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_036"
+    },
+    {
+      "question": "What was Apple's estimated maximum one-day loss in fair value from foreign currency derivatives as of September 30, 2023?",
+      "answer": "Using a value-at-risk model with Monte Carlo simulation, Apple estimates with 95% confidence a maximum one-day loss in fair value of $669 million as of September 30, 2023, down from $1.0 billion as of September 24, 2022.",
+      "evidence": "The Company applied a value-at-risk (\u201cVAR\u201d) model to its foreign currency derivative positions to assess the potential impact of fluctuations in exchange rates. The VAR model used a Monte Carlo simulation. The VAR is the maximum expected loss in fair value, for a given confidence interval, to the Company\u2019s foreign currency derivative positions due to adverse movements in rates. Based on the results of the model, the Company estimates, with 95% confidence, a maximum one-day loss in fair value of $669 million and $1.0 billion as of September\u00a030, 2023 and September\u00a024, 2022, respectively. Changes in the Company\u2019s underlying foreign currency exposures, which were excluded from the assessment, generally offset changes in the fair values of the Company\u2019s foreign currency derivatives.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_037"
+    },
+    {
+      "question": "How does Apple account for revenue from third-party applications sold through the App Store?",
+      "answer": "Apple does not obtain control of third-party App Store products before transfer to customers, so it accounts for all third-party application-related sales on a net basis, recognizing in Services net sales only the commission it retains.",
+      "evidence": "For third-party applications sold through the App Store, the Company does not obtain control of the product before transferring it to the customer. Therefore, the Company accounts for all third-party application\u2013related sales on a net basis by recognizing in Services net sales only the commission it retains.",
+      "question_type": "procedural",
+      "qa_id": "basel_iii_038"
+    },
+    {
+      "question": "What was Apple's total gross unrecognized tax benefits as of September 30, 2023 compared to the prior year?",
+      "answer": "Gross unrecognized tax benefits were $19.5 billion as of September 30, 2023 (of which $9.5 billion would impact the effective tax rate if recognized), up from $16.8 billion as of September 24, 2022 (of which $8.0 billion would have impacted the effective tax rate).",
+      "evidence": "As of September 30, 2023, the total amount of gross unrecognized tax benefits was $19.5 billion, of which $9.5 billion, if recognized, would impact the Company's effective tax rate. As of September 24, 2022, the total amount of gross unrecognized tax benefits was $16.8 billion, of which $8.0 billion, if recognized, would have impacted the Company's effective tax rate.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_039"
+    },
+    {
+      "question": "What was the weighted-average remaining lease term and discount rate for Apple's lease liabilities as of September 30, 2023?",
+      "answer": "The weighted-average remaining lease term was 10.6 years and the discount rate was 3.0% as of September 30, 2023, up from 10.1 years and 2.3% as of September 24, 2022. The discount rates are based on estimates of Apple's incremental borrowing rate.",
+      "evidence": "The weighted-average remaining lease term related to the Company's lease liabilities as of September 30, 2023 and September 24, 2022 was 10.6 years and 10.1 years, respectively. The discount rate related to the Company's lease liabilities as of September 30, 2023 and September 24, 2022 was 3.0% and 2.3%, respectively. The discount rates related to the Company's lease liabilities are generally based on estimates of the Company's incremental borrowing rate, as the discount rates implicit in the Company's leases cannot be readily determined.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_040"
+    },
+    {
+      "question": "What smartwatches does Apple offer and what operating system do they use?",
+      "answer": "Apple's line of smartwatches is based on its watchOS operating system and includes Apple Watch Ultra 2, Apple Watch Series 9, and Apple Watch SE.",
+      "evidence": "The Company's line of smartwatches, based on its watchOS\u00ae operating system, includes Apple Watch Ultra\u2122 2, Apple Watch\u00ae Series 9 and Apple Watch SE\u00ae.",
+      "question_type": "definitional",
+      "qa_id": "basel_iii_041"
+    },
+    {
+      "question": "What wireless headphone products does Apple sell?",
+      "answer": "Apple's line of wireless headphones includes AirPods, AirPods Pro, AirPods Max, and Beats products.",
+      "evidence": "The Company's line of wireless headphones includes AirPods\u00ae, AirPods Pro\u00ae, AirPods Max\u2122 and Beats\u00ae products.",
+      "question_type": "definitional",
+      "qa_id": "basel_iii_042"
+    },
+    {
+      "question": "What subscription-based digital content services does Apple offer?",
+      "answer": "Apple offers Apple Arcade (game subscription service), Apple Fitness+ (personalized fitness service), Apple Music (curated listening with on-demand radio stations), Apple News+ (subscription news and magazine service), and Apple TV+ (exclusive original content and live sports).",
+      "evidence": "The Company also offers digital content through subscription-based services, including Apple Arcade\u00ae, a game subscription service; Apple Fitness+SM, a personalized fitness service; Apple Music\u00ae, which offers users a curated listening experience with on-demand radio stations; Apple News+\u00ae, a subscription news and magazine service; and Apple TV+\u00ae, which offers exclusive original content and live sports.",
+      "question_type": "definitional",
+      "qa_id": "basel_iii_043"
+    },
+    {
+      "question": "What payment services does Apple offer?",
+      "answer": "Apple offers Apple Card, a co-branded credit card, and Apple Pay, a cashless payment service.",
+      "evidence": "The Company offers payment services, including Apple Card\u00ae, a co-branded credit card, and Apple Pay\u00ae, a cashless payment service.",
+      "question_type": "definitional",
+      "qa_id": "basel_iii_044"
+    },
+    {
+      "question": "What is Apple's state of incorporation and where is its headquarters located?",
+      "answer": "Apple is incorporated in California and its headquarters is located at One Apple Park Way, Cupertino, California 95014.",
+      "evidence": "| (State or other jurisdiction  of incorporation or organization) | | |  | | | (I.R.S. Employer Identification No.) | | |\n|  | | |  | | |  | | |\n| One Apple Park Way | | |  | | |  | | |\n| Cupertino, California | | |  | | | 95014 | | |\n| (Address of principal executive offices) | | |  | | | (Zip Code) | | |",
+      "question_type": "factual",
+      "qa_id": "basel_iii_047"
+    },
+    {
+      "question": "How many shares of Apple common stock were issued and outstanding as of October 20, 2023?",
+      "answer": "15,552,752,000 shares of common stock were issued and outstanding as of October 20, 2023.",
+      "evidence": "15,552,752,000 shares of common stock were issued and outstanding as of October 20, 2023.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_048"
+    },
+    {
+      "question": "What was Apple's operating income in fiscal year 2023?",
+      "answer": "Apple's operating income was $114,301 million (approximately $114.3 billion) in fiscal year 2023, compared to $119,437 million in 2022.",
+      "evidence": "| Operating income | | | 114,301 | |  |  | | | 119,437 | |  |  | | | 108,949 | |  |",
+      "question_type": "factual",
+      "qa_id": "basel_iii_049"
+    },
+    {
+      "question": "What were Apple's basic and diluted earnings per share in 2023?",
+      "answer": "Apple's basic earnings per share was $6.16 and diluted earnings per share was $6.13 in 2023.",
+      "evidence": "| Basic | | | $ | 6.16 |  |  | | | $ | 6.15 |  |  | | | $ | 5.67 |  |\n| Diluted | | | $ | 6.13 |  |  | | | $ | 6.11 |  |  | | | $ | 5.61 |  |",
+      "question_type": "factual",
+      "qa_id": "basel_iii_050"
+    },
+    {
+      "question": "What was Apple's total cost of sales in 2023 and how was it split between Products and Services?",
+      "answer": "Apple's total cost of sales was $214,137 million in 2023, consisting of $189,282 million for Products and $24,855 million for Services.",
+      "evidence": "| Products | | | 189,282 | |  |  | | | 201,471 | |  |  | | | 192,266 | |  |\n| Services | | | 24,855 | |  |  | | | 22,075 | |  |  | | | 20,715 | |  |\n| Total cost of sales | | | 214,137 | |  |  | | | 223,546 | |  |  | | | 212,981 | |  |",
+      "question_type": "factual",
+      "qa_id": "basel_iii_056"
+    },
+    {
+      "question": "What was the par value of Apple's common stock and how many shares were authorized?",
+      "answer": "Apple's common stock has a par value of $0.00001 per share, with 50,400,000 thousand shares authorized.",
+      "evidence": "Common stock and additional paid-in capital, $0.00001 par value: 50,400,000 shares authorized; 15,550,061 and 15,943,425 shares issued and outstanding, respectively",
+      "question_type": "factual",
+      "qa_id": "basel_iii_057"
+    },
+    {
+      "question": "How did Apple's Americas segment perform in 2023 compared to 2022?",
+      "answer": "Americas net sales decreased 4% or $7.1 billion during 2023 compared to 2022, due to lower net sales of iPhone and Mac, partially offset by higher net sales of Services.",
+      "evidence": "Americas net sales decreased 4% or $7.1 billion during 2023 compared to 2022 due to lower net sales of iPhone and Mac, partially offset by higher net sales of Services.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_058"
+    },
+    {
+      "question": "How did Apple's Europe segment net sales change in 2023 and what caused the decrease?",
+      "answer": "Europe net sales decreased 1% or $824 million during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease, which consisted primarily of lower net sales of Mac and Wearables, Home and Accessories.",
+      "evidence": "Europe net sales decreased 1% or $824 million during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in Europe net sales, which consisted primarily of lower net sales of Mac and Wearables, Home and Accessories, partially offset by higher net sales of iPhone and Services.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_059"
+    },
+    {
+      "question": "What caused the decrease in Greater China net sales in 2023?",
+      "answer": "Greater China net sales decreased 2% or $1.6 billion during 2023 compared to 2022. The weakness in the renminbi relative to the U.S. dollar accounted for more than the entire year-over-year decrease, which consisted primarily of lower net sales of Mac and iPhone.",
+      "evidence": "Greater China net sales decreased 2% or $1.6 billion during 2023 compared to 2022. The weakness in the renminbi relative to the U.S. dollar accounted for more than the entire year-over-year decrease in Greater China net sales, which consisted primarily of lower net sales of Mac and iPhone.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_060"
+    },
+    {
+      "question": "How did the Rest of Asia Pacific segment perform in 2023?",
+      "answer": "Rest of Asia Pacific net sales increased 1% or $240 million during 2023 compared to 2022. Despite a significantly unfavorable foreign currency impact, the increase consisted of higher net sales of iPhone and Services, partially offset by lower net sales of Mac and iPad.",
+      "evidence": "Rest of Asia Pacific net sales increased 1% or $240 million during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar had a significantly unfavorable year-over-year impact on Rest of Asia Pacific net sales. The net sales increase consisted of higher net sales of iPhone and Services, partially offset by lower net sales of Mac and iPad.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_061"
+    },
+    {
+      "question": "What was Apple's Products gross margin percentage in 2023 compared to 2022, and what drove the change?",
+      "answer": "Products gross margin percentage increased to 36.5% in 2023 from 36.3% in 2022, driven by cost savings and a different Products mix, partially offset by the weakness in foreign currencies relative to the U.S. dollar and decreased leverage.",
+      "evidence": "Products gross margin percentage increased during 2023 compared to 2022 due to cost savings and a different Products mix, partially offset by the weakness in foreign currencies relative to the U.S. dollar and decreased leverage.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_062"
+    },
+    {
+      "question": "Why did Services gross margin percentage decrease in 2023 compared to 2022?",
+      "answer": "Services gross margin percentage decreased from 71.7% in 2022 to 70.8% in 2023 due to higher Services costs and the weakness in foreign currencies relative to the U.S. dollar, partially offset by a different Services mix.",
+      "evidence": "Services gross margin percentage decreased during 2023 compared to 2022 due to higher Services costs and the weakness in foreign currencies relative to the U.S. dollar, partially offset by a different Services mix.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_063"
+    },
+    {
+      "question": "What was Apple's total gross margin percentage in 2023 and how did it compare to 2022 and 2021?",
+      "answer": "Apple's total gross margin percentage was 44.1% in 2023, up from 43.3% in 2022 and 41.8% in 2021.",
+      "evidence": "| Total gross margin percentage | | | 44.1 | | % |  | | | 43.3 | | % |  | | | 41.8 | | % |",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_064"
+    },
+    {
+      "question": "What was Apple's effective tax rate in 2023 compared to 2022, and what drove the difference?",
+      "answer": "Apple's effective tax rate was 14.7% in 2023, down from 16.2% in 2022. The decrease was due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued in 2022, partially offset by lower tax benefits from share-based compensation.",
+      "evidence": "The Company\u2019s effective tax rate for 2023 was lower compared to 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the U.S. Department of the Treasury in 2022, partially offset by lower tax benefits from share-based compensation.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_065"
+    },
+    {
+      "question": "What were Apple's fixed lease payment obligations as of September 30, 2023?",
+      "answer": "As of September 30, 2023, Apple had fixed lease payment obligations of $15.8 billion, with $2.0 billion payable within 12 months.",
+      "evidence": "As of September 30, 2023, the Company had fixed lease payment obligations of $15.8 billion, with $2.0 billion payable within 12 months.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_066"
+    },
+    {
+      "question": "What were Apple's other purchase obligations as of September 30, 2023 and what did they primarily consist of?",
+      "answer": "Apple had other purchase obligations of $21.9 billion, with $5.6 billion payable within 12 months. They primarily consist of noncancelable obligations to acquire capital assets, supplier arrangements, licensed intellectual property and content, and distribution rights.",
+      "evidence": "The Company\u2019s other purchase obligations primarily consist of noncancelable obligations to acquire capital assets, including assets related to product manufacturing, and noncancelable obligations related to supplier arrangements, licensed intellectual property and content, and distribution rights. As of September\u00a030, 2023, the Company had other purchase obligations of $21.9 billion, with $5.6 billion payable within 12 months.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_067"
+    },
+    {
+      "question": "What was the balance of deemed repatriation tax payable as of September 30, 2023?",
+      "answer": "The balance of the deemed repatriation tax payable imposed by the U.S. Tax Cuts and Jobs Act of 2017 was $22.0 billion, with $6.5 billion expected to be paid within 12 months.",
+      "evidence": "As of September 30, 2023, the balance of the deemed repatriation tax payable imposed by the U.S. Tax Cuts and Jobs Act of 2017 (the \u201cAct\u201d) was $22.0 billion, with $6.5 billion expected to be paid within 12 months.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_068"
+    },
+    {
+      "question": "What was Apple's depreciation and amortization expense in 2023?",
+      "answer": "Apple's depreciation and amortization expense was $11,519 million in 2023, compared to $11,104 million in 2022 and $11,284 million in 2021.",
+      "evidence": "| Depreciation and amortization | | | 11,519 | |  |  | | | 11,104 | |  |  | | | 11,284 | |  |",
+      "question_type": "factual",
+      "qa_id": "basel_iii_070"
+    },
+    {
+      "question": "How much did Apple spend on property, plant and equipment in 2023?",
+      "answer": "Apple paid $10,959 million for acquisition of property, plant and equipment in 2023, compared to $10,708 million in 2022.",
+      "evidence": "| Payments for acquisition of property, plant and equipment | | | (10,959) | |  |  | | | (10,708) | |  |  | | | (11,085) | |  |",
+      "question_type": "factual",
+      "qa_id": "basel_iii_071"
+    },
+    {
+      "question": "How does Apple recognize share-based compensation expense?",
+      "answer": "Apple recognizes share-based compensation expense on a straight-line basis for its estimate of equity awards that will ultimately vest.",
+      "evidence": "The Company recognizes share-based compensation expense on a straight-line basis for its estimate of equity awards that will ultimately vest.",
+      "question_type": "procedural",
+      "qa_id": "basel_iii_072"
+    },
+    {
+      "question": "How does Apple depreciate its property, plant and equipment?",
+      "answer": "Apple recognizes depreciation on property, plant and equipment on a straight-line basis.",
+      "evidence": "Depreciation on property, plant and equipment is recognized on a straight-line basis.",
+      "question_type": "procedural",
+      "qa_id": "basel_iii_073"
+    },
+    {
+      "question": "How many performance obligations has Apple identified in arrangements involving the sale of iPhone, Mac, iPad and certain other products?",
+      "answer": "Apple has identified up to three performance obligations: the hardware and bundled software delivered at the time of sale, the right to receive certain product-related bundled services (including iCloud, Siri and Maps), and the right to receive future unspecified software upgrades.",
+      "evidence": "The Company has identified up to three performance obligations regularly included in arrangements involving the sale of iPhone, Mac, iPad and certain other products. The first performance obligation, which represents the substantial portion of the allocated sales price, is the hardware and bundled software delivered at the time of sale. The second performance obligation is the right to receive certain product-related bundled services, which include iCloud\u00ae, Siri\u00ae and Maps. The third performance obligation is the right to receive, on a when-and-if-available basis, future unspecified software upgrades relating to the software bundled with each device.",
+      "question_type": "definitional",
+      "qa_id": "basel_iii_074"
+    },
+    {
+      "question": "How much revenue was recognized in 2023 that had been included in deferred revenue as of the prior year end?",
+      "answer": "Total net sales included $8.2 billion of revenue recognized in 2023 that was included in deferred revenue as of September 24, 2022.",
+      "evidence": "Total net sales include $8.2 billion of revenue recognized in 2023 that was included in deferred revenue as of September 24, 2022, $7.5 billion of revenue recognized in 2022 that was included in deferred revenue as of September 25, 2021, and $6.7 billion of revenue recognized in 2021 that was included in deferred revenue as of September 26, 2020.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_075"
+    },
+    {
+      "question": "How many shares of common stock did Apple repurchase in 2023?",
+      "answer": "During 2023, Apple repurchased 471 million shares of its common stock for $76.6 billion, excluding excise tax due under the Inflation Reduction Act of 2022.",
+      "evidence": "During 2023, the Company repurchased 471 million shares of its common stock for $76.6 billion, excluding excise tax due under the Inflation Reduction Act of 2022.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_077"
+    },
+    {
+      "question": "What was Apple's gross property, plant and equipment as of September 30, 2023 and what were the major asset categories?",
+      "answer": "Gross property, plant and equipment was $114,599 million as of September 30, 2023, consisting of land and buildings ($23,446 million), machinery, equipment and internal-use software ($78,314 million), and leasehold improvements ($12,839 million).",
+      "evidence": "| Land and buildings | | | $ | 23,446 |  |  | | | $ | 22,126 |  |\n| Machinery, equipment and internal-use software | | | 78,314 | |  |  | | | 81,060 | |  |\n| Leasehold improvements | | | 12,839 | |  |  | | | 11,271 | |  |\n| Gross property, plant and equipment | | | 114,599 | |  |  | | | 114,457 | |  |",
+      "question_type": "factual",
+      "qa_id": "basel_iii_078"
+    },
+    {
+      "question": "What was Apple's depreciation expense on property, plant and equipment in 2023?",
+      "answer": "Depreciation expense on property, plant and equipment was $8.5 billion in 2023, compared to $8.7 billion in 2022 and $9.5 billion in 2021.",
+      "evidence": "Depreciation expense on property, plant and equipment was $8.5 billion, $8.7 billion and $9.5 billion during 2023, 2022 and 2021, respectively.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_079"
+    },
+    {
+      "question": "What was the recovery amount calculated under the European Commission's State Aid Decision?",
+      "answer": "The recovery amount was calculated to be \u20ac13.1 billion, plus interest of \u20ac1.2 billion. As of September 30, 2023, the adjusted recovery amount was \u20ac12.7 billion, excluding interest.",
+      "evidence": "On an annual basis, the Company may request approval from the Irish Minister for Finance to reduce the recovery amount for certain taxes paid to other countries. As of September\u00a030, 2023, the adjusted recovery amount was \u20ac12.7 billion, excluding interest. The adjusted recovery amount plus interest is funded into escrow, where it will remain restricted from general use pending the conclusion of all legal proceedings. Refer to the Cash, Cash Equivalents and Marketable Securities section of Note 4, \u201cFinancial Instruments\u201d for more information.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_080"
+    },
+    {
+      "question": "What were Apple's total lease liabilities as of September 30, 2023 and how were they categorized?",
+      "answer": "Total lease liabilities were $12,842 million as of September 30, 2023. Operating lease liabilities comprised $1,410 million current and $10,408 million non-current, while finance lease liabilities comprised $165 million current and $859 million non-current.",
+      "evidence": "| Operating leases | | |  | | | Other current liabilities | | |  | | | $ | 1,410 |  |  | | | $ | 1,534 |  |  | | |  | | |\n|  | | |  | | | Other non-current liabilities | | |  | | | 10,408 | |  |  | | | 9,936 | |  |  | | |  | | |\n| Finance leases | | |  | | | Other current liabilities | | |  | | | 165 | |  |  | | | 129 | |  |  | | |  | | |\n|  | | |  | | | Other non-current liabilities | | |  | | | 859 | |  |  | | | 812 | |  |  | | |  | | |\n| Total lease liabilities | | |  | | |  | | |  | | | $ | 12,842 |  |  | | | $ | 12,411 |  |  | | |  | | |",
+      "question_type": "factual",
+      "qa_id": "basel_iii_081"
+    },
+    {
+      "question": "What were Apple's variable lease costs for 2023 compared to 2022?",
+      "answer": "Lease costs associated with variable payments on Apple's leases were $13.9 billion for 2023, down from $14.9 billion for 2022.",
+      "evidence": "Lease costs associated with variable payments on the Company's leases were $13.9 billion, $14.9 billion and $12.9 billion for 2023, 2022 and 2021, respectively.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_082"
+    },
+    {
+      "question": "What was the fair value of Apple's Notes as of September 30, 2023?",
+      "answer": "The fair value of Apple's Notes, based on Level 2 inputs, was $90.8 billion as of September 30, 2023, compared to $98.8 billion as of September 24, 2022.",
+      "evidence": "As of September 30, 2023 and September 24, 2022, the fair value of the Company's Notes, based on Level 2 inputs, was $90.8 billion and $98.8 billion, respectively.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_083"
+    },
+    {
+      "question": "How much interest expense did Apple recognize on its term debt in 2023?",
+      "answer": "Apple recognized $3.7 billion of interest expense on its term debt for 2023, compared to $2.8 billion in 2022 and $2.6 billion in 2021.",
+      "evidence": "The Company recognized $3.7 billion, $2.8 billion and $2.6 billion of interest expense on its term debt for 2023, 2022 and 2021, respectively.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_084"
+    },
+    {
+      "question": "What were the notional amounts of Apple's derivative instruments designated as accounting hedges as of September 30, 2023?",
+      "answer": "Foreign exchange contracts designated as accounting hedges had a notional amount of $74,730 million and interest rate contracts had a notional amount of $19,375 million as of September 30, 2023.",
+      "evidence": "| Foreign exchange contracts | | | $ | 74,730 |  |  | | | $ | 102,670 |  |\n| Interest rate contracts | | | $ | 19,375 |  |  | | | $ | 20,125 |  |",
+      "question_type": "factual",
+      "qa_id": "basel_iii_085"
+    },
+    {
+      "question": "What was the maximum length of time Apple was hedging term debt-related foreign currency transactions as of September 30, 2023?",
+      "answer": "As of September 30, 2023, the maximum length of time over which Apple is hedging its exposure to the variability in future cash flows for term debt-related foreign currency transactions is 19 years.",
+      "evidence": "As of September 30, 2023, the maximum length of time over which the Company is hedging its exposure to the variability in future cash flows for term debt\u2013related foreign currency transactions is 19 years.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_086"
+    },
+    {
+      "question": "How does Apple handle vendor non-trade receivables from component sales to manufacturing vendors?",
+      "answer": "Apple purchases components directly from suppliers and sells them to manufacturing vendors who manufacture subassemblies or assemble final products. Apple does not reflect these component sales in products net sales but recognizes any gain as a reduction of products cost of sales when the related final products are sold.",
+      "evidence": "The Company has non-trade receivables from certain of its manufacturing vendors resulting from the sale of components to these vendors who manufacture subassemblies or assemble final products for the Company. The Company purchases these components directly from suppliers. The Company does not reflect the sale of these components in products net sales. Rather, the Company recognizes any gain on these sales as a reduction of products cost of sales when the related final products are sold by the Company.",
+      "question_type": "procedural",
+      "qa_id": "basel_iii_088"
+    },
+    {
+      "question": "What was Apple's total deferred tax assets (net of valuation allowance) and total deferred tax liabilities as of September 30, 2023?",
+      "answer": "Apple had total deferred tax assets of $32,743 million with a valuation allowance of $8,374 million, resulting in net deferred tax assets of $24,369 million. Total deferred tax liabilities were $7,118 million, yielding net deferred tax assets of $17,251 million.",
+      "evidence": "| Total deferred tax assets | | | 32,743 | |  |  | | | 29,206 | |  |\n| Less: Valuation allowance | | | (8,374) | |  |  | | | (7,530) | |  |\n| Total deferred tax assets, net | | | 24,369 | |  |  | | | 21,676 | |  |\n| Deferred tax liabilities: | | |  | | |  | | |  | | |",
+      "question_type": "factual",
+      "qa_id": "basel_iii_089"
+    },
+    {
+      "question": "What was the hypothetical impact on Apple's investment portfolio from a 100 basis point increase in interest rates as of September 30, 2023?",
+      "answer": "A hypothetical 100 basis point increase in interest rates across all tenors would result in a $3,089 million decline in fair value of Apple's investment portfolio as of September 30, 2023, and a $194 million increase in annual interest expense on term debt.",
+      "evidence": "| Investment portfolio | | |  | | | 100 basis points, all tenors | | |  | | | Decline in fair value | | |  | | | $ | 3,089 |  |  | | | $ | 4,022 |  |\n| Term debt | | |  | | | 100 basis points, all tenors | | |  | | | Increase in annual interest expense | | |  | | | $ | 194 |  |  | | | $ | 201 |  |",
+      "question_type": "factual",
+      "qa_id": "basel_iii_091"
+    },
+    {
+      "question": "What was Apple's foreign pretax earnings in 2023?",
+      "answer": "Apple's foreign pretax earnings were $72.9 billion in 2023, compared to $71.3 billion in 2022 and $68.7 billion in 2021.",
+      "evidence": "The foreign provision for income taxes is based on foreign pretax earnings of $72.9 billion, $71.3 billion and $68.7 billion in 2023, 2022 and 2021, respectively.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_092"
+    },
+    {
+      "question": "How much of Apple's total marketable securities was restricted from general use as of September 30, 2023?",
+      "answer": "As of September 30, 2023, $13.8 billion of total marketable securities was restricted from general use, related to the State Aid Decision and other agreements.",
+      "evidence": "As of September 30, 2023 and September 24, 2022, total marketable securities included $13.8 billion and $12.7 billion, respectively, that were restricted from general use, related to the State Aid Decision (refer to Note 7, \u201cIncome Taxes\u201d) and other agreements.",
+      "question_type": "factual",
+      "qa_id": "basel_iii_094"
+    },
+    {
+      "question": "What was the aggregate fair value of the outstanding RSUs as of September 30, 2023?",
+      "answer": "The aggregate fair value of the 180,247 thousand outstanding RSUs was $30,860 million as of September 30, 2023, with a weighted-average grant date fair value of $135.91 per RSU.",
+      "evidence": "| Balance as of September 30, 2023 | | | 180,247 | |  |  | | | $ | 135.91 |  |  | | | $ | 30,860 |  |",
+      "question_type": "factual",
+      "qa_id": "basel_iii_095"
+    },
+    {
+      "question": "How does Apple evaluate the performance of its reportable segments?",
+      "answer": "Apple evaluates the performance of its reportable segments based on net sales and operating income. Net sales for geographic segments are generally based on the location of customers and sales through retail stores in those geographic locations.",
+      "evidence": "The Company evaluates the performance of its reportable segments based on net sales and operating income. Net sales for geographic segments are generally based on the location of customers and sales through the Company\u2019s retail stores located in those geographic locations. Operating income for each segment consists of net sales to third parties, related cost of sales, and operating expenses directly attributable to the segment. The information provided to the Company\u2019s chief operating decision maker for purposes of making decisions and assessing segment performance excludes asset information.",
+      "question_type": "procedural",
+      "qa_id": "basel_iii_097"
+    },
+    {
+      "question": "What were Apple's U.S. long-lived assets as of September 30, 2023 compared to total long-lived assets?",
+      "answer": "Apple's U.S. long-lived assets were $33,276 million out of total long-lived assets of $43,715 million as of September 30, 2023, representing approximately 76% of the total.",
+      "evidence": "| U.S. | | | $ | 33,276 |  |  | | | $ | 31,119 |  |\n| China (1) | | | 5,778 | |  |  | | | 7,260 | |  |\n| Other countries | | | 4,661 | |  |  | | | 3,738 | |  |\n| Total long-lived assets | | | $ | 43,715 |  |  | | | $ | 42,117 |  |",
+      "question_type": "factual",
+      "qa_id": "basel_iii_099"
+    },
+    {
+      "question": "Why have shares held by executive officers and directors been excluded from the disclosure of common stock?",
+      "answer": "Shares of common stock held by executive officers and directors were excluded solely for purposes of the disclosure because such persons may be deemed to be affiliates.",
+      "evidence": "Solely for purposes of this disclosure, shares of common stock held by executive officers and directors of the Registrant as of such date have been excluded because such persons may be deemed to be affiliates.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_100"
+    },
+    {
+      "question": "Why is there no guarantee that the Company will be able to extend or renew its component supply agreements?",
+      "answer": "The Company has entered into agreements for the supply of many components, but there can be no guarantee that these agreements will be extended or renewed on similar terms, or at all, reflecting the inherent uncertainty in long-term supplier relationships.",
+      "evidence": "The Company has entered into agreements for the supply of many components; however, there can be no guarantee that the Company will be able to extend or renew these agreements on similar terms, or at all.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_101"
+    },
+    {
+      "question": "How could suppliers' production decisions affect the availability of components customized for the Company?",
+      "answer": "The continued availability of customized components at acceptable prices may be affected if suppliers decide to concentrate on the production of common components instead of components customized to meet the Company's requirements.",
+      "evidence": "The continued availability of these components at acceptable prices, or at all, may be affected if suppliers decide to concentrate on the production of common components instead of components customized to meet the Company\u2019s requirements.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_102"
+    },
+    {
+      "question": "Why does the Company's ability to compete successfully depend on ensuring a continual flow of competitive products and technologies?",
+      "answer": "Because the industries in which the Company competes are characterized by rapid technological advances, its ability to compete successfully depends heavily upon ensuring a continual and timely flow of competitive products, services, and technologies to the marketplace.",
+      "evidence": "Because the industries in which the Company competes are characterized by rapid technological advances, the Company\u2019s ability to compete successfully depends heavily upon its ability to ensure a continual and timely flow of competitive products, services and technologies to the marketplace.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_103"
+    },
+    {
+      "question": "How does the Company's first quarter net sales historically compare to other quarters in its fiscal year?",
+      "answer": "The Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year, due in part to seasonal holiday demand.",
+      "evidence": "The Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year due in part to seasonal holiday demand.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_104"
+    },
+    {
+      "question": "What does the Company believe about how compensation should be structured for its employees?",
+      "answer": "The Company believes that compensation should be competitive and equitable, and should enable employees to share in the Company's success.",
+      "evidence": "The Company believes that compensation should be competitive and equitable, and should enable employees to share in the Company\u2019s success.",
+      "question_type": "procedural",
+      "qa_id": "basel_iii_105"
+    },
+    {
+      "question": "Why should investors not rely on past financial performance to anticipate future results?",
+      "answer": "Because of various factors affecting the Company's results of operations and financial condition, past financial performance should not be considered a reliable indicator of future performance, and investors should not use historical trends to anticipate results or trends in future periods.",
+      "evidence": "Because of the following factors, as well as other factors affecting the Company\u2019s results of operations and financial condition, past financial performance should not be considered to be a reliable indicator of future performance, and investors should not use historical trends to anticipate results or trends in future periods.",
+      "question_type": "procedural",
+      "qa_id": "basel_iii_106"
+    },
+    {
+      "question": "How can adverse macroeconomic conditions affect demand for the Company's products and services?",
+      "answer": "Adverse macroeconomic conditions, including slow growth or recession, high unemployment, inflation, tighter credit, higher interest rates, and currency fluctuations, can adversely impact consumer confidence and spending, materially adversely affecting demand for the Company's products and services.",
+      "evidence": "As a result, the Company\u2019s operations and performance depend significantly on global and regional economic conditions.\n\nAdverse macroeconomic conditions, including slow growth or recession, high unemployment, inflation, tighter credit, higher interest rates, and currency fluctuations, can adversely impact consumer confidence and spending and materially adversely affect demand for the Company\u2019s products and services.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_107"
+    },
+    {
+      "question": "What financial risks can adverse economic conditions create beyond reduced consumer demand?",
+      "answer": "Adverse economic conditions can lead to increased credit and collectibility risk on trade receivables, the failure of derivative counterparties and other financial institutions, limitations on the Company's ability to issue new debt, reduced liquidity, and declines in the fair values of financial instruments.",
+      "evidence": "Adverse economic conditions can also lead to increased credit and collectibility risk on the Company\u2019s trade receivables; the failure of derivative counterparties and other financial institutions; limitations on the Company\u2019s ability to issue new debt; reduced liquidity; and declines in the fair values of the Company\u2019s financial instruments.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_108"
+    },
+    {
+      "question": "Why would a business interruption at a single or limited source supplier be particularly harmful to the Company?",
+      "answer": "Because the Company relies on single or limited sources for the supply and manufacture of many critical components, a business interruption affecting such sources would exacerbate any negative consequences to the Company.",
+      "evidence": "Because the Company relies on single or limited sources for the supply and manufacture of many critical components, a business interruption affecting such sources would exacerbate any negative consequences to the Company.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_109"
+    },
+    {
+      "question": "In what ways have major public health issues such as pandemics adversely affected the Company?",
+      "answer": "Major public health issues have adversely affected the Company through their impact on the global economy and demand for consumer products, the imposition of protective public safety measures such as travel restrictions and freight limitations, and disruptions in operations, supply chain, and sales and distribution channels, resulting in interruptions to current products and delays in new product production.",
+      "evidence": "Major public health issues, including pandemics such as the COVID-19 pandemic, have adversely affected, and could in the future materially adversely affect, the Company due to their impact on the global economy and demand for consumer products; the imposition of protective public safety measures, such as stringent employee travel restrictions and limitations on freight services and the movement of products between regions; and disruptions in the Company\u2019s operations, supply chain and sales and distribution channels, resulting in interruptions to the supply of current products and offering of existing services, and delays in production ramps of new products and development of new services.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_110"
+    },
+    {
+      "question": "How do the Company's competitors primarily seek to compete, and how does this contrast with the Company's approach?",
+      "answer": "Many of the Company's competitors seek to compete primarily through aggressive pricing and very low cost structures, and by imitating the Company's products and infringing on its intellectual property, which contrasts with the Company's own competitive strategy.",
+      "evidence": "In contrast, many of the Company\u2019s competitors seek to compete primarily through aggressive pricing and very low cost structures, and by imitating the Company\u2019s products and infringing on its\u00a0intellectual property.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_111"
+    },
+    {
+      "question": "Why must the Company continually introduce new products and manage transitions to upgraded offerings?",
+      "answer": "Due to the highly volatile and competitive nature of the markets and industries in which the Company competes, it must continually introduce new products, services, and technologies, enhance existing offerings, effectively stimulate customer demand, and successfully manage the transition to new and upgraded products and services.",
+      "evidence": "Due to the highly volatile and competitive nature of the markets and industries in which the Company competes, the Company must continually introduce new products, services and technologies, enhance existing products and services, effectively stimulate customer demand for new and upgraded products and services, and successfully manage the transition to these new and upgraded products and services.",
+      "question_type": "procedural",
+      "qa_id": "basel_iii_112"
+    },
+    {
+      "question": "What is the trade-off the Company faces by using outsourcing arrangements for production and distribution?",
+      "answer": "While outsourcing arrangements can lower operating costs, they also reduce the Company's direct control over production and distribution, which has from time to time had an adverse effect on the quality or quantity of products manufactured or services provided, or adversely affected the Company's flexibility to respond to changing conditions.",
+      "evidence": "While these arrangements can lower operating costs, they also reduce the Company\u2019s direct control over production and distribution. Such diminished control has from time to time and may in the future have an adverse effect on the quality or quantity of products manufactured or services provided, or adversely affect the Company\u2019s flexibility to respond to changing conditions.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_113"
+    },
+    {
+      "question": "What risks does the Company face from obtaining certain components from single or limited sources?",
+      "answer": "Because the Company currently obtains certain components from single or limited sources, it is subject to significant supply and pricing risks, including risks of supply shortages and price increases that can materially adversely affect its business, results of operations, and financial condition.",
+      "evidence": "Because the Company currently obtains certain components from single or limited sources, the Company is subject to significant supply and pricing risks.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_114"
+    },
+    {
+      "question": "How can design and manufacturing defects affect the Company's business?",
+      "answer": "The Company's products and services may be affected by design and manufacturing defects that could materially adversely affect the Company's business and result in harm to its reputation.",
+      "evidence": "The Company\u2019s products and services may be affected from time to time by design and manufacturing defects that could materially adversely affect the Company\u2019s business and result in harm to the Company\u2019s reputation.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_115"
+    },
+    {
+      "question": "What consequences can the Company face if it fails to address design and manufacturing defects?",
+      "answer": "Failure to address defects can result in widespread technical and performance issues, and the Company can be exposed to product liability claims, recalls, product replacements or modifications, write-offs of inventory, property, plant and equipment or intangible assets, and significant warranty and other expenses, including litigation costs and regulatory fines.",
+      "evidence": "Failure to do so can result in widespread technical and performance issues affecting the Company\u2019s products and services. In addition, the Company can be exposed to product liability claims, recalls, product replacements or modifications, write-offs of inventory, property, plant and equipment or intangible assets, and significant warranty and other expenses, including litigation costs and regulatory fines.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_116"
+    },
+    {
+      "question": "Why does the Company risk forecasting incorrectly and ordering excess or insufficient components?",
+      "answer": "Because the Company's markets are volatile, competitive, and subject to rapid technology and price changes, there is a risk it will forecast incorrectly and order or produce excess or insufficient amounts of components or products, or not fully utilize firm purchase commitments.",
+      "evidence": "Because the Company\u2019s markets are volatile, competitive and subject to rapid technology and price changes, there is a risk the Company will forecast incorrectly and order or produce excess or insufficient amounts of components or products, or not fully utilize firm purchase commitments.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_117"
+    },
+    {
+      "question": "How can rapid technological changes cause the Company to unknowingly infringe on others' intellectual property?",
+      "answer": "Because of technological changes in the industries in which the Company competes, current extensive patent coverage, and the rapid rate of issuance of new patents, the Company's products and services can unknowingly infringe existing patents or intellectual property rights of others.",
+      "evidence": "In addition, because of technological changes in the industries in which the Company currently competes or in the future may compete, current extensive patent coverage and the rapid rate of issuance of new patents, the Company\u2019s products and services can unknowingly infringe existing patents or intellectual property rights of others.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_118"
+    },
+    {
+      "question": "What factors influence third-party developers' decisions to create software for the Company's platforms versus competitors' platforms?",
+      "answer": "The Company believes the availability of third-party software depends in part on developers' perception and analysis of the relative benefits of developing, maintaining, and upgrading software for the Company's products compared to competitors' platforms, such as Android for smartphones and tablets, Windows for personal computers and tablets, and PlayStation, Nintendo, and Xbox for gaming platforms.",
+      "evidence": "The Company believes the availability of third-party software applications and services for its products depends in part on the developers\u2019 perception and analysis of the relative benefits of developing, maintaining and upgrading such software and services for the Company\u2019s products compared to competitors\u2019 platforms, such as Android for smartphones and tablets, Windows for personal computers and tablets, and PlayStation, Nintendo and Xbox for gaming platforms.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_119"
+    },
+    {
+      "question": "What happens when third-party developers are unable or choose not to keep up with the Company's rapid technological changes?",
+      "answer": "When third-party developers cannot keep up with the pace of change, their applications can fail to take advantage of improvements to deliver better customer experiences, can operate incorrectly, and can result in dissatisfied customers and lower customer demand for the Company's products.",
+      "evidence": "The Company\u2019s products and operating systems are subject to rapid technological change, and when third-party developers are unable to or choose not to keep up with this pace of change, their applications can fail to take advantage of these changes to deliver improved customer experiences, can operate incorrectly, and can result in dissatisfied customers and lower customer demand for the Company\u2019s products.",
+      "question_type": "comparative",
+      "qa_id": "basel_iii_120"
+    },
+    {
+      "question": "What legislative initiative is impacting the App Store and when was the Company required to comply?",
+      "answer": "The EU Digital Markets Act is a legislative initiative impacting the App Store, which the Company was required to comply with by March 2024.",
+      "evidence": "The Company expects to make further business changes in the future, including as a result of legislative initiatives impacting the App Store, such as the European Union (\u201cEU\u201d) Digital Markets Act, which the Company is required to comply with by March 2024.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_121"
+    },
+    {
+      "question": "What could happen if the commission rate the Company retains on App Store sales is reduced or eliminated?",
+      "answer": "If the rate of the commission that the Company retains on such sales is reduced, or if it is otherwise narrowed in scope or eliminated, the Company's business, results of operations, and financial condition could be materially adversely affected.",
+      "evidence": "If the rate of the commission that the Company retains on such sales is reduced, or if it is otherwise narrowed in scope or eliminated, the Company\u2019s business, results of operations and financial condition could be materially adversely affected.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_122"
+    },
+    {
+      "question": "Why is the Company's digital content production costly and what risk does it face?",
+      "answer": "The Company's digital content production is costly due to intense and increasing competition for talent, content, and subscribers, and it may fail to appeal to the Company's customers.",
+      "evidence": "The Company also produces its own digital content, which can be costly to produce due to intense and increasing competition for talent, content and subscribers, and may fail to appeal to the Company\u2019s customers.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_123"
+    },
+    {
+      "question": "What could result if the Company does not manage changing workforce dynamics effectively?",
+      "answer": "If the Company does not manage changing workforce dynamics effectively, it could materially adversely affect the Company's culture, reputation, and operational flexibility.",
+      "evidence": "If the Company does not manage changing workforce dynamics effectively, it could materially adversely affect the Company\u2019s culture, reputation and operational flexibility.",
+      "question_type": "causal",
+      "qa_id": "basel_iii_124"
+    }
+  ]
+}

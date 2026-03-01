@@ -1,0 +1,705 @@
+{
+  "corpus_id": "who_malaria",
+  "qa_pairs": [
+    {
+      "qa_id": "who_malaria_001",
+      "question": "What are the Plasmodium species that cause malaria in humans, and what zoonotic form has also been documented?",
+      "answer": "Malaria in humans is caused by P. falciparum, P. malariae, P. ovale, and P. vivax. The zoonotic species P. knowlesi, a parasite of Old World monkeys in Southeast Asia, has also been documented as a cause of human infections and some deaths.",
+      "evidence": "Malaria in humans is caused by protozoan parasites of the genus *Plasmodium*, including *Plasmodium falciparum, Plasmodium malariae, Plasmodium ovale*, and *Plasmodium vivax*. Zoonotic forms, especially *Plasmodium knowlesi*, a parasite of Old World (Eastern Hemisphere) monkeys in Southeast Asia, have been documented as causes of human infections and some deaths.",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_002",
+      "question": "How is malaria transmitted to humans, and what non-vector modes of transmission exist?",
+      "answer": "Malaria is transmitted primarily by the bite of an infective female Anopheles mosquito. Non-vector transmission can also occur through blood transfusion, needle sharing, organ transplantation, or vertically from mother to fetus.",
+      "evidence": "*Plasmodium* species are transmitted by the bite of an infective female *Anopheles* mosquito. Malaria transmission occurs in large areas of Africa, Latin America, and parts of the Caribbean, the South Pacific, and in Asia, including South Asia, Southeast Asia, and the Middle East. Occasionally, transmission occurs by blood transfusion, needle sharing, organ transplantation, or vertically from mother to fetus.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_003",
+      "question": "How many malaria infections and deaths were reported globally in 2023 according to the WHO World malaria report 2024?",
+      "answer": "According to the WHO World malaria report 2024, 83 countries reported approximately 263 million infections and 597,000 deaths in 2023.",
+      "evidence": "Malaria is a major international public health problem. According to the World Health Organization (WHO) *World malaria report* 2024, 83 countries reported approximately 263 million infections and 597,000 deaths in 2023.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_005",
+      "question": "What are malaria rapid diagnostic tests (RDTs) and how quickly do they provide results?",
+      "answer": "RDTs detect antigens derived from malaria parasites. They are immunochromatographic tests in dipstick or cassette format that provide results in 2 to 15 minutes.",
+      "evidence": "RDTs for malaria detect antigens derived from malaria parasites. Malaria RDTs are immunochromatographic tests that most often use a dipstick or cassette format and provide results in 2\u201315 minutes.",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_006",
+      "question": "Why is blood smear microscopy considered the most important method for malaria diagnosis?",
+      "answer": "Blood smear microscopy can provide immediate information about the presence of parasites, quantify the density of infection, and determine the species of the malaria parasite, all of which are necessary for appropriate treatment.",
+      "evidence": "Blood smear microscopy remains the most important method for malaria diagnosis. Microscopy can provide immediate information about the presence of parasites, allow quantification of the density of the infection, and allow determination of the species of the malaria parasite, all of which are necessary for providing the most appropriate treatment.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_007",
+      "question": "What is the role of PCR testing in malaria diagnosis compared to routine microscopy?",
+      "answer": "PCR tests are more sensitive than routine microscopy but results are not usually available as quickly, limiting their utility for rapid diagnosis. PCR testing is encouraged to confirm the species of malaria parasite and detect mixed infections.",
+      "evidence": "PCR tests are more sensitive than routine microscopy, but results are not usually available as quickly as microscopy results, thus limiting the utility of PCR for rapid diagnosis and initial clinical management. Use of PCR testing is encouraged to confirm the species of malaria parasite and detect mixed infections.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "who_malaria_008",
+      "question": "What factors determine the specific treatment options for malaria?",
+      "answer": "Treatment depends on the species of malaria, severity of infection, likelihood of drug resistance based on location of acquisition, the patient's age, and whether the patient is pregnant or breastfeeding.",
+      "evidence": "Malaria can be treated effectively if treatment begins early in the disease; delaying therapy can have serious or even fatal consequences. Specific treatment options depend on the species of malaria, severity of infection, likelihood of drug resistance (based on where the infection was acquired), the patient's age, and whether the patient is pregnant or breastfeeding.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_011",
+      "question": "What mosquito avoidance measures are recommended for malaria prevention, and during what hours is transmission most likely?",
+      "answer": "Transmission occurs primarily between dusk and dawn. Travelers should remain in enclosed air-conditioned or well-screened areas, sleep under insecticide-treated mosquito nets, use insecticide sprays or mosquito coils, and wear clothing that covers most of the body.",
+      "evidence": "Malaria transmission occurs primarily between dusk and dawn because of the nocturnal feeding habits of *Anopheles* mosquitoes. Travelers can reduce contact with mosquitoes by remaining in enclosed air-conditioned rooms or well-screened areas, sleeping under mosquito nets (preferably insecticide-treated), using an effective insecticide spray or mosquito coils in living and sleeping areas during evening and nighttime hours, and wearing clothes that cover most of the body.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_012",
+      "question": "Why must malaria chemoprophylaxis begin before travel to an endemic area?",
+      "answer": "Beginning the drug before travel allows the antimalarial agent to be in the blood before the traveler is exposed to malaria parasites, ensuring protective drug levels are achieved upon arrival.",
+      "evidence": "All recommended malaria chemoprophylaxis regimens involve taking a medicine before, during, and after travel to an area with malaria. Beginning the drug before travel allows the antimalarial agent to be in the blood before the traveler is exposed to malaria parasites.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_013",
+      "question": "Why must G6PD testing be performed before prescribing tafenoquine or primaquine, and what additional measures should travelers take?",
+      "answer": "Both drugs can cause hemolytic anemia in persons with G6PD deficiency, so quantitative G6PD testing is required before prescribing them. Since no antimalarial is 100% protective, travelers must also combine chemoprophylaxis with mosquito avoidance and personal protective measures.",
+      "evidence": "Because both tafenoquine and primaquine can cause hemolytic anemia in persons with glucose-6-phosphate-dehydrogenase (G6PD) deficiency, quantitative G6PD testing must be done before prescribing primaquine or tafenoquine. No antimalarial drug is 100% protective, so travelers must combine chemoprophylaxis with mosquito avoidance and personal protective measures (e.g., insect repellent, long-sleeved shirts, long pants, sleeping in a mosquito-free setting, using an insecticide-treated mosquito net).",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_014",
+      "question": "Where is chloroquine-resistant P. falciparum found, and where has chloroquine-resistant P. vivax been confirmed?",
+      "answer": "Chloroquine-resistant P. falciparum is found in Africa, Asia, and South America, except the Caribbean and Central American countries west of the Panama Canal. Chloroquine-resistant P. vivax has been confirmed only in Papua New Guinea and Indonesia.",
+      "evidence": "Chloroquine-resistant *P. falciparum* is found in all parts of the world (Africa, Asia, South America) except the Caribbean and Central American countries west of the Panama Canal. Chloroquine-resistant *P. vivax* has been confirmed only in Papua New Guinea and Indonesia. For destinations with known chloroquine-resistant *Plasmodium* spp., effective malaria chemoprophylaxis options include atovaquone-proguanil, doxycycline, mefloquine, or tafenoquine.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_016",
+      "question": "What is the dosing schedule for atovaquone-proguanil when used for malaria chemoprophylaxis?",
+      "answer": "Chemoprophylaxis should begin 1-2 days before travel, taken daily with food at the same time each day while in malaria-endemic areas, and continued daily for 7 days after leaving the endemic areas.",
+      "evidence": "Atovaquone-proguanil (Malarone) is a fixed combination of the drugs atovaquone and proguanil. Chemoprophylaxis should begin 1\u20132 days before travel to malaria-endemic areas; the medication should then be taken daily, with food, ideally at the same time each day, while in malaria-endemic areas, and daily for 7 days after leaving the endemic areas (see Table 4.10.3 for recommended dosages).",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_017",
+      "question": "What are the notable side effects of doxycycline when used for malaria chemoprophylaxis?",
+      "answer": "Doxycycline can cause photosensitivity (exaggerated sunburn reaction) that can be minimized by avoiding prolonged sun exposure and using sunscreen. It is also associated with an increased frequency of vaginal yeast infections.",
+      "evidence": "Doxycycline can cause photosensitivity, usually manifested as an exaggerated sunburn reaction. The risk for such a reaction can be minimized by avoiding prolonged, direct exposure to the sun and by using sunscreen. Doxycycline use is associated with an increased frequency of vaginal yeast infections.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_018",
+      "question": "What serious adverse reactions have been associated with mefloquine at prophylactic doses?",
+      "answer": "Mefloquine has been associated with rare but serious adverse reactions including psychosis and seizures, which are more frequent at treatment doses. Other reported side effects include abnormal dreams, anxiety disorder, depression, dizziness, gastrointestinal disturbance, headache, insomnia, and visual disturbances.",
+      "evidence": "Mefloquine has been associated with rare but serious adverse reactions (e.g., psychosis, seizures) when taken at prophylactic doses; these reactions are more frequent with the higher doses used for treatment. Other side effects reported in chemoprophylaxis studies include abnormal dreams, anxiety disorder, depression, dizziness, gastrointestinal disturbance, headache, insomnia, and visual disturbances.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_019",
+      "question": "What is the relationship between primaquine and G6PD deficiency?",
+      "answer": "Primaquine can cause potentially life-threatening hemolysis in people with G6PD deficiency. G6PD deficiency must be ruled out with a quantitative laboratory test before prescribing primaquine.",
+      "evidence": "Primaquine can cause potentially life-threatening hemolysis in people with glucose-6-phosphate-dehydrogenase (G6PD) deficiency. G6PD deficiency must be ruled out with a quantitative laboratory test before prescribing primaquine to patients.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_020",
+      "question": "How does the safety concern for tafenoquine compare to that of primaquine regarding hemolysis?",
+      "answer": "Like primaquine, tafenoquine can cause potentially life-threatening hemolysis in people with G6PD deficiency. Both require G6PD deficiency to be ruled out with a quantitative laboratory test before prescribing.",
+      "evidence": "Because both tafenoquine and primaquine can cause hemolytic anemia in persons with glucose-6-phosphate-dehydrogenase (G6PD) deficiency, quantitative G6PD testing must be done before prescribing primaquine or tafenoquine. Tafenoquine can cause potentially life-threatening hemolysis in people with G6PD deficiency. Rule out G6PD deficiency with a quantitative laboratory test before prescribing tafenoquine to patients.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "who_malaria_021",
+      "question": "What are the risks of malaria during pregnancy, and what is the recommended approach for pregnant travelers?",
+      "answer": "Malaria can be more severe in pregnant women and increases risk for premature birth, spontaneous abortion, and stillbirth. Since no chemoprophylaxis is completely effective, avoidance of travel to malaria-endemic areas during pregnancy is optimal.",
+      "evidence": "Malaria infection can be more severe in pregnant than in nonpregnant women. Malaria increases the risk for adverse pregnancy outcomes, including premature birth, spontaneous abortion, and stillbirth. Because no chemoprophylaxis regimen is completely effective, avoidance of travel to areas with malaria transmission during pregnancy is optimal.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_024",
+      "question": "Who are VFR travelers, and why should they be considered at risk for malaria despite previous exposure?",
+      "answer": "VFR (visiting friends and relatives) travelers are first- and second-generation immigrants who return to their countries of origin. They may erroneously consider themselves immune, but partial immunity from previous exposure is lost quickly, so they should be considered to have the same malaria risk as other nonimmune travelers.",
+      "evidence": "Most cases of malaria seen in the United States are in first- and second-generation immigrants living in non-endemic countries who return to their countries of origin to visit friends and relatives (VFRs). VFR travelers may erroneously consider themselves immune to malaria because they grew up in a malaria-endemic country. The partial immunity acquired through continuous exposure to malaria is lost quickly, and VFR travelers should be considered to have the same risk of malaria as other nonimmune travelers.",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_025",
+      "question": "What is terminal chemoprophylaxis and who is it indicated for?",
+      "answer": "Terminal chemoprophylaxis, also known as presumptive antirelapse therapy, is indicated for long-term travelers such as military personnel, missionaries, and Peace Corps volunteers who have had prolonged exposure to P. ovale or P. vivax malaria.",
+      "evidence": "Terminal chemoprophylaxis (also known as presumptive antirelapse therapy) is indicated for long-term travelers (e.g., military personnel, missionaries, Peace Corps volunteers) with prolonged exposure to *P. ovale* or *P. vivax* malaria.",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_026",
+      "question": "What clinical criteria define severe malaria and how should it be treated?",
+      "answer": "Severe malaria is defined by impaired consciousness/coma, hemoglobin <7 g/dL, acute kidney injury, ARDS, circulatory collapse/shock, acidosis, jaundice, disseminated intravascular coagulation, and/or parasite density >=5%. It should be treated promptly with parenteral antimalarial therapy regardless of species.",
+      "evidence": "Patients with any manifestations of severe malaria, e.g., impaired consciousness/coma, hemoglobin <7 g/dL, acute kidney injury, acute respiratory distress syndrome, circulatory collapse/shock, acidosis, jaundice (with other signs of severe malaria), disseminated intravascular coagulation, and/or parasite density of \u22655% should be treated promptly and aggressively with parenteral antimalarial therapy regardless of the species of malaria seen on the blood smear.",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_027",
+      "question": "What is the recommended parenteral treatment for severe malaria regardless of species?",
+      "answer": "Patients with severe malaria, regardless of infecting species, should be treated with intravenous (IV) artesunate. Treatment should be initiated as soon as possible because severe malaria can progress to a fatal outcome rapidly.",
+      "evidence": "Severe malaria can progress to a fatal outcome rapidly, so its treatment should be initiated as soon as possible. Patients with severe malaria, regardless of infecting species, should be treated with intravenous (IV) artesunate.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_028",
+      "question": "What is delayed post-artemisinin hemolytic anemia and how should patients be monitored for it?",
+      "answer": "It is a rare complication following IV artesunate treatment where hemolytic anemia occurs after treatment. Patients with higher parasite density are at higher risk. All patients treated with IV artesunate should be monitored weekly for up to four weeks for evidence of hemolytic anemia.",
+      "evidence": "While rare, delayed post-artemisinin hemolytic anemia has been noted in published case reports following treatment of severe malaria with IV artesunate. Persons with higher parasite density seem to have a higher likelihood of delayed hemolytic anemia after treatment. All persons treated for severe malaria with IV artesunate should be monitored weekly for up to four weeks after treatment initiation for evidence of hemolytic anemia.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_030",
+      "question": "How is uncomplicated malaria defined according to WHO guidelines?",
+      "answer": "Uncomplicated malaria is defined as a patient who presents with symptoms of malaria and a positive parasitological test (microscopy or RDT) but has no features of severe malaria.",
+      "evidence": "A patient who presents with symptoms of malaria and a positive parasitological test (microscopy or RDT) but with no features of severe malaria is defined as having uncomplicated malaria (see section 7.1 for definition of severe malaria).",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_032",
+      "question": "What are the clinical and public health objectives of treating uncomplicated malaria?",
+      "answer": "The clinical objectives are to cure the infection rapidly and prevent progression to severe disease, where 'cure' means eliminating all parasites from the body. The public health objectives are to prevent onward transmission and prevent emergence and spread of antimalarial drug resistance.",
+      "evidence": "The clinical objectives of treating uncomplicated malaria are to cure the infection as rapidly as possible and to prevent progression to severe disease. \u201cCure\u201d is defined as elimination of all parasites from the body. The public health objectives of treatment are to prevent onward transmission of the infection to others and to prevent the emergence and spread of resistance to antimalarial drugs.",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_033",
+      "question": "What is the mortality rate for untreated versus treated severe malaria?",
+      "answer": "Mortality from untreated severe malaria approaches 100%, particularly for cerebral malaria. With prompt, effective antimalarial treatment and supportive care, the mortality rate falls to 10-20% overall.",
+      "evidence": "Mortality from untreated severe malaria (particularly cerebral malaria) approaches 100%. With prompt, effective antimalarial treatment and supportive care, the rate falls to 10\u201320% overall.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "who_malaria_034",
+      "question": "How is severe falciparum malaria defined for epidemiological purposes?",
+      "answer": "Severe falciparum malaria is defined as one or more specified clinical manifestations occurring without an identified alternative cause and in the presence of P. falciparum asexual parasitaemia.",
+      "evidence": "For epidemiological purposes, **severe falciparum malaria** is defined as one or more of the following, occurring in the absence of an identified alternative cause and in the presence of *P. falciparum* asexual parasitaemia.",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_036",
+      "question": "What is cerebral malaria and what percentage of fatal malaria cases does it account for?",
+      "answer": "Cerebral malaria accounts for 80% of fatal malaria cases, most often with P. falciparum infection. It presents with slow-onset altered mental status, violent behavior, headache, extremely high fever, followed by coma, metabolic acidosis, hypoglycemia, seizures, and possibly death.",
+      "evidence": "Cerebral malaria accounts for 80% of fatal malaria cases, most often occurring with *P. falciparum* infection. It presents as slow-onset altered mental status, violent behavior, headache, and extremely high fever (up to 42 degrees C), followed by coma, metabolic acidosis, hypoglycemia, and possibly seizures and death.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_037",
+      "question": "What is the infective stage of the Plasmodium parasite for humans, and how is it produced?",
+      "answer": "The stage infective for humans is the uninucleate, lancet-shaped sporozoite. Sporozoites are produced by sexual reproduction in the midgut of vector anopheline mosquitoes and migrate to the salivary gland.",
+      "evidence": "Like many protozoa, plasmodia pass through a number of stages in the course of their\ntwo-host life cycle. The stage infective for humans is the uninucleate,\nlancet-shaped sporozoite (approximately 1 \u00d7 7 \u03bcm). Sporozoites are\nproduced by sexual reproduction in the midgut of vector anopheline mosquitoes and\nmigrate to the salivary gland.",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_038",
+      "question": "How does the sickle cell trait provide protection against severe P. falciparum malaria?",
+      "answer": "The sickle cell trait developed as a balanced polymorphism to protect against serious P. falciparum disease. Although individuals with sickle cell anemia or the trait are as easily infected, they rarely exhibit malaria disease because P. falciparum develops poorly in their erythrocytes.",
+      "evidence": "It now seems\nclear that the sickle cell trait (which is the cause of sickle-cell anemia)\ndeveloped as a balanced polymorphism to protect against serious *P\nfalciparum* disease. Although individuals with sickle cell anemia or the\nsickle cell trait are as easily infected with malaria parasites as normal\nindividuals, they rarely exhibit malaria disease because *P\nfalciparum* develops poorly in their erythrocytes.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "who_malaria_039",
+      "question": "What is the difference between causal and suppressive chemoprophylaxis for malaria?",
+      "answer": "Causal chemoprophylaxis kills the parasite in the liver before it gains access to the blood. Suppressive chemoprophylaxis attacks asexual parasites in the blood. Most antimalarial drugs are suppressive chemoprophylactics.",
+      "evidence": "Chemoprophylaxis is designed to kill the parasite after it has gained access\nto the body but before it leads to the rupture of host RBCs, which causes\nthe symptoms of malaria. Drugs may accomplish this by attacking the parasite\nin either the liver or the blood. Causal chemoprophylaxis refers to killing\nthe parasite in the liver before it gains access to the blood. Suppressive\nchemoprophylaxis is accomplished by drugs which attack asexual parasites in\nthe blood. Most antimalarial drugs attack parasites in the blood and are\ntherefore suppressive chemoprophylactics.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "who_malaria_040",
+      "question": "How does severe malaria in pregnant women compare to non-pregnant adults in terms of complications and mortality?",
+      "answer": "Women in the second and third trimesters are more likely to have severe malaria than other adults, often complicated by pulmonary oedema and hypoglycaemia. Maternal mortality is approximately 50%, which is higher than in non-pregnant adults.",
+      "evidence": "Women in the second and third trimesters of pregnancy are more likely to have severe malaria than other adults, and, in low-transmission settings, this is often complicated by pulmonary oedema and hypoglycaemia. Maternal mortality is approximately 50%, which is higher than in non-pregnant adults. Fetal death and premature labour are common.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "who_malaria_041",
+      "question": "How many locally acquired mosquito-transmitted malaria cases were reported in the United States in 2023, and in which states?",
+      "answer": "After two decades of no reported locally acquired mosquito-transmitted malaria in the United States, 10 cases were reported from 4 states (FL, TX, MD, AR) in 2023.",
+      "evidence": "After 2 decades of no reported locally acquired mosquito-transmitted malaria in the United States, 10 cases were reported from 4 states (FL, TX, MD, AR) in 2023.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_042",
+      "question": "What percentage of malaria cases diagnosed in the United States in 2019 were acquired in Africa?",
+      "answer": "Of cases in 2019 for which the country of acquisition was known, 93% were acquired in Africa, 4% in Asia, 2% in the Caribbean and the Americas, and less than 1% in Oceania and the Middle East.",
+      "evidence": "Of cases in 2019 for which country of acquisition was known, 93% were acquired in Africa, 4% in Asia, 2% in the Caribbean and the Americas, and <1% in Oceania and the Middle East.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_043",
+      "question": "What are the limitations of malaria rapid diagnostic tests (RDTs)?",
+      "answer": "RDTs cannot distinguish between all Plasmodium species, may be less sensitive than expert microscopy or PCR, cannot quantify parasitemia, and an RDT-positive result may persist for days or weeks after treatment. Additionally, mutations in malaria parasites can cause absence of the antigen detected by RDTs, leading to false-negative results.",
+      "evidence": "RDTs cannot distinguish between all *Plasmodium* species that affect humans; they might be less sensitive than expert microscopy or PCR for diagnosis; they cannot quantify parasitemia; and an RDT-positive test result might persist for days or weeks after an infection has been treated and cleared. RDTs are not useful for assessing response to therapy. In some areas, mutations are increasingly identified in malaria parasites, resulting in an absence of the malaria antigen usually detected by many RDTs, including the only RDT used in the United States.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_044",
+      "question": "In the United States, must RDT results be confirmed by microscopy?",
+      "answer": "Yes, in the United States, positive and negative RDT results must always be confirmed by microscopy. Microscopy confirmation should occur as soon as possible because information on the presence, density, and parasite species is critical for optimal management.",
+      "evidence": "In the United States, positive and negative RDT results must always be confirmed by microscopy. Microscopy confirmation of the RDT result should occur as soon as possible because information on the presence, density, and parasite species is critical for optimal management of malaria.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_045",
+      "question": "What two malaria treatment regimens are available as a reliable supply for self-treatment in the United States?",
+      "answer": "Atovaquone-proguanil and artemether-lumefantrine are the two treatment regimens available in the United States that can be prescribed as a reliable supply for self-treatment. The chosen medication should not be the same drug used for chemoprophylaxis.",
+      "evidence": "Two malaria treatment regimens available in the United States can be prescribed as a reliable supply for self-treatment: atovaquone-proguanil and artemether-lumefantrine. The chosen medication should not be the same (or related) drug that has been taken for chemoprophylaxis.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_046",
+      "question": "Why should travelers be discouraged from obtaining chemoprophylaxis medications while abroad?",
+      "answer": "Medications available at overseas destinations might be produced under substandard manufacturing practices, be counterfeit, contain contaminants, not be protective, or be dangerous. Their quality is often not known.",
+      "evidence": "Travelers should be discouraged from obtaining chemoprophylaxis medications while abroad. Malaria chemoprophylaxis medications might be available at overseas destinations, including drugs not recommended in the United States; however, the quality of these products is often not known. Products might be produced under substandard manufacturing practices, be counterfeit, contain contaminants, not be protective, or be dangerous.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_047",
+      "question": "What are the chloroquine-sensitive areas for P. falciparum, and what chemoprophylaxis options exist for those destinations?",
+      "answer": "Chloroquine-sensitive P. falciparum is present in the Caribbean and Central American countries west of the Panama Canal. For these destinations, effective chemoprophylaxis options include chloroquine, atovaquone-proguanil, doxycycline, mefloquine, and tafenoquine.",
+      "evidence": "Chloroquine-sensitive *P. falciparum* is present in the Caribbean and Central American countries west of the Panama Canal. For destinations in which all *Plasmodium* spp. are known to be chloroquine-sensitive, effective malaria chemoprophylaxis options include chloroquine, atovaquone-proguanil, doxycycline, mefloquine, and tafenoquine.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_048",
+      "question": "Why is switching from a daily to a weekly chemoprophylaxis medication not recommended?",
+      "answer": "Switching from a daily to a weekly chemoprophylaxis medication is not recommended because it takes time for the weekly medication to reach protective levels.",
+      "evidence": "Switching from a daily to a weekly chemoprophylaxis medication is not recommended because it takes time for the weekly medication to reach protective levels.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_049",
+      "question": "What are the contraindications for mefloquine use in malaria chemoprophylaxis?",
+      "answer": "Mefloquine is contraindicated in people with active depression, a recent history of depression, generalized anxiety disorder, psychosis, schizophrenia, other major psychiatric disorders, or seizures. It is also contraindicated for travelers with known hypersensitivity to the drug or related compounds like quinidine and quinine, and is not recommended for people with cardiac conduction abnormalities.",
+      "evidence": "Mefloquine is contraindicated in people with active depression, a recent history of depression, generalized anxiety disorder, psychosis, schizophrenia and other major psychiatric disorders, or seizures. Mefloquine should be avoided in people with a history of depression. Mefloquine is also contraindicated for travelers with a known hypersensitivity to the drug or related compounds (e.g., quinidine, quinine). Mefloquine is not recommended for people with cardiac conduction abnormalities.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_051",
+      "question": "What are the two distinct uses of primaquine phosphate for malaria prevention?",
+      "answer": "Primaquine has two distinct uses: primary chemoprophylaxis in areas with primarily P. vivax, and terminal chemoprophylaxis for travelers who have had prolonged exposure to P. vivax or P. ovale in malaria-endemic areas.",
+      "evidence": "Primaquine phosphate has 2 distinct uses for malaria prevention in people with normal G6PD levels: primary chemoprophylaxis in areas with primarily *P. vivax* and terminal chemoprophylaxis for travelers who have had prolonged exposure to *P. vivax* or *P. ovale* in malaria-endemic areas.",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_052",
+      "question": "What is the purpose of terminal prophylaxis with primaquine, and how does it work?",
+      "answer": "Terminal prophylaxis involves taking primaquine toward the end of exposure or immediately thereafter to eliminate hypnozoites (dormant liver stages) of P. ovale or P. vivax, thereby preventing relapses or delayed-onset clinical presentations of malaria.",
+      "evidence": "Terminal prophylaxis involves taking primaquine toward the end of the exposure period (or immediately thereafter) for the purpose of eliminating hypnozoites (dormant liver stages) of *P. ovale* or *P. vivax* and preventing relapses or delayed-onset clinical presentations of malaria.",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_053",
+      "question": "What is the recommended chemoprophylaxis for pregnant women traveling to areas with chloroquine-resistant P. falciparum?",
+      "answer": "For travel to areas with chloroquine-resistant Plasmodium, mefloquine is the only medication recommended for malaria chemoprophylaxis during pregnancy. Studies of mefloquine use during pregnancy have found no indication of adverse effects on the fetus.",
+      "evidence": "For travel to areas with chloroquine-resistant *Plasmodium*, mefloquine is the only medication recommended for malaria chemoprophylaxis during pregnancy. Studies of mefloquine use during pregnancy have found no indication of adverse effects on the fetus.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_056",
+      "question": "What is the preferred treatment for uncomplicated P. falciparum malaria acquired in areas with chloroquine resistance?",
+      "answer": "Artemether-lumefantrine (Coartem) is the preferred option if readily available. Other options include atovaquone-proguanil, quinine sulfate plus doxycycline/tetracycline/clindamycin, and mefloquine, which is recommended only when other options cannot be used.",
+      "evidence": "For *P. falciparum* infections acquired in areas with chloroquine resistance, four treatment options are available. These include artemether-lumefantrine (Coartem\u00ae), which is the preferred option if readily available, and atovaquone-proguanil (Malarone\u2122).",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_058",
+      "question": "Why should patients with P. falciparum infection be hospitalized even if they have uncomplicated malaria?",
+      "answer": "Clinicians should hospitalize patients with P. falciparum infection to monitor clinical response and check parasite density every 12-24 hours due to the risk of progression to severe disease. Outpatient completion of treatment can be considered once clinical presentation improves and parasite density decreases.",
+      "evidence": "Due to the risk of progression to severe disease, uncomplicated malaria treatment should be initiated as soon as possible with the regimen that is most readily available. In addition, clinicians should hospitalize patients with *P. falciparum* infection to monitor clinical response and check parasite density every 12 \u2013 24 hours.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_059",
+      "question": "What is the role of anti-relapse treatment for P. vivax and P. ovale infections?",
+      "answer": "P. vivax and P. ovale infections can relapse due to hypnozoites, which are dormant forms that remain in the liver. To eradicate hypnozoites, patients should be treated with either primaquine phosphate or tafenoquine in addition to treatment for the acute blood-stage infection.",
+      "evidence": "In addition to requiring treatment for the blood stage parasites, i.e., acute phase of malaria, *P. vivax* and *P. ovale* infections can relapse due to hypnozoites, which are dormant forms that remain in the liver. To eradicate the hypnozoites, patients should be treated with either primaquine phosphate or tafenoquine (KrintafelTM).",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_060",
+      "question": "What is the recommended primaquine dosing for patients weighing 70 kg or more?",
+      "answer": "Due to reduced efficacy of primaquine in patients weighing 70 kg or more, the total dose should be adjusted to 6 mg/kg, then divided into daily doses of 30 mg for the number of days needed to complete the total dose. A daily dose greater than 30 mg is not recommended due to safety concerns.",
+      "evidence": "Due to reduced efficacy of primaquine in patients \u226570 kg, the total dose of primaquine should be adjusted in these patients to 6 mg/kg, then divided into daily doses of 30 mg for the number of days needed to complete the total dose. A daily dose >30 mg is not recommended due to safety concerns.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_061",
+      "question": "What alternative regimen exists for persons with intermediate G6PD deficiency who need antirelapse treatment?",
+      "answer": "For persons with intermediate G6PD deficiency, clinicians may consider giving primaquine at 45 mg (base) orally once per week for eight weeks with close monitoring for hemolysis. Consultation with an expert in infectious disease and/or tropical medicine is advised.",
+      "evidence": "For persons with intermediate G6PD deficiency, clinicians may consider giving primaquine at 45 mg (base) po once per week for eight weeks with close monitoring for hemolysis. Consultation with an expert in infectious disease and/or tropical medicine is advised if this alternative regimen is considered in intermediate G6PD-deficient individuals.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_062",
+      "question": "What long-term prophylaxis option is available for G6PD-deficient patients who cannot take primaquine or tafenoquine for P. vivax or P. ovale?",
+      "answer": "Patients with G6PD deficiency who cannot tolerate primaquine or tafenoquine should be put on chloroquine prophylaxis (300 mg base orally once a week) for one year from the acute infection, as most relapses from hypnozoite reactivation occur within this timeframe.",
+      "evidence": "Patients with G6PD deficiency who are not expected to tolerate primaquine or tafenoquine should be put on chloroquine prophylaxis (300 mg [base] po once a week) for one year from the acute infection, as most of the relapses resulting from hypnozoite reactivation occur within this timeframe.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_066",
+      "question": "Why are IV or oral clindamycin and doxycycline inadequate as interim treatment for severe malaria?",
+      "answer": "Clindamycin and tetracyclines like doxycycline are slow-acting antimalarials that would not take effect until well after 24 hours, and they are not effective antimalarials for treatment of severe malaria when used alone.",
+      "evidence": "IV or oral clindamycin and tetracyclines, such as doxycycline, are not adequate for interim treatment. These drugs are slow-acting antimalarials that would not take effect until well after 24 hours, and they are not effective antimalarials for treatment of severe malaria when used alone.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_068",
+      "question": "What laboratory tests should be performed weekly for monitoring delayed post-artemisinin hemolytic anemia?",
+      "answer": "Weekly laboratory evaluation should include hemoglobin concentration, reticulocyte count, haptoglobin, lactate dehydrogenase (LDH), and total bilirubin. Depending on the intensity of hemolysis, blood transfusion may be needed.",
+      "evidence": "Weekly laboratory evaluation should include hemoglobin concentration, reticulocyte count, haptoglobin, lactate dehydrogenase (LDH), and total bilirubin. Depending on the intensity of hemolysis and presence of anemia signs and symptoms, blood transfusion may be needed.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_070",
+      "question": "What are the five ACTs recommended by WHO for treatment of uncomplicated P. falciparum malaria?",
+      "answer": "The five recommended ACTs are: artemether + lumefantrine, artesunate + amodiaquine, artesunate + mefloquine, artesunate + sulfadoxine-pyrimethamine (SP), and dihydroartemisinin + piperaquine.",
+      "evidence": "The five ACTs recommended for treatment of uncomplicated *P. falciparum* malaria are:\n* artemether + lumefantrine\n* artesunate + amodiaquine\n* artesunate + mefloquine\n* artesunate + SP\n* dihydroartemisinin + piperaquine.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_072",
+      "question": "Why is poor adherence to antimalarial treatment a significant concern?",
+      "answer": "Poor adherence is a major cause of treatment failure and drives the emergence and spread of drug resistance. Fixed-dose combinations encourage adherence and are preferred to loose individual tablets.",
+      "evidence": "Poor adherence is a major cause of treatment failure and drives the emergence and spread of drug resistance. Fixed-dose combinations encourage adherence and are preferred to loose (individual) tablets.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_073",
+      "question": "Why should lumefantrine be taken with food or a fat-containing drink?",
+      "answer": "Absorption of lumefantrine is enhanced by co-administration with fat. Patients or caregivers should be informed that artemether-lumefantrine should be taken immediately after food or a fat-containing drink, particularly on the second and third days of treatment.",
+      "evidence": "Absorption of lumefantrine is enhanced by co-administration with fat. Patients or caregivers should be informed that this ACT should be taken immediately after food or a fat containing drink (e.g. milk), particularly on the second and third days of treatment.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_074",
+      "question": "Why should artesunate + amodiaquine be avoided in HIV patients on zidovudine or cotrimoxazole?",
+      "answer": "Artesunate + amodiaquine is associated with severe neutropenia, particularly in patients co-infected with HIV, especially those on zidovudine and/or cotrimoxazole. Concomitant use of efavirenz increases exposure to amodiaquine and hepatotoxicity.",
+      "evidence": "Artesunate + amodiaquine is associated with severe neutropenia, particularly in patients co-infected with HIV and especially in those on zidovudine and/or cotrimoxazole. Concomitant use of efavirenz increases exposure to amodiaquine and hepatotoxicity. Thus, concomitant use of artesunate + amodiaquine by patients taking zidovudine, efavirenz and cotrimoxazole should be avoided, unless this is the only ACT promptly available.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_075",
+      "question": "What is the recommended approach when P. falciparum malaria recurs within 28 days of treatment?",
+      "answer": "The recommended second-line treatment is an alternative ACT known to be effective in the region. Seven-day treatment regimens with artesunate or quinine plus tetracycline, doxycycline, or clindamycin are no longer generally recommended due to likely poor adherence without directly observed treatment.",
+      "evidence": "The recommended second-line treatment is an alternative ACT known to be effective in the region. Adherence to 7-day treatment regimens (with artesunate or quinine both of which should be co-administered with + tetracycline, or doxycycline or clindamycin) is likely to be poor if treatment is not directly observed; these regimens are no longer generally recommended.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_076",
+      "question": "Why should mefloquine not be reused within 60 days of initial treatment?",
+      "answer": "Reuse of mefloquine within 60 days of first treatment is associated with an increased risk for neuropsychiatric reactions. Therefore, an alternative ACT should be used for recurrences within that period.",
+      "evidence": "However, reuse of mefloquine within 60 days of first treatment is associated with an increased risk for neuropsychiatric reactions, and an alternative ACT should be used.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_077",
+      "question": "What is the recommended low-dose primaquine strategy for reducing P. falciparum transmission in low-transmission areas?",
+      "answer": "In low-transmission areas, a single dose of 0.25 mg/kg body weight primaquine should be given with ACT to patients with P. falciparum malaria to reduce transmission. This dose is considered safe even in people with G6PD deficiency, and G6PD testing is not required.",
+      "evidence": "In low-transmission areas, give a single dose of 0.25 mg/kg bw primaquine with ACT to patients with *P. falciparum* malaria (except pregnant women, infants aged < 6 months and women breastfeeding infants aged < 6 months) to reduce transmission. G6PD testing is not required.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_079",
+      "question": "What is the recommended antipyretic treatment for malaria patients with high fever?",
+      "answer": "Paracetamol (acetaminophen) at a dose of 15 mg/kg body weight every 4 hours is widely used and is safe and well tolerated, given orally or as a suppository. Ibuprofen and aspirin are no longer recommended due to risks of gastrointestinal bleeding, renal impairment, and Reye's syndrome.",
+      "evidence": "Paracetamol (acetaminophen) at a dose of 15 mg/kg bw every 4 h is widely used; it is safe and well tolerated and can be given orally or as a suppository. Ibuprofen (5 mg/kg bw) has been used successfully as an alternative in the treatment of malaria and other childhood fevers, but, like aspirin and other non-steroidal anti-inflammatory drugs, it is *no longer recommended* because of the risks of gastrointestinal bleeding, renal impairment and Reye's syndrome.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_082",
+      "question": "What is the mechanism of post-treatment haemolysis following artesunate treatment?",
+      "answer": "Artesunate rapidly kills ring-stage parasites, which are then removed from red cells by the spleen. These erythrocytes are returned to the circulation but with a shortened life span, resulting in delayed haemolysis. It is a predictable event related to the life-saving effect of artesunate.",
+      "evidence": "Artesunate rapidly kills ring-stage parasites, which are then taken out of the red cells by the spleen; these infected erythrocytes are then returned to the circulation but with a shortened life span, resulting in the observed haemolysis. Thus, post-treatment haemolysis is a predictable event related to the life-saving effect of artesunate.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_083",
+      "question": "What is the recommended pre-referral treatment for children under 6 years with suspected severe malaria when intramuscular artesunate is not available?",
+      "answer": "Children under 6 years should be treated with a single rectal dose (10 mg/kg body weight) of artesunate and referred immediately to an appropriate facility for further care. Rectal artesunate is not recommended for use in older children and adults.",
+      "evidence": "Where intramuscular injections of artesunate are not available, treat children < 6 years with a single rectal dose (10 mg/kg bw) of artesunate, and refer immediately to an appropriate facility for further care. Do not use rectal artesunate in older children and adults.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_084",
+      "question": "What is the main objective of treating severe malaria, and what are the secondary objectives?",
+      "answer": "The main objective is to prevent the patient from dying. Secondary objectives are prevention of disabilities and prevention of recrudescent infection.",
+      "evidence": "The main objective of the treatment of severe malaria is to prevent the patient from dying. Secondary objectives are prevention of disabilities and prevention of recrudescent infection.",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_085",
+      "question": "How is severe vivax malaria defined differently from severe falciparum malaria?",
+      "answer": "Severe vivax malaria is defined the same as falciparum malaria but with no parasite density thresholds. This contrasts with falciparum malaria, which specifies parasite density thresholds such as hyperparasitaemia greater than 10%.",
+      "evidence": "* *Hyperparasitaemia: P. falciparum* parasitaemia > 10%\n\n### 7.1.2. SEVERE VIVAX AND KNOWLESI MALARIA\n\nSevere vivax malaria is defined as for falciparum malaria but with no parasite density thresholds.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "who_malaria_086",
+      "question": "What immediate assessments should be performed when a patient with severe malaria is admitted?",
+      "answer": "An open airway should be secured in unconscious patients. The patient should be weighed, an IV cannula inserted, and blood glucose, haematocrit or haemoglobin, parasitaemia, and renal function should be measured immediately. A detailed clinical examination including coma score should be conducted.",
+      "evidence": "An open airway should be secured in unconscious patients and breathing and circulation assessed. The patient should be weighed or body weight estimated, so that medicines, including antimalarial drugs and fluids, can be given appropriately. An intravenous cannula should be inserted, and blood glucose (rapid test), haematocrit or haemoglobin, parasitaemia and, in adults, renal function should be measured immediately.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_087",
+      "question": "Why should broad-spectrum antibiotics be given to children with suspected severe malaria in endemic areas?",
+      "answer": "Septicaemia and severe malaria are associated and have substantial diagnostic overlap, particularly in children in areas of moderate and high transmission. Therefore, broad-spectrum antibiotic treatment should be given with antimalarial drugs to all children with suspected severe malaria until a bacterial infection is excluded.",
+      "evidence": "Septicaemia and severe malaria are associated, and there is substantial diagnostic overlap, particularly in children in areas of moderate and high transmission. Thus broad-spectrum antibiotic treatment should be given with antimalarial drugs to all children with suspected severe malaria in areas of moderate and high transmission until a bacterial infection is excluded.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_088",
+      "question": "What adjunctive treatments have been shown to be harmful or ineffective in severe malaria?",
+      "answer": "Numerous adjunctive treatments have been evaluated and found harmful or ineffective, including heparin, prostacyclin, desferroxamine, pentoxifylline, high-dose corticosteroids, aspirin, anti-TNF antibody, cyclosporine A, and bolus administration of albumin. Corticosteroids specifically increase gastrointestinal bleeding risk, seizures, and prolong coma resolution.",
+      "evidence": "Heparin, prostacyclin, desferroxamine, pentoxifylline, low-molecular-mass dextran, urea, high-dose corticosteroids, aspirin anti-TNF antibody, cyclosporine A, dichloroacetate, adrenaline, hyperimmune serum, *N*-acetylcysteine and bolus administration of albumin are not recommended. In addition, use of corticosteroids increases the risk for gastrointestinal bleeding and seizures and has been associated with prolonged coma resolution times when compared with placebo.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_089",
+      "question": "What is the recommended management of hypoglycaemia in severe malaria?",
+      "answer": "Blood glucose should be checked, hypoglycaemia corrected, and glucose maintained with a glucose-containing infusion. The threshold for intervention is less than 3 mmol/L for children under 5 years and less than 2.2 mmol/L for older children and adults.",
+      "evidence": "Check blood glucose, correct hypoglycaemia and maintain with glucose-containing infusion. Although hypoglycaemia is defined as glucose < 2.2 mmol/L, the threshold for intervention is < 3 mmol/L for children < 5 years and < 2.2 mmol/L for older children and adults.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_090",
+      "question": "Why does piperaquine require avoidance of high-fat meals, and what cardiac considerations exist?",
+      "answer": "High-fat meals significantly accelerate piperaquine absorption, increasing the risk of potentially arrhythmogenic prolongation of the QT interval. Piperaquine prolongs the QT interval and should not be used in patients with congenital QT prolongation or conditions/medications that prolong the QT interval.",
+      "evidence": "High-fat meals should be avoided, as they significantly accelerate the absorption of piperaquine, thereby increasing the risk for potentially arrhythmogenic delayed ventricular repolarization (prolongation of the corrected electrocardiogram QT interval). Normal meals do not alter the absorption of piperaquine. Piperaquine prolongs the QT interval by approximately the same amount as chloroquine but by less than quinine. It is not necessary to perform an electrocardiogram before prescribing dihydroartemisinin + piperaquine, but this ACT should not be used in patients with congenital QT prolongation or who have a clinical condition or are on medications that prolong the QT interval.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_091",
+      "question": "How do the incubation periods differ among the five Plasmodium species that infect humans?",
+      "answer": "The incubation periods vary: 8-11 days for P. falciparum, 8-17 days for P. vivax, 10-17 days for P. ovale, 18-40 days (possibly up to several years) for P. malariae, and 9-12 days for P. knowlesi.",
+      "evidence": "The incubation period, and therefore time to symptom development, varies by species: 8 to 11 days for *P. falciparum*, 8 to 17 days for *P. vivax*, 10 to 17 days for *P. ovale*, 18 to 40 days for *P. malariae* (though possibly up to several years), and 9 to 12 days for *P. knowlesi*.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "who_malaria_092",
+      "question": "What is the 'malarial paroxysm' and what are its stages?",
+      "answer": "The malarial paroxysm comprises three successive stages: a 15-to-60 minute cold stage with shivering, a 2-to-6 hour hot stage with fever up to 41 degrees Celsius, flushed dry skin, headache, nausea, and vomiting, and a 2-to-4 hour sweating stage during which fever drops rapidly.",
+      "evidence": "The malaria paroxysm comprises three successive stages. The first is a 15-to-60 minute cold stage characterized by shivering and a feeling of cold. Next comes the 2-to-6 hour hot stage, in which there is fever, sometimes reaching 41\u00b0C, flushed, dry skin, and often headache, nausea, and vomiting. Finally, there is the 2-to-4 hour sweating stage during which the fever drops rapidly and the patient sweats.",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_093",
+      "question": "How do children's clinical presentations of malaria differ from those of adults?",
+      "answer": "Children are more likely to present with non-specific or gastrointestinal symptoms such as fever, lethargy, malaise, nausea, vomiting, abdominal cramps, and somnolence. They more often develop hepatomegaly, splenomegaly, severe anemia, seizures (60-80%), hypoglycemia, and concomitant sepsis, but are less likely to develop pulmonary edema and renal failure than adults.",
+      "evidence": "Children are more likely to present with non-specific or gastrointestinal symptoms such as fever, lethargy, malaise, nausea, vomiting, abdominal cramps, and somnolence. They are more likely to develop hepatomegaly, splenomegaly, and severe anemia without major organ dysfunction than adults. In the case of severe malaria, they present with more frequent seizures (60 to 80%), hypoglycemia, and concomitant sepsis but are less likely to develop pulmonary edema and renal failure than adults.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "who_malaria_094",
+      "question": "What is the significance of thrombocytopenia in malaria diagnosis?",
+      "answer": "Thrombocytopenia occurs in 60-70% of all malaria cases, making it a common laboratory finding. A complete blood count revealing thrombocytopenia, along with varying degrees of anemia in 29% of adults and 78% of children, supports evaluation for malaria.",
+      "evidence": "In patients with malaria, complete blood count reveals thrombocytopenia in 60-70% of all cases and varying degrees of anemia in 29% of adults and 78% of children.",
+      "question_type": "factual"
+    },
+    {
+      "qa_id": "who_malaria_095",
+      "question": "What is the difference between relapse and recrudescence in malaria?",
+      "answer": "Relapse is recurrent symptoms months to years after resolution due to reinfection or hypnozoite activation, mainly in P. vivax and P. ovale. Recrudescence is recurrent symptoms within days to weeks due to remaining parasitemia after ineffective treatment or failed host immune response, more common in P. falciparum.",
+      "evidence": "Relapse is a case of recurrent symptoms months to years after the resolution of erythrocytic organisms due to reinfection or hypnozoite activation. Recrudescence is defined as recurrent symptoms within days to weeks of acute illness due to remaining parasitemia after ineffective or incomplete treatment or failed host immune response, more commonly in *P. falciparum*.",
+      "question_type": "comparative"
+    },
+    {
+      "qa_id": "who_malaria_096",
+      "question": "Why does the absence of Duffy blood-group antigens protect against P. vivax infection?",
+      "answer": "Duffy blood-group antigens function as erythrocyte surface receptors for P. vivax merozoites. Without the Duffy antigen, the parasites cannot invade red blood cells, which explains the virtual absence of P. vivax infections in many areas of Africa where most people lack these antigens.",
+      "evidence": "The virtual absence of *P vivax* infections in many areas of Africa is explained by the fact that most blacks do not have Duffy blood-group antigens, which apparently function as erythrocyte surface receptors for *P vivax* merozoites; without the Duffy antigen, the parasites cannot invade.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_098",
+      "question": "What are hypnozoites and in which Plasmodium species do they occur?",
+      "answer": "Hypnozoites are quiescent or dormant liver-phase parasites that can remain inactive for months to years before reactivating. They occur in P. vivax and P. ovale infections, where maturation of liver-stage schizonts may be delayed for as long as 1 to 2 years.",
+      "evidence": "However, in *P vivax* and *P ovale* infections, maturation of liver-stage schizonts may be delayed for as long as 1 to 2 years. These quiescent liver-phase parasites are called hypnozoites.",
+      "question_type": "definitional"
+    },
+    {
+      "qa_id": "who_malaria_099",
+      "question": "What zoonotic Plasmodium species from Southeast Asia has been documented as causing human infections and deaths?",
+      "answer": "Plasmodium knowlesi, a parasite of Old World (Eastern Hemisphere) monkeys in Southeast Asia, has been documented as a cause of human infections and some deaths.",
+      "evidence": "Zoonotic forms, especially *Plasmodium knowlesi*, a parasite of Old World (Eastern Hemisphere) monkeys in Southeast Asia, have been documented as causes of human infections and some deaths.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_100",
+      "question": "Why can malaria transmission information change rapidly over time?",
+      "answer": "Malaria transmission can change rapidly and from year to year due to changes in local weather conditions, mosquito vector density, and prevalence of infection.",
+      "evidence": "The information presented here was accurate at the time of publication; readers are encouraged to see updated information on the CDC website because malaria transmission can change rapidly and from year to year due to changes in local weather conditions, mosquito vector density, and prevalence of infection.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_101",
+      "question": "How many malaria cases occur annually in the United States, and what is the primary source of these cases?",
+      "answer": "Approximately 2,000 cases of malaria occur each year in the United States, and almost all of them are imported by travelers returning from malaria-endemic destinations.",
+      "evidence": "Travelers going to malaria-endemic destinations are at risk of contracting the disease, and almost all the approximately 2,000 cases of malaria that occur each year in the United States are imported.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_102",
+      "question": "How does the risk of acquiring malaria vary among travelers?",
+      "answer": "The risk of acquiring malaria differs substantially from traveler to traveler and from region to region, even within a single country.",
+      "evidence": "The risk of acquiring malaria differs substantially from traveler to traveler and from region to region, even within a single country.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_103",
+      "question": "What should travelers with malaria symptoms do regarding medical care and chemoprophylaxis while still traveling?",
+      "answer": "Travelers with symptoms of malaria should seek the best available medical services as soon as possible, even if still traveling, and should continue their chemoprophylaxis regimen until they have a definitive diagnosis.",
+      "evidence": "Travelers with symptoms of malaria should seek the best available medical services as soon as possible, even if still traveling, and should continue their chemoprophylaxis regimen until they have a definitive diagnosis.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_104",
+      "question": "Why is P. falciparum malaria considered a medical emergency?",
+      "answer": "P. falciparum malaria is a medical emergency requiring urgent intervention because clinical deterioration, including death, can occur rapidly and unpredictably.",
+      "evidence": "Suspected or confirmed malaria, especially *P. falciparum*, is a medical emergency requiring urgent intervention because clinical deterioration, including death, can occur rapidly and unpredictably.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_105",
+      "question": "Why is it critical to seek prompt treatment if fever develops while traveling in a malaria-endemic area?",
+      "answer": "Malaria and other potentially life-threatening infections acquired during travel could be fatal if treatment is delayed, making prompt medical attention essential.",
+      "evidence": "**What should be done if fever develops while traveling in a malaria-endemic area?**\n\nMalaria and other potentially life-threatening infections acquired during travel could be fatal if treatment is delayed.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_106",
+      "question": "What should travelers do if they develop fever while in a malaria-endemic area, in terms of seeking help and continuing medication?",
+      "answer": "Travelers should promptly seek medical help and continue to take malaria chemoprophylaxis while in the malaria-endemic area.",
+      "evidence": "Travelers should promptly seek medical help and continue to take malaria chemoprophylaxis while in the malaria-endemic area.\n\n**What should be done if a traveler who took malaria chemoprophylaxis develops fever after returning from their trip?",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_107",
+      "question": "Can a traveler who took malaria chemoprophylaxis still develop malaria after returning from a trip?",
+      "answer": "Yes, malaria chemoprophylaxis, while highly effective, is not 100% effective, so travelers who took chemoprophylaxis can still develop malaria after returning from their trip.",
+      "evidence": "**What should be done if a traveler who took malaria chemoprophylaxis develops fever after returning from their trip?**\n\n* Malaria chemoprophylaxis, while highly effective, is not 100% effective.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_108",
+      "question": "What diagnostic testing should be performed immediately when malaria is suspected in a patient?",
+      "answer": "All patients in whom malaria is considered should receive blood smear microscopy immediately, and if available, additional diagnostic testing such as a malaria RDT should be conducted concurrently if results can be available more quickly.",
+      "evidence": "All patients in which malaria is considered should receive diagnostic testing immediately; blood smear microscopy is recommended for all of these patients and, if available, additional diagnostic testing such as a malaria RDT should be conducted concurrently if the results can be available more quickly (e.g., within hours) to guide initial antimalarial treatment.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_109",
+      "question": "Within what timeframe should malaria microscopy results be available after a patient presents?",
+      "answer": "Tests should be performed immediately, and microscopy results should be available as soon as possible, within 24 hours of the patient's presentation.",
+      "evidence": "Tests should be performed immediately, and microscopy results should be available as soon as possible, within 24 hours of the patient's presentation.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_110",
+      "question": "Why is microscopy confirmation needed after a positive malaria rapid diagnostic test result?",
+      "answer": "Microscopy confirmation of the RDT result should occur as soon as possible because information on the presence, density, and parasite species is critical for optimal management of malaria.",
+      "evidence": "Microscopy confirmation of the RDT result should occur as soon as possible because information on the presence, density, and parasite species is critical for optimal management of malaria.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_111",
+      "question": "What should laboratories without in-house microscopy services maintain for malaria diagnosis?",
+      "answer": "Laboratories that do not provide in-house, on-the-spot microscopy services should maintain a stock of malaria RDTs to perform immediate malaria diagnostic testing when needed.",
+      "evidence": "Laboratories that do not provide in-house, on-the-spot microscopy services should maintain a stock of malaria RDTs to perform immediate malaria diagnostic testing when needed.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_112",
+      "question": "Why is halofantrine not recommended for malaria treatment?",
+      "answer": "Halofantrine is not recommended for treatment because of documented adverse cardiac events, including deaths, which have occurred in people with and without preexisting cardiac problems, and both in the presence and absence of other antimalarial drugs.",
+      "evidence": "Halofantrine is not recommended for treatment because of documented adverse cardiac events, including deaths. These adverse events have occurred in people with and without preexisting cardiac problems, and both in the presence and absence of other antimalarial drugs.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_113",
+      "question": "Why should a reliable supply of antimalarial drugs be acquired in the United States before travel?",
+      "answer": "The reliable supply should be acquired in the United States so clinicians can consider the traveler's other medical conditions or medications when selecting an antimalarial drug, and to avoid the possibilities of travelers obtaining counterfeit drugs or depleting local resources abroad.",
+      "evidence": "The reliable supply should be acquired in the United States, so clinicians can consider the traveler's other medical conditions or medications when selecting an antimalarial drug and to avoid the possibilities of travelers obtaining counterfeit drugs in the local pharmacy or market or depleting local resources.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_114",
+      "question": "Why should the reliable supply medication for malaria treatment not be the same drug used for chemoprophylaxis?",
+      "answer": "The chosen medication should not be the same or a related drug that has been taken for chemoprophylaxis. For example, atovaquone-proguanil can be used as a reliable supply medication only by travelers who are not taking atovaquone-proguanil for chemoprophylaxis.",
+      "evidence": "The chosen medication should not be the same (or related) drug that has been taken for chemoprophylaxis. For example, atovaquone-proguanil can be used as a reliable supply medication by travelers who are not taking atovaquone-proguanil for chemoprophylaxis.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_115",
+      "question": "What is the dosing schedule for artemether-lumefantrine in malaria treatment, and how is it adjusted by patient weight?",
+      "answer": "Patients take an initial dose, followed by a second dose 8 hours later, then 1 dose twice a day for the next 2 days (total of 6 oral doses over 3 days). Dosing is weight-based: 1 tablet per dose for 5 to less than 15 kg, 2 tablets for 15 to less than 25 kg, 3 tablets for 25 to less than 35 kg, and 4 tablets for 35 kg or greater.",
+      "evidence": "| Artemether-lumefantrine2  One tablet   * Artemether 20 mg / lumefantrine 120 mg | Weight-based treatment schedule for both adult and pediatric patients; patients should take an initial dose, followed by a second dose 8 hours later, then 1 dose twice a day for the next 2 days (total of 6 oral doses over 3 days)  5 to <15 kg: 1 tablet per\u202fdose  15 to <25 kg: 2 tablets per\u202fdose  25 to <35 kg: 3 tablets per\u202fdose  \u226535 kg: 4 tablets per dose | | Not for people taking mefloquine chemoprophylaxis3  Not recommended for children weighing <5 kg or women breastfeeding infants weighing <5 kg  Absorption improved when taken with a fatty meal |",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_116",
+      "question": "Why should all febrile persons returning from malaria-endemic areas be tested for malaria even if they took chemoprophylaxis?",
+      "answer": "Prevention measures, including chemoprophylaxis, are not 100% effective, so all febrile persons returning from malaria-endemic areas should be tested for malaria even if they took chemoprophylaxis.",
+      "evidence": "Prevention measures must address all malaria species in the travel area. Although highly efficacious, interventions are not 100% effective, so all febrile persons returning from malaria-endemic areas should be tested for malaria even if they took chemoprophylaxis.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_117",
+      "question": "Why do VFR travelers erroneously consider themselves immune to malaria?",
+      "answer": "VFR travelers may erroneously consider themselves immune to malaria because they grew up in a malaria-endemic country. However, the partial immunity acquired through continuous exposure is lost quickly, and VFR travelers should be considered to have the same risk as other nonimmune travelers.",
+      "evidence": "VFR travelers may erroneously consider themselves immune to malaria because they grew up in a malaria-endemic country. The partial immunity acquired through continuous exposure to malaria is lost quickly, and VFR travelers should be considered to have the same risk of malaria as other nonimmune travelers.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_118",
+      "question": "In what order should sunscreen and insect repellent be applied when both are used?",
+      "answer": "If travelers are wearing both sunscreen and insect repellent, they should apply sunscreen first and insect repellent second.",
+      "evidence": "Repellents should be applied to exposed parts of the skin. If travelers are also wearing sunscreen, they should apply sunscreen first and insect repellent second.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_119",
+      "question": "How can permethrin be used as an additional mosquito protection measure for travelers?",
+      "answer": "A permethrin-containing product can be applied to mosquito nets and clothing for additional protection against mosquitoes.",
+      "evidence": "If travelers are also wearing sunscreen, they should apply sunscreen first and insect repellent second. A permethrin-containing product can be applied to mosquito nets and clothing for additional protection against mosquitoes.",
+      "question_type": "procedural"
+    },
+    {
+      "qa_id": "who_malaria_120",
+      "question": "Why is doxycycline contraindicated for malaria chemoprophylaxis during pregnancy?",
+      "answer": "Doxycycline is contraindicated for malaria chemoprophylaxis during pregnancy because of the risk for adverse effects seen with tetracycline, a related drug, on the fetus.",
+      "evidence": "Doxycycline is contraindicated for malaria chemoprophylaxis during pregnancy because of the risk for adverse effects seen with tetracycline, a related drug, on the fetus.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_121",
+      "question": "Why is atovaquone-proguanil not recommended for use during pregnancy?",
+      "answer": "Atovaquone-proguanil is not recommended for use during pregnancy because of limited availability of data on its safety and because other options are available.",
+      "evidence": "Atovaquone-proguanil is not recommended for use during pregnancy because of limited availability of data on its safety and because other options are available.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_122",
+      "question": "Why is atovaquone-proguanil chemoprophylaxis not recommended for lactating women with infants weighing less than 5 kg?",
+      "answer": "Atovaquone-proguanil chemoprophylaxis is not recommended for lactating women when their infants weigh less than 5 kg because of a lack of safety data.",
+      "evidence": "Atovaquone-proguanil chemoprophylaxis is not recommended for lactating women when their infants weigh <5 kg (<11 lb) because of lack of safety data.",
+      "question_type": "causal"
+    },
+    {
+      "qa_id": "who_malaria_123",
+      "question": "What interaction does proguanil have with warfarin, and what monitoring may be required?",
+      "answer": "Proguanil can increase the effect of warfarin, so travelers might need international normalized ratio monitoring or adjustment of warfarin dosage.",
+      "evidence": "Proguanil can increase the effect of warfarin, so travelers might need international normalized ratio monitoring or adjustment of warfarin dosage.",
+      "question_type": "causal"
+    }
+  ]
+}

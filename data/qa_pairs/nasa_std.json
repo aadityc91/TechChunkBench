@@ -1,0 +1,712 @@
+{
+  "corpus_id": "nasa_std",
+  "qa_pairs": [
+    {
+      "question": "What is the purpose of NPR 7150.2C according to the Preface?",
+      "answer": "NPR 7150.2C establishes engineering requirements for software acquisition, development, maintenance, retirement, operations, and management, supporting the implementation of NPD 7120.4.",
+      "evidence": "Software engineering is a core capability and key enabling technology for NASA's missions and supporting infrastructure. This directive establishes the engineering requirements for software acquisition, development, maintenance, retirement, operations, and management consistent with the governance model contained in NASA Policy Directive (NPD) 1000.0. This NASA Procedural Requirements (NPR) supports the implementation of NPD 7120.4.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_001"
+    },
+    {
+      "question": "How does NPR 7150.2C define the term 'Accredit' in the context of software tools?",
+      "answer": "Accredit is defined as the official acceptance of a software development tool, model, or simulation (including associated data) to use for a specific purpose.",
+      "evidence": "**Accredit**. The official acceptance of a software development tool, model, or simulation (including associated data) to use for a specific purpose.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_002"
+    },
+    {
+      "question": "What is the definition of 'Software Validation' according to the NASA standard?",
+      "answer": "Software Validation is the confirmation that the product fulfills its intended use, ensuring that 'you built the right thing,' as sourced from IEEE 1012.",
+      "evidence": "**Software Validation**. Confirmation that the product, as provided (or as it will be provided), fulfills its intended use. In other words, validation ensures that \u201cyou built the right thing.\u201d (Source: IEEE 1012)",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_003"
+    },
+    {
+      "question": "What is the NASA definition of 'Cybersecurity'?",
+      "answer": "Cybersecurity is defined as the protection of information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction in order to provide confidentiality, integrity, and availability.",
+      "evidence": "**Cybersecurity**. The protection of information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction in order to provide confidentiality, integrity, and availability.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_004"
+    },
+    {
+      "question": "What is the definition of 'Software Assurance' in the NASA standard?",
+      "answer": "Software Assurance is the planned and systematic set of activities ensuring software life-cycle processes and products conform to requirements, standards, and procedures. For NASA, it includes Software Quality, Software Safety, Software Reliability, Mission Software Cybersecurity Assurance, Software Verification and Validation, and IV&V.",
+      "evidence": "**Software Assurance**. The planned and systematic set of activities that ensure that software life-cycle processes and products conform to requirements, standards, and procedures. For NASA, this includes the disciplines of Software Quality (functions of Software Quality Engineering, Software Quality Assurance, and Software Quality Control), Software Safety, Software Reliability, Mission Software Cybersecurity Assurance, Software Verification and Validation, and IV&V.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_005"
+    },
+    {
+      "question": "What is the NASA definition of 'Embedded Software'?",
+      "answer": "Embedded Software is software that is part of a larger system and performs some of the requirements of that system, as defined by ISO/IEC/IEEE 24765.",
+      "evidence": "**Embedded Software**. Software that is part of a larger system and performs some of the requirements of that system. (Source: ISO/IEC/IEEE 24765)",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_007"
+    },
+    {
+      "question": "How is 'Computer Software Configuration Item' defined in the NASA standard?",
+      "answer": "A Computer Software Configuration Item (CSCI) is an aggregation of software that is designated for configuration management and treated as a single entity in the configuration management process.",
+      "evidence": "**Computer Software Configuration Item**. An aggregation of software that is designated for configuration management and treated as a single entity in the configuration management process.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_008"
+    },
+    {
+      "question": "How does NASA define 'Tailoring' in the context of software requirements?",
+      "answer": "Tailoring is the process used to adjust a prescribed requirement to accommodate the needs of a specific task or activity. It may result in changes, subtractions, or additions to a typical implementation of the requirement.",
+      "evidence": "**Tailoring**. The process used to adjust a prescribed requirement to accommodate the needs of a specific task or activity (e.g., program or project). Tailoring may result in changes, subtractions, or additions to a typical implementation of the requirement.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_010"
+    },
+    {
+      "question": "What CMMI-DEV maturity level ratings are required for organizations developing Class A and Class B software at NASA?",
+      "answer": "For Class A software, a CMMI-DEV Maturity Level 3 Rating or higher is required. For Class B software (except Class B software on NASA Class D payloads), a CMMI-DEV Maturity Level 2 Rating or higher is required.",
+      "evidence": "3.9.3 The project manager shall acquire, develop, and maintain software from an organization with a non-expired CMMI-DEV rating as measured by a CMMI Institute Certified Lead Appraiser as follows: [SWE-032]\n\na. For Class A software: CMMI-DEV Maturity Level 3 Rating or higher for software.\n\nb. For Class B software (except Class B software on NASA Class D payloads, as defined in NPR 8705.4): CMMI-DEV Maturity Level 2 Rating or higher for software.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_011"
+    },
+    {
+      "question": "What does the NASA standard say about the relationship between software architecture and system quality?",
+      "answer": "NASA states that the quality and longevity of a software-reliant system is primarily determined by its architecture, which underpins design and code and represents the earliest design decisions that are difficult and costly to change later.",
+      "evidence": "4.2.1 Experience confirms that the quality and longevity of a software-reliant system is primarily determined by its architecture. The software architecture underpins a system's software design and code; it represents the earliest design decisions, ones that are difficult and costly to change later. The transformation of the derived and allocated requirements into the software architecture results in the basis for all software development work.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_012"
+    },
+    {
+      "question": "What are the preferred benchmarks for measuring software engineering process improvement at NASA Centers?",
+      "answer": "CMMI for Development (CMMI-DEV) appraisals are the preferred benchmarks for objectively measuring progress toward software engineering process improvement at NASA Centers.",
+      "evidence": "Capability Maturity Model\u00ae Integration (CMMI\u00ae) for Development (CMMI-DEV) appraisals are the preferred benchmarks for objectively measuring progress toward software engineering process improvement at NASA Centers.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_013"
+    },
+    {
+      "question": "Does the directive require a specific software life cycle model?",
+      "answer": "No, the directive does not require a specific software life cycle model. Where it refers to phases and milestone reviews, it uses the standard NASA life-cycle models described in NPR 7120.5, NPR 7120.7, and NPR 7120.8.",
+      "evidence": "1.1.4 This directive does not require a specific software life cycle model. Where this NPR refers to phases and milestone reviews in the software life-cycle, it uses the standard NASA life-cycle models described in NPR 7120.5, NPR 7120.7, and NPR 7120.8, as supported by milestone reviews described in NPR 7123.1.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_014"
+    },
+    {
+      "question": "How many cost estimate models are required for Class A and B software projects costing $2 million or more?",
+      "answer": "Two cost estimate models and associated cost parameters are required for all Class A and B software projects that have an estimated project cost of $2 million or more.",
+      "evidence": "To better estimate the cost of development, the project manager shall establish, document, and maintain: [SWE-015]\n\na. Two cost estimate models and associated cost parameters for all Class A and B software projects that have an estimated project cost of $2 million or more.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_016"
+    },
+    {
+      "question": "What does NASA define as 'Code coverage'?",
+      "answer": "Code coverage is defined as the percentage of the software that has been executed (covered) by the test suite.",
+      "evidence": "Code coverage. The percentage of the software that has been executed (covered) by the test suite.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_017"
+    },
+    {
+      "question": "What types of cybersecurity-related software defects are mentioned in the standard?",
+      "answer": "The standard mentions that software defects with cybersecurity ramifications include implementation bugs such as buffer overflows and design flaws such as inconsistent error handling.",
+      "evidence": "3.11.1 Software defects are a central and critical aspect of computer security vulnerabilities. Software defects with cybersecurity ramifications include implementation bugs such as buffer overflows and design flaws such as inconsistent error handling.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_018"
+    },
+    {
+      "question": "What is NASA's definition of 'Independent Verification and Validation' (IV&V)?",
+      "answer": "Independent Verification and Validation is verification and validation performed by an organization that is technically, managerially, and financially independent of the development organization.",
+      "evidence": "**Independent Verification and Validation**. Verification and validation performed by an organization that is technically, managerially, and financially independent of the development organization. (Source: ISO/IEC/IEEE 24765) The NASA requirements for Independent Verification and Validation are defined in the NASA-STD-8739.8.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_019"
+    },
+    {
+      "question": "What is 'Risk Management' as defined in this NASA directive?",
+      "answer": "Risk Management is an organized, systematic decision-making process that efficiently identifies, analyzes, plans, tracks, controls, communicates, and documents risk to increase the likelihood of achieving program/project goals.",
+      "evidence": "**Risk Management**. An organized, systematic decision-making process that efficiently identifies, analyzes, plans, tracks, controls, communicates, and documents risk to increase the likelihood of achieving program/project goals. (Source: NPR 8715.3)",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_020"
+    },
+    {
+      "question": "What conditions must be satisfied when COTS, GOTS, MOTS, OSS, or reused software components are acquired or used?",
+      "answer": "The project manager must ensure: requirements are identified, documentation is included, proprietary/licensing rights are addressed, future support is planned, the component is verified and validated at the same level as developed software, and periodic assessments of vendor-reported defects are planned.",
+      "evidence": "3.1.14 The project manager shall satisfy the following conditions when a COTS, GOTS, MOTS, OSS, or reused software component is acquired or used: [SWE-027]\n\na. The requirements to be met by the software component are identified.\n\nb. The software component includes documentation to fulfill its intended purpose (e.g., usage instructions).\n\nc. Proprietary rights, usage rights, ownership, warranty, licensing rights, and transfer rights have been addressed.\n\nd. Future support for the software product is planned and adequate for project needs.\n\ne. The software component is verified and validated to the same level required to accept a similar developed software component for its intended use.\n\nf. The project has a plan to perform periodic assessments of vendor reported defects to ensure the defects do not impact the selected software components.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_021"
+    },
+    {
+      "question": "What must a project manager develop regarding software configuration management planning?",
+      "answer": "The project manager must develop a software configuration management plan that describes the functions, responsibilities, and authority for the implementation of software configuration management for the project.",
+      "evidence": "5.1.2 The project manager shall develop a software configuration management plan that describes the functions, responsibilities, and authority for the implementation of software configuration management for the project. [SWE-079]",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_022"
+    },
+    {
+      "question": "What are the initialization requirements for safety-critical or mission-critical software?",
+      "answer": "Safety-critical or mission-critical software must be initialized, at first start and restarts, to a known safe state. The software must safely transition between all predefined known states, and termination must be performed to a known safe state.",
+      "evidence": "If a project has safety-critical software or mission-critical software, the project manager shall implement the following items in the software: [SWE-134]\n\na. The software is initialized, at first start and restarts, to a known safe state.\n\nb. The software safely transitions between all predefined known states.\n\nc. Termination performed by software functions is performed to a known safe state.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_024"
+    },
+    {
+      "question": "What does the NASA standard require regarding software regression testing?",
+      "answer": "The project manager must plan and conduct software regression testing to demonstrate that defects have not been introduced into previously integrated or tested software and have not produced a security vulnerability.",
+      "evidence": "4.5.11 The project manager shall plan and conduct software regression testing to demonstrate that defects have not been introduced into previously integrated or tested software and have not produced a security vulnerability. [SWE-191]",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_026"
+    },
+    {
+      "question": "What does the directive require regarding the use of static analysis tools?",
+      "answer": "The project manager must use static analysis tools to analyze the code during the development and testing phases to detect defects, software security, and coding errors.",
+      "evidence": "4.4.4 The project manager shall use static analysis tools to analyze the code during the development and testing phases to detect defects, software security, and coding errors. [SWE-135]",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_027"
+    },
+    {
+      "question": "What procedures are required for each planned software peer review or inspection?",
+      "answer": "For each planned peer review or inspection, the project manager must use a checklist or formal reading technique, use established readiness and completion criteria, track actions until resolved, and identify the required participants.",
+      "evidence": "5.3.3 The project manager shall, for each planned software peer review or software inspection: [SWE-088]\n\na. Use a checklist or formal reading technique (e.g., perspective based reading) to evaluate the work products.\n\nb. Use established readiness and completion criteria.\n\nc. Track actions identified in the reviews until they are resolved.\n\nd. Identify the required participants.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_028"
+    },
+    {
+      "question": "What conditions must a project manager's software cost estimate satisfy?",
+      "answer": "Software cost estimates must cover the entire software life-cycle, be based on selected project attributes including size, functionality, complexity, and risk, incorporate risk and uncertainty including cybersecurity, include the cost of required software assurance support, and include other direct costs.",
+      "evidence": "3.2.2 The project manager\u2019s software cost estimate(s) shall satisfy the following conditions: [SWE-151]\n\na. Covers the entire software life-cycle.\n\nb. Is based on selected project attributes (e.g., assessment of the size, functionality, complexity, criticality, reuse code, modified code, and risk of the software processes and products).\n\nc. Is based on the cost implications of the technology to be used and the required maturation of that technology.\n\nd. Incorporates risk and uncertainty, including cybersecurity.\n\ne. Includes the cost of the required software assurance support.\n\nf. Includes other direct costs.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_029"
+    },
+    {
+      "question": "How does the CMMI-DEV framework relate to NASA software development?",
+      "answer": "The CMMI-DEV is an internationally used framework for process improvement in development organizations. It is a collection of best practices and proven processes that thousands of software organizations have used and been appraised against, with ratings that can cover a team, group, project, division, or entire organization.",
+      "evidence": "3.9.2 The CMMI-DEV is an internationally used framework for process improvement in development organizations. It is an organized collection of best practices and proven processes that thousands of software organizations have both used and been appraised against over the past two decades. CMMI ratings can cover a team, a group, a project, a division, or an entire organization.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_032"
+    },
+    {
+      "question": "What is the definition of 'Glueware' in the NASA standard?",
+      "answer": "Glueware is software created to connect off-the-shelf software or reused software with the rest of the system. It may take the form of software that modifies interfaces, adds missing functionality, provides 'firewalls' that isolate the off-the-shelf software, or checks inputs and outputs.",
+      "evidence": "**Glueware**. Software created to connect the off-the-shelf software/reused software with the rest of the system. It may take the form of software that modifies interfaces or add missing functionality, \"firewalls\" that isolate the off-the-shelf software, or software that check inputs and outputs to the off-the-shelf software and may modify to prevent failures.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_034"
+    },
+    {
+      "question": "How does the 'Software Verification' definition differ from 'Software Validation' in the NASA standard?",
+      "answer": "Software Verification confirms that products properly reflect the requirements specified for them ('you built it right'), while Software Validation confirms that the product fulfills its intended use ('you built the right thing'). Verification checks correctness against requirements, while validation checks fitness for intended use.",
+      "evidence": "**Software Verification.** Confirmation that products properly reflect the requirements specified for them. In other words, verification ensures that \u201cyou built it right.\u201d (Source: IEEE 1012)",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_036"
+    },
+    {
+      "question": "How does the NASA standard denote mandatory versus optional actions in the directive?",
+      "answer": "All mandatory actions (requirements) are denoted by statements containing the term 'shall,' followed by an SWE requirement number. The terms 'may' or 'can' denote discretionary privilege, 'should' denotes a recommended good practice, 'will' denotes expected outcome, and 'are/is' denotes descriptive material.",
+      "evidence": "g. In this directive, all mandatory actions (i.e., requirements) are denoted by statements containing the term \"shall,\" followed by a software engineering (SWE) requirement number. The terms \"may\" or \"can\" denote discretionary privilege or permission, \"should\" denotes a good practice and is recommended but not required, \"will\" denotes expected outcome, and \"are/is\" denotes descriptive material.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_038"
+    },
+    {
+      "question": "What aspects must be defined in the approach to automatic generation of software source code?",
+      "answer": "The approach must include validation and verification of auto-generation tools, configuration management of tools and data, description of limits and allowable scope, verification and validation using the same standards as hand-generated code, monitoring actual use versus planned use, policies for manual changes, and configuration management of inputs, outputs, and modifications.",
+      "evidence": "3.8.1 The project manager shall define the approach to the automatic generation of software source code including: [SWE-146]\n\na. Validation and verification of auto-generation tools.\n\nb. Configuration management of the auto-generation tools and associated data.\n\nc. Description of the limits and the allowable scope for the use of the auto-generated software.\n\nd. Verification and validation of auto-generated source code using the same software standards and processes as hand-generated code.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_040"
+    },
+    {
+      "question": "What does a software architecture accomplish according to NPR 7150.2C?",
+      "answer": "A software architecture formalizes precise subsystem decompositions, defines and formalizes dependencies among software work products, serves as the basis for evaluating the impacts of proposed changes, maintains rules for subsequent software engineers to ensure consistency, and provides a stable structure for future groups through documentation.",
+      "evidence": "4.2.2 A software architecture:\n\na. Formalizes precise subsystem decompositions.\n\nb. Defines and formalizes the dependencies among software work products within the integrated system.\n\nc. Serves as the basis for evaluating the impacts of proposed changes.\n\nd. Maintains rules for use by subsequent software engineers that ensure a consistent software system as the work products evolve.\n\ne. Provides a stable structure for use by future groups through the documentation of the architecture, its views and patterns, and its rules.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_042"
+    },
+    {
+      "question": "What is the definition of 'Modified Off-the-Shelf Software' (MOTS) in NPR 7150.2C?",
+      "answer": "MOTS is software where COTS, legacy, or heritage software has been changed. Common usage allows for some percentage (less than 5 percent of code changes) before it is declared MOTS. When less than 30 percent of existing code changes, it is considered modified; if more than 30 percent changes or new code is added, it should be considered new software development.",
+      "evidence": "**Modified Off-the-Shelf Software**. When COTS or legacy and heritage software is reused, or heritage software is changed, the product is considered \"modified.\" The changes can include all or part of the software products and may involve additions, deletions, and specific alterations. An argument can be made that any alterations to the code and design of an off-the-shelf software component constitute \"modification,\" but the common usage allows for some percentage (less than 5 percent of the code changes) of change before the off-the-shelf software is declared to be modified off-the-shelf (MOTS) software.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_043"
+    },
+    {
+      "question": "What categories of projects require software IV&V according to NPR 7150.2C?",
+      "answer": "Software IV&V is required for Category 1 projects as defined in NPR 7120.5, Category 2 projects with Class A or Class B payload risk classification per NPR 8705.4, and projects selected explicitly by the NASA Chief of the Office of Safety and Mission Assurance.",
+      "evidence": "3.6.2 For projects reaching Key Decision Point A the program manager shall ensure that software IV&V is performed on the following categories of projects: [SWE-141]\n\na. Category 1 projects as defined in NPR 7120.5.\n\nb. Category 2 projects as defined in NPR 7120.5 that have Class A or Class B payload risk classification per NPR 8705.4.\n\nc. Projects selected explicitly by the NASA Chief of the Office of Safety and Mission Assurance to have software IV&V.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_044"
+    },
+    {
+      "question": "What conditions must a software schedule satisfy according to NPR 7150.2C?",
+      "answer": "The software schedule must coordinate with the overall project schedule, document the interactions of milestones and deliverables between software, hardware, operations, and the rest of the system, reflect the critical dependencies for software development activities, and identify and account for dependencies with other projects and cross-program dependencies.",
+      "evidence": "3.3.1 The project manager shall document and maintain a software schedule that satisfies the following conditions: [SWE-016]\n\na. Coordinates with the overall project schedule.\n\nb. Documents the interactions of milestones and deliverables between software, hardware, operations, and the rest of the system.\n\nc. Reflects the critical dependencies for software development activities.\n\nd. Identifies and accounts for dependencies with other projects and cross-program dependencies.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_045"
+    },
+    {
+      "question": "What must a project manager do regarding software cybersecurity assessment?",
+      "answer": "The project manager must perform a software cybersecurity assessment on the software components per the Agency security policies and the project requirements, including risks posed by the use of COTS, GOTS, MOTS, OSS, or reused software components.",
+      "evidence": "3.11.2 The project manager shall perform a software cybersecurity assessment on the software components per the Agency security policies and the project requirements, including risks posed by the use of COTS, GOTS, MOTS, OSS, or reused software components. [SWE-156]",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_046"
+    },
+    {
+      "question": "What bi-directional traceability elements are required for Class D software?",
+      "answer": "For Class D software, bi-directional traceability is required between software requirements and system hazards, between software requirements and software test procedures, and between software requirements and software non-conformances.",
+      "evidence": "Table 1. Bi-directional traceability by software classification\n|  |  |  |  |\n| --- | --- | --- | --- |\n| Bi-directional Traceability | Class A, B, and C | Class D | Class F |\n| Higher-level requirements to the software requirements | X |  | X |\n| Software requirements to the system hazards | X | X |  |",
+      "question_type": "factual",
+      "qa_id": "nasa_std_047"
+    },
+    {
+      "question": "What is the definition of 'Commercial Off-the-Shelf Software' (COTS) in the NASA standard?",
+      "answer": "COTS is a software product available for purchase and use without the need to conduct development activities. COTS solutions, as opposed to custom-developed solutions, are typically readily available and ready for use as purchased.",
+      "evidence": "**Commercial Off-the-Shelf Software**. The software product is available for purchase and use without the need to conduct development activities. COTS solutions, as opposed to custom-developed solutions, are typically readily available and ready for use as purchased.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_049"
+    },
+    {
+      "question": "Why does the NASA standard require software tool validation and accreditation?",
+      "answer": "Software tool validation and accreditation is required because all software development tools contain some number of defects. Validating and accrediting critical tools ensures they do not generate or insert errors in the software executable components, thus enhancing the likelihood that work products will function properly.",
+      "evidence": "*Note: All software development tools contain some number of software defects. Validation and accreditation of the critical software development and maintenance tools ensure that the tools being used during the software development life cycle do not generate or insert errors in the software executable components. Software tool accreditation is the certification that a software tool is acceptable for use for a specific purpose.*",
+      "question_type": "causal",
+      "qa_id": "nasa_std_053"
+    },
+    {
+      "question": "What does NPR 7150.2C require for software code coverage measurements?",
+      "answer": "The project manager must ensure that code coverage measurements for the software are selected, implemented, tracked, recorded, and reported. If the project does not achieve 100 percent structural coverage, each uncovered portion must be explained as a missing requirement, missing test, extraneous/dead code, or deactivated code.",
+      "evidence": "4.5.9 The project manager shall ensure that the code coverage measurements for the software are selected, implemented, tracked, recorded, and reported. [SWE-189]\n*Note: This requirement can be met by running unit, integration, and validation tests; measuring the code coverage; and achieving the code coverage by additional (requirement based) tests, inspection, or analysis. If the project does not get 100 percent structural coverage, it means one of four things and each requires action on the project manager\u2019s part: requirement missing - the code that hasn\u2019t been covered is performing an essential activity, but no requirement indicates that this should be done; test missing - the code that hasn\u2019t been covered relates to an existing requirement, but no test was implemented for it; extraneous/dead code \u2013 the code that hasn\u2019t been covered is not traceable to any requirement and isn\u2019t needed by the software; deactivated code - the code that hasn\u2019t been covered isn\u2019t traceable to any requirements for the current system, but is intended to be executed in specific configurations. The code coverage data and any rationale for uncovered code should be presented and reviewed at major project milestones.*",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_054"
+    },
+    {
+      "question": "What does Class C software classification cover?",
+      "answer": "Class C covers Mission Support Software, Aeronautic Vehicles, or Major Engineering/Research Facility Software. For space systems, it includes flight or ground software for science return from a single non-primary instrument, software to analyze or process mission data, and software used for testing of space assets, among other types.",
+      "evidence": "**Class C: Mission Support Software or Aeronautic Vehicles, or Major Engineering/Research Facility Software**\n\n**a. Definitions:**\n\n1. Space Systems include the following types of software:\n\n(a) Flight or ground software necessary for the science return from a single (non-primary) instrument;\n\n(b) Flight or ground software used to analyze or process mission data;\n\n(c) Other software for which a defect could adversely impact the attainment of some secondary mission objectives or cause operational problems;\n\n(d) Software used for the testing of space assets;",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_055"
+    },
+    {
+      "question": "What happens when there is a conflict between an NPD and an NPR?",
+      "answer": "In the event of a conflict between an NPD and an NPR, the information provided in the NPD takes precedence.",
+      "evidence": "In the event of a conflict between an NPD and an NPR, the information provided in the NPD takes precedence.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_056"
+    },
+    {
+      "question": "What does the NASA standard define as 'Uncertainty'?",
+      "answer": "Uncertainty is defined as (1) the estimated amount or percentage by which an observed or calculated value may differ from the true value, and (2) a broad term describing an imperfect state of knowledge or variability resulting from factors including lack of knowledge, physical variation, randomness, indeterminacy, judgment, and approximation.",
+      "evidence": "**Uncertainty**. (1) The estimated amount or percentage by which an observed or calculated value may differ from the true value. (2) A broad and general term used to describe an imperfect state of knowledge or a variability resulting from a variety of factors including, but not limited to, lack of knowledge, the applicability of information, physical variation, randomness or stochastic behavior, indeterminacy, judgment, and approximation. (Source: NPR 8000.4)",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_057"
+    },
+    {
+      "question": "What are the requirements for software non-conformance severity levels?",
+      "answer": "The project manager must define and implement clear software severity levels for all software non-conformances, including those in tools, COTS, GOTS, MOTS, OSS, reused software components, and applicable ground systems. At a minimum, severity classes should include loss of life or loss of vehicle, mission success, visible to user with operational workarounds, and an 'other' class.",
+      "evidence": "5.5.2 The project manager shall define and implement clear software severity levels for all software non-conformances (including tools, COTS, GOTS, MOTS, OSS, reused software components, and applicable ground systems). [SWE-202]\n\n*Note: At a minimum, classes should include loss of life or loss of vehicle, mission success, visible to the user with operational workarounds, and an 'other' class that does not meet previous criteria.*",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_058"
+    },
+    {
+      "question": "What must the Center Director maintain regarding the Center's software engineering capability?",
+      "answer": "The Center Director, or designee, must maintain, staff, and implement a plan to continually advance the Center's in-house software engineering capability and monitor the software engineering capability of NASA's contractors.",
+      "evidence": "2.1.5.2 Center Director, or designee, shall maintain, staff, and implement a plan to continually advance the Center\u2019s in-house software engineering capability and monitor the software engineering capability of NASA's contractors. [SWE-003]",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_059"
+    },
+    {
+      "question": "What is 'Government Off-the-Shelf Software' (GOTS) as defined in the NASA standard?",
+      "answer": "GOTS refers to Government-created software, usually from another project, that was not created by the current developers. Usually, the source code is included and documentation, including test and analysis results, is available, and the Government is responsible for the GOTS software to be incorporated into another system.",
+      "evidence": "**Government Off-the-Shelf Software**. Government Off-the-Shelf Software refers to Government-created software, usually from another project. The software was not created by the current developers (see software reuse). Usually, the source code is included and documentation, including test and analysis results, is available; e.g., the Government is responsible for the Government off-the-shelf (GOTS) software to be incorporated into another system.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_060"
+    },
+    {
+      "question": "What are examples of Class A software during the launch phase?",
+      "answer": "Examples of Class A software during launch include abort modes and selection, separation control, range safety, crew interface (display and controls), crew escape, critical systems monitoring and control, guidance navigation and control, and communication and tracking.",
+      "evidence": "1. During Launch:\nAbort modes and selection; separation control; range safety; crew interface (display and controls); crew escape; critical systems monitoring and control; guidance, navigation, and control; and communication and tracking.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_061"
+    },
+    {
+      "question": "What does NPR 7150.2C require regarding inadvertent memory modification in safety-critical software?",
+      "answer": "The software must detect inadvertent memory modification and recover to a known safe state. Memory modifications may occur due to radiation-induced errors, uplink errors, configuration errors, or other causes.",
+      "evidence": "f. The software detects inadvertent memory modification and recovers to a known safe state.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_062"
+    },
+    {
+      "question": "What software documentation must a project manager establish and maintain for testing?",
+      "answer": "The project manager must establish and maintain software test plan(s), software test procedure(s), and software test report(s).",
+      "evidence": "4.5.2 The project manager shall establish and maintain: [SWE-065]\n\na. Software test plan(s).\n\nb. Software test procedure(s).\n\nc. Software test report(s).",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_063"
+    },
+    {
+      "question": "What is the definition of 'Safety Critical' in the NASA standard?",
+      "answer": "Safety Critical is a term describing any condition, event, operation, process, equipment, or system that could cause or lead to severe injury, major damage, or mission failure if performed or built improperly, or allowed to remain uncorrected.",
+      "evidence": "**Safety Critical**. A term describing any condition, event, operation, process, equipment, or system that could cause or lead to severe injury, major damage, or mission failure if performed or built improperly, or allowed to remain uncorrected. (Source NPR 8715.3)",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_064"
+    },
+    {
+      "question": "What data must a Center's software measurement repository contain for Class A, B, and C projects?",
+      "answer": "The software measurement repository must contain at a minimum: software development tracking data, software functionality achieved data, software quality data, and software development effort and cost data.",
+      "evidence": "2.1.5.9 For Class A, B, and C software projects, the Center Director, or designee, shall establish and maintain a software measurement repository for software project measurements containing at a minimum: [SWE-091]\n\na. Software development tracking data.\n\nb. Software functionality achieved data.\n\nc. Software quality data.\n\nd. Software development effort and cost data.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_066"
+    },
+    {
+      "question": "How does NPR 7150.2C define 'Mission Critical'?",
+      "answer": "Mission Critical is an item or function that should retain its operational capability to assure no mission failure, meaning it is essential for mission success in meeting all mission objectives and requirements for performance and safety.",
+      "evidence": "**Mission Critical.** Item or function that should retain its operational capability to assure no mission failure (i.e., for mission success - meeting all mission objectives and requirements for performance and safety). (Source: NPR 8715.3)",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_067"
+    },
+    {
+      "question": "What does the NASA standard require for embedded COTS, GOTS, MOTS, OSS, or reused software component testing?",
+      "answer": "The project manager must test embedded COTS, GOTS, MOTS, OSS, or reused software components to the same level required to accept a custom developed software component for its intended use.",
+      "evidence": "4.5.14 The project manager shall test embedded COTS, GOTS, MOTS, OSS, or reused software components to the same level required to accept a custom developed software component for its intended use. [SWE-211]",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_068"
+    },
+    {
+      "question": "Why must software security rely on high-quality code development practices?",
+      "answer": "Software security relies on high-quality code development and testing practices because they reduce error rates and opportunities for misinterpretation or error. Good practices include clean code, modular structure, and well-defined interfaces, while also considering development and deployment contexts and the ability to rapidly assess and deploy security-related updates.",
+      "evidence": "*Note: Software security relies on high-quality code development and testing practices (clean code, modular structure, well-defined interfaces) \u2013 anything that reduces error rates and opportunities misinterpretation or error; considers both the development and deployment/operational context for the software; has the ability to rapidly assess, triage, correct, and deploy security-related updates while the software is in deployment/operations.*",
+      "question_type": "causal",
+      "qa_id": "nasa_std_070"
+    },
+    {
+      "question": "What is the definition of 'Unit Test' according to the NASA standard?",
+      "answer": "A Unit Test is the testing of individual routines and modules by the developer or an independent tester, or a test of individual programs or modules to ensure there are no analysis or programming errors, or a test of individual hardware or software units or groups of related units.",
+      "evidence": "**Unit Test.** (1) Testing of individual routines and modules by the developer or an independent tester (ISO/IEC/IEEE 24765). (2) A test of individual programs or modules in order to ensure that there are no analysis or programming errors (ISO/IEC 2382-20). (3) Test of individual hardware or software units or groups of related units. (ISO/IEC/IEEE 24765)",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_071"
+    },
+    {
+      "question": "What does NPR 7150.2C require regarding software requirements volatility metrics?",
+      "answer": "The project manager must collect, track, and report software requirements volatility metrics. These metrics measure the total number of requirements compared to requirement changes over time, and may include additions, changes, and reduction of requirements.",
+      "evidence": "5.4.6 The project manager shall collect, track, and report software requirements volatility metrics. [SWE-200]\n\n*Note: Software requirements volatility metrics are the total number of requirements compared to requirement changes over time. It may include additions, changes, and reduction of requirements.*",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_072"
+    },
+    {
+      "question": "What is the definition of 'Shareware' in the NASA standard?",
+      "answer": "Shareware is software that is available free of charge and often distributed informally for evaluation, after which a fee may be requested for continued use.",
+      "evidence": "**Shareware**. Software that is available free of charge and often distributed informally for evaluation, after which a fee may be requested for continued use.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_073"
+    },
+    {
+      "question": "What is required before software can be delivered to the customer according to NPR 7150.2C?",
+      "answer": "The project manager must complete, prior to delivery, verification that all software requirements identified for the delivery have been met, that all approved changes have been implemented, and that all defects designated for resolution prior to delivery have been resolved.",
+      "evidence": "4.6.4 The project manager shall complete, prior to delivery, verification that all software requirements identified for this delivery have been met, that all approved changes have been implemented, and that all defects designated for resolution prior to delivery have been resolved. [SWE-194]",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_074"
+    },
+    {
+      "question": "What information must a Center's software cost repository contain?",
+      "answer": "The Center's software cost repository must contain planned and actual effort and cost, planned and actual schedule dates for major milestones, both planned and actual values for key cost parameters (typically including software size, requirements count, defect counts, and cost model inputs), and project descriptors or metadata such as software class, software domain/type, and requirements volatility.",
+      "evidence": "2.1.5.12 For Class A, B, and C software projects, each Center Director, or designee, shall establish and maintain software cost repository(ies) that contains at least the following measures: [SWE-142]\n\na. Planned and actual effort and cost.\n\nb. Planned and actual schedule dates for major milestones.\n\nc. Both planned and actual values for key cost parameters that typically include software size, requirements count, defects counts for maintenance or sustaining engineering projects, and cost model inputs.\n\nd. Project descriptors or metadata that typically includes software class, software domain/type, and requirements volatility.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_076"
+    },
+    {
+      "question": "What examples of Class B space systems software are provided in the standard?",
+      "answer": "Examples include propulsion systems, power systems, guidance navigation and control, fault protection, thermal systems, command and control ground systems, planetary/lunar surface operations, hazard prevention, primary instruments, science sequencing engine, simulations that create operational EDL parameters, and subsystems that could cause loss of science return from multiple instruments.",
+      "evidence": "Space, Launch, Ground, EDL, and Surface Systems:\nPropulsion systems; power systems; guidance navigation and control; fault protection; thermal systems; command and control ground systems; planetary/lunar surface operations; hazard prevention; primary instruments; science sequencing engine; simulations that create operational EDL parameters; subsystems that could cause the loss of science return from multiple instruments; flight dynamics and related data; and launch and flight controller stations for non-human spaceflight.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_078"
+    },
+    {
+      "question": "What is the definition of 'Legacy and Heritage Software' in NPR 7150.2C?",
+      "answer": "Legacy and Heritage Software refers to software products (architecture, code, requirements) written specifically for one project and then, without prior planning during its initial development, found to be useful for other projects.",
+      "evidence": "**Legacy and Heritage Software**. Software products (architecture, code, requirements) written specifically for one project and then, without prior planning during its initial development, found to be useful for other projects. See software reuse.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_079"
+    },
+    {
+      "question": "What actions must a project manager take when tracking software activities against plans?",
+      "answer": "The project manager must track actual results and performance of software activities against the software plans, ensure corrective actions are taken, recorded, and managed to closure, and ensure changes to commitments have been agreed to by the affected groups and individuals.",
+      "evidence": "3.1.4 The project manager shall track the actual results and performance of software activities against the software plans. [SWE-024]\n\na. Corrective actions are taken, recorded, and managed to closure.\n\nb. Including changes to commitments (e.g., software plans) that have been agreed to by the affected groups and individuals.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_080"
+    },
+    {
+      "question": "What does the 'X' marking in the Requirements Mapping Matrix indicate?",
+      "answer": "The 'X' marking in the Requirements Mapping Matrix indicates an invoked requirement by the directive consistent with software classification, as referenced by SWE-139. It may be tailored with Technical Authority approval.",
+      "evidence": "X - Indicates an invoked requirement by this NPR consistent with Software Classification (ref. SWE-139). May be tailored with Technical Authority approval (ref. Chapter 2.2).",
+      "question_type": "factual",
+      "qa_id": "nasa_std_081"
+    },
+    {
+      "question": "What does the NASA standard require for software retirement or disposal?",
+      "answer": "The project manager must identify the records and software tools to be archived, the location of the archive, and procedures for access to the products for software retirement or disposal.",
+      "evidence": "4.6.6 The project manager shall identify the records and software tools to be archived, the location of the archive, and procedures for access to the products for software retirement or disposal. [SWE-196]",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_082"
+    },
+    {
+      "question": "What is the definition of 'Software Architecture' in the NASA standard?",
+      "answer": "Software Architecture is the structure or structures of the system, which comprise software components, the properties of those components, and the relationships between them. Documenting software architecture facilitates communication between stakeholders, documents early decisions about high-level design, and allows reuse of design components and patterns between projects.",
+      "evidence": "**Software Architecture**. The software architecture of a program or computing system is the structure or structures of the system, which comprise software components, the properties of those components, and the relationships between them. The term also refers to documentation of a system's software architecture. Documenting software architecture facilitates communication between stakeholders, documents early decisions about high-level design, and allows reuse of design components and patterns between projects.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_083"
+    },
+    {
+      "question": "What is the definition of 'Insight' in the context of NASA software engineering?",
+      "answer": "Insight is an element of Government surveillance that monitors contractor compliance using Government-identified metrics and contracted milestones. It is a continuum that can range from low intensity such as reviewing quarterly reports to high intensity such as performing surveys and reviews.",
+      "evidence": "**Insight**. An element of Government surveillance that monitors contractor compliance using Government-identified metrics and contracted milestones. Insight is a continuum that can range from low intensity such as reviewing quarterly reports to high intensity such as performing surveys and reviews. (Source: NPR 7123.1)",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_084"
+    },
+    {
+      "question": "What must happen if a single software event or action could initiate an identified hazard in safety-critical systems?",
+      "answer": "No single software event or action is allowed to initiate an identified hazard. The software must also respond to an off-nominal condition within the time needed to prevent a hazardous event.",
+      "evidence": "i. No single software event or action is allowed to initiate an identified hazard.\n\nj. The software responds to an off-nominal condition within the time needed to prevent a hazardous event.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_085"
+    },
+    {
+      "question": "What is the role of the CHMO (Chief Health and Medical Officer) in software requirements tailoring?",
+      "answer": "The CHMO is the Technical Authority for any requirements which impact health and medical. The CHMO has approval authority of tailoring of software with health and medical implications, and this approval may be delegated to the CHMO designated Center HMTA.",
+      "evidence": "2.1.4.1 The CHMO is the Technical Authority for any requirements which impacts health and medical.\n\n2.1.4.2 The CHMO has approval authority of tailoring of software with health and medical implications. This approval may be delegated to the CHMO designated Center HMTA.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_087"
+    },
+    {
+      "question": "What is the definition of 'Mobile Application' in NPR 7150.2C?",
+      "answer": "A mobile application is an application built using native code for the device or a software Web application that is distributed through the device specific marketplace. Web applications presented via a mobile browser are not considered mobile applications.",
+      "evidence": "**Mobile Application.** A mobile application is an application built using native code for the device or a software Web application that is distributed through the device specific marketplace. Web applications presented via a mobile browser are not considered mobile applications.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_090"
+    },
+    {
+      "question": "What does NPR 7150.2C require for software architecture reviews?",
+      "answer": "The project manager must perform a software architecture review on Category 1 Projects as defined in NPR 7120.5 and Category 2 Projects as defined in NPR 7120.5 that have Class A or Class B payload risk classification per NPR 8705.4.",
+      "evidence": "4.2.4 The project manager shall perform a software architecture review on the following categories of projects: [SWE-143]\n\na. Category 1 Projects as defined in NPR 7120.5.\n\nb. Category 2 Projects as defined in NPR 7120.5 that have Class A or Class B payload risk classification per NPR 8705.4.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_091"
+    },
+    {
+      "question": "What are the goals of software measurement programs according to NPR 7150.2C?",
+      "answer": "Software measurement programs are designed to improve future planning and cost estimation, describe and record product information during its life-cycle, assist usability and maintainability, monitor and control software life-cycle processes, communicate system information, provide history including lessons learned, provide evidence that processes were followed, provide indicators of software quality, and track status of improvement and assurance programs.",
+      "evidence": "5.4.1 Software measurement is a primary tool for managing software processes and evaluating the quality of software products. Analysis of measures provides insight into the capability of the software organization and identifies opportunities for software process and product improvements. Software measurement programs at multiple levels are established to meet measurement objectives.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_092"
+    },
+    {
+      "question": "What does the standard require regarding software for hazardous event traceability testing?",
+      "answer": "The project manager must verify through test the software requirements that trace to a hazardous event, cause, or mitigation technique.",
+      "evidence": "4.5.12 The project manager shall verify through test the software requirements that trace to a hazardous event, cause, or mitigation technique. [SWE-192]",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_094"
+    },
+    {
+      "question": "What are examples of Class F (Business and IT) software at NASA?",
+      "answer": "Examples include Agency-wide enterprise applications such as WebTADS, SAP, eTravel, ePayroll, and Business Warehouse, Center-specific software, specific Web applications including mobile applications, Agency-wide educational outreach software, software in support of the NASA-wide area network, and the NASA Web portal.",
+      "evidence": "Examples of Class F software include, but are not limited to, Agency-wide enterprise applications (e.g., WebTADS, SAP, eTravel, ePayroll, Business Warehouse), Center-specific software, or specific Web applications, including mobile applications; Agency-wide educational outreach software; software in support of the NASA-wide area network; and the NASA Web portal.",
+      "question_type": "factual",
+      "qa_id": "nasa_std_095"
+    },
+    {
+      "question": "What does NPR 7150.2A require regarding the selection of a software development life cycle model?",
+      "answer": "NPR 7150.2A requires the project to select and document a software development life cycle or model that includes phase transition criteria for each life-cycle phase, such as formal review milestones, informal reviews, software requirements review, preliminary design review, critical design review, test readiness reviews, and customer acceptance or approval reviews.",
+      "evidence": "2.2.7 The project shall select and document a software development life cycle or model that includes phase transition criteria for each life-cycle phase (e.g., formal review milestones, informal reviews, software requirements review (SRR), preliminary design review (PDR), critical design review (CDR), test readiness reviews, customer acceptance or approval reviews). [SWE-019]",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_096"
+    },
+    {
+      "question": "What does NPR 7150.2A define as 'Waiver' versus 'Deviation' in the context of software requirements?",
+      "answer": "A Waiver is a documented authorization intentionally releasing a program or project from meeting a requirement after the requirement is put under configuration control. A Deviation is a documented authorization releasing a program or project from meeting a requirement before the requirement is put under configuration control.",
+      "evidence": "A.42 **Waiver**. A documented authorization intentionally releasing a program or project from meeting a requirement after the requirement is put under configuration control at the level the requirement will be implemented.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_097"
+    },
+    {
+      "question": "What is the definition of Class G software in NPR 7150.2A?",
+      "answer": "Class G is general purpose computing software used in support of a single Center or project. A defect in Class G software is likely to affect the productivity of multiple users in a single geographic location or workgroup but is unlikely to affect mission objectives or system safety.",
+      "evidence": "**Definition:** General purpose computing software used in support of a single Center or project, as described for locally deployed portions of the General Purpose Infrastructure To-Be Component of the NASA Enterprise Architecture, Volume 5 (To-Be Architecture) and for the following portfolios: voice, local area network, video, data Centers, application services, messaging and collaboration, and public Web. A defect in Class G software is likely to affect the productivity of multiple users in a single geographic location or workgroup but is unlikely to affect mission objectives or system safety.",
+      "question_type": "definitional",
+      "qa_id": "nasa_std_098"
+    },
+    {
+      "question": "What factors does the Portfolio Based Risk Assessment (PBRA) process evaluate for IV&V candidate selection?",
+      "answer": "The PBRA process assesses risk based on: complexity of the software implementing the capability under assessment, risk to safety and mission success associated with the capability, consequences of failure of the capability, and time to criticality (the amount of time before the system or subsystem enters into a critical condition).",
+      "evidence": "2.2.1.4 Second, the IV&V program utilizes this list and associated Center-provided data, captured in the NASA Software Inventory, to initiate a portfolio based risk assessment (PBRA) for capabilities within the candidate projects. The PBRA process assesses the risk of capabilities which have software associated with them, based on factors including:\n\na. Complexity of the software implementing the capability under assessment.\n\nb. Risk to safety and mission success associated with the capability under assessment.\n\nc. Consequences of failure of the capability under assessment.\n\nd. Time to criticality (i.e., the amount of time before the system or subsystem enters into a critical condition).",
+      "question_type": "factual",
+      "qa_id": "nasa_std_099"
+    },
+    {
+      "question": "How do support processes differ from development processes in terms of their relationship to project life-cycle phases?",
+      "answer": "Unlike development processes, support processes are not targeted primarily at a specific phase of the project life cycle but typically occur with similar intensity throughout the complete project or product life cycle.",
+      "evidence": "Unlike development processes, support processes are not targeted primarily at a specific phase of the project life cycle but typically occur with similar intensity throughout the complete project or product life cycle.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_100"
+    },
+    {
+      "question": "What is the NASA OCE's responsibility regarding the NASA Software Engineering Initiative?",
+      "answer": "The NASA OCE shall lead and maintain a NASA Software Engineering Initiative to advance software engineering practices, as specified in requirement SWE-002.",
+      "evidence": "1 The NASA OCE shall lead and maintain a NASA Software Engineering Initiative to advance software engineering practices. [SWE-002]\n\n2.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_101"
+    },
+    {
+      "question": "What must the NASA OCE periodically do with respect to project requirements mapping matrices?",
+      "answer": "The NASA OCE shall periodically review the project requirements mapping matrices (SWE-152) and shall authorize appraisals against selected requirements in the NPR to check compliance.",
+      "evidence": "3 The NASA OCE shall periodically review the project requirements mapping matrices. [SWE-152]\n\n2.1.1.4 The NASA OCE shall authorize appraisals against selected requirements in this NPR to check compliance.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_102"
+    },
+    {
+      "question": "What is required when tailoring involves human safety risk according to NPR 7150.2C?",
+      "answer": "When tailoring involves human safety risk, the actual risk taker(s), or their official spokesperson(s) and appropriate supervisory chain, must formally agree to assume the risk.",
+      "evidence": "For tailoring involving human safety risk, the actual risk taker(s) (or official spokesperson[s] and appropriate supervisory chain) must formally agree to assume the risk.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_103"
+    },
+    {
+      "question": "Which authorities must be consulted when tailoring decisions are made at the Center level?",
+      "answer": "Tailoring decisions at the Center level must consult the Center Engineering Technical Authority, Center SMA Technical Authority, Center Health and Medical Technical Authority, and the NASA CIO's Center IT Authority designee as defined in the requirements mapping matrix.",
+      "evidence": "The responsible program, project, or operations manager must formally accept the risk. Tailoring decided at the Center level are to consult the Center Engineering Technical Authority, Center SMA Technical Authority, Center Health and Medical Technical Authority, and the NASA CIO\u2019s Center IT Authority designee as defined in the requirements mapping matrix.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_104"
+    },
+    {
+      "question": "Which authorities must review and agree with any tailored NPR 7150.2 requirements?",
+      "answer": "The engineering, CIO, and SMA authorities shall review and agree with any tailored NPR 7150.2 requirements per the requirements mapping matrix authority column.",
+      "evidence": "7 The engineering, CIO, and SMA authorities shall review and agree with any tailored NPR 7150.2 requirements per the requirements mapping matrix authority column.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_105"
+    },
+    {
+      "question": "What criteria can be included when assessing software acquisition versus development options?",
+      "answer": "The assessment of software acquisition versus development options can include risk, cost, and benefits criteria for each of the options considered.",
+      "evidence": "2 The project manager shall assess options for software acquisition versus development. [SWE-033]\n\n*Note: The assessment can include risk, cost, and benefits criteria for each of the options listed below:*",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_106"
+    },
+    {
+      "question": "What scope must project software plans cover according to the software life-cycle planning requirements?",
+      "answer": "The project manager shall develop, maintain, and execute software plans that cover the entire software life cycle and, as a minimum, address the requirements of the directive with approved tailoring.",
+      "evidence": "3 The project manager shall develop, maintain, and execute software plans that cover the entire software life cycle and, as a minimum, address the requirements of this directive with approved tailoring.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_107"
+    },
+    {
+      "question": "What should the software development plans include regarding coordination between software and system development?",
+      "answer": "The software development plans should include or reference procedures for coordinating the software development and the design and the system or project development life cycle.",
+      "evidence": "The project should include or reference in the software development plans procedures for coordinating the software development and the design and the system or project development life cycle*.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_108"
+    },
+    {
+      "question": "What software planning parameters must a project manager submit to the Center measurement repository?",
+      "answer": "The project manager shall submit software planning parameters, including size and effort estimates, milestones, and characteristics, to the Center measurement repository at the conclusion of major milestones.",
+      "evidence": "3 The project manager shall submit software planning parameters, including size and effort estimates, milestones, and characteristics, to the Center measurement repository at the conclusion of major milestones.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_109"
+    },
+    {
+      "question": "What is required of the project manager regarding reviews of software schedule activities?",
+      "answer": "The project manager shall regularly hold reviews of software schedule activities, metrics, status, and results with the project stakeholders and track issues to resolution.",
+      "evidence": "2 The project manager shall regularly hold reviews of software schedule activities, metrics, status, and results with the project stakeholders and track issues to resolution.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_110"
+    },
+    {
+      "question": "What obligation does the project manager have regarding software developer schedule deliverables?",
+      "answer": "The project manager shall require the software developer(s) to provide a software schedule for the project's review, and schedule updates as requested.",
+      "evidence": "3.3.3 The project manager shall require the software developer(s) to provide a software schedule for the project's review, and schedule updates as requested. [SWE-046]",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_111"
+    },
+    {
+      "question": "Who is included in the software training requirements under SWE-017?",
+      "answer": "The project manager shall plan, track, and ensure project-specific software training for project personnel, which includes any software assurance personnel assigned to the project.",
+      "evidence": "1 The project manager shall plan, track, and ensure project specific software training for project personnel. [SWE-017]\n\n*Note: This includes any software assurance personnel assigned to the project.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_112"
+    },
+    {
+      "question": "How must each system and subsystem containing software be classified according to NPR 7150.2C?",
+      "answer": "The project manager shall classify each system and subsystem containing software in accordance with the highest applicable software classification definitions for Classes A, B, C, D, E, and F software in Appendix D.",
+      "evidence": "1 The project manager shall classify each system and subsystem containing software in accordance with the highest applicable software classification definitions for Classes A, B, C, D, E, and F software in Appendix D.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_113"
+    },
+    {
+      "question": "What records must the project manager maintain regarding software classification?",
+      "answer": "The project manager shall maintain records of each software classification determination, each software Requirements Mapping Matrix, and the results of each software independent classification assessment for the life of the project.",
+      "evidence": "2 The project manager shall maintain records of each software classification determination, each software Requirements Mapping Matrix, and the results of each software independent classification assessments for the life of the project.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_114"
+    },
+    {
+      "question": "When do software assurance activities occur relative to the project timeline?",
+      "answer": "Software assurance activities occur throughout the life of the project, as noted alongside the requirement to plan and implement software assurance per NASA-STD-8739.8.",
+      "evidence": "1 The project manager shall plan and implement software assurance per NASA-STD-8739.8. [SWE-022]\n\n*Note: Software assurance activities occur throughout the life of the project.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_115"
+    },
+    {
+      "question": "What must be developed and maintained if software IV&V is performed on a project?",
+      "answer": "If software IV&V is performed on a project, the project manager shall ensure an IPEP (IV&V Project Execution Plan) is developed, negotiated, approved, maintained, and executed.",
+      "evidence": "3 If software IV&V is performed on a project, the project manager shall ensure an IPEP is developed, negotiated, approved, maintained, and executed.",
+      "question_type": "procedural",
+      "qa_id": "nasa_std_116"
+    },
+    {
+      "question": "Why must safety-critical software reject commands received out of sequence?",
+      "answer": "Software must reject commands received out of sequence because executing those commands out of sequence can cause a hazard.",
+      "evidence": "Software rejects commands received out of sequence when execution of those commands out of sequence can cause a hazard.\n\nf.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_117"
+    },
+    {
+      "question": "To what types of software components do the safety-critical and mission-critical requirements apply?",
+      "answer": "These requirements apply to components that reside in a mission-critical or safety-critical system and that control, mitigate, or contribute to a hazard, as well as software used to command hazardous operations or activities.",
+      "evidence": "*Note: These requirements apply to components that reside in a mission-critical or safety-critical system, and the components control, mitigate, or contribute to a hazard as well as software used to command hazardous operations/activities.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_118"
+    },
+    {
+      "question": "What is the alternative to a full CMMI rating for Class B software development organizations?",
+      "answer": "For Class B software, instead of a CMMI rating by a development organization, the project will conduct an evaluation by a qualified evaluator selected by the Center Engineering Technical Authority against CMMI-DEV Maturity Level 2 practices, and mitigate any risk if deficiencies are identified.",
+      "evidence": "For Class B software, instead of a CMMI\u00ae rating by a development organization, the project will conduct an evaluation, performed by a qualified evaluator selected by the Center Engineering Technical Authority, against the CMMI-DEV Maturity Level 2 practices, and mitigate any risk, if deficiencies are identified in the evaluation.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_119"
+    },
+    {
+      "question": "Who can access the NASA Internal Sharing and Reuse Software Inventory, and who can receive software through it?",
+      "answer": "The software list in the NASA Internal Sharing and Reuse Software Inventory is available to both NASA civil servants and contractors; however, only NASA civil servants can be recipients of software via the systems in the Inventory.",
+      "evidence": "*Note: The NASA Internal Sharing and Reuse Software Inventory will be accessed through Launchpad, and the software list will be available to NASA civil servants and contractors; however, only NASA civil servants will be the recipient of software via the systems in the Inventory.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_120"
+    },
+    {
+      "question": "What are the top problems in the software industry according to the NASA standard's discussion of software requirements?",
+      "answer": "Studies show that the top problems in the software industry are due to poor requirements elicitation, inadequate requirements specification, and inadequate management of changes to requirements.",
+      "evidence": "Studies show that the top problems in the software industry are due to poor requirements elicitation, inadequate requirements specification, and inadequate management of changes to requirements.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_121"
+    },
+    {
+      "question": "What results from the transformation of derived and allocated requirements into the software architecture?",
+      "answer": "The transformation of derived and allocated requirements into the software architecture results in the basis for all software development work.",
+      "evidence": "The transformation of the derived and allocated requirements into the software architecture results in the basis for all software development work.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_122"
+    },
+    {
+      "question": "What are the four possible explanations when a project does not achieve 100 percent structural code coverage?",
+      "answer": "The four explanations are: a missing requirement (code performs an essential activity without a corresponding requirement), a missing test (code relates to an existing requirement but has no test), extraneous or dead code (code not traceable to any requirement and not needed), or deactivated code (code not traceable to current system requirements but intended for specific configurations).",
+      "evidence": "If the project does not get 100 percent structural coverage, it means one of four things and each requires action on the project manager\u2019s part: requirement missing - the code that hasn\u2019t been covered is performing an essential activity, but no requirement indicates that this should be done; test missing - the code that hasn\u2019t been covered relates to an existing requirement, but no test was implemented for it; extraneous/dead code \u2013 the code that hasn\u2019t been covered is not traceable to any requirement and isn\u2019t needed by the software; deactivated code - the code that hasn\u2019t been covered isn\u2019t traceable to any requirements for the current system, but is intended to be executed in specific configurations.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_123"
+    },
+    {
+      "question": "How are technical resource metrics updated during the verification of coding, testing, and validation?",
+      "answer": "As part of the verification of coding, testing, and validation, the technical resource metrics will be updated with the measured values and compared to the margins.",
+      "evidence": "As part of the verification of the coding, testing, and validation, the technical resource metrics will be updated with the measured values and will be compared to the margins.",
+      "question_type": "comparative",
+      "qa_id": "nasa_std_124"
+    },
+    {
+      "question": "What does the NASA standard describe as a 'hazardous' condition in its definitions?",
+      "answer": "A hazardous condition is any condition, event, operation, process, equipment, or system that could cause or lead to severe injury, major damage, or mission failure if performed or built improperly, or allowed to remain uncorrected.",
+      "evidence": "A term describing any condition, event, operation, process, equipment, or system that could cause or lead to severe injury, major damage, or mission failure if performed or built improperly, or allowed to remain uncorrected.",
+      "question_type": "causal",
+      "qa_id": "nasa_std_125"
+    }
+  ]
+}

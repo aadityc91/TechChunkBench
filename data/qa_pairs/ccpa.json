@@ -1,0 +1,698 @@
+{
+  "corpus_id": "ccpa",
+  "qa_pairs": [
+    {
+      "question": "What is the standard for how long a business can retain a consumer's personal information?",
+      "answer": "A business shall not retain a consumer's personal information or sensitive personal information for each disclosed purpose for which the personal information was collected for longer than is reasonably necessary for that disclosed purpose.",
+      "evidence": "(3) The length of time the business intends to retain each category of personal information, including sensitive personal information, or if that is not possible, the criteria used to determine that period provided that a business shall not retain a consumer's personal information or\nsensitive personal information for each disclosed purpose for which the personal information was collected for longer than is reasonably necessary for that disclosed purpose.",
+      "question_type": "factual",
+      "qa_id": "ccpa_002"
+    },
+    {
+      "question": "What is a consumer's right to delete personal information under the CCPA?",
+      "answer": "A consumer has the right to request that a business delete any personal information about the consumer which the business has collected from the consumer. Upon receiving a verifiable request, the business must delete the information from its records, notify service providers and contractors to delete it, and notify all third parties to whom it was sold or shared to delete it.",
+      "evidence": "(c)\u00a0(1)\u00a0A business that receives a verifiable consumer request from a consumer to delete the consumer\u2019s personal information pursuant to subdivision (a) of this section shall delete the consumer\u2019s personal information from its records,\nnotify any service providers or contractors to delete the consumer\u2019s personal information from their records, and notify all third parties to whom the business has sold or shared the personal information to delete the consumer\u2019s personal information unless this proves impossible or involves disproportionate effort.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_004"
+    },
+    {
+      "question": "What is a consumer's right to correct inaccurate personal information?",
+      "answer": "A consumer has the right to request a business that maintains inaccurate personal information about the consumer to correct that inaccurate personal information, taking into account the nature of the personal information and the purposes of the processing. The business must use commercially reasonable efforts to correct it.",
+      "evidence": "(a)\u00a0A consumer shall have the right to request a business that maintains inaccurate personal information about the consumer to correct that inaccurate personal information, taking into account the nature of the personal information and the purposes of the processing of the personal information.\n(b)\u00a0A business that collects personal information about consumers shall disclose, pursuant to Section 1798.130, the consumer\u2019s right to request correction of inaccurate personal information.\n(c)\u00a0A business that receives a\nverifiable consumer request to correct inaccurate personal information shall use commercially reasonable efforts to correct the inaccurate personal information as directed by the consumer, pursuant to Section 1798.130 and regulations adopted pursuant to paragraph (7) of subdivision (a) of Section 1798.185.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_006"
+    },
+    {
+      "question": "What information can a consumer request a business to disclose under the right to know?",
+      "answer": "A consumer can request disclosure of the categories of personal information collected, the categories of sources from which it was collected, the business or commercial purpose for collecting/selling/sharing it, the categories of third parties to whom it was disclosed, and the specific pieces of personal information collected about them.",
+      "evidence": "(a) A consumer shall have the right to request that a business that collects personal information about the consumer disclose to the consumer the following:\n\n(1) The categories of personal information it has collected about that consumer.\n\n(2) The categories of sources from which the personal information is collected.\n\n(3) The business or commercial purpose for collecting, selling, or sharing personal information.\n\n(4) The categories\nof third parties to whom the business discloses personal information.\n\n(5) The specific pieces of personal information it has collected about that consumer.",
+      "question_type": "factual",
+      "qa_id": "ccpa_007"
+    },
+    {
+      "question": "What is the consumer's right to opt out of sale or sharing of personal information?",
+      "answer": "A consumer has the right, at any time, to direct a business that sells or shares personal information about the consumer to third parties not to sell or share the consumer's personal information. This is referred to as the right to opt out of sale or sharing.",
+      "evidence": "(a)\u00a0(1)\u00a0A consumer shall have the right, at any time, to direct a business that sells or shares personal information about the consumer to third parties not to sell or share the consumer\u2019s personal information. This right may be referred to as the right to opt out of sale or sharing.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_008"
+    },
+    {
+      "question": "What forms of discrimination are prohibited against consumers who exercise their CCPA rights?",
+      "answer": "A business shall not discriminate by denying goods or services, charging different prices or rates, providing a different level or quality of goods or services, suggesting different treatment, or retaliating against employees or applicants for exercising their rights under the CCPA.",
+      "evidence": "(a) (1) A business shall not discriminate against a consumer because the consumer exercised any of the consumer's rights under this title, including, but not limited to, by:\n\n(A) Denying goods or services to the consumer.\n\n(B) Charging different prices or rates for goods or services, including through the use of discounts or other benefits or imposing penalties.\n\n(C) Providing a different level or quality of goods or services to the consumer.\n\n(D) Suggesting that the consumer will receive a different price or rate for goods or services or a different level or quality of goods or services.\n\n(E) Retaliating against an employee, applicant for employment, or independent contractor, as defined in subparagraph (A) of paragraph (2) of subdivision (m) of Section 1798.145, for exercising their rights under this title.",
+      "question_type": "factual",
+      "qa_id": "ccpa_011"
+    },
+    {
+      "question": "Can a business offer financial incentives for the collection or sale of personal information?",
+      "answer": "Yes, a business may offer financial incentives, including payments as compensation, for the collection, sale, sharing, or retention of personal information. However, the consumer must give prior opt-in consent, the business must describe the material terms, consent may be revoked at any time, and the business shall not use practices that are unjust, unreasonable, coercive, or usurious.",
+      "evidence": "(b)\u00a0(1)\u00a0A business may offer financial incentives, including payments to consumers as compensation, for the collection of personal information, the sale or sharing of personal information, or the retention of personal information. A business may also offer a different price, rate, level, or quality of goods or services to the consumer if that price or difference is reasonably related to the value provided to the business by the consumer\u2019s data.\n(2)\u00a0A business that offers any financial incentives pursuant to this subdivision, shall notify consumers of the financial incentives pursuant to Section 1798.130.\n(3)\u00a0A business may enter a consumer into a financial incentive program only if the consumer gives the business prior opt-in consent pursuant to Section\n1798.130 that clearly describes the material terms of the financial incentive program, and which may be revoked by the consumer at any time. If a consumer refuses to provide opt-in consent, then the business shall wait for at least 12 months before next requesting that the consumer provide opt-in consent, or as prescribed by regulations adopted pursuant to Section 1798.185.\n(4)\u00a0A business shall not use financial incentive practices that are unjust, unreasonable, coercive, or usurious in nature.",
+      "question_type": "factual",
+      "qa_id": "ccpa_012"
+    },
+    {
+      "question": "How long does a business have to respond to a verifiable consumer request?",
+      "answer": "A business must disclose, correct, or delete information within 45 days of receiving a verifiable consumer request. This period may be extended once by an additional 45 days when reasonably necessary, provided the consumer is notified within the first 45 days.",
+      "evidence": "(2)\u00a0(A)\u00a0Disclose and deliver the required information to a consumer free of charge, correct inaccurate personal information, or delete a consumer\u2019s personal information, based on the consumer\u2019s request, within 45 days of receiving a verifiable consumer request from the consumer. The business shall promptly take steps to\ndetermine whether the request is a verifiable consumer request, but this shall not extend the business\u2019 duty to disclose and deliver the information, to correct inaccurate personal information, or to delete personal information within 45 days of receipt of the consumer\u2019s request. The time period to provide the required information, to correct inaccurate personal information, or to delete personal information may be extended once by an additional 45 days when reasonably necessary, provided the consumer is provided notice of the extension within the first 45-day period. The disclosure of the required information shall be made in writing and delivered through the consumer\u2019s account with the business, if the consumer maintains an account with the business, or by mail or electronically at the consumer\u2019s option if the consumer does not maintain an account with the business, in a readily useable format that allows the consumer to transmit this information from one entity to another entity without hindrance. The",
+      "question_type": "factual",
+      "qa_id": "ccpa_013"
+    },
+    {
+      "question": "What designated methods must a business make available for consumers to submit requests?",
+      "answer": "A business must make available two or more designated methods including, at a minimum, a toll-free telephone number. A business that operates exclusively online and has a direct relationship with a consumer shall only be required to provide an email address. If the business maintains an internet website, it must make it available for submitting requests.",
+      "evidence": "(1) (A) Make available to consumers two or more designated methods for submitting requests for information required to be disclosed pursuant to Sections 1798.110 and 1798.115, or requests for deletion or correction pursuant to Sections 1798.105 and 1798.106, respectively, including, at a minimum, a toll-free telephone number. A business that operates exclusively online and has a direct relationship with a consumer from whom it collects personal information shall only be\nrequired to provide an email address for submitting requests for information required to be disclosed pursuant to Sections 1798.110 and 1798.115, or for requests for deletion or correction pursuant to Sections 1798.105 and 1798.106, respectively.\n\n(B) If the business maintains an internet website, make the internet website available to consumers to submit requests for information required to be disclosed pursuant to Sections 1798.110 and 1798.115, or requests for deletion or correction pursuant to Sections 1798.105 and 1798.106, respectively.",
+      "question_type": "factual",
+      "qa_id": "ccpa_014"
+    },
+    {
+      "question": "How often can a business be required to provide information to the same consumer?",
+      "answer": "A business is not obligated to provide the information required by Sections 1798.110 and 1798.115 to the same consumer more than twice in a 12-month period.",
+      "evidence": "(b) A business is not obligated to provide the information required by Sections 1798.110 and 1798.115 to the same consumer more than twice in a 12-month period.",
+      "question_type": "factual",
+      "qa_id": "ccpa_015"
+    },
+    {
+      "question": "What links must a business provide on its homepage regarding the sale or sharing of personal information?",
+      "answer": "A business must provide a link titled 'Do Not Sell or Share My Personal Information' and a link titled 'Limit the Use of My Sensitive Personal Information' on its internet homepages. At the business's discretion, it may use a single clearly labeled link in lieu of both.",
+      "evidence": "(1) Provide a clear and conspicuous link on the business' internet homepages,\ntitled \"Do Not Sell or Share My Personal Information,\" to an internet web page that enables a consumer, or a person authorized by the consumer, to\nopt out of the sale or sharing of the consumer's personal information.\n\n(2) Provide a clear and conspicuous link on the business' internet homepages, titled \"Limit the Use of My Sensitive Personal Information,\" that enables a consumer, or a person authorized by the consumer, to limit the use or disclosure of the consumer's sensitive personal information to those uses authorized by subdivision (a) of Section 1798.121.\n\n(3) At the business' discretion, utilize a single, clearly labeled link on the business' internet homepages, in lieu of complying with paragraphs (1) and (2), if that link easily allows a consumer to opt out of the sale or sharing of the consumer's personal information and to limit the use or disclosure of the consumer's sensitive\npersonal information.",
+      "question_type": "factual",
+      "qa_id": "ccpa_016"
+    },
+    {
+      "question": "How long must a business wait after a consumer opts out before requesting re-authorization?",
+      "answer": "For consumers who opt out, the business must wait at least 12 months before requesting authorization again. For consumers under 16 who do not consent, the business must wait at least 12 months or until the consumer attains 16 years of age.",
+      "evidence": "(4) For consumers who exercise their right to\nopt out of the sale or sharing of their personal information or limit the use or disclosure of their sensitive personal information, refrain from selling or sharing the consumer's personal information or using or disclosing the consumer's sensitive personal information and wait for at least 12 months before requesting that the consumer authorize the sale or sharing of the consumer's personal information or the use and disclosure of the consumer's sensitive personal information for additional purposes, or as authorized by regulations.\n\n(5) For consumers under 16 years of age who do not consent to the sale or sharing of their personal information, refrain from selling or sharing the personal information of the consumer under 16 years of age and wait for at least 12 months before requesting the\nconsumer's consent again, or as authorized by regulations or until the consumer attains 16 years of age.",
+      "question_type": "factual",
+      "qa_id": "ccpa_017"
+    },
+    {
+      "question": "How is 'personal information' defined under the CCPA?",
+      "answer": "Personal information means information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or household. It includes identifiers, commercial information, biometric information, internet activity, geolocation data, audio/visual information, professional information, education information, inferences, and sensitive personal information.",
+      "evidence": "(v) (1) \"Personal information\" means information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or household. Personal information includes, but is not limited to, the following if it identifies, relates to, describes, is reasonably capable of being associated with, or could be reasonably linked, directly or indirectly, with a particular consumer or household:\n\n(A) Identifiers such as a real name, alias, postal address, unique personal identifier, online identifier, Internet Protocol address, email address, account name, social security number, driver's license number, passport number, or other\nsimilar identifiers.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_018"
+    },
+    {
+      "question": "What qualifies as a 'business' under the CCPA?",
+      "answer": "A business is a for-profit legal entity that collects consumers' personal information, does business in California, and satisfies one or more thresholds: annual gross revenues exceeding $25 million, annually buys/sells/shares personal information of 100,000 or more consumers or households, or derives 50 percent or more of annual revenues from selling or sharing personal information.",
+      "evidence": "(1)\u00a0A sole proprietorship, partnership, limited liability company, corporation, association, or other legal entity that is\norganized or operated for the profit or financial benefit of its shareholders or other owners, that collects consumers\u2019 personal information, or on the behalf of which such information is collected and that alone, or jointly with others, determines the purposes and means of the processing of consumers\u2019 personal information, that does business in the State of California, and that satisfies one or more of the following thresholds:\n(A)\u00a0As of January 1 of the calendar year, had annual gross revenues in excess of twenty-five million dollars ($25,000,000) in the preceding calendar year, as adjusted pursuant to subdivision (d) of Section 1798.199.95.\n(B)\u00a0Alone or in combination, annually buys, sells, or shares the personal information of 100,000 or more consumers or households.\n(C)\u00a0Derives 50 percent or more of its annual\nrevenues from selling or sharing consumers\u2019 personal information.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_019"
+    },
+    {
+      "question": "How is 'consent' defined under the CCPA and what does not constitute consent?",
+      "answer": "Consent means any freely given, specific, informed, and unambiguous indication of the consumer's wishes by which the consumer signifies agreement to the processing of personal information for a narrowly defined particular purpose. Acceptance of broad terms of use does not constitute consent. Hovering over, muting, pausing, or closing content does not constitute consent. Agreement obtained through dark patterns does not constitute consent.",
+      "evidence": "(h)\u00a0\u201cConsent\u201d means any freely given, specific, informed, and unambiguous indication of the consumer\u2019s wishes by which the consumer, or the consumer\u2019s legal guardian, a person who has power of attorney, or a person acting as a conservator for the consumer, including by a statement or by a\nclear affirmative action, signifies agreement to the processing of personal information relating to the consumer for a narrowly defined particular purpose. Acceptance of a general or broad terms of use, or similar document, that contains descriptions of personal information processing along with other, unrelated information, does not constitute consent. Hovering over, muting, pausing, or closing a given piece of content does not constitute consent. Likewise, agreement obtained through use of dark patterns does not constitute consent.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_020"
+    },
+    {
+      "question": "Who is considered a 'consumer' under the CCPA?",
+      "answer": "A consumer means a natural person who is a California resident, as defined in Section 17014 of Title 18 of the California Code of Regulations, however identified, including by any unique identifier.",
+      "evidence": "(i) \"Consumer\" means a natural person who is a California resident, as defined in Section 17014 of Title 18 of the California Code of Regulations, as that section read on September 1, 2017, however identified, including by any unique identifier.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_021"
+    },
+    {
+      "question": "What is a 'dark pattern' under the CCPA?",
+      "answer": "A dark pattern means a user interface designed or manipulated with the substantial effect of subverting or impairing user autonomy, decisionmaking, or choice, as further defined by regulation.",
+      "evidence": "(l) \"Dark pattern\" means a user interface designed or manipulated with the substantial effect of subverting or impairing user autonomy, decisionmaking, or choice, as further defined by regulation.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_022"
+    },
+    {
+      "question": "What constitutes 'sensitive personal information' under the CCPA?",
+      "answer": "Sensitive personal information includes social security, driver's license, state ID, or passport numbers; account log-in information with security codes; precise geolocation; racial or ethnic origin, citizenship, religious beliefs, or union membership; contents of mail, email, and text messages; genetic data; neural data; biometric information for uniquely identifying a consumer; health information; and information about sex life or sexual orientation.",
+      "evidence": "(ae)\u00a0\u201cSensitive personal information\u201d means:\n(1)\u00a0Personal information that reveals:\n(A)\u00a0A consumer\u2019s social security, driver\u2019s license, state identification card, or passport number.\n(B)\u00a0A consumer\u2019s account log-in, financial account, debit card, or credit card number in combination with any required\nsecurity or access code, password, or credentials allowing access to an account.\n(C)\u00a0A consumer\u2019s precise geolocation.\n(D)\u00a0A consumer\u2019s racial or ethnic origin, citizenship or immigration status, religious or philosophical beliefs, or union membership.\n(E)\u00a0The contents of a consumer\u2019s mail, email, and text messages unless the business is the intended recipient of the communication.\n(F)\u00a0A consumer\u2019s genetic data.\n(G)\u00a0(i)\u00a0A consumer\u2019s neural data.\n(ii)\u00a0\u201cNeural data\u201d means information that is generated by measuring the activity of a consumer\u2019s central or peripheral nervous system, and that is not inferred\nfrom nonneural information.\n(2)\u00a0(A)\u00a0The processing of biometric information for the purpose of uniquely identifying a consumer.\n(B)\u00a0Personal information collected and analyzed concerning a consumer\u2019s health.\n(C)\u00a0Personal information collected and analyzed concerning a consumer\u2019s sex life or sexual orientation.",
+      "question_type": "factual",
+      "qa_id": "ccpa_023"
+    },
+    {
+      "question": "What is 'neural data' under the CCPA?",
+      "answer": "Neural data means information that is generated by measuring the activity of a consumer's central or peripheral nervous system, and that is not inferred from nonneural information.",
+      "evidence": "(ii) \"Neural data\" means information that is generated by measuring the activity of a consumer's central or peripheral nervous system, and that is not inferred\nfrom nonneural information.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_024"
+    },
+    {
+      "question": "How does 'sharing' differ from 'selling' under the CCPA?",
+      "answer": "Sharing means communicating personal information by the business to a third party for cross-context behavioral advertising, whether or not for monetary or other valuable consideration, including transactions where no money is exchanged. Selling requires monetary or other valuable consideration, while sharing specifically relates to cross-context behavioral advertising.",
+      "evidence": "(ah)\u00a0(1)\u00a0\u201cShare,\u201d \u201cshared,\u201d or \u201csharing\u201d means sharing, renting, releasing, disclosing, disseminating, making available, transferring, or otherwise communicating orally, in writing, or by electronic or other means, a consumer\u2019s personal information by the business\nto a third party for cross-context behavioral advertising, whether or not for monetary or other valuable consideration, including transactions between a business and a third party for cross-context behavioral advertising for the benefit of a business in which no money is exchanged.",
+      "question_type": "comparative",
+      "qa_id": "ccpa_026"
+    },
+    {
+      "question": "What is 'cross-context behavioral advertising' under the CCPA?",
+      "answer": "Cross-context behavioral advertising means the targeting of advertising to a consumer based on personal information obtained from the consumer's activity across businesses, distinctly branded internet websites, applications, or services, other than the business or service with which the consumer intentionally interacts.",
+      "evidence": "(k) \"Cross-context behavioral advertising\" means the targeting of advertising to a consumer based on the consumer's personal information obtained from the consumer's activity across businesses, distinctly branded internet websites, applications, or services,\nother than the business, distinctly branded internet website, application, or service with which the consumer intentionally interacts.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_027"
+    },
+    {
+      "question": "What is 'deidentified' information under the CCPA?",
+      "answer": "Deidentified means information that cannot reasonably be used to infer information about, or be linked to, a particular consumer, provided the business takes reasonable measures to ensure it cannot be associated with a consumer, publicly commits to maintaining it in deidentified form, and contractually obligates recipients to comply with these provisions.",
+      "evidence": "(m)\u00a0\u201cDeidentified\u201d means information that cannot reasonably be used to infer information about, or otherwise be linked to, a particular consumer provided that the business that possesses the information:\n(1)\u00a0Takes reasonable measures to ensure that the information cannot be associated with a consumer or household.\n(2)\u00a0Publicly commits to maintain and use the information in deidentified form and not to attempt to reidentify the\ninformation, except that the business may attempt to reidentify the information solely for the purpose of determining whether its deidentification processes satisfy the requirements of this subdivision.\n(3)\u00a0Contractually obligates any recipients of the information to comply with all provisions of this subdivision.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_028"
+    },
+    {
+      "question": "What is 'precise geolocation' under the CCPA?",
+      "answer": "Precise geolocation means any data derived from a device used or intended to be used to locate a consumer within a geographic area equal to or less than the area of a circle with a radius of 1,850 feet, except as prescribed by regulations.",
+      "evidence": "(w) \"Precise geolocation\" means any data that is derived from a device and that is used or intended to be used to locate a consumer within a geographic area that is equal to or less than the area of a circle with a radius of 1,850 feet, except as prescribed by regulations.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_029"
+    },
+    {
+      "question": "What is 'profiling' under the CCPA?",
+      "answer": "Profiling means any form of automated processing of personal information to evaluate certain personal aspects relating to a natural person, in particular to analyze or predict aspects concerning performance at work, economic situation, health, personal preferences, interests, reliability, behavior, location, or movements.",
+      "evidence": "(z) \"Profiling\" means any form of automated processing of personal information, as further defined by regulations pursuant to paragraph (15) of subdivision (a) of Section 1798.185, to evaluate certain personal aspects relating to a natural person and in particular to analyze or predict aspects concerning that natural person's performance at work, economic situation, health, personal preferences, interests, reliability, behavior, location, or movements.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_030"
+    },
+    {
+      "question": "What are the contractual requirements for a 'contractor' under the CCPA?",
+      "answer": "A contractor must have a written contract with the business that prohibits selling or sharing personal information, restricts use to specified business purposes, prevents use outside the direct business relationship, limits combining personal information from different sources, includes a certification of compliance, and permits monitoring of compliance through audits at least once every 12 months.",
+      "evidence": "(j)\u00a0(1)\u00a0\u201cContractor\u201d means a person to whom the business makes available a consumer\u2019s\npersonal information for a business purpose, pursuant to a written contract with the business, provided that the contract:\n(A)\u00a0Prohibits the contractor from:\n(i)\u00a0Selling or sharing the personal information.\n(ii)\u00a0Retaining, using, or disclosing the personal information for any purpose other than for the business purposes specified in the contract, including retaining, using, or disclosing the personal information for a commercial purpose other than the business purposes specified in the contract, or as otherwise permitted by this title.\n(iii)\u00a0Retaining, using, or disclosing the information outside of the direct business relationship between the contractor and the business.\n(iv)\u00a0Combining\nthe personal information that the contractor receives pursuant to a written contract with the business with personal information that it receives from or on behalf of another person or persons, or collects from its own interaction with the consumer, provided that the contractor may combine personal information to perform any business purpose as defined in regulations adopted pursuant to paragraph (9) of subdivision (a) of Section 1798.185, except as provided for in paragraph (6) of subdivision (e) and in regulations adopted by the California Privacy Protection Agency.\n(B)\u00a0Includes a certification made by the contractor that the contractor understands the restrictions in subparagraph (A) and will comply with them.\n(C)\u00a0Permits, subject to agreement with the contractor, the business to monitor the contractor\u2019s compliance with the contract through measures, including, but not limited\nto, ongoing manual reviews and automated scans and regular assessments, audits, or other technical and operational testing at least once every 12 months.",
+      "question_type": "factual",
+      "qa_id": "ccpa_032"
+    },
+    {
+      "question": "What types of information does the CCPA exempt from its requirements?",
+      "answer": "The CCPA exempts medical information governed by HIPAA or CMIA, personal information subject to the Gramm-Leach-Bliley Act, information under the California Financial Information Privacy Act, personal information under the Driver's Privacy Protection Act, and activities subject to the Fair Credit Reporting Act.",
+      "evidence": "\u201cmedical information\u201d and \u201cprovider of health care\u201d in Section 56.05 shall apply and the definitions of \u201cbusiness associate,\u201d \u201ccovered entity,\u201d and \u201cprotected health information\u201d in Section 160.103 of Title 45 of the Code of Federal Regulations shall apply.\n(d)\u00a0(1)\u00a0This title shall not apply to an activity involving the collection, maintenance, disclosure, sale, communication, or use of any personal information bearing on a consumer\u2019s\ncreditworthiness, credit standing, credit capacity, character, general reputation, personal characteristics, or mode of living by a consumer reporting agency, as defined in subdivision (f) of Section 1681a of Title 15 of the United States Code, by a furnisher of information, as set forth in Section 1681s-2 of Title 15 of the United States Code, who provides information for use in a consumer report, as defined in subdivision (d) of Section 1681a of Title 15 of the United States Code, and by a user of a consumer report as set forth in Section 1681b of Title 15 of the United States Code.\n(2)\u00a0Paragraph (1) shall apply only to the extent that such activity involving the collection, maintenance, disclosure, sale, communication, or use of such information by that agency, furnisher, or user is subject to regulation under the Fair\nCredit Reporting Act, Section 1681 et seq., Title 15 of the United States Code and the information is not collected, maintained, used, communicated, disclosed, or sold except as authorized by the Fair Credit Reporting Act.\n(3)\u00a0This subdivision shall not apply to Section 1798.150.\n(e)\u00a0This title shall not apply to personal information collected, processed, sold, or disclosed subject to the federal Gramm-Leach-Bliley Act (Public Law 106-102), and implementing regulations, or the California Financial Information Privacy Act (Division 1.4 (commencing with Section 4050) of the Financial Code), or the federal Farm Credit Act of 1971 (as amended in 12 U.S.C. 2001-2279cc and implementing regulations, 12 C.F.R. 600, et seq.). This subdivision shall not apply to Section 1798.150.\n(f)\u00a0This title shall not apply to personal information collected, processed, sold, or disclosed pursuant to the Driver\u2019s Privacy Protection Act of 1994 (18 U.S.C. Sec. 2721 et seq.). This subdivision shall not apply to Section 1798.150.",
+      "question_type": "factual",
+      "qa_id": "ccpa_033"
+    },
+    {
+      "question": "What is the California Privacy Protection Agency and how is it structured?",
+      "answer": "The California Privacy Protection Agency is established in state government with full administrative power, authority, and jurisdiction to implement and enforce the CCPA. It is governed by a five-member board including the chairperson. The chairperson and one member are appointed by the Governor, and the Attorney General, Senate Rules Committee, and Speaker of the Assembly each appoint one member.",
+      "evidence": "(a) There is hereby established in state government the California Privacy Protection Agency, which is vested with full administrative power, authority, and jurisdiction to implement and enforce the California Consumer Privacy Act of 2018. The agency shall be governed by a five-member board, including the chairperson. The chairperson and one member of the board shall be appointed by the Governor. The Attorney General, Senate Rules\nCommittee, and Speaker of the Assembly shall each appoint one member. These appointments should be made from among Californians with expertise in the areas of privacy, technology, and consumer rights.",
+      "question_type": "factual",
+      "qa_id": "ccpa_037"
+    },
+    {
+      "question": "What restrictions apply to board members of the California Privacy Protection Agency after leaving office?",
+      "answer": "Board members are precluded for one year after leaving office from accepting employment with a business subject to enforcement or civil action during their tenure or the five years preceding their appointment. They are precluded for two years after leaving office from acting as an agent, attorney, or representative for any person in a matter pending before the agency.",
+      "evidence": "(f)\u00a0Be precluded, for a period of one year after leaving office, from accepting employment with a business that was subject to an enforcement action or civil action under this title during the member\u2019s tenure or during the five-year period preceding the member\u2019s appointment.\n(g)\u00a0Be precluded for a period of two years after leaving office from acting, for compensation, as an agent or attorney for, or otherwise representing, any other person in a matter pending before the agency if the purpose is to influence an action of the agency.",
+      "question_type": "factual",
+      "qa_id": "ccpa_039"
+    },
+    {
+      "question": "How long do agency board members serve?",
+      "answer": "Members of the agency board serve at the pleasure of their appointing authority but shall serve for no longer than eight consecutive years.",
+      "evidence": "Members of the agency board, including the chairperson, shall serve at the pleasure of their appointing authority but shall serve for no longer than eight consecutive years.",
+      "question_type": "factual",
+      "qa_id": "ccpa_040"
+    },
+    {
+      "question": "What is the statute of limitations for administrative actions under the CCPA?",
+      "answer": "No administrative action shall be commenced more than five years after the date on which the violation occurred. The period may be tolled if the person engages in fraudulent concealment of acts or identity, or fails to produce documents ordered by a court.",
+      "evidence": "No administrative action brought pursuant to this title alleging a violation of any of the provisions of this title shall be commenced more than five years after the date on which the violation occurred.",
+      "question_type": "factual",
+      "qa_id": "ccpa_041"
+    },
+    {
+      "question": "How does the CCPA handle conflicting provisions with other laws?",
+      "answer": "The CCPA is intended to supplement existing laws relating to consumers' personal information. Wherever possible, other laws should be harmonized with the CCPA, but in the event of conflict, the provisions of the law that afford the greatest protection for the right of privacy for consumers shall control.",
+      "evidence": "This title is intended to further the constitutional right of privacy and to supplement existing laws relating to consumers\u2019 personal information, including, but not limited to, Chapter 22 (commencing with Section 22575) of Division 8 of the Business and Professions Code and Title 1.81 (commencing with Section 1798.80). The provisions of this title are not limited to information collected electronically or over the Internet, but apply to the collection and sale of all personal information collected by a business from consumers. Wherever possible, law relating to consumers\u2019 personal information should be construed to\nharmonize with the provisions of this title, but in the event of a conflict between other laws and the provisions of this title, the provisions of the law that afford the greatest protection for the right of privacy for consumers shall control.",
+      "question_type": "factual",
+      "qa_id": "ccpa_042"
+    },
+    {
+      "question": "Does the CCPA preempt local laws?",
+      "answer": "Yes, the CCPA is a matter of statewide concern and supersedes and preempts all rules, regulations, codes, ordinances, and other laws adopted by a city, county, municipality, or local agency regarding the collection and sale of consumers' personal information by a business.",
+      "evidence": "This title is a matter of statewide concern and supersedes and preempts all rules, regulations, codes, ordinances, and other laws adopted by a city, county, city and county, municipality, or local agency regarding the collection and sale of consumers' personal information by a business.",
+      "question_type": "factual",
+      "qa_id": "ccpa_043"
+    },
+    {
+      "question": "Can a contract waive consumer rights under the CCPA?",
+      "answer": "No, any provision of a contract or agreement that purports to waive or limit in any way rights under the CCPA, including any right to a remedy or means of enforcement, shall be deemed contrary to public policy and shall be void and unenforceable.",
+      "evidence": "Any provision of a contract or agreement of any kind, including a representative action waiver, that purports to waive or limit in any way rights under this title, including, but not limited to, any right to a remedy or means of enforcement, shall be deemed contrary to public policy and shall be void and unenforceable.",
+      "question_type": "factual",
+      "qa_id": "ccpa_044"
+    },
+    {
+      "question": "What anti-avoidance provisions does the CCPA contain?",
+      "answer": "A court or the agency shall disregard intermediate steps or transactions if they were intended to avoid the reach of the CCPA, including disclosing information to a third party to avoid the definition of sell or share, or eliminating monetary consideration to avoid the definition by entering contracts without an exchange for valuable consideration but where a party is obtaining something of value.",
+      "evidence": "A court or the agency shall disregard the intermediate steps or transactions for purposes of effectuating the purposes of this title:\n\n(a) If a series of steps or transactions were component parts of a single transaction intended from the beginning to be taken with the intention of avoiding the reach of this title, including the disclosure of information by a business to a third party in order to avoid the definition of sell or share.\n\n(b) If steps or transactions were taken to purposely avoid the\ndefinition of sell or share by eliminating any monetary or other valuable consideration, including by entering into contracts that do not include an exchange for monetary or other valuable consideration, but where a party is obtaining something of value or use.",
+      "question_type": "factual",
+      "qa_id": "ccpa_045"
+    },
+    {
+      "question": "What happens when a business handles manifestly unfounded or excessive consumer requests?",
+      "answer": "A business may charge a reasonable fee taking into account administrative costs, or refuse to act on the request and notify the consumer of the reason. The business bears the burden of demonstrating that any verifiable consumer request is manifestly unfounded or excessive.",
+      "evidence": "(3) If requests from a consumer are manifestly unfounded or excessive, in particular because of their repetitive character, a business may either charge a reasonable fee, taking into account the administrative costs of providing the information or communication or taking the action requested, or refuse to act on the request and notify the consumer of the reason for refusing the request. The business shall bear the burden of demonstrating that any verifiable consumer request is manifestly unfounded or excessive.",
+      "question_type": "factual",
+      "qa_id": "ccpa_046"
+    },
+    {
+      "question": "What is 'biometric information' under the CCPA?",
+      "answer": "Biometric information means an individual's physiological, biological, or behavioral characteristics used to establish individual identity, including DNA, imagery of the iris, retina, fingerprint, face, hand, palm, vein patterns, voice recordings, keystroke patterns, gait patterns, and sleep, health, or exercise data that contain identifying information.",
+      "evidence": "(c)\u00a0\u201cBiometric information\u201d means an individual\u2019s physiological, biological, or behavioral characteristics, including information pertaining to an individual\u2019s deoxyribonucleic acid (DNA), that is used or is intended to be used singly or in combination with each other or with other identifying data, to establish individual identity. Biometric information includes, but is not limited to, imagery of the iris, retina, fingerprint, face, hand, palm, vein patterns, and voice recordings, from which an identifier template, such as a faceprint, a minutiae template, or a voiceprint, can be extracted, and keystroke patterns or rhythms, gait patterns or rhythms, and sleep, health, or exercise data that contain identifying information.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_049"
+    },
+    {
+      "question": "What does 'publicly available' information mean under the CCPA?",
+      "answer": "Publicly available means information lawfully made available from federal, state, or local government records; information a business reasonably believes is lawfully made available to the general public by the consumer or widely distributed media; or information made available by a person to whom the consumer has disclosed it without restricting the audience. It does not mean biometric information collected without the consumer's knowledge.",
+      "evidence": "(B)\u00a0(i)\u00a0For purposes of this paragraph, \u201cpublicly available\u201d means any of the following:\n(I)\u00a0Information that is lawfully made available from federal, state, or local government records.\n(II)\u00a0Information that a business has a reasonable basis to believe is lawfully made available to the general public by the consumer or from widely distributed media.\n(III)\u00a0Information made available by a person to whom the consumer has disclosed the information if the consumer has not restricted the information\nto a specific audience.\n(ii)\u00a0\u201cPublicly available\u201d does not mean biometric information collected by a business about a consumer without the consumer\u2019s knowledge.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_050"
+    },
+    {
+      "question": "What is 'pseudonymization' under the CCPA?",
+      "answer": "Pseudonymization means the processing of personal information in a manner that renders it no longer attributable to a specific consumer without the use of additional information, provided that the additional information is kept separately and is subject to technical and organizational measures to ensure it is not attributed to an identified or identifiable consumer.",
+      "evidence": "(aa) \"Pseudonymize\" or \"pseudonymization\" means the processing of personal information in a manner that renders the personal information no longer attributable to a specific consumer without the use of additional information, provided that the additional information is kept separately and is subject to technical and organizational measures to ensure that the personal information is not attributed to an identified or\nidentifiable consumer.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_052"
+    },
+    {
+      "question": "What security requirements must a business implement under the CCPA?",
+      "answer": "A business that collects a consumer's personal information shall implement reasonable security procedures and practices appropriate to the nature of the personal information to protect it from unauthorized or illegal access, destruction, use, modification, or disclosure.",
+      "evidence": "(e) A business that collects a consumer's personal information shall implement reasonable security procedures and practices appropriate to the nature of the personal information to protect the personal information from unauthorized or illegal access, destruction, use, modification, or disclosure in accordance with Section 1798.81.5.",
+      "question_type": "factual",
+      "qa_id": "ccpa_053"
+    },
+    {
+      "question": "Can a business maintain a record of deletion requests?",
+      "answer": "Yes, the business may maintain a confidential record of deletion requests solely for the purpose of preventing the personal information of a consumer who submitted a deletion request from being sold, for compliance with laws, or for other purposes solely to the extent permissible under the CCPA.",
+      "evidence": "(2) The business may maintain a confidential record of deletion requests solely for the purpose of preventing the personal information of a consumer who has submitted a deletion request from being sold, for compliance with laws or for other purposes, solely to the extent permissible under this title.",
+      "question_type": "factual",
+      "qa_id": "ccpa_054"
+    },
+    {
+      "question": "What happens when a third party receives personal information that was sold by a business and the consumer hasn't been given notice?",
+      "answer": "A third party shall not sell or share personal information about a consumer that has been sold to or shared with the third party by a business unless the consumer has received explicit notice and is provided an opportunity to exercise the right to opt-out.",
+      "evidence": "(d) A third party shall not sell or share personal information about a consumer that has been sold to, or shared with, the third party by a business unless the consumer has received explicit notice and is provided an opportunity to exercise the right to opt-out pursuant to Section 1798.120.",
+      "question_type": "factual",
+      "qa_id": "ccpa_055"
+    },
+    {
+      "question": "What is the annual appropriation to the California Privacy Protection Agency?",
+      "answer": "There is an appropriation of $5 million during fiscal year 2020-21, and $10 million adjusted for cost-of-living changes during each fiscal year thereafter, to support the agency's operations.",
+      "evidence": "(a) There is hereby appropriated from the General Fund of the state to the agency the sum of five million dollars ($5,000,000) during the fiscal year 2020\u201321, and the sum of ten million dollars ($10,000,000) adjusted for cost-of-living changes, during each fiscal year thereafter, for expenditure to support the operations of the agency pursuant to this title.",
+      "question_type": "factual",
+      "qa_id": "ccpa_059"
+    },
+    {
+      "question": "How are administrative fines distributed under the CCPA?",
+      "answer": "95% of any administrative fine is deposited into the Consumer Privacy Subfund for the California Privacy Protection Agency to carry out its duties. 5% is deposited into the Consumer Privacy Grant Subfund for grants to promote and protect consumer privacy, educate children about online privacy, and fund cooperative programs with international law enforcement.",
+      "evidence": "(b) (1)  Ninety-five percent of any administrative fine assessed for a violation of this title, and of the proceeds of any settlement of an action brought pursuant to subdivision (a), shall be deposited into the Consumer Privacy Subfund created within the Consumer Privacy Fund pursuant to subdivision (b) of Section 1798.160, and shall be used exclusively by the California Privacy Protection Agency in carrying out its duties under this title.\n\n(2) Five percent of any administrative fine assessed for a violation of this title, and of the proceeds of any settlement of an action brought pursuant to subdivision (a), shall be deposited into the Consumer Privacy Grant Subfund created within the Consumer Privacy Fund pursuant to subdivision (d) of Section 1798.160.",
+      "question_type": "factual",
+      "qa_id": "ccpa_060"
+    },
+    {
+      "question": "What is a 'unique identifier' under the CCPA?",
+      "answer": "A unique identifier or unique personal identifier means a persistent identifier that can be used to recognize a consumer, family, or device over time and across different services, including device identifiers, IP addresses, cookies, beacons, pixel tags, mobile ad identifiers, customer numbers, pseudonyms, user aliases, telephone numbers, or other persistent or probabilistic identifiers.",
+      "evidence": "(aj) \"Unique identifier\" or \"unique personal identifier\" means a persistent identifier that can be used to recognize a consumer, a family, or a device that is linked to a consumer or\nfamily, over time and across different services, including, but not limited to, a device identifier; an Internet Protocol address; cookies, beacons, pixel tags, mobile ad identifiers, or similar technology; customer number, unique pseudonym, or user alias; telephone numbers, or other forms of persistent or probabilistic identifiers that can be used to identify a particular consumer or device that is linked to a consumer or family.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_061"
+    },
+    {
+      "question": "What happens when personal information is transferred as part of a merger or acquisition?",
+      "answer": "A business does not 'sell' or 'share' personal information when it transfers it to a third party as part of a merger, acquisition, bankruptcy, or other transaction in which the third party assumes control, provided the information is used consistently with the CCPA. If the third party materially alters how it uses the information, it must provide prior notice to the consumer.",
+      "evidence": "(C) The business transfers to a third party the personal information of a consumer as an asset that is part of a merger, acquisition, bankruptcy, or other transaction in which the third party assumes control of all or part of the business, provided that information is used or shared consistently with this title. If a third party materially alters how it uses or shares the personal information of a consumer in a manner that is materially inconsistent with the promises made at the time of collection, it shall provide prior notice of the new or changed practice to the consumer.",
+      "question_type": "factual",
+      "qa_id": "ccpa_063"
+    },
+    {
+      "question": "What is 'nonpersonalized advertising' under the CCPA?",
+      "answer": "Nonpersonalized advertising means advertising and marketing that is based solely on a consumer's personal information derived from the consumer's current interaction with the business, with the exception of the consumer's precise geolocation.",
+      "evidence": "(t) \"Nonpersonalized advertising\" means advertising and marketing that is based solely on a consumer's personal information derived from the consumer's current interaction with the business with the exception of the consumer's precise geolocation.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_064"
+    },
+    {
+      "question": "What cybersecurity and risk assessment requirements may be imposed on businesses under the CCPA?",
+      "answer": "Businesses whose processing presents significant risk to consumers' privacy or security may be required to perform an annual cybersecurity audit, and to submit regular risk assessments to the California Privacy Protection Agency that identify and weigh benefits of processing against potential risks to consumer rights.",
+      "evidence": "(14)\u00a0Issuing regulations requiring businesses whose processing of consumers\u2019 personal information presents significant risk to consumers\u2019 privacy or security, to:\n(A)\u00a0Perform a cybersecurity audit on an annual basis, including defining the scope of the audit and establishing a process to ensure that audits are thorough and independent. The factors to be considered in determining when processing may result in significant risk to the security of personal information shall include the size and complexity of the business and the nature and scope of processing activities.\n(B)\u00a0Submit to the California Privacy Protection Agency on a regular basis a risk assessment with respect to their processing of personal information, including whether the processing involves sensitive personal information, and identifying and weighing the\nbenefits resulting from the processing to the business, the consumer, other stakeholders, and the public, against the potential risks to the rights of the consumer associated with that processing, with the goal of restricting or prohibiting the processing if the risks to privacy of the consumer outweigh the benefits resulting from processing to the consumer, the business, other stakeholders, and the public. Nothing in this section shall require a business to divulge trade secrets.",
+      "question_type": "factual",
+      "qa_id": "ccpa_066"
+    },
+    {
+      "question": "How must a business respond to an opt-out preference signal?",
+      "answer": "A business must not intentionally degrade the consumer experience, charge a fee, make products or services not function properly, attempt to coerce the consumer to opt in, or display intrusive notifications or popups in response to an opt-out preference signal.",
+      "evidence": "(B)\u00a0Ensure that the business does not respond to an opt-out preference signal by:\n(i)\u00a0Intentionally degrading the functionality of the consumer experience.\n(ii)\u00a0Charging the consumer a fee in response to the consumer\u2019s opt-out preferences.\n(iii)\u00a0Making any products or services not function properly or fully for the consumer, as compared to consumers who do not use the opt-out preference signal.\n(iv)\u00a0Attempting to coerce the consumer to opt in to the sale or sharing of the consumer\u2019s personal information, or the use or disclosure of the consumer\u2019s sensitive personal information, by stating or implying that the use of the opt-out preference signal will adversely affect the consumer as compared to consumers who do not use the opt-out preference signal, including stating or implying that the consumer will not be able to use the business\u2019 products or services or that those products or services may not function properly or fully.\n(v)\u00a0Displaying any notification or\npopup in response to the consumer\u2019s opt-out preference signal.",
+      "question_type": "factual",
+      "qa_id": "ccpa_067"
+    },
+    {
+      "question": "What does the CCPA require regarding automated decisionmaking technology?",
+      "answer": "The CCPA requires the issuance of regulations governing access and opt-out rights with respect to automated decisionmaking technology, including profiling, and requiring businesses to include meaningful information about the logic involved and a description of the likely outcome of the process with respect to the consumer.",
+      "evidence": "(15) Issuing regulations governing access and opt-out rights with respect to a business' use of automated decisionmaking technology, including profiling and requiring a business' response to access requests to include meaningful information about the logic involved in those decisionmaking processes, as well as a description of the likely outcome of the process with respect to the consumer.",
+      "question_type": "factual",
+      "qa_id": "ccpa_068"
+    },
+    {
+      "question": "What is the scope of the private right of action under the CCPA?",
+      "answer": "The private right of action applies only to data breaches involving nonencrypted and nonredacted personal information or email addresses with passwords/security questions that are subject to unauthorized access due to the business's failure to implement reasonable security procedures. It does not extend to other CCPA violations.",
+      "evidence": "(c) The cause of action established by this section shall apply only to violations as defined in subdivision (a) and shall not be based on violations of any other section of this title. Nothing in this title shall be interpreted to serve as the basis for a private right of action under any other law.",
+      "question_type": "factual",
+      "qa_id": "ccpa_069"
+    },
+    {
+      "question": "Can a business be required to pay both an administrative fine and a civil penalty for the same violation?",
+      "answer": "No, a business shall not be required by the agency, a court, or otherwise to pay both an administrative fine and a civil penalty for the same violation.",
+      "evidence": "The agency and any court, as applicable, shall consider the good faith cooperation of the business, service provider, contractor, or other person in determining the amount of any administrative fine or civil penalty for a violation of this title. A business shall not be required by the agency, a court, or otherwise to pay both an administrative fine and a civil penalty for the same violation.",
+      "question_type": "factual",
+      "qa_id": "ccpa_071"
+    },
+    {
+      "question": "What reidentification restrictions apply to deidentified health information under the CCPA?",
+      "answer": "Reidentification of deidentified health information is prohibited except for treatment, payment, or health care operations; public health activities; research conducted under applicable regulations; contract-based testing of deidentification techniques (with the contract banning other use); or as required by law.",
+      "evidence": "(a)\u00a0A business or other person shall not reidentify, or attempt to reidentify, information that has met the requirements of paragraph (4) of subdivision (a) of Section 1798.146, except for one or more of the following purposes:\n(1)\u00a0Treatment, payment, or health care operations conducted by a covered entity or business associate acting on behalf of, and at the written direction of, the covered entity. For purposes of\nthis paragraph, \u201ctreatment,\u201d \u201cpayment,\u201d \u201chealth care operations,\u201d \u201ccovered entity,\u201d and \u201cbusiness associate\u201d have the same meaning as defined in Section 164.501 of Title 45 of the Code of Federal Regulations.\n(2)\u00a0Public health activities or purposes as described in Section 164.512 of Title 45 of the Code of Federal Regulations.\n(3)\u00a0Research, as defined in Section 164.501 of Title 45 of the Code of Federal Regulations, that is conducted in accordance with Part 46 of Title 45 of the Code of Federal Regulations, the Federal Policy for the Protection of Human Subjects, also known as the Common Rule.\n(4)\u00a0Pursuant to a contract where the lawful holder of the deidentified information that met the requirements of paragraph (4) of subdivision (a) of Section 1798.146 expressly engages a person or entity to attempt to\nreidentify the deidentified information in order to conduct testing, analysis, or validation of deidentification, or related statistical techniques, if the contract bans any other use or disclosure of the reidentified information and requires the return or destruction of the information that was reidentified upon completion of the contract.\n(5)\u00a0If otherwise required by law.",
+      "question_type": "factual",
+      "qa_id": "ccpa_072"
+    },
+    {
+      "question": "How does the CCPA handle law enforcement requests to preserve personal information?",
+      "answer": "Law enforcement agencies with an active case number may direct a business not to delete a consumer's personal information for 90 days to allow time to obtain a court-issued subpoena, order, or warrant. For good cause, additional 90-day periods may be directed. The business shall not use the information for any other purpose during this time.",
+      "evidence": "Law enforcement agencies,\nincluding police and sheriff's departments, may direct a business pursuant to a law enforcement agency-approved investigation with an active case number not to delete a consumer's personal information, and, upon receipt of that direction, a business shall not delete the personal information for 90 days in order to allow the law enforcement agency to obtain a court-issued subpoena, order, or warrant to obtain a consumer's personal information. For good cause and only to the extent necessary for investigatory purposes, a law enforcement agency may direct a business not to delete the consumer's personal information for additional 90-day periods.",
+      "question_type": "factual",
+      "qa_id": "ccpa_073"
+    },
+    {
+      "question": "What is the disclosure period for consumer information requests?",
+      "answer": "The disclosure must cover the 12-month period preceding the business' receipt of the verifiable consumer request. Consumers may request information beyond the 12-month period, but the business is only required to provide information for personal information collected on or after January 1, 2022.",
+      "evidence": "(B) The disclosure of the required information shall cover the 12-month period preceding the business' receipt of the verifiable consumer request provided that, upon the adoption of a regulation pursuant to paragraph (8) of subdivision (a) of Section 1798.185, a consumer may request that the business disclose the required information beyond the 12-month period, and the business shall be required to provide that information unless doing so proves impossible or would involve a disproportionate effort. A consumer's right to request\nrequired information beyond the 12-month period, and a business' obligation to provide that information, shall only apply to personal information collected on or after January 1, 2022.",
+      "question_type": "factual",
+      "qa_id": "ccpa_074"
+    },
+    {
+      "question": "What is the CCPA's definition of 'security and integrity'?",
+      "answer": "Security and integrity means the ability of networks or information systems to detect security incidents that compromise availability, authenticity, integrity, and confidentiality; businesses to detect security incidents, resist malicious actions and help prosecute those responsible; and businesses to ensure the physical safety of natural persons.",
+      "evidence": "(ac)\u00a0\u201cSecurity and integrity\u201d means the ability of:\n(1)\u00a0Networks or information systems to detect security incidents that compromise the availability, authenticity, integrity, and confidentiality of stored or transmitted personal information.\n(2)\u00a0Businesses to detect security incidents, resist malicious, deceptive, fraudulent, or illegal actions and to help prosecute those responsible for those actions.\n(3)\u00a0Businesses to ensure the physical safety of\nnatural persons.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_075"
+    },
+    {
+      "question": "What is 'aggregate consumer information' under the CCPA?",
+      "answer": "Aggregate consumer information means information that relates to a group or category of consumers, from which individual consumer identities have been removed, that is not linked or reasonably linkable to any consumer or household, including via a device. It does not mean one or more individual consumer records that have been deidentified.",
+      "evidence": "(b) \"Aggregate consumer information\" means information that relates to a group or category of consumers, from which individual consumer identities have been removed, that is not linked or reasonably linkable to any consumer or household, including via a device. \"Aggregate consumer information\" does not mean one or more individual consumer records that have been deidentified.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_076"
+    },
+    {
+      "question": "Can an authorized agent submit opt-out requests on behalf of a consumer?",
+      "answer": "Yes, a consumer may authorize another person to opt out of the sale or sharing of personal information and to limit the use of sensitive personal information on the consumer's behalf, including through an opt-out preference signal, and a business shall comply with such requests.",
+      "evidence": "(e) A consumer may authorize another person to opt out of the sale or sharing of the consumer's personal information and to limit the use of the consumer's sensitive personal information on the consumer's behalf, including through an opt-out preference signal, as defined in paragraph (1) of subdivision (b), indicating the consumer's intent to opt out, and a business shall comply with an opt-out request received from a person authorized by the consumer to act on the consumer's behalf",
+      "question_type": "factual",
+      "qa_id": "ccpa_077"
+    },
+    {
+      "question": "What limitation does the CCPA place on how personal information from opt-out verification can be used?",
+      "answer": "A business must use any personal information collected from the consumer in connection with the opt-out request solely for the purposes of complying with the opt-out request.",
+      "evidence": "(6) Use any personal information collected from the consumer in connection with the submission of the consumer's opt-out request solely for the purposes of complying with the opt-out request.",
+      "question_type": "factual",
+      "qa_id": "ccpa_078"
+    },
+    {
+      "question": "What happens if sensitive personal information is collected without the purpose of inferring characteristics about a consumer?",
+      "answer": "Sensitive personal information collected or processed without the purpose of inferring characteristics about a consumer is not subject to the limitations on sensitive personal information use, and shall be treated as regular personal information for purposes of all other sections of the act.",
+      "evidence": "(d) Sensitive personal information that is collected or\nprocessed without the purpose of inferring characteristics about a consumer is not subject to this section, as further defined in regulations adopted pursuant to subparagraph (C) of paragraph (18) of subdivision (a) of Section 1798.185, and shall be treated as personal information for purposes of all other sections of this act, including Section 1798.100.",
+      "question_type": "factual",
+      "qa_id": "ccpa_079"
+    },
+    {
+      "question": "How does the CCPA define 'commercial purposes'?",
+      "answer": "Commercial purposes means to advance a person's commercial or economic interests, such as by inducing another person to buy, rent, lease, join, subscribe to, provide, or exchange products, goods, property, information, or services, or enabling or effecting a commercial transaction.",
+      "evidence": "(g) \"Commercial purposes\" means to advance a person's commercial or economic interests, such as by inducing another person to buy, rent, lease, join, subscribe to, provide, or exchange products, goods, property, information, or services, or enabling or effecting, directly or indirectly, a commercial transaction.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_080"
+    },
+    {
+      "question": "What are the probable cause requirements before the agency can find a violation?",
+      "answer": "At least 30 days prior to consideration, the alleged violator must be notified by service of process or registered mail, provided with a summary of the evidence, and informed of their right to be present and represented by counsel. The proceeding is private unless the alleged violator requests it be public.",
+      "evidence": "No finding of probable cause to believe this title has been violated shall be made by the agency unless, at least 30 days prior to the agency's consideration of the alleged violation, the business, service provider, contractor, or person alleged to have violated this title is notified of the violation by service of process or registered mail with return receipt requested, provided with a summary of the evidence, and informed of their right to be present in\nperson and represented by counsel at any proceeding of the agency held for the purpose of considering whether probable cause exists for believing the person violated this title.",
+      "question_type": "procedural",
+      "qa_id": "ccpa_081"
+    },
+    {
+      "question": "What is the CCPA's position on liability for businesses that disclose information to service providers who then violate the law?",
+      "answer": "A business is not liable if its service provider or contractor uses disclosed personal information in violation of the CCPA, provided the business did not have actual knowledge or reason to believe the service provider intended to commit the violation. The service provider is liable for its own violations.",
+      "evidence": "(i) (1) A business that discloses personal information to a\nservice provider or contractor in compliance with this title shall not be liable under this title if the service provider or contractor receiving the personal information uses it in violation of the restrictions set forth in the title, provided that, at the time of disclosing the personal information, the business does not have actual knowledge, or reason to believe, that the service provider or contractor intends to commit such a violation. A service provider or contractor shall likewise not be liable under this title for the obligations of a business for which it provides services as set forth in this title provided that the service provider or contractor shall be liable for its own violations of this title.",
+      "question_type": "factual",
+      "qa_id": "ccpa_082"
+    },
+    {
+      "question": "What monetary threshold adjustments does the CCPA provide for?",
+      "answer": "On January 1, 2025, and on January 1 of any odd-numbered year thereafter, the California Privacy Protection Agency shall adjust monetary thresholds to reflect any increase in the Consumer Price Index, using the CPI-California All Items percentage change from the prior two years' reports.",
+      "evidence": "(d)\u00a0(1)\u00a0On January 1, 2025, and on January 1 of any odd-numbered year thereafter, the California Privacy Protection Agency shall adjust the monetary thresholds in subparagraph (A) of paragraph (1) of subdivision (d) of Section 1798.140, subparagraph (A) of paragraph (1) of subdivision (a) of Section 1798.150, subdivision (a) of Section 1798.155, Section 1798.199.25, and subdivision (a) of Section 1798.199.90 to reflect any increase in the Consumer Price Index.\n(2)\u00a0The agency shall use the Consumer Price Index\n(CPI) - California, All Items, All Urban Consumers percentage change from the previous two years\u2019 reports, published by the Department of Industrial Relations, Office of the Director\u2013Research. The agency shall apply the percentage change in the CPI for the August-to-August point in time of the prior two years. The increase in the thresholds shall be rounded to the nearest whole dollar.",
+      "question_type": "factual",
+      "qa_id": "ccpa_083"
+    },
+    {
+      "question": "Does the CCPA apply to employee personal information?",
+      "answer": "The CCPA has limited exemptions for personal information collected about employees, job applicants, owners, directors, officers, and independent contractors, but only within the context of their role. These exemptions were set to become inoperative on January 1, 2023. Section 1798.100(a) and Section 1798.150 still apply.",
+      "evidence": "(m)\u00a0(1)\u00a0This title shall not apply to any of the following:\n(A)\u00a0Personal information that is collected by a business about a natural person in the course of the natural person acting as a job applicant to, an employee of, owner of, director of, officer of, medical staff member of, or independent contractor of, that business to the extent that the natural person\u2019s personal information is collected and used by the business solely within the context of the natural person\u2019s role or former role as a job applicant to, an employee of, owner of, director of, officer of, medical staff member of, or an independent contractor of, that business.",
+      "question_type": "factual",
+      "qa_id": "ccpa_084"
+    },
+    {
+      "question": "What is the relationship between the Attorney General and the California Privacy Protection Agency regarding enforcement?",
+      "answer": "The agency shall, upon request by the Attorney General, stay an administrative action to permit the AG to proceed with an investigation or civil action. The agency may not limit the AG's authority to enforce the CCPA. No civil action may be filed by the AG for a violation after the agency has issued a decision or order for the same violation.",
+      "evidence": "(c) The agency shall, upon request by the Attorney General, stay an administrative action or investigation under this title to permit the Attorney General to proceed with an investigation or civil action and shall not pursue an administrative action or investigation, unless the Attorney General subsequently determines not to pursue an investigation or civil action. The agency may not limit the authority of the Attorney General to enforce this title.\n\n(d) No civil action may be filed by the Attorney General under this section for any violation of this title after\nthe agency has issued a decision pursuant to Section 1798.199.85 or an order pursuant to Section 1798.199.55 against that person for the same violation.",
+      "question_type": "factual",
+      "qa_id": "ccpa_085"
+    },
+    {
+      "question": "When did the CCPA become operative?",
+      "answer": "The CCPA became operative January 1, 2020. The amendments added by Proposition 24 (CPRA) became operative January 1, 2023. Administrative enforcement of the CPRA provisions cannot commence until July 1, 2023, and applies only to violations occurring on or after that date.",
+      "evidence": "(d)\u00a0Notwithstanding subdivision (a), the timeline for adopting final regulations required by the act adding this subdivision shall be July 1, 2022. Beginning the later of July 1, 2021, or six months after the agency provides notice to the Attorney General that it is prepared to begin\nrulemaking under this title, the authority assigned to the Attorney General to adopt regulations under this section shall be exercised by the California Privacy Protection Agency. Notwithstanding any other law, civil and administrative enforcement of the provisions of law added or amended by this act shall not commence until July 1, 2023, and shall only apply to violations occurring on or after that date. Enforcement of provisions of law contained in the California Consumer Privacy Act of 2018 amended by this act shall remain in effect and shall be enforceable until the same provisions of this act become enforceable.",
+      "question_type": "factual",
+      "qa_id": "ccpa_086"
+    },
+    {
+      "question": "How should the CCPA be construed by courts?",
+      "answer": "The CCPA shall be liberally construed to effectuate its purposes.",
+      "evidence": "This title shall be liberally construed to effectuate its purposes.",
+      "question_type": "factual",
+      "qa_id": "ccpa_087"
+    },
+    {
+      "question": "What are the factors the court considers when assessing statutory damages for data breaches?",
+      "answer": "The court considers the nature and seriousness of the misconduct, the number of violations, the persistence of the misconduct, the length of time over which the misconduct occurred, the willfulness of the defendant's misconduct, and the defendant's assets, liabilities, and net worth.",
+      "evidence": "(2) In assessing the amount of statutory\ndamages, the court shall consider any one or more of the relevant circumstances presented by any of the parties to the case, including, but not limited to, the nature and seriousness of the misconduct, the number of violations, the persistence of the misconduct, the length of time over which the misconduct occurred, the willfulness of the defendant's misconduct, and the defendant's assets, liabilities, and net worth.",
+      "question_type": "factual",
+      "qa_id": "ccpa_089"
+    },
+    {
+      "question": "What does the Consumer Privacy Grant Subfund provide funding for?",
+      "answer": "The fund distributes grants equally among three categories: nonprofit organizations to promote and protect consumer privacy, nonprofit organizations and public agencies (including school districts) to educate children about online privacy, and state and local law enforcement to fund cooperative programs with international law enforcement to combat consumer data breach fraud.",
+      "evidence": "(B) Subject to subparagraph (A), the California Privacy Protection Agency shall make grants from the Consumer Privacy Grant Subfund by distributing one-third of the amount allocated for grant funding in the subfund to each of the following grant recipients:\n\n(i) Nonprofit organizations to promote and protect consumer privacy.\n\n(ii) Nonprofit organizations and public agencies, including school districts, to educate children in the area of online privacy.\n\n(iii) State and local law enforcement agencies to fund cooperative programs with international law enforcement organizations to combat fraudulent activities with respect to consumer data breaches.",
+      "question_type": "factual",
+      "qa_id": "ccpa_090"
+    },
+    {
+      "question": "What does the CCPA require regarding the collection and use proportionality of personal information?",
+      "answer": "A business's collection, use, retention, and sharing of personal information shall be reasonably necessary and proportionate to achieve the purposes for which it was collected or processed, or for another compatible disclosed purpose, and not further processed in an incompatible manner.",
+      "evidence": "(c) A business' collection, use, retention, and sharing of a consumer's personal information shall be reasonably necessary and proportionate to achieve the purposes for which the personal information was collected or processed, or for another disclosed purpose that is compatible with the context in which the personal information was collected, and not further processed in a manner that is incompatible with those purposes.",
+      "question_type": "factual",
+      "qa_id": "ccpa_094"
+    },
+    {
+      "question": "What must a business do if it does not take action on a consumer's request?",
+      "answer": "If the business does not take action, it must inform the consumer without delay and at the latest within the permitted response time of the reasons for not taking action and any rights the consumer may have to appeal the decision to the business.",
+      "evidence": "(2) If the business does not take action on the request of the consumer, the business shall inform the consumer, without delay and at the latest within the time period permitted of response by this section, of the reasons for not taking action and any rights the consumer may have to appeal the\ndecision to the business.",
+      "question_type": "procedural",
+      "qa_id": "ccpa_095"
+    },
+    {
+      "question": "How does the CCPA protect against contraception and reproductive health information being shared with law enforcement?",
+      "answer": "The law enforcement cooperation exemptions do not apply if the consumer's personal information contains information related to accessing, procuring, or searching for services regarding contraception, pregnancy care, and perinatal care, including abortion services. Also, accessing such services does not constitute a person being at risk of death or injury for emergency access purposes.",
+      "evidence": "(ii)\u00a0For purposes of this subparagraph, a consumer accessing,\nprocuring, or searching for services regarding contraception, pregnancy care, and perinatal care, including, but not limited to, abortion services, shall not constitute a natural person being at risk or danger of death or serious physical injury.",
+      "question_type": "factual",
+      "qa_id": "ccpa_096"
+    },
+    {
+      "question": "What is the standard of judicial review for agency decisions?",
+      "answer": "Any decision of the agency with respect to a complaint or administrative fine is subject to judicial review under an abuse of discretion standard.",
+      "evidence": "Any decision of the agency with respect to a complaint or administrative fine shall be subject to judicial review in an action brought by an interested party to the complaint or administrative fine and shall be subject to an abuse of discretion standard.",
+      "question_type": "factual",
+      "qa_id": "ccpa_097"
+    },
+    {
+      "question": "What is 'business controller information' and how is it treated under the CCPA?",
+      "answer": "Business controller information means the name of the owner, director, officer, or management employee of a business and their contact information including business title. The deletion and opt-out provisions do not apply to a commercial credit reporting agency's use of this information solely to identify the relationship of a consumer to a business or contact them in their business role.",
+      "evidence": "(o) (1) Sections 1798.105 and 1798.120 shall not apply to a commercial credit reporting agency's collection, processing, sale, or disclosure of business controller information to the extent the commercial credit reporting agency uses the business controller information solely to identify the relationship of a consumer to a business that the consumer owns or contact the consumer only in the consumer's role as the owner, director, officer, or management employee of the business.\n\n(2) For the purposes of this subdivision:\n\n(A) \"Business controller information\" means the name or\nnames of the owner or owners, director, officer, or management employee of a business and the contact information, including a business title, for the owner or owners, director, officer, or management employee.",
+      "question_type": "definitional",
+      "qa_id": "ccpa_098"
+    },
+    {
+      "question": "Does the CCPA apply to information collected entirely outside of California?",
+      "answer": "The CCPA allows businesses to collect, sell, or share personal information if every aspect of that commercial conduct takes place wholly outside of California - meaning it was collected while the consumer was outside California, no part of the sale occurred in California, and no information collected while the consumer was in California is sold.",
+      "evidence": "(G) Collect, sell, or share a consumer's personal information if every aspect of that commercial conduct takes place wholly outside of California. For purposes of this title, commercial conduct takes place wholly outside of California if the business collected that information while the\nconsumer was outside of California, no part of the sale of the consumer's personal information occurred in California, and no personal information collected while the consumer was in California is sold.",
+      "question_type": "factual",
+      "qa_id": "ccpa_099"
+    },
+    {
+      "question": "What must a business do before collecting additional categories of personal information beyond what was originally disclosed?",
+      "answer": "A business must provide the consumer with notice consistent with the relevant section before collecting additional categories of personal information or using personal information for additional purposes that are incompatible with the originally disclosed purpose.",
+      "evidence": "A business shall not collect additional categories of personal information or use personal information collected for additional purposes that are incompatible with the disclosed purpose for which the personal information was collected without providing the consumer with notice consistent with this section.",
+      "question_type": "procedural",
+      "qa_id": "ccpa_100"
+    },
+    {
+      "question": "What proportionality standard governs a business's collection, use, retention, and sharing of personal information under the CCPA?",
+      "answer": "A business's collection, use, retention, and sharing of a consumer's personal information must be reasonably necessary and proportionate to achieve the purposes for which the information was collected or processed, or for another disclosed compatible purpose, and must not be further processed in an incompatible manner.",
+      "evidence": "(c)\u00a0A business\u2019 collection, use, retention, and sharing of a consumer\u2019s personal information shall be reasonably necessary and proportionate to achieve the purposes for which the personal information was collected or processed, or for another disclosed purpose that is compatible with the context in which the personal information was collected, and not further processed in a manner that is incompatible with those purposes.",
+      "question_type": "procedural",
+      "qa_id": "ccpa_101"
+    },
+    {
+      "question": "What obligation does a business have to inform consumers about their right to request deletion of personal information?",
+      "answer": "A business that collects personal information about consumers shall disclose, pursuant to Section 1798.130, the consumer's rights to request the deletion of the consumer's personal information.",
+      "evidence": "(b)\u00a0A business that collects personal information about consumers shall disclose, pursuant to Section 1798.130, the consumer\u2019s rights to request the deletion of the consumer\u2019s personal information.",
+      "question_type": "procedural",
+      "qa_id": "ccpa_102"
+    },
+    {
+      "question": "What must a business do upon receiving a verifiable consumer request to delete personal information?",
+      "answer": "A business that receives a verifiable consumer request from a consumer to delete the consumer's personal information shall delete the consumer's personal information from its records.",
+      "evidence": "(c)\u00a0(1)\u00a0A business that receives a verifiable consumer request from a consumer to delete the consumer\u2019s personal information pursuant to subdivision (a) of this section shall delete the consumer\u2019s personal information from its records,",
+      "question_type": "procedural",
+      "qa_id": "ccpa_103"
+    },
+    {
+      "question": "What factors must be considered when a consumer requests correction of inaccurate personal information?",
+      "answer": "When a consumer requests a business to correct inaccurate personal information, the nature of the personal information and the purposes of the processing of the personal information must be taken into account.",
+      "evidence": "(a)\u00a0A consumer shall have the right to request a business that maintains inaccurate personal information about the consumer to correct that inaccurate personal information, taking into account the nature of the personal information and the purposes of the processing of the personal information.",
+      "question_type": "procedural",
+      "qa_id": "ccpa_104"
+    },
+    {
+      "question": "What standard of effort must a business apply when correcting inaccurate personal information upon a verifiable consumer request?",
+      "answer": "A business receiving a verifiable consumer request to correct inaccurate personal information shall use commercially reasonable efforts to correct the inaccurate personal information as directed by the consumer.",
+      "evidence": "verifiable consumer request to correct inaccurate personal information shall use commercially reasonable efforts to correct the inaccurate personal information as directed by the consumer, pursuant to Section 1798.",
+      "question_type": "procedural",
+      "qa_id": "ccpa_105"
+    },
+    {
+      "question": "What right does a consumer have regarding disclosure of information collected by a business?",
+      "answer": "A consumer has the right to request that a business that collects personal information about the consumer disclose to the consumer specified categories of information about the business's data practices.",
+      "evidence": "(a)\u00a0A consumer shall have the right to request that a business that collects personal information about the consumer disclose to the consumer the following:",
+      "question_type": "procedural",
+      "qa_id": "ccpa_106"
+    },
+    {
+      "question": "What disclosure rights does a consumer have when a business sells or shares their personal information or discloses it for a business purpose?",
+      "answer": "A consumer has the right to request that a business that sells or shares the consumer's personal information, or that discloses it for a business purpose, disclose to that consumer specified information about those practices.",
+      "evidence": "(a)\u00a0A consumer shall have the right to request that a business that sells or shares the consumer\u2019s personal information, or that discloses it for a business purpose, disclose to that consumer:",
+      "question_type": "procedural",
+      "qa_id": "ccpa_107"
+    },
+    {
+      "question": "What must a business disclose if it has not sold or shared consumers' personal information?",
+      "answer": "If the business has not sold or shared consumers' personal information, it shall disclose that fact. Otherwise, it must disclose the category or categories of consumers' personal information it has sold or shared.",
+      "evidence": "(1)\u00a0The category or categories of consumers\u2019 personal information it has sold or shared, or if the business has not sold or shared consumers\u2019 personal information, it shall disclose that fact.",
+      "question_type": "procedural",
+      "qa_id": "ccpa_108"
+    },
+    {
+      "question": "What notice must a business provide if it sells or shares consumers' personal information with third parties?",
+      "answer": "A business that sells consumers' personal information to, or shares it with, third parties shall provide notice to consumers, pursuant to subdivision (a) of Section 1798.",
+      "evidence": "(b)\u00a0A business that sells consumers\u2019 personal information to, or shares it with, third parties shall provide notice to consumers, pursuant to subdivision (a) of Section 1798.",
+      "question_type": "procedural",
+      "qa_id": "ccpa_109"
+    },
+    {
+      "question": "What right does a consumer have to limit the use of their sensitive personal information?",
+      "answer": "A consumer has the right, at any time, to direct a business that collects sensitive personal information to limit its use to that which is necessary to perform the services or provide the goods reasonably expected by an average consumer who requests those goods or services.",
+      "evidence": "(a)\u00a0A consumer shall have the right, at any time, to direct a business that collects sensitive personal information about the consumer to limit its use of the consumer\u2019s sensitive personal information to that use which is necessary to perform the services or provide the goods reasonably expected by an average consumer who requests those goods or services, to perform the services set forth in paragraphs (2), (4), (5), and (8) of subdivision (e) of Section 1798.",
+      "question_type": "procedural",
+      "qa_id": "ccpa_110"
+    },
+    {
+      "question": "What happens when a business receives a consumer's direction not to use or disclose their sensitive personal information?",
+      "answer": "A business that has received direction from a consumer not to use or disclose the consumer's sensitive personal information, except as authorized by the relevant subdivision, shall be prohibited pursuant to the statute from doing so.",
+      "evidence": "(b)\u00a0A business that has received direction from a consumer not to use or disclose the consumer\u2019s sensitive personal information, except as authorized by subdivision (a), shall be prohibited, pursuant to paragraph (4) of subdivision (c) of Section 1798.",
+      "question_type": "procedural",
+      "qa_id": "ccpa_111"
+    },
+    {
+      "question": "Under what conditions may a business charge a consumer a different price or provide a different level of service without violating the CCPA's non-discrimination provisions?",
+      "answer": "A business may charge a consumer a different price or rate, or provide a different level or quality of goods or services, if that difference is reasonably related to the value provided to the business by the consumer's data.",
+      "evidence": "(2)\u00a0Nothing in this subdivision prohibits a business, pursuant to subdivision (b), from charging a consumer a different price or rate, or from providing a different level or quality of goods or services to the consumer, if that difference is reasonably related to the value provided to the business by the consumer\u2019s data.",
+      "question_type": "comparative",
+      "qa_id": "ccpa_112"
+    },
+    {
+      "question": "What obligation does a service provider or contractor have when a business receives a verifiable consumer request?",
+      "answer": "A service provider or contractor shall provide assistance to the business it has a contractual relationship with in responding to a verifiable consumer request, including providing the consumer's personal information in its possession obtained from providing services to the business, and by correcting inaccurate information or enabling the business to do the same.",
+      "evidence": "A service provider or contractor shall provide assistance to a business with which it has a contractual relationship with respect to the business\u2019 response to a verifiable consumer request, including, but not limited to, by providing to the business the consumer\u2019s personal information in the service provider or contractor\u2019s possession, which the service provider or contractor obtained as a result of providing services to the business, and by correcting inaccurate information or by enabling the business to do the same.",
+      "question_type": "causal",
+      "qa_id": "ccpa_113"
+    },
+    {
+      "question": "Can a business require a consumer to create an account in order to make a verifiable consumer request?",
+      "answer": "No, a business shall not require the consumer to create an account with the business in order to make a verifiable consumer request. However, if the consumer already has an account with the business, the business may require the consumer to use that account to submit a verifiable consumer request.",
+      "evidence": "business may require authentication of the consumer that is reasonable in light of the nature of the personal information requested, but shall not require the consumer to create an account with the business in order to make a verifiable consumer request provided that if the consumer, has an account with the business, the business may require the consumer to use that account to submit a verifiable consumer request.",
+      "question_type": "causal",
+      "qa_id": "ccpa_114"
+    },
+    {
+      "question": "What restrictions apply to a person authorized by a business to collect personal information after the business communicates a consumer's opt-out request?",
+      "answer": "After a business communicates a consumer's opt-out request, the authorized person shall only use that consumer's personal information for a business purpose specified by the business, or as otherwise permitted by the title, and shall be prohibited from certain additional uses.",
+      "evidence": "(f)\u00a0If a business communicates a consumer\u2019s opt-out request to any person authorized by the business to collect personal information, the person shall thereafter only use that consumer\u2019s personal information for a business purpose specified by the business, or as otherwise permitted by this title, and shall be prohibited from:",
+      "question_type": "causal",
+      "qa_id": "ccpa_115"
+    },
+    {
+      "question": "Is a business liable if a person receiving a communicated opt-out request subsequently violates the CCPA's restrictions?",
+      "answer": "A business that communicates a consumer's opt-out request to a person shall not be liable under the title if the person receiving the opt-out request violates the restrictions, provided that certain conditions were met at the time of communicating the opt-out request.",
+      "evidence": "(g)\u00a0A business that communicates a consumer\u2019s opt-out request to a person pursuant to subdivision (f) shall not be liable under this title if the person receiving the opt-out request violates the restrictions set forth in the title provided that, at the time of communicating the opt-out request, the",
+      "question_type": "causal",
+      "qa_id": "ccpa_116"
+    },
+    {
+      "question": "What must a business that develops or maintains a browser disclose about the opt-out preference signal?",
+      "answer": "A business that develops or maintains a browser shall make clear to a consumer in its public disclosures how the opt-out preference signal works and the intended effect of the opt-out preference signal.",
+      "evidence": "(b)\u00a0A business that develops or maintains a browser shall make clear to a consumer in its public disclosures how the opt-out preference signal works and the intended effect of the opt-out preference signal.",
+      "question_type": "causal",
+      "qa_id": "ccpa_117"
+    },
+    {
+      "question": "What constitutes 'research' under the CCPA and what standards must it meet?",
+      "answer": "Research means scientific analysis, systematic study, and observation, including basic research or applied research that is designed to develop or contribute to public or scientific knowledge and that adheres or otherwise conforms to all other applicable ethics and privacy laws, including studies conducted in the public interest in the area of public health.",
+      "evidence": "(ab)\u00a0\u201cResearch\u201d means scientific analysis, systematic study, and observation, including basic research or applied research that is designed to develop or contribute to public or scientific knowledge and that adheres or otherwise conforms to all other applicable ethics and privacy laws, including, but not limited to, studies conducted in the public interest in the area of public health.",
+      "question_type": "causal",
+      "qa_id": "ccpa_118"
+    },
+    {
+      "question": "How does the CCPA define the process of 'reidentification'?",
+      "answer": "Reidentification means the process of reversal of deidentification techniques, including the addition of specific data elements that can uniquely identify an individual or usage of any statistical method, computer software, or other means that have the effect of associating deidentified information with a specific identifiable individual.",
+      "evidence": "(d)\u00a0For purposes of this section, \u201creidentify\u201d means the process of reversal of deidentification techniques, including, but not limited to, the addition of specific pieces of information or data elements that can, individually or in combination, be used to uniquely identify an individual or usage of any statistical method, contrivance, computer software, or other means that have the effect of associating deidentified information with a specific identifiable individual.",
+      "question_type": "causal",
+      "qa_id": "ccpa_119"
+    },
+    {
+      "question": "Is prior notice required before a consumer initiates a legal action solely for actual pecuniary damages under the CCPA?",
+      "answer": "No, no notice shall be required prior to an individual consumer initiating an action solely for actual pecuniary damages suffered as a result of the alleged violations of this title.",
+      "evidence": "No notice shall be required prior to an individual consumer initiating an action solely for actual pecuniary damages suffered as a result of the alleged violations of this title.",
+      "question_type": "causal",
+      "qa_id": "ccpa_120"
+    },
+    {
+      "question": "What is the scope of the private cause of action established by Section 1798.150 of the CCPA?",
+      "answer": "The cause of action established by Section 1798.150 shall apply only to violations as defined in subdivision (a) of that section and shall not be based on violations of any other section of the title.",
+      "evidence": "(c)\u00a0The cause of action established by this section shall apply only to violations as defined in subdivision (a) and shall not be based on violations of any other section of this title.",
+      "question_type": "causal",
+      "qa_id": "ccpa_121"
+    },
+    {
+      "question": "Are probable cause proceedings under the CCPA public or private by default?",
+      "answer": "A proceeding held for the purpose of considering probable cause shall be private unless the alleged violator files with the agency a written request that the proceeding be public.",
+      "evidence": "A proceeding held for the purpose of considering probable cause shall be private unless the alleged violator files with the agency a written request that the proceeding be public.",
+      "question_type": "causal",
+      "qa_id": "ccpa_122"
+    },
+    {
+      "question": "What procedures must the agency follow after determining probable cause that the CCPA has been violated?",
+      "answer": "When the agency determines there is probable cause, it shall hold a hearing conducted in accordance with the Administrative Procedure Act. If the agency determines on the basis of the hearing that violations have occurred, it shall issue an order that may require the violator to take specified corrective actions.",
+      "evidence": "(a)\u00a0When the agency determines there is probable cause for believing this title has been violated, it shall hold a hearing to determine if a violation has or violations have occurred. Notice shall be given and the hearing conducted in accordance with the Administrative Procedure Act (Chapter 5 (commencing with Section 11500) of Part 1 of Division 3 of Title 2 of the Government Code). The agency shall have all the powers granted by that chapter. If the agency determines on the basis of the hearing conducted pursuant to this subdivision that a violation or violations have occurred, it shall issue an order that may require the violator to do all or any of the following:",
+      "question_type": "causal",
+      "qa_id": "ccpa_123"
+    }
+  ]
+}

@@ -1,0 +1,691 @@
+{
+  "corpus_id": "who_covid",
+  "qa_pairs": [
+    {
+      "question": "When did the WHO declare COVID-19 a global pandemic?",
+      "answer": "The World Health Organization (WHO) declared COVID-19 a global pandemic on March 11, 2020. This declaration came after SARS-CoV-2 rapidly disseminated worldwide following the first reported cases in Wuhan, Hubei Province, China, in late December 2019.",
+      "evidence": "After the first cases of this predominantly respiratory viral illness were reported in Wuhan, Hubei Province, China, in late December 2019, SARS-CoV-2 rapidly disseminated worldwide. This compelled the World Health Organization (WHO) to declare it a global pandemic on March 11, 2020.",
+      "question_type": "factual",
+      "qa_id": "who_covid_002"
+    },
+    {
+      "question": "What are the five SARS-CoV-2 variants of concern (VOCs) identified during the pandemic?",
+      "answer": "The five SARS-CoV-2 variants of concern are Alpha (B.1.1.7), first described in the UK in late December 2020; Beta (B.1.351), first reported in South Africa in December 2020; Gamma (P.1), first reported in Brazil in early January 2021; Delta (B.1.617.2), first reported in India in December 2020; and Omicron (B.1.1.529), first reported in South Africa in November 2021.",
+      "evidence": "* **Alpha (B.1.1.7):** First variant of concern, which was described in the United Kingdom (UK) in late December 2020\n* **Beta (B.1.351)**: First reported in South Africa in December 2020\n* **Gamma (P.1)**: First reported in Brazil in early January 2021\n* **Delta (B.1.617.2):**\u00a0First reported in India in December 2020\n* **Omicron**\u00a0**(B.1.1.529):** First reported in South Africa in November 2021",
+      "question_type": "factual",
+      "qa_id": "who_covid_003"
+    },
+    {
+      "question": "What are the probable gene sources of alphacoronaviruses and betacoronaviruses?",
+      "answer": "Genomic characterization has shown that bats and rodents are the probable gene sources of alphacoronaviruses and betacoronaviruses. In contrast, avian species seem to be the source of deltacoronaviruses and gammacoronaviruses.",
+      "evidence": "Genomic characterization has shown that bats and rodents are the probable gene sources of alphaCoVs and betaCoVs. Avian species seem to be the source of deltaCoVs and gammaCoVs.",
+      "question_type": "factual",
+      "qa_id": "who_covid_005"
+    },
+    {
+      "question": "How many human coronaviruses (HCoVs) have been identified, and what percentage of acute respiratory infections do they cause?",
+      "answer": "Seven human coronaviruses capable of infecting humans have been identified, with some identified in the mid-1960s and others detected in the new millennium. Estimates suggest that 2% of the population are healthy carriers of coronaviruses and that these viruses are responsible for about 5% to 10% of acute respiratory infections.",
+      "evidence": "Seven human CoVs (HCoVs) capable of infecting humans have been identified. Some HCoVs were identified in the mid-1960s, while others were only detected in the new millennium. In general, estimates suggest that 2% of the population are healthy carriers of CoVs and that these viruses are responsible for about 5% to 10% of acute respiratory infections.",
+      "question_type": "factual",
+      "qa_id": "who_covid_006"
+    },
+    {
+      "question": "What are the mortality rates associated with SARS-CoV and MERS-CoV epidemics?",
+      "answer": "SARS-CoV and MERS-CoV have been previously implicated in epidemics with mortality rates up to 10% and 35%, respectively. Both are betacoronaviruses belonging to the B and C lineage, respectively, and are considered more virulent and capable of causing epidemics with respiratory and extra-respiratory manifestations.",
+      "evidence": "SARS-CoV-2 is a novel betaCoV belonging to the same subgenus as the severe acute respiratory syndrome coronavirus (SARS-CoV) and the Middle East Respiratory Syndrome Coronavirus (MERS-CoV), which have been previously implicated in SARS-CoV and MERS-CoV epidemics with mortality rates up to 10% and 35%, respectively.",
+      "question_type": "comparative",
+      "qa_id": "who_covid_007"
+    },
+    {
+      "question": "At what temperature and time is 90% of SARS-CoV-2 inactivated on stainless steel surfaces?",
+      "answer": "A stainless steel surface held at an air temperature of 54.5 degrees Celsius (130 degrees Fahrenheit) results in the inactivation of 90% of SARS-CoV-2 in approximately 36 minutes. The virus resists lower temperatures, even those below 0 degrees Celsius.",
+      "evidence": "The inactivation temperature of SARS-CoV-2 is being researched. A\u00a0stainless steel surface held at an air temperature of 54.5\u00b0C (130 \u00b0F) results in the inactivation of 90% of SARS-CoV-2 in approximately 36 minutes.\u00a0It\u00a0resists lower temperatures, even those below 0\u00b0C. However, lipid solvents can effectively inactivate these viruses, including ether (75%), ethanol, chlorine-containing disinfectant, peroxyacetic acid, and chloroform (except for chlorhexidine).",
+      "question_type": "factual",
+      "qa_id": "who_covid_009"
+    },
+    {
+      "question": "What is the genomic homology between SARS-CoV-2 and the bat coronavirus RaTG13?",
+      "answer": "The genomic comparison between the human SARS-CoV-2 sequence and known animal coronaviruses revealed high homology of 96% between SARS-CoV-2 and the betaCoV RaTG13 of bats (Rhinolophus affinis). It has been hypothesized that SARS-CoV-2 advanced from bats to intermediate hosts, such as pangolins and minks, and then to humans.",
+      "evidence": "Although the origin of SARS-CoV-2 is currently unknown, it is widely postulated to have a zoonotic transmission.\u00a0Genomic analyses suggest that SARS-CoV-2 probably evolved from a strain found in bats. The genomic comparison between the human SARS-CoV-2 sequence and known animal coronaviruses revealed high homology (96%) between the SARS-CoV-2 and the betaCoV RaTG13 of bats (*Rhinolophus affinis*).\u00a0Similar to SARS and MERS, it has been hypothesized that SARS-CoV-2 advanced from bats to intermediate hosts, such as pangolins and minks, and then to humans.",
+      "question_type": "factual",
+      "qa_id": "who_covid_010"
+    },
+    {
+      "question": "How transmissible was the Alpha (B.1.1.7) variant compared to preexisting variants?",
+      "answer": "The Alpha variant was reportedly 43% to 82% more transmissible than preexisting variants of SARS-CoV-2, surpassing them to emerge as the dominant SARS-CoV-2 variant in the UK. The N501Y mutation shows an increased affinity of the spike protein to ACE2 receptors, enhancing viral attachment and subsequent entry into host cells.",
+      "evidence": "This alpha variant was reportedly 43% to 82% more transmissible, surpassing preexisting variants of SARS-CoV-2 to emerge as the dominant SARS-CoV-2 variant in the UK.",
+      "question_type": "comparative",
+      "qa_id": "who_covid_011"
+    },
+    {
+      "question": "What was the mortality hazard ratio for patients infected with the B.1.1.7 lineage variant in the UK cohort study?",
+      "answer": "A large matched cohort study in the UK reported that the mortality hazard ratio of patients infected with the B.1.1.7 lineage variant was 1.64 (95% confidence interval 1.32 to 2.04, P<0.0001) compared to patients with previously circulating strains. Another study reported an association with increased mortality compared to other variants with a hazard ratio of 1.61.",
+      "evidence": "A large matched cohort study in the UK reported that the mortality hazard ratio of patients infected with the B.1.1.7 lineage variant was 1.64 (95% confidence interval 1.32 to 2.04, P<0.0001) compared to patients with previously circulating strains.",
+      "question_type": "factual",
+      "qa_id": "who_covid_012"
+    },
+    {
+      "question": "Why was the Omicron variant quickly recognized as a variant of concern?",
+      "answer": "Omicron was quickly recognized as a variant of concern due to more than 30 changes to the spike protein of the virus and the sharp rise in the number of cases observed in South Africa. Many subvariants of Omicron, such as BA.1, BA.2, BA.3, BA.4, and BA.5, were subsequently identified.",
+      "evidence": "Omicron was quickly recognized as a VOC due to more than 30 changes to the spike protein of the virus and the sharp rise in the number of cases observed in South Africa.",
+      "question_type": "causal",
+      "qa_id": "who_covid_014"
+    },
+    {
+      "question": "What is the primary mode of transmission of SARS-CoV-2?",
+      "answer": "The primary mode of transmission of SARS-CoV-2 is via exposure to respiratory droplets carrying the infectious virus from close contact or direct transmission from presymptomatic, asymptomatic, or symptomatic individuals harboring the virus. Airborne transmission with aerosol-generating procedures has also been implicated, though not universally acknowledged.",
+      "evidence": "The primary mode of transmission of SARS-CoV-2 is via exposure to respiratory droplets carrying the infectious virus from close contact or direct transmission from presymptomatic, asymptomatic, or symptomatic individuals harboring the virus.",
+      "question_type": "factual",
+      "qa_id": "who_covid_015"
+    },
+    {
+      "question": "How long can SARS-CoV-2 survive on different surfaces under experimental conditions?",
+      "answer": "Under experimental conditions, SARS-CoV-2 was stable on stainless steel and plastic surfaces compared to copper and cardboard surfaces, with the viable virus being detected up to 72 hours after inoculating the surfaces. The viable virus was isolated for up to 28 days at 20 degrees Celsius from nonporous surfaces such as glass and stainless steel, while recovery on porous materials was reduced.",
+      "evidence": "* Fomite transmission from contamination of inanimate surfaces with SARS-CoV-2 has been well characterized based on many studies reporting the viability of SARS-CoV-2 on various porous and nonporous surfaces.\u00a0Under experimental conditions, SARS-CoV-2 was stable on stainless steel and plastic surfaces compared to copper and cardboard surfaces, with the viable virus being detected up to 72 hours after inoculating the surfaces with the virus.\u00a0The viable virus was isolated for up to 28 days at 20\u00b0C from nonporous surfaces such as glass and stainless steel. Conversely, recovery of SARS-CoV-2 on porous materials was reduced compared with nonporous surfaces.\u00a0In hospital settings, the SARS-CoV-2 has been detected on floors, computer mice, trash cans, sickbed handrails, and in the air (up to 4 meters from patients).\u00a0The Centers for Disease Control and Prevention (CDC) has stated that individuals can be infected with SARS-CoV-2 via contact with surfaces contaminated by the virus, but the risk is low and is not the main route of transmission of this virus.",
+      "question_type": "comparative",
+      "qa_id": "who_covid_016"
+    },
+    {
+      "question": "Where in hospital settings has SARS-CoV-2 been detected?",
+      "answer": "In hospital settings, SARS-CoV-2 has been detected on floors, computer mice, trash cans, sickbed handrails, and in the air up to 4 meters from patients. However, the CDC has stated that while individuals can be infected via contact with contaminated surfaces, the risk is low and is not the main route of transmission.",
+      "evidence": "In hospital settings, the SARS-CoV-2 has been detected on floors, computer mice, trash cans, sickbed handrails, and in the air (up to 4 meters from patients).",
+      "question_type": "factual",
+      "qa_id": "who_covid_017"
+    },
+    {
+      "question": "Is vertical transmission of SARS-CoV-2 from mother to neonate possible?",
+      "answer": "A meta-analysis that included 936 neonates from mothers with COVID-19 showed that vertical transmission is possible but occurs in a minority of cases. Epidemiologic data from several case studies have also reported that patients with SARS-CoV-2 infection have the live virus in feces, implying possible fecal-oral transmission.",
+      "evidence": "A meta-analysis that included 936 neonates from mothers with COVID-19 showed vertical transmission is possible but occurs in a minority of cases.",
+      "question_type": "factual",
+      "qa_id": "who_covid_018"
+    },
+    {
+      "question": "What was the ranking of COVID-19 as a cause of death in the United States in 2020?",
+      "answer": "COVID-19 was the third leading cause of death in the United States in 2020 after heart disease and cancer, with approximately 375,000 deaths. The death rates were highest among Hispanic persons according to CDC analysis.",
+      "evidence": "COVID-19 was the third leading cause of death in the United States (USA) in 2020 after heart disease and cancer, with approximately 375,000 deaths.",
+      "question_type": "factual",
+      "qa_id": "who_covid_019"
+    },
+    {
+      "question": "How does age affect the risk of death from COVID-19 according to CDC data?",
+      "answer": "According to the CDC, age remains the strongest predictor of poor outcomes and severe illness. Patients aged 50 to 64 years have a 25 times higher risk of death compared to adults under 30 years. In patients 65 to 74 years old, this risk increases to 60 times, and in patients older than 85, the risk of death increases to 340 times.",
+      "evidence": "According to the CDC, age remains the strongest predictor of poor outcomes and severe illness in patients with COVID-19. Data from the National Vital Statistics System (NVSS) at CDC states that patients with COVID-19 aged 50 to 64 years have a 25 times higher risk of death when compared to adults infected with this illness and aged less than 30 years. In patients 65 to 74 years old, this risk increases to 60 times. In patients older than 85, the risk of death increases to 340 times.",
+      "question_type": "factual",
+      "qa_id": "who_covid_020"
+    },
+    {
+      "question": "What gender-based differences exist in COVID-19 severity and mortality?",
+      "answer": "Data suggests that male patients have a higher risk of severe illness and increased mortality due to COVID-19 compared to female patients. A retrospective cohort study evaluating mortality in 209 USA acute care hospitals with 42,604 confirmed patients reported a higher mortality rate in male patients (12.5%) compared to female patients (9.6%).",
+      "evidence": "Data regarding the gender-based differences in COVID-19 suggests that male patients have a higher risk of severe illness and increased mortality due to COVID-19 compared to female patients.\u00a0Results from a retrospective cohort study from March 1 to November 21, 2020, evaluating the mortality rate in 209 United States of America (USA) acute care hospitals that included 42604 patients with confirmed SARS-CoV-2 infection, reported a higher mortality rate in male patients (12.5%) compared to female patients (9.6%).",
+      "question_type": "comparative",
+      "qa_id": "who_covid_022"
+    },
+    {
+      "question": "Which racial and ethnic groups are at increased risk of contracting and dying from COVID-19?",
+      "answer": "A meta-analysis of 50 studies from USA and UK researchers noted that people of Black, Hispanic, and Asian ethnic minority groups are at increased risk of contracting and dying from COVID-19 infection. COVID-19-related death rates were highest among Hispanic persons, and the higher hospitalization rates were driven by higher risk of exposure and increased risk of developing severe disease.",
+      "evidence": "Racial and ethnic minority groups have been reported to have a higher percentage of COVID-19-related hospitalizations than White patients based on a recent CDC analysis of hospitalizations from an extensive administrative database that included approximately 300,000 COVID-19 patients hospitalized from March 2020 to December 2020. This high percentage of COVID-19-related hospitalizations among racial and ethnic groups was driven by a higher risk of exposure to SARS-CoV-2 and an increased risk of developing severe COVID-19 disease.A meta-analysis of 50 studies from USA and UK researchers noted that people of Black, Hispanic, and Asian ethnic minority groups are at increased risk of contracting and dying from COVID-19 infection.",
+      "question_type": "factual",
+      "qa_id": "who_covid_023"
+    },
+    {
+      "question": "How does the spike (S) glycoprotein function in SARS-CoV-2 infection?",
+      "answer": "The surface spike (S) glycoprotein undergoes cleavage into an amino-terminal S1 subunit, which facilitates incorporation of the virus into the host cell, and a carboxyl-terminal S2 subunit containing a fusion peptide, transmembrane domain, and cytoplasmic domain responsible for virus-cell membrane fusion. The S1 subunit is further divided into a receptor-binding domain (RBD) and an N-terminal domain (NTD).",
+      "evidence": "The surface spike (S) glycoprotein, which resembles a crown, is located on the outer surface of the virion. It undergoes cleavage into an amino (N)-terminal S1 subunit, which facilitates the incorporation of the virus into the host cell. The carboxyl (C)-terminal S2 subunit contains a fusion peptide, a transmembrane domain, and a cytoplasmic domain responsible for virus-cell membrane fusion.",
+      "question_type": "factual",
+      "qa_id": "who_covid_025"
+    },
+    {
+      "question": "What role does the ACE2 receptor play in SARS-CoV-2 infection?",
+      "answer": "The receptor-binding domain (RBD) of the spike protein represents a binding site for human angiotensin-converting enzyme 2 (ACE2) receptors. SARS-CoV-2 gains entry into host cells by binding its S protein to ACE2 receptors in the respiratory epithelium. ACE2 receptors are also expressed by other organs such as the upper esophagus, enterocytes from the ileum, myocardial cells, proximal tubular cells of the kidney, and urothelial cells of the bladder.",
+      "evidence": "SARS-CoV-2 gains entry into the host cells by binding the SARS-CoV-2 spike or S protein (S1) to the ACE2 receptors in the respiratory epithelium. ACE2 receptors are also expressed by other organs such as the upper esophagus, enterocytes from the ileum, myocardial cells, proximal tubular cells of the kidney, and urothelial cells of the bladder.",
+      "question_type": "causal",
+      "qa_id": "who_covid_026"
+    },
+    {
+      "question": "What is the role of TMPRSS2 in SARS-CoV-2 cell entry?",
+      "answer": "The host transmembrane serine protease 2 (TMPRSS2) facilitates cell entry and subsequent viral replication by priming the spike protein S2 subunit after the viral attachment process. This priming step follows the binding of the SARS-CoV-2 spike protein to ACE2 receptors in the respiratory epithelium.",
+      "evidence": "The viral attachment process is followed by priming the spike protein S2 subunit by the host transmembrane serine protease 2 (TMPRSS2) that facilitates cell entry and subsequent viral replication.",
+      "question_type": "definitional",
+      "qa_id": "who_covid_027"
+    },
+    {
+      "question": "What mechanisms explain increased vascular permeability and pulmonary edema in severe COVID-19?",
+      "answer": "Multiple mechanisms explain increased vascular permeability in severe COVID-19, including: endotheliitis from direct viral injury and perivascular inflammation; dysregulation of RAAS due to increased virus binding to ACE2 receptors; activation of the kallikrein-bradykinin pathway enhancing vascular permeability; enhanced epithelial cell contraction; and SARS-CoV-2 binding to Toll-Like Receptors inducing pro-IL-1 beta release mediating lung inflammation.",
+      "evidence": "Endotheliitis as a result of direct viral injury and perivascular inflammation leading to microvascular and microthrombi deposition\nDysregulation of RAAS due to increased binding of the virus to the ACE2 receptors\nActivation of the kallikrein-bradykinin pathway, the activation of which enhances vascular permeability\nEnhanced epithelial cell contraction causes swelling of cells and disturbance of intercellular junctions\nThe binding of SARS-CoV-2 to the Toll-Like Receptor (TLR) induces the release of pro-IL-1\u03b2, which mediates lung inflammation until fibrosis",
+      "question_type": "causal",
+      "qa_id": "who_covid_029"
+    },
+    {
+      "question": "What causes organ dysfunction in COVID-19 beyond the respiratory system?",
+      "answer": "SARS-CoV-2-induced organ dysfunction beyond the respiratory system is likely due to a combination of mechanisms, including direct viral toxicity, ischemic injury caused by vasculitis, thrombosis, immune dysregulation, and RAAS dysregulation. Major organ systems affected include the gastrointestinal tract, hepatobiliary, cardiovascular, renal, and central nervous systems.",
+      "evidence": "Although the respiratory system is the principal target for SARS-CoV-2, other major organ systems such as the gastrointestinal tract (GI), hepatobiliary, cardiovascular, renal, and central nervous systems may also be affected. SARS-CoV-2\u2013induced organ dysfunction is likely due to a combination of mechanisms, such as direct viral toxicity, ischemic injury caused by vasculitis, thrombosis, immune dysregulation, and renin-angiotensin-aldosterone system (RAAS) dysregulation.",
+      "question_type": "factual",
+      "qa_id": "who_covid_030"
+    },
+    {
+      "question": "What causes thrombocytopenia in COVID-19 patients?",
+      "answer": "Thrombocytopenia in COVID-19 is common and likely due to multiple factors, including virus-mediated suppression of platelets, autoantibodies formation, and coagulation cascade activation resulting in platelet consumption. Thrombocytopenia and neutrophilia are considered a hallmark of severe illness.",
+      "evidence": "Thrombocytopenia is common in COVID-19 and is likely due to multiple factors, including virus-mediated suppression of platelets, autoantibodies formation, and coagulation cascade activation, resulting in platelet consumption.",
+      "question_type": "factual",
+      "qa_id": "who_covid_032"
+    },
+    {
+      "question": "What is the pathogenesis of hypercoagulability in COVID-19?",
+      "answer": "The hypercoagulability in COVID-19 is multifactorial and probably induced by direct viral-mediated damage or cytokine-induced injury of the vascular endothelium leading to activation of platelets, monocytes, and macrophages. This results in increased expression of von Willebrand factor and Factor VIII, leading to generation of thrombin and formation of a fibrin clot.",
+      "evidence": "The hypercoagulability is probably induced by direct viral-mediated damage or cytokine-induced injury of the vascular endothelium leading to the activation of platelets, monocytes, and macrophages, with increased expression of von Willebrand factor and Factor VIII that results in the generation of thrombin and formation of a fibrin clot.",
+      "question_type": "causal",
+      "qa_id": "who_covid_033"
+    },
+    {
+      "question": "What is the median incubation period for SARS-CoV-2?",
+      "answer": "The median incubation period for SARS-CoV-2 is estimated to be 5.1 days, and most patients will develop symptoms within 11.5 days of infection. The clinical spectrum of COVID-19 varies from asymptomatic forms to clinical illness characterized by acute respiratory failure, septic shock, and multiple organ failure.",
+      "evidence": "The median incubation period for SARS-CoV-2 is estimated to be 5.1 days, and most patients will develop symptoms within 11.5 days of infection.",
+      "question_type": "factual",
+      "qa_id": "who_covid_034"
+    },
+    {
+      "question": "What percentage of COVID-19 infected patients remain asymptomatic?",
+      "answer": "It is estimated that 17.9% to 33.3% of infected patients will remain asymptomatic. Most symptomatic patients present with fever, cough, and shortness of breath, while less common symptoms include sore throat, anosmia, dysgeusia, anorexia, nausea, malaise, myalgias, and diarrhea.",
+      "evidence": "It is estimated that 17.9% to 33.3% of infected patients will remain asymptomatic.",
+      "question_type": "factual",
+      "qa_id": "who_covid_035"
+    },
+    {
+      "question": "What were the most common symptoms reported among confirmed symptomatic COVID-19 cases in the USA?",
+      "answer": "Among 373,883 confirmed symptomatic COVID-19 cases in the USA, 70% experienced fever, cough, and shortness of breath, 36% reported myalgia, and 34% reported headache. Less common symptoms include sore throat, anosmia, dysgeusia, anorexia, nausea, malaise, and diarrhea.",
+      "evidence": "Stokes et al. reported that among 373,883 confirmed symptomatic COVID-19 cases in the USA, 70% experienced fever, cough, and shortness of breath, 36% reported myalgia, and 34% reported headache.",
+      "question_type": "factual",
+      "qa_id": "who_covid_036"
+    },
+    {
+      "question": "What were the most common laboratory abnormalities found in COVID-19 patients in China?",
+      "answer": "A large meta-analysis of 8,697 COVID-19 patients in China reported laboratory abnormalities including lymphopenia (47.6%), elevated C-reactive protein levels (65.9%), elevated cardiac enzymes (49.4%), and abnormal liver function tests (26.4%). Other abnormalities included leukopenia (23.5%), elevated D-dimer (20.4%), elevated ESR (20.4%), leukocytosis (9.9%), elevated procalcitonin (16.7%), and abnormal renal function (10.9%).",
+      "evidence": "A large meta-analysis evaluating clinicopathological characteristics of 8697 patients with COVID-19 in China reported laboratory abnormalities that included lymphopenia (47.6%), elevated C-reactive protein levels (65.9%), elevated cardiac enzymes (49.4%), and abnormal liver function tests (26.4%). Other laboratory abnormalities included leukopenia (23.5%), elevated D-dimer (20.4%), elevated erythrocyte sedimentation rate (20.4%), leukocytosis (9.9%), elevated procalcitonin (16.7%), and abnormal renal function (10.9%).",
+      "question_type": "factual",
+      "qa_id": "who_covid_037"
+    },
+    {
+      "question": "How does the NIH classify COVID-19 severity, and what defines mild illness?",
+      "answer": "The NIH classifies COVID-19 into 5 distinct types: Asymptomatic or Presymptomatic Infection, Mild illness, Moderate illness, Severe illness, and Critical illness. Mild illness is defined as individuals who have symptoms such as fever, cough, sore throat, malaise, headache, muscle pain, nausea, vomiting, diarrhea, anosmia, or dysgeusia but without shortness of breath or abnormal chest imaging.",
+      "evidence": "Based on the severity of the presenting illness, which includes clinical symptoms, laboratory and radiographic abnormalities, hemodynamics, and organ function, the National Institutes of Health (NIH) issued guidelines that classify COVID-19 into 5 distinct types. Mild illness: Individuals who have symptoms of COVID-19, such as fever, cough, sore throat, malaise, headache, muscle pain, nausea, vomiting, diarrhea, anosmia, or dysgeusia but without shortness of breath or abnormal chest imaging.",
+      "question_type": "definitional",
+      "qa_id": "who_covid_038"
+    },
+    {
+      "question": "What defines moderate COVID-19 illness according to the NIH classification?",
+      "answer": "Moderate illness is defined as individuals with clinical symptoms or radiologic evidence of lower respiratory tract disease and oxygen saturation (SpO2) at or above 94% on room air. This distinguishes it from severe illness, where SpO2 drops below 94% on room air.",
+      "evidence": "Moderate illness: Individuals with clinical symptoms or radiologic evidence of lower respiratory tract disease and oxygen saturation (SpO2) \u226594% on room air.",
+      "question_type": "definitional",
+      "qa_id": "who_covid_039"
+    },
+    {
+      "question": "What criteria define severe COVID-19 illness?",
+      "answer": "Severe illness is defined as individuals who have SpO2 less than 94% on room air, a PaO2/FiO2 ratio of less than 300, marked tachypnea with respiratory frequency greater than 30 breaths/min, or lung infiltrates greater than 50% of total lung volume. These patients may progress to critical illness with ARDS.",
+      "evidence": "Severe illness: Individuals who have SpO2 less than 94% on room air, a ratio of partial pressure of arterial oxygen to fraction of inspired oxygen (PaO2/FiO2) of less than 300, marked tachypnea with a respiratory frequency of greater than 30 breaths/min, or lung infiltrates that are greater than 50% of total lung volume.",
+      "question_type": "definitional",
+      "qa_id": "who_covid_040"
+    },
+    {
+      "question": "What defines critical COVID-19 illness and when does ARDS tend to develop?",
+      "answer": "Critical illness involves individuals with acute respiratory failure, septic shock, or multiple organ dysfunction. Patients with severe COVID-19 may become critically ill with the development of acute respiratory distress syndrome (ARDS), which tends to occur approximately one week after the onset of symptoms.",
+      "evidence": "Critical illness: Individuals with acute respiratory failure, septic shock, or multiple organ dysfunction. Patients with severe COVID-19 illness may become critically ill with the development of acute respiratory distress syndrome (ARDS). This tends to occur approximately one week after the onset of symptoms.",
+      "question_type": "definitional",
+      "qa_id": "who_covid_041"
+    },
+    {
+      "question": "How is ARDS classified according to the Berlin definition?",
+      "answer": "The Berlin definition classifies ARDS into 3 types based on the degree of hypoxia using the PaO2/FiO2 ratio: Mild ARDS (200 mmHg < PaO2/FiO2 \u2264 300 mmHg), Moderate ARDS (100 mmHg < PaO2/FiO2 \u2264 200 mmHg), and Severe ARDS (PaO2/FiO2 \u2264 100 mmHg). When PaO2 is unavailable, a ratio of SpO2/FiO2 \u2264 315 suggests ARDS.",
+      "evidence": "ARDS is characterized by a severe new-onset respiratory failure or worsening of an already identified respiratory picture. The diagnosis requires bilateral opacities (lung infiltrates >50%), not fully explained by effusions or atelectasis. The Berlin definition classifies ARDS into 3 types based on the degree of hypoxia, with the reference parameter being PaO2/FiO2 or P/F ratio:\n* **Mild ARDS**: 200 mm Hg <PaO2/FiO2 \u2264300 mm Hg in patients not receiving mechanical ventilation or in those managed through noninvasive ventilation (NIV) by using positive end-expiratory pressure (PEEP) or a continuous positive airway pressure (CPAP) \u22655 cm H2O.\n* **Moderate ARDS**: 100 mm Hg <PaO2/FiO2 \u2264200 mm Hg\n* **Severe ARDS**: PaO2/FiO2 \u2264100 mm Hg\nWhen PaO2 is unavailable, a ratio of SpO2/FiO2 \u2264315 suggests ARDS.",
+      "question_type": "definitional",
+      "qa_id": "who_covid_042"
+    },
+    {
+      "question": "What percentage of COVID-19 patients exhibited myocardial injury indicated by elevated troponin levels?",
+      "answer": "A single-center retrospective study of 187 patients with confirmed COVID-19 reported that 27.8% exhibited myocardial injury indicated by elevated troponin levels. Patients with elevated troponin levels had more frequent malignant arrhythmias and a higher mechanical ventilation frequency than patients with normal troponin levels.",
+      "evidence": "Single-center retrospective study analysis of 187 patients with confirmed COVID-19 reported that 27.8% of patients exhibited myocardial injury indicated by elevated troponin levels. The study also noted that patients with elevated troponin levels had more frequent malignant arrhythmias and a higher mechanical ventilation frequency than patients with normal troponin levels.",
+      "question_type": "factual",
+      "qa_id": "who_covid_044"
+    },
+    {
+      "question": "What gastrointestinal symptoms are common in COVID-19 and what is their prevalence?",
+      "answer": "Common GI symptoms in COVID-19 include diarrhea with a weighted pool prevalence of 12.4%, nausea or vomiting at 9%, loss of appetite at 22.3%, and abdominal pain at 6.2%. The mortality rate among patients with GI symptoms was similar to the overall mortality rate. Cases of acute mesenteric ischemia and portal vein thrombosis have also been described.",
+      "evidence": "A meta-analysis reported that the weighted pool prevalence of diarrhea was 12.4% (95% CI, 8.2% to 17.1%), nausea or vomiting was 9% (95% CI, 5.5% to 12.9%), loss of appetite was 22.3% (95% CI, 11.2% to 34.6%) and abdominal pain was 6.2% (95% CI, 2.6% to 10.3%). The study also reported that the mortality rate among patients with GI symptoms was similar to the overall mortality rate.",
+      "question_type": "factual",
+      "qa_id": "who_covid_045"
+    },
+    {
+      "question": "What are the most common cutaneous manifestations noted in COVID-19 patients?",
+      "answer": "Acral lesions resembling pseudo chilblains (40.4%) are the most common cutaneous manifestation in COVID-19 patients. Other manifestations include erythematous maculopapular rash (21.3%), vesicular rashes (13%), urticarial rashes (10.9%), vascular rashes (4%) resembling livedo or purpura, and erythema multiforme-like eruptions (3.7%).",
+      "evidence": "* Acral lesions resembling pseudo chilblains (40.4%) are the most common cutaneous manifestation noted in patients with COVID-19.\n* Other cutaneous manifestations include erythematous maculopapular rash (21.3%), vesicular rashes (13%), urticarial rashes (10.9%), vascular rashes (4%) resembling livedo or purpura, and erythema multiforme-like eruptions (3.7%).",
+      "question_type": "factual",
+      "qa_id": "who_covid_046"
+    },
+    {
+      "question": "What is the standard diagnostic test for SARS-CoV-2?",
+      "answer": "A nasopharyngeal swab for SARS-CoV-2 nucleic acid using a real-time PCR assay is the standard diagnostic test. The specificity of most commercial FDA-authorized SARS-CoV-2 PCR assays is nearly 100%, provided there is no cross-contamination during specimen processing.",
+      "evidence": "A\u00a0nasopharyngeal swab for SARS-CoV-2 nucleic acid using a real-time PCR assay is the standard diagnostic test. Commercial PCR assays have been authorized by the USA Food and Drug Administration (FDA) for the qualitative detection of SARS-CoV-2 virus using specimens obtained from nasopharyngeal swabs as well as other sites such as oropharyngeal, anterior/mid-turbinate nasal swabs, nasopharyngeal aspirates, bronchoalveolar lavage (BAL) and saliva.\nThe sensitivity of PCR testing depends on multiple factors, including the specimen's adequacy, time from exposure, and specimen source.\u00a0However, the specificity of most commercial FDA-authorized SARS-CoV-2 PCR assays is nearly 100%, provided there is no cross-contamination during specimen processing. SARS-CoV-2 antigen tests are less sensitive but have a faster turnaround time than molecular PCR testing.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_047"
+    },
+    {
+      "question": "What is the NIH's recommendation regarding serologic testing for diagnosing acute SARS-CoV-2 infection?",
+      "answer": "According to the NIH guidelines, diagnosing acute SARS-CoV-2 infection based on serologic testing is not recommended due to limitations in specificity and sensitivity. They also stated there is insufficient evidence to recommend for or against using serologic testing to assess immunity, even if used to guide clinical decisions about COVID-19 vaccines or monoclonal antibodies.",
+      "evidence": "According to the NIH guidelines, diagnosing acute SARS-CoV-2 infection based on serologic testing is not recommended. They also stated that there is insufficient evidence to recommend for or against using serologic testing to assess immunity, even if it is used to guide clinical decisions about COVID-19 vaccines/monoclonal antibodies.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_049"
+    },
+    {
+      "question": "What laboratory tests should be performed for all hospitalized COVID-19 patients?",
+      "answer": "For all hospitalized patients, a complete blood count (CBC), a comprehensive metabolic panel (CMP) that includes renal and liver function testing, and a coagulation panel should be performed. A D-dimer level is also required as it guides the use of therapeutic versus prophylactic doses of anticoagulation.",
+      "evidence": "* Complete blood count (CBC), a comprehensive metabolic panel (CMP) that includes renal and liver function testing, and a coagulation panel should be performed in all hospitalized patients.\n* Additional tests, such as ESR, C-reactive protein (CRP), ferritin, lactate dehydrogenase, and procalcitonin, can be considered in hospitalized patients. However, their prognostic significance in COVID-19 is not clear.\n* A D-dimer level is required as it guides the use of therapeutic versus prophylactic doses of anticoagulation.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_050"
+    },
+    {
+      "question": "What are the two main processes driving the pathogenesis of COVID-19 according to the NIH?",
+      "answer": "According to the NIH, the two main processes driving COVID-19 pathogenesis are replication of the virus in the early phase of the illness and dysregulated immune/inflammatory response to SARS-CoV-2 that leads to systemic tissue damage in the later phase. The guidelines therefore advise antiviral medications in the early phase and immunomodulators in the later phase.",
+      "evidence": "According to the National Institutes of Health (NIH), the\u00a02 main processes driving the pathogenesis of COVID-19 include replication of the virus in the early phase of the illness and dysregulated immune/inflammatory response to SARS-CoV-2 that leads to systemic tissue damage in the later phase of the disease. The guidelines, therefore, advise antiviral medications to halt viral replication in the early phase of the illness and immunomodulators in the later phase.",
+      "question_type": "definitional",
+      "qa_id": "who_covid_053"
+    },
+    {
+      "question": "What is the only FDA-approved antiviral drug for treating COVID-19?",
+      "answer": "Remdesivir is the only antiviral drug approved by the USA Food and Drug Administration (FDA) to treat COVID-19. Ritonavir-boosted nirmatrelvir, molnupiravir, and high-titer COVID-19 convalescent plasma have Emergency Use Authorizations (EUAs) for treating COVID-19, but they are not fully approved.",
+      "evidence": "Remdesivir is the only antiviral drug approved by the USA Food and Drug Administration (FDA) to treat COVID-19. Ritonavir-boosted nirmatrelvir, molnupiravir, and high-titer COVID-19 convalescent plasma have Emergency Use Authorizations (EUAs) for treating COVID-19.",
+      "question_type": "factual",
+      "qa_id": "who_covid_054"
+    },
+    {
+      "question": "What is ritonavir-boosted nirmatrelvir and within what timeframe must it be given?",
+      "answer": "Ritonavir-boosted nirmatrelvir is a combination of oral protease inhibitors that has been shown to reduce hospitalization and death when given to high-risk, unvaccinated, nonhospitalized patients. It must be given within 5 days of symptom onset, and the recommended dose is nirmatrelvir 300 mg with ritonavir 100 mg orally twice daily for 5 days.",
+      "evidence": "- Ritonavir-boosted nirmatrelvir is a combination of oral protease inhibitors. It has been shown to reduce hospitalization and death when given to\u00a0high-risk, unvaccinated, nonhospitalized patients. It must be given within\u00a05 days of symptoms onset.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_056"
+    },
+    {
+      "question": "In what patients is ritonavir-boosted nirmatrelvir not recommended?",
+      "answer": "Ritonavir-boosted nirmatrelvir is not recommended in patients with an estimated glomerular filtration rate (eGFR) of less than 30 mL/min. Additionally, it is a strong cytochrome P450 inhibitor with many drug-drug interactions that must be carefully assessed, and some interactions may warrant the use of alternate COVID-19 therapy.",
+      "evidence": "Ritonavir-boosted nirmatrelvir is not recommended in patients with an estimated glomerular filtration rate (eGFR) of less than 30 mL/min. It is a strong cytochrome P450 inhibitor with many drug-drug interactions that must be carefully assessed. Some interactions can be managed by temporarily holding the medication, some may be managed with dose adjustment, but some may warrant the use of alternate COVID-19 therapy.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_057"
+    },
+    {
+      "question": "What is remdesivir and what is the recommended dosing for outpatient treatment?",
+      "answer": "Remdesivir is a nucleotide analog that inhibits the SARS-CoV-2 RNA polymerase. For outpatient treatment of mild-to-moderate COVID-19, the recommended duration is 3 days, with a dose of 200 mg IV on day 1 followed by 100 mg IV for 2 more days.",
+      "evidence": "- This is a\u00a0nucleotide analog that inhibits the SARS-CoV-2 RNA polymerase\n- The recommended duration of therapy in this setting is\u00a03 days.\n- The recommended dose is 200 mg IV on day 1, followed by 100 mg IV for\u00a02 more days.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_058"
+    },
+    {
+      "question": "What medical conditions are associated with a high risk of progressing to severe COVID-19?",
+      "answer": "Conditions with conclusive evidence of higher risk include asthma, cancer, cerebrovascular disease, chronic kidney disease, COPD, interstitial lung disease, pulmonary embolism, pulmonary hypertension, cirrhosis, diabetes types 1 and 2, heart conditions, HIV, obesity (BMI greater than 30), pregnancy, smoking, solid organ or blood stem cell transplantation, tuberculosis, and use of immunosuppressive medications.",
+      "evidence": "+ Asthma\n + Cancer\n + Cerebrovascular disease\n + Chronic kidney disease\n + Bronchiectasis\n + COPD (Chronic obstructive pulmonary disease)\n + Interstitial lung disease\n + Pulmonary embolism\n + Pulmonary hypertension\n + Cirrhosis\n + Nonalcoholic fatty liver disease\n + Alcoholic liver disease\n + Autoimmune hepatitis\n + Cystic fibrosis\n + Diabetes, type 1 and 2\n + Heart conditions (such as heart failure, coronary artery disease, or cardiomyopathies)\n + HIV (Human immunodeficiency virus)\n + Mental health conditions such as mood disorders and Schizophrenia spectrum disorders\n + Obesity (defined as body mass index (BMI) of greater than 30 kg/m2 or greater than 95th percentile in children)\n + Pregnancy and recent pregnancy\n + Smoking, current and former\n + Solid organ or blood stem cell transplantation\n + Tuberculosis\n + Use of corticosteroids or other immunosuppressive medications (CDC: Underlying Medical Conditions Associated with Higher Risk)",
+      "question_type": "factual",
+      "qa_id": "who_covid_060"
+    },
+    {
+      "question": "How should hospitalized COVID-19 patients who do not require oxygen be managed?",
+      "answer": "If hospitalized for COVID-19 but not requiring oxygen, the NIH advises against dexamethasone or systemic corticosteroids. A prophylactic dose of anticoagulation should be given if not contraindicated. If at high risk of progression, remdesivir should be given, ideally within ten days of symptom onset, for 5 days or until hospital discharge.",
+      "evidence": "If they are hospitalized for COVID-19 illness but do not require oxygen, the NIH advises against the use of dexamethasone or any other systemic corticosteroid.\nA prophylactic dose of anticoagulation should be given if there is no contraindication.\nIf they are hospitalized for COVID-19 illness, do not require oxygen, but are at high risk of progression to severe disease, they should be treated with remdesivir.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_061"
+    },
+    {
+      "question": "What is the recommended treatment for hospitalized COVID-19 patients requiring conventional oxygen?",
+      "answer": "For most hospitalized patients requiring conventional oxygen (not high-flow nasal cannula, NIV, MV, or ECMO), the recommended treatment is dexamethasone plus remdesivir. Dexamethasone dose is 6 mg IV or oral once daily for up to 10 days or until hospital discharge. If on minimal oxygen, remdesivir monotherapy without dexamethasone should be used.",
+      "evidence": "For most patients in this cohort, the recommended treatment is dexamethasone plus remdesivir.\nDexamethasone dose is 6 mg IV or oral (PO) once daily for up to 10 days or until hospital discharge (dexamethasone should not be continued at discharge).",
+      "question_type": "procedural",
+      "qa_id": "who_covid_062"
+    },
+    {
+      "question": "When should baricitinib or tocilizumab be added to the treatment regimen for hospitalized COVID-19 patients?",
+      "answer": "If a patient is already receiving dexamethasone but has rapidly increasing oxygen needs and/or signs of systemic inflammation, oral baricitinib or intravenous tocilizumab should be added to the treatment regimen. These agents have been shown to improve outcomes in rapidly decompensating patients. Alternate agents include oral tofacitinib and IV sarilumab.",
+      "evidence": "If the patient is already receiving dexamethasone but has rapidly increasing oxygen needs and/or signs of systemic inflammation, oral baricitinib or intravenous (IV) tocilizumab should be added to the treatment regimen as these agents have been shown to improve outcomes in rapidly decompensating patients.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_063"
+    },
+    {
+      "question": "What are the contraindications for therapeutic anticoagulation in hospitalized COVID-19 patients?",
+      "answer": "Contraindications for therapeutic anticoagulation in hospitalized COVID-19 patients include a platelet count less than 50 x10^9/L, hemoglobin less than 8 g/dL, use of dual antiplatelet therapy, any significant bleeding within the past 30 days, a history of a bleeding disorder, or an inherited or active acquired bleeding disorder. Pregnant patients should receive only prophylactic dosing.",
+      "evidence": "Contraindications for therapeutic anticoagulation in these patients include a platelet count of less than 50 x10^9 /L, hemoglobin less than 8 g/dL, use of dual antiplatelet therapy, any significant bleeding within the past 30 days, a history of a bleeding disorder or an inherited or active acquired bleeding disorder.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_064"
+    },
+    {
+      "question": "What is the preferred treatment for hospitalized COVID-19 patients requiring high-flow nasal cannula or noninvasive ventilation?",
+      "answer": "According to the NIH, the preferred treatment regimens for patients requiring HFNC or NIV are dexamethasone plus oral baricitinib or dexamethasone plus IV tocilizumab. Dexamethasone monotherapy is recommended if baricitinib, tocilizumab, or sarilumab cannot be obtained. A prophylactic dose of anticoagulation is recommended in these patients.",
+      "evidence": "According to the NIH, dexamethasone plus oral baricitinib or dexamethasone plus IV tocilizumab are the preferred treatment regimens in these patients.\nAlternate immunomodulatory agents for this cohort include oral tofacitinib and IV sarilumab.\nDexamethasone monotherapy is recommended if baricitinib, tocilizumab, or sarilumab cannot be obtained/given.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_065"
+    },
+    {
+      "question": "Why is remdesivir not recommended for patients on mechanical ventilation or ECMO?",
+      "answer": "Remdesivir is most effective earlier in the course of the disease and in patients not on mechanical ventilation or ECMO. One study showed a slight trend toward an increase in mortality in patients who received remdesivir while on mechanical ventilation or ECMO. However, if a patient was started on remdesivir and later progressed to requiring MV or ECMO, the NIH recommends continuing remdesivir to complete the treatment course.",
+      "evidence": "Remdesivir is most effective earlier in the course of the disease and in patients not on mechanical ventilation or ECMO.\nAccording to the NIH, one study showed a slight trend toward an increase in mortality in patients who received remdesivir while on mechanical ventilation or ECMO.",
+      "question_type": "causal",
+      "qa_id": "who_covid_067"
+    },
+    {
+      "question": "What is the NIH recommendation regarding high-titer COVID-19 convalescent plasma for immunocompetent vs immunocompromised patients?",
+      "answer": "According to the NIH, high-titer COVID-19 convalescent plasma is not recommended in immunocompetent individuals. However, for immunocompromised individuals, the NIH states there is insufficient evidence for or against its use, though some experts consider it appropriate. Data from multiple studies have generated mixed results regarding its effectiveness.",
+      "evidence": "According to the NIH, high-titer CCP is not recommended in immunocompetent individuals.\nHowever, the NIH states that some experts consider it appropriate for use in immunocompromised individuals. Therefore, the current NIH guidelines state that there is insufficient evidence for or against the use of high-titer CCP for treating COVID-19 in hospitalized or nonhospitalized patients who are immunocompromised.",
+      "question_type": "comparative",
+      "qa_id": "who_covid_068"
+    },
+    {
+      "question": "What is tixagevimab plus cilgavimab used for and how does it work?",
+      "answer": "Tixagevimab plus cilgavimab is authorized for preexposure prophylaxis of SARS-CoV-2 in people who are not expected to mount an adequate immune response to COVID-19 vaccination. They are potent anti-spike neutralizing monoclonal antibodies obtained from B cells of infected patients that demonstrate neutralizing activity by binding to nonoverlapping epitopes of the viral spike-protein RBD.",
+      "evidence": "According to the NIH guidelines, tixagevimab plus cilgavimab is authorized by the FDA for preexposure prophylaxis of SARS-CoV-2 in people who are not expected to mount an adequate immune response to COVID-19 vaccination; however, the prevalence of Omicron subvariants that are resistant to tixagevimab plus cilgavimab is noted to be increasing rapidly. Tixagevimab and cilgavimab are potent anti-spike neutralizing monoclonal antibodies obtained from antibodies isolated from B cells of patients infected with SARS-CoV-2 that have demonstrated neutralizing activity against SARS-CoV-2 virus by binding to nonoverlapping epitopes of the viral spike-protein RBD.",
+      "question_type": "definitional",
+      "qa_id": "who_covid_070"
+    },
+    {
+      "question": "What conditions are included in the differential diagnosis for COVID-19?",
+      "answer": "The differential diagnosis includes community-acquired bacterial pneumonia, viral pneumonia, influenza infection, aspiration pneumonia, Pneumocystis jirovecii pneumonia, Middle East respiratory syndrome (MERS), avian influenza A (H7N9 and H5N1) viral infections, and pulmonary tuberculosis. Symptoms in early stages are nonspecific.",
+      "evidence": "Community-acquired bacterial pneumonia\nViral pneumonia\nInfluenza infection\nAspiration pneumonia\nPneumocystis jirovecii pneumonia\nMiddle East respiratory syndrome (MERS)\nAvian influenza A (H7N9) viral infection\nAvian influenza A (H5N1) viral infection\nPulmonary tuberculosis",
+      "question_type": "factual",
+      "qa_id": "who_covid_072"
+    },
+    {
+      "question": "What prothrombotic complications are COVID-19 patients at increased risk of developing?",
+      "answer": "Patients with COVID-19 are at increased risk of developing prothrombotic complications such as pulmonary embolisms, myocardial infarctions, ischemic strokes, and arterial thrombosis. COVID-19 is associated with markedly elevated D-dimer and fibrinogen levels and prolonged prothrombin time and partial thromboplastin time.",
+      "evidence": "Patients with COVID-19 illness are also at increased risk of developing prothrombotic complications such as pulmonary embolisms, myocardial infarctions, ischemic strokes, and arterial thrombosis.",
+      "question_type": "factual",
+      "qa_id": "who_covid_074"
+    },
+    {
+      "question": "What is 'post-acute COVID-19 syndrome' and what are its most common symptoms?",
+      "answer": "Post-acute COVID-19 syndrome refers to prolonged symptoms in patients who have recovered from COVID-19 infection. A large cohort study of 1,773 patients performed 6 months after hospitalization revealed that most exhibited at least one persistent symptom: fatigue, muscle weakness, sleep difficulties, or anxiety. Patients with severe illness also had increased risk of chronic lung issues.",
+      "evidence": "More recent data have emerged regarding prolonged symptoms in patients who have recovered from COVID-19 infection, termed \"post-acute COVID-19 syndrome.\" A large cohort study of 1773 patients performed 6 months after hospitalization with COVID-19 revealed that most exhibited at least one persistent symptom: fatigue, muscle weakness, sleep difficulties, or anxiety. Patients with severe illness also had an increased risk of chronic lung issues.",
+      "question_type": "definitional",
+      "qa_id": "who_covid_076"
+    },
+    {
+      "question": "What neurological and psychiatric outcomes were reported 6 months after COVID-19 diagnosis?",
+      "answer": "A retrospective cohort study including 236,379 patients reported substantial neurological morbidity (intracranial hemorrhage, ischemic stroke) and psychiatric morbidity (anxiety disorder, psychotic disorder) 6 months after being diagnosed with COVID-19. These findings highlight the long-term neuropsychiatric impact of the disease.",
+      "evidence": "A retrospective cohort study that included 236,379 patients reported substantial neurological (intracranial hemorrhage, ischemic stroke) and psychiatric morbidity (anxiety disorder, psychotic disorder) 6 months after being diagnosed with COVID-19.",
+      "question_type": "factual",
+      "qa_id": "who_covid_077"
+    },
+    {
+      "question": "What secondary fungal infections have been reported as complications in COVID-19 patients?",
+      "answer": "Secondary invasive fungal infections such as COVID-19-associated pulmonary aspergillosis and rhino-cerebro-orbital mucormycosis have increasingly been reported in patients recovering from COVID-19. Risk factors include comorbid conditions such as uncontrolled diabetes, associated lymphopenia, and excessive use of corticosteroids.",
+      "evidence": "Secondary invasive fungal infections such as COVID-19-associated pulmonary aspergillosis and rhino-cerebro-orbital mucormycosis have increasingly been reported as complications in patients recovering from COVID-19. Risk factors for developing secondary fungal infection include comorbid conditions such as uncontrolled diabetes, associated lymphopenia, and excessive use of corticosteroids.",
+      "question_type": "factual",
+      "qa_id": "who_covid_078"
+    },
+    {
+      "question": "Which COVID-19 vaccines are preferred according to the NIH guidelines?",
+      "answer": "According to the NIH guidelines, the preferred vaccines include the mRNA vaccine BNT162b2 (Pfizer-BioNTech), mRNA-1273 (Moderna), and recombinant spike protein with matrix-M1 adjuvant vaccine NVX-CoV2373 (Novavax). The adenovirus vector vaccine Ad26.COV2.S (Johnson & Johnson/Janssen) is less preferred due to its risk of serious adverse events.",
+      "evidence": "* mRNA vaccine BNT162b2 (Pfizer-BioNTech)\n* mRNA-1273 (Moderna)\n* Recombinant spike protein with matrix-M1 adjuvant vaccine NVX-CoV2373 (Novavax)\nThe\u00a0adenovirus vector vaccine Ad26.COV2.S (Johnson & Johnson/Janssen) is less preferred due to its risk of serious\u00a0adverse events.",
+      "question_type": "factual",
+      "qa_id": "who_covid_079"
+    },
+    {
+      "question": "What is Multisystem Inflammatory Syndrome in Children (MIS-C)?",
+      "answer": "MIS-C is a rare but serious condition associated with COVID-19 that affects children. The CDC provides guidance on MIS-C signs and symptoms, testing, patient management, and follow-up, as well as evidence-based best practices for treating MIS and case definitions and reporting protocol for providers treating patients with this condition.",
+      "evidence": "Find information on this rare but serious condition associated with COVID-19.\nClinical Overview of Multisystem Inflammatory Syndrome in Children\nMIS-C signs and symptoms, testing, patient management, and follow-up guidance.",
+      "question_type": "definitional",
+      "qa_id": "who_covid_081"
+    },
+    {
+      "question": "What is Long COVID according to CDC guidance?",
+      "answer": "Long COVID refers to physical and mental health conditions that can arise after an initial SARS-CoV-2 infection. The CDC provides clinical information about Long COVID, including research and resources for healthcare providers, as well as information on Long COVID public health strategies and resources.",
+      "evidence": "More recent data have emerged regarding prolonged symptoms in patients who have recovered from COVID-19 infection, termed \u201cpost-acute COVID-19 syndrome.\u201d A large cohort study of 1773 patients performed 6 months after hospitalization with COVID-19 revealed that most exhibited at least one persistent symptom: fatigue, muscle weakness, sleep difficulties, or anxiety. Patients with severe illness also had an increased risk of chronic lung issues.",
+      "question_type": "definitional",
+      "qa_id": "who_covid_082"
+    },
+    {
+      "question": "What corticosteroids can be used as alternatives if dexamethasone is unavailable for hospitalized COVID-19 patients?",
+      "answer": "If dexamethasone is unavailable, corticosteroids such as prednisone, methylprednisolone, or hydrocortisone may be used as alternatives for hospitalized COVID-19 patients requiring conventional oxygen. The standard dexamethasone dose is 6 mg IV or oral once daily for up to 10 days or until hospital discharge.",
+      "evidence": "If dexamethasone is unavailable, corticosteroids such as prednisone, methylprednisolone, or hydrocortisone may be used.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_083"
+    },
+    {
+      "question": "What is the D614G variant and what was its significance?",
+      "answer": "D614G was a globally dominant variant of SARS-CoV-2 that was associated with increased transmissibility but without the ability to cause severe illness. It was identified before the emergence of the major variants of concern and represented one of the early significant mutations in the virus.",
+      "evidence": "A globally dominant D614G variant was eventually identified and associated with increased transmissibility but without the ability to cause severe illness.",
+      "question_type": "factual",
+      "qa_id": "who_covid_084"
+    },
+    {
+      "question": "What happened to monoclonal antibody Emergency Use Authorizations as Omicron subvariants emerged?",
+      "answer": "As Omicron subvariants emerged, many monoclonal antibody EUAs were revoked because they were no longer effective against the new variants. The NIH guidelines also recommend against using anti-SARS-CoV-2 monoclonal antibodies for treating COVID-19 in nonhospitalized patients because the Omicron subvariants are not susceptible to these agents.",
+      "evidence": "Many other monoclonal antibodies had EUAs; however, as Omicron subvariants emerged, their EUAs were revoked as they were no longer effective.",
+      "question_type": "factual",
+      "qa_id": "who_covid_085"
+    },
+    {
+      "question": "What percentage of COVID-19 patients in a meta-analysis had a severe disease course and what was the mortality rate?",
+      "answer": "A meta-analysis of 212 published studies with 281,461 individuals from 11 countries/regions reported that severe disease course was noted in about 23% of patients, with a mortality rate of about 6% in patients infected with COVID-19.",
+      "evidence": "A meta-analysis of 212 published studies with 281,461 individuals from 11 countries/regions reported that severe disease course was noted in about 23% of the patients, with a mortality rate of about 6% in patients infected with COVID-19.",
+      "question_type": "factual",
+      "qa_id": "who_covid_086"
+    },
+    {
+      "question": "What is defined as 'conventional oxygen' in the NIH treatment guidelines?",
+      "answer": "Conventional oxygen is defined as oxygen that is NOT high-flow nasal cannula, noninvasive mechanical ventilation, mechanical ventilation, or extracorporeal membrane oxygenation (ECMO). This distinction is important for determining the appropriate treatment regimen for hospitalized COVID-19 patients.",
+      "evidence": "Conventional oxygen is defined as oxygen that is NOT high-flow nasal cannula, noninvasive mechanical ventilation, mechanical ventilation, or extracorporeal membrane oxygenation (ECMO)",
+      "question_type": "factual",
+      "qa_id": "who_covid_088"
+    },
+    {
+      "question": "What information does the CDC provide for healthcare professionals regarding COVID-19 clinical care?",
+      "answer": "Healthcare professionals can find links to COVID-19 clinical care information and guidance covering updated vaccine information, caring for patients, people at increased risk of severe outcomes, MIS, post-COVID conditions, children and pregnant women, prevention and testing, and more data and information through the COVID-19 Data Tracker.",
+      "evidence": "Healthcare professionals can find links to COVID-19 clinical care information and guidance. Find information on evaluating and treating patients diagnosed with COVID-19. Find information on a patient\u2019s increased risk of severe illness from COVID-19, correlated underlying medical conditions, and how people who are immunosuppressed can protect themselves from getting infected.",
+      "question_type": "factual",
+      "qa_id": "who_covid_090"
+    },
+    {
+      "question": "What are the common human coronaviruses and what illnesses do they typically cause?",
+      "answer": "The common human coronaviruses are HCoV-OC43 and HCoV-HKU1 (betaCoVs of the A lineage), and HCoV-229E and HCoV-NL63 (alphaCoVs). These viruses can cause common colds and self-limiting upper respiratory tract infections in immunocompetent individuals, but in immunocompromised and older patients, lower respiratory tract infections can occur.",
+      "evidence": "Common human CoVs: HCoV-OC43 and HCoV-HKU1 (betaCoVs of the A lineage), HCoV-229E, and HCoV-NL63 (alphaCoVs). These viruses can cause common colds and self-limiting upper respiratory tract infections in immunocompetent individuals. However, in immunocompromised and older patients, lower respiratory tract infections can occur due to these viruses.",
+      "question_type": "definitional",
+      "qa_id": "who_covid_091"
+    },
+    {
+      "question": "What GI complications are noted in critically ill patients with COVID-19?",
+      "answer": "GI complications such as bowel ischemia, transaminitis, gastrointestinal bleeding, pancreatitis, Ogilvie syndrome, mesenteric ischemia, and severe ileus are often noted in critically ill patients with COVID-19. An acute increase in AST and ALT is noted in 14% to 53% of patients with COVID-19 infection.",
+      "evidence": "GI complications such as bowel ischemia, transaminitis, gastrointestinal bleeding, pancreatitis, Ogilvie syndrome, mesenteric ischemia, and severe ileus are often noted in critically ill patients with COVID-19.",
+      "question_type": "factual",
+      "qa_id": "who_covid_092"
+    },
+    {
+      "question": "How does the management of patients on mechanical ventilation differ from those on HFNC or NIV?",
+      "answer": "The management of patients requiring mechanical ventilation is the same as those requiring HFNC or NIV (dexamethasone plus immunomodulators), except that remdesivir is not recommended for those on MV. Remdesivir is most effective earlier in the disease course and in patients not on mechanical ventilation or ECMO.",
+      "evidence": "The management of this cohort is the same as those requiring HFNC or NIV, except that remdesivir is not recommended.\nRemdesivir is most effective earlier in the course of the disease and in patients not on mechanical ventilation or ECMO.",
+      "question_type": "comparative",
+      "qa_id": "who_covid_093"
+    },
+    {
+      "question": "What is the content source for the CDC Clinical Care Quick Reference page?",
+      "answer": "The content source for the CDC Clinical Care Quick Reference page is the National Center for Immunization and Respiratory Diseases and the Coronavirus and Other Respiratory Viruses Division. The page was last updated on August 27, 2024.",
+      "evidence": "Content Source:\nNational Center for Immunization and Respiratory Diseases; Coronavirus and Other Respiratory Viruses Division",
+      "question_type": "factual",
+      "qa_id": "who_covid_094"
+    },
+    {
+      "question": "What is the importance of interprofessional teamwork in managing COVID-19 patients?",
+      "answer": "Prevention and management of COVID-19 require a holistic and interprofessional approach including expertise from physicians across specialties, nurses, pharmacists, public health experts, and government authorities. There should be open communication among clinical providers, pharmacists, and nursing staff, with each team member keeping abreast of the latest recommendations and being free to voice concerns.",
+      "evidence": "Prevention and management of this highly transmissible respiratory viral illness require a holistic and interprofessional approach that includes physicians' expertise across specialties, nurses, pharmacists, public health experts, and government authorities. There should be open communication among the clinical providers, pharmacists, and nursing staff while managing patients with COVID-19.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_096"
+    },
+    {
+      "question": "Why is continued viral surveillance of new SARS-CoV-2 variants crucial?",
+      "answer": "Continued viral surveillance of new variants is crucial at regular intervals with viral genomic sequencing because of the possibility that more highly transmissible, more virulent, and treatment-resistant variants could emerge that can have a more catastrophic effect on global health. A multi-pronged interprofessional approach can improve patient care and outcomes.",
+      "evidence": "Continued viral surveillance of new variants is crucial at regular intervals with viral genomic sequencing, given the possibility that more highly transmissible, more virulent, and treatment-resistant variants could emerge that can have a more catastrophic effect on global health in addition to the current scenario.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_097"
+    },
+    {
+      "question": "What were the hypothesized mechanisms for leukopenia in COVID-19 patients?",
+      "answer": "The mechanism of leukopenia in COVID-19 is unknown, but several hypotheses have been postulated including ACE2-mediated lymphocyte destruction by direct invasion by the virus, lymphocyte apoptosis due to proinflammatory cytokines, and possible invasion of the virus in the lymphatic organs. Leukopenia is one of the most common laboratory abnormalities encountered.",
+      "evidence": "The mechanism of leukopenia, one of the most common laboratory abnormalities encountered in COVID-19, is unknown. Several hypotheses have been postulated that include ACE 2 mediated lymphocyte destruction by direct invasion by the virus, lymphocyte apoptosis due to proinflammatory cytokines, and possible invasion of the virus in the lymphatic organs.",
+      "question_type": "causal",
+      "qa_id": "who_covid_100"
+    },
+    {
+      "question": "What types of health conditions can arise after an initial SARS-CoV-2 infection?",
+      "answer": "Both physical and mental health conditions can arise after an initial SARS-CoV-2 infection, the virus that causes COVID-19. These are collectively referred to as post-COVID conditions.",
+      "evidence": "## Post-COVID conditions\n\nFind information on physical and mental health conditions that can arise after an initial SARS-CoV-2 infection (the virus that causes COVID-19).",
+      "question_type": "causal",
+      "qa_id": "who_covid_101"
+    },
+    {
+      "question": "How does COVID-19 compare historically to other global health crises?",
+      "answer": "COVID-19 has emerged as the most consequential global health crisis since the era of the influenza pandemic of 1918. As the virus mutates, treatment guidelines are continually altered to reflect the most efficacious therapies.",
+      "evidence": "It has emerged as the most consequential global health crisis since the era of the influenza pandemic of 1918. As the virus mutates, treatment guidelines are altered to reflect the most efficacious therapies.",
+      "question_type": "causal",
+      "qa_id": "who_covid_102"
+    },
+    {
+      "question": "How many SARS-CoV-2 variants of concern have been identified according to the WHO epidemiological update?",
+      "answer": "Based on the epidemiological update by the WHO, 5 SARS-CoV-2 variants of concern (VOCs) have been identified since the beginning of the pandemic.",
+      "evidence": "Based on the epidemiological update by the WHO,\u00a05 SARS-CoV-2 VOCs have been identified since the beginning of the pandemic:",
+      "question_type": "causal",
+      "qa_id": "who_covid_103"
+    },
+    {
+      "question": "How do SARS-CoV-2 mutant variants differ from their ancestral strains, and what distinguishes variants of concern from other variants?",
+      "answer": "Mutant variants may have different characteristics than their ancestral strains due to viral mutation. Among the several variants of SARS-CoV-2 described during the pandemic, only a few are considered variants of concern (VOCs), indicating they pose a particularly significant public health risk.",
+      "evidence": "This results in mutant variants that may have different characteristics than their ancestral strains. Several variants of SARS-CoV-2 have been described during the course of this pandemic, among which only a few are considered variants of concern (VOCs).",
+      "question_type": "causal",
+      "qa_id": "who_covid_104"
+    },
+    {
+      "question": "When were human coronaviruses first identified, and what proportion of acute respiratory infections do they cause?",
+      "answer": "Some human coronaviruses (HCoVs) were identified in the mid-1960s, while others were only detected in the new millennium. Estimates suggest that 2% of the population are healthy carriers of coronaviruses and that these viruses are responsible for about 5% to 10% of acute respiratory infections.",
+      "evidence": "Some HCoVs were identified in the mid-1960s, while others were only detected in the new millennium. In general, estimates suggest that 2% of the population are healthy carriers of CoVs and that these viruses are responsible for about 5% to 10% of acute respiratory infections.",
+      "question_type": "comparative",
+      "qa_id": "who_covid_105"
+    },
+    {
+      "question": "In which patient populations can coronaviruses cause lower respiratory tract infections, and what other human coronaviruses besides SARS-CoV-2 are notable?",
+      "answer": "In immunocompromised and older patients, lower respiratory tract infections can occur due to coronaviruses. Other notable human coronaviruses include SARS-CoV and MERS-CoV, which are betacoronaviruses of the B and C lineage, respectively.",
+      "evidence": "However, in immunocompromised and older patients, lower respiratory tract infections can occur due to these viruses.\n\n* **Other human CoVs**: SARS-CoV and MERS-CoV (betaCoVs of the B and C lineage, respectively).",
+      "question_type": "comparative",
+      "qa_id": "who_covid_106"
+    },
+    {
+      "question": "Which lipid solvents and disinfectants can effectively inactivate coronaviruses, and which common disinfectant is an exception?",
+      "answer": "Lipid solvents that can effectively inactivate coronaviruses include ether (75%), ethanol, chlorine-containing disinfectant, peroxyacetic acid, and chloroform. However, chlorhexidine is the notable exception and is not effective at inactivating these viruses.",
+      "evidence": "However, lipid solvents can effectively inactivate these viruses, including ether (75%), ethanol, chlorine-containing disinfectant, peroxyacetic acid, and chloroform (except for chlorhexidine).",
+      "question_type": "comparative",
+      "qa_id": "who_covid_107"
+    },
+    {
+      "question": "What age threshold and underlying comorbidities increase the risk of developing severe COVID-19 infection?",
+      "answer": "Patients aged 60 or older and patients with underlying medical comorbidities including obesity, cardiovascular disease, chronic kidney disease, diabetes, chronic lung disease, smoking, cancer, and solid organ or hematopoietic stem cell transplant have an increased risk of developing severe COVID-19 infection.",
+      "evidence": "However, patients aged \u226560 and patients with underlying medical comorbidities (obesity, cardiovascular disease, chronic kidney disease, diabetes, chronic lung disease, smoking, cancer, solid organ or hematopoietic stem cell transplant patients)\u00a0have an increased risk of developing severe COVID-19 infection.",
+      "question_type": "comparative",
+      "qa_id": "who_covid_108"
+    },
+    {
+      "question": "According to CDC NVSS data, how much higher is the risk of death for COVID-19 patients aged 50 to 64 compared to those under 30?",
+      "answer": "According to data from the National Vital Statistics System (NVSS) at CDC, patients with COVID-19 aged 50 to 64 years have a 25 times higher risk of death compared to adults infected with this illness who are aged less than 30 years.",
+      "evidence": "Data from the National Vital Statistics System (NVSS) at CDC states that patients with COVID-19 aged 50\u00a0to 64 years have a 25 times higher risk of death when compared to adults infected with this illness and aged less than 30 years.",
+      "question_type": "comparative",
+      "qa_id": "who_covid_109"
+    },
+    {
+      "question": "What causes the local and systemic inflammatory response observed in severe COVID-19?",
+      "answer": "The local and systemic inflammatory response in severe COVID-19 is caused by the over-activation of the immune system and high levels of cytokines in circulation, a phenomenon often referred to as a cytokine storm.",
+      "evidence": "This is due to the over-activation of the immune system and high levels of cytokines in circulation. This results in a local and systemic inflammatory response.",
+      "question_type": "causal",
+      "qa_id": "who_covid_110"
+    },
+    {
+      "question": "How does direct viral injury to the endothelium contribute to COVID-19 pathophysiology?",
+      "answer": "Direct viral injury and perivascular inflammation lead to endotheliitis, which causes microvascular damage and microthrombi deposition. Additionally, increased binding of the virus to ACE2 receptors causes dysregulation of the renin-angiotensin-aldosterone system (RAAS).",
+      "evidence": "* Endotheliitis as a result of direct viral injury and perivascular inflammation leading to microvascular and microthrombi deposition\n* Dysregulation of RAAS due to increased binding of the virus to the ACE2 receptors",
+      "question_type": "causal",
+      "qa_id": "who_covid_111"
+    },
+    {
+      "question": "What role does the kallikrein-bradykinin pathway play in COVID-19 pathophysiology?",
+      "answer": "In COVID-19, activation of the kallikrein-bradykinin pathway enhances vascular permeability. This occurs alongside dysregulation of RAAS due to increased binding of the virus to ACE2 receptors, contributing to the vascular complications seen in the disease.",
+      "evidence": "* Dysregulation of RAAS due to increased binding of the virus to the ACE2 receptors\n* Activation of the kallikrein-bradykinin pathway, the activation of which enhances vascular permeability",
+      "question_type": "causal",
+      "qa_id": "who_covid_112"
+    },
+    {
+      "question": "What did the multicenter study find about 28-day mortality in mechanically ventilated COVID-19 patients with ARDS compared to other ARDS cohorts?",
+      "answer": "A multicenter prospective observational study concluded that COVID-19 patients with ARDS had features similar to other ARDS cohorts, and the risk of 28-day mortality increased with ARDS severity.",
+      "evidence": "A multicenter prospective observational study that analyzed 28-day mortality in mechanically ventilated patients with ARDS concluded that COVID-19 patients with ARDS had features similar to other ARDS cohorts, and the risk of 28-day mortality increased with ARDS severity.",
+      "question_type": "causal",
+      "qa_id": "who_covid_113"
+    },
+    {
+      "question": "What is the specificity of most commercial FDA-authorized SARS-CoV-2 PCR assays?",
+      "answer": "The specificity of most commercial FDA-authorized SARS-CoV-2 PCR assays is nearly 100%, provided there is no cross-contamination during specimen processing.",
+      "evidence": "[79]\u00a0However, the specificity of most commercial FDA-authorized SARS-CoV-2 PCR assays is nearly 100%, provided there is no cross-contamination during specimen processing.",
+      "question_type": "comparative",
+      "qa_id": "who_covid_114"
+    },
+    {
+      "question": "Why is D-dimer level measurement important in the evaluation of hospitalized COVID-19 patients?",
+      "answer": "A D-dimer level is required because it guides the use of therapeutic versus prophylactic doses of anticoagulation in COVID-19 patients. However, the prognostic significance of other inflammatory markers in COVID-19 is not clear.",
+      "evidence": "However, their prognostic significance in COVID-19 is not clear.\n* A D-dimer level is required as it guides the use of therapeutic versus prophylactic doses of anticoagulation.",
+      "question_type": "comparative",
+      "qa_id": "who_covid_115"
+    },
+    {
+      "question": "What is the required timeframe for administering nirmatrelvir-ritonavir, and what major pharmacological concern must be assessed?",
+      "answer": "Nirmatrelvir-ritonavir must be given within 5 days of symptom onset. It is a strong cytochrome P450 inhibitor with many drug-drug interactions that must be carefully assessed before prescribing.",
+      "evidence": "It must be given within\u00a05 days of symptoms onset.[84]\n    - It is a strong cytochrome P450 inhibitor with many drug-drug interactions that must be carefully assessed.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_116"
+    },
+    {
+      "question": "How should drug-drug interactions with nirmatrelvir-ritonavir be managed in COVID-19 treatment?",
+      "answer": "Some drug interactions can be managed by temporarily holding the interacting medication, some may be managed with dose adjustment, but some interactions may warrant the use of an alternate COVID-19 therapy altogether.",
+      "evidence": "- It is a strong cytochrome P450 inhibitor with many drug-drug interactions that must be carefully assessed.\n    - Some interactions can be managed by temporarily holding the medication, some may be managed with dose adjustment, but some may warrant the use of alternate COVID-19 therapy.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_117"
+    },
+    {
+      "question": "Why do NIH guidelines recommend against using anti-SARS-CoV-2 monoclonal antibodies for treating COVID-19 in the Omicron era?",
+      "answer": "The NIH guidelines recommend against using anti-SARS-CoV-2 monoclonal antibodies (mAbs) for treating COVID-19 because the Omicron subvariants are not susceptible to these agents, rendering them ineffective.",
+      "evidence": "* The NIH guidelines recommend against using anti-SARS-CoV-2 monoclonal antibodies (mAbs) for treating COVID-19 in this cohort because the Omicron subvariants are not susceptible to these agents.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_118"
+    },
+    {
+      "question": "What types of disorders should be considered in the differential diagnosis for COVID-19?",
+      "answer": "The differential diagnosis for COVID-19 should include a wide range of both infectious and noninfectious respiratory disorders, such as community-acquired bacterial pneumonia among others.",
+      "evidence": "Differential diagnosis should include the possibility of a wide range of infectious and noninfectious respiratory disorders.\n\n* Community-acquired bacterial pneumonia",
+      "question_type": "procedural",
+      "qa_id": "who_covid_119"
+    },
+    {
+      "question": "What cardiovascular and gastrointestinal complications can occur in critically ill COVID-19 patients?",
+      "answer": "Cardiovascular involvement in COVID-19 can result in malignant arrhythmias, cardiomyopathy, and cardiogenic shock. GI complications including bowel ischemia, transaminitis, gastrointestinal bleeding, pancreatitis, Ogilvie syndrome, mesenteric ischemia, and severe ileus are often noted in critically ill COVID-19 patients.",
+      "evidence": "* Cardiovascular system involvement results in malignant arrhythmias, cardiomyopathy, and cardiogenic shock.\n* GI complications such as bowel ischemia, transaminitis, gastrointestinal bleeding, pancreatitis, Ogilvie syndrome, mesenteric ischemia, and severe ileus are often noted in critically ill patients with COVID-19.",
+      "question_type": "causal",
+      "qa_id": "who_covid_120"
+    },
+    {
+      "question": "Which comorbid conditions place patients at risk of developing severe COVID-19 and its associated complications?",
+      "answer": "Patients with advanced age and comorbid conditions such as obesity, diabetes mellitus, chronic lung disease, cardiovascular disease, chronic kidney disease, chronic liver disease, and neoplastic conditions are at risk of developing severe COVID-19 and its associated complications.",
+      "evidence": "* Patients with advanced age and comorbid conditions such as obesity, diabetes mellitus, chronic lung disease, cardiovascular disease, chronic kidney disease, chronic liver disease, and neoplastic conditions are at risk of developing severe COVID-19 and its associated complications.",
+      "question_type": "causal",
+      "qa_id": "who_covid_121"
+    },
+    {
+      "question": "Why is the Johnson and Johnson/Janssen COVID-19 vaccine less preferred, and who is recommended to receive a primary COVID-19 vaccination series?",
+      "answer": "The Johnson and Johnson/Janssen vaccine is less preferred due to its risk of serious adverse events. A primary series of COVID-19 vaccination is recommended for everyone older than 6 months in the United States.",
+      "evidence": "The adenovirus vector vaccine Ad26.COV2.S (Johnson & Johnson/Janssen) is less preferred due to its risk of serious adverse events.[NIH COVID-19 Treatment Guidelines]\n\nA primary series of COVID-19 vaccination is recommended for everyone older than 6 months in the United States.",
+      "question_type": "causal",
+      "qa_id": "who_covid_122"
+    },
+    {
+      "question": "What approach to interprofessional communication is recommended when managing COVID-19 patients in clinical settings?",
+      "answer": "There should be open communication among clinical providers, pharmacists, and nursing staff. Each team member should keep abreast of the latest recommendations and be free to speak up if they notice anything non-compliant, as there is no place for a hierarchy in communication that prohibits any team member from voicing their concerns.",
+      "evidence": "There should be\u00a0open communication\u00a0among the clinical providers, pharmacists, and nursing staff while managing patients with COVID-19. Each team member should strive to keep abreast of the latest recommendations and guidelines and be free to speak up if they notice anything that does not comply with the latest tenets for managing COVID patients; there is no place for a hierarchy in communication that prohibits any team member from voicing their concerns.",
+      "question_type": "procedural",
+      "qa_id": "who_covid_123"
+    }
+  ]
+}

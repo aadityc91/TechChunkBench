@@ -1,0 +1,740 @@
+{
+  "corpus_id": "aws_s3",
+  "qa_pairs": [
+    {
+      "question": "What is Amazon S3 and what are its primary capabilities?",
+      "answer": "Amazon S3 is an object storage service offering industry-leading scalability, data availability, security, and performance. It can be used to store and protect any amount of data for use cases such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics.",
+      "evidence": "Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability,\ndata availability, security, and performance. Customers of all sizes and industries can use\nAmazon S3 to store and protect any amount of data for a range of use cases, such as data lakes,\nwebsites, mobile applications, backup and restore, archive, enterprise applications, IoT\ndevices, and big data analytics.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_001"
+    },
+    {
+      "question": "What types of data does Amazon S3 store and in what containers?",
+      "answer": "Amazon S3 stores data as objects, hierarchical data, or tabular data within buckets. An object is a file plus its metadata, and a bucket is a container for objects.",
+      "evidence": "Amazon S3 is an object storage service that stores data as objects, hierarchical data, or tabular data within buckets. An\n*object* is a file and any metadata that describes\nthe file. A *bucket* is a container for objects.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_002"
+    },
+    {
+      "question": "What is S3 Express One Zone and how does its performance compare to S3 Standard?",
+      "answer": "S3 Express One Zone is a high-performance, single-zone storage class purpose-built for latency-sensitive applications. It is the lowest latency cloud object storage class available, with data access speeds up to 10x faster and request costs 50 percent lower than S3 Standard.",
+      "evidence": "Amazon S3 Express One Zone is a high-performance, single-zone Amazon S3 storage class that is purpose-built\nto deliver consistent, single-digit millisecond data access for your most\nlatency-sensitive applications. S3 Express One Zone is the lowest latency cloud object\nstorage class available today, with data access\nspeeds\nup to 10x faster and with request costs\n50\npercent lower than S3 Standard.",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_004"
+    },
+    {
+      "question": "What is S3 Intelligent-Tiering and how does it optimize storage costs?",
+      "answer": "S3 Intelligent-Tiering is a storage class that optimizes costs by automatically moving data between four access tiers when access patterns change, including two low-latency access tiers for frequent and infrequent access, and two opt-in archive tiers for rarely accessed data.",
+      "evidence": "You can store data with changing or unknown access patterns in\nS3 Intelligent-Tiering, which optimizes storage costs by automatically moving your\ndata between four access tiers when your access patterns change. These four access\ntiers include two low-latency access tiers optimized for frequent and infrequent\naccess, and two opt-in archive access tiers designed for asynchronous access for\nrarely accessed data.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_005"
+    },
+    {
+      "question": "What is S3 Object Lock and what storage model does it support?",
+      "answer": "S3 Object Lock prevents Amazon S3 objects from being deleted or overwritten for a fixed amount of time or indefinitely. It can be used to meet regulatory requirements that require write-once-read-many (WORM) storage or to add protection against object changes and deletions.",
+      "evidence": "* S3 Object Lock \u00e2\u0080\u0093 Prevent Amazon S3 objects from being\ndeleted or overwritten for a fixed amount of time or indefinitely. You can\nuse Object Lock to help meet regulatory requirements that require *write-once-read-many*\n*(WORM)* storage or to simply add another\nlayer of protection against object changes and deletions.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_006"
+    },
+    {
+      "question": "What consistency model does Amazon S3 provide for PUT and DELETE requests?",
+      "answer": "Amazon S3 provides strong read-after-write consistency for PUT and DELETE requests of objects in all AWS Regions. This applies to both writes of new objects, PUT requests that overwrite existing objects, and DELETE requests.",
+      "evidence": "Amazon S3 provides strong read-after-write consistency for PUT and DELETE requests of\nobjects in your Amazon S3 bucket in all AWS Regions. This behavior applies to both writes\nto new objects as well as PUT requests that overwrite existing objects and DELETE\nrequests.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_007"
+    },
+    {
+      "question": "Are updates to a single key in Amazon S3 atomic, and what does this mean for concurrent reads?",
+      "answer": "Yes, updates to a single key are atomic. If a PUT request is made to an existing key from one thread while a GET request is performed on the same key from a second thread concurrently, the GET will return either the old data or the new data, but never partial or corrupt data.",
+      "evidence": "Updates to a single key are atomic. For example, if you make a PUT request to an\nexisting key from one thread and perform a GET request on the same key from a second\nthread concurrently, you will get either the old data or the new data, but never partial\nor corrupt data.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_008"
+    },
+    {
+      "question": "Does Amazon S3 support object locking for concurrent writers?",
+      "answer": "No, Amazon S3 does not support object locking for concurrent writers. If two PUT requests are made simultaneously to the same key, the one with the latest timestamp wins. Users must build their own object-locking mechanism if needed.",
+      "evidence": "Amazon S3 does not support object locking for concurrent writers. If two PUT\n  requests are simultaneously made to the same key, the request with the\n  latest timestamp wins. If this is an issue, you must build an object-locking\n  mechanism into your application.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_009"
+    },
+    {
+      "question": "What consistency model applies to bucket configurations in Amazon S3?",
+      "answer": "Bucket configurations have an eventual consistency model. For example, if you delete a bucket and immediately list all buckets, the deleted bucket might still appear. Also, after enabling versioning, AWS recommends waiting 15 minutes before issuing write operations.",
+      "evidence": "Bucket configurations have an eventual consistency model. Specifically, this means\nthat:\n\n* If you delete a bucket and immediately list all buckets, the deleted bucket\n  might still appear in the list.\n* If you enable versioning on a bucket for the first time, it might take a short\n  amount of time for the change to be fully propagated. We recommend that you wait\n  for 15 minutes after enabling versioning before issuing write operations (PUT or\n  DELETE requests) on objects in the bucket.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_010"
+    },
+    {
+      "question": "How does Amazon S3 achieve high availability for stored data?",
+      "answer": "Amazon S3 achieves high availability by replicating data across multiple servers within AWS data centers. If a PUT request is successful, the data is safely stored, and any subsequent read will return the data written by the PUT request.",
+      "evidence": "Amazon S3 achieves high availability by replicating data across multiple servers within\nAWS data centers. If a PUT request is successful, your data is safely stored. Any read\n(GET or LIST request) that is initiated following the receipt of a successful PUT\nresponse will return the data written by the PUT request.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_011"
+    },
+    {
+      "question": "What are the fundamental entities stored in Amazon S3 and what do they consist of?",
+      "answer": "Objects are the fundamental entities stored in Amazon S3. They consist of object data and metadata, where the metadata is a set of name-value pairs describing the object, including default metadata like the date last modified and standard HTTP metadata like Content-Type.",
+      "evidence": "Objects are the fundamental entities stored in Amazon S3. Objects consist of object\ndata and metadata. The metadata is a set of name-value pairs that describe the\nobject. These pairs include some default metadata, such as the date last modified,\nand standard HTTP metadata, such as `Content-Type`. You can also specify\ncustom metadata at the time that the object is stored.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_013"
+    },
+    {
+      "question": "What is a bucket policy in Amazon S3 and what is its size limit?",
+      "answer": "A bucket policy is a resource-based IAM policy used to grant access permissions to a bucket and its objects. Only the bucket owner can associate a policy with a bucket, and bucket policies are limited to 20 KB in size.",
+      "evidence": "A bucket policy is a resource-based AWS Identity and Access Management (IAM) policy that you can use to\ngrant access permissions to your bucket and the objects in it. Only the bucket owner\ncan associate a policy with a bucket. The permissions attached to the bucket apply\nto all of the objects in the bucket that are owned by the bucket owner. Bucket\npolicies are limited to 20 KB in size.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_014"
+    },
+    {
+      "question": "How does Amazon S3 handle billing and what is the pricing model?",
+      "answer": "Amazon S3 charges you only for what you actually use, with no hidden fees and no overage charges. This variable-cost model can grow with your business while providing cost advantages of the AWS infrastructure.",
+      "evidence": "Amazon S3 charges you only for what you actually use, with no hidden fees and no overage\ncharges. This model gives you a variable-cost service that can grow with your business\nwhile giving you the cost advantages of the AWS infrastructure.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_016"
+    },
+    {
+      "question": "What is the status of SOAP API support in Amazon S3?",
+      "answer": "SOAP API support over HTTP is deprecated, but it is still available over HTTPS. Newer Amazon S3 features are not supported for SOAP, and AWS recommends using either the REST API or the AWS SDKs instead.",
+      "evidence": "SOAP API support over HTTP is deprecated, but it is still available over\nHTTPS. Newer Amazon S3 features are not supported for SOAP. We recommend that you use\neither the REST API or the AWS SDKs.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_018"
+    },
+    {
+      "question": "How do you create a bucket in Amazon S3 using the AWS Management Console?",
+      "answer": "Sign in to the AWS Management Console, open the Amazon S3 console, choose a Region, select General purpose buckets in the left navigation, and click Create bucket. Enter a unique bucket name that is between 3 and 63 characters long, consists only of lowercase letters, numbers, periods, and hyphens, and begins and ends with a letter or number.",
+      "evidence": "3. In the left navigation pane, choose **General purpose buckets**.\n4. Choose **Create bucket**. The **Create bucket** page opens.\n5. For **Bucket name**, enter a name for your bucket.\nThe bucket name must:\n* Be unique within a partition. A partition is a grouping of Regions. AWS currently has\nthree partitions: `aws` (commercial Regions), `aws-cn` (China Regions), and\n`aws-us-gov` (AWS GovCloud (US) Regions).\n* Be between 3 and 63 characters long.\n* Consist only of lowercase letters, numbers, periods (`.`), and hyphens\n(`-`). For best compatibility, we recommend that you avoid using periods\n(`.`) in bucket names, except for buckets that are used only for static website\nhosting.\n* Begin and end with a letter or number.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_019"
+    },
+    {
+      "question": "What happens when you create a bucket in Amazon S3 regarding its name and Region?",
+      "answer": "When you create a bucket, you enter a bucket name and choose the AWS Region. After creation, you cannot change the name of the bucket or its Region.",
+      "evidence": "When you create a bucket, you enter a bucket name and choose the AWS Region\nwhere the bucket will reside. After you create a bucket, you cannot change the name\nof the bucket or its Region.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_020"
+    },
+    {
+      "question": "What are the default encryption options available when creating an S3 bucket?",
+      "answer": "When creating an S3 bucket, you can choose from three encryption types: Server-side encryption with Amazon S3 managed keys (SSE-S3), Server-side encryption with AWS Key Management Service keys (SSE-KMS), or Dual-layer server-side encryption with AWS KMS keys (DSSE-KMS).",
+      "evidence": "To configure **Default encryption**, under **Encryption type**,\n    choose one of the following:\n\n    * **Server-side encryption with Amazon S3 managed keys (SSE-S3)**\n    * **Server-side encryption with AWS Key Management Service keys (SSE-KMS)**\n    * **Dual-layer server-side encryption with AWS Key Management Service (AWS KMS) keys\n      (DSSE-KMS)**",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_021"
+    },
+    {
+      "question": "What do S3 Bucket Keys do and how do they affect encryption costs?",
+      "answer": "S3 Bucket Keys lower the cost of encryption by decreasing request traffic from Amazon S3 to AWS KMS. They are enabled by default in the Amazon S3 console, though they are not supported for DSSE-KMS.",
+      "evidence": "S3 Bucket Keys lower the cost of encryption by decreasing request traffic from Amazon S3 to AWS KMS. For more\n       information, see Reducing the cost of SSE-KMS with Amazon S3 Bucket Keys. S3 Bucket Keys aren't\n       supported for DSSE-KMS.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_022"
+    },
+    {
+      "question": "What are the default access settings for all Amazon S3 resources?",
+      "answer": "By default, all Amazon S3 resources are private. The root user of the AWS account that created the resource and IAM users with necessary permissions can access it. The resource owner decides who else can access the resource and what actions are allowed.",
+      "evidence": "By default, all Amazon S3 resources are private. Also by default, the root user of the AWS account\nthat created the resource (resource owner) and IAM users within that account with the\nnecessary permissions can access a resource that they created. The resource owner decides\nwho else can access the resource and the actions that others are allowed to perform on the\nresource.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_024"
+    },
+    {
+      "question": "How do directory buckets differ from general purpose buckets regarding public access?",
+      "answer": "Directory buckets have all public access disabled by default, and this behavior cannot be changed. You cannot grant access to objects stored in directory buckets; you can grant access only to the directory buckets themselves. In contrast, general purpose buckets can be made publicly accessible.",
+      "evidence": "Directory buckets have all public access disabled by default. This behavior can't be changed. You can't grant access to objects stored in directory buckets. You can grant access only to your\ndirectory buckets.",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_025"
+    },
+    {
+      "question": "What are vector buckets in Amazon S3 and what are they used for?",
+      "answer": "S3 vector buckets are purpose-built to store and query vectors using dedicated API operations. They can store vector embeddings for machine learning models, perform similarity searches, and integrate with services like Amazon Bedrock and Amazon OpenSearch.",
+      "evidence": "S3 vector buckets are a type of Amazon S3 bucket that are purpose-built to store and query vectors. Vector buckets use dedicated API operations to write and query vector data efficiently. With S3 vector buckets, you can store vector embeddings for machine learning models, perform similarity searches, and integrate with services like Amazon Bedrock and Amazon OpenSearch.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_026"
+    },
+    {
+      "question": "What is S3 Versioning and what happens when you delete a versioned object?",
+      "answer": "S3 Versioning is a means of keeping multiple variants of an object in the same bucket. When you delete an object from a versioning-enabled bucket, Amazon S3 inserts a delete marker instead of permanently removing the object. You can always restore the previous version.",
+      "evidence": "Versioning-enabled buckets can help you recover objects from accidental deletion or\noverwrite. For example, if you delete an object, Amazon S3 inserts a delete marker instead of\nremoving the object permanently. The delete marker becomes the current object version. If\nyou overwrite an object, it results in a new object version in the bucket. You can always\nrestore the previous version.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_027"
+    },
+    {
+      "question": "Is S3 Versioning enabled by default and can a versioned bucket return to an unversioned state?",
+      "answer": "No, S3 Versioning is disabled on buckets by default and must be explicitly enabled. Once versioning is enabled on a bucket, it can never return to an unversioned state, but versioning can be suspended.",
+      "evidence": "You enable and suspend versioning at the bucket level. After you version-enable a\nbucket, it can never return to an unversioned state. But you can *suspend* versioning on that bucket.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_028"
+    },
+    {
+      "question": "How are versioned objects billed in Amazon S3?",
+      "answer": "Normal Amazon S3 rates apply for every version of an object stored and transferred. Each version is the entire object, not just a diff from the previous version, so if you have three versions stored, you are charged for three full objects.",
+      "evidence": "Normal Amazon S3 rates apply for every version of an object stored and transferred.\n  Each version of an object is the entire object; it is not just a diff from the\n  previous version. Thus, if you have three versions of an object stored, you are\n  charged for three objects.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_029"
+    },
+    {
+      "question": "Can a bucket policy prevent deletions or transitions performed by an S3 Lifecycle rule?",
+      "answer": "No, you cannot use a bucket policy to prevent deletions or transitions by an S3 Lifecycle rule. Even if the bucket policy denies all actions for all principals, the S3 Lifecycle configuration still functions as normal.",
+      "evidence": "You can't use a bucket policy to prevent deletions or transitions by an S3 Lifecycle rule. For example, even if your\nbucket policy denies all actions for all principals, your S3 Lifecycle configuration\nstill functions as normal.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_031"
+    },
+    {
+      "question": "What are the two types of replication in Amazon S3?",
+      "answer": "Amazon S3 has two types of replication: live replication (which automatically replicates new and updated objects as they are written) and on-demand replication (which replicates existing objects using S3 Batch Replication).",
+      "evidence": "There are two types of replication: *live replication* and\n*on-demand replication*.\n* **Live replication** \u00e2\u0080\u0093 **To\nautomatically replicate new and updated objects** as they are written to the\nsource bucket, use live replication. Live replication doesn't replicate any objects that\nexisted in the bucket before you set up replication. To replicate objects that existed\nbefore you set up replication, use on-demand replication.\n* **On-demand replication** \u00e2\u0080\u0093 **To\nreplicate existing objects** from the source bucket to one or more destination\nbuckets on demand, use S3 Batch Replication. For more information about replicating",
+      "question_type": "factual",
+      "qa_id": "aws_s3_032"
+    },
+    {
+      "question": "What is the availability and durability of S3 Intelligent-Tiering?",
+      "answer": "S3 Intelligent-Tiering is designed for 99.9% availability and 99.999999999% durability (eleven nines).",
+      "evidence": "S3 Intelligent-Tiering is designed for 99.9% availability and 99.999999999% durability.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_035"
+    },
+    {
+      "question": "What are the minimum storage requirements for S3 Standard-IA and S3 One Zone-IA?",
+      "answer": "The S3 Standard-IA and S3 One Zone-IA storage classes are suitable for objects larger than 128 KB that you plan to store for at least 30 days. If an object is less than 128 KB, Amazon S3 charges you for 128 KB, and if you delete an object before 30 days, you are charged for the full 30-day period.",
+      "evidence": "The S3 Standard-IA and S3 One Zone-IA storage classes are suitable for objects larger than\n128 KB that you plan to store for at least 30 days. If an object is less than 128 KB, Amazon S3\ncharges you for 128 KB. If you delete an object before the end of the 30-day minimum storage\nduration period, you are charged for 30 days.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_036"
+    },
+    {
+      "question": "What is the minimum object size for S3 Intelligent-Tiering monitoring?",
+      "answer": "Objects less than 128 KB are not monitored and not eligible for auto-tiering in S3 Intelligent-Tiering. Smaller objects are always stored in the Frequent Access tier.",
+      "evidence": "If the size of an object is less than 128 KB, it is not monitored and not eligible for\nauto-tiering. Smaller objects are always stored in the Frequent Access tier.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_037"
+    },
+    {
+      "question": "How does server-side encryption work in Amazon S3?",
+      "answer": "Server-side encryption encrypts your object before saving it on disks in AWS data centers and then decrypts it when you download the objects. If you authenticate your request and have access permissions, there is no difference in the way you access encrypted or unencrypted objects.",
+      "evidence": "*Server-side encryption* encrypts your object before\n  saving it on disks in its data centers and then decrypts it when you download\n  the objects. If you authenticate your request and you have access permissions,\n  there is no difference in the way you access encrypted or unencrypted objects.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_039"
+    },
+    {
+      "question": "What encryption algorithm does SSE-S3 use and how does it handle key management?",
+      "answer": "SSE-S3 uses 256-bit Advanced Encryption Standard (AES-256) to encrypt data. Each object is encrypted with a unique key, and as an additional safeguard, SSE-S3 encrypts the key itself with a root key that it regularly rotates.",
+      "evidence": "SSE-S3 uses one of the strongest block ciphers available, 256-bit Advanced Encryption Standard (AES-256), to encrypt your data.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_041"
+    },
+    {
+      "question": "What is SSE-C and who manages the encryption keys?",
+      "answer": "With server-side encryption with customer-provided keys (SSE-C), the customer manages the encryption keys while Amazon S3 manages the encryption as it writes to disks and the decryption when objects are accessed.",
+      "evidence": "With server-side encryption with customer-provided keys (SSE-C), you manage the encryption keys, and Amazon S3 manages the encryption as it writes to disks and the decryption when you access your objects.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_043"
+    },
+    {
+      "question": "What is the default encryption behavior for all new objects uploaded to Amazon S3?",
+      "answer": "Starting January 5, 2023, all new object uploads to Amazon S3 are automatically encrypted at no additional cost and with no impact on performance, using server-side encryption with Amazon S3 managed keys (SSE-S3) as the base level of encryption.",
+      "evidence": "Amazon S3 now applies server-side encryption with Amazon S3 managed keys (SSE-S3) as the base level of encryption for every bucket in Amazon S3. Starting January 5, 2023, all new object uploads to Amazon S3 are automatically encrypted at no additional cost and with no impact on performance.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_044"
+    },
+    {
+      "question": "What type of KMS key must be used for server-side encryption in Amazon S3?",
+      "answer": "Amazon S3 supports only symmetric encryption KMS keys for server-side encryption. Asymmetric KMS keys are not supported.",
+      "evidence": "When you use an AWS KMS key for server-side encryption in Amazon S3, you must choose a symmetric encryption KMS key. Amazon S3 supports only symmetric encryption KMS keys and not asymmetric KMS keys.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_045"
+    },
+    {
+      "question": "What is Amazon S3 Transfer Acceleration and how does it work?",
+      "answer": "Amazon S3 Transfer Acceleration is a bucket-level feature that enables fast, easy, and secure transfers of files over long distances. It takes advantage of Amazon CloudFront's globally distributed edge locations; data arrives at an edge location and is then routed to Amazon S3 over an optimized network path.",
+      "evidence": "Amazon S3 Transfer Acceleration is a bucket-level feature that enables fast, easy, and secure transfers of files over long distances between your client and an S3 general purpose bucket. Transfer Acceleration is designed to optimize transfer speeds from across the world into S3 general purpose buckets. Transfer Acceleration takes advantage of the globally distributed edge locations in Amazon CloudFront. As the data arrives at an edge location, the data is routed to Amazon S3 over an optimized network path.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_046"
+    },
+    {
+      "question": "What are the naming requirements for buckets used with Transfer Acceleration?",
+      "answer": "The bucket name used for Transfer Acceleration must be DNS-compliant and must not contain periods. Transfer Acceleration is only supported on virtual-hosted style requests.",
+      "evidence": "The name of the bucket used for Transfer Acceleration must be DNS-compliant and must not contain periods (\".\").",
+      "question_type": "factual",
+      "qa_id": "aws_s3_047"
+    },
+    {
+      "question": "What endpoint format is used to access a Transfer Acceleration-enabled bucket?",
+      "answer": "To access a Transfer Acceleration-enabled bucket, you must use the endpoint bucket-name.s3-accelerate.amazonaws.com, or the dual-stack endpoint bucket-name.s3-accelerate.dualstack.amazonaws.com for IPv6 connectivity.",
+      "evidence": "To access the bucket that is enabled for Transfer Acceleration, you must use the endpoint `bucket-name.s3-accelerate.amazonaws.com`. Or, use the dual-stack endpoint `bucket-name.s3-accelerate.dualstack.amazonaws.com` to connect to the enabled bucket over IPv6.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_048"
+    },
+    {
+      "question": "How long does it take for Transfer Acceleration to become effective after being enabled?",
+      "answer": "After you enable Transfer Acceleration on a bucket, it might take up to 20 minutes before the data transfer speed to the bucket increases.",
+      "evidence": "After you enable Transfer Acceleration on a bucket, it might take up to 20 minutes before the data transfer speed to the bucket increases.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_049"
+    },
+    {
+      "question": "What can Amazon S3 be used for in terms of static website hosting?",
+      "answer": "Amazon S3 can be used to host a static website where individual webpages include static content and may contain client-side scripts. AWS recommends using AWS Amplify Hosting for static website content stored on S3, as it provides a fully managed service with a globally available CDN powered by Amazon CloudFront.",
+      "evidence": "You can use Amazon S3 to host a static website. On a *static* website, individual webpages include static content. They might also contain client-side scripts.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_050"
+    },
+    {
+      "question": "Why should you use Amazon CloudFront instead of directly making an S3 bucket public for website hosting?",
+      "answer": "Using CloudFront allows you to host an S3 static website publicly while keeping all four Block Public Access settings enabled on the bucket. Additionally, S3 static websites without CloudFront can only support HTTP endpoints, while CloudFront adds security headers including HTTPS, which encrypts normal HTTP requests and protects against common cyberattacks.",
+      "evidence": "If you want to keep all four S3 Block Public Access settings enabled and host an S3 static website, you can use Amazon CloudFront origin access control (OAC). Amazon CloudFront provides the capabilities required to set up a secure static website. Also, Amazon S3 static websites that do not use this solution can only support HTTP endpoints. CloudFront uses the durable storage of Amazon S3 while providing additional security headers, such as HTTPS. HTTPS adds security by encrypting a normal HTTP request and protecting against common cyberattacks.",
+      "question_type": "causal",
+      "qa_id": "aws_s3_051"
+    },
+    {
+      "question": "What is the limitation when hosting a static website with SSE-KMS encryption on the S3 bucket?",
+      "answer": "If the bucket hosting a static website has been encrypted using SSE-KMS, you must create an Amazon CloudFront distribution to serve the website because SSE-KMS does not support anonymous users. You must also use origin access control (OAC) instead of origin access identity (OAI), since OAI does not support SSE-KMS.",
+      "evidence": "If the bucket that you're using to host your static website has been encrypted using server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS), you must create an Amazon CloudFront distribution to serve your website because SSE-KMS doesn't support anonymous users. When you create your CloudFront distribution, you must use origin access control (OAC) instead of origin access identity (OAI) to secure the origin. OAI doesn't support SSE-KMS, so you must use OAC instead.",
+      "question_type": "causal",
+      "qa_id": "aws_s3_052"
+    },
+    {
+      "question": "What are the advantages of using multipart upload?",
+      "answer": "Multipart upload provides improved throughput through parallel part uploads, quick recovery from network issues since only failed parts need retransmission, the ability to pause and resume uploads with no expiry, and the ability to begin uploading before knowing the final object size.",
+      "evidence": "Using multipart upload provides the following advantages:\n* **Improved throughput** \u00e2\u0080\u0093 You can upload parts in\nparallel to improve throughput.\n* **Quick recovery from any network issues** \u00e2\u0080\u0093 Smaller\npart size minimizes the impact of restarting a failed upload due to a network error.\n* **Pause and resume object uploads** \u00e2\u0080\u0093 You can upload\nobject parts over time. After you initiate a multipart upload, there is no expiry; you must\nexplicitly complete or stop the multipart upload.\n* **Begin an upload before you know the final object size**\n\u00e2\u0080\u0093 You can upload an object as you create it.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_054"
+    },
+    {
+      "question": "What are the three steps in the multipart upload process?",
+      "answer": "Multipart upload is a three-step process: you initiate the upload (receiving an upload ID), upload the object parts, and then complete the multipart upload. Upon receiving the complete request, Amazon S3 constructs the object from the uploaded parts.",
+      "evidence": "Multipart upload is a three-step process: You initiate the upload, upload the object parts,\nand\u00e2\u0080\u0094after you've uploaded all the parts\u00e2\u0080\u0094complete the multipart upload. Upon receiving the\ncomplete multipart upload request, Amazon S3 constructs the object from the uploaded parts, and you can access\nthe object just as you would any other object in your bucket.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_055"
+    },
+    {
+      "question": "What range of part numbers can be used in a multipart upload?",
+      "answer": "When uploading a part, you can choose any part number between 1 and 10,000. Part numbers do not need to be in a consecutive sequence, but uploading a new part with the same number as a previously uploaded part will overwrite the earlier part.",
+      "evidence": "When uploading a part, you must specify a part number in addition to the upload ID. You\ncan choose any part number between 1 and 10,000. A part number uniquely identifies a part\nand its position in the object you are uploading. The part number that you choose doesn\u00e2\u0080\u0099t\nneed to be in a consecutive sequence (for example, it can be 1, 5, and 14). Be aware that if\nyou upload a new part using the same part number as a previously uploaded part, the\npreviously uploaded part gets overwritten.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_056"
+    },
+    {
+      "question": "How can you minimize storage costs from incomplete multipart uploads?",
+      "answer": "You can configure a lifecycle rule to delete incomplete multipart uploads after a specified number of days by using the AbortIncompleteMultipartUpload action.",
+      "evidence": "To minimize your storage costs, we recommend that you configure a lifecycle rule to delete incomplete multipart uploads after a specified number of days by using the `AbortIncompleteMultipartUpload` action.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_058"
+    },
+    {
+      "question": "How many requests per second can Amazon S3 achieve per partitioned prefix?",
+      "answer": "Amazon S3 can achieve at least 3,500 PUT/COPY/POST/DELETE or 5,500 GET/HEAD requests per second per partitioned prefix. There are no limits to the number of prefixes in a bucket.",
+      "evidence": "For example, your application can achieve at least 3,500 PUT/COPY/POST/DELETE or 5,500 GET/HEAD requests per second per partitioned Amazon S3 prefix. There are no limits to the number of prefixes in a bucket.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_060"
+    },
+    {
+      "question": "What AWS services can be used for caching with Amazon S3 to improve performance?",
+      "answer": "If you want higher transfer rates over a single HTTP connection or single-digit millisecond latencies, you can use Amazon CloudFront or Amazon ElastiCache for caching with Amazon S3.",
+      "evidence": "For example, if you want higher transfer rates over a single HTTP connection or single-digit millisecond latencies, use Amazon CloudFront or Amazon ElastiCache for caching with Amazon S3.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_063"
+    },
+    {
+      "question": "What are the two retention modes provided by S3 Object Lock?",
+      "answer": "S3 Object Lock provides two retention modes: compliance mode and governance mode. In compliance mode, a protected object version cannot be overwritten or deleted by any user, including the root user. In governance mode, users cannot overwrite or delete an object unless they have special permissions.",
+      "evidence": "S3 Object Lock provides two retention modes that apply different levels of protection to your objects:\n\n* Compliance mode\n* Governance mode",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_064"
+    },
+    {
+      "question": "What is the only way to delete an object locked in compliance mode before its retention date expires?",
+      "answer": "The only way to delete an object under compliance mode before its retention date expires is to delete the associated AWS account.",
+      "evidence": "The only way to delete an object under the compliance mode before its retention date expires is to delete the associated AWS account.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_065"
+    },
+    {
+      "question": "How do you override governance mode retention settings on an object?",
+      "answer": "To override or remove governance-mode retention settings, you must have the s3:BypassGovernanceRetention permission and must explicitly include x-amz-bypass-governance-retention:true as a request header.",
+      "evidence": "To override or remove governance-mode retention settings, you must have the `s3:BypassGovernanceRetention` permission and must explicitly include `x-amz-bypass-governance-retention:true` as a request header with any request that requires overriding governance mode.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_066"
+    },
+    {
+      "question": "What is a legal hold in S3 Object Lock and how does it differ from a retention period?",
+      "answer": "A legal hold prevents an object version from being overwritten or deleted, similar to a retention period, but it has no expiration date and remains in place until explicitly removed. Legal holds are independent from retention periods and can be placed and removed by any user with the s3:PutObjectLegalHold permission.",
+      "evidence": "With Object Lock, you can also place a *legal hold* on an object version. Like a retention period, a legal hold prevents an object version from being overwritten or deleted. However, a legal hold doesn't have an associated fixed amount of time and remains in effect until removed. Legal holds can be freely placed and removed by any user who has the `s3:PutObjectLegalHold` permission.",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_067"
+    },
+    {
+      "question": "Does S3 Object Lock require S3 Versioning to be enabled?",
+      "answer": "Yes, Object Lock works only in buckets that have S3 Versioning enabled. When you lock an object version, Amazon S3 stores the lock information in the metadata for that object version.",
+      "evidence": "Object Lock works only in buckets that have S3 Versioning enabled. When you lock an object version, Amazon S3 stores the lock information in the metadata for that object version.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_068"
+    },
+    {
+      "question": "How many access points can be attached to a single S3 bucket?",
+      "answer": "A bucket can have up to 10,000 access points attached, and for each access point, you can enforce distinct permissions and network controls.",
+      "evidence": "A bucket can have up to 10,000 access points attached, and for each access point, you can enforce distinct permissions and network controls to give you detailed control over access to your S3 objects.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_071"
+    },
+    {
+      "question": "What operations can and cannot be performed using access points?",
+      "answer": "Access points can only be used to perform operations on objects, such as GetObject and PutObject. You cannot use access points to perform other Amazon S3 operations such as deleting buckets or creating S3 Replication configurations.",
+      "evidence": "You can only use access points to perform operations on objects. You can't use access points to perform other Amazon S3 operations, such as deleting buckets or creating S3 Replication configurations.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_073"
+    },
+    {
+      "question": "What is S3 Batch Operations and how many objects can it process?",
+      "answer": "S3 Batch Operations performs large-scale batch operations on Amazon S3 objects. A single job can perform a specified operation on billions of objects containing exabytes of data. By default, jobs can process up to 4 billion objects, and Copy, Object Tagging, Object Lock, Lambda, and Batch Replication jobs can support up to 20 billion objects.",
+      "evidence": "A single job can perform a specified operation on billions of objects containing exabytes of data. Amazon S3 tracks progress, sends notifications, and stores a detailed completion report of all actions, providing a fully managed, auditable, and serverless experience.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_074"
+    },
+    {
+      "question": "What types of operations can S3 Batch Operations perform?",
+      "answer": "S3 Batch Operations can copy objects, update server-side encryption, set object tags or access control lists (ACLs), initiate object restores from S3 Glacier Flexible Retrieval, or invoke an AWS Lambda function to perform custom actions.",
+      "evidence": "Use S3 Batch Operations to copy objects, update server-side encryption of objects, and set object tags or access control lists (ACLs). You can also initiate object restores from S3 Glacier Flexible Retrieval or invoke an AWS Lambda function to perform custom actions using your objects.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_076"
+    },
+    {
+      "question": "How can you use S3 Batch Operations to retroactively encrypt existing objects?",
+      "answer": "When you change the default encryption configuration to SSE-KMS, existing objects are not re-encrypted. You can use S3 Batch Operations with the Copy objects action to copy existing objects back to the same bucket as SSE-KMS encrypted objects, providing a way to retroactively encrypt them.",
+      "evidence": "When you change the default encryption configuration of your bucket to SSE-KMS, the encryption type of the existing Amazon S3 objects in the bucket is not changed. To change the encryption type of your pre-existing objects after updating the default encryption configuration to SSE-KMS, you can use Amazon S3 Batch Operations.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_077"
+    },
+    {
+      "question": "What are the supported destinations for Amazon S3 event notifications?",
+      "answer": "Amazon S3 can send event notification messages to Amazon Simple Notification Service (Amazon SNS) topics, Amazon Simple Queue Service (Amazon SQS) queues, AWS Lambda functions, and Amazon EventBridge.",
+      "evidence": "Amazon S3 can send event notification messages to the following destinations. You specify the Amazon Resource Name (ARN) value of these destinations in the notification configuration.\n\n* Amazon Simple Notification Service (Amazon SNS) topics\n* Amazon Simple Queue Service (Amazon SQS) queues\n* AWS Lambda function\n* Amazon EventBridge",
+      "question_type": "factual",
+      "qa_id": "aws_s3_079"
+    },
+    {
+      "question": "Can Amazon SQS FIFO queues be used as S3 event notification destinations?",
+      "answer": "No, Amazon SQS FIFO (First-In-First-Out) queues are not supported as an Amazon S3 event notification destination. To send a notification for an S3 event to an SQS FIFO queue, you can use Amazon EventBridge as an intermediary.",
+      "evidence": "Amazon Simple Queue Service FIFO (First-In-First-Out) queues aren't supported as an Amazon S3 event notification destination. To send a notification for an Amazon S3 event to an Amazon SQS FIFO queue, you can use Amazon EventBridge.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_080"
+    },
+    {
+      "question": "What is the delivery guarantee for Amazon S3 event notifications?",
+      "answer": "Amazon S3 event notifications are designed to be delivered at least once. Typically, they are delivered in seconds but can sometimes take a minute or longer.",
+      "evidence": "Amazon S3 event notifications are designed to be delivered at least once. Typically, event notifications are delivered in seconds but can sometimes take a minute or longer.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_081"
+    },
+    {
+      "question": "What execution loop risk exists with S3 event notifications?",
+      "answer": "If your notification writes to the same bucket that triggers the notification, it could cause an execution loop. For example, if a bucket triggers a Lambda function on object upload and the function uploads an object to the same bucket, it indirectly triggers itself. To avoid this, use two buckets or configure the trigger to only apply to a specific prefix.",
+      "evidence": "If your notification writes to the same bucket that triggers the notification, it could cause an execution loop. For example, if the bucket triggers a Lambda function each time an object is uploaded, and the function uploads an object to the bucket, then the function indirectly triggers itself. To avoid this, use two buckets, or configure the trigger to only apply to a prefix used for incoming objects.",
+      "question_type": "causal",
+      "qa_id": "aws_s3_082"
+    },
+    {
+      "question": "What is Amazon CloudWatch used for in the context of Amazon S3 monitoring?",
+      "answer": "Using Amazon CloudWatch alarms, you watch a single metric over a time period you specify. If the metric exceeds a given threshold, a notification is sent to an Amazon SNS topic or AWS Auto Scaling policy. CloudWatch alarms invoke actions only when the state has changed and been maintained for a specified number of periods.",
+      "evidence": "Using Amazon CloudWatch alarms, you watch a single metric over a time period that you specify. If the metric exceeds a given threshold, a notification is sent to an Amazon SNS topic or AWS Auto Scaling policy. CloudWatch alarms do not invoke actions because they are in a particular state. Rather the state must have changed and been maintained for a specified number of periods.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_083"
+    },
+    {
+      "question": "What information does AWS CloudTrail provide for Amazon S3?",
+      "answer": "CloudTrail provides a record of actions taken by a user, role, or an AWS service in Amazon S3. Using the information collected by CloudTrail, you can determine the request that was made to Amazon S3, the IP address from which the request was made, who made the request, when it was made, and additional details.",
+      "evidence": "CloudTrail provides a record of actions taken by a user, role, or an AWS service in Amazon S3. Using the information collected by CloudTrail, you can determine the request that was made to Amazon S3, the IP address from which the request was made, who made the request, when it was made, and additional details.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_084"
+    },
+    {
+      "question": "What does Amazon GuardDuty do for Amazon S3 security?",
+      "answer": "Amazon GuardDuty is a threat detection service that continuously monitors accounts, containers, workloads, and data to identify potential threats or security risks to S3 buckets. GuardDuty S3 Protection monitors S3 data events collected by CloudTrail and identifies potentially anomalous and malicious behavior in all S3 buckets.",
+      "evidence": "Amazon GuardDuty is a threat detection service that continuously monitors your accounts, containers, workloads, and the data within your AWS environment to identify potential threats or security risks to your S3 buckets. GuardDuty also provides rich context about the threats that it detects.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_085"
+    },
+    {
+      "question": "What Amazon S3-related checks does AWS Trusted Advisor perform?",
+      "answer": "AWS Trusted Advisor performs three Amazon S3-related checks: logging configuration of S3 buckets, security checks for S3 buckets that have open access permissions, and fault tolerance checks for S3 buckets that don't have versioning enabled or have versioning suspended.",
+      "evidence": "Trusted Advisor has the following Amazon S3-related checks:\n\n* Logging configuration of Amazon S3 buckets.\n* Security checks for Amazon S3 buckets that have open access permissions.\n* Fault tolerance checks for Amazon S3 buckets that don't have versioning enabled, or have versioning suspended.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_086"
+    },
+    {
+      "question": "What is Amazon S3 Inventory and what reports does it generate?",
+      "answer": "Amazon S3 Inventory generates a list of objects and metadata that you can use to query and manage your objects. Reports include granular data such as object size, last modified date, encryption status and other fields, and are available daily or weekly.",
+      "evidence": "Amazon S3 Inventory generates a list of objects and metadata that you can use to query and manage your objects. You can use this inventory report to generate granular data such as object size, last modified date, encryption status and other fields. Those reports are available daily or weekly to automatically give the latest list.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_088"
+    },
+    {
+      "question": "What are the three automatic access tiers in S3 Intelligent-Tiering?",
+      "answer": "S3 Intelligent-Tiering automatically stores objects in three access tiers: Frequent Access (for newly uploaded or transitioned objects), Infrequent Access (for objects not accessed in 30 consecutive days), and Archive Instant Access (for objects not accessed for 90 consecutive days).",
+      "evidence": "S3 Intelligent-Tiering automatically stores objects in three access tiers:\n* **Frequent Access** \u00e2\u0080\u0093 Objects that are uploaded or\ntransitioned to S3 Intelligent-Tiering are automatically stored in the\nFrequent Access tier.\n* **Infrequent Access** \u00e2\u0080\u0093 S3 Intelligent-Tiering\nmoves objects that have not been accessed in 30 consecutive days to the\nInfrequent Access tier.\n* **Archive Instant Access** \u00e2\u0080\u0093 With\nS3 Intelligent-Tiering, any existing objects that have not been accessed for 90 consecutive\ndays are automatically moved to the Archive Instant Access tier.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_089"
+    },
+    {
+      "question": "What are the two optional archive access tiers in S3 Intelligent-Tiering and when do they activate?",
+      "answer": "The two optional tiers are Archive Access (which automatically archives objects not accessed for a minimum of 90 consecutive days) and Deep Archive Access (which archives objects not accessed for a minimum of 180 consecutive days). Both must be explicitly activated.",
+      "evidence": "archives objects that have not been accessed for a minimum of 90 consecutive days.\n* **Deep Archive Access** \u00e2\u0080\u0093 S3 Intelligent-Tiering\nprovides you with the option to activate the Deep Archive Access tier for data that can be\naccessed asynchronously. After activation, the Deep Archive Access tier automatically\narchives objects that have not been accessed for a minimum of 180 consecutive days.",
+      "question_type": "factual",
+      "qa_id": "aws_s3_090"
+    },
+    {
+      "question": "What is the Reduced Redundancy Storage (RRS) class and is it recommended?",
+      "answer": "Reduced Redundancy Storage (RRS) is designed for noncritical, reproducible data that can be stored with less redundancy than S3 Standard. AWS does not recommend using this storage class because S3 Standard is more cost-effective. RRS objects have an average annual expected loss of 0.01 percent of objects.",
+      "evidence": "Storage**  (`REDUCED_REDUNDANCY`) \u00e2\u0080\u0093 The Reduced Redundancy\nStorage (RRS) class is designed for noncritical, reproducible data that can be\nstored with less redundancy than the S3 Standard storage class.\n###### Important\nWe recommend not using this storage class. The S3 Standard storage class is more\ncost-effective.\nFor durability, RRS objects have an average annual expected loss of 0.01 percent of",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_091"
+    },
+    {
+      "question": "How does S3 One Zone-IA differ from S3 Standard-IA in terms of data resilience?",
+      "answer": "S3 One Zone-IA stores object data in only one Availability Zone, making it less expensive but not resilient to the physical loss of that Availability Zone from disasters such as earthquakes and floods. S3 Standard-IA stores data redundantly across multiple geographically separated Availability Zones, making it resilient to the loss of an Availability Zone.",
+      "evidence": "* **S3 One Zone-IA** (`ONEZONE_IA`) \u00e2\u0080\u0093 Amazon S3 stores the object data in\nonly one Availability Zone, which makes it less expensive than S3 Standard-IA. However, the\ndata is not resilient to the physical loss of the Availability Zone resulting from\ndisasters, such as earthquakes and floods. The S3 One Zone-IA storage class is as durable as",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_093"
+    },
+    {
+      "question": "What is S3 Object Ownership and what is its default setting?",
+      "answer": "S3 Object Ownership is an Amazon S3 bucket-level setting that controls ownership of objects uploaded to a bucket and allows you to disable or enable ACLs. By default, Object Ownership is set to Bucket owner enforced, and all ACLs are disabled, meaning the bucket owner owns all objects and manages access exclusively using policies.",
+      "evidence": "S3 Object Ownership is an Amazon S3 bucket-level setting that you can use to both control ownership of the objects that are uploaded to your bucket and to disable or enable ACLs. By default, Object Ownership is set to the Bucket owner enforced setting, and all ACLs are disabled. When ACLs are disabled, the bucket owner owns all the objects in the bucket and manages access to them exclusively by using access-management policies.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_094"
+    },
+    {
+      "question": "What is a prefix in Amazon S3 and how can it be used for access control?",
+      "answer": "A prefix is a string of characters at the beginning of an object key name used to organize stored objects. You can use a delimiter character like a forward slash to indicate the end of the prefix. Amazon S3 supports managing access to objects by their prefixes, such as limiting access to only objects with names starting with a specific prefix.",
+      "evidence": "A prefix in Amazon S3 is a string of characters at the beginning of an object key name that's used to organize the objects that are stored in your S3 buckets. You can use a delimiter character, such as a forward slash (`/`), to indicate the end of the prefix within the object key name.",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_096"
+    },
+    {
+      "question": "What are table buckets in Amazon S3 and what data format do they use?",
+      "answer": "Table buckets are recommended for storing tabular data such as daily purchase transactions, streaming sensor data, or ad impressions. S3 Tables are purpose-built for storing tabular data in the Apache Iceberg format and can be queried with popular engines including Amazon Athena, Amazon Redshift, and Apache Spark.",
+      "evidence": "**Table buckets** \u00e2\u0080\u0093 Recommended for storing tabular data, such as daily purchase transactions, streaming sensor data, or ad impressions. Tabular data represents data in columns and rows, like in a database table. Table buckets provide\nS3 storage that's optimized for analytics and machine learning workloads, with features designed to continuously improve query performance and reduce storage costs for tables. S3 Tables are purpose-built for\nstoring tabular data in the Apache Iceberg format. You can query tabular data in S3 Tables with popular query engines, including",
+      "question_type": "definitional",
+      "qa_id": "aws_s3_097"
+    },
+    {
+      "question": "What happens to existing objects when you add a Lifecycle configuration rule to a bucket?",
+      "answer": "When you add a Lifecycle configuration to a bucket, the rules apply to both existing objects and objects added later. For example, if you add a rule with a 30-day expiration action, Amazon S3 will queue for removal any existing objects that are already more than 30 days old.",
+      "evidence": "When you add a Lifecycle configuration to a bucket, the configuration rules apply to both existing objects and objects that you add later. For example, if you add a Lifecycle configuration rule today with an expiration action that causes objects to expire 30 days after creation, Amazon S3 will queue for removal any existing objects that are more than 30 days old.",
+      "question_type": "causal",
+      "qa_id": "aws_s3_098"
+    },
+    {
+      "question": "What permissions are needed to create an Object Lock enabled bucket?",
+      "answer": "To create an Object Lock enabled bucket, you must have the following permissions: s3:CreateBucket, s3:PutBucketVersioning, and s3:PutBucketObjectLockConfiguration. Enabling Object Lock also automatically enables versioning for the bucket.",
+      "evidence": "To create an Object Lock enabled bucket, you must have the following permissions: `s3:CreateBucket`, `s3:PutBucketVersioning`, and `s3:PutBucketObjectLockConfiguration`.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_099"
+    },
+    {
+      "question": "Why does AWS recommend using bucket policies or IAM user policies instead of ACLs for access control in Amazon S3?",
+      "answer": "AWS recommends using bucket policies or IAM user policies instead of ACLs because policies are a simplified and more flexible access control option for managing access to S3 resources.",
+      "evidence": "policies) or IAM user policies for access control instead of ACLs.\n  Policies are a simplified and more flexible access control option.",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_100"
+    },
+    {
+      "question": "At what levels can you control access to general purpose buckets in Amazon S3?",
+      "answer": "You can control access to general purpose buckets at the bucket, prefix (folder), or object tag level.",
+      "evidence": "However, you can grant public access to general purpose buckets.\nYou can control access to general purpose buckets at the bucket, prefix (folder), or object tag level.",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_101"
+    },
+    {
+      "question": "How do directory buckets organize objects differently from general purpose buckets in Amazon S3?",
+      "answer": "Directory buckets organize objects into hierarchical directories (prefixes) instead of the flat storage structure of general purpose buckets. This bucket type has no prefix limits and individual directories can scale horizontally.",
+      "evidence": "Directory buckets organize objects into hierarchical directories (prefixes) instead of the flat storage structure\nof general purpose buckets. This bucket type has no prefix limits and individual directories can scale horizontally.",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_102"
+    },
+    {
+      "question": "What happens to the version ID when you modify objects using CopyObject or PutObject operations in a versioned S3 bucket?",
+      "answer": "When you modify objects with operations such as CopyObject and PutObject, the new objects get a unique version ID.",
+      "evidence": "If you\nmodify these (or any other) objects with other operations, such as CopyObject and PutObject, the new objects\nget a unique version ID.",
+      "question_type": "causal",
+      "qa_id": "aws_s3_103"
+    },
+    {
+      "question": "What advantage does disabling ACLs provide for controlling access to objects in an S3 bucket?",
+      "answer": "With ACLs disabled, you can use policies to control access to all objects in your bucket, regardless of who uploaded the objects to your bucket, rather than needing to control access for each object individually.",
+      "evidence": "in circumstances where you need to control access for each object individually. With ACLs disabled, you can use policies\nto control access to all objects in your bucket, regardless of who uploaded the objects to your bucket.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_104"
+    },
+    {
+      "question": "What happens when a process reads an object that has just been deleted in Amazon S3?",
+      "answer": "When a process reads an object that has been deleted, Amazon S3 does not return any data because the object has been deleted.",
+      "evidence": "does not return any data because the object has been deleted.\n* A process deletes an existing object and immediately lists keys within its",
+      "question_type": "causal",
+      "qa_id": "aws_s3_105"
+    },
+    {
+      "question": "What does Amazon S3 guarantee about read requests that follow a successful PUT request?",
+      "answer": "If a PUT request is successful, the data is safely stored. Any read (GET or LIST request) that is initiated following the receipt of a successful PUT will return the written data.",
+      "evidence": "If a PUT request is successful, your data is safely stored. Any read\n(GET or LIST request) that is initiated following the receipt of a successful PUT",
+      "question_type": "causal",
+      "qa_id": "aws_s3_106"
+    },
+    {
+      "question": "Why is it impossible to make atomic updates across multiple keys in Amazon S3?",
+      "answer": "Updates in Amazon S3 are key-based, meaning there is no way to make atomic updates across keys. If atomic cross-key updates are needed, you must build an object-locking mechanism into your application.",
+      "evidence": "If this is an issue, you must build an object-locking\n  mechanism into your application.\n* Updates are key-based. There is no way to make atomic updates across keys.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_107"
+    },
+    {
+      "question": "What might happen if you delete a bucket and immediately list all buckets in Amazon S3?",
+      "answer": "If you delete a bucket and immediately list all buckets, the deleted bucket might still appear in the list due to eventual consistency in bucket listing operations.",
+      "evidence": "* If you delete a bucket and immediately list all buckets, the deleted bucket\n  might still appear in the list.",
+      "question_type": "causal",
+      "qa_id": "aws_s3_108"
+    },
+    {
+      "question": "What delay might occur when enabling versioning on an S3 bucket for the first time?",
+      "answer": "When you enable versioning on a bucket for the first time, it might take a short amount of time for the change to be fully propagated.",
+      "evidence": "* If you enable versioning on a bucket for the first time, it might take a short\n  amount of time for the change to be fully propagated.",
+      "question_type": "causal",
+      "qa_id": "aws_s3_109"
+    },
+    {
+      "question": "Why is the order of request processing unpredictable when concurrent applications write to Amazon S3?",
+      "answer": "The order in which Amazon S3 receives the requests and the order in which applications receive acknowledgments cannot be predicted because of various factors, such as network latency and the proximity of the host to the S3 Region.",
+      "evidence": "However, the\norder in which Amazon S3 receives the requests and the order in which applications\nreceive acknowledgments cannot be predicted because of various factors, such as",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_110"
+    },
+    {
+      "question": "What is the best way to determine the final value of an object after concurrent writes in Amazon S3?",
+      "answer": "The best way to determine the final value is to perform a read after both writes have been acknowledged, since factors like host proximity to the S3 Region can affect which write is processed last.",
+      "evidence": "Region, while W1 might be initiated by a host that is farther away. The best way to\ndetermine the final value is to perform a read after both writes have been",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_111"
+    },
+    {
+      "question": "What is required when making direct REST API calls to Amazon S3 in your application?",
+      "answer": "If you make direct REST API calls in your application, you must write the code to compute the signature and add it to the request.",
+      "evidence": "If you make direct REST API calls in your application, you must write the code to\ncompute the signature and add it to the request.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_112"
+    },
+    {
+      "question": "What toolkits or technologies can be used to interact with the Amazon S3 REST API?",
+      "answer": "To use the REST API, you can use any toolkit that supports HTTP, giving you broad flexibility in how you interact with S3 for operations like deleting buckets and objects.",
+      "evidence": "delete buckets and objects.\n\nTo use the REST API, you can use any toolkit that supports HTTP. You can even use",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_113"
+    },
+    {
+      "question": "How is Amazon S3 pricing designed with respect to storage planning?",
+      "answer": "Pricing for Amazon S3 is designed so that you don't have to plan for the storage requirements of your application, meaning you can scale storage without upfront capacity commitments.",
+      "evidence": "Pricing for Amazon S3 is designed so that you don't have to plan for the storage\nrequirements of your application.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_114"
+    },
+    {
+      "question": "Are new Amazon S3 customers charged automatically when they sign up for AWS?",
+      "answer": "No, when you sign up for AWS your account is automatically signed up for all services including S3, but you are charged only for the services that you use. New Amazon S3 customers can get started for free.",
+      "evidence": "However, you are charged only for the services that\nyou use. If you are a new Amazon S3 customer, you can get started with Amazon S3 for free.",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_115"
+    },
+    {
+      "question": "What is the first step in signing up for an AWS account?",
+      "answer": "The first step is to open https://portal.aws.amazon.com/billing/signup and follow the online instructions, which include receiving a phone call or text message and entering a verification code.",
+      "evidence": "1. Open https://portal.aws.amazon.com/billing/signup.\n2. Follow the online instructions.\n\n   Part of the sign-up procedure involves receiving a phone call or text message and entering",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_116"
+    },
+    {
+      "question": "How should you sign in to the AWS Management Console to secure the root user?",
+      "answer": "You should sign in to the AWS Management Console as the account owner by choosing Root user and entering your AWS account email address.",
+      "evidence": "1. Sign in to the AWS Management Console as the account owner by choosing **Root user** and entering your AWS account email address.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_117"
+    },
+    {
+      "question": "What security measure does AWS recommend enabling for the root user account?",
+      "answer": "AWS recommends turning on multi-factor authentication (MFA) for your root user to secure the account.",
+      "evidence": "2. Turn on multi-factor authentication (MFA) for your root user.\n\n   For instructions, see Enable a virtual MFA device for your AWS account root user (console) in the *IAM User Guide*.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_118"
+    },
+    {
+      "question": "What is the first step to create a user with administrative access in AWS?",
+      "answer": "The first step is to enable IAM Identity Center, as described in the AWS IAM Identity Center User Guide.",
+      "evidence": "1. Enable IAM Identity Center.\n\n   For instructions, see Enabling\n   AWS IAM Identity Center in the\n   *AWS IAM Identity Center User Guide*.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_119"
+    },
+    {
+      "question": "How should you assign access to additional users in AWS IAM Identity Center?",
+      "answer": "You should assign users to a group, and then assign single sign-on access to the group, following the best practice of applying least-privilege permissions through a permission set.",
+      "evidence": "2. Assign users to a group, and then assign single sign-on access to the group.\n\n   For instructions, see \n   Add groups in the *AWS IAM Identity Center User Guide*.",
+      "question_type": "procedural",
+      "qa_id": "aws_s3_120"
+    },
+    {
+      "question": "How do Multi-Region Access Point global endpoints route application requests differently from normal internet requests?",
+      "answer": "Instead of sending requests over the congested public internet, application requests made to a Multi-Region Access Point global endpoint automatically route through the AWS global network to the closest proximity Amazon S3 bucket.",
+      "evidence": "Instead of sending requests over the congested public internet, application requests made to a Multi-Region Access Point global endpoint automatically route through the AWS global network to the closest proximity Amazon S3 bucket.",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_121"
+    },
+    {
+      "question": "Is there an actual folder hierarchy in general purpose S3 buckets?",
+      "answer": "No, in general purpose S3 buckets there is no actual folder hierarchy. In S3, the prefix is part of the object key name, so what appears as a folder is actually part of the flat key namespace.",
+      "evidence": "However, in S3, the prefix is part of the object key name. In general purpose S3 buckets, there is no actual folder hierarchy.",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_122"
+    },
+    {
+      "question": "Why should you use an administrator role instead of AWS account root user credentials for daily tasks?",
+      "answer": "AWS recommends using an administrator role instead of root user credentials to interact with AWS and perform tasks such as creating a bucket, creating users, and granting permissions, as a security best practice.",
+      "evidence": "administrator role, instead of AWS account root user credentials, to interact with\nAWS and perform tasks, such as create a bucket, create users, and grant",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_123"
+    },
+    {
+      "question": "Why does AWS recommend role-based access management instead of granting permissions to individual users?",
+      "answer": "AWS recommends using role-based access management because you assign individual users to the appropriate role rather than granting permissions to each individual user, which simplifies permission management and follows security best practices.",
+      "evidence": "access management instead of granting permissions to each individual user. You assign\nindividual users to the appropriate role. For more information, see Security best",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_124"
+    },
+    {
+      "question": "How does AWS permission delegation work between accounts?",
+      "answer": "If an AWS account owns a resource, it can grant those permissions to another AWS account. That receiving account can then delegate those permissions, or a subset of them, further.",
+      "evidence": "**Permission delegation** \u00e2\u0080\u0094 If an\nAWS account owns a resource, it can grant those permissions to another\nAWS account. That account can then delegate those permissions, or a subset of",
+      "question_type": "causal",
+      "qa_id": "aws_s3_125"
+    },
+    {
+      "question": "Since when have S3 buckets blocked all public access by default, and what does AWS recommend regarding this setting?",
+      "answer": "Buckets created since April 2023 block all public access by default unless you change this setting. AWS recommends that you keep your buckets set to block public access.",
+      "evidence": "Buckets created since April 2023 block all public access by default, unless you\nchange this setting.\nWe\nrecommend that you set your buckets to block public access, and",
+      "question_type": "causal",
+      "qa_id": "aws_s3_126"
+    },
+    {
+      "question": "What must you do before deleting an S3 bucket?",
+      "answer": "If you plan to delete your bucket, you must first empty your bucket, which deletes all the objects in the bucket.",
+      "evidence": "If you plan to delete your bucket, you must first empty your bucket, which deletes all the\nobjects in the bucket.",
+      "question_type": "causal",
+      "qa_id": "aws_s3_127"
+    },
+    {
+      "question": "What happens to objects added during an in-progress empty bucket action in Amazon S3?",
+      "answer": "Objects added to the bucket while the empty bucket action is in progress will be deleted along with the existing objects.",
+      "evidence": "Objects added to the bucket while the empty\n   bucket action is in progress will be deleted.\n3. To empty the bucket and delete all the objects in it, and choose",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_128"
+    },
+    {
+      "question": "What risk exists when you delete a bucket name and plan to recreate it later in Amazon S3?",
+      "answer": "After deleting a bucket, another AWS account might create a bucket with the same name before you have a chance to reuse it, so you could lose access to that bucket name.",
+      "evidence": "However, another AWS account might create a bucket with the same\nname before you have a chance to reuse it.",
+      "question_type": "comparative",
+      "qa_id": "aws_s3_129"
+    }
+  ]
+}
