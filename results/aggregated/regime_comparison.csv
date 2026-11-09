@@ -1,0 +1,19 @@
+regime,metric,n_configs,eta2_strategy,eta2_chunk_size,eta2_emb_model,eta2_corpus_unit,strategy_p
+R1 general QA (conference),hit1,32,0.009,0.024,0.235,0.62,> 0.21 (n.s.)
+R1 general QA (conference),hit3,32,0.014,0.041,0.419,0.251,> 0.21 (n.s.)
+R1 general QA (conference),hit5,32,0.019,0.032,0.498,0.237,> 0.21 (n.s.)
+R1 general QA (conference),mrr,32,0.015,0.042,0.358,0.425,> 0.21 (n.s.)
+R1 general QA (conference),ndcg5,32,0.02,0.05,0.47,0.265,> 0.21 (n.s.)
+R1 general QA (conference),cprec,32,0.017,0.004,0.111,0.778,> 0.21 (n.s.)
+R2 technical docs (E1),hit1,576,0.0819,0.0286,0.2076,0.3981,7.56e-30
+R2 technical docs (E1),hit3,576,0.0537,0.0346,0.2384,0.4269,3.43e-23
+R2 technical docs (E1),hit5,576,0.0451,0.0349,0.2155,0.4523,2.27e-19
+R2 technical docs (E1),mrr,576,0.0677,0.0338,0.2347,0.4336,2.38e-30
+R2 technical docs (E1),ndcg5,576,0.0618,0.035,0.2365,0.4431,1.05e-28
+R2 technical docs (E1),cprec,576,0.2533,0.0319,0.1769,0.3444,8.80e-99
+R3 long legal docs (E2),hit1,96,0.0043,0.0527,0.0053,0.8005,4.51e-01
+R3 long legal docs (E2),hit3,96,0.0037,0.0299,0.0228,0.8906,1.21e-01
+R3 long legal docs (E2),hit5,96,0.0026,0.026,0.025,0.9102,1.17e-01
+R3 long legal docs (E2),mrr,96,0.0034,0.0393,0.0148,0.8728,2.54e-01
+R3 long legal docs (E2),ndcg5,96,0.0032,0.0458,0.0226,0.8581,2.78e-01
+R3 long legal docs (E2),cprec,96,0.0066,0.0197,0.0245,0.91,3.86e-03

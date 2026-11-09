@@ -47,9 +47,13 @@ def _get_model(model_name: str) -> SentenceTransformer:
     """Load a model, caching for reuse."""
     if model_name not in _MODEL_CACHE:
         trust_remote = model_name == "nomic-ai/nomic-embed-text-v1.5"
-        # Force nomic to CPU — MPS hangs on large batch sets due to Metal
-        # command buffer OOM that leaves the GPU in an unrecoverable state.
-        device = "cpu" if model_name in _MAX_TOKENS else None
+        # The CPU pin for nomic only applies on Apple MPS, where large batch
+        # sets hang the Metal command buffer. CUDA does not have that problem.
+        import torch
+        if torch.cuda.is_available():
+            device = "cuda"
+        else:
+            device = "cpu" if model_name in _MAX_TOKENS else None
         model = SentenceTransformer(model_name, trust_remote_code=trust_remote, device=device)
         # Enforce max sequence length to prevent OOM on long inputs
         if model_name in _MAX_TOKENS:
@@ -91,13 +95,24 @@ def embed_chunks(
     texts = [prefix + t for t in chunks] if prefix else chunks
     texts = _truncate_texts(texts, model_name)
 
-    # nomic runs on CPU (MPS is unstable), so use a moderate batch size.
-    # Texts are pre-truncated above.
-    batch_size = 64 if model_name in _MAX_TOKENS else 256
+    # Long-context models keep small batches: one 8192-token chunk pads the
+    # whole batch and overruns 10 GB of VRAM.
+    import torch
+    if model_name in _MAX_TOKENS:
+        batch_size = 8 if torch.cuda.is_available() else 64
+    else:
+        batch_size = 256
     all_embs = []
     for i in range(0, len(texts), batch_size):
         batch = texts[i : i + batch_size]
-        embs = model.encode(batch, show_progress_bar=False, normalize_embeddings=True)
+        try:
+            embs = model.encode(batch, show_progress_bar=False, normalize_embeddings=True)
+        except torch.cuda.OutOfMemoryError:
+            torch.cuda.empty_cache()
+            embs = np.stack([
+                model.encode([t], show_progress_bar=False, normalize_embeddings=True)[0]
+                for t in batch
+            ])
         all_embs.append(np.array(embs, dtype=np.float32))
     embeddings = np.concatenate(all_embs, axis=0) if all_embs else np.array([], dtype=np.float32)
 
@@ -140,12 +155,27 @@ def get_embed_fn(model_name: str):
         input_texts = [prefix + t for t in texts] if prefix else texts
         input_texts = _truncate_texts(input_texts, model_name)
 
-        # Batch to avoid OOM — use batch=1 for nomic to prevent padding amplification
-        batch_size = 1 if model_name in _MAX_TOKENS else 256
+        # Batch to avoid OOM — batch=1 for nomic on CPU (padding amplification);
+        # on CUDA keep long-context batches small: one pathological "sentence"
+        # (a 10-K table) at 8192 tokens amplifies the whole padded batch.
+        import torch
+        if model_name in _MAX_TOKENS:
+            batch_size = 4 if torch.cuda.is_available() else 1
+        else:
+            batch_size = 256
         all_embs = []
         for i in range(0, len(input_texts), batch_size):
             batch = input_texts[i : i + batch_size]
-            embs = model.encode(batch, show_progress_bar=False, normalize_embeddings=True)
+            try:
+                embs = model.encode(batch, show_progress_bar=False, normalize_embeddings=True)
+            except torch.cuda.OutOfMemoryError:
+                # Pathologically long items: clear and embed one at a time.
+                torch.cuda.empty_cache()
+                singles = [
+                    model.encode([t], show_progress_bar=False, normalize_embeddings=True)[0]
+                    for t in batch
+                ]
+                embs = np.stack(singles)
             all_embs.append(np.array(embs, dtype=np.float32))
         return np.concatenate(all_embs, axis=0) if all_embs else np.array([], dtype=np.float32)
     return _embed

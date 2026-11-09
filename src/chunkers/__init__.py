@@ -6,6 +6,8 @@ from .recursive import RecursiveChunker
 from .semantic import SemanticChunker
 from .structure_aware import StructureAwareChunker
 from .hybrid import HybridChunker
+from .structure_legal import (StructureLegalChunker, StructureNoPrefixChunker,
+                              StructureLegalNoPrefixChunker)
 
 CHUNKER_MAP = {
     "fixed_size": FixedSizeChunker,
@@ -15,6 +17,9 @@ CHUNKER_MAP = {
     "semantic": SemanticChunker,
     "structure_aware": StructureAwareChunker,
     "hybrid": HybridChunker,
+    "structure_legal": StructureLegalChunker,
+    "structure_noprefix": StructureNoPrefixChunker,
+    "structure_legal_noprefix": StructureLegalNoPrefixChunker,
 }
 
 

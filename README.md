@@ -1,167 +1,58 @@
-# TechChunkBench
+# Chunking Is Not the Bottleneck — experiment code
 
-A comprehensive benchmark for evaluating text chunking strategies in Retrieval-Augmented Generation (RAG) pipelines, applied to technical documentation.
+Code and results for
 
-## Overview
+* **Chauhan, A. and Hegde, N. (2026).** *Chunking Is Not the Bottleneck: Why RAG Evaluation Must Look Beyond Segmentation Strategy.* Proceedings of the 15th International Conference on Data Science, Technology and Applications (DATA 2026). SCITEPRESS.
+* the revised and extended version submitted to *Communications in Computer and Information Science* (Springer, DATA 2026 selected papers), which adds two further corpus regimes (branch `ccis-extension`).
 
-TechChunkBench is a fully-crossed experiment evaluating **7 chunking strategies** across **3 chunk sizes**, **3 embedding models**, and **24 technical documents** spanning **8 domains** (3 per domain), yielding **1,512 configurations**. Each configuration is evaluated on retrieval quality (Hit@k, MRR, NDCG@5, context precision) and computational efficiency.
+The repository name (TechChunkBench) is historical: the 24-document technical corpus it was built for is reused as one of the three regimes studied in the extended paper.
 
-## Key Findings
+## Research question
 
-- **Structure-aware** and **hybrid** chunking form a significantly superior top tier (Friedman p < 10^-76; Nemenyi p < 0.0001 for all inter-tier comparisons)
-- Three distinct performance tiers: structure-aware/hybrid > fixed-overlap/recursive > fixed-size/sentence-based/semantic
-- Structure-aware achieves the highest MRR (0.704) with low overhead (157.7 ms chunking time)
-- Semantic chunking is the worst choice: 401x slower than fixed-size while achieving the lowest retrieval quality
-- Document domain explains 32-57% of performance variance, embedding model 21-38%, and chunking strategy 9-27%
+How much of the variance in RAG retrieval quality is attributable to the chunking strategy, relative to the embedding model, the chunk size, and the corpus itself? The conference paper answered this for general-purpose QA (Natural Questions, MS-MARCO): chunking strategy explains 1-2 % of variance and is not significant. The extension asks *when* chunking matters by repeating the balanced factorial on two further regimes.
 
-## Repository Structure
+| Regime | Corpora | Gold labels | Configs | Runner |
+|---|---|---|---|---|
+| R1 general QA (conference) | NQ dev, MS-MARCO dev | answer-span / qrels | 32 | conference pipeline |
+| R2 structured technical docs | 24 manuals/standards/filings, 8 domains | evidence char-span >= 50 % coverage (plus legacy fuzzy labels) | 576 + 144 ablation | `run_e1.py` |
+| R3 long legal contracts | LegalBench-RAG (PrivacyQA, ContractNLI, CUAD, MAUD) | expert-annotated char spans | 144 | `run_e2.py` |
+
+Factors: chunking strategy (fixed-size, fixed-size with overlap, structure-aware, semantic; plus `structure_legal` and no-prefix ablation variants), chunk size (256, 512 tokens), embedding model (all-MiniLM-L6-v2, BGE-large-en-v1.5, nomic-embed-text-v1.5), corpus. Metrics: Hit@k, MRR, NDCG@5, context precision, recall@k (R3). Analysis: Type III ANOVA with eta^2 as share of total sum of squares, strategy x corpus interactions, bootstrap CIs, Holm correction, paired Cliff's delta.
+
+## Layout
 
 ```
-TechChunkBench/
-├── src/                          # Core modules
-│   ├── chunkers/                 # 7 chunking strategy implementations
-│   ├── embedder.py               # Embedding with caching
-│   ├── retriever.py              # FAISS-based retrieval
-│   ├── evaluator.py              # Hit@k, MRR, NDCG, context precision
-│   └── stats.py                  # Friedman, Nemenyi, Cliff's Delta, variance decomposition
-├── scripts/                      # Pipeline scripts
-│   ├── download_documents.py     # Fetch 24 source documents
-│   ├── generate_qa_pairs.py      # Generate QA pairs
-│   ├── aggregate_results.py      # Merge raw results into summary tables
-│   ├── compute_statistics.py     # Statistical analysis
-│   └── generate_paper_tables.py  # Generate tables and figures
-├── data/
-│   ├── processed/                # 24 source documents (plain text)
-│   └── qa_pairs/                 # 2,406 QA pairs across 24 corpora
-├── results/
-│   ├── raw/                      # Full experiment results (1,512 rows)
-│   └── aggregated/               # Summary tables (CSV)
-├── config.py                     # Experiment configuration
-├── run_all.py                    # Sequential experiment runner
-├── run_parallel.py               # Parallel experiment runner (recommended)
-├── test_*.py                     # Unit tests
-└── requirements.txt
+src/chunkers/          chunking strategies (structure_legal.py adds the legal-aware + no-prefix variants)
+src/span_eval.py       exact character-span relevance labelling, multi-gold NDCG
+src/embedder.py        sentence-transformers embedding with on-disk caching
+src/retriever.py       FAISS cosine retrieval, one shared index per corpus
+run_e1.py              R2 technical-corpus factorial (resumable checkpoints)
+run_e2.py              R3 LegalBench-RAG factorial (resumable checkpoints)
+analyze_extension.py   per-regime variance decomposition
+compare_regimes.py     three-regime headline table (R1 values from the conference paper)
+mustdo_analyses.py     floor-effect checks, interaction ANOVA, bootstrap CIs, Cliff's delta,
+                       corpus-feature regression, label-rigor comparison
+data/processed/        24 technical source documents (plain text)
+data/qa_pairs/         2,406 QA pairs with evidence passages
+results/raw/           one row per configuration
+results/aggregated/    tables used in the papers
 ```
 
-## Chunking Strategies
+LegalBench-RAG data is not redistributed; download it from the authors' release (Pipitone and Houir Alami, 2024) into `~/chunk-ext/legalbench-data/` (`benchmarks/*.json`, `corpus/<dataset>/`).
 
-| Strategy | Description |
-|----------|-------------|
-| Fixed-Size Token | Baseline; splits at exact token boundaries |
-| Fixed-Size with Overlap | 20% token overlap between consecutive chunks |
-| Sentence-Based | Groups complete sentences up to target size |
-| Recursive Character | LangChain-style recursive splitting on hierarchical delimiters |
-| Semantic | Sentence embeddings + cosine similarity breakpoints |
-| Structure-Aware | Heading/section-based splitting with hierarchical path prefixes |
-| Hybrid | Structure-aware with semantic fallback for oversized chunks |
-
-## Embedding Models
-
-| Model | Dimensions |
-|-------|-----------|
-| `sentence-transformers/all-MiniLM-L6-v2` | 384 |
-| `BAAI/bge-large-en-v1.5` | 1024 |
-| `nomic-ai/nomic-embed-text-v1.5` | 768 |
-
-## Document Corpora
-
-24 documents across 8 domains (3 per domain):
-
-| Domain | Documents |
-|--------|-----------|
-| Cloud API | AWS S3, Azure Blob Storage, Google Cloud Storage |
-| Database | PostgreSQL, MySQL, SQLite |
-| Hardware | Arduino, Raspberry Pi, ESP32 |
-| Legal | GDPR, CCPA, HIPAA |
-| Corporate Finance | Apple 10-K, Microsoft 10-K, Alphabet 10-K |
-| Cybersecurity | NIST 800-53, OWASP Top 10, NIST CSF |
-| Medical | WHO Malaria, WHO COVID-19, CDC Immunization |
-| Aerospace | NASA SW Engineering, FAA Advisory Circulars, NASA SE Handbook |
-
-## Quick Start
-
-### Prerequisites
+## Reproduce
 
 ```bash
-pip install -r requirements.txt
-python3 -m nltk.downloader punkt punkt_tab
-python3 -m spacy download en_core_web_sm
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt            # torch with CUDA, sentence-transformers, faiss, statsmodels
+python run_e1.py                           # ~5 GPU-hours on an RTX 3080 capped at 200 W
+python run_e2.py                           # ~25 GPU-hours (semantic chunking on MAUD dominates)
+python analyze_extension.py && python compare_regimes.py && python mustdo_analyses.py
 ```
 
-### Reproduce from Existing Results
+Both runners checkpoint one row per finished configuration with atomic writes and skip completed work on restart.
 
-The repository includes pre-computed results. To regenerate tables and statistical analysis:
+## Notes
 
-```bash
-python3 scripts/compute_statistics.py
-python3 scripts/generate_paper_tables.py
-```
-
-### Run Full Experiment
-
-```bash
-# Step 1: Download source documents
-python3 scripts/download_documents.py
-
-# Step 2: Generate QA pairs
-python3 scripts/generate_qa_pairs.py
-
-# Step 3: Run experiment (parallel runner recommended)
-python3 run_parallel.py
-
-# Step 4: Post-processing
-python3 scripts/compute_extra_rouge.py
-python3 scripts/aggregate_results.py
-python3 scripts/compute_statistics.py
-python3 scripts/generate_paper_tables.py
-```
-
-## Results
-
-Pre-computed results are included in this repository:
-
-| File | Description |
-|------|-------------|
-| `results/raw/all_results_final.csv` | Full experiment output (1,512 configurations) |
-| `results/aggregated/table1_overall_retrieval.csv` | Overall retrieval metrics by strategy |
-| `results/aggregated/table2_strategy_x_model.csv` | Strategy x embedding model interaction (MRR) |
-| `results/aggregated/table3_strategy_x_domain.csv` | Strategy x domain interaction (Hit@3) |
-| `results/aggregated/table4_strategy_x_size.csv` | Strategy x chunk size interaction (MRR) |
-| `results/aggregated/table5_efficiency.csv` | Computational efficiency metrics |
-| `results/aggregated/table7_significance.csv` | Nemenyi post-hoc pairwise p-values |
-| `results/aggregated/table8_variance_decomposition.csv` | Partial eta-squared variance decomposition |
-| `results/aggregated/table9_cliffs_delta_summary.csv` | Cliff's Delta effect size summary |
-| `results/statistical_analysis.json` | Full statistical analysis output |
-
-## Configuration
-
-Edit `config.py` to modify:
-- `CHUNKING_STRATEGIES` — which strategies to evaluate
-- `CHUNK_SIZES` — target chunk sizes in tokens (default: 256, 512, 1024)
-- `EMBEDDING_MODELS` — which embedding models to use
-- `CORPORA` — document corpus definitions and domain mappings
-
-## Tests
-
-```bash
-python3 test_friedman.py
-python3 test_cliffs_paired.py
-python3 test_ndcg_part4.py
-python3 test_fixed_overlap.py
-python3 test_qa_validation.py
-```
-
-## Citation
-
-```bibtex
-@article{chauhan2025techchunkbench,
-  title={TechChunkBench: A Comprehensive Benchmark for Evaluating Text Chunking Strategies in Retrieval-Augmented Generation},
-  author={Chauhan, Aaditya and Hegde, Nivas},
-  journal={IEEE Access},
-  year={2025}
-}
-```
-
-## License
-
-This project is released for academic research purposes.
+* Earlier versions of this README described a preliminary 7-strategy study on the technical corpus that used fuzzy word-overlap relevance labels. That analysis was superseded by the span-labelled design above; the fuzzy labels are retained only for the label-rigor comparison in the extended paper.
+* The authors used Claude (Anthropic) to assist with code implementation, experiment execution and analysis. Experimental design, interpretation and the integrity of reported results are the authors' responsibility.

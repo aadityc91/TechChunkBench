@@ -1,0 +1,2 @@
+kruskal_correctness_H,kruskal_correctness_p,kruskal_faithfulness_H,kruskal_faithfulness_p,pearson_mrr_correctness,pearson_p,spearman_mrr_correctness,n_rows,sa_minus_fixed_correctness,wilcoxon_p
+3.7784343211918627,0.2864045657310888,0.7710231624392955,0.8563846047152709,0.56376767949445,5.772774804369658e-85,0.527302489058622,1000,0.165,0.0800021668603688
