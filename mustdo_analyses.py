@@ -36,7 +36,8 @@ def load(path, prefix, unit):
 
 e1 = load(os.path.join(RAW_RESULTS_DIR, "e1_results_final.csv"), "span_", "corpus_id")
 e1f = load(os.path.join(RAW_RESULTS_DIR, "e1_results_final.csv"), "fuzzy_", "corpus_id")
-e2 = load(os.path.join(RAW_RESULTS_DIR, "e2_results_final.csv"), "", "dataset")
+e2 = load(os.path.join(RAW_RESULTS_DIR, "e2v2_results_final.csv"), "", "dataset")
+e2 = e2[e2.strategy.isin(["fixed_size", "fixed_overlap", "structure_aware", "semantic"])].copy()  # core strategies only (v2, NDCG fix)
 e1["regime"] = "R2_technical"; e2["regime"] = "R3_legal"
 print(f"E1 rows={len(e1)} corpora={e1.corpus.nunique()} | E2 rows={len(e2)} datasets={e2.corpus.nunique()}")
 

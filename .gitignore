@@ -11,3 +11,4 @@ data/chunk_cache/
 .claude/
 __pycache__/
 *.pyc
+.env
